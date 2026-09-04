@@ -111,9 +111,7 @@
   <script>
     (() => {
       const img = document.getElementById('approvedVisual');
-      const parts = window.BHOC_IMAGE_PARTS || [];
-      if (parts.length) img.src = 'data:image/jpeg;base64,' + parts.join('');
-      else img.src = 'assets/clipboard.jpeg';
+      img.src = 'assets/clipboard.jpeg?visual=26.09.04';
     })();
 
     function pulseSpecies(direction){
