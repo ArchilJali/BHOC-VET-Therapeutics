@@ -25,6 +25,14 @@
     .species-control:focus-visible{box-shadow:0 0 0 3px rgba(239,70,20,.45)}
     .species-control:active{transform:scale(.92)}
     .versioning{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+    .friends-real{position:absolute;z-index:8;left:69.7%;top:54.0%;width:28.9%;height:11.6%;overflow:hidden;border-radius:14px;background:#fff;box-shadow:0 0 0 1px rgba(0,0,0,.08),0 3px 10px rgba(0,0,0,.08);line-height:normal}
+    .friends-real img{display:block;width:100%;height:100%;object-fit:cover;object-position:center 48%}
+    .friends-real__arrow{position:absolute;z-index:2;top:50%;transform:translateY(-50%);width:8.6%;aspect-ratio:1;border:0;border-radius:50%;background:rgba(255,255,255,.96);color:#222;font:700 clamp(12px,1.4vw,21px)/1 Arial,sans-serif;cursor:pointer;box-shadow:0 1px 5px rgba(0,0,0,.18)}
+    .friends-real__arrow--prev{left:2.2%}.friends-real__arrow--next{right:2.2%}
+    .friends-real__arrow:active{transform:translateY(-50%) scale(.88)}
+    .friends-real__dots{position:absolute;z-index:2;left:50%;bottom:5%;transform:translateX(-50%);display:flex;gap:5px}
+    .friends-real__dot{width:7px;height:7px;border-radius:50%;background:#fff;box-shadow:0 0 0 1px rgba(0,0,0,.15)}
+    .friends-real__dot.active{background:#ef4614}
   </style>
 </head>
 <body>
@@ -36,6 +44,13 @@
     <p class="sr-only">Hemoglobin Adaptation Features across species.</p>
 
     <img id="approvedVisual" alt="BHOC Veterinary approved homepage visual with BHOC-Therapeutics, Hemoglobin Adaptation Features, companion animals, wildlife, Red Book Mission, BHOC Friends and biodiversity conservation">
+
+    <div class="friends-real" aria-label="BHOC Friends - Rem and Eva">
+      <img src="assets/rem-eva-chair-photo.png" alt="Rem and Eva, BHOC Friends">
+      <button class="friends-real__arrow friends-real__arrow--prev" type="button" aria-label="Previous Rem and Eva photo" onclick="pulseFriends(this)">‹</button>
+      <button class="friends-real__arrow friends-real__arrow--next" type="button" aria-label="Next Rem and Eva photo" onclick="pulseFriends(this)">›</button>
+      <div class="friends-real__dots" aria-hidden="true"><span class="friends-real__dot active"></span></div>
+    </div>
 
     <!-- Top navigation -->
     <a class="hotspot" style="left:21.7%;top:1.1%;width:6.3%;height:4.1%" href="https://bhoctherapeutics.com/" aria-label="About BHOC"></a>
@@ -75,10 +90,6 @@
     <button class="species-control" style="left:.5%;top:56.7%;width:3%;height:4.8%" type="button" aria-label="Previous species" onclick="pulseSpecies(-1)"></button>
     <button class="species-control" style="left:65.1%;top:56.7%;width:3%;height:4.8%" type="button" aria-label="Next species" onclick="pulseSpecies(1)"></button>
 
-    <!-- BHOC Friends controls remain visually identical -->
-    <button class="species-control" style="left:67.9%;top:56.4%;width:3%;height:4.8%" type="button" aria-label="Previous BHOC Friends image"></button>
-    <button class="species-control" style="left:94.4%;top:56.4%;width:3%;height:4.8%" type="button" aria-label="Next BHOC Friends image"></button>
-
     <!-- Safe Planet Mission -->
     <a class="hotspot round mission-hotspot" style="left:3.9%;top:77.1%;width:19.5%;height:3.8%" href="https://archiljali.github.io/BHOC-VET-platform/#red-book" aria-label="Safe Planet Mission"></a>
 
@@ -114,6 +125,13 @@
           {transform:'translateX(0)',boxShadow:'none'}
         ],{duration:260,delay:i*10,easing:'ease-out'});
       });
+    }
+    function pulseFriends(btn){
+      btn.animate([
+        {transform:'translateY(-50%) scale(1)'},
+        {transform:'translateY(-50%) scale(.88)'},
+        {transform:'translateY(-50%) scale(1)'}
+      ],{duration:170,easing:'ease-out'});
     }
   </script>
 </body>
