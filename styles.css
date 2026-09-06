@@ -21,3 +21,7 @@ dialog{border:1px solid #f0dfd0;border-radius:18px;padding:44px;max-width:680px;
 /* Readable supporting labels at compact widths. */
 .pillars strong,.pillars small,.science-tabs button,.science-tabs button span,.molecule figcaption small{font-size:max(12px,.75rem)}
 @media(max-width:540px){.stat-prefix{font-size:12px!important}.science-tabs button{white-space:normal}}
+
+/* Life-green initiative buttons echo the O2 ring in the approved logo. */
+.header-cta,.mission-banner>.button{background:linear-gradient(135deg,#0d651c,#2d801b);border-color:#217522;color:#fff}
+.header-cta:hover,.mission-banner>.button:hover{background:linear-gradient(135deg,#095016,#236a17);border-color:#185e1b;color:#fff}
