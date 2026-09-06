@@ -1,6 +1,6 @@
 # BHOC Veterinary
 
-Editable, independent homepage blocks for [bhocvet.com](https://bhocvet.com/), based on Archil's supplied wildlife mockup.
+Editable website pages and independent homepage blocks for [bhocvet.com](https://bhocvet.com/), based on Archil's supplied wildlife mockup.
 
 **Start with [EDITING.md](EDITING.md).** Visual identity rules, including Rem’s canonical face, are in [DESIGN-RULES.md](DESIGN-RULES.md). Content and layout are separate. A wording change belongs in one content file, not in a screenshot or a page-sized image.
 
@@ -9,7 +9,7 @@ Editable, independent homepage blocks for [bhocvet.com](https://bhocvet.com/), b
 | What changes | Source |
 | --- | --- |
 | Name, alternate names, author, SEO, footer | `content/site.json` |
-| Navigation and top button | `content/header.json` |
+| Navigation and BHOC network links | `content/header.json` |
 | Section order and visibility | `content/homepage.json` |
 | Hero text, image, initiative, buttons | `content/blocks/hero.json` |
 | Biodiversity counts and source links | `content/blocks/biodiversity.json` |
@@ -18,10 +18,12 @@ Editable, independent homepage blocks for [bhocvet.com](https://bhocvet.com/), b
 | Lower landscape and call to action | `content/blocks/mission.json` |
 | Four initiative priorities | `content/blocks/pillars.json` |
 | Species information and references | `content/species-details.json` |
-| Supporting dialog text | `content/dialogs/*.html` |
+| Science, Applications, Publications, News and Contact pages | `content/pages/*.json` |
+| Supporting About dialog text | `content/dialogs/about-dialog.html` |
 | Search and interface labels | `content/interface.json` |
 | Shared colors, typography and spacing | `src/styles/theme.css` |
 | Layout for one block | `src/blocks/<type>.mjs`, `src/styles/<type>.css` |
+| Layout for one inner page | `src/pages/<page>.mjs`, `src/styles/pages.css` |
 
 ## Build
 
@@ -34,9 +36,18 @@ node scripts/check-site.mjs dist
 
 The public repository keeps assets in `assets/` and source in `content/`, `src/`, `scripts/`. A GitHub Pages workflow generates the deployable HTML. Root `index.html` is a compiled fallback, not the editing source. The Work checkout keeps deployable assets under `dist/assets/`, uses the same generator, and retains private art references separately.
 
-The full homepage is present in HTML before JavaScript. Small client code adds navigation, dialogs, search and carousels. No external font request, framework hydration or content API is required.
+The homepage and five inner pages are present in HTML before JavaScript. Small client code adds navigation, dialogs, search, the contact-email handoff and carousels. No external font request, framework hydration or content API is required.
 
-The build checks image descriptions/dimensions, links, unique block IDs and a single H1. Unknown blocks and links to removed sections fail with a clear message. Existing singleton sections may appear once; `story` blocks can repeat with different IDs.
+The build checks image descriptions/dimensions, local and cross-page links, unique block IDs and a single H1 on every page. The static gate also checks six distinct canonical pages, titles, descriptions and social previews. Unknown blocks and links to removed sections fail with a clear message. Existing singleton sections may appear once; `story` blocks can repeat with different IDs.
+
+## Website roles
+
+- [BHOC Veterinary](https://bhocvet.com/) is the main public veterinary website.
+- [BHOC VET-platform](https://archiljali.github.io/BHOC-VET-platform/) is the guided veterinary evidence map.
+- [BHOC Platform Veterinary](https://archiljali.github.io/BHOC-platform/veterinary/Vet-index.html) is the full bibliography and regulatory source library.
+- [BHOC Therapeutics](https://bhoctherapeutics.com/) is the corporate parent website.
+
+Each level links to the next level and back to BHOC Veterinary so visitors do not need to infer the relationship from similar project names.
 
 ## Artwork
 
@@ -48,4 +59,4 @@ Primary: **BHOC Veterinary**. Alternate names: **BHOC Vet**, **BHOC Veterinary T
 
 Keyword authority remains [BHOC-Therapeutics/seo/BHOC-SEO-Keywords.md](https://github.com/ArchilJali/BHOC-Therapeutics/blob/main/seo/BHOC-SEO-Keywords.md). This repository does not maintain a competing keyword master.
 
-Scientific and regulatory references describe their original products, species and contexts. Individual inner pages are the next content phase.
+Scientific and regulatory references describe their original products, species and contexts. Science, Applications, Publications, News and Contact are maintained as ordinary inner pages rather than modal windows.

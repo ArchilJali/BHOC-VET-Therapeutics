@@ -18,7 +18,7 @@
     {
       "type": "science",
       "file": "blocks/science.json",
-      "enabled": true
+      "enabled": false
     },
     {
       "type": "mission",

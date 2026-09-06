@@ -5,20 +5,19 @@
       "title": "Animal health",
       "text": "Better treatments. Better lives.",
       "icon": "paw",
-      "href": "#applications",
-      "dialog": "applications-dialog"
+      "href": "applications.html"
     },
     {
       "title": "Species preservation",
       "text": "Supporting conservation through science.",
       "icon": "tree",
-      "href": "#biodiversity"
+      "href": "index.html#biodiversity"
     },
     {
       "title": "A shared planet",
       "text": "Healthier animals. Healthier ecosystems.",
       "icon": "globe",
-      "href": "#mission"
+      "href": "index.html#mission"
     },
     {
       "title": "One Health",

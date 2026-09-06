@@ -1,0 +1,38 @@
+{
+  "slug": "news",
+  "navLabel": "News",
+  "title": "BHOC Veterinary News and Updates",
+  "description": "Source-linked BHOC Veterinary project updates, scientific platform changes and public professional discussion.",
+  "eyebrow": "News and Updates",
+  "heading": "Follow the work as it develops.",
+  "lead": "Project news, evidence updates and public discussion are kept in their original channels so every item remains traceable.",
+  "channels": [
+    {
+      "icon": "linkedin",
+      "title": "BHOC LinkedIn",
+      "text": "Company news, scientific discussion and new BHOC publications.",
+      "link": {
+        "label": "Open LinkedIn page",
+        "href": "https://www.linkedin.com/company/bhoc-therapeutics/"
+      }
+    },
+    {
+      "icon": "book",
+      "title": "BHOC VET-platform",
+      "text": "Guided veterinary evidence map, oxygen biology and routes into the full source library.",
+      "link": {
+        "label": "Open the evidence platform",
+        "href": "https://archiljali.github.io/BHOC-VET-platform/"
+      }
+    },
+    {
+      "icon": "github",
+      "title": "BHOC Veterinary on GitHub",
+      "text": "Public website source, revision history and technical publication record.",
+      "link": {
+        "label": "Open GitHub repository",
+        "href": "https://github.com/ArchilJali/BHOC-VET-Therapeutics"
+      }
+    }
+  ]
+}

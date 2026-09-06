@@ -14,7 +14,7 @@
 ```json
 {
   "label": "Our science",
-  "href": "#science"
+  "href": "science.html"
 }
 ```
 
@@ -26,7 +26,7 @@
 | --- | --- |
 | Главный заголовок и текст рядом с животными | [hero.json](content/blocks/hero.json) |
 | Подписи инициативы под логотипом | [hero.json](content/blocks/hero.json), поле `initiative` |
-| Навигация и верхняя кнопка | [header.json](content/header.json) |
+| Навигация и ссылки сети BHOC | [header.json](content/header.json) |
 | Цифры и источники | [biodiversity.json](content/blocks/biodiversity.json) |
 | Животные, подписи, ALT и ссылки | [species.json](content/blocks/species.json) |
 | Научный текст и карточки Discover | [science.json](content/blocks/science.json) |
@@ -34,7 +34,14 @@
 | Четыре направления инициативы | [pillars.json](content/blocks/pillars.json) |
 | Основное и альтернативные названия, ваше имя, SEO | [site.json](content/site.json) |
 | Подробности о видах | [species-details.json](content/species-details.json) |
-| Содержание остальных информационных окон | [content/dialogs](content/dialogs) |
+| Страницы Science, Applications, Publications, News и Contact | [content/pages](content/pages) |
+| Информационное окно About | [about-dialog.html](content/dialogs/about-dialog.html) |
+
+## Как менять отдельную страницу
+
+Текст каждой страницы хранится в одном JSON-файле: `science.json`, `applications.json`, `publications.json`, `news.json` или `contact.json` в папке `content/pages/`. Меняйте подписи и ссылки там. HTML-шаблон страницы находится в `src/pages/`, а общий внешний вид внутренних страниц - в `src/styles/pages.css`.
+
+Научные ссылки разделены по назначению: `BHOC VET-platform` является простой обзорной точкой входа, а `BHOC Platform Veterinary` содержит полную библиографию и регуляторные документы. Не меняйте эти роли местами без отдельного решения по структуре сайта.
 
 ## Как заменить изображение
 
@@ -96,4 +103,4 @@ ALT описывает то, что видно. Имя автора или сп�
 
 Достаточно сказать: «Измени текст только в блоке Science» или «Добавь новость после Species». Редактируется файл указанного блока, затем собирается и проверяется страница. Исходный рисунок не перерисовывается.
 
-Ручная сборка для разработчика: `node scripts/build.mjs --out dist`, затем `node scripts/check-site.mjs dist`.
+Ручная сборка для разработчика: `node scripts/build.mjs --out dist`, затем `node scripts/check-site.mjs dist`. Проверка охватывает главную и пять внутренних страниц.

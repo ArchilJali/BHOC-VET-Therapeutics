@@ -27,6 +27,10 @@
   ],
   "language": "en",
   "updated": "2026-09-06",
+  "sameAs": [
+    "https://www.linkedin.com/company/bhoc-therapeutics/",
+    "https://github.com/ArchilJali/BHOC-VET-Therapeutics"
+  ],
   "socialImage": {
     "src": "assets/bhoc-wildlife-rainbow-20260906-v2.png",
     "alt": "BHOC Veterinary wildlife and biodiversity illustration",
@@ -39,17 +43,33 @@
     "links": [
       {
         "label": "BHOC Therapeutics",
-        "href": "https://bhoctherapeutics.com/"
+        "href": "https://bhoctherapeutics.com/",
+        "icon": "globe"
       },
       {
-        "label": "Scientific references",
-        "href": "#references",
-        "dialog": "references-dialog"
+        "label": "VET Evidence Platform",
+        "href": "https://archiljali.github.io/BHOC-VET-platform/",
+        "icon": "book"
+      },
+      {
+        "label": "Publications",
+        "href": "publications.html",
+        "icon": "book"
       },
       {
         "label": "Contact",
-        "href": "#contact",
-        "dialog": "contact-dialog"
+        "href": "contact.html",
+        "icon": "mail"
+      },
+      {
+        "label": "LinkedIn",
+        "href": "https://www.linkedin.com/company/bhoc-therapeutics/",
+        "icon": "linkedin"
+      },
+      {
+        "label": "GitHub",
+        "href": "https://github.com/ArchilJali/BHOC-VET-Therapeutics",
+        "icon": "github"
       }
     ]
   }

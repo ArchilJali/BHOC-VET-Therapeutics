@@ -1,0 +1,59 @@
+{
+  "slug": "science",
+  "navLabel": "Science",
+  "title": "Veterinary Oxygen-Delivery Science | BHOC Veterinary",
+  "description": "Explore hemoglobin biology, oxygen delivery, heme and chlorophyll chemistry, and the scientific foundation relevant to BHOC Veterinary.",
+  "eyebrow": "BHOC Veterinary Science",
+  "heading": "A biological foundation. A precise research question.",
+  "lead": "Different species have different physiology and transfusion requirements, but most vertebrates share hemoglobin-based oxygen transport.",
+  "foundation": {
+    "eyebrow": "The science of oxygen delivery",
+    "title": "From hemoglobin chemistry to effective oxygen delivery.",
+    "paragraphs": [
+      "Hemoglobin binds oxygen through iron-containing heme groups. Oxygen delivery also depends on circulation, oxygen affinity, blood flow and tissue demand.",
+      "Hemoglobin-based oxygen carriers, or HBOCs, investigate a cell-free approach to oxygen transport. BHOC builds on this field as a Biological Hemoglobin Oxygen Carrier development platform. The objective is complementary oxygen-delivery support, not replacement of the wider functions of blood."
+    ]
+  },
+  "nature": {
+    "title": "Nature's bioengineering",
+    "text": "Most vertebrates use hemoglobin, with important exceptions such as Antarctic icefish. Conserved chemistry is a scientific starting point; species-specific physiology, dosing, safety and efficacy still require their own evidence."
+  },
+  "chemistry": {
+    "title": "Heme and chlorophyll",
+    "text": "Both belong to related tetrapyrrole chemistry. Heme coordinates iron; chlorophyll coordinates magnesium. Their ring structures, side chains and biological roles differ. Hemoglobin transports oxygen; chlorophyll absorbs light in photosynthesis."
+  },
+  "platform": {
+    "eyebrow": "Evidence navigation",
+    "title": "Start with the map. Continue into the full library.",
+    "text": "BHOC VET-platform provides a guided overview of veterinary oxygen biology and evidence boundaries. The BHOC Platform Veterinary library holds the full source-linked bibliography and regulatory archive.",
+    "link": {
+      "label": "Open BHOC VET-platform",
+      "href": "https://archiljali.github.io/BHOC-VET-platform/"
+    },
+    "library": {
+      "label": "Open the full evidence library",
+      "href": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-index.html"
+    },
+    "github": {
+      "label": "View the evidence source on GitHub",
+      "href": "https://github.com/ArchilJali/BHOC-platform/tree/main/veterinary"
+    }
+  },
+  "references": [
+    {
+      "label": "ChEBI: Heme b",
+      "detail": "CHEBI:26355. Iron-containing tetrapyrrole chemistry.",
+      "href": "https://www.ebi.ac.uk/chebi/CHEBI:26355"
+    },
+    {
+      "label": "ChEBI: Chlorophyll a",
+      "detail": "CHEBI:18230. Magnesium-containing photosynthetic pigment.",
+      "href": "https://www.ebi.ac.uk/chebi/CHEBI:18230"
+    },
+    {
+      "label": "Antarctic icefish physiology",
+      "detail": "Biological context for vertebrates without circulating hemoglobin.",
+      "href": "https://www.frontiersin.org/journals/physiology/articles/10.3389/fphys.2019.01389/full"
+    }
+  ]
+}

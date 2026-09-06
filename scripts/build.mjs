@@ -2,57 +2,161 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {createHash} from 'node:crypto';
-import {esc,attrs,img,button,icon,link} from '../src/lib/html.mjs';
+import {esc,attrs,img,icon,link} from '../src/lib/html.mjs';
+import renderScienceBlock from '../src/blocks/science.mjs';
+
 const root=path.dirname(path.dirname(fileURLToPath(import.meta.url)));
-const args=process.argv.slice(2),out=path.resolve(root,args.includes('--out')?args[args.indexOf('--out')+1]:'dist');
-const read=p=>fs.readFile(path.join(root,p),'utf8'),json=async p=>JSON.parse(await read(p));
+const args=process.argv.slice(2);
+const out=path.resolve(root,args.includes('--out')?args[args.indexOf('--out')+1]:'dist');
+const read=p=>fs.readFile(path.join(root,p),'utf8');
+const json=async p=>JSON.parse(await read(p));
 const write=async(p,s)=>{const dest=path.join(out,p);await fs.mkdir(path.dirname(dest),{recursive:true});await fs.writeFile(dest,s);};
 const digest=s=>createHash('sha256').update(s).digest('hex').slice(0,10);
-const site=await json('content/site.json'),header=await json('content/header.json'),manifest=await json('content/homepage.json'),species=await json('content/species-details.json'),labels=await json('content/interface.json');
-const allowed=['hero','biodiversity','species','science','mission','pillars','story'],ids=new Set(),blocks=[];
-const checkData=(d,label)=>{if(Array.isArray(d))return d.forEach((v,i)=>checkData(v,`${label}[${i}]`));if(d&&typeof d==='object'){if('src'in d&&(!('alt'in d)||!Number.isInteger(d.width)||!Number.isInteger(d.height)||d.width<1||d.height<1))throw new Error(`${label}: every image needs alt, width and height`);for(const [k,v]of Object.entries(d)){if(['href','url','source'].includes(k))attrs({href:v});if(k==='src'&&!/^assets\/[a-zA-Z0-9_./-]+$/.test(v))throw new Error(label+': invalid asset path');if(k==='src'&&v.includes('..'))throw new Error('Asset path may not traverse directories');checkData(v,`${label}.${k}`);}}};
-for(const entry of manifest.blocks){if(!allowed.includes(entry.type))throw new Error('Unknown block type '+entry.type);if(!/^blocks\/[a-z0-9-]+\.json$/.test(entry.file))throw new Error('Invalid content file');if(!entry.enabled)continue;const d=await json('content/'+entry.file);checkData(d,entry.file);if(!/^[a-z][a-z0-9-]*$/.test(d.id)||ids.has(d.id))throw new Error('Invalid or duplicate block ID '+d.id);ids.add(d.id);const {default:render}=await import('../src/blocks/'+entry.type+'.mjs');blocks.push({type:entry.type,data:d,html:render(d)});}
-if(!blocks.some(b=>b.type==='hero'))throw new Error('Homepage needs exactly one hero');if(blocks.filter(b=>b.type==='hero').length!==1)throw new Error('Multiple hero blocks');
-checkData(site,'site');checkData(header,'header');checkData(species,'species');for(const type of allowed.filter(t=>t!=='story'))if(blocks.filter(b=>b.type===type).length>1)throw new Error('Only one '+type+' block is supported');
-// Copy production assets only when building in a separate staging folder.
+
+const site=await json('content/site.json');
+const header=await json('content/header.json');
+const manifest=await json('content/homepage.json');
+const species=await json('content/species-details.json');
+const labels=await json('content/interface.json');
+const scienceData=await json('content/blocks/science.json');
+const pageFiles=(await fs.readdir(path.join(root,'content/pages'))).filter(name=>name.endsWith('.json')).sort();
+const pages=await Promise.all(pageFiles.map(name=>json('content/pages/'+name)));
+
+const allowed=['hero','biodiversity','species','science','mission','pillars','story'];
+const ids=new Set();
+const blocks=[];
+const checkData=(d,label)=>{
+  if(Array.isArray(d))return d.forEach((v,i)=>checkData(v,`${label}[${i}]`));
+  if(d&&typeof d==='object'){
+    if('src'in d&&(!('alt'in d)||!Number.isInteger(d.width)||!Number.isInteger(d.height)||d.width<1||d.height<1))throw new Error(`${label}: every image needs alt, width and height`);
+    for(const [k,v] of Object.entries(d)){
+      if(['href','url','source'].includes(k))attrs({href:v});
+      if(k==='src'&&!/^assets\/[a-zA-Z0-9_./-]+$/.test(v))throw new Error(label+': invalid asset path');
+      if(k==='src'&&v.includes('..'))throw new Error('Asset path may not traverse directories');
+      checkData(v,`${label}.${k}`);
+    }
+  }
+};
+
+for(const entry of manifest.blocks){
+  if(!allowed.includes(entry.type))throw new Error('Unknown block type '+entry.type);
+  if(!/^blocks\/[a-z0-9-]+\.json$/.test(entry.file))throw new Error('Invalid content file');
+  if(!entry.enabled)continue;
+  const d=await json('content/'+entry.file);
+  checkData(d,entry.file);
+  if(!/^[a-z][a-z0-9-]*$/.test(d.id)||ids.has(d.id))throw new Error('Invalid or duplicate block ID '+d.id);
+  ids.add(d.id);
+  const {default:render}=await import('../src/blocks/'+entry.type+'.mjs');
+  blocks.push({type:entry.type,data:d,html:render(d)});
+}
+
+if(!blocks.some(b=>b.type==='hero'))throw new Error('Homepage needs exactly one hero');
+if(blocks.filter(b=>b.type==='hero').length!==1)throw new Error('Multiple hero blocks');
+checkData(site,'site');
+checkData(header,'header');
+checkData(species,'species');
+checkData(scienceData,'science page block');
+for(const [i,page] of pages.entries()){
+  checkData(page,`pages[${i}]`);
+  if(!/^[a-z][a-z0-9-]*$/.test(page.slug))throw new Error('Invalid page slug '+page.slug);
+  if(pageFiles[i]!==page.slug+'.json')throw new Error(`Page filename must match slug: ${page.slug}`);
+}
+for(const type of allowed.filter(type=>type!=='story'))if(blocks.filter(b=>b.type===type).length>1)throw new Error('Only one '+type+' block is supported');
+
 const sourceAssets=await fs.stat(path.join(root,'assets')).then(()=>path.join(root,'assets')).catch(()=>path.join(root,'dist/assets'));
 if(path.resolve(sourceAssets)!==path.join(out,'assets'))await fs.cp(sourceAssets,path.join(out,'assets'),{recursive:true});
-const cssNames=[...new Set(['theme','header',...blocks.map(b=>b.type),'dialogs'])],cssLinks=[];
-for(const name of cssNames){const css=await read(`src/styles/${name}.css`);await write(`assets/css/${name}.css`,css);cssLinks.push(`<link rel="stylesheet" href="./assets/css/${name}.css?v=${digest(css)}">`);}
-const client=await read('src/client/app.js');await write('app.js',client);
-const url=p=>new URL(p,site.canonical).href,personId=site.canonical+'#archil-jaliashvili',orgId=site.canonical+'#organization',webId=site.canonical+'#website';
+
+const cssNames=[...new Set(['theme','header',...blocks.map(b=>b.type),'science','pages','dialogs'])];
+const cssLinks=[];
+for(const name of cssNames){
+  const css=await read(`src/styles/${name}.css`);
+  await write(`assets/css/${name}.css`,css);
+  cssLinks.push(`<link rel="stylesheet" href="./assets/css/${name}.css?v=${digest(css)}">`);
+}
+const client=await read('src/client/app.js');
+await write('app.js',client);
+
+const absolute=p=>new URL(p,site.canonical).href;
+const personId=site.canonical+'#archil-jaliashvili';
+const orgId=site.canonical+'#organization';
+const webId=site.canonical+'#website';
 const hero=blocks.find(b=>b.type==='hero').data;
-const graph={'@context':'https://schema.org','@graph':[
-{'@type':'Organization','@id':orgId,name:site.name,alternateName:site.alternateNames,url:site.canonical,description:site.description,logo:url(header.logo.src),parentOrganization:{'@type':'Organization',...site.parent}},
-{'@type':'Person','@id':personId,...site.author,sameAs:[site.author.url],affiliation:{'@id':orgId}},
-{'@type':'WebSite','@id':webId,name:site.name,alternateName:site.alternateNames,url:site.canonical,inLanguage:site.language,publisher:{'@id':orgId},creator:{'@id':personId}},
-{'@type':'ImageObject','@id':site.canonical+'#hero-image',contentUrl:url(hero.image.src),caption:hero.image.alt,width:hero.image.width,height:hero.image.height},
-{'@type':'WebPage','@id':site.canonical+'#webpage',url:site.canonical,name:site.title,description:site.description,isPartOf:{'@id':webId},inLanguage:site.language,dateModified:site.updated,author:{'@id':personId},publisher:{'@id':orgId},primaryImageOfPage:{'@id':site.canonical+'#hero-image'},about:site.topics.map(name=>({'@type':'Thing',name})),keywords:[site.primaryTopic,...site.topics].join(', ')}]};
 const safeJSON=d=>JSON.stringify(d).replace(/</g,'\\u003c');
-const dialogs=(await fs.readdir(path.join(root,'content/dialogs'))).filter(x=>x.endsWith('.html')).sort();
-const dialogHTML=await Promise.all(dialogs.map(p=>read('content/dialogs/'+p)));
+const graphFor=(meta,pagePath,isHome=false)=>({'@context':'https://schema.org','@graph':[
+  {'@type':'Organization','@id':orgId,name:site.name,alternateName:site.alternateNames,url:site.canonical,description:site.description,logo:absolute(header.logo.src),parentOrganization:{'@type':'Organization',...site.parent},sameAs:site.sameAs},
+  {'@type':'Person','@id':personId,...site.author,sameAs:[site.author.url],affiliation:{'@id':orgId}},
+  {'@type':'WebSite','@id':webId,name:site.name,alternateName:site.alternateNames,url:site.canonical,inLanguage:site.language,publisher:{'@id':orgId},creator:{'@id':personId}},
+  ...(isHome?[{'@type':'ImageObject','@id':site.canonical+'#hero-image',contentUrl:absolute(hero.image.src),caption:hero.image.alt,width:hero.image.width,height:hero.image.height}]:[]),
+  {'@type':'WebPage','@id':absolute(pagePath)+'#webpage',url:absolute(pagePath),name:meta.title,description:meta.description,isPartOf:{'@id':webId},inLanguage:site.language,dateModified:site.updated,author:{'@id':personId},publisher:{'@id':orgId},...(isHome?{primaryImageOfPage:{'@id':site.canonical+'#hero-image'},about:site.topics.map(name=>({'@type':'Thing',name})),keywords:[site.primaryTopic,...site.topics].join(', ')}:{})}
+]});
+
+const dialogNames=(await fs.readdir(path.join(root,'content/dialogs'))).filter(name=>name.endsWith('.html')).sort();
+const dialogHTML=await Promise.all(dialogNames.map(name=>read('content/dialogs/'+name)));
 const extras=`<dialog id="species-dialog" aria-labelledby="species-detail-heading"><button class="dialog-close" aria-label="Close species details">×</button><span class="eyebrow">${esc(labels.speciesEyebrow)}</span><div id="species-detail"></div></dialog><dialog id="all-species-dialog" aria-labelledby="all-species-heading"><button class="dialog-close" aria-label="Close all species">×</button><span id="all-species" class="eyebrow">Explore species</span><h2 id="all-species-heading">${esc(labels.allSpeciesTitle)}</h2><p>${esc(labels.allSpeciesIntro)}</p><div class="all-species-grid"></div><p class="small-copy">${esc(labels.allSpeciesNote)}</p></dialog><dialog id="search-dialog" aria-labelledby="search-heading"><button class="dialog-close" aria-label="Close search">×</button><h2 id="search-heading">${esc(labels.searchHeading)}</h2><label for="site-search">${esc(labels.searchLabel)}</label><input id="site-search" type="search" placeholder="${esc(labels.searchPlaceholder)}" autocomplete="off"><p class="sr-only" id="search-status" aria-live="polite"></p><div id="search-results"></div></dialog>`;
-const search=[...Object.entries(species).map(([key,s])=>({title:s.name,category:'Species',text:`${s.text} ${s.context}`,species:key})),...blocks.filter(b=>b.type!=='pillars').map(b=>({title:b.data.title||(Array.isArray(b.data.heading)?b.data.heading.join(' '):b.data.heading)||'Our initiative',category:b.type==='science'?'Science':'Initiative',text:JSON.stringify(b.data),anchor:'#'+b.data.id})),...dialogHTML.map((html,i)=>({title:html.match(/<h2[^>]*>([\s\S]*?)<\/h2>/)?.[1].replace(/<[^>]*>/g,' ')||dialogs[i],category:'Information',text:html.replace(/<[^>]*>/g,' '),dialog:dialogs[i].replace('.html','')}))];
-const networkHTML=`<nav class="site-network-bar" aria-label="BHOC websites"><div class="network-links">${header.networkLinks.map(item=>item.enabled?`<a class="network-link network-link-enabled" ${attrs(item)} aria-label="Open ${esc(item.label)}">${icon('globe')}<span class="network-label-wide">${esc(item.label)}</span><span class="network-label-compact">${esc(item.compactLabel||item.label)}</span></a>`:`<span class="network-link network-link-disabled" aria-disabled="true" title="Coming soon">${icon('globe')}<span class="network-label-wide">${esc(item.label)}</span><span class="network-label-compact">${esc(item.compactLabel||item.label)}</span></span>`).join('')}</div></nav>`;
-const headerHTML=`${networkHTML}<header class="site-header"><a class="wordmark" href="#home" aria-label="${esc(site.name)} home"><span class="wordmark-top">${[...header.wordmark.letters].map((c,i)=>i===header.wordmark.accentIndex?`<em>${esc(c)}</em>`:esc(c)).join('')}</span><span class="wordmark-sub">${esc(header.wordmark.subtitle)}</span></a><nav id="primary-nav" class="primary-nav" aria-label="Main navigation">${header.navigation.filter(n=>n.dialog||!n.href.startsWith('#')||ids.has(n.href.slice(1))).map(n=>link(n,n.href==='#home'?'active':'')).join('')}</nav><button class="icon-button search-toggle" data-open="search-dialog" aria-label="Search this website">${icon('search')}</button>${button({...header.button}).replace('class="button"','class="button header-cta"')}<button class="menu-toggle icon-button" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-nav"><span></span><span></span><span></span></button></header>`;
-const html=`<!doctype html>
-<html lang="${esc(site.language)}"><head>
+
+const search=[
+  ...Object.entries(species).map(([key,s])=>({title:s.name,category:'Species',text:`${s.text} ${s.context}`,species:key})),
+  ...blocks.filter(b=>b.type!=='pillars').map(b=>({title:b.data.title||(Array.isArray(b.data.heading)?b.data.heading.join(' '):b.data.heading)||'Our initiative',category:'Homepage',text:JSON.stringify(b.data),href:'index.html#'+b.data.id})),
+  ...pages.map(page=>({title:page.navLabel,category:'Page',text:JSON.stringify(page),href:page.slug+'.html'})),
+  ...dialogHTML.map((html,i)=>({title:html.match(/<h2[^>]*>([\s\S]*?)<\/h2>/)?.[1].replace(/<[^>]*>/g,' ')||dialogNames[i],category:'Information',text:html.replace(/<[^>]*>/g,' '),dialog:dialogNames[i].replace('.html','')}))
+];
+const siteData=safeJSON({species,search,labels});
+
+const networkHTML=`<nav class="site-network-bar" aria-label="BHOC websites"><span class="network-title">BHOC network</span><div class="network-links">${header.networkLinks.map(item=>item.enabled?`<a class="network-link network-link-enabled" ${attrs(item)} aria-label="Open ${esc(item.label)}">${icon('globe')}<span class="network-label-wide">${esc(item.label)}</span><span class="network-label-compact">${esc(item.compactLabel||item.label)}</span></a>`:`<span class="network-link network-link-disabled" aria-disabled="true" title="Coming soon">${icon('globe')}<span class="network-label-wide">${esc(item.label)}</span><span class="network-label-compact">${esc(item.compactLabel||item.label)}</span></span>`).join('')}</div></nav>`;
+const renderHeader=active=>`<header class="site-header"><a class="wordmark" href="index.html#home" aria-label="${esc(site.name)} home"><span class="wordmark-top">${[...header.wordmark.letters].map((c,i)=>i===header.wordmark.accentIndex?`<em>${esc(c)}</em>`:esc(c)).join('')}</span><span class="wordmark-sub">${esc(header.wordmark.subtitle)}</span></a><nav id="primary-nav" class="primary-nav" aria-label="Main navigation">${header.navigation.map(item=>link(item,item.href===active?'active':'')).join('')}</nav><button class="icon-button search-toggle" data-open="search-dialog" aria-label="Search this website">${icon('search')}</button><button class="menu-toggle icon-button" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-nav"><span></span><span></span><span></span></button></header>${networkHTML}`;
+const renderFooter=()=>`<footer class="site-footer"><div class="footer-brand"><strong>BH<span class="oxygen-initial">O</span>C Veterinary</strong><span>Biological Hemoglobin Oxygen Carrier</span></div><nav class="footer-links" aria-label="Footer navigation">${site.footer.links.map(item=>`<a ${attrs(item)}>${item.icon?icon(item.icon):''}<span>${esc(item.label)}</span></a>`).join('')}</nav><p class="project-attribution">Project lead: <a href="${esc(site.author.url)}" target="_blank" rel="noopener noreferrer">${esc(site.author.name)}</a>.</p><p class="footer-note">${esc(site.footer.note)}</p><p class="footer-copyright">© ${site.updated.slice(0,4)} ${esc(site.footer.copyright)}</p></footer>`;
+const commonEnd=`${dialogHTML.join('\n')}${extras}<noscript><p class="noscript-note">Interactive search requires JavaScript. The main pages and source links remain available.</p><style>dialog{display:block;position:relative;margin:2rem auto}dialog .dialog-close,#search-dialog,#species-dialog,#all-species-dialog{display:none}.menu-toggle,.search-toggle,.round-control,.carousel-dots,.species-dots{display:none}.primary-nav{display:flex;position:static}.science-panel[hidden]{display:block!important}</style></noscript>`;
+
+const renderHead=(meta,pagePath,isHome=false)=>`<head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#f6d7be">
-<title>${esc(site.title)}</title><meta name="description" content="${esc(site.description)}"><meta name="author" content="${esc(site.author.name)}"><meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1"><link rel="canonical" href="${esc(site.canonical)}">
-<meta property="og:type" content="website"><meta property="og:locale" content="en_US"><meta property="og:site_name" content="${esc(site.name)}"><meta property="og:title" content="${esc(site.title)}"><meta property="og:description" content="${esc(site.description)}"><meta property="og:url" content="${esc(site.canonical)}"><meta property="og:image" content="${url(site.socialImage.src)}"><meta property="og:image:secure_url" content="${url(site.socialImage.src)}"><meta property="og:image:type" content="image/png"><meta property="og:image:width" content="${site.socialImage.width}"><meta property="og:image:height" content="${site.socialImage.height}"><meta property="og:image:alt" content="${esc(site.socialImage.alt)}">
-<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="${esc(site.title)}"><meta name="twitter:description" content="${esc(site.description)}"><meta name="twitter:image" content="${url(site.socialImage.src)}"><meta name="twitter:image:alt" content="${esc(site.socialImage.alt)}">
-<link rel="icon" href="./assets/favicon.svg" type="image/svg+xml"><link rel="preload" as="image" href="./${esc(hero.image.src)}" fetchpriority="high">
+<title>${esc(meta.title)}</title><meta name="description" content="${esc(meta.description)}"><meta name="author" content="${esc(site.author.name)}"><meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1"><link rel="canonical" href="${esc(absolute(pagePath))}">
+<meta property="og:type" content="website"><meta property="og:locale" content="en_US"><meta property="og:site_name" content="${esc(site.name)}"><meta property="og:title" content="${esc(meta.title)}"><meta property="og:description" content="${esc(meta.description)}"><meta property="og:url" content="${esc(absolute(pagePath))}"><meta property="og:image" content="${absolute(site.socialImage.src)}"><meta property="og:image:secure_url" content="${absolute(site.socialImage.src)}"><meta property="og:image:type" content="image/png"><meta property="og:image:width" content="${site.socialImage.width}"><meta property="og:image:height" content="${site.socialImage.height}"><meta property="og:image:alt" content="${esc(site.socialImage.alt)}">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="${esc(meta.title)}"><meta name="twitter:description" content="${esc(meta.description)}"><meta name="twitter:image" content="${absolute(site.socialImage.src)}"><meta name="twitter:image:alt" content="${esc(site.socialImage.alt)}">
+<link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">${isHome?`<link rel="preload" as="image" href="./${esc(hero.image.src)}" fetchpriority="high">`:''}
 ${cssLinks.join('\n')}
-<script type="application/ld+json">${safeJSON(graph)}</script><script id="site-data" type="application/json">${safeJSON({species,search,labels})}</script><script src="./app.js?v=${digest(client)}" defer></script>
-</head><body><a class="skip-link" href="#main">Skip to content</a>${await read('src/icons.html')}<div class="site-shell">${headerHTML}<main id="main">\n${blocks.map(b=>`<!-- BLOCK ${b.type}: content/blocks/${b.type}.json -->\n${b.html}`).join('\n')}\n</main><footer class="site-footer"><p>© ${site.updated.slice(0,4)} ${esc(site.footer.copyright)}</p><nav aria-label="Footer navigation">${site.footer.links.map(l=>link(l,'')).join('')}</nav><p class="project-attribution">Project lead: <a href="${esc(site.author.url)}" target="_blank" rel="noopener noreferrer">${esc(site.author.name)}</a>.</p><p class="footer-note">${esc(site.footer.note)}</p></footer></div>${dialogHTML.join('\n')}${extras}<noscript><p class="noscript-note">Interactive search requires JavaScript. Science, references and contact information are available below.</p><style>dialog{display:block;position:relative;margin:2rem auto}dialog .dialog-close,#search-dialog,#species-dialog,#all-species-dialog{display:none}.menu-toggle,.search-toggle,.round-control,.carousel-dots,.species-dots{display:none}.primary-nav{display:flex;position:static}.science-panel[hidden]{display:block!important}</style></noscript></body></html>\n`;
-// Essential build gates run before updating the homepage.
-if((html.match(/<h1\b/g)||[]).length!==1)throw new Error('Exactly one H1 required');
-for(const match of html.matchAll(/(?:src|href)="\.\/([^"?#]+)[^"]*"/g))await fs.access(path.join(out,match[1]));
-const htmlIds=new Set([...html.matchAll(/\bid="([^"]+)"/g)].map(m=>m[1]));
-const special=new Set(['#home','#contact','#about','#initiative','#all-species','#applications','#references','#oxygen-science',...Object.keys(species).map(k=>'#species-'+k)]);
-for(const match of html.matchAll(/href="(#[^"]+)"/g))if(!htmlIds.has(match[1].slice(1))&&!special.has(match[1]))throw new Error('Internal link targets a disabled or missing block: '+match[1]+'. Update its content links before publishing.');
-await write('index.html',html);
-const imageEntries=[hero.image,hero.initiative.image,...(blocks.find(b=>b.type==='species')?.data.items||[]).map(s=>s.image)];
-await write('sitemap.xml',`<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"><url><loc>${site.canonical}</loc><lastmod>${site.updated}</lastmod>${imageEntries.map(i=>`<image:image><image:loc>${url(i.src)}</image:loc></image:image>`).join('')}</url></urlset>\n`);
-await write('robots.txt',`User-agent: *\nAllow: /\nSitemap: ${url('sitemap.xml')}\n`);await write('CNAME',new URL(site.canonical).hostname+'\n');await write('.nojekyll','');
-console.log(`Built ${blocks.length} independent blocks to ${path.relative(root,out)||'.'}. HTML includes all content and structured data.`);
+<script type="application/ld+json">${safeJSON(graphFor(meta,pagePath,isHome))}</script><script id="site-data" type="application/json">${siteData}</script><script src="./app.js?v=${digest(client)}" defer></script>
+</head>`;
+
+const documents=new Map();
+const homeMeta={title:site.title,description:site.description};
+documents.set('index.html',`<!doctype html><html lang="${esc(site.language)}">${renderHead(homeMeta,'',true)}<body data-page="home"><a class="skip-link" href="#main">Skip to content</a>${await read('src/icons.html')}<div class="site-shell">${renderHeader('index.html#home')}<main id="main">\n${blocks.map(b=>`<!-- BLOCK ${b.type}: content/blocks/${b.type}.json -->\n${b.html}`).join('\n')}\n</main>${renderFooter()}</div>${commonEnd}</body></html>\n`);
+
+for(const page of pages){
+  const {default:renderPage}=await import('../src/pages/'+page.slug+'.mjs');
+  const pageMain=page.slug==='science'?renderPage(page,renderScienceBlock(scienceData)):renderPage(page);
+  documents.set(page.slug+'.html',`<!doctype html><html lang="${esc(site.language)}">${renderHead(page,page.slug+'.html')}<body data-page="${esc(page.slug)}"><a class="skip-link" href="#main">Skip to content</a>${await read('src/icons.html')}<div class="site-shell">${renderHeader(page.slug+'.html')}${pageMain}${renderFooter()}</div>${commonEnd}</body></html>\n`);
+}
+
+for(const [name,html] of documents){
+  if((html.match(/<h1\b/g)||[]).length!==1)throw new Error(`${name}: exactly one H1 required`);
+  await write(name,html);
+}
+
+const specialHashes=new Set(['#about','#initiative','#all-species',...Object.keys(species).map(key=>'#species-'+key)]);
+for(const [name,html] of documents){
+  const idsInDocument=new Set([...html.matchAll(/\bid="([^"]+)"/g)].map(match=>match[1]));
+  for(const match of html.matchAll(/(?:src|href)="\.\/([^"?#]+)[^"]*"/g))await fs.access(path.join(out,match[1]));
+  for(const match of html.matchAll(/href="([^"]+)"/g)){
+    const href=match[1];
+    if(href.startsWith('#')){
+      if(!idsInDocument.has(href.slice(1))&&!specialHashes.has(href))throw new Error(`${name}: missing link target ${href}`);
+      continue;
+    }
+    if(/^(https:|mailto:)/.test(href)||href.startsWith('./'))continue;
+    const [file,hash]=href.split('#');
+    if(file&&!documents.has(file))throw new Error(`${name}: missing page ${file}`);
+    if(hash){
+      const targetHTML=documents.get(file||name);
+      const targetIds=new Set([...targetHTML.matchAll(/\bid="([^"]+)"/g)].map(item=>item[1]));
+      if(!targetIds.has(hash)&&!specialHashes.has('#'+hash))throw new Error(`${name}: missing cross-page target ${href}`);
+    }
+  }
+}
+
+const imageEntries=[hero.image,hero.initiative.image,...(blocks.find(b=>b.type==='species')?.data.items||[]).map(item=>item.image)];
+const sitemapUrls=[{path:'',images:imageEntries},...pages.map(page=>({path:page.slug+'.html',images:[]}))];
+await write('sitemap.xml',`<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">${sitemapUrls.map(entry=>`<url><loc>${absolute(entry.path)}</loc><lastmod>${site.updated}</lastmod>${entry.images.map(image=>`<image:image><image:loc>${absolute(image.src)}</image:image>`).join('')}</url>`).join('')}</urlset>\n`);
+await write('robots.txt',`User-agent: *\nAllow: /\nSitemap: ${absolute('sitemap.xml')}\n`);
+await write('CNAME',new URL(site.canonical).hostname+'\n');
+await write('.nojekyll','');
+console.log(`Built ${blocks.length} homepage blocks and ${pages.length} inner pages to ${path.relative(root,out)||'.'}.`);

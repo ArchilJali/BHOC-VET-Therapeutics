@@ -8,24 +8,27 @@
   "navigation": [
     {
       "label": "Home",
-      "href": "#home"
+      "href": "index.html#home"
     },
     {
       "label": "Science",
-      "href": "#science"
+      "href": "science.html"
     },
     {
       "label": "Species",
-      "href": "#species"
+      "href": "index.html#species"
     },
     {
       "label": "Applications",
-      "href": "#applications",
-      "dialog": "applications-dialog"
+      "href": "applications.html"
     },
     {
-      "label": "Biodiversity",
-      "href": "#biodiversity"
+      "label": "Publications",
+      "href": "publications.html"
+    },
+    {
+      "label": "News",
+      "href": "news.html"
     },
     {
       "label": "About",
@@ -34,14 +37,9 @@
     },
     {
       "label": "Contact",
-      "href": "#contact",
-      "dialog": "contact-dialog"
+      "href": "contact.html"
     }
   ],
-  "button": {
-    "label": "A healthier tomorrow for all species",
-    "href": "#mission"
-  },
   "networkLinks": [
     {
       "label": "www.bhoctherapeutics.com",

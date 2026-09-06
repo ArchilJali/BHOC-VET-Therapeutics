@@ -1,0 +1,50 @@
+{
+  "slug": "applications",
+  "navLabel": "Applications",
+  "title": "Veterinary Applications | BHOC Veterinary",
+  "description": "Veterinary research contexts for Biological Hemoglobin Oxygen Carrier science, including companion-animal care, emergency oxygen support and wildlife medicine.",
+  "eyebrow": "Veterinary Applications",
+  "heading": "Oxygen delivery. Species-specific evidence.",
+  "lead": "BHOC is a development direction in precision oxygen therapeutics for settings where anemia or blood loss limits oxygen-carrying capacity.",
+  "areas": [
+    {
+      "icon": "paw",
+      "title": "Companion-animal care",
+      "text": "Research questions around severe anemia, blood loss and practical oxygen-delivery support in dogs, cats and other companion animals."
+    },
+    {
+      "icon": "heart",
+      "title": "Emergency oxygen support",
+      "text": "Time-sensitive veterinary settings where donor blood may be delayed, unavailable or operationally difficult to provide."
+    },
+    {
+      "icon": "tree",
+      "title": "Wildlife medicine",
+      "text": "Species-specific research challenges in conservation medicine, zoological care and remote field environments."
+    }
+  ],
+  "regulatory": {
+    "eyebrow": "Historical veterinary precedent",
+    "title": "Oxyglobin and canine anemia.",
+    "paragraphs": [
+      "In 1998, the FDA approved Oxyglobin, hemoglobin glutamer-200 (bovine), for anemia in dogs. This is a product-specific veterinary HBOC precedent.",
+      "The historical approval does not establish BHOC approval or suitability in other species. Each application requires its own evidence for dosing, safety and efficacy."
+    ],
+    "primaryLink": {
+      "label": "Read the original FDA approval",
+      "href": "https://animaldrugsatfda.fda.gov/adafda/app/search/public/document/downloadFoi/3700"
+    },
+    "evidenceLink": {
+      "label": "Open FDA and EMA veterinary records",
+      "href": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-fda-ema.html"
+    }
+  },
+  "contact": {
+    "title": "Discuss a veterinary research collaboration.",
+    "text": "For research, conservation and strategic partnerships, contact BHOC Therapeutics.",
+    "link": {
+      "label": "Contact our team",
+      "href": "contact.html"
+    }
+  }
+}

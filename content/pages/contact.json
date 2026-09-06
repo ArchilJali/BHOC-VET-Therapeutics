@@ -1,0 +1,27 @@
+{
+  "slug": "contact",
+  "navLabel": "Contact",
+  "title": "Contact BHOC Veterinary",
+  "description": "Contact BHOC Therapeutics about veterinary research, conservation collaboration and strategic partnerships.",
+  "eyebrow": "Contact BHOC Veterinary",
+  "heading": "Start a conversation.",
+  "lead": "Choose the website form or write directly to our team.",
+  "email": "info@bhoctherapeutics.com",
+  "form": {
+    "title": "Fill in the form",
+    "note": "The form prepares an email in your email application. Review it and press Send; the website does not store your message.",
+    "areas": [
+      "Veterinary research",
+      "Clinical collaboration",
+      "Conservation and biodiversity",
+      "Strategic partnership",
+      "Other"
+    ],
+    "button": "Continue to email"
+  },
+  "direct": {
+    "title": "Send an email directly",
+    "text": "For veterinary research, conservation collaborations and strategic partnerships.",
+    "button": "Email BHOC Therapeutics"
+  }
+}

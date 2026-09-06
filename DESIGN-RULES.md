@@ -19,3 +19,9 @@ Describe concrete tradeoffs before undertaking a materially different approach. 
 The immutable supplied hero source is `assets/bhoc-wildlife-rainbow-20260906.png`. The current approved display asset is `assets/bhoc-wildlife-rainbow-20260906-v2.png`. It changes only the details Archil requested on 6 September 2026: Eva's and the foreground cat's visible paws and legs are slightly larger, while the small hidden Rem is dimmer and blends into the foliage. Preserve every animal's face, the composition, rainbow, birds and landscape. Do not make any broader redraw or substitution without a new explicit request. The heading is Precision Oxygen Therapeutics, followed by Biological Hemoglobin Oxygen Carrier BHOC. Text is placed below the scene to keep the flying bird and other animals visible. The initiative image keeps its 318:317 aspect ratio, with height automatic at every viewport.
 
 The species row uses original independent portrait nodes, circular arrow/dot selection and native touch scrolling. Dots are generated from the content item count. Keep the six approved sketches and Rem's identity intact.
+
+## Inner pages and linked platforms
+
+Science, Applications, Publications, News and Contact are ordinary HTML pages using the same wordmark, navigation, BHOC network bar and footer. Keep internal page links in the same browser tab. External scientific and corporate links may open a separate tab and must be labelled by destination rather than with an ambiguous generic action.
+
+Preserve the visitor path: BHOC Veterinary is the public veterinary website, BHOC VET-platform is the guided evidence map, and BHOC Platform Veterinary is the full source library. Publications keeps four visible groups: scientific publications, regulatory records, LinkedIn publications and related scientific publications.

@@ -13,7 +13,6 @@
   },
   "button": {
     "label": "A healthier tomorrow for all species",
-    "href": "#contact",
-    "dialog": "contact-dialog"
+    "href": "contact.html"
   }
 }

@@ -22,8 +22,14 @@
       "label": "Explore the BHOC Initiative"
     }
   },
-  "heading": "Precision Oxygen Therapeutics",
-  "subheading": "Biological Hemoglobin Oxygen Carrier BHOC",
+  "heading": [
+    "Precision Oxygen",
+    "Therapeutics"
+  ],
+  "product": {
+    "name": "BHOC",
+    "expansion": "Biological Hemoglobin Oxygen Carrier"
+  },
   "description": [],
   "actions": [
     {
@@ -32,7 +38,7 @@
     },
     {
       "label": "Our science",
-      "href": "#science",
+      "href": "science.html",
       "style": "outline"
     }
   ]
