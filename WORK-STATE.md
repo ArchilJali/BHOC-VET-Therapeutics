@@ -58,3 +58,13 @@ This section supersedes the historical pause and empty-repository notes above.
 - Static entrypoint, local assets, JSON-LD, image dimensions, font loading data, CSS structure and JavaScript syntax validated. No new browser visual QA was performed for this publication.
 - Prior Chrome Not Secure warning was traced in the user's Security panel to previously allowed active content with certificate errors. Main certificate and TLS were valid; user reported the warning resolved after restarting Chrome. No DNS or certificate settings changed in this workstream.
 - GitHub main at start of this update: `9b9ddc08c2b1fb30c72e6d0fad9483bc822555cf`; preserve the existing branch-based Pages publication and root-level public files.
+
+## Visibility and rainbow correction, 6 September 2026
+
+This section supersedes the earlier Rem crop details. User requested the published correction after reporting Rem had disappeared in the grass.
+
+- Current hero: `dist/assets/animal-hero-rem-rainbow-v2.webp`, 1850 x 850. A single targeted image edit makes the partial rainbow diffuse, uneven and distant while keeping Eva and the approved composition.
+- Replaced the previous overly small `rem-ground` / `rem-detail` presentation with `rem-landscape` / `rem-peek`. The face sits above the landscape layer; the crop keeps eyes, nose and whiskery muzzle visible. Its visible width is about 49 source pixels, approximately 31 pixels on an 1180-pixel desktop page.
+- On narrow screens the same small face is positioned inside the visible lower-right grass instead of outside the wider hero crop. Original hero layout, logo, CTA treatment and handwritten Life Connected remain.
+- Local references, image dimensions, JSON-LD, stylesheet structure and narrow-screen crop bounds checked. No browser visual QA performed.
+- Preserve root-level GitHub Pages publication and the existing owner-private Work Site.
