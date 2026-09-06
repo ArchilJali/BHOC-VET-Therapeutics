@@ -77,3 +77,13 @@ This section supersedes all previous dog crop-window instructions. User rejected
 - Removed every `rem-landscape` / `rem-peek` element and style. The hero has exactly one image. Do not reintroduce dog patches, masks, or separate mobile dog overlays.
 - Original responsive hero framing, initiative logo, orange cloud buttons and handwritten Life Connected are retained. The wide scene crops naturally on narrow screens; the small far-right landscape detail is not separately relocated.
 - Generated bitmap inspected for the grass blend and small scale; local assets, stylesheet and JSON-LD checked. No browser visual QA performed.
+
+## Locked visual rollback, 6 September 2026
+
+This section supersedes every later experimental hero instruction above.
+
+- User rejected the regenerated full-scene variants because they degraded the approved visual.
+- Restored the exact previously approved production asset: `dist/assets/animal-hero-rem-eva.webp`.
+- The asset is locked as the hero source of truth. Do not regenerate, restyle, reinterpret, or replace the complete animal scene for a local detail.
+- The page displays this asset as one continuous image. No separate Rem crop, landscape patch, mask, or mobile dog overlay is present.
+- Future changes involving Rem or the rainbow must begin as an unpublished preview and must preserve this locked asset until the user explicitly approves a replacement.
