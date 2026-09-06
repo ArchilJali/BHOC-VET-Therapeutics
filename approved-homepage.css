@@ -1,23 +1,22 @@
-/* Approved 6 September 2026. Artwork is copied from the exact approved source.
-   Cropping hides mockup UI; it never redraws, recolors or moves an animal. */
+/* The scene is one complete asset. Only the documented dog and sky regions
+   were repaired. No polygon clipping or separate logo image covers the scene. */
 :root{--ink:#37474b;--muted:#526166;--orange:#e65035;--orange-dark:#ba3928;--cream:#fff9f3;--line:#df8a78;--page:1280px}
-.site-header{height:76px;padding:10px 3.7%;gap:19px}
+.site-header{position:relative;inset:auto;height:76px;padding:10px 3.7%;gap:19px;background:linear-gradient(105deg,#fffdf9,#fce5d3)}
 .wordmark{width:133px;line-height:1}
 .wordmark img{width:100%;height:auto;mix-blend-mode:multiply}
 .primary-nav{gap:22px}
 .primary-nav>a{font-size:14px}
 .button{background:linear-gradient(115deg,#ef7150,#e9462c);border-color:#e95a3b;letter-spacing:.025em;box-shadow:inset 0 1px 0 #ffffff50}
-.header-cta,.mission-banner>.button{background:linear-gradient(115deg,#ef7150,#e9462c);border-color:#e95a3b;color:#fff;min-width:0;width:230px;font-size:13px;padding:8px 22px;min-height:48px}
+.header-cta,.mission-banner>.button{background:linear-gradient(115deg,#ef7150,#e9462c);border-color:#e95a3b;color:#fff;min-width:0;width:230px;font-size:13px;padding:8px 17px;min-height:48px;gap:8px}
+.header-cta>span,.mission-banner>.button>span{white-space:nowrap}
 .header-cta:hover,.mission-banner>.button:hover{background:linear-gradient(115deg,#e96445,#cc4029);color:#fff;border-color:#cc4029}
 .header-cta svg,.mission-banner>.button svg{position:static;width:15px;height:15px;margin-left:-5px}
 .button-outline{background:#fff8;box-shadow:none;color:var(--ink)}
-.hero{aspect-ratio:1122/548;min-height:0;background:linear-gradient(111deg,#fffdfa 2%,#fff9f0 24%,#fce6d4 64%,#fbd9c1 100%)}
-.hero-artwork{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
-.hero-artwork>.hero-art{position:absolute;inset:0;width:100%;height:auto;max-width:none;object-fit:initial;clip-path:polygon(29.3% 10.873%,67.65% 10.873%,67.65% 58.971%,100% 58.971%,100% 100%,29.3% 100%)}
-.initiative-logo{width:28.966%;left:1.7825%;top:13.138%;mix-blend-mode:normal;display:block}
-.initiative-logo img{width:100%;height:auto}
-.initiative-logo:hover{filter:brightness(.985)}
-.hero-copy{left:67.8%;right:3.5%;top:23.5%}
+.hero{display:block;aspect-ratio:1122/488;min-height:0;padding:0;background:#fffaf3}
+.hero-artwork{position:absolute;inset:0;width:100%;height:100%;z-index:0;pointer-events:none}
+.hero-artwork>.hero-art{position:absolute;inset:0;width:100%;height:100%;max-width:none;object-fit:contain;clip-path:none}
+.initiative-logo{display:block;width:28.966%;height:83.607%;max-width:none;left:1.7825%;top:2.459%;mix-blend-mode:normal;pointer-events:auto;background:transparent}
+.hero-copy{position:absolute;display:block;left:67.8%;right:3.5%;top:13.5%;z-index:1}
 .hero-copy h1{font-size:clamp(32px,3.03vw,39px);letter-spacing:-.052em;line-height:1.025}
 .hero-copy p{font-size:clamp(14px,1.18vw,16px);line-height:1.28;margin-top:13px}
 .hero-actions{gap:10px;margin-top:17px}
@@ -87,13 +86,12 @@
  .species-card p{font-size:13px}.science-copy p{font-size:16px}.science-copy h2{font-size:34px}.molecular-pair img{height:164px}
 }
 @media(max-width:1000px){
- .site-header{height:72px;background:linear-gradient(100deg,#fffcf8,#fae0ca);padding:10px 4%;gap:12px;position:absolute}
+ .site-header{height:72px;background:linear-gradient(100deg,#fffcf8,#fae0ca);padding:10px 4%;gap:12px;position:relative}
  .wordmark{width:117px}.menu-toggle{display:flex;flex-direction:column;justify-content:center;gap:5px;order:5}.menu-toggle span{display:block;width:22px;height:1.5px;background:var(--ink)}
  .header-cta{margin-left:auto;width:209px;font-size:12px;min-height:44px}.search-toggle{min-width:40px}.primary-nav{display:none;position:absolute;top:72px;left:0;right:0;background:#fffaf4;padding:20px;box-shadow:0 12px 20px #37474b12;gap:10px;flex-wrap:wrap;justify-content:flex-start}.primary-nav.is-open{display:flex}.primary-nav>a{font-size:16px;padding:10px 15px}
- .hero{display:block;aspect-ratio:auto;min-height:0;padding-top:calc(48.842vw + 30px);padding-bottom:0;background:linear-gradient(110deg,#fffcf8,#fbe2cd)}
- .hero-artwork{top:30px;left:0;width:100%;height:48.842vw;inset:auto auto auto 0;position:absolute;top:30px}
- .hero-artwork>.hero-art{width:100%;height:auto;inset:0;object-fit:initial}
- .initiative-logo{left:1.7825%;top:calc(6.417vw + 30px);width:28.966%}
+ .hero{display:block;aspect-ratio:auto;min-height:0;padding:0;background:#fffaf3}
+ .hero-artwork{position:relative;inset:auto;width:100%;height:auto;aspect-ratio:1122/488}
+ .hero-artwork>.hero-art{width:100%;height:100%;inset:0;object-fit:contain}
  .hero-copy{position:relative;inset:auto;padding:23px 5% 29px;text-align:center;background:linear-gradient(#fffaf5,#fff);width:100%;max-width:none}
  .hero-copy h1{font-size:38px;line-height:1.06}.hero-copy p{max-width:620px;margin:15px auto 0;font-size:16px;line-height:1.45}.hero-actions{justify-content:center;margin-top:19px;gap:14px}.hero-actions .button{font-size:13px;min-height:42px;padding:10px 24px}
  .species-card{flex-basis:calc((100% - 36px)/4)}.species-card>.portrait,.species-card>.art-crop{height:128px}.species-card p{font-size:14px}
@@ -104,9 +102,8 @@
 }
 @media(max-width:700px){
  .site-header{padding:10px 4%;gap:7px}.wordmark{width:112px}.header-cta{width:180px;font-size:11px;padding:7px 12px}.search-toggle{margin-left:auto}.header-cta{display:none}
- .hero{padding-top:calc(48.842vw + 50px)}.hero-artwork{top:50px}.initiative-logo{top:calc(6.417vw + 50px)}
  .hero-copy{padding:24px 6% 27px}.hero-copy h1{font-size:36px}.hero-copy p{font-size:16px}
- .biodiversity{padding:13px 5% 0}.stats-grid{grid-template-columns:1fr 1fr 1fr}.stat{min-height:118px}.stat strong{font-size:clamp(24px,5.1vw,35px)}.stat>span:not(.sr-only){font-size:12px;text-align:center;max-width:105px;line-height:1.25}.stat-prefix{font-size:13px!important}.stat:first-child strong{margin-top:15px}.stat svg{height:26px;width:26px}.stat-manifesto{grid-column:1/-1;display:block;text-align:center;padding:8px 0 11px;font-size:12px;letter-spacing:.8px}.stat-manifesto br{display:none}.stat-manifesto br::after{content:' '}.stat-manifesto span{display:none}.stat-manifesto::before{display:none}.stat-manifesto{word-spacing:3px}.data-note{font-size:12px}
+ .biodiversity{padding:13px 5% 0}.stats-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.stat{display:flex;flex-direction:column;min-width:0;min-height:132px;padding:8px 3px;align-items:center;justify-content:center}.stat strong{font-size:clamp(24px,5.1vw,35px);margin:0!important}.stat>span:not(.sr-only){font-size:12px;text-align:center;max-width:105px;line-height:1.25}.stat-prefix{font-size:13px!important;position:static;margin:0;align-self:auto;line-height:16px!important}.stat:first-child strong{margin-top:16px!important}.stat svg{height:26px;width:26px;margin-top:9px}.stat:not(:first-child)::before{left:0;right:auto;top:10%;height:80%;width:1px}.stat-manifesto{grid-column:1/-1;display:block;text-align:center;padding:8px 0 11px;font-size:12px;letter-spacing:.8px}.stat-manifesto br{display:none}.stat-manifesto br::after{content:' '}.stat-manifesto span{display:none}.stat-manifesto::before{display:none}.stat-manifesto{word-spacing:3px}.data-note{font-size:12px}
  .species-section{padding:15px 6% 20px}.section-topline h2{font-size:14px;letter-spacing:0}.section-topline{gap:10px}.section-topline .text-link{font-size:13px;gap:6px}.species-track{gap:14px}.species-card{flex-basis:calc((100% - 28px)/3)}.species-card>.portrait,.species-card>.art-crop{height:112px}.species-card h3{font-size:16px}.species-card p{font-size:13px}.species-prev{left:-21px}.species-next{right:-21px}.round-control{width:38px;height:38px;min-width:38px;min-height:38px}
  .science-section{display:grid;grid-template-columns:1fr;gap:25px;padding:23px 7% 30px}.science-copy h2{font-size:36px}.science-copy p{font-size:17px;max-width:100%;line-height:1.4}.science-copy .button{margin-top:20px}.science-carousel{min-height:278px}.molecular-pair img{height:183px}.science-panel{min-height:220px}.molecular-pair{padding:9px 17px 0}.molecular-pair h4,.molecular-pair figcaption{font-size:14px}.discover-story{padding:18px 24px}.discover-story p{font-size:16px}.discover-landscape{height:64px}
  .mission-banner{padding:23px 6%;min-height:191px;display:flex;align-items:flex-start;flex-direction:column;gap:18px}.mission-copy h2{font-size:32px}.mission-copy p{font-size:16px}.mission-banner>.button{margin:0;width:232px;min-height:47px;font-size:12px}.landscape img{width:100%;height:100%;object-fit:cover;inset:0}.mission-banner::after{background:linear-gradient(90deg,#fff6eae8,#fff4e66b)}
