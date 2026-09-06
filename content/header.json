@@ -42,6 +42,19 @@
     "label": "A healthier tomorrow for all species",
     "href": "#mission"
   },
+  "networkLinks": [
+    {
+      "label": "www.bhoctherapeutics.com",
+      "compactLabel": "bhoctherapeutics.com",
+      "href": "https://www.bhoctherapeutics.com/",
+      "enabled": true
+    },
+    {
+      "label": "www.bhoctransplant.com",
+      "compactLabel": "bhoctransplant.com",
+      "enabled": false
+    }
+  ],
   "wordmark": {
     "letters": "BHOC",
     "accentIndex": 2,

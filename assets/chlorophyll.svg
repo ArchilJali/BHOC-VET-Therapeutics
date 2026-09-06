@@ -4,8 +4,9 @@
                       xmlns:rdkit='http://www.rdkit.org/xml'
                       xmlns:xlink='http://www.w3.org/1999/xlink'
                   xml:space='preserve'
-width='300px' height='300px' viewBox='0 0 300 300'>
+width='300px' height='300px' viewBox='176 78 120 140'>
 <!-- END OF HEADER -->
+<style>.atom-24{fill:#168447!important}</style>
 <rect style='opacity:1.0;fill:#FFFFFF;stroke:none' width='300.0' height='300.0' x='0.0' y='0.0'> </rect>
 <path class='bond-0 atom-0 atom-23' d='M 207.5,126.4 L 212.2,125.5' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
 <path class='bond-0 atom-0 atom-23' d='M 212.2,125.5 L 217.0,124.7' style='fill:none;fill-rule:evenodd;stroke:#0000FF;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />

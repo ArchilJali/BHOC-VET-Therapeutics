@@ -40,7 +40,7 @@ The build checks image descriptions/dimensions, links, unique block IDs and a si
 
 ## Artwork
 
-Animals and initiative artwork are exported from the supplied mockup. A bounded sky cleanup removes raster interface text only. Do not regenerate the scene to change copy, links, typography or one small detail. Original animal photographs and authoring files are private and are not included in the public repository.
+Animals and initiative artwork are exported from the supplied mockup. A bounded sky cleanup removes raster interface text only. Do not regenerate the scene to change copy, links or typography. A tightly bounded image correction is permitted only when Archil explicitly requests it, and must preserve the approved faces and the rest of the composition. Original animal photographs and authoring files are private and are not included in the public repository.
 
 ## Scientific and search identity
 

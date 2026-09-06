@@ -6,6 +6,7 @@
                   xml:space='preserve'
 width='300px' height='300px' viewBox='0 0 300 300'>
 <!-- END OF HEADER -->
+<style>.atom-42{fill:#cf321f!important}</style>
 <rect style='opacity:1.0;fill:#FFFFFF;stroke:none' width='300.0' height='300.0' x='0.0' y='0.0'> </rect>
 <path class='bond-0 atom-0 atom-41' d='M 99.5,97.4 L 110.4,95.4' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
 <path class='bond-0 atom-0 atom-41' d='M 110.4,95.4 L 121.3,93.5' style='fill:none;fill-rule:evenodd;stroke:#0000FF;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />

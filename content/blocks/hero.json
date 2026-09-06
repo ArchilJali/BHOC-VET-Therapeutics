@@ -1,7 +1,7 @@
 {
   "id": "home",
   "image": {
-    "src": "assets/bhoc-wildlife-rainbow-20260906.png",
+    "src": "assets/bhoc-wildlife-rainbow-20260906-v2.png",
     "alt": "Wildlife illustration with a lion, giraffe, horse, elephant, camel, panda, orangutan, domestic cat, wirehaired dachshund and marine turtle beneath a distant rainbow. A small dog peeks through the grass and birds of prey appear in the landscape.",
     "width": 1672,
     "height": 941
@@ -13,13 +13,13 @@
       "width": 318,
       "height": 317
     },
-    "title": "Species & Biodiversity Protection Initiative",
-    "tagline": "One Oxygen. Every Species. One Living Planet.",
-    "promise": "Protect Life. Preserve Species. Safeguard Biodiversity.",
+    "title": "BHOC Species & Biodiversity Protection Initiative",
+    "tagline": "One Oxygen. One Biology. One BHOC System.",
+    "promise": "For Every Species. Wherever Life Is at Risk.",
     "link": {
       "href": "#initiative",
       "dialog": "about-dialog",
-      "label": "Explore the initiative"
+      "label": "Explore the BHOC Initiative"
     }
   },
   "heading": "Precision Oxygen Therapeutics",
