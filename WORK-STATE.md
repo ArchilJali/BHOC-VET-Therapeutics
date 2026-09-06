@@ -68,3 +68,12 @@ This section supersedes the earlier Rem crop details. User requested the publish
 - On narrow screens the same small face is positioned inside the visible lower-right grass instead of outside the wider hero crop. Original hero layout, logo, CTA treatment and handwritten Life Connected remain.
 - Local references, image dimensions, JSON-LD, stylesheet structure and narrow-screen crop bounds checked. No browser visual QA performed.
 - Preserve root-level GitHub Pages publication and the existing owner-private Work Site.
+
+## Integrated Rem correction, 6 September 2026
+
+This section supersedes all previous dog crop-window instructions. User rejected the visible pasted rectangular fragment and requested a much smaller, barely visible face naturally peeking from grass.
+
+- Current hero is `dist/assets/animal-hero-rem-integrated-v3.webp`, 1850 x 850. Rem is embedded directly in the complete illustration; visible face about 32 x 24 source pixels, with its lower part hidden behind grass. Current faint rainbow is retained.
+- Removed every `rem-landscape` / `rem-peek` element and style. The hero has exactly one image. Do not reintroduce dog patches, masks, or separate mobile dog overlays.
+- Original responsive hero framing, initiative logo, orange cloud buttons and handwritten Life Connected are retained. The wide scene crops naturally on narrow screens; the small far-right landscape detail is not separately relocated.
+- Generated bitmap inspected for the grass blend and small scale; local assets, stylesheet and JSON-LD checked. No browser visual QA performed.
