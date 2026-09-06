@@ -4,6 +4,8 @@ Checked 6 September 2026.
 
 - Approved visual: user-supplied `235223b3-be35-4194-b22b-98326d92c09b-1.png`. Compressed to WebP without changing composition. Initiative logo and species/botanical artwork displayed through CSS crop windows.
 - Hero: one image-generation extraction from the approved visual, retaining the pencil animals, hierarchy and cream/orange setting while removing website elements. No new design direction.
+- Approved 6 September 2026 hero update: Eva in the foreground, Rem as a tiny face in the grass, and a faint incomplete rainbow. User-supplied dog photographs and the approved preview guided the clean illustration asset. Responsive artwork windows keep Rem at the approved small scale.
+- “Life Connected” lettering: locally served Allura subset from Google Fonts, https://fonts.google.com/specimen/Allura ; SIL Open Font License included at `dist/assets/fonts/OFL-Allura.txt`.
 - Catalogue of Life, version 2026-08-26 XR: https://www.catalogueoflife.org/ ; Animalia 1,780,634.
 - IUCN Red List 2026-1, 9 July 2026: https://iucn.org/press-release/202607/desert-frog-deep-sea-molluscs-remarkable-species-risk-iucn-red-list ; 175,909 assessed, 49,505 threatened. These counts span assessed taxa.
 - Heme b: ChEBI CHEBI:26355, https://www.ebi.ac.uk/chebi/CHEBI:26355 ; structure https://www.ebi.ac.uk/chebi/backend/api/public/structure/2815439/
