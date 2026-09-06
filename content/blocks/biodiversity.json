@@ -1,0 +1,37 @@
+{
+  "id": "biodiversity",
+  "title": "Biodiversity context",
+  "link": {
+    "href": "#initiative",
+    "dialog": "about-dialog"
+  },
+  "stats": [
+    {
+      "value": "1,780,634",
+      "prefix": "",
+      "label": "described animal species",
+      "icon": "paw",
+      "href": "https://www.catalogueoflife.org/"
+    },
+    {
+      "value": "175,900",
+      "prefix": "More than",
+      "label": "species assessed",
+      "icon": "globe",
+      "href": "https://iucn.org/press-release/202607/desert-frog-deep-sea-molluscs-remarkable-species-risk-iucn-red-list"
+    },
+    {
+      "value": "49,500",
+      "prefix": "More than",
+      "label": "threatened with extinction",
+      "icon": "leaf",
+      "href": "https://iucn.org/press-release/202607/desert-frog-deep-sea-molluscs-remarkable-species-risk-iucn-red-list"
+    }
+  ],
+  "manifesto": [
+    "Healthy species",
+    "Healthy ecosystems",
+    "A healthier tomorrow"
+  ],
+  "sourceNote": "Animal count: Catalogue of Life, 26 August 2026. Assessment and threat counts: IUCN Red List 2026-1, 9 July 2026. The IUCN totals span all assessed taxonomic groups."
+}

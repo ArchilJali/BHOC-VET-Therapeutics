@@ -1,0 +1,34 @@
+{
+  "blocks": [
+    {
+      "type": "hero",
+      "file": "blocks/hero.json",
+      "enabled": true
+    },
+    {
+      "type": "biodiversity",
+      "file": "blocks/biodiversity.json",
+      "enabled": true
+    },
+    {
+      "type": "species",
+      "file": "blocks/species.json",
+      "enabled": true
+    },
+    {
+      "type": "science",
+      "file": "blocks/science.json",
+      "enabled": true
+    },
+    {
+      "type": "mission",
+      "file": "blocks/mission.json",
+      "enabled": true
+    },
+    {
+      "type": "pillars",
+      "file": "blocks/pillars.json",
+      "enabled": true
+    }
+  ]
+}

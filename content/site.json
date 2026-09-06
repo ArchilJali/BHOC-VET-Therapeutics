@@ -1,0 +1,56 @@
+{
+  "name": "BHOC Veterinary",
+  "alternateNames": [
+    "BHOC Vet",
+    "BHOC Veterinary Therapeutics"
+  ],
+  "canonical": "https://bhocvet.com/",
+  "title": "BHOC Veterinary | Biological Hemoglobin Oxygen Carrier",
+  "description": "BHOC Veterinary, led by Archil Jaliashvili, explores Biological Hemoglobin Oxygen Carrier science and precision oxygen therapeutics for animal health and biodiversity.",
+  "author": {
+    "name": "Archil Jaliashvili",
+    "givenName": "Archil",
+    "familyName": "Jaliashvili",
+    "url": "https://www.linkedin.com/in/archil-jaliashvili-98804927b/"
+  },
+  "parent": {
+    "name": "BHOC Therapeutics",
+    "url": "https://bhoctherapeutics.com/"
+  },
+  "primaryTopic": "Veterinary oxygen carrier",
+  "topics": [
+    "Biological Hemoglobin Oxygen Carrier",
+    "Precision Oxygen Therapeutics",
+    "Animal health",
+    "Species protection",
+    "Biodiversity"
+  ],
+  "language": "en",
+  "updated": "2026-09-06",
+  "socialImage": {
+    "src": "assets/bhoc-species-biodiversity-initiative-logo.png",
+    "alt": "BHOC Species and Biodiversity Protection Initiative logo",
+    "width": 325,
+    "height": 408
+  },
+  "footer": {
+    "copyright": "BHOC Veterinary. Precision Oxygen Therapeutics.",
+    "note": "Research and development initiative. Species shown illustrate biodiversity and comparative biology; they do not indicate approved BHOC uses.",
+    "links": [
+      {
+        "label": "BHOC Therapeutics",
+        "href": "https://bhoctherapeutics.com/"
+      },
+      {
+        "label": "Scientific references",
+        "href": "#references",
+        "dialog": "references-dialog"
+      },
+      {
+        "label": "Contact",
+        "href": "#contact",
+        "dialog": "contact-dialog"
+      }
+    ]
+  }
+}

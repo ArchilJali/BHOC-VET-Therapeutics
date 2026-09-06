@@ -1,0 +1,50 @@
+{
+  "logo": {
+    "src": "assets/reference-veterinary-wordmark.webp",
+    "alt": "BHOC Veterinary",
+    "width": 121,
+    "height": 47
+  },
+  "navigation": [
+    {
+      "label": "Home",
+      "href": "#home"
+    },
+    {
+      "label": "Science",
+      "href": "#science"
+    },
+    {
+      "label": "Species",
+      "href": "#species"
+    },
+    {
+      "label": "Applications",
+      "href": "#applications",
+      "dialog": "applications-dialog"
+    },
+    {
+      "label": "Biodiversity",
+      "href": "#biodiversity"
+    },
+    {
+      "label": "About",
+      "href": "#about",
+      "dialog": "about-dialog"
+    },
+    {
+      "label": "Contact",
+      "href": "#contact",
+      "dialog": "contact-dialog"
+    }
+  ],
+  "button": {
+    "label": "A healthier tomorrow for all species",
+    "href": "#mission"
+  },
+  "wordmark": {
+    "letters": "BHOC",
+    "accentIndex": 2,
+    "subtitle": "VETERINARY"
+  }
+}

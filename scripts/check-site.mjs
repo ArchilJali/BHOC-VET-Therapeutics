@@ -1,0 +1,13 @@
+import fs from 'node:fs/promises';import path from 'node:path';import assert from 'node:assert/strict';import {fileURLToPath} from 'node:url';
+const root=path.dirname(path.dirname(fileURLToPath(import.meta.url))),out=path.resolve(root,process.argv[2]||'dist'),html=await fs.readFile(path.join(out,'index.html'),'utf8');
+assert.equal((html.match(/<h1\b/g)||[]).length,1,'Exactly one H1');
+const ids=[...html.matchAll(/\bid="([^"]+)"/g)].map(m=>m[1]);assert.equal(new Set(ids).size,ids.length,'No duplicate IDs');
+for(const m of html.matchAll(/<img\b[^>]*>/g)){assert.match(m[0],/\balt="/,'Image needs ALT');assert.match(m[0],/\bwidth="\d+"/);assert.match(m[0],/\bheight="\d+"/);}
+for(const m of html.matchAll(/(?:src|href)="\.\/([^"?#]+)[^"]*"/g))await fs.access(path.join(out,m[1]));
+const structured=JSON.parse(html.match(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/)[1]);const graph=structured['@graph'];assert.equal(graph.find(x=>x['@type']==='WebSite').name,'BHOC Veterinary');assert.equal(graph.find(x=>x['@type']==='Person').name,'Archil Jaliashvili');assert.equal(graph.find(x=>x['@type']==='WebSite').alternateName.length,2);
+assert.match(html,/rel="canonical" href="https:\/\/bhocvet.com\/"/);assert.match(html,/name="description" content="[^"]+"/);assert.doesNotMatch(html,/<meta name="keywords"/);assert.doesNotMatch(html,/https?:\/\/localhost|http:\/\/[^"<\s]*(?:\.css|\.js|\.webp)/);
+const manifest=JSON.parse(await fs.readFile(path.join(root,'content/homepage.json'),'utf8'));
+const before=[];for(const b of manifest.blocks.filter(b=>b.enabled)){const d=JSON.parse(await fs.readFile(path.join(root,'content',b.file),'utf8'));const {default:render}=await import('../src/blocks/'+b.type+'.mjs');before.push({b,d,render,html:render(d)});}
+const target=before.find(x=>x.b.type==='science');const edit=structuredClone(target.d);edit.description='An independently updated paragraph with a link described in content.';assert.notEqual(target.render(edit),target.html);for(const b of before.filter(x=>x!==target))assert.equal(b.render(b.d),b.html,'Editing science leaves '+b.b.type+' unchanged');
+const {default:story}=await import('../src/blocks/story.mjs');const storyHTML=story({id:'research-update',heading:'A new update',paragraphs:['Text <script>alert(1)</script>'],link:{label:'Read more',href:'https://bhoctherapeutics.com/'}});assert.match(storyHTML,/A new update/);assert.doesNotMatch(storyHTML,/<script>/);assert.match(storyHTML,/&lt;script&gt;/);
+console.log('Passed: semantic HTML, image ALT/dimensions/assets, identity/schema, canonical, escaping and independent block rendering.');

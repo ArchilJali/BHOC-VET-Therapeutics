@@ -1,0 +1,31 @@
+{
+  "id": "priorities",
+  "items": [
+    {
+      "title": "Animal health",
+      "text": "Better treatments. Better lives.",
+      "icon": "paw",
+      "href": "#applications",
+      "dialog": "applications-dialog"
+    },
+    {
+      "title": "Species preservation",
+      "text": "Supporting conservation through science.",
+      "icon": "tree",
+      "href": "#biodiversity"
+    },
+    {
+      "title": "A shared planet",
+      "text": "Healthier animals. Healthier ecosystems.",
+      "icon": "globe",
+      "href": "#mission"
+    },
+    {
+      "title": "One Health",
+      "text": "People. Animals. Planet.",
+      "icon": "people",
+      "href": "#about",
+      "dialog": "about-dialog"
+    }
+  ]
+}

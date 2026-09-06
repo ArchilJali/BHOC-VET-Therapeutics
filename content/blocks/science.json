@@ -1,0 +1,76 @@
+{
+  "id": "science",
+  "heading": [
+    "Nature kept the core.",
+    "Bioengineers build on",
+    "that foundation."
+  ],
+  "description": "Across vertebrate species, oxygen transport shares a common molecular foundation in hemoglobin.",
+  "button": {
+    "label": "Our science",
+    "href": "#oxygen-science",
+    "dialog": "science-dialog"
+  },
+  "discoverTitle": "Discover",
+  "slides": [
+    {
+      "type": "molecules",
+      "title": "Chlorophyll and heme",
+      "items": [
+        {
+          "name": "Chlorophyll a",
+          "caption": "Magnesium (Mg)",
+          "href": "https://www.ebi.ac.uk/chebi/CHEBI:18230",
+          "image": {
+            "src": "assets/chlorophyll.svg",
+            "alt": "Chlorophyll a molecular structure with magnesium at the centre",
+            "width": 250,
+            "height": 220
+          }
+        },
+        {
+          "name": "Heme in hemoglobin",
+          "caption": "Iron (Fe)",
+          "href": "https://www.ebi.ac.uk/chebi/CHEBI:26355",
+          "image": {
+            "src": "assets/heme.svg",
+            "alt": "Heme b molecular structure with iron at the centre",
+            "width": 250,
+            "height": 220
+          }
+        }
+      ]
+    },
+    {
+      "type": "story",
+      "title": "Related chemistry. Different roles.",
+      "paragraphs": [
+        "Heme and chlorophyll belong to the tetrapyrrole family. Their metals, ring structures and side chains differ.",
+        "Hemoglobin transports oxygen. Chlorophyll absorbs light in photosynthesis."
+      ],
+      "link": {
+        "label": "Explore the science",
+        "href": "#oxygen-science",
+        "dialog": "science-dialog"
+      }
+    },
+    {
+      "type": "story",
+      "title": "One living planet. Connected biology.",
+      "image": {
+        "src": "assets/bhoc-mountain-landscape-pencil.webp",
+        "alt": "Soft pencil drawing of mountains and their shared landscape",
+        "width": 450,
+        "height": 88
+      },
+      "paragraphs": [
+        "Animal health and species protection are at the heart of our initiative."
+      ],
+      "link": {
+        "label": "Explore the initiative",
+        "href": "#initiative",
+        "dialog": "about-dialog"
+      }
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "mission",
+  "heading": [
+    "Helping animals today.",
+    "Preserving tomorrow."
+  ],
+  "description": "Because every species matters.",
+  "image": {
+    "src": "assets/bhoc-mountain-landscape-pencil.webp",
+    "alt": "",
+    "width": 450,
+    "height": 88
+  },
+  "button": {
+    "label": "A healthier tomorrow for all species",
+    "href": "#contact",
+    "dialog": "contact-dialog"
+  }
+}

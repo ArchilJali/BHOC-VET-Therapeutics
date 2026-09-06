@@ -1,0 +1,43 @@
+name: Build and publish BHOC Veterinary
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: bhoc-veterinary-pages-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Assemble independent content blocks
+        run: node scripts/build.mjs --out _site
+      - name: Validate HTML, metadata, images and block isolation
+        run: node scripts/check-site.mjs _site
+      - name: Preserve the custom error page
+        run: cp 404.html _site/404.html
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: _site
+  deploy:
+    if: github.event_name != 'pull_request'
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Publish checked website
+        id: deployment
+        uses: actions/deploy-pages@v4

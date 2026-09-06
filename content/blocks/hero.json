@@ -1,0 +1,45 @@
+{
+  "id": "home",
+  "image": {
+    "src": "assets/reference-wildlife-scene.webp",
+    "alt": "Pencil illustration of a lion, giraffe, horse, elephant, cat, wirehaired dachshund, camel, orangutan and marine turtle in a warm landscape. A small dog peeks through the distant grass.",
+    "width": 825,
+    "height": 469
+  },
+  "initiative": {
+    "image": {
+      "src": "assets/reference-initiative-mark.webp",
+      "alt": "BHOC Species and Biodiversity Protection Initiative. Wildlife surrounds the Earth inside a green oxygen symbol.",
+      "width": 318,
+      "height": 317
+    },
+    "title": "Species & Biodiversity Protection Initiative",
+    "tagline": "One Oxygen. Every Species. One Living Planet.",
+    "promise": "Protect Life. Preserve Species. Safeguard Biodiversity.",
+    "link": {
+      "href": "#initiative",
+      "dialog": "about-dialog",
+      "label": "Explore the initiative"
+    }
+  },
+  "heading": [
+    "Biological Hemoglobin",
+    "Oxygen Carrier BHOC"
+  ],
+  "subheading": "A new perspective in Precision Oxygen Therapeutics",
+  "description": [
+    "Designed for blood type independence.",
+    "Built for research across species."
+  ],
+  "actions": [
+    {
+      "label": "Our mission",
+      "href": "#mission"
+    },
+    {
+      "label": "Our science",
+      "href": "#science",
+      "style": "outline"
+    }
+  ]
+}
