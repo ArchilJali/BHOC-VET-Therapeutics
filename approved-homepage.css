@@ -1,0 +1,125 @@
+/* Approved 6 September 2026. Artwork is copied from the exact approved source.
+   Cropping hides mockup UI; it never redraws, recolors or moves an animal. */
+:root{--ink:#37474b;--muted:#526166;--orange:#e65035;--orange-dark:#ba3928;--cream:#fff9f3;--line:#df8a78;--page:1280px}
+.site-header{height:76px;padding:10px 3.7%;gap:19px}
+.wordmark{width:133px;line-height:1}
+.wordmark img{width:100%;height:auto;mix-blend-mode:multiply}
+.primary-nav{gap:22px}
+.primary-nav>a{font-size:14px}
+.button{background:linear-gradient(115deg,#ef7150,#e9462c);border-color:#e95a3b;letter-spacing:.025em;box-shadow:inset 0 1px 0 #ffffff50}
+.header-cta,.mission-banner>.button{background:linear-gradient(115deg,#ef7150,#e9462c);border-color:#e95a3b;color:#fff;min-width:0;width:230px;font-size:13px;padding:8px 22px;min-height:48px}
+.header-cta:hover,.mission-banner>.button:hover{background:linear-gradient(115deg,#e96445,#cc4029);color:#fff;border-color:#cc4029}
+.header-cta svg,.mission-banner>.button svg{position:static;width:15px;height:15px;margin-left:-5px}
+.button-outline{background:#fff8;box-shadow:none;color:var(--ink)}
+.hero{aspect-ratio:1122/548;min-height:0;background:linear-gradient(111deg,#fffdfa 2%,#fff9f0 24%,#fce6d4 64%,#fbd9c1 100%)}
+.hero-artwork{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.hero-artwork>.hero-art{position:absolute;inset:0;width:100%;height:auto;max-width:none;object-fit:initial;clip-path:polygon(29.3% 10.873%,67.65% 10.873%,67.65% 58.971%,100% 58.971%,100% 100%,29.3% 100%)}
+.initiative-logo{width:28.966%;left:1.7825%;top:13.138%;mix-blend-mode:normal;display:block}
+.initiative-logo img{width:100%;height:auto}
+.initiative-logo:hover{filter:brightness(.985)}
+.hero-copy{left:67.8%;right:3.5%;top:23.5%}
+.hero-copy h1{font-size:clamp(32px,3.03vw,39px);letter-spacing:-.052em;line-height:1.025}
+.hero-copy p{font-size:clamp(14px,1.18vw,16px);line-height:1.28;margin-top:13px}
+.hero-actions{gap:10px;margin-top:17px}
+.hero-actions .button{font-size:12px;min-height:36px;padding:8px 18px;letter-spacing:0}
+.quiet-link{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:5px}
+.quiet-link:hover{color:#774f3d}
+.stats-grid{grid-template-columns:1fr 1fr 1fr .42fr}
+.stat{min-height:117px}
+.stat strong{color:#d8422c;font-size:clamp(37px,3.75vw,49px)}
+.stat>span:not(.sr-only){font-size:14px}
+.stat svg{color:var(--ink)}
+.stat-manifesto{font-size:12px;letter-spacing:1.3px;padding-left:26px}
+.section-kicker h2{font-size:16px}
+.data-note{padding-bottom:5px}
+.species-section{padding:12px 4.2% 14px}
+.section-topline h2{font-size:14px;letter-spacing:.03em}
+.species-track{gap:12px;padding-top:7px}
+.species-card{flex-basis:calc((100% - 60px)/6);display:block}
+.species-card>.portrait{display:block;width:100%;height:clamp(105px,10.52vw,134px);mix-blend-mode:multiply}
+.portrait img{width:100%;height:100%;object-fit:contain}
+.species-card>.art-crop{height:clamp(105px,10.52vw,134px);width:100%;margin:0}
+.species-card h3{font-size:16px;margin-top:4px;line-height:1.2}
+.species-card p{font-size:14px;line-height:1.23;min-height:52px;margin-top:4px}
+.species-prev,.species-next{top:calc(50% - 33px)}
+.round-control{color:#435d5a;border-color:#a5b9b5;min-width:40px;min-height:40px}
+.science-section{grid-template-columns:.95fr 1fr;gap:8.5%;padding-top:16px;padding-bottom:18px}
+.science-copy{display:flex;flex-direction:column;align-items:flex-start}
+.science-copy h2{font-size:clamp(34px,3.13vw,42px);line-height:1.035}
+.science-copy p{font-size:17px;line-height:1.35;margin-top:13px;max-width:470px}
+.science-copy .button{margin-top:auto;padding:9px 26px;min-height:38px}
+.science-carousel{border:1px solid #cdd6d5;border-radius:7px;align-self:stretch;padding-bottom:27px;background:#fff;min-height:268px;box-shadow:none}
+.discover-heading{font:400 16px var(--sans);padding:6px 14px;border-bottom:1px solid #dbe0df;margin:0}
+.science-panel{min-height:213px;padding:9px 17px 0}
+.molecular-pair{display:grid;grid-template-columns:1fr 1fr;align-items:stretch;gap:13px}
+.molecular-pair figure{margin:0;min-width:0;display:flex;flex-direction:column;text-align:center}
+.molecular-pair h4{font:400 14px var(--sans);margin:0 0 3px;color:var(--ink)}
+.molecular-pair figure>a{display:block;flex:1;min-height:0}
+.molecular-pair img{width:100%;height:174px;object-fit:contain}
+.molecular-pair figcaption{font-size:14px;color:var(--muted);padding-top:2px}
+.discover-story{display:block;padding:18px 25px 12px;min-height:213px}
+.discover-story h4{font:400 25px/1.1 var(--serif);margin:0 0 10px}
+.discover-story p{font-size:15px;line-height:1.35;margin:8px 0}
+.discover-story a{font-size:14px;display:inline-block;margin-top:8px}
+.discover-landscape{width:100%;height:69px;object-fit:cover;margin:-6px 0 12px}
+.carousel-dots{bottom:4px}
+.science-prev,.science-next{top:44%}
+.mission-banner{min-height:112px;padding:14px 4.3%;background:#f7e2d2}
+.landscape{opacity:1}
+.landscape img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;max-width:none}
+.mission-banner::after{background:linear-gradient(90deg,#fffaf3eb,transparent 55%,#fff5ecb5)}
+.mission-copy h2{font-size:30px;line-height:1.04}
+.mission-copy p{font-size:16px}
+.pillars{padding-top:13px;padding-bottom:13px;gap:21px;grid-template-columns:1fr 1.17fr 1.18fr .91fr}
+.pillars>a{gap:12px}
+.pillars strong{font-size:12px}
+.pillars small{font-size:12px}
+.pillar-icon{height:45px;width:45px;border-color:#688780}
+.site-footer{font-size:12px;line-height:1.5}
+.project-attribution{flex-basis:100%;font-size:13px}
+.project-attribution a{text-decoration:underline;text-underline-offset:3px}
+.footer-note{max-width:100%;font-size:12px}
+.species-detail-visual .portrait{display:block;width:100%;height:145px}
+
+@media(max-width:1150px) and (min-width:1001px){
+ .site-header{gap:11px}.primary-nav{gap:16px}.primary-nav>a{font-size:13px}.wordmark{width:120px}.header-cta{width:204px;font-size:12px}.search-toggle{min-width:34px;padding:5px}
+ .hero-copy h1{font-size:32px}.hero-copy p{font-size:14px;line-height:1.22}.hero-actions{margin-top:12px;gap:8px}.hero-actions .button{font-size:11px;padding:8px 16px}
+ .species-card p{font-size:13px}.science-copy p{font-size:16px}.science-copy h2{font-size:34px}.molecular-pair img{height:164px}
+}
+@media(max-width:1000px){
+ .site-header{height:72px;background:linear-gradient(100deg,#fffcf8,#fae0ca);padding:10px 4%;gap:12px;position:absolute}
+ .wordmark{width:117px}.menu-toggle{display:flex;flex-direction:column;justify-content:center;gap:5px;order:5}.menu-toggle span{display:block;width:22px;height:1.5px;background:var(--ink)}
+ .header-cta{margin-left:auto;width:209px;font-size:12px;min-height:44px}.search-toggle{min-width:40px}.primary-nav{display:none;position:absolute;top:72px;left:0;right:0;background:#fffaf4;padding:20px;box-shadow:0 12px 20px #37474b12;gap:10px;flex-wrap:wrap;justify-content:flex-start}.primary-nav.is-open{display:flex}.primary-nav>a{font-size:16px;padding:10px 15px}
+ .hero{display:block;aspect-ratio:auto;min-height:0;padding-top:calc(48.842vw + 30px);padding-bottom:0;background:linear-gradient(110deg,#fffcf8,#fbe2cd)}
+ .hero-artwork{top:30px;left:0;width:100%;height:48.842vw;inset:auto auto auto 0;position:absolute;top:30px}
+ .hero-artwork>.hero-art{width:100%;height:auto;inset:0;object-fit:initial}
+ .initiative-logo{left:1.7825%;top:calc(6.417vw + 30px);width:28.966%}
+ .hero-copy{position:relative;inset:auto;padding:23px 5% 29px;text-align:center;background:linear-gradient(#fffaf5,#fff);width:100%;max-width:none}
+ .hero-copy h1{font-size:38px;line-height:1.06}.hero-copy p{max-width:620px;margin:15px auto 0;font-size:16px;line-height:1.45}.hero-actions{justify-content:center;margin-top:19px;gap:14px}.hero-actions .button{font-size:13px;min-height:42px;padding:10px 24px}
+ .species-card{flex-basis:calc((100% - 36px)/4)}.species-card>.portrait,.species-card>.art-crop{height:128px}.species-card p{font-size:14px}
+ .science-section{grid-template-columns:1fr 1fr;gap:6%;padding:24px 4.5%}.science-copy h2{font-size:32px}.science-copy p{font-size:16px}.science-copy .button{margin-top:24px}
+ .science-carousel{min-height:277px}.molecular-pair{gap:8px;padding:10px 14px 0}.molecular-pair h4{font-size:14px}.molecular-pair img{height:172px}.molecular-pair figcaption{font-size:13px}.discover-story{padding:17px 20px}.discover-story h4{font-size:24px}.discover-story p{font-size:15px}
+ .stat-manifesto{padding-left:17px;font-size:11px;letter-spacing:.6px}.stat strong{font-size:39px}.stat>span:not(.sr-only){font-size:14px}
+ .pillars{grid-template-columns:1fr 1fr;gap:20px 24px}.pillars strong{font-size:14px}.pillars small{font-size:14px}.pillars>a:nth-child(3)::before{display:none}
+}
+@media(max-width:700px){
+ .site-header{padding:10px 4%;gap:7px}.wordmark{width:112px}.header-cta{width:180px;font-size:11px;padding:7px 12px}.search-toggle{margin-left:auto}.header-cta{display:none}
+ .hero{padding-top:calc(48.842vw + 50px)}.hero-artwork{top:50px}.initiative-logo{top:calc(6.417vw + 50px)}
+ .hero-copy{padding:24px 6% 27px}.hero-copy h1{font-size:36px}.hero-copy p{font-size:16px}
+ .biodiversity{padding:13px 5% 0}.stats-grid{grid-template-columns:1fr 1fr 1fr}.stat{min-height:118px}.stat strong{font-size:clamp(24px,5.1vw,35px)}.stat>span:not(.sr-only){font-size:12px;text-align:center;max-width:105px;line-height:1.25}.stat-prefix{font-size:13px!important}.stat:first-child strong{margin-top:15px}.stat svg{height:26px;width:26px}.stat-manifesto{grid-column:1/-1;display:block;text-align:center;padding:8px 0 11px;font-size:12px;letter-spacing:.8px}.stat-manifesto br{display:none}.stat-manifesto br::after{content:' '}.stat-manifesto span{display:none}.stat-manifesto::before{display:none}.stat-manifesto{word-spacing:3px}.data-note{font-size:12px}
+ .species-section{padding:15px 6% 20px}.section-topline h2{font-size:14px;letter-spacing:0}.section-topline{gap:10px}.section-topline .text-link{font-size:13px;gap:6px}.species-track{gap:14px}.species-card{flex-basis:calc((100% - 28px)/3)}.species-card>.portrait,.species-card>.art-crop{height:112px}.species-card h3{font-size:16px}.species-card p{font-size:13px}.species-prev{left:-21px}.species-next{right:-21px}.round-control{width:38px;height:38px;min-width:38px;min-height:38px}
+ .science-section{display:grid;grid-template-columns:1fr;gap:25px;padding:23px 7% 30px}.science-copy h2{font-size:36px}.science-copy p{font-size:17px;max-width:100%;line-height:1.4}.science-copy .button{margin-top:20px}.science-carousel{min-height:278px}.molecular-pair img{height:183px}.science-panel{min-height:220px}.molecular-pair{padding:9px 17px 0}.molecular-pair h4,.molecular-pair figcaption{font-size:14px}.discover-story{padding:18px 24px}.discover-story p{font-size:16px}.discover-landscape{height:64px}
+ .mission-banner{padding:23px 6%;min-height:191px;display:flex;align-items:flex-start;flex-direction:column;gap:18px}.mission-copy h2{font-size:32px}.mission-copy p{font-size:16px}.mission-banner>.button{margin:0;width:232px;min-height:47px;font-size:12px}.landscape img{width:100%;height:100%;object-fit:cover;inset:0}.mission-banner::after{background:linear-gradient(90deg,#fff6eae8,#fff4e66b)}
+ .pillars{padding:21px 6%;gap:24px 16px}.pillar-icon{width:37px;height:37px}.pillar-icon svg{width:26px;height:26px}.pillars>a{gap:9px}.pillars strong{font-size:12px}.pillars small{font-size:13px}.pillars>a::before{display:none!important}.site-footer{padding:19px 6% 24px}
+}
+@media(max-width:450px){
+ .hero-copy h1{font-size:32px}.hero-copy{padding-left:5%;padding-right:5%}.hero-actions .button{padding:10px 21px;font-size:12px}.section-kicker h2{font-size:15px}.section-kicker>span:last-child{width:39px}
+ .species-card{flex-basis:calc((100% - 14px)/2)}.species-card>.portrait,.species-card>.art-crop{height:126px}.species-card p{font-size:14px}.species-prev,.species-next{top:51px}
+ .science-copy h2{font-size:33px}.science-section{padding-left:7%;padding-right:7%}.molecular-pair{gap:4px;padding-left:10px;padding-right:10px}.molecular-pair img{height:157px}.molecular-pair h4,.molecular-pair figcaption{font-size:13px}.science-carousel{min-height:258px}.science-panel{min-height:201px}
+ .stat strong{font-size:clamp(19px,6vw,24px)}.stat>span:not(.sr-only){font-size:12px}.stat{min-height:113px}.stats-grid{gap:4px}.stat-manifesto{font-size:11px;letter-spacing:.3px}
+ .pillars small{font-size:12px}.pillars strong{font-size:12px}.pillar-icon{width:31px;height:31px}.pillar-icon svg{width:23px;height:23px}
+}
+
+.art-crop img{transform:translateY(calc(-1 * var(--y) / var(--source-height,1402) * 100%))}
+
+@media(max-width:450px){.species-prev{left:-18px}.species-next{right:-18px}}

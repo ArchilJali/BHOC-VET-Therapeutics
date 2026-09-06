@@ -36,32 +36,33 @@
   });
 
   const species = {
-    dog: { name: 'Dog', sub: 'Companion animals · Comparative biology', text: 'Dogs have multiple blood-group antigens. DEA 1 is a key blood group in canine transfusion medicine, alongside other antigen systems. Blood typing and compatibility testing support donor selection.', context: 'Oxyglobin has an FDA approval history for anemia in dogs. This product-specific precedent helps frame veterinary oxygen-carrier research.', source: 'https://eclinpath.com/hemostasis/transfusion-medicine/blood-types/', sourceLabel: 'Cornell eClinPath: blood types' },
-    cat: { name: 'Cat', sub: 'Companion animals · Comparative biology', text: 'The feline AB blood-group system includes types A, B and AB. Cats also have other red-cell antigens, so AB typing alone does not establish complete transfusion compatibility.', context: 'Shared hemoglobin chemistry coexists with species-specific compatibility and clinical requirements.', source: 'https://eclinpath.com/hemostasis/transfusion-medicine/blood-types/', sourceLabel: 'Cornell eClinPath: blood types' },
-    camel: { name: 'Camel', sub: 'Adaptation · Comparative biology', text: 'Camels illustrate how mammals adapt to demanding environments while retaining the core hemoglobin-based mechanism of oxygen transport.', context: 'Comparative biology helps us ask better research questions. Shared physiology does not establish common dosing, safety or treatment efficacy.', source: 'https://bhoctherapeutics.com/science/', sourceLabel: 'Explore BHOC oxygen-delivery science' },
-    orangutan: { name: 'Orangutan', sub: 'Forest biodiversity · Conservation', text: 'Orangutans are Critically Endangered. Protecting these great apes connects habitat conservation, animal health and the future of forest ecosystems.', context: 'The BHOC initiative brings species protection into the conversation about future animal-health research. This is a conservation focus, not a therapeutic approval claim.', source: 'https://iucn.org/story/202510/move-or-not-move-new-iucn-ssc-guidelines-follow-precautionary-principle-and-prioritise', sourceLabel: 'IUCN: orangutan conservation' },
-    turtle: { name: 'Marine Turtle', sub: 'Marine biodiversity · Conservation', text: 'Marine turtles face species-specific conservation threats. The hawksbill turtle is classified globally as Critically Endangered by the IUCN Red List.', context: 'Marine turtle imagery represents a broader biodiversity mission. Conservation status varies by species and population.', source: 'https://iucn.org/story/202603/guardians-reef-protecting-hawksbill-turtle-arnavon', sourceLabel: 'IUCN: protecting the hawksbill turtle' },
-    horse: { name: 'Horse', sub: 'Equine health · Comparative biology', text: 'Horses have distinct red-cell blood groups and transfusion requirements. The underlying hemoglobin-based transport of oxygen is shared with other mammals.', context: 'Comparative physiology provides a research foundation; each veterinary application still needs its own evidence.', source: 'https://eclinpath.com/hemostasis/transfusion-medicine/blood-types/', sourceLabel: 'Cornell eClinPath: blood types' },
-    elephant: { name: 'Elephant', sub: 'Wildlife health · Conservation', text: 'Elephants bring together extraordinary mammalian biology and complex animal-health and conservation needs.', context: 'The initiative explores the connection between future veterinary science and species protection, without implying an approved treatment for elephants.', source: 'https://www.iucnredlist.org/', sourceLabel: 'Explore the IUCN Red List' },
-    lion: { name: 'Lion', sub: 'Wildlife health · Shared habitats', text: 'Lions illustrate the connection between wildlife health, functioning habitats and the wider web of biodiversity.', context: 'A shared biological need for oxygen inspires comparative research. It does not remove the need for species-specific safety and efficacy studies.', source: 'https://www.iucnredlist.org/', sourceLabel: 'Explore the IUCN Red List' }
+    dog: { name: 'Dog', sub: 'Companion animals. Comparative biology', text: 'Dogs have multiple blood group antigens. DEA 1 is a key blood group in canine transfusion medicine, alongside other antigen systems. Blood typing and compatibility testing support donor selection.', context: 'Oxyglobin has an FDA approval history for anemia in dogs. This product specific precedent helps frame veterinary oxygen carrier research.', source: 'https://eclinpath.com/hemostasis/transfusion-medicine/blood-types/', sourceLabel: 'Cornell eClinPath: blood types' },
+    cat: { name: 'Cat', sub: 'Companion animals. Comparative biology', text: 'The feline AB blood group system includes types A, B and AB. Cats also have other red cell antigens, so AB typing alone does not establish complete transfusion compatibility.', context: 'Shared hemoglobin chemistry coexists with species specific compatibility and clinical requirements.', source: 'https://eclinpath.com/hemostasis/transfusion-medicine/blood-types/', sourceLabel: 'Cornell eClinPath: blood types' },
+    camel: { name: 'Camel', sub: 'Adaptation. Comparative biology', text: 'Camels illustrate how mammals adapt to demanding environments while retaining the core hemoglobin based mechanism of oxygen transport.', context: 'Comparative biology helps us ask better research questions. Shared physiology does not establish common dosing, safety or treatment efficacy.', source: 'https://bhoctherapeutics.com/science/', sourceLabel: 'Explore BHOC oxygen delivery science' },
+    orangutan: { name: 'Orangutan', sub: 'Forest biodiversity. Conservation', text: 'Orangutans are Critically Endangered. Protecting these great apes connects habitat conservation, animal health and the future of forest ecosystems.', context: 'The BHOC initiative brings species protection into the conversation about future animal health research. This is a conservation focus, not a therapeutic approval claim.', source: 'https://iucn.org/story/202510/move-or-not-move-new-iucn-ssc-guidelines-follow-precautionary-principle-and-prioritise', sourceLabel: 'IUCN: orangutan conservation' },
+    panda: { name: 'Giant Panda', sub: 'Species conservation. Biodiversity protection', text: 'The giant panda represents the connection between animal health, habitat protection and the future of biodiversity.', context: 'Different species share a biological need for oxygen. Their physiology and conservation needs guide our research questions.', source: 'https://www.iucnredlist.org/', sourceLabel: 'Explore the IUCN Red List' },
+    turtle: { name: 'Marine Turtle', sub: 'Marine biodiversity. Conservation', text: 'Marine turtles face species specific conservation threats. The hawksbill turtle is classified globally as Critically Endangered by the IUCN Red List.', context: 'Marine turtle imagery represents a broader biodiversity mission. Conservation status varies by species and population.', source: 'https://iucn.org/story/202603/guardians-reef-protecting-hawksbill-turtle-arnavon', sourceLabel: 'IUCN: protecting the hawksbill turtle' },
+    horse: { name: 'Horse', sub: 'Equine health. Comparative biology', text: 'Horses have distinct red cell blood groups and transfusion requirements. The underlying hemoglobin based transport of oxygen is shared with other mammals.', context: 'Comparative physiology provides a research foundation; each veterinary application still needs its own evidence.', source: 'https://eclinpath.com/hemostasis/transfusion-medicine/blood-types/', sourceLabel: 'Cornell eClinPath: blood types' },
+    elephant: { name: 'Elephant', sub: 'Wildlife health. Conservation', text: 'Elephants bring together extraordinary mammalian biology and complex animal health and conservation needs.', context: 'The initiative explores the connection between future veterinary science and species protection, without implying an approved treatment for elephants.', source: 'https://www.iucnredlist.org/', sourceLabel: 'Explore the IUCN Red List' },
+    lion: { name: 'Lion', sub: 'Wildlife health. Shared habitats', text: 'Lions illustrate the connection between wildlife health, functioning habitats and the wider web of biodiversity.', context: 'A shared biological need for oxygen inspires comparative research. It does not remove the need for species specific safety and efficacy studies.', source: 'https://www.iucnredlist.org/', sourceLabel: 'Explore the IUCN Red List' }
   };
   function showSpecies(key, opener) {
     const entry = species[key];
     if (!entry) return;
     const content = $('#species-detail');
     content.replaceChildren();
-    const original = $(`.species-card[data-species="${key}"] .art-crop`);
+    const original = $(`.species-card[data-species="${key}"] .art-crop, .species-card[data-species="${key}"] .portrait`);
     if (original) { const image = original.cloneNode(true); const visual = document.createElement('div'); visual.className = 'species-detail-visual'; visual.append(image); content.append(visual); }
     const heading = document.createElement('h2'); heading.id = 'species-detail-heading'; heading.textContent = entry.name;
     const sub = document.createElement('p'); sub.className = 'small-copy'; sub.textContent = entry.sub;
     const body = document.createElement('p'); body.textContent = entry.text;
     const context = document.createElement('p'); context.textContent = entry.context;
-    const source = document.createElement('a'); source.href = entry.source; source.target = '_blank'; source.rel = 'noopener noreferrer'; source.textContent = `${entry.sourceLabel} ↗`;
+    const source = document.createElement('a'); source.href = entry.source; source.target = '_blank'; source.rel = 'noopener noreferrer'; source.textContent = `${entry.sourceLabel}`;
     content.append(heading, sub, body, context, source);
     openDialog('species-dialog', opener);
   }
   Object.entries(species).forEach(([key, value]) => { const button = document.createElement('button'); button.textContent = value.name; button.dataset.species = key; $('.all-species-grid').append(button); });
-  document.addEventListener('click', event => { const trigger = event.target.closest('[data-species]'); if (trigger) showSpecies(trigger.dataset.species, trigger); });
+  document.addEventListener('click', event => { const trigger = event.target.closest('[data-species]'); if (trigger) { event.preventDefault(); showSpecies(trigger.dataset.species, trigger); } });
 
   const track = $('#species-track');
   const prevSpecies = $('.species-prev');
@@ -87,22 +88,23 @@
   new ResizeObserver(updateSpeciesControls).observe(track);
   updateSpeciesControls();
 
-  const scienceTabs = $$('[data-tab]');
   const sciencePanels = $$('.science-panel');
   let scienceIndex = 0;
   function selectScience(index, focus = false) {
-    scienceIndex = (index + scienceTabs.length) % scienceTabs.length;
-    scienceTabs.forEach((tab, i) => { const selected = i === scienceIndex; tab.setAttribute('aria-selected', String(selected)); tab.tabIndex = selected ? 0 : -1; sciencePanels[i].hidden = !selected; });
+    scienceIndex = (index + sciencePanels.length) % sciencePanels.length;
+    sciencePanels.forEach((panel, i) => { panel.hidden = i !== scienceIndex; });
     $$('[data-slide]').forEach((dot, i) => { const selected = i === scienceIndex; dot.classList.toggle('selected', selected); if (selected) dot.setAttribute('aria-current', 'true'); else dot.removeAttribute('aria-current'); });
-    if (focus) scienceTabs[scienceIndex].focus();
+    $('#discover-announcement').textContent = sciencePanels[scienceIndex].getAttribute('aria-label');
+    if (focus) sciencePanels[scienceIndex].focus({ preventScroll: true });
   }
-  scienceTabs.forEach((tab, index) => {
-    tab.addEventListener('click', () => selectScience(index));
-    tab.addEventListener('keydown', event => { const keys = ['ArrowLeft', 'ArrowRight', 'Home', 'End']; if (!keys.includes(event.key)) return; event.preventDefault(); selectScience(event.key === 'Home' ? 0 : event.key === 'End' ? 2 : scienceIndex + (event.key === 'ArrowRight' ? 1 : -1), true); });
-  });
   $$('[data-slide]').forEach(dot => dot.addEventListener('click', () => selectScience(Number(dot.dataset.slide))));
   $('.science-prev').addEventListener('click', () => selectScience(scienceIndex - 1));
   $('.science-next').addEventListener('click', () => selectScience(scienceIndex + 1));
+  $('.science-carousel').addEventListener('keydown', event => {
+    if (!['ArrowLeft', 'ArrowRight', 'Home', 'End'].includes(event.key)) return;
+    event.preventDefault();
+    selectScience(event.key === 'Home' ? 0 : event.key === 'End' ? sciencePanels.length - 1 : scienceIndex + (event.key === 'ArrowRight' ? 1 : -1), true);
+  });
   let touchStartX = null;
   let touchStartY = null;
   $('.science-carousel').addEventListener('touchstart', event => { touchStartX = event.changedTouches[0].clientX; touchStartY = event.changedTouches[0].clientY; }, { passive: true });
@@ -123,12 +125,13 @@
     const results = searchIndex.filter(item => tokens.every(token => `${item.title} ${item.text}`.toLowerCase().includes(token)));
     const container = $('#search-results'); container.replaceChildren();
     $('#search-status').textContent = `${results.length} results`;
-    if (!results.length) { const p = document.createElement('p'); p.textContent = 'No matches yet. Try “oxygen”, “species” or “contact”.'; container.append(p); return; }
+    if (!results.length) { const p = document.createElement('p'); p.textContent = 'No matches yet. Try oxygen, species or contact.'; container.append(p); return; }
     results.forEach(item => { const button = document.createElement('button'); const name = document.createElement('span'); name.textContent = item.title; const tag = document.createElement('small'); tag.textContent = item.category; button.append(name, tag); button.addEventListener('click', () => { if (item.species) showSpecies(item.species, button); else if (item.dialog) openDialog(item.dialog, button); else { $('#search-dialog').close(); const target = $(item.anchor); target.scrollIntoView({ behavior: scrollBehavior() }); target.setAttribute('tabindex', '-1'); target.focus({ preventScroll: true }); } }); container.append(button); });
   }
   $('#site-search').addEventListener('input', event => renderSearch(event.target.value));
 
-  const hashDialogs = { '#contact': 'contact-dialog', '#about': 'about-dialog', '#applications': 'applications-dialog', '#references': 'references-dialog', '#oxygen-science': 'science-dialog' };
+  const hashDialogs = { '#contact': 'contact-dialog', '#about': 'about-dialog', '#initiative': 'about-dialog', '#all-species': 'all-species-dialog', '#applications': 'applications-dialog', '#references': 'references-dialog', '#oxygen-science': 'science-dialog' };
   if (hashDialogs[location.hash]) openDialog(hashDialogs[location.hash]);
+  else if (location.hash.startsWith('#species-')) showSpecies(location.hash.slice(9));
   if ('IntersectionObserver' in window) { const observer = new IntersectionObserver(entries => { entries.forEach(entry => { if (entry.isIntersecting) { $$('a', nav).forEach(link => link.classList.toggle('active', link.getAttribute('href') === `#${entry.target.id}`)); } }); }, { rootMargin: '-15% 0px -55% 0px' }); ['home', 'science', 'species', 'biodiversity'].forEach(id => observer.observe(document.getElementById(id))); }
 })();
