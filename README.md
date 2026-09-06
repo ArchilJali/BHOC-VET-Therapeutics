@@ -2,7 +2,7 @@
 
 Editable, independent homepage blocks for [bhocvet.com](https://bhocvet.com/), based on Archil's supplied wildlife mockup.
 
-**Start with [EDITING.md](EDITING.md).** Content and layout are separate. A wording change belongs in one content file, not in a screenshot or a page-sized image.
+**Start with [EDITING.md](EDITING.md).** Visual identity rules, including Rem’s canonical face, are in [DESIGN-RULES.md](DESIGN-RULES.md). Content and layout are separate. A wording change belongs in one content file, not in a screenshot or a page-sized image.
 
 ## Source map
 

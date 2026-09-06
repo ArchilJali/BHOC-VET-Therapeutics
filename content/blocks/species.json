@@ -13,8 +13,8 @@
       "description": "Multiple blood group systems",
       "href": "#species-dog",
       "image": {
-        "src": "assets/reference-dog-pencil.webp",
-        "alt": "Pencil portrait of a wirehaired dachshund",
+        "src": "assets/rem-wirehaired-dachshund-sketch.webp",
+        "alt": "Loose pencil sketch of Rem, a wirehaired dachshund",
         "width": 147,
         "height": 106
       }
@@ -25,8 +25,8 @@
       "description": "Three major blood types and additional antigens",
       "href": "#species-cat",
       "image": {
-        "src": "assets/reference-cat-pencil.webp",
-        "alt": "Pencil portrait of a tabby cat",
+        "src": "assets/cat-loose-pencil-sketch.webp",
+        "alt": "Loose pencil sketch of a tabby cat",
         "width": 140,
         "height": 106
       }
@@ -37,8 +37,8 @@
       "description": "Adaptations for arid environments",
       "href": "#species-camel",
       "image": {
-        "src": "assets/reference-camel-pencil.webp",
-        "alt": "Pencil portrait of a camel",
+        "src": "assets/camel-loose-pencil-sketch.webp",
+        "alt": "Loose pencil sketch of a camel",
         "width": 146,
         "height": 106
       }
@@ -49,8 +49,8 @@
       "description": "Forest ecosystems and species protection",
       "href": "#species-orangutan",
       "image": {
-        "src": "assets/reference-orangutan-pencil.webp",
-        "alt": "Pencil portrait of an orangutan",
+        "src": "assets/orangutan-loose-pencil-sketch.webp",
+        "alt": "Loose pencil sketch of an orangutan",
         "width": 157,
         "height": 106
       }
@@ -61,8 +61,8 @@
       "description": "Marine biodiversity and conservation",
       "href": "#species-turtle",
       "image": {
-        "src": "assets/reference-turtle-pencil.webp",
-        "alt": "Pencil illustration of a marine turtle",
+        "src": "assets/marine-turtle-loose-pencil-sketch.webp",
+        "alt": "Loose pencil sketch of a marine turtle",
         "width": 172,
         "height": 106
       }
@@ -73,8 +73,8 @@
       "description": "Species conservation and habitat protection",
       "href": "#species-panda",
       "image": {
-        "src": "assets/reference-panda-pencil.webp",
-        "alt": "Pencil portrait of a giant panda",
+        "src": "assets/panda-loose-pencil-sketch.webp",
+        "alt": "Loose pencil sketch of a giant panda",
         "width": 146,
         "height": 106
       }

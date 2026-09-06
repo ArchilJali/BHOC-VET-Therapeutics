@@ -3,3 +3,6 @@
 @media(max-width:600px){.block-species{padding:24px 22px 28px}.species-track{gap:18px;padding-left:2px;padding-right:2px}.species-card{flex-basis:calc((100% - 18px)/2)}.species-card .portrait{height:115px}.species-card p{font-size:14px}.block-species .section-topline{gap:10px}.block-species .eyebrow,.block-species .text-link{font-size:13px}.species-prev{left:-16px}.species-next{right:-16px}}
 /* Feather only the paper edge of each exact crop, so portraits meet the page naturally. */
 .species-card img{mask-image:linear-gradient(to right,transparent,#000 7%,#000 93%,transparent),linear-gradient(to bottom,transparent,#000 8%,#000 82%,transparent);mask-composite:intersect}
+
+/* Portrait-only scale. Preserve card geometry, captions and click targets. */
+.block-species .species-card img{transform:scale(.85);transform-origin:center bottom}
