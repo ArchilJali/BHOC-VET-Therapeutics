@@ -22,6 +22,6 @@ dialog{border:1px solid #f0dfd0;border-radius:18px;padding:44px;max-width:680px;
 .pillars strong,.pillars small,.science-tabs button,.science-tabs button span,.molecule figcaption small{font-size:max(12px,.75rem)}
 @media(max-width:540px){.stat-prefix{font-size:12px!important}.science-tabs button{white-space:normal}}
 
-/* Warm orange initiative buttons echo the upper sky in the approved visual. */
-.header-cta,.mission-banner>.button{background:linear-gradient(135deg,#ffa05e,#ffc18a);border-color:#ee934a;color:var(--ink)}
-.header-cta:hover,.mission-banner>.button:hover{background:linear-gradient(135deg,#f7964c,#ffb775);border-color:#df843d;color:var(--ink)}
+/* Soft cloud texture from the approved hero sky, with a warm orange wash. */
+.header-cta,.mission-banner>.button{background:linear-gradient(112deg,#ff9e5970,#ffefd857),url("./assets/animal-hero.webp") 98% 36%/500% auto;border-color:#edac76;color:var(--ink);box-shadow:inset 0 1px 0 #ffffff66}
+.header-cta:hover,.mission-banner>.button:hover{background:linear-gradient(112deg,#ffa96970,#fff4e269),url("./assets/animal-hero.webp") 98% 36%/500% auto;border-color:#e29c62;color:var(--ink)}
