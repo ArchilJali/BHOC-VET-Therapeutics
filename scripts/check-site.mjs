@@ -36,6 +36,11 @@ for(const [name,html] of htmlByPage){
   assert.match(html,/name="twitter:card" content="summary_large_image"/,`${name}: large social card`);
   assert.doesNotMatch(html,/<meta name="keywords"/,`${name}: no keyword stuffing`);
   assert.doesNotMatch(html,/https?:\/\/localhost|http:\/\/[^"<\s]*(?:\.css|\.js|\.webp)/,`${name}: no development URLs`);
+  const footer=html.match(/<footer class="site-footer">[\s\S]*?<\/footer>/)?.[0]||'';
+  assert.match(footer,/class="footer-bhoc">BH<span class="oxygen-initial">O<\/span>C<\/span>/,`${name}: exact BHOC footer wordmark`);
+  assert.equal((footer.match(/class="footer-link"/g)||[]).length,2,`${name}: only unique social links in footer`);
+  assert.doesNotMatch(footer,/>Publications<|>Contact<|>BHOC Therapeutics<|>VET Evidence Platform</,`${name}: no repeated navigation in footer`);
+  assert.match(footer,/First published <time datetime="2026-09-07">07 Sep 2026<\/time>.*1 update.*Last updated <time datetime="2026-09-07">07 Sep 2026<\/time>.*Version 26\.09\.07/,`${name}: publication history`);
 }
 
 const home=htmlByPage.get('index.html');

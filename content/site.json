@@ -26,7 +26,13 @@
     "Biodiversity"
   ],
   "language": "en",
-  "updated": "2026-09-06",
+  "updated": "2026-09-07",
+  "publication": {
+    "firstPublished": "2026-09-07",
+    "updates": 1,
+    "lastUpdated": "2026-09-07",
+    "version": "26.09.07"
+  },
   "sameAs": [
     "https://www.linkedin.com/company/bhoc-therapeutics/",
     "https://github.com/ArchilJali/BHOC-VET-Therapeutics"
@@ -41,26 +47,6 @@
     "copyright": "BHOC Veterinary. Precision Oxygen Therapeutics.",
     "note": "Research and development initiative. Species shown illustrate biodiversity and comparative biology; they do not indicate approved BHOC uses.",
     "links": [
-      {
-        "label": "BHOC Therapeutics",
-        "href": "https://bhoctherapeutics.com/",
-        "icon": "globe"
-      },
-      {
-        "label": "VET Evidence Platform",
-        "href": "https://archiljali.github.io/BHOC-VET-platform/",
-        "icon": "book"
-      },
-      {
-        "label": "Publications",
-        "href": "publications.html",
-        "icon": "book"
-      },
-      {
-        "label": "Contact",
-        "href": "contact.html",
-        "icon": "mail"
-      },
       {
         "label": "LinkedIn",
         "href": "https://www.linkedin.com/company/bhoc-therapeutics/",
