@@ -1,10 +1,10 @@
 {
   "id": "home",
   "image": {
-    "src": "assets/reference-wildlife-scene.webp",
-    "alt": "Pencil illustration of a lion, giraffe, horse, elephant, cat, wirehaired dachshund, camel, orangutan and marine turtle in a warm landscape. A small dog peeks through the distant grass.",
-    "width": 825,
-    "height": 469
+    "src": "assets/bhoc-wildlife-rainbow-20260906.png",
+    "alt": "Wildlife illustration with a lion, giraffe, horse, elephant, camel, panda, orangutan, domestic cat, wirehaired dachshund and marine turtle beneath a distant rainbow. A small dog peeks through the grass and birds of prey appear in the landscape.",
+    "width": 1672,
+    "height": 941
   },
   "initiative": {
     "image": {
@@ -22,15 +22,9 @@
       "label": "Explore the initiative"
     }
   },
-  "heading": [
-    "Biological Hemoglobin",
-    "Oxygen Carrier BHOC"
-  ],
-  "subheading": "A new perspective in Precision Oxygen Therapeutics",
-  "description": [
-    "Designed for blood type independence.",
-    "Built for research across species."
-  ],
+  "heading": "Precision Oxygen Therapeutics",
+  "subheading": "Biological Hemoglobin Oxygen Carrier BHOC",
+  "description": [],
   "actions": [
     {
       "label": "Our mission",
