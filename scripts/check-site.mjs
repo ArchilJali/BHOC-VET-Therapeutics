@@ -96,7 +96,7 @@ for(const [name,html] of htmlByPage){
   const footerHrefs=[...footer.matchAll(/href="([^"]+)"/g)].map(match=>match[1]);
   assert.equal(new Set(footerHrefs).size,footerHrefs.length,`${name}: footer destinations are not duplicated`);
   assert.match(footer,/Project lead: <strong>BHOC Team<\/strong>\./,`${name}: team footer attribution`);
-  assert.match(footer,/First published <time datetime="2026-09-07">07 Sep 2026<\/time>.*6 updates.*Last updated <time datetime="2026-09-07">07 Sep 2026<\/time>.*Version 26\.09\.07/,`${name}: publication history`);
+  assert.match(footer,/First published <time datetime="2026-09-07">07 Sep 2026<\/time>.*7 updates.*Last updated <time datetime="2026-09-07">07 Sep 2026<\/time>.*Version 26\.09\.07/,`${name}: publication history`);
 }
 
 const home=htmlByPage.get('index.html');
@@ -138,6 +138,8 @@ assert.match(home,/href="evidence\.html"[^>]*>Explore Evidence/);
 assert.match(home,/We be of one blood, ye and I\./);
 assert.match(home,/Rudyard Kipling, The Jungle Book/);
 assert.match(home,/One BHOC System\.<\/span> <span class="initiative-promise">For Every Species\./);
+assert.match(home,/Nature kept the core\./);
+assert.match(home,/href="science\.html#foundation"/);
 assert.doesNotMatch(home,/Healthy species|Healthy ecosystems|A healthier tomorrow/);
 
 assert.match(htmlByPage.get('science.html'),/https:\/\/archiljali\.github\.io\/BHOC-VET-platform\//);
@@ -149,7 +151,7 @@ assert.match(htmlByPage.get('evidence.html'),/>Regulatory records</);
 assert.match(htmlByPage.get('related-information.html'),/>Professional publications</);
 assert.match(htmlByPage.get('related-information.html'),/>Related scientific information</);
 assert.match(htmlByPage.get('related-information.html'),/>Conservation databases</);
-assert.match(htmlByPage.get('initiative.html'),/>Many species\. Many blood systems\. One evidence standard\./);
+assert.match(htmlByPage.get('initiative.html'),/>Many species\. Blood group systems, known and unknown\. One BHOC system\. One core design engineered by nature\./);
 assert.match(htmlByPage.get('contact.html'),/data-contact-email="info@bhoctherapeutics\.com"/);
 
 const redirect=await fs.readFile(path.join(out,'publications.html'),'utf8');
