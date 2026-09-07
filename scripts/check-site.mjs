@@ -96,7 +96,7 @@ for(const [name,html] of htmlByPage){
   const footerHrefs=[...footer.matchAll(/href="([^"]+)"/g)].map(match=>match[1]);
   assert.equal(new Set(footerHrefs).size,footerHrefs.length,`${name}: footer destinations are not duplicated`);
   assert.match(footer,/Project lead: <strong>BHOC Team<\/strong>\./,`${name}: team footer attribution`);
-  assert.match(footer,/First published <time datetime="2026-09-07">07 Sep 2026<\/time>.*4 updates.*Last updated <time datetime="2026-09-07">07 Sep 2026<\/time>.*Version 26\.09\.07/,`${name}: publication history`);
+  assert.match(footer,/First published <time datetime="2026-09-07">07 Sep 2026<\/time>.*5 updates.*Last updated <time datetime="2026-09-07">07 Sep 2026<\/time>.*Version 26\.09\.07/,`${name}: publication history`);
 }
 
 const home=htmlByPage.get('index.html');
@@ -137,6 +137,7 @@ assert.match(home,/long room-temperature shelf life/);
 assert.match(home,/href="evidence\.html"[^>]*>Explore Evidence/);
 assert.match(home,/We be of one blood, ye and I\./);
 assert.match(home,/Rudyard Kipling, The Jungle Book/);
+assert.match(home,/One BHOC System\.<\/span> <span class="initiative-promise">For Every Species\./);
 assert.doesNotMatch(home,/Healthy species|Healthy ecosystems|A healthier tomorrow/);
 
 assert.match(htmlByPage.get('science.html'),/https:\/\/archiljali\.github\.io\/BHOC-VET-platform\//);

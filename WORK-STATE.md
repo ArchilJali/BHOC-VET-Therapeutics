@@ -26,7 +26,7 @@ The old `publications.html` route is retained only as a `noindex,follow` redirec
 
 The footer follows the corporate information architecture in five compact columns: Product, Application, Evidence & Science, Initiative and Information. It keeps two distinct external actions, LinkedIn and the full VET Evidence Platform at `BHOC-platform/veterinary/Vet-index.html`. No footer destination is duplicated. The visible attribution is `Project lead: BHOC Team`; Archil Jaliashvili remains embedded in author, creator and structured-data metadata.
 
-The prepared revision line is `First published 07 Sep 2026 · 4 updates · Last updated 07 Sep 2026 · Version 26.09.07`. Each future public release must increment `publication.updates`, set `publication.lastUpdated`, and update the version in `content/site.json`.
+The prepared revision line is `First published 07 Sep 2026 · 5 updates · Last updated 07 Sep 2026 · Version 26.09.07`. Each future public release must increment `publication.updates`, set `publication.lastUpdated`, and update the version in `content/site.json`.
 
 ## Current verification
 
