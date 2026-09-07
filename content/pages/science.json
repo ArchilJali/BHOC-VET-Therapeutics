@@ -54,9 +54,9 @@
       "label": "Open the full evidence library",
       "href": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-index.html"
     },
-    "github": {
-      "label": "View the evidence source on GitHub",
-      "href": "https://github.com/ArchilJali/BHOC-platform/tree/main/veterinary"
+    "search": {
+      "label": "Search veterinary publications",
+      "href": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-search.html"
     }
   },
   "references": [

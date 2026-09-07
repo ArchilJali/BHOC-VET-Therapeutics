@@ -2,10 +2,17 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 
 const root=path.resolve(process.argv[2]||'_site');
-// Keep the excluded vendor domain out of authored content while retaining a
-// build-time guard against it being introduced again.
 const excludedHost=['hbo2','therapeutics.com'].join('');
-const forbidden=new RegExp(`https?:\\/\\/(?:www\\.)?${excludedHost.replace('.', '\\.')}(?:\\/|\\b)`,'i');
+const rules=[
+  {
+    label:'excluded outbound vendor domain',
+    regex:new RegExp(`https?:\\/\\/(?:www\\.)?${excludedHost.replace('.', '\\.')}(?:\\/|\\b)`,'i')
+  },
+  {
+    label:'GitHub veterinary source route',
+    regex:/https?:\/\/github\.com\/ArchilJali\/BHOC-platform\/tree\/main\/veterinary(?:\/|\b)/i
+  }
+];
 const files=[];
 
 async function walk(dir){
@@ -20,10 +27,12 @@ await walk(root);
 const violations=[];
 for(const file of files){
   const text=await fs.readFile(file,'utf8');
-  if(forbidden.test(text)) violations.push(path.relative(root,file));
+  for(const rule of rules){
+    if(rule.regex.test(text)) violations.push(`${path.relative(root,file)} (${rule.label})`);
+  }
 }
 if(violations.length){
-  console.error(`Excluded outbound vendor domain found in: ${violations.join(', ')}`);
+  console.error(`Forbidden outbound route found in: ${violations.join(', ')}`);
   process.exit(1);
 }
-console.log(`Passed: no excluded outbound vendor domain in ${files.length} checked files.`);
+console.log(`Passed: no forbidden outbound routes in ${files.length} checked files.`);

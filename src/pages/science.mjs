@@ -14,7 +14,7 @@ export default (page,scienceHTML)=>`<main id="main" class="subpage-main science-
   </section>
   <section id="evidence-platform" class="platform-band" aria-labelledby="evidence-platform-heading">
     <div><span class="page-eyebrow">${esc(page.platform.eyebrow)}</span><h2 id="evidence-platform-heading">${esc(page.platform.title)}</h2><p>${esc(page.platform.text)}</p></div>
-    <div class="platform-actions"><a class="button" ${attrs(page.platform.link)}><span>${esc(page.platform.link.label)}</span>${icon('arrow')}</a><a class="platform-library-link" ${attrs(page.platform.library)}><span>${esc(page.platform.library.label)}</span>${icon('arrow')}</a><a class="text-link light-link" ${attrs(page.platform.github)}>${icon('github')}<span>${esc(page.platform.github.label)}</span></a></div>
+    <div class="platform-actions"><a class="button" ${attrs(page.platform.link)}><span>${esc(page.platform.link.label)}</span>${icon('arrow')}</a><a class="platform-library-link" ${attrs(page.platform.library)}><span>${esc(page.platform.library.label)}</span>${icon('arrow')}</a><a class="text-link light-link" ${attrs(page.platform.search)}>${icon('search')}<span>${esc(page.platform.search.label)}</span></a></div>
   </section>
   <section id="science-sources" class="page-section source-section" aria-labelledby="science-sources-heading"><div class="section-heading"><span class="page-eyebrow">Source links</span><h2 id="science-sources-heading">Scientific context.</h2></div><div class="source-grid">${page.references.map(sourceLink).join('')}</div></section>
 </main>`;
