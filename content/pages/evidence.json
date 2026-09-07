@@ -67,11 +67,6 @@
       "description": "Historical Oxyglobin records are presented as product-, species-, jurisdiction- and indication-specific evidence.",
       "items": [
         {
-          "label": "Oxyglobin FDA and EMA regulatory hub",
-          "detail": "Combined veterinary regulatory chronology with routes to primary documents.",
-          "href": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-fda-ema.html"
-        },
-        {
           "label": "FDA detail: NADA 141-067",
           "detail": "United States approval record for anemia in dogs.",
           "href": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-FDA-registry.html"
