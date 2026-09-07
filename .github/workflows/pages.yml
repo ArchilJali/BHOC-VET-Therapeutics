@@ -24,6 +24,8 @@ jobs:
         run: cp dist/404.html _site/404.html
       - name: Validate HTML, metadata, images and block isolation
         run: node scripts/check-site.mjs _site
+      - name: Reject forbidden outbound domains
+        run: node scripts/check-forbidden-links.mjs _site
       - uses: actions/upload-pages-artifact@v4
         with:
           path: _site
