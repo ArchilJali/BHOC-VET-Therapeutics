@@ -1,5 +1,9 @@
 # BHOC Veterinary visual editing rules
 
+## Veterinary BHOC identity
+
+Across all BHOC Veterinary surfaces, the `O` in `BHOC` uses the veterinary Zoetis-orange token `#f65c00`. The `O` must remain a full-size capital letter on the same baseline and at the same typographic scale as `B`, `H` and `C`. Never render it as a small dot, superscript, subscript or reduced glyph. Browser/favicon identity uses a compact `BHOC` mark with `VET` beneath it; the `O` remains full-size and orange.
+
 ## Species row
 
 Archil has explicitly identified the dog in `assets/reference-dog-pencil.webp` as **Rem** and approved that exact face as the canonical identity for this row. Do not replace it with another dachshund, Eva, an older photo or a generated interpretation. Keep the original asset unchanged as the reference.
@@ -17,6 +21,8 @@ Describe concrete tradeoffs before undertaking a materially different approach. 
 ## Current hero and carousel
 
 The current approved display asset is `assets/bhoc-wildlife-rainbow-20260906-v2.webp`; its exact 1672 × 941 PNG is retained for Open Graph and WhatsApp sharing at `assets/bhoc-wildlife-rainbow-20260906-v2.png`. Preserve every animal's face, the composition, rainbow, birds and landscape. Do not make any broader redraw or substitution without a new explicit request. The heading is Precision Oxygen Therapeutics, followed by BHOC - Biological Hemoglobin Oxygen Carrier. The initiative image keeps its 318:317 aspect ratio, with height automatic at every viewport.
+
+The main hero media area is intended to accept additional approved images later. Preserve its carousel-ready structure and bottom navigation controls when new images are supplied; adding a slide must not require redesigning the hero copy or navigation.
 
 The species row uses original independent portrait nodes, circular arrow/dot selection and native touch scrolling. Dots are generated from the content item count. Keep the six approved sketches and Rem's identity intact.
 

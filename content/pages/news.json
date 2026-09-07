@@ -44,12 +44,12 @@
       }
     },
     {
-      "icon": "github",
-      "title": "BHOC Veterinary on GitHub",
-      "text": "Public website source, revision history and technical publication record.",
+      "icon": "book",
+      "title": "BHOC Veterinary Evidence Library",
+      "text": "Full source-linked veterinary bibliography, regulatory records and publication archive.",
       "link": {
-        "label": "Open GitHub repository",
-        "href": "https://github.com/ArchilJali/BHOC-VET-Therapeutics"
+        "label": "Open full evidence library",
+        "href": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-index.html"
       }
     }
   ]
