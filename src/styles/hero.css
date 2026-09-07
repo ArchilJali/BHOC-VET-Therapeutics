@@ -122,7 +122,8 @@
 
 .initiative-logo { display: block; width: 96px; }
 
-.initiative-logo img {
+.initiative-logo img,
+.initiative-page-mark img {
   width: 100%;
   height: auto;
   aspect-ratio: 318/317;
