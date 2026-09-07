@@ -1,0 +1,84 @@
+{
+  "slug": "initiative",
+  "navLabel": "Initiative",
+  "title": "BHOC Species and Biodiversity Protection Initiative",
+  "description": "Explore the BHOC Species and Biodiversity Protection Initiative connecting animal health, comparative biology, species conservation and veterinary science.",
+  "schemaType": "WebPage",
+  "seo": {
+    "primaryKeyword": "BHOC Species and Biodiversity Protection Initiative",
+    "secondaryKeywords": [
+      "animal health",
+      "species conservation",
+      "veterinary science",
+      "wildlife medicine",
+      "comparative biology"
+    ],
+    "supportingTerms": [
+      "IUCN Red List",
+      "Catalogue of Life",
+      "threatened species",
+      "One Health",
+      "biodiversity protection",
+      "multi-species research"
+    ]
+  },
+  "eyebrow": "BHOC Initiative",
+  "heading": "For every species. Wherever life is at risk.",
+  "lead": "One Oxygen. One Biology. One BHOC System.",
+  "image": {
+    "src": "assets/reference-initiative-mark.webp",
+    "alt": "BHOC Species and Biodiversity Protection Initiative mark with wildlife, Earth and a green oxygen symbol",
+    "width": 318,
+    "height": 317
+  },
+  "purpose": {
+    "eyebrow": "Purpose",
+    "title": "Animal health and species protection belong in the same future.",
+    "paragraphs": [
+      "The initiative connects oxygen-delivery science with animal health, comparative biology and the future of species conservation.",
+      "Different species share a fundamental biological need for oxygen, while every veterinary application still requires its own formulation, dosing, safety and efficacy evidence."
+    ]
+  },
+  "commitments": [
+    {
+      "icon": "paw",
+      "title": "Many species",
+      "text": "Connect animal health, wildlife medicine and conservation through responsible research."
+    },
+    {
+      "icon": "tree",
+      "title": "Many blood systems",
+      "text": "Respect species-specific blood groups, transfusion constraints and physiological differences."
+    },
+    {
+      "icon": "globe",
+      "title": "One evidence discipline",
+      "text": "Require product- and species-specific evidence for formulation, dosing, safety and efficacy."
+    }
+  ],
+  "conservation": {
+    "eyebrow": "Conservation context",
+    "title": "Source-linked global context.",
+    "text": "The IUCN Red List provides global conservation-status assessments. Catalogue of Life provides the global taxonomic catalogue used for the Animalia count.",
+    "links": [
+      {
+        "label": "IUCN Red List of Threatened Species",
+        "detail": "175,909 assessed species and 49,505 threatened species in the 9 July 2026 update.",
+        "href": "https://www.iucnredlist.org/"
+      },
+      {
+        "label": "Catalogue of Life global species catalogue",
+        "detail": "1,780,634 Animalia species in the 26 August 2026 release.",
+        "href": "https://www.catalogueoflife.org/"
+      }
+    ]
+  },
+  "action": {
+    "title": "Explore the species behind the initiative.",
+    "text": "Open the BHOC Veterinary species carousel and comparative-biology notes.",
+    "link": {
+      "label": "Explore Species",
+      "href": "index.html#species"
+    }
+  }
+}

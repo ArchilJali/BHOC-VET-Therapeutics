@@ -1,10 +1,29 @@
 {
   "slug": "contact",
   "navLabel": "Contact",
-  "title": "Contact BHOC Veterinary",
-  "description": "Contact BHOC Therapeutics about veterinary research, conservation collaboration and strategic partnerships.",
+  "title": "Contact BHOC Veterinary | Research & Partnerships",
+  "description": "Contact the BHOC Veterinary team about veterinary oxygen carrier research, animal health, conservation and strategic partnerships.",
+  "schemaType": "ContactPage",
+  "seo": {
+    "primaryKeyword": "Contact BHOC Veterinary",
+    "secondaryKeywords": [
+      "veterinary oxygen carrier research",
+      "animal health research",
+      "veterinary research collaboration",
+      "conservation collaboration",
+      "strategic partnerships"
+    ],
+    "supportingTerms": [
+      "companion-animal research",
+      "wildlife medicine",
+      "oxygen delivery research",
+      "clinical collaboration",
+      "biodiversity",
+      "BHOC Therapeutics"
+    ]
+  },
   "eyebrow": "Contact BHOC Veterinary",
-  "heading": "Start a conversation.",
+  "heading": "Contact BHOC Veterinary.",
   "lead": "Choose the website form or write directly to our team.",
   "email": "info@bhoctherapeutics.com",
   "form": {

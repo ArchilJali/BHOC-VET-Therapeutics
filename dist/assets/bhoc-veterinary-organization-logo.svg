@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title description">
+  <title id="title">BHOC Veterinary</title>
+  <desc id="description">BHOC Veterinary organization logo with a red O.</desc>
+  <rect width="512" height="512" rx="64" fill="#fffaf6"/>
+  <text x="256" y="274" text-anchor="middle" fill="#173d5d" font-family="Georgia, 'Times New Roman', serif" font-size="150" letter-spacing="-9">BH<tspan fill="#c93727">O</tspan>C</text>
+  <text x="256" y="340" text-anchor="middle" fill="#173d5d" font-family="Arial, Helvetica, sans-serif" font-size="38" font-weight="700" letter-spacing="13">VETERINARY</text>
+</svg>

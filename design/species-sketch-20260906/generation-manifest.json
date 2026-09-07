@@ -1,0 +1,68 @@
+[
+  {
+    "name": "dog",
+    "sourcePath": "/workspace/scratch/39c137da8f10/generated_images/exec-06c2e112-c8ca-42aa-8d17-1dca88b94277.png",
+    "selectedPath": "/workspace/scratch/39c137da8f10/species-sketch-assets/dog-loose-pencil-generated.png",
+    "prompt": "Use case: identity-preserve.\nAsset type: animal portrait pencil illustration for an existing website.\nInput image 1: the sole edit target. Edit this exact portrait in place.\nSubject: Rem, the exact canonical wirehaired dachshund in this edit target; preserve his individual identity, exact dark glossy eye locations, nose shape, long rough-haired eyebrows, moustache and bearded muzzle, floppy ears, expression, and head proportions.\nPrimary request: make ONLY the peripheral drawing finish looser and unfinished. Outside the facial features, lighten and break up the outer fur, shoulders, neck or outer silhouette into sparse individual warm-gray graphite pencil strokes and clearly visible short hatching; allow clean white paper to show between strokes and through deliberately incomplete outer edges. Reduce smooth filled or airbrushed rendering in these peripheral areas. Keep the face as close as possible to unchanged.\nStyle/medium: restrained hand-drawn graphite sketch, visible individual pencil lines, open white paper, unfinished drawing around the outside. Grayscale with a subtle warm graphite tone; no saturated colors.\nComposition/framing: exactly preserve the input image's 147:106 landscape aspect ratio, current center, animal size, scale, placement, visible extent and canvas framing. Do not shrink, enlarge, shift, rotate, crop, zoom, or reframe the animal. Keep the current original facial features registered in the same relative pixel locations.\nConstraints: preserve all facial landmarks, eye/nose/muzzle/ear position, face anatomy and identity, silhouette geometry, pose and species. Change only the peripheral drawing finish. White background. No labels, no text, no border, no extra animals, no new objects, no watermark. Return only one edited portrait.",
+    "dimensions": [
+      1477,
+      1065
+    ],
+    "mode": "RGB"
+  },
+  {
+    "name": "cat",
+    "sourcePath": "/workspace/scratch/39c137da8f10/generated_images/exec-0cc29bbc-0bf6-4dfe-95bf-3bb43b52af35.png",
+    "selectedPath": "/workspace/scratch/39c137da8f10/species-sketch-assets/cat-loose-pencil-generated.png",
+    "prompt": "Use case: identity-preserve.\nAsset type: animal portrait pencil illustration for an existing website.\nInput image 1: the sole edit target. Edit this exact portrait in place.\nSubject: the exact tabby cat in this edit target; preserve its exact eye, nose, striped muzzle, pointed ear locations, striped markings, expression, and head proportions.\nPrimary request: make ONLY the peripheral drawing finish looser and unfinished. Outside the facial features, lighten and break up the outer fur, shoulders, neck or outer silhouette into sparse individual warm-gray graphite pencil strokes and clearly visible short hatching; allow clean white paper to show between strokes and through deliberately incomplete outer edges. Reduce smooth filled or airbrushed rendering in these peripheral areas. Keep the face as close as possible to unchanged.\nStyle/medium: restrained hand-drawn graphite sketch, visible individual pencil lines, open white paper, unfinished drawing around the outside. Grayscale with a subtle warm graphite tone; no saturated colors.\nComposition/framing: exactly preserve the input image's 140:106 landscape aspect ratio, current center, animal size, scale, placement, visible extent and canvas framing. Do not shrink, enlarge, shift, rotate, crop, zoom, or reframe the animal. Keep the current original facial features registered in the same relative pixel locations.\nConstraints: preserve all facial landmarks, eye/nose/muzzle/ear position, face anatomy and identity, silhouette geometry, pose and species. Change only the peripheral drawing finish. White background. No labels, no text, no border, no extra animals, no new objects, no watermark. Return only one edited portrait.",
+    "dimensions": [
+      1441,
+      1091
+    ],
+    "mode": "RGB"
+  },
+  {
+    "name": "camel",
+    "sourcePath": "/workspace/scratch/39c137da8f10/generated_images/exec-5395ba5d-152b-4f0c-a914-57d7523ad993.png",
+    "selectedPath": "/workspace/scratch/39c137da8f10/species-sketch-assets/camel-loose-pencil-generated.png",
+    "prompt": "Use case: identity-preserve.\nAsset type: animal portrait pencil illustration for an existing website.\nInput image 1: the sole edit target. Edit this exact portrait in place.\nSubject: the exact camel in this edit target; preserve its exact turned head pose, eyes, long muzzle, nose, ears, humps/neck silhouette, expression, and proportions.\nPrimary request: make ONLY the peripheral drawing finish looser and unfinished. Outside the facial features, lighten and break up the outer fur, shoulders, neck or outer silhouette into sparse individual warm-gray graphite pencil strokes and clearly visible short hatching; allow clean white paper to show between strokes and through deliberately incomplete outer edges. Reduce smooth filled or airbrushed rendering in these peripheral areas. Keep the face as close as possible to unchanged.\nStyle/medium: restrained hand-drawn graphite sketch, visible individual pencil lines, open white paper, unfinished drawing around the outside. Grayscale with a subtle warm graphite tone; no saturated colors.\nComposition/framing: exactly preserve the input image's 146:106 landscape aspect ratio, current center, animal size, scale, placement, visible extent and canvas framing. Do not shrink, enlarge, shift, rotate, crop, zoom, or reframe the animal. Keep the current original facial features registered in the same relative pixel locations.\nConstraints: preserve all facial landmarks, eye/nose/muzzle/ear position, face anatomy and identity, silhouette geometry, pose and species. Change only the peripheral drawing finish. White background. No labels, no text, no border, no extra animals, no new objects, no watermark. Return only one edited portrait.",
+    "dimensions": [
+      1472,
+      1069
+    ],
+    "mode": "RGB"
+  },
+  {
+    "name": "orangutan",
+    "sourcePath": "/workspace/scratch/39c137da8f10/generated_images/exec-b20b2f50-c37c-4747-87ee-78afaedd4866.png",
+    "selectedPath": "/workspace/scratch/39c137da8f10/species-sketch-assets/orangutan-loose-pencil-generated.png",
+    "prompt": "Use case: identity-preserve.\nAsset type: animal portrait pencil illustration for an existing website.\nInput image 1: the sole edit target. Edit this exact portrait in place.\nSubject: the exact orangutan in this edit target; preserve its exact forward-facing face, eyes, nose, mouth, cheek contours, expression, and head proportions.\nPrimary request: make ONLY the peripheral drawing finish looser and unfinished. Outside the facial features, lighten and break up the outer fur, shoulders, neck or outer silhouette into sparse individual warm-gray graphite pencil strokes and clearly visible short hatching; allow clean white paper to show between strokes and through deliberately incomplete outer edges. Reduce smooth filled or airbrushed rendering in these peripheral areas. Keep the face as close as possible to unchanged.\nStyle/medium: restrained hand-drawn graphite sketch, visible individual pencil lines, open white paper, unfinished drawing around the outside. Grayscale with a subtle warm graphite tone; no saturated colors.\nComposition/framing: exactly preserve the input image's 157:106 landscape aspect ratio, current center, animal size, scale, placement, visible extent and canvas framing. Do not shrink, enlarge, shift, rotate, crop, zoom, or reframe the animal. Keep the current original facial features registered in the same relative pixel locations.\nConstraints: preserve all facial landmarks, eye/nose/muzzle/ear position, face anatomy and identity, silhouette geometry, pose and species. Change only the peripheral drawing finish. White background. No labels, no text, no border, no extra animals, no new objects, no watermark. Return only one edited portrait.",
+    "dimensions": [
+      1526,
+      1030
+    ],
+    "mode": "RGB"
+  },
+  {
+    "name": "turtle",
+    "sourcePath": "/workspace/scratch/39c137da8f10/generated_images/exec-0bbbf6f6-d20a-435b-ac39-09046b140b96.png",
+    "selectedPath": "/workspace/scratch/39c137da8f10/species-sketch-assets/turtle-loose-pencil-generated.png",
+    "prompt": "Use case: identity-preserve.\nAsset type: animal portrait pencil illustration for an existing website.\nInput image 1: the sole edit target. Edit this exact portrait in place.\nSubject: the exact sea turtle in this edit target; preserve its exact swimming pose, head and eye locations, shell geometry, flipper placements, species, and proportions.\nPrimary request: make ONLY the peripheral drawing finish looser and unfinished. Outside the facial features, lighten and break up the outer fur, shoulders, neck or outer silhouette into sparse individual warm-gray graphite pencil strokes and clearly visible short hatching; allow clean white paper to show between strokes and through deliberately incomplete outer edges. Reduce smooth filled or airbrushed rendering in these peripheral areas. Keep the face as close as possible to unchanged.\nStyle/medium: restrained hand-drawn graphite sketch, visible individual pencil lines, open white paper, unfinished drawing around the outside. Grayscale with a subtle warm graphite tone; no saturated colors.\nComposition/framing: exactly preserve the input image's 172:106 landscape aspect ratio, current center, animal size, scale, placement, visible extent and canvas framing. Do not shrink, enlarge, shift, rotate, crop, zoom, or reframe the animal. Keep the current original facial features registered in the same relative pixel locations.\nConstraints: preserve all facial landmarks, eye/nose/muzzle/ear position, face anatomy and identity, silhouette geometry, pose and species. Change only the peripheral drawing finish. White background. No labels, no text, no border, no extra animals, no new objects, no watermark. Return only one edited portrait.",
+    "dimensions": [
+      1597,
+      985
+    ],
+    "mode": "RGB"
+  },
+  {
+    "name": "panda",
+    "sourcePath": "/workspace/scratch/39c137da8f10/generated_images/exec-1e086858-a05e-4e67-bf09-45b19e00137d.png",
+    "selectedPath": "/workspace/scratch/39c137da8f10/species-sketch-assets/panda-loose-pencil-generated.png",
+    "prompt": "Use case: identity-preserve.\nAsset type: animal portrait pencil illustration for an existing website.\nInput image 1: the sole edit target. Edit this exact portrait in place.\nSubject: the exact giant panda in this edit target; preserve its exact eyes and black eye-patch locations, nose, muzzle, round ear positions, expression, and head proportions.\nPrimary request: make ONLY the peripheral drawing finish looser and unfinished. Outside the facial features, lighten and break up the outer fur, shoulders, neck or outer silhouette into sparse individual warm-gray graphite pencil strokes and clearly visible short hatching; allow clean white paper to show between strokes and through deliberately incomplete outer edges. Reduce smooth filled or airbrushed rendering in these peripheral areas. Keep the face as close as possible to unchanged.\nStyle/medium: restrained hand-drawn graphite sketch, visible individual pencil lines, open white paper, unfinished drawing around the outside. Grayscale with a subtle warm graphite tone; no saturated colors.\nComposition/framing: exactly preserve the input image's 146:106 landscape aspect ratio, current center, animal size, scale, placement, visible extent and canvas framing. Do not shrink, enlarge, shift, rotate, crop, zoom, or reframe the animal. Keep the current original facial features registered in the same relative pixel locations.\nConstraints: preserve all facial landmarks, eye/nose/muzzle/ear position, face anatomy and identity, silhouette geometry, pose and species. Change only the peripheral drawing finish. White background. No labels, no text, no border, no extra animals, no new objects, no watermark. Return only one edited portrait.",
+    "dimensions": [
+      1472,
+      1069
+    ],
+    "mode": "RGB"
+  }
+]

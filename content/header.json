@@ -7,37 +7,32 @@
   },
   "navigation": [
     {
-      "label": "Home",
-      "href": "index.html#home"
+      "label": "Product",
+      "href": "product.html"
+    },
+    {
+      "label": "Application",
+      "href": "applications.html"
+    },
+    {
+      "label": "Evidence",
+      "href": "evidence.html"
     },
     {
       "label": "Science",
       "href": "science.html"
     },
     {
-      "label": "Species",
-      "href": "index.html#species"
+      "label": "Initiative",
+      "href": "initiative.html"
     },
     {
-      "label": "Applications",
-      "href": "applications.html"
-    },
-    {
-      "label": "Publications",
-      "href": "publications.html"
+      "label": "Related Information",
+      "href": "related-information.html"
     },
     {
       "label": "News",
       "href": "news.html"
-    },
-    {
-      "label": "About",
-      "href": "#about",
-      "dialog": "about-dialog"
-    },
-    {
-      "label": "Contact",
-      "href": "contact.html"
     }
   ],
   "networkLinks": [
@@ -56,6 +51,7 @@
   "wordmark": {
     "letters": "BHOC",
     "accentIndex": 2,
-    "subtitle": "VETERINARY"
+    "subtitle": "VETERINARY",
+    "expansion": "Biological Hemoglobin Oxygen Carrier"
   }
 }

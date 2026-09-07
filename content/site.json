@@ -5,12 +5,37 @@
     "BHOC Veterinary Therapeutics"
   ],
   "canonical": "https://bhocvet.com/",
-  "title": "BHOC Veterinary | Biological Hemoglobin Oxygen Carrier",
-  "description": "BHOC Veterinary, led by Archil Jaliashvili, explores Biological Hemoglobin Oxygen Carrier science and precision oxygen therapeutics for animal health and biodiversity.",
+  "title": "Precision Oxygen Therapeutics | BHOC Veterinary",
+  "description": "BHOC Veterinary explores donor-independent Biological Hemoglobin Oxygen Carrier and Precision Oxygen Therapeutics across animal species, blood types and biodiversity.",
+  "seo": {
+    "primaryKeyword": "Precision Oxygen Therapeutics",
+    "secondaryKeywords": [
+      "BHOC Veterinary",
+      "Biological Hemoglobin Oxygen Carrier",
+      "veterinary oxygen carrier",
+      "oxygen delivery",
+      "animal health"
+    ],
+    "supportingTerms": [
+      "hemoglobin-based oxygen carrier",
+      "HBOC",
+      "veterinary oxygenation",
+      "veterinary transfusion medicine",
+      "animal blood types",
+      "cross-species oxygen carrier",
+      "donor-independent oxygen carrier",
+      "room-temperature shelf life",
+      "wildlife medicine",
+      "comparative biology",
+      "species protection",
+      "biodiversity"
+    ]
+  },
   "author": {
     "name": "Archil Jaliashvili",
     "givenName": "Archil",
     "familyName": "Jaliashvili",
+    "jobTitle": "Project Lead, BHOC Veterinary",
     "url": "https://www.linkedin.com/in/archil-jaliashvili-98804927b/"
   },
   "parent": {
@@ -21,15 +46,31 @@
   "topics": [
     "Biological Hemoglobin Oxygen Carrier",
     "Precision Oxygen Therapeutics",
+    "Veterinary oxygen carrier",
+    "Hemoglobin-based oxygen carrier (HBOC)",
+    "Veterinary oxygen delivery",
+    "Veterinary transfusion medicine",
+    "Animal blood types",
+    "Cross-species oxygen carrier",
+    "Donor-independent oxygen carrier",
+    "Room-temperature shelf life",
     "Animal health",
+    "Wildlife medicine",
     "Species protection",
     "Biodiversity"
   ],
   "language": "en",
   "updated": "2026-09-07",
+  "contactEmail": "info@bhoctherapeutics.com",
+  "organizationLogo": {
+    "src": "assets/bhoc-veterinary-organization-logo.svg",
+    "alt": "BHOC Veterinary logo",
+    "width": 512,
+    "height": 512
+  },
   "publication": {
     "firstPublished": "2026-09-07",
-    "updates": 1,
+    "updates": 4,
     "lastUpdated": "2026-09-07",
     "version": "26.09.07"
   },
@@ -39,11 +80,12 @@
   ],
   "socialImage": {
     "src": "assets/bhoc-wildlife-rainbow-20260906-v2.png",
-    "alt": "BHOC Veterinary wildlife and biodiversity illustration",
+    "alt": "BHOC Veterinary wildlife illustration with a lion, giraffe, horse, elephant, camel, giant panda, orangutan, tabby cat, wire-haired dachshunds and marine turtle",
     "width": 1672,
     "height": 941
   },
   "footer": {
+    "projectLead": "BHOC Team",
     "copyright": "BHOC Veterinary. Precision Oxygen Therapeutics.",
     "note": "Research and development initiative. Species shown illustrate biodiversity and comparative biology; they do not indicate approved BHOC uses.",
     "links": [
@@ -53,9 +95,80 @@
         "icon": "linkedin"
       },
       {
-        "label": "GitHub",
-        "href": "https://github.com/ArchilJali/BHOC-VET-Therapeutics",
-        "icon": "github"
+        "label": "VET Evidence Platform",
+        "href": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-index.html",
+        "icon": "book"
+      }
+    ],
+    "groups": [
+      {
+        "title": "Product",
+        "links": [
+          {
+            "label": "BHOC product",
+            "href": "product.html"
+          },
+          {
+            "label": "Product science",
+            "href": "science.html"
+          }
+        ]
+      },
+      {
+        "title": "Application",
+        "links": [
+          {
+            "label": "Veterinary applications",
+            "href": "applications.html"
+          },
+          {
+            "label": "Explore species",
+            "href": "index.html#species"
+          }
+        ]
+      },
+      {
+        "title": "Evidence & Science",
+        "links": [
+          {
+            "label": "Evidence directory",
+            "href": "evidence.html"
+          },
+          {
+            "label": "Regulatory records",
+            "href": "evidence.html#regulatory-evidence"
+          }
+        ]
+      },
+      {
+        "title": "Initiative",
+        "links": [
+          {
+            "label": "BHOC Initiative",
+            "href": "initiative.html"
+          },
+          {
+            "label": "IUCN Red List",
+            "href": "https://www.iucnredlist.org/"
+          }
+        ]
+      },
+      {
+        "title": "Information",
+        "links": [
+          {
+            "label": "Related information",
+            "href": "related-information.html"
+          },
+          {
+            "label": "News",
+            "href": "news.html"
+          },
+          {
+            "label": "Contact",
+            "href": "contact.html"
+          }
+        ]
       }
     ]
   }

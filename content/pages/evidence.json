@@ -1,0 +1,93 @@
+{
+  "slug": "evidence",
+  "navLabel": "Evidence",
+  "title": "Veterinary Oxygen Carrier Evidence | BHOC Veterinary",
+  "description": "Find veterinary oxygen carrier evidence, Oxyglobin FDA and EMA records, HBOC publications and source-linked regulatory history.",
+  "schemaType": "CollectionPage",
+  "seo": {
+    "primaryKeyword": "veterinary oxygen carrier evidence",
+    "secondaryKeywords": [
+      "Oxyglobin FDA approval",
+      "Oxyglobin EMA authorization",
+      "HBOC publications",
+      "veterinary hemoglobin oxygen carrier",
+      "BHOC evidence"
+    ],
+    "supportingTerms": [
+      "canine anemia",
+      "regulatory records",
+      "FDA NADA 141-067",
+      "EMA EU/2/99/015",
+      "scientific publications",
+      "primary source documents",
+      "HBOC history"
+    ]
+  },
+  "eyebrow": "Evidence",
+  "heading": "Veterinary oxygen carrier evidence.",
+  "lead": "Scientific publications and regulatory records remain source-linked and separate from BHOC development objectives.",
+  "groups": [
+    {
+      "id": "scientific-evidence",
+      "number": "01",
+      "title": "Scientific publications",
+      "description": "Start with the guided BHOC VET-platform, then continue into the complete veterinary evidence library, searchable bibliography and transparent methodology.",
+      "items": [
+        {
+          "label": "BHOC VET-platform",
+          "detail": "A guided veterinary evidence map with oxygen biology and clear evidence boundaries.",
+          "href": "https://archiljali.github.io/BHOC-VET-platform/"
+        },
+        {
+          "label": "BHOC Platform Veterinary evidence hub",
+          "detail": "The full veterinary library with publications, species filters, institutions and regulatory context.",
+          "href": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-index.html"
+        },
+        {
+          "label": "Search veterinary oxygen-carrier evidence",
+          "detail": "Filter by species, author, institution, journal, year or topic.",
+          "href": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-search.html"
+        },
+        {
+          "label": "Browse the publication catalogue",
+          "detail": "Titles, authors, journals, PubMed records, DOI links and affiliations.",
+          "href": "https://archiljali.github.io/BHOC-platform/veterinary/publication-catalogue.html"
+        },
+        {
+          "label": "Read the publication methodology",
+          "detail": "Citation coverage, affiliations, species labels and evidence limits.",
+          "href": "https://archiljali.github.io/BHOC-platform/veterinary/publication-methodology.html"
+        }
+      ]
+    },
+    {
+      "id": "regulatory-evidence",
+      "number": "02",
+      "title": "Regulatory records",
+      "description": "Historical Oxyglobin records are presented as product-, species-, jurisdiction- and indication-specific evidence.",
+      "items": [
+        {
+          "label": "Oxyglobin FDA and EMA regulatory hub",
+          "detail": "Combined veterinary regulatory chronology with routes to primary documents.",
+          "href": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-fda-ema.html"
+        },
+        {
+          "label": "FDA detail: NADA 141-067",
+          "detail": "United States approval record for anemia in dogs.",
+          "href": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-FDA-registry.html"
+        },
+        {
+          "label": "EMA and EU detail: EU/2/99/015",
+          "detail": "European regulatory chronology and source notes.",
+          "href": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-EMA-approvals-summary.html"
+        },
+        {
+          "label": "FDA Freedom of Information summary",
+          "detail": "Primary regulatory PDF for the 1998 decision.",
+          "href": "https://animaldrugsatfda.fda.gov/adafda/app/search/public/document/downloadFoi/3700"
+        }
+      ]
+    }
+  ],
+  "note": "Inclusion does not establish BHOC efficacy, regulatory approval, affiliation or endorsement. Historical approvals apply only to the named product, jurisdiction and indication."
+}

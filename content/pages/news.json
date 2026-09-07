@@ -1,10 +1,28 @@
 {
   "slug": "news",
   "navLabel": "News",
-  "title": "BHOC Veterinary News and Updates",
-  "description": "Source-linked BHOC Veterinary project updates, scientific platform changes and public professional discussion.",
+  "title": "BHOC Veterinary News | Oxygen Therapeutics Updates",
+  "description": "Follow BHOC Veterinary news, veterinary oxygen carrier evidence updates, scientific platform changes and professional discussion.",
+  "schemaType": "CollectionPage",
+  "seo": {
+    "primaryKeyword": "BHOC Veterinary news",
+    "secondaryKeywords": [
+      "veterinary oxygen carrier",
+      "oxygen therapeutics",
+      "BHOC research",
+      "BHOC publications"
+    ],
+    "supportingTerms": [
+      "scientific evidence",
+      "veterinary medicine",
+      "regulatory updates",
+      "LinkedIn publications",
+      "BHOC VET-platform",
+      "animal health"
+    ]
+  },
   "eyebrow": "News and Updates",
-  "heading": "Follow the work as it develops.",
+  "heading": "BHOC Veterinary news and updates.",
   "lead": "Project news, evidence updates and public discussion are kept in their original channels so every item remains traceable.",
   "channels": [
     {

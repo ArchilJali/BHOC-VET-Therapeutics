@@ -1,8 +1,8 @@
 {
   "id": "home",
   "image": {
-    "src": "assets/bhoc-wildlife-rainbow-20260906-v2.png",
-    "alt": "Wildlife illustration with a lion, giraffe, horse, elephant, camel, panda, orangutan, domestic cat, wirehaired dachshund and marine turtle beneath a distant rainbow. A small dog peeks through the grass and birds of prey appear in the landscape.",
+    "src": "assets/bhoc-wildlife-rainbow-20260906-v2.webp",
+    "alt": "BHOC Veterinary wildlife illustration with a lion, giraffe, horse, elephant, camel, giant panda, orangutan, tabby cat, wire-haired dachshunds and marine turtle beneath a distant rainbow.",
     "width": 1672,
     "height": 941
   },
@@ -17,28 +17,28 @@
     "tagline": "One Oxygen. One Biology. One BHOC System.",
     "promise": "For Every Species. Wherever Life Is at Risk.",
     "link": {
-      "href": "#initiative",
-      "dialog": "about-dialog",
+      "href": "initiative.html",
       "label": "Explore the BHOC Initiative"
     }
   },
   "heading": [
-    "Precision Oxygen",
-    "Therapeutics"
+    "Precision Oxygen Therapeutics"
   ],
   "product": {
     "name": "BHOC",
     "expansion": "Biological Hemoglobin Oxygen Carrier"
   },
-  "description": [],
+  "intent": "For immediate, controlled microvascular and tissue-level oxygenation while endogenous erythropoiesis recovers.",
+  "profile": "A donor-independent oxygen carrier with long shelf life at room temperature, designed to be endotoxin-free and red-cell-antigen-free, with compatibility across all blood types. For all species.",
+  "evidenceNote": "Development objectives. Species-specific dosing, safety and efficacy require independent evidence.",
   "actions": [
     {
-      "label": "Our mission",
-      "href": "#mission"
+      "label": "Product",
+      "href": "product.html"
     },
     {
-      "label": "Our science",
-      "href": "science.html",
+      "label": "Application",
+      "href": "applications.html",
       "style": "outline"
     }
   ]

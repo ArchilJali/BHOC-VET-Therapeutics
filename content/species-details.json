@@ -3,7 +3,7 @@
     "name": "Dog",
     "sub": "Companion animals. Comparative biology",
     "text": "Dogs have multiple blood group antigens. DEA 1 is a key blood group in canine transfusion medicine, alongside other antigen systems. Blood typing and compatibility testing support donor selection.",
-    "context": "Oxyglobin has an FDA approval history for anemia in dogs. This product specific precedent helps frame veterinary oxygen carrier research.",
+    "context": "Oxyglobin has an FDA approval history for anemia in dogs. This product-specific precedent helps frame veterinary oxygen carrier research.",
     "source": "https://eclinpath.com/hemostasis/transfusion-medicine/blood-types/",
     "sourceLabel": "Cornell eClinPath: blood types"
   },
@@ -11,14 +11,14 @@
     "name": "Cat",
     "sub": "Companion animals. Comparative biology",
     "text": "The feline AB blood group system includes types A, B and AB. Cats also have other red cell antigens, so AB typing alone does not establish complete transfusion compatibility.",
-    "context": "Shared hemoglobin chemistry coexists with species specific compatibility and clinical requirements.",
+    "context": "Shared hemoglobin chemistry coexists with species-specific compatibility and clinical requirements.",
     "source": "https://eclinpath.com/hemostasis/transfusion-medicine/blood-types/",
     "sourceLabel": "Cornell eClinPath: blood types"
   },
   "camel": {
     "name": "Camel",
     "sub": "Adaptation. Comparative biology",
-    "text": "Camels illustrate how mammals adapt to demanding environments while retaining the core hemoglobin based mechanism of oxygen transport.",
+    "text": "Camels illustrate how mammals adapt to demanding environments while retaining the core hemoglobin-based mechanism of oxygen transport.",
     "context": "Comparative biology helps us ask better research questions. Shared physiology does not establish common dosing, safety or treatment efficacy.",
     "source": "https://bhoctherapeutics.com/science/",
     "sourceLabel": "Explore BHOC oxygen delivery science"
@@ -42,7 +42,7 @@
   "turtle": {
     "name": "Marine Turtle",
     "sub": "Marine biodiversity. Conservation",
-    "text": "Marine turtles face species specific conservation threats. The hawksbill turtle is classified globally as Critically Endangered by the IUCN Red List.",
+    "text": "Marine turtles face species-specific conservation threats. The hawksbill turtle is classified globally as Critically Endangered by the IUCN Red List.",
     "context": "Marine turtle imagery represents a broader biodiversity mission. Conservation status varies by species and population.",
     "source": "https://iucn.org/story/202603/guardians-reef-protecting-hawksbill-turtle-arnavon",
     "sourceLabel": "IUCN: protecting the hawksbill turtle"
@@ -50,7 +50,7 @@
   "horse": {
     "name": "Horse",
     "sub": "Equine health. Comparative biology",
-    "text": "Horses have distinct red cell blood groups and transfusion requirements. The underlying hemoglobin based transport of oxygen is shared with other mammals.",
+    "text": "Horses have distinct red cell blood groups and transfusion requirements. The underlying hemoglobin-based transport of oxygen is shared with other mammals.",
     "context": "Comparative physiology provides a research foundation; each veterinary application still needs its own evidence.",
     "source": "https://eclinpath.com/hemostasis/transfusion-medicine/blood-types/",
     "sourceLabel": "Cornell eClinPath: blood types"
@@ -67,7 +67,7 @@
     "name": "Lion",
     "sub": "Wildlife health. Shared habitats",
     "text": "Lions illustrate the connection between wildlife health, functioning habitats and the wider web of biodiversity.",
-    "context": "A shared biological need for oxygen inspires comparative research. It does not remove the need for species specific safety and efficacy studies.",
+    "context": "A shared biological need for oxygen inspires comparative research. It does not remove the need for species-specific safety and efficacy studies.",
     "source": "https://www.iucnredlist.org/",
     "sourceLabel": "Explore the IUCN Red List"
   }

@@ -1,0 +1,68 @@
+{
+  "slug": "product",
+  "navLabel": "Product",
+  "title": "BHOC Veterinary Product | Biological Hemoglobin Oxygen Carrier",
+  "description": "Explore the BHOC Veterinary product direction, a Biological Hemoglobin Oxygen Carrier platform for controlled oxygen delivery and veterinary research.",
+  "schemaType": "WebPage",
+  "seo": {
+    "primaryKeyword": "Biological Hemoglobin Oxygen Carrier product",
+    "secondaryKeywords": [
+      "BHOC Veterinary product",
+      "veterinary oxygen carrier",
+      "Precision Oxygen Therapeutics",
+      "cell-free hemoglobin",
+      "veterinary oxygen delivery"
+    ],
+    "supportingTerms": [
+      "hemoglobin-based oxygen carrier",
+      "HBOC",
+      "donor-independent oxygen carrier",
+      "room-temperature shelf life",
+      "red-cell-antigen-free",
+      "microvascular oxygenation",
+      "tissue oxygenation"
+    ]
+  },
+  "eyebrow": "BHOC Product",
+  "heading": "A Biological Hemoglobin Oxygen Carrier platform.",
+  "lead": "BHOC is a veterinary and multi-species development direction within Precision Oxygen Therapeutics.",
+  "profile": {
+    "eyebrow": "Product identity",
+    "title": "Controlled oxygen delivery beyond the red-cell system.",
+    "paragraphs": [
+      "BHOC means Biological Hemoglobin Oxygen Carrier. It is a cell-free hemoglobin platform intended for immediate, controlled microvascular and tissue-level oxygenation while endogenous erythropoiesis recovers.",
+      "The intended profile is donor-independent, compatible across blood types and designed for practical room-temperature logistics. It is an oxygen-delivery platform, not a replacement for the wider biological functions of blood."
+    ]
+  },
+  "objectives": [
+    {
+      "icon": "heart",
+      "title": "Immediate oxygen delivery",
+      "text": "Support oxygen transport when anemia or blood loss limits oxygen-carrying capacity."
+    },
+    {
+      "icon": "people",
+      "title": "Donor-independent logistics",
+      "text": "A development profile that does not depend on donor matching or crossmatching."
+    },
+    {
+      "icon": "globe",
+      "title": "Room-temperature stability",
+      "text": "Long shelf life and practical handling are core product-development objectives."
+    },
+    {
+      "icon": "molecule",
+      "title": "Cell-free architecture",
+      "text": "Designed to be endotoxin-free and free of red-cell antigens, with species-specific evidence still required."
+    }
+  ],
+  "boundary": {
+    "eyebrow": "Development boundary",
+    "title": "Product objectives are not regulatory approval.",
+    "text": "BHOC development requires product-specific and species-specific evidence for formulation, dosing, safety and efficacy. Historical HBOC and Oxyglobin evidence is presented separately in the Evidence section.",
+    "link": {
+      "label": "Open Evidence",
+      "href": "evidence.html"
+    }
+  }
+}

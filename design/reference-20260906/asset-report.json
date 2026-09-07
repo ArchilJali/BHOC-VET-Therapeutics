@@ -1,0 +1,73 @@
+{
+  "source": "supplied-mockup.png",
+  "width": 1162,
+  "height": 1353,
+  "skyRectangles": [
+    [
+      744,
+      110,
+      418,
+      263
+    ]
+  ],
+  "changedPixels": 107456,
+  "animalsAndLogoChangedPixels": 0,
+  "exports": [
+    [
+      "veterinary-wordmark",
+      43,
+      13,
+      121,
+      47
+    ],
+    [
+      "initiative-mark",
+      16,
+      70,
+      318,
+      317
+    ],
+    [
+      "dog-pencil",
+      55,
+      700,
+      147,
+      106
+    ],
+    [
+      "cat-pencil",
+      226,
+      700,
+      140,
+      106
+    ],
+    [
+      "camel-pencil",
+      406,
+      700,
+      146,
+      106
+    ],
+    [
+      "orangutan-pencil",
+      597,
+      700,
+      157,
+      106
+    ],
+    [
+      "turtle-pencil",
+      797,
+      700,
+      172,
+      106
+    ],
+    [
+      "panda-pencil",
+      1010,
+      700,
+      146,
+      106
+    ]
+  ]
+}

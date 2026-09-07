@@ -2,8 +2,7 @@
   "id": "biodiversity",
   "title": "Biodiversity context",
   "link": {
-    "href": "#initiative",
-    "dialog": "about-dialog"
+    "href": "initiative.html"
   },
   "stats": [
     {
@@ -11,6 +10,7 @@
       "prefix": "",
       "label": "described animal species",
       "icon": "paw",
+      "sourceLabel": "Catalogue of Life global Animalia species catalogue",
       "href": "https://www.catalogueoflife.org/"
     },
     {
@@ -18,20 +18,41 @@
       "prefix": "More than",
       "label": "species assessed",
       "icon": "globe",
-      "href": "https://iucn.org/press-release/202607/desert-frog-deep-sea-molluscs-remarkable-species-risk-iucn-red-list"
+      "sourceLabel": "IUCN Red List of Threatened Species global assessment database",
+      "href": "https://www.iucnredlist.org/"
     },
     {
       "value": "49,500",
       "prefix": "More than",
       "label": "threatened with extinction",
       "icon": "leaf",
+      "sourceLabel": "IUCN Red List 2026-1 threatened species update",
       "href": "https://iucn.org/press-release/202607/desert-frog-deep-sea-molluscs-remarkable-species-risk-iucn-red-list"
     }
   ],
-  "manifesto": [
-    "Healthy species",
-    "Healthy ecosystems",
-    "A healthier tomorrow"
+  "message": {
+    "eyebrow": "How many species? How many blood-group systems?",
+    "title": "Different blood. One shared need: oxygen.",
+    "text": "BHOC is being developed as one donor-independent oxygen-delivery platform with potential across species, compatibility across blood types, long room-temperature shelf life and reduced reliance on blood-bank logistics.",
+    "note": "Development goal. Evidence remains product- and species-specific.",
+    "link": {
+      "label": "Explore Evidence",
+      "href": "evidence.html"
+    },
+    "quote": "We be of one blood, ye and I.",
+    "attribution": "Rudyard Kipling, The Jungle Book"
+  },
+  "sources": [
+    {
+      "label": "IUCN Red List of Threatened Species",
+      "description": "global species conservation-status assessments",
+      "href": "https://www.iucnredlist.org/"
+    },
+    {
+      "label": "Catalogue of Life global species catalogue",
+      "description": "Animalia count, 26 August 2026",
+      "href": "https://www.catalogueoflife.org/"
+    }
   ],
-  "sourceNote": "Animal count: Catalogue of Life, 26 August 2026. Assessment and threat counts: IUCN Red List 2026-1, 9 July 2026. The IUCN totals span all assessed taxonomic groups."
+  "sourceNote": "IUCN Red List 2026-1 figures were released 9 July 2026 and cover all assessed taxonomic groups."
 }

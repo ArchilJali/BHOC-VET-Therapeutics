@@ -1,10 +1,30 @@
 {
   "slug": "science",
   "navLabel": "Science",
-  "title": "Veterinary Oxygen-Delivery Science | BHOC Veterinary",
-  "description": "Explore hemoglobin biology, oxygen delivery, heme and chlorophyll chemistry, and the scientific foundation relevant to BHOC Veterinary.",
+  "title": "Biological Hemoglobin Oxygen Carrier Science | BHOC Veterinary",
+  "description": "Explore Biological Hemoglobin Oxygen Carrier science for veterinary medicine, including HBOCs, oxygen delivery, heme, chlorophyll and comparative biology.",
+  "schemaType": "WebPage",
+  "seo": {
+    "primaryKeyword": "Biological Hemoglobin Oxygen Carrier science",
+    "secondaryKeywords": [
+      "veterinary oxygen delivery",
+      "hemoglobin-based oxygen carriers",
+      "HBOCs",
+      "heme and chlorophyll",
+      "comparative biology"
+    ],
+    "supportingTerms": [
+      "cell-free hemoglobin",
+      "oxygen transport",
+      "oxygen affinity",
+      "species-specific physiology",
+      "tetrapyrrole chemistry",
+      "heme b",
+      "chlorophyll a"
+    ]
+  },
   "eyebrow": "BHOC Veterinary Science",
-  "heading": "A biological foundation. A precise research question.",
+  "heading": "Biological Hemoglobin Oxygen Carrier science.",
   "lead": "Different species have different physiology and transfusion requirements, but most vertebrates share hemoglobin-based oxygen transport.",
   "foundation": {
     "eyebrow": "The science of oxygen delivery",

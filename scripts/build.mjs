@@ -82,45 +82,61 @@ const orgId=site.canonical+'#organization';
 const webId=site.canonical+'#website';
 const hero=blocks.find(b=>b.type==='hero').data;
 const safeJSON=d=>JSON.stringify(d).replace(/</g,'\\u003c');
+const seoTerms=meta=>[
+  meta.seo?.primaryKeyword,
+  ...(meta.seo?.secondaryKeywords||[]),
+  ...(meta.seo?.supportingTerms||[])
+].filter(Boolean);
+const pageTopics=meta=>[...new Set([...seoTerms(meta),...(meta===site?site.topics:[])])];
+const organizationLogo={
+  '@type':'ImageObject',
+  '@id':site.canonical+'#organization-logo',
+  url:absolute(site.organizationLogo.src),
+  contentUrl:absolute(site.organizationLogo.src),
+  caption:site.organizationLogo.alt,
+  width:site.organizationLogo.width,
+  height:site.organizationLogo.height
+};
 const graphFor=(meta,pagePath,isHome=false)=>({'@context':'https://schema.org','@graph':[
-  {'@type':'Organization','@id':orgId,name:site.name,alternateName:site.alternateNames,url:site.canonical,description:site.description,logo:absolute(header.logo.src),parentOrganization:{'@type':'Organization',...site.parent},sameAs:site.sameAs},
-  {'@type':'Person','@id':personId,...site.author,sameAs:[site.author.url],affiliation:{'@id':orgId}},
-  {'@type':'WebSite','@id':webId,name:site.name,alternateName:site.alternateNames,url:site.canonical,inLanguage:site.language,publisher:{'@id':orgId},creator:{'@id':personId}},
-  ...(isHome?[{'@type':'ImageObject','@id':site.canonical+'#hero-image',contentUrl:absolute(hero.image.src),caption:hero.image.alt,width:hero.image.width,height:hero.image.height}]:[]),
-  {'@type':'WebPage','@id':absolute(pagePath)+'#webpage',url:absolute(pagePath),name:meta.title,description:meta.description,isPartOf:{'@id':webId},inLanguage:site.language,dateModified:site.updated,author:{'@id':personId},publisher:{'@id':orgId},...(isHome?{primaryImageOfPage:{'@id':site.canonical+'#hero-image'},about:site.topics.map(name=>({'@type':'Thing',name})),keywords:[site.primaryTopic,...site.topics].join(', ')}:{})}
+  {'@type':'Organization','@id':orgId,name:site.name,alternateName:site.alternateNames,url:site.canonical,description:site.description,email:site.contactEmail,logo:organizationLogo,contactPoint:{'@type':'ContactPoint',email:site.contactEmail,contactType:'research inquiries',availableLanguage:['English']},parentOrganization:{'@type':'Organization',...site.parent},sameAs:site.sameAs},
+  {'@type':'Person','@id':personId,...site.author,sameAs:[site.author.url],affiliation:{'@id':orgId},knowsAbout:site.topics},
+  {'@type':'WebSite','@id':webId,name:site.name,alternateName:site.alternateNames,url:site.canonical,description:site.description,inLanguage:site.language,datePublished:site.publication.firstPublished,dateModified:site.updated,keywords:seoTerms(site).join(', '),publisher:{'@id':orgId},creator:{'@id':personId}},
+  ...(isHome?[{'@type':'ImageObject','@id':site.canonical+'#hero-image',contentUrl:absolute(hero.image.src),caption:hero.image.alt,width:hero.image.width,height:hero.image.height,representativeOfPage:true}]:[]),
+  {'@type':meta.schemaType||'WebPage','@id':absolute(pagePath)+'#webpage',url:absolute(pagePath),name:meta.title,description:meta.description,isPartOf:{'@id':webId},inLanguage:site.language,datePublished:site.publication.firstPublished,dateModified:site.updated,author:{'@id':personId},creator:{'@id':personId},publisher:{'@id':orgId},about:pageTopics(meta).map(name=>({'@type':'Thing',name})),keywords:seoTerms(meta).join(', '),...(isHome?{primaryImageOfPage:{'@id':site.canonical+'#hero-image'}}:{})}
 ]});
 
 const dialogNames=(await fs.readdir(path.join(root,'content/dialogs'))).filter(name=>name.endsWith('.html')).sort();
 const dialogHTML=await Promise.all(dialogNames.map(name=>read('content/dialogs/'+name)));
 const extras=`<dialog id="species-dialog" aria-labelledby="species-detail-heading"><button class="dialog-close" aria-label="Close species details">×</button><span class="eyebrow">${esc(labels.speciesEyebrow)}</span><div id="species-detail"></div></dialog><dialog id="all-species-dialog" aria-labelledby="all-species-heading"><button class="dialog-close" aria-label="Close all species">×</button><span id="all-species" class="eyebrow">Explore species</span><h2 id="all-species-heading">${esc(labels.allSpeciesTitle)}</h2><p>${esc(labels.allSpeciesIntro)}</p><div class="all-species-grid"></div><p class="small-copy">${esc(labels.allSpeciesNote)}</p></dialog><dialog id="search-dialog" aria-labelledby="search-heading"><button class="dialog-close" aria-label="Close search">×</button><h2 id="search-heading">${esc(labels.searchHeading)}</h2><label for="site-search">${esc(labels.searchLabel)}</label><input id="site-search" type="search" placeholder="${esc(labels.searchPlaceholder)}" autocomplete="off"><p class="sr-only" id="search-status" aria-live="polite"></p><div id="search-results"></div></dialog>`;
+const visibleSearchText=value=>JSON.stringify(value,(key,item)=>key==='seo'?undefined:item);
 
 const search=[
   ...Object.entries(species).map(([key,s])=>({title:s.name,category:'Species',text:`${s.text} ${s.context}`,species:key})),
-  ...blocks.filter(b=>b.type!=='pillars').map(b=>({title:b.data.title||(Array.isArray(b.data.heading)?b.data.heading.join(' '):b.data.heading)||'Our initiative',category:'Homepage',text:JSON.stringify(b.data),href:'index.html#'+b.data.id})),
-  ...pages.map(page=>({title:page.navLabel,category:'Page',text:JSON.stringify(page),href:page.slug+'.html'})),
+  ...blocks.filter(b=>b.type!=='pillars').map(b=>({title:b.data.title||(Array.isArray(b.data.heading)?b.data.heading.join(' '):b.data.heading)||'Our initiative',category:'Homepage',text:visibleSearchText(b.data),href:'index.html#'+b.data.id})),
+  ...pages.map(page=>({title:page.navLabel,category:'Page',text:visibleSearchText(page),href:page.slug+'.html'})),
   ...dialogHTML.map((html,i)=>({title:html.match(/<h2[^>]*>([\s\S]*?)<\/h2>/)?.[1].replace(/<[^>]*>/g,' ')||dialogNames[i],category:'Information',text:html.replace(/<[^>]*>/g,' '),dialog:dialogNames[i].replace('.html','')}))
 ];
 const siteData=safeJSON({species,search,labels});
 
 const networkHTML=`<nav class="site-network-bar" aria-label="BHOC websites"><span class="network-title">BHOC network</span><div class="network-links">${header.networkLinks.map(item=>item.enabled?`<a class="network-link network-link-enabled" ${attrs(item)} aria-label="Open ${esc(item.label)}">${icon('globe')}<span class="network-label-wide">${esc(item.label)}</span><span class="network-label-compact">${esc(item.compactLabel||item.label)}</span></a>`:`<span class="network-link network-link-disabled" aria-disabled="true" title="Coming soon">${icon('globe')}<span class="network-label-wide">${esc(item.label)}</span><span class="network-label-compact">${esc(item.compactLabel||item.label)}</span></span>`).join('')}</div></nav>`;
-const renderHeader=active=>`<header class="site-header"><a class="wordmark" href="index.html#home" aria-label="${esc(site.name)} home"><span class="wordmark-top">${[...header.wordmark.letters].map((c,i)=>i===header.wordmark.accentIndex?`<em>${esc(c)}</em>`:esc(c)).join('')}</span><span class="wordmark-sub">${esc(header.wordmark.subtitle)}</span></a><nav id="primary-nav" class="primary-nav" aria-label="Main navigation">${header.navigation.map(item=>link(item,item.href===active?'active':'')).join('')}</nav><button class="icon-button search-toggle" data-open="search-dialog" aria-label="Search this website">${icon('search')}</button><button class="menu-toggle icon-button" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-nav"><span></span><span></span><span></span></button></header>${networkHTML}`;
+const renderHeader=active=>`<header class="site-header"><a class="wordmark" href="index.html#home" aria-label="${esc(site.name)} home"><span class="wordmark-top">${[...header.wordmark.letters].map((c,i)=>i===header.wordmark.accentIndex?`<em>${esc(c)}</em>`:esc(c)).join('')}</span><span class="wordmark-meta"><span class="wordmark-division">${esc(header.wordmark.subtitle)}</span><span class="wordmark-expansion">${esc(header.wordmark.expansion)}</span></span></a><nav id="primary-nav" class="primary-nav" aria-label="Main navigation">${header.navigation.map(item=>link(item,item.href===active?'active':'')).join('')}</nav><button class="icon-button search-toggle" data-open="search-dialog" aria-label="Search this website">${icon('search')}</button><button class="menu-toggle icon-button" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-nav"><span></span><span></span><span></span></button></header>${networkHTML}`;
 const formatDate=iso=>{const [year,month,day]=iso.split('-');return `${day} ${['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'][Number(month)-1]} ${year}`};
 const footerWordmark=[...header.wordmark.letters].map((letter,index)=>index===header.wordmark.accentIndex?`<span class="oxygen-initial">${esc(letter)}</span>`:esc(letter)).join('');
-const renderFooter=()=>{const publication=site.publication;const updateLabel=publication.updates===1?'update':'updates';return `<footer class="site-footer"><div class="footer-brand"><strong class="footer-wordmark" aria-label="BHOC Veterinary"><span class="footer-bhoc">${footerWordmark}</span><span class="footer-veterinary">VETERINARY</span></strong><span class="footer-expansion">Biological Hemoglobin Oxygen Carrier</span></div><nav class="footer-links" aria-label="Social links">${site.footer.links.map(item=>`<a class="footer-link" ${attrs(item)}>${item.icon?icon(item.icon):''}<span>${esc(item.label)}</span></a>`).join('')}</nav><p class="project-attribution">Project lead: <a href="${esc(site.author.url)}" target="_blank" rel="noopener noreferrer">${esc(site.author.name)}</a>.</p><p class="footer-publication">First published <time datetime="${esc(publication.firstPublished)}">${formatDate(publication.firstPublished)}</time><span class="footer-separator" aria-hidden="true"> · </span>${publication.updates} ${updateLabel}<span class="footer-separator" aria-hidden="true"> · </span>Last updated <time datetime="${esc(publication.lastUpdated)}">${formatDate(publication.lastUpdated)}</time><span class="footer-separator" aria-hidden="true"> · </span>Version ${esc(publication.version)}</p><p class="footer-note">${esc(site.footer.note)}</p><p class="footer-copyright">© ${site.updated.slice(0,4)} ${esc(site.footer.copyright)}</p></footer>`};
+const renderFooter=()=>{const publication=site.publication;const updateLabel=publication.updates===1?'update':'updates';return `<footer class="site-footer"><div class="footer-primary"><div class="footer-brand"><strong class="footer-wordmark" aria-label="BHOC Veterinary"><span class="footer-bhoc">${footerWordmark}</span><span class="footer-veterinary">VETERINARY</span></strong><span class="footer-expansion">${esc(header.wordmark.expansion)}</span></div><nav class="footer-directory" aria-label="Footer navigation">${site.footer.groups.map(group=>`<div class="footer-column"><h2>${esc(group.title)}</h2>${group.links.map(item=>`<a ${attrs(item)}>${esc(item.label)}</a>`).join('')}</div>`).join('')}</nav></div><div class="footer-secondary"><div class="footer-project"><p class="project-attribution">Project lead: <strong>${esc(site.footer.projectLead)}</strong>.</p><p class="footer-note">${esc(site.footer.note)}</p></div><nav class="footer-links" aria-label="Footer links">${site.footer.links.map(item=>`<a class="footer-link" ${attrs(item)}>${item.icon?icon(item.icon):''}<span>${esc(item.label)}</span></a>`).join('')}</nav><p class="footer-publication">First published <time datetime="${esc(publication.firstPublished)}">${formatDate(publication.firstPublished)}</time><span class="footer-separator" aria-hidden="true"> · </span>${publication.updates} ${updateLabel}<span class="footer-separator" aria-hidden="true"> · </span>Last updated <time datetime="${esc(publication.lastUpdated)}">${formatDate(publication.lastUpdated)}</time><span class="footer-separator" aria-hidden="true"> · </span>Version ${esc(publication.version)}</p><p class="footer-copyright">© ${site.updated.slice(0,4)} ${esc(site.footer.copyright)}</p></div></footer>`};
 const commonEnd=`${dialogHTML.join('\n')}${extras}<noscript><p class="noscript-note">Interactive search requires JavaScript. The main pages and source links remain available.</p><style>dialog{display:block;position:relative;margin:2rem auto}dialog .dialog-close,#search-dialog,#species-dialog,#all-species-dialog{display:none}.menu-toggle,.search-toggle,.round-control,.carousel-dots,.species-dots{display:none}.primary-nav{display:flex;position:static}.science-panel[hidden]{display:block!important}</style></noscript>`;
 
 const renderHead=(meta,pagePath,isHome=false)=>`<head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#f6d7be">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#f65c00">
 <title>${esc(meta.title)}</title><meta name="description" content="${esc(meta.description)}"><meta name="author" content="${esc(site.author.name)}"><meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1"><link rel="canonical" href="${esc(absolute(pagePath))}">
 <meta property="og:type" content="website"><meta property="og:locale" content="en_US"><meta property="og:site_name" content="${esc(site.name)}"><meta property="og:title" content="${esc(meta.title)}"><meta property="og:description" content="${esc(meta.description)}"><meta property="og:url" content="${esc(absolute(pagePath))}"><meta property="og:image" content="${absolute(site.socialImage.src)}"><meta property="og:image:secure_url" content="${absolute(site.socialImage.src)}"><meta property="og:image:type" content="image/png"><meta property="og:image:width" content="${site.socialImage.width}"><meta property="og:image:height" content="${site.socialImage.height}"><meta property="og:image:alt" content="${esc(site.socialImage.alt)}">
 <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="${esc(meta.title)}"><meta name="twitter:description" content="${esc(meta.description)}"><meta name="twitter:image" content="${absolute(site.socialImage.src)}"><meta name="twitter:image:alt" content="${esc(site.socialImage.alt)}">
-<link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">${isHome?`<link rel="preload" as="image" href="./${esc(hero.image.src)}" fetchpriority="high">`:''}
+<link rel="icon" href="./assets/favicon.svg" type="image/svg+xml"><link rel="sitemap" type="application/xml" href="${esc(absolute('sitemap.xml'))}">${isHome?`<link rel="preload" as="image" href="./${esc(hero.image.src)}" type="image/webp" fetchpriority="high">`:''}
 ${cssLinks.join('\n')}
 <script type="application/ld+json">${safeJSON(graphFor(meta,pagePath,isHome))}</script><script id="site-data" type="application/json">${siteData}</script><script src="./app.js?v=${digest(client)}" defer></script>
 </head>`;
 
 const documents=new Map();
-const homeMeta={title:site.title,description:site.description};
+const homeMeta={title:site.title,description:site.description,schemaType:'WebPage',seo:site.seo};
 documents.set('index.html',`<!doctype html><html lang="${esc(site.language)}">${renderHead(homeMeta,'',true)}<body data-page="home"><a class="skip-link" href="#main">Skip to content</a>${await read('src/icons.html')}<div class="site-shell">${renderHeader('index.html#home')}<main id="main">\n${blocks.map(b=>`<!-- BLOCK ${b.type}: content/blocks/${b.type}.json -->\n${b.html}`).join('\n')}\n</main>${renderFooter()}</div>${commonEnd}</body></html>\n`);
 
 for(const page of pages){
@@ -133,6 +149,8 @@ for(const [name,html] of documents){
   if((html.match(/<h1\b/g)||[]).length!==1)throw new Error(`${name}: exactly one H1 required`);
   await write(name,html);
 }
+
+await write('publications.html',`<!doctype html><html lang="${esc(site.language)}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex,follow"><meta http-equiv="refresh" content="0;url=evidence.html"><link rel="canonical" href="${absolute('evidence.html')}"><title>Evidence | BHOC Veterinary</title></head><body><p>Publications are now organised under <a href="evidence.html">BHOC Veterinary Evidence</a>.</p></body></html>\n`);
 
 const specialHashes=new Set(['#about','#initiative','#all-species',...Object.keys(species).map(key=>'#species-'+key)]);
 for(const [name,html] of documents){
@@ -155,7 +173,13 @@ for(const [name,html] of documents){
   }
 }
 
-const imageEntries=[hero.image,hero.initiative.image,...(blocks.find(b=>b.type==='species')?.data.items||[]).map(item=>item.image)];
+const imageEntries=[...new Map([
+  site.organizationLogo,
+  site.socialImage,
+  hero.image,
+  hero.initiative.image,
+  ...(blocks.find(b=>b.type==='species')?.data.items||[]).map(item=>item.image)
+].map(image=>[image.src,image])).values()];
 const sitemapUrls=[{path:'',images:imageEntries},...pages.map(page=>({path:page.slug+'.html',images:[]}))];
 await write('sitemap.xml',`<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">${sitemapUrls.map(entry=>`<url><loc>${absolute(entry.path)}</loc><lastmod>${site.updated}</lastmod>${entry.images.map(image=>`<image:image><image:loc>${absolute(image.src)}</image:image>`).join('')}</url>`).join('')}</urlset>\n`);
 await write('robots.txt',`User-agent: *\nAllow: /\nSitemap: ${absolute('sitemap.xml')}\n`);

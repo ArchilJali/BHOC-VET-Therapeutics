@@ -1,0 +1,110 @@
+[
+  {
+    "animal": "dog",
+    "source": "design/species-sketch-20260906/originals/reference-dog-pencil.webp",
+    "file": "dist/assets/rem-wirehaired-dachshund-sketch.webp",
+    "width": 147,
+    "height": 106,
+    "faceProtection": {
+      "cx": 78,
+      "cy": 57,
+      "rx": 40,
+      "ry": 40,
+      "feather": 0.32,
+      "file": "rem-wirehaired-dachshund-sketch.webp"
+    },
+    "protectedPixels": 5025,
+    "changedProtectedPixels": 0,
+    "sha256": "92396b20c77be1602c3d78fc0fad37217b6a5e0a0fc3a36ef69d8a64a96392a2"
+  },
+  {
+    "animal": "cat",
+    "source": "design/species-sketch-20260906/originals/reference-cat-pencil.webp",
+    "file": "dist/assets/cat-loose-pencil-sketch.webp",
+    "width": 140,
+    "height": 106,
+    "faceProtection": {
+      "cx": 76,
+      "cy": 49,
+      "rx": 35,
+      "ry": 35,
+      "feather": 0.3,
+      "file": "cat-loose-pencil-sketch.webp"
+    },
+    "protectedPixels": 3853,
+    "changedProtectedPixels": 0,
+    "sha256": "ee712af9ae8fb1adedab21cb9db5596d350d38eb1c1c728e9fd87e5bf972042a"
+  },
+  {
+    "animal": "camel",
+    "source": "design/species-sketch-20260906/originals/reference-camel-pencil.webp",
+    "file": "dist/assets/camel-loose-pencil-sketch.webp",
+    "width": 146,
+    "height": 106,
+    "faceProtection": {
+      "cx": 100,
+      "cy": 54,
+      "rx": 44,
+      "ry": 35,
+      "feather": 0.32,
+      "file": "camel-loose-pencil-sketch.webp"
+    },
+    "protectedPixels": 4827,
+    "changedProtectedPixels": 0,
+    "sha256": "48ac383a8281787a48517637d0baac33d864c9ea6bcd9129c7dc6a14de732fd1"
+  },
+  {
+    "animal": "orangutan",
+    "source": "design/species-sketch-20260906/originals/reference-orangutan-pencil.webp",
+    "file": "dist/assets/orangutan-loose-pencil-sketch.webp",
+    "width": 157,
+    "height": 106,
+    "faceProtection": {
+      "cx": 97,
+      "cy": 61,
+      "rx": 29,
+      "ry": 39,
+      "feather": 0.34,
+      "file": "orangutan-loose-pencil-sketch.webp"
+    },
+    "protectedPixels": 3545,
+    "changedProtectedPixels": 0,
+    "sha256": "3c08501a062a93d941cb39a5e929bcc78ba1ee2017162fed25a2ffb7b19d001d"
+  },
+  {
+    "animal": "turtle",
+    "source": "design/species-sketch-20260906/originals/reference-turtle-pencil.webp",
+    "file": "dist/assets/marine-turtle-loose-pencil-sketch.webp",
+    "width": 172,
+    "height": 106,
+    "faceProtection": {
+      "cx": 129,
+      "cy": 32,
+      "rx": 29,
+      "ry": 24,
+      "feather": 0.26,
+      "file": "marine-turtle-loose-pencil-sketch.webp"
+    },
+    "protectedPixels": 2183,
+    "changedProtectedPixels": 0,
+    "sha256": "1baa4a406e55facede1871813194a85e9ab5a90c5c641804904c25f588a5d4e4"
+  },
+  {
+    "animal": "panda",
+    "source": "design/species-sketch-20260906/originals/reference-panda-pencil.webp",
+    "file": "dist/assets/panda-loose-pencil-sketch.webp",
+    "width": 146,
+    "height": 106,
+    "faceProtection": {
+      "cx": 75,
+      "cy": 57,
+      "rx": 36,
+      "ry": 34,
+      "feather": 0.32,
+      "file": "panda-loose-pencil-sketch.webp"
+    },
+    "protectedPixels": 3833,
+    "changedProtectedPixels": 0,
+    "sha256": "f4d7a908d0ff880b209c52a5e7be731b8bf032ee9ca0cf64edc06191042b015b"
+  }
+]

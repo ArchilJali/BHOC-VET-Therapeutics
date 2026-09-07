@@ -11,20 +11,19 @@
       "title": "Species preservation",
       "text": "Supporting conservation through science.",
       "icon": "tree",
-      "href": "index.html#biodiversity"
+      "href": "initiative.html#conservation-context"
     },
     {
       "title": "A shared planet",
       "text": "Healthier animals. Healthier ecosystems.",
       "icon": "globe",
-      "href": "index.html#mission"
+      "href": "initiative.html"
     },
     {
       "title": "One Health",
       "text": "People. Animals. Planet.",
       "icon": "people",
-      "href": "#about",
-      "dialog": "about-dialog"
+      "href": "related-information.html"
     }
   ]
 }

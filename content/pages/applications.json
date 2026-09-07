@@ -1,10 +1,30 @@
 {
   "slug": "applications",
   "navLabel": "Applications",
-  "title": "Veterinary Applications | BHOC Veterinary",
-  "description": "Veterinary research contexts for Biological Hemoglobin Oxygen Carrier science, including companion-animal care, emergency oxygen support and wildlife medicine.",
+  "title": "Veterinary Oxygen Carrier Applications | BHOC Veterinary",
+  "description": "Explore veterinary oxygen carrier applications in companion-animal care, emergency oxygen delivery, canine anemia and wildlife medicine.",
+  "schemaType": "WebPage",
+  "seo": {
+    "primaryKeyword": "veterinary oxygen carrier applications",
+    "secondaryKeywords": [
+      "veterinary oxygen delivery",
+      "veterinary anemia",
+      "canine anemia",
+      "veterinary emergency medicine",
+      "wildlife medicine"
+    ],
+    "supportingTerms": [
+      "veterinary blood transfusion",
+      "oxygen carrier for dogs",
+      "oxygen carrier for animals",
+      "companion-animal care",
+      "blood loss",
+      "Oxyglobin evidence",
+      "species-specific safety"
+    ]
+  },
   "eyebrow": "Veterinary Applications",
-  "heading": "Oxygen delivery. Species-specific evidence.",
+  "heading": "Veterinary oxygen carrier applications.",
   "lead": "BHOC is a development direction in precision oxygen therapeutics for settings where anemia or blood loss limits oxygen-carrying capacity.",
   "areas": [
     {

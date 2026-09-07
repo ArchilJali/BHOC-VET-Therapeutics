@@ -1,0 +1,10 @@
+import {esc,attrs,icon} from '../lib/html.mjs';
+
+const expandedName=text=>text.split(/\s+/).map(word=>`<span><strong>${esc(word[0])}</strong>${esc(word.slice(1))}</span>`).join(' ');
+
+export default page=>`<main id="main" class="subpage-main product-page">
+  <section class="page-hero" aria-labelledby="product-page-heading"><div><span class="page-eyebrow">${esc(page.eyebrow)}</span><h1 id="product-page-heading">${esc(page.heading)}</h1><p>${esc(page.lead)}</p></div><nav class="page-index" aria-label="Product page sections"><a href="#product-profile">Product profile</a><a href="#product-objectives">Development objectives</a><a href="#product-boundary">Evidence boundary</a></nav></section>
+  <section id="product-profile" class="page-section product-definition" aria-labelledby="product-profile-heading"><div class="product-name-card"><strong>BH<span class="oxygen-initial">O</span>C</strong><p>${expandedName('Biological Hemoglobin Oxygen Carrier')}</p></div><div class="section-copy"><span class="page-eyebrow">${esc(page.profile.eyebrow)}</span><h2 id="product-profile-heading">${esc(page.profile.title)}</h2>${page.profile.paragraphs.map(p=>`<p>${esc(p)}</p>`).join('')}</div></section>
+  <section id="product-objectives" class="page-section product-objectives" aria-labelledby="product-objectives-heading"><div class="section-heading"><span class="page-eyebrow">Development profile</span><h2 id="product-objectives-heading">The intended product profile.</h2></div><div class="application-grid product-objective-grid">${page.objectives.map(item=>`<article class="application-card"><span class="application-icon">${icon(item.icon)}</span><h3>${esc(item.title)}</h3><p>${esc(item.text)}</p></article>`).join('')}</div></section>
+  <section id="product-boundary" class="product-boundary" aria-labelledby="product-boundary-heading"><div><span class="page-eyebrow">${esc(page.boundary.eyebrow)}</span><h2 id="product-boundary-heading">${esc(page.boundary.title)}</h2><p>${esc(page.boundary.text)}</p></div><a class="button" ${attrs(page.boundary.link)}><span>${esc(page.boundary.link.label)}</span>${icon('arrow')}</a></section>
+</main>`;

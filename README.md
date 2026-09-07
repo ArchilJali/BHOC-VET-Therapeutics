@@ -55,7 +55,7 @@ Animals and initiative artwork are exported from the supplied mockup. A bounded 
 
 ## Scientific and search identity
 
-Primary: **BHOC Veterinary**. Alternate names: **BHOC Vet**, **BHOC Veterinary Therapeutics**. BHOC: **Biological Hemoglobin Oxygen Carrier**. Project lead: **Archil Jaliashvili**.
+Primary: **BHOC Veterinary**. Alternate names: **BHOC Vet**, **BHOC Veterinary Therapeutics**. BHOC: **Biological Hemoglobin Oxygen Carrier**. Public footer: **Project lead: BHOC Team**. Author and creator metadata: **Archil Jaliashvili**.
 
 Keyword authority remains [BHOC-Therapeutics/seo/BHOC-SEO-Keywords.md](https://github.com/ArchilJali/BHOC-Therapeutics/blob/main/seo/BHOC-SEO-Keywords.md). This repository does not maintain a competing keyword master.
 

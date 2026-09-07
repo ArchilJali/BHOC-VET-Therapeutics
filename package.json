@@ -1,0 +1,13 @@
+{
+  "name": "bhoc-veterinary",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "node scripts/build.mjs --out dist",
+    "check": "node scripts/check-site.mjs dist"
+  },
+  "devDependencies": {
+    "vite": "^7.1.0"
+  }
+}

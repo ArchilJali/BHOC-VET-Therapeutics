@@ -1,0 +1,95 @@
+{
+  "slug": "related-information",
+  "navLabel": "Related Information",
+  "title": "Related Veterinary Oxygen Information | BHOC Veterinary",
+  "description": "Explore related BHOC Veterinary information across professional publications, hemoglobin science, comparative biology and global conservation databases.",
+  "schemaType": "CollectionPage",
+  "seo": {
+    "primaryKeyword": "related veterinary oxygen information",
+    "secondaryKeywords": [
+      "BHOC Veterinary information",
+      "hemoglobin science",
+      "veterinary oxygen delivery",
+      "comparative biology",
+      "species conservation"
+    ],
+    "supportingTerms": [
+      "LinkedIn publications",
+      "heme b",
+      "chlorophyll a",
+      "Antarctic icefish",
+      "IUCN Red List",
+      "Catalogue of Life"
+    ]
+  },
+  "eyebrow": "Related Information",
+  "heading": "Connected science and public information.",
+  "lead": "Professional publications, related scientific sources and conservation databases are grouped separately from BHOC product evidence.",
+  "groups": [
+    {
+      "id": "professional-publications",
+      "number": "01",
+      "title": "Professional publications",
+      "description": "Public discussion and selected BHOC articles remain linked to their original professional channels.",
+      "items": [
+        {
+          "label": "BHOC LinkedIn publications index",
+          "detail": "Selected BHOC articles and discussions organised by subject.",
+          "href": "https://archiljali.github.io/BHOC-platform/social-media/linkedin/"
+        },
+        {
+          "label": "BHOC Therapeutics on LinkedIn",
+          "detail": "Company updates and professional discussion.",
+          "href": "https://www.linkedin.com/company/bhoc-therapeutics/"
+        },
+        {
+          "label": "Archil Jaliashvili on LinkedIn",
+          "detail": "Project lead and author profile.",
+          "href": "https://www.linkedin.com/in/archil-jaliashvili-98804927b/"
+        }
+      ]
+    },
+    {
+      "id": "related-science",
+      "number": "02",
+      "title": "Related scientific information",
+      "description": "Primary and peer-reviewed sources relevant to hemoglobin, tetrapyrrole chemistry and comparative oxygen-delivery biology.",
+      "items": [
+        {
+          "label": "ChEBI: Heme b",
+          "detail": "Iron-containing tetrapyrrole chemistry, CHEBI:26355.",
+          "href": "https://www.ebi.ac.uk/chebi/CHEBI:26355"
+        },
+        {
+          "label": "ChEBI: Chlorophyll a",
+          "detail": "Magnesium-containing photosynthetic pigment, CHEBI:18230.",
+          "href": "https://www.ebi.ac.uk/chebi/CHEBI:18230"
+        },
+        {
+          "label": "Antarctic icefish physiology",
+          "detail": "Comparative context for vertebrates without circulating hemoglobin.",
+          "href": "https://www.frontiersin.org/journals/physiology/articles/10.3389/fphys.2019.01389/full"
+        }
+      ]
+    },
+    {
+      "id": "conservation-databases",
+      "number": "03",
+      "title": "Conservation databases",
+      "description": "Authoritative global resources for taxonomy and species conservation status.",
+      "items": [
+        {
+          "label": "IUCN Red List of Threatened Species",
+          "detail": "Global conservation-status assessments and threatened-species information.",
+          "href": "https://www.iucnredlist.org/"
+        },
+        {
+          "label": "Catalogue of Life global species catalogue",
+          "detail": "Authoritative global taxonomic catalogue maintained by specialist communities.",
+          "href": "https://www.catalogueoflife.org/"
+        }
+      ]
+    }
+  ],
+  "note": "Related information provides scientific and conservation context. Inclusion does not establish BHOC efficacy, regulatory approval, affiliation or endorsement."
+}
