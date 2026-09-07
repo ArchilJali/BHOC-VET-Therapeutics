@@ -55,8 +55,8 @@
       "href": "https://animaldrugsatfda.fda.gov/adafda/app/search/public/document/downloadFoi/3700"
     },
     "evidenceLink": {
-      "label": "Open FDA and EMA veterinary records",
-      "href": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-fda-ema.html"
+      "label": "Open FDA veterinary record",
+      "href": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-FDA-registry.html"
     }
   },
   "contact": {
