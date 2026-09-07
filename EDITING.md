@@ -34,12 +34,12 @@
 | Четыре направления инициативы | [pillars.json](content/blocks/pillars.json) |
 | Основное и альтернативные названия, ваше имя, SEO | [site.json](content/site.json) |
 | Подробности о видах | [species-details.json](content/species-details.json) |
-| Страницы Science, Applications, Publications, News и Contact | [content/pages](content/pages) |
+| Страницы Product, Application, Evidence, Science, Initiative, Related Information, News и Contact | [content/pages](content/pages) |
 | Информационное окно About | [about-dialog.html](content/dialogs/about-dialog.html) |
 
 ## Как менять отдельную страницу
 
-Текст каждой страницы хранится в одном JSON-файле: `science.json`, `applications.json`, `publications.json`, `news.json` или `contact.json` в папке `content/pages/`. Меняйте подписи и ссылки там. HTML-шаблон страницы находится в `src/pages/`, а общий внешний вид внутренних страниц - в `src/styles/pages.css`.
+Текст каждой страницы хранится в одноимённом JSON-файле папки `content/pages/`: `product.json`, `applications.json`, `evidence.json`, `science.json`, `initiative.json`, `related-information.json`, `news.json` или `contact.json`. Меняйте подписи и ссылки там. HTML-шаблон страницы находится в `src/pages/`, а общий внешний вид внутренних страниц - в `src/styles/pages.css`.
 
 Научные ссылки разделены по назначению: `BHOC VET-platform` является простой обзорной точкой входа, а `BHOC Platform Veterinary` содержит полную библиографию и регуляторные документы. Не меняйте эти роли местами без отдельного решения по структуре сайта.
 
@@ -64,7 +64,7 @@ ALT описывает то, что видно. Имя автора или сп�
 
 Поле `showDescriptions: false` оставляет под рисунками только названия. Подробности для существующих информационных окон хранятся отдельно в `content/species-details.json`. Новая внутренняя страница задаётся адресом в `href`; для нового информационного окна добавьте запись с тем же `id` в `species-details.json`.
 
-Главная иллюстрация и заголовок независимы. В `hero.json` поле `heading` содержит главный заголовок, а `subheading` полное название. Первые буквы слов выделяются автоматически, O в Oxygen и BHOC окрашена в красный. Картинка сохраняет исходные пропорции.
+Главная иллюстрация и заголовок независимы. В `hero.json` поле `heading` содержит главный заголовок, а `product.name` и `product.expansion` задают BHOC и его полное название. Первые буквы слов выделяются автоматически, O в Oxygen и BHOC окрашена в красный. Картинка сохраняет исходные пропорции.
 
 ## Как добавить новость или фотографию
 
@@ -103,4 +103,4 @@ ALT описывает то, что видно. Имя автора или сп�
 
 Достаточно сказать: «Измени текст только в блоке Science» или «Добавь новость после Species». Редактируется файл указанного блока, затем собирается и проверяется страница. Исходный рисунок не перерисовывается.
 
-Ручная сборка для разработчика: `node scripts/build.mjs --out dist`, затем `node scripts/check-site.mjs dist`. Проверка охватывает главную и пять внутренних страниц.
+Ручная сборка для разработчика: `node scripts/build.mjs --out dist`, затем `node scripts/check-site.mjs dist`. Проверка охватывает главную, восемь внутренних страниц и старый URL-редирект Publications.

@@ -1,10 +1,4 @@
 {
-  "logo": {
-    "src": "assets/reference-veterinary-wordmark.webp",
-    "alt": "BHOC Veterinary",
-    "width": 121,
-    "height": 47
-  },
   "navigation": [
     {
       "label": "Product",
