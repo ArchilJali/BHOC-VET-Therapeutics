@@ -2,7 +2,7 @@
   "slug": "product",
   "navLabel": "Product",
   "title": "BHOC Veterinary Product | Biological Hemoglobin Oxygen Carrier",
-  "description": "Explore the BHOC Veterinary product direction, a Biological Hemoglobin Oxygen Carrier platform for controlled oxygen delivery and veterinary research.",
+  "description": "Explore the BHOC Veterinary product direction, a Biological Hemoglobin Oxygen Carrier platform designed for controlled microvascular and tissue-level oxygen delivery beyond red-cell system limitations.",
   "schemaType": "WebPage",
   "seo": {
     "primaryKeyword": "Biological Hemoglobin Oxygen Carrier product",
@@ -20,7 +20,10 @@
       "room-temperature shelf life",
       "red-cell-antigen-free",
       "microvascular oxygenation",
-      "tissue oxygenation"
+      "tissue oxygenation",
+      "red blood cell limitations",
+      "blood group barriers",
+      "donor blood logistics"
     ]
   },
   "eyebrow": "BHOC Product",
@@ -28,32 +31,34 @@
   "lead": "BHOC is a veterinary and multi-species development direction within Precision Oxygen Therapeutics.",
   "profile": {
     "eyebrow": "Product identity",
-    "title": "Controlled oxygen delivery beyond the red-cell system.",
+    "title": "Beyond the red blood cell system and its limitations.",
     "paragraphs": [
-      "BHOC means Biological Hemoglobin Oxygen Carrier. It is a cell-free hemoglobin platform intended for immediate, controlled microvascular and tissue-level oxygenation while endogenous erythropoiesis recovers.",
-      "The intended profile is donor-independent, compatible across blood types and designed for practical room-temperature logistics. It is an oxygen-delivery platform, not a replacement for the wider biological functions of blood."
+      "BHOC means Biological Hemoglobin Oxygen Carrier. It is a cell-free hemoglobin oxygen-delivery platform designed for immediate, controlled microvascular and tissue-level oxygenation when red-cell-dependent oxygen delivery is insufficient, delayed or operationally constrained, while endogenous erythropoiesis recovers.",
+      "The intended product profile is donor-independent, designed to be red-cell-antigen-free and compatible across blood types, with long shelf life and practical room-temperature logistics. By moving oxygen delivery beyond dependence on intact donor red cells, BHOC is designed to address limitations created by blood-group matching, donor availability, storage, transport, expiry and access.",
+      "Across species, blood-group systems may be known, partially characterized or unknown. BHOC uses one core cell-free oxygen-carrier architecture intended to avoid red-cell blood-group antigens, while species-specific formulation, dosing, safety and efficacy remain independent evidence requirements.",
+      "BHOC is not intended to reproduce every biological function of whole blood. Its core objective is more precise: preserve or restore effective oxygen delivery to tissues and cells when the red-cell system cannot provide it adequately or quickly enough."
     ]
   },
   "objectives": [
     {
       "icon": "heart",
       "title": "Immediate oxygen delivery",
-      "text": "Support oxygen transport when anemia or blood loss limits oxygen-carrying capacity."
+      "text": "Support microvascular and tissue-level oxygen delivery when anemia, blood loss or red-cell limitations reduce effective oxygen transport."
     },
     {
       "icon": "people",
-      "title": "Donor-independent logistics",
-      "text": "A development profile that does not depend on donor matching or crossmatching."
+      "title": "Beyond blood-group barriers",
+      "text": "A donor-independent, red-cell-antigen-free development profile designed to avoid dependence on blood typing, donor matching and crossmatching."
     },
     {
       "icon": "globe",
-      "title": "Room-temperature stability",
-      "text": "Long shelf life and practical handling are core product-development objectives."
+      "title": "Room-temperature logistics",
+      "text": "Long shelf life, practical storage and reduced dependence on donor-blood logistics are core product-development objectives."
     },
     {
       "icon": "molecule",
       "title": "Cell-free architecture",
-      "text": "Designed to be endotoxin-free and free of red-cell antigens, with species-specific evidence still required."
+      "text": "One core Biological Hemoglobin Oxygen Carrier architecture designed for controlled oxygen delivery across blood-group systems, with species-specific evidence still required."
     }
   ],
   "boundary": {
