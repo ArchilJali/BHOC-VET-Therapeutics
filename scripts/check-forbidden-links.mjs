@@ -2,7 +2,10 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 
 const root=path.resolve(process.argv[2]||'_site');
-// Keep the excluded vendor domain out of authored content while retaining a\n// build-time guard against it being introduced again.\nconst excludedHost=['hbo2','therapeutics.com'].join('');\nconst forbidden=new RegExp(`https?:\\/\\/(?:www\\.)?${excludedHost.replace('.', '\\\\.')}(?:\\/|\\b)`,'i');
+// Keep the excluded vendor domain out of authored content while retaining a
+// build-time guard against it being introduced again.
+const excludedHost=['hbo2','therapeutics.com'].join('');
+const forbidden=new RegExp(`https?:\\/\\/(?:www\\.)?${excludedHost.replace('.', '\\.')}(?:\\/|\\b)`,'i');
 const files=[];
 
 async function walk(dir){
