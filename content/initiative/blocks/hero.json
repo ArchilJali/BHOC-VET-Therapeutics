@@ -27,5 +27,29 @@
     "height": 900
   },
   "caption": "A pencil study of threatened and Red List wild species, drawn as a visual metaphor for preserving every animal.",
-  "principles": []
+  "principlesEnabled": false,
+  "principlesLabel": "Initiative priorities",
+  "principles": [
+    {
+      "symbol": "◎",
+      "lines": [
+        "Endangered",
+        "species"
+      ]
+    },
+    {
+      "symbol": "◒",
+      "lines": [
+        "Thriving",
+        "ecosystems"
+      ]
+    },
+    {
+      "symbol": "∞",
+      "lines": [
+        "A healthier",
+        "tomorrow"
+      ]
+    }
+  ]
 }
