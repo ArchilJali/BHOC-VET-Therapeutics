@@ -60,7 +60,7 @@
     "Biodiversity"
   ],
   "language": "en",
-  "updated": "2026-09-07",
+  "updated": "2026-09-08",
   "contactEmail": "info@bhoctherapeutics.com",
   "organizationLogo": {
     "src": "assets/bhoc-veterinary-organization-logo.svg",
@@ -70,9 +70,9 @@
   },
   "publication": {
     "firstPublished": "2026-09-07",
-    "updates": 7,
-    "lastUpdated": "2026-09-07",
-    "version": "26.09.07"
+    "updates": 11,
+    "lastUpdated": "2026-09-08",
+    "version": "26.09.08"
   },
   "sameAs": [
     "https://www.linkedin.com/company/bhoc-therapeutics/",
