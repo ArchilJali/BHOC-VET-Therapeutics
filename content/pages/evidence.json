@@ -48,12 +48,12 @@
     },
     "links": [
       {
-        "label": "Read the original FDA FOI summary",
-        "href": "https://animaldrugsatfda.fda.gov/adafda/app/search/public/document/downloadFoi/3700"
+        "label": "Open the full Veterinary Evidence Hub",
+        "href": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-index.html"
       },
       {
-        "label": "Open the FDA evidence record",
-        "href": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-FDA-registry.html"
+        "label": "Open the BHOC VET-platform",
+        "href": "https://archiljali.github.io/BHOC-VET-platform/"
       }
     ]
   },
