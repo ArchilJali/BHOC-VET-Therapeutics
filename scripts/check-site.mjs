@@ -149,14 +149,15 @@ for(const match of initiativeHome.matchAll(/<img\b[^>]*>/g)){
 }
 
 const home=htmlByPage.get('index.html');
-assert.match(home,/<link rel="preload" as="image" href="\.\/assets\/bhoc-initiative-land-hero\.png" type="image\/png" fetchpriority="high">/);
-assert.match(home,/<img src="\.\/assets\/bhoc-initiative-land-hero\.png"[^>]*fetchpriority="high"/);
+assert.match(home,/<link rel="preload" as="image" href="\.\/assets\/bhoc-initiative-land-hero\.webp" type="image\/webp" fetchpriority="high">/);
+assert.match(home,/<img src="\.\/assets\/bhoc-initiative-land-hero\.webp"[^>]*fetchpriority="high"/);
 assert.equal((home.match(/data-hero-slide/g)||[]).length,3,`Three hero slides`);
 assert.match(home,/data-slide-label="Land"[\s\S]*data-slide-label="Winter"[\s\S]*data-slide-label="Ocean"/,`Hero order is Land, Winter, Ocean`);
 assert.match(home,/data-autoplay-ms="300000"/,`Hero rotates every five minutes`);
 assert.equal((home.match(/data-hero-dot=/g)||[]).length,3,`Three hero selection dots`);
 assert.match(home,/class="hero-control hero-prev"/);
 assert.match(home,/class="hero-control hero-next"/);
+assert.match(home,/natural manta ray, seal, walrus, dugong, whale shark/);
 assert.match(home,/<div class="landscape" aria-hidden="true"><img [^>]*alt=""/,`Decorative landscape keeps an intentionally empty ALT`);
 assert.match(home,/class="wordmark-expansion">Biological Hemoglobin Oxygen Carrier<\/span>/,`Header expands BHOC`);
 
@@ -223,9 +224,13 @@ assert.match(redirect,/rel="canonical" href="https:\/\/bhocvet\.com\/evidence\.h
 const sitemap=await fs.readFile(path.join(out,'sitemap.xml'),'utf8');
 assert.match(sitemap,/bhoc-veterinary-organization-logo\.svg/,`Sitemap contains organization logo`);
 assert.match(sitemap,/bhoc-wildlife-rainbow-20260906-v2\.png/,`Sitemap contains social image`);
-assert.match(sitemap,/bhoc-initiative-land-hero\.png/,`Sitemap contains Land hero`);
-assert.match(sitemap,/bhoc-initiative-winter-hero\.png/,`Sitemap contains Winter hero`);
-assert.match(sitemap,/bhoc-initiative-ocean-hero\.png/,`Sitemap contains Ocean hero`);
+assert.match(sitemap,/bhoc-initiative-land-hero\.webp/,`Sitemap contains Land hero`);
+assert.match(sitemap,/bhoc-initiative-winter-hero\.webp/,`Sitemap contains Winter hero`);
+assert.match(sitemap,/bhoc-initiative-ocean-hero-v2\.webp/,`Sitemap contains Ocean hero`);
+for(const heroAsset of ['bhoc-initiative-land-hero.webp','bhoc-initiative-winter-hero.webp','bhoc-initiative-ocean-hero-v2.webp']){
+  const {size}=await fs.stat(path.join(out,'assets',heroAsset));
+  assert.ok(size<400_000,`${heroAsset}: optimized hero asset stays below 400 KB`);
+}
 assert.match(sitemap,/https:\/\/bhocvet\.com\/product\.html/);
 assert.match(sitemap,/https:\/\/bhocvet\.com\/evidence\.html/);
 assert.match(sitemap,/https:\/\/bhocvet\.com\/initiative\.html/);
