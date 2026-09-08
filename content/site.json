@@ -70,7 +70,7 @@
   },
   "publication": {
     "firstPublished": "2026-09-07",
-    "updates": 11,
+    "updates": 12,
     "lastUpdated": "2026-09-08",
     "version": "26.09.08"
   },
@@ -146,6 +146,10 @@
           {
             "label": "BHOC Initiative",
             "href": "initiative.html"
+          },
+          {
+            "label": "Full Initiative",
+            "href": "./initiative/"
           },
           {
             "label": "IUCN Red List",

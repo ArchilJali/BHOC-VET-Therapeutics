@@ -65,6 +65,7 @@ for(const type of allowed.filter(type=>type!=='story'))if(blocks.filter(b=>b.typ
 
 const sourceAssets=await fs.stat(path.join(root,'assets')).then(()=>path.join(root,'assets')).catch(()=>path.join(root,'dist/assets'));
 if(path.resolve(sourceAssets)!==path.join(out,'assets'))await fs.cp(sourceAssets,path.join(out,'assets'),{recursive:true});
+await fs.cp(path.join(root,'src/initiative'),path.join(out,'initiative'),{recursive:true});
 
 const cssNames=[...new Set(['theme','header',...blocks.map(b=>b.type),'science','pages','dialogs'])];
 const cssLinks=[];
@@ -180,7 +181,12 @@ const imageEntries=[...new Map([
   hero.initiative.image,
   ...(blocks.find(b=>b.type==='species')?.data.items||[]).map(item=>item.image)
 ].map(image=>[image.src,image])).values()];
-const sitemapUrls=[{path:'',images:imageEntries},...pages.map(page=>({path:page.slug+'.html',images:[]}))];
+const initiativeImages=[
+  {src:'assets/reference-initiative-mark.webp'},
+  {src:'assets/initiative/hero-endangered-red-book.webp'},
+  {src:'assets/initiative/microcirculation.webp'}
+];
+const sitemapUrls=[{path:'',images:imageEntries},...pages.map(page=>({path:page.slug+'.html',images:[]})),{path:'initiative/',images:initiativeImages}];
 await write('sitemap.xml',`<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">${sitemapUrls.map(entry=>`<url><loc>${absolute(entry.path)}</loc><lastmod>${site.updated}</lastmod>${entry.images.map(image=>`<image:image><image:loc>${absolute(image.src)}</image:image>`).join('')}</url>`).join('')}</urlset>\n`);
 await write('robots.txt',`User-agent: *\nAllow: /\nSitemap: ${absolute('sitemap.xml')}\n`);
 await write('CNAME',new URL(site.canonical).hostname+'\n');
