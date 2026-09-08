@@ -193,14 +193,15 @@
       "text": "Andy Pharoah, Vice President of Corporate Affairs and Sustainability at Mars, is associated with a Mars Impact Fund grant round awarding more than $13 million to six partners. Worldwide Veterinary Service received $3 million for a Thailand rabies-elimination programme designed to strengthen local veterinary infrastructure and protect animals and communities. Durable veterinary capacity is as important as campaign activity.",
       "why": "BHOC Initiative: veterinary infrastructure + One Health",
       "image": {
-        "url": "assets/bhoc-wildlife-rainbow-20260906-v2.png",
-        "alt": "BHOC Veterinary wildlife and biodiversity illustration representing veterinary philanthropy, rabies elimination and One Health",
-        "width": 1672,
-        "height": 941
+        "url": "https://d2vjg8vjbfxfu1.cloudfront.net/app/uploads/20220803091244/Mars-Veterinary-Health-A-Division-of-Mars-Petcare-Logo-CMYK-.png",
+        "alt": "Mars Veterinary Health logo, a division of Mars Petcare",
+        "width": 900,
+        "height": 520,
+        "variant": "logo"
       },
       "credit": {
-        "label": "BHOC Veterinary visual",
-        "href": "https://bhocvet.com/"
+        "label": "Mars Veterinary Health",
+        "href": "https://marsveterinary.com/"
       },
       "link": {
         "label": "Read source",
@@ -269,39 +270,6 @@
         "label": "Read primary source",
         "href": "https://dxcprod.doc.govt.nz/news/media-releases/2026-media-releases/kakapo-population-reaches-new-milestone/"
       }
-    },
-    {
-      "id": "natuurhulpcentrum-wildlife-rescue-pressure",
-      "date": "2026-08-26",
-      "dateLabel": "26 Aug 2026",
-      "region": "Belgium · Oudsbergen",
-      "category": "Wildlife rescue and funding",
-      "title": "Wildlife rescue centres face a sharp rise in admissions while public funding remains limited.",
-      "text": "Annick Hus highlighted that Natuurhulpcentrum Oudsbergen has admitted more than 10,000 wild animals amid heat, drought and disease pressure. The centre reports that only 7% of its funding comes from government support, leaving the remaining 93% to be raised independently. The story shows why wildlife rescue is also a medical and infrastructure challenge.",
-      "why": "BHOC Initiative: rescue capacity + conservation medicine",
-      "image": {
-        "url": "assets/bhoc-wildlife-rainbow-20260906-v2.png",
-        "alt": "BHOC Veterinary wildlife and biodiversity illustration representing wildlife rescue, rehabilitation and conservation medicine",
-        "width": 1672,
-        "height": 941
-      },
-      "credit": {
-        "label": "BHOC Veterinary visual",
-        "href": "https://bhocvet.com/"
-      },
-      "link": {
-        "label": "Read source",
-        "href": "https://www.linkedin.com/posts/annickhus_more-than-10000-wild-animals-have-been-admitted-activity-7498273289182580736-mudP"
-      },
-      "keywords": [
-        "Annick Hus",
-        "Natuurhulpcentrum Oudsbergen",
-        "Belgium",
-        "wildlife rescue",
-        "wildlife rehabilitation",
-        "conservation funding",
-        "conservation medicine"
-      ]
     }
   ],
   "channels": [

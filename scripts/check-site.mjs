@@ -96,7 +96,49 @@ for(const [name,html] of htmlByPage){
   const footerHrefs=[...footer.matchAll(/href="([^"]+)"/g)].map(match=>match[1]);
   assert.equal(new Set(footerHrefs).size,footerHrefs.length,`${name}: footer destinations are not duplicated`);
   assert.match(footer,/Project lead: <strong>BHOC Team<\/strong>\./,`${name}: team footer attribution`);
-  assert.match(footer,/First published <time datetime="2026-09-07">07 Sep 2026<\/time>.*11 updates.*Last updated <time datetime="2026-09-08">08 Sep 2026<\/time>.*Version 26\.09\.08/,`${name}: publication history`);
+  assert.match(footer,/First published <time datetime="2026-09-07">07 Sep 2026<\/time>.*13 updates.*Last updated <time datetime="2026-09-08">08 Sep 2026<\/time>.*Version 26\.09\.08/,`${name}: publication history`);
+  assert.match(footer,/href="\.\/initiative\/">BHOC Initiative<\/a>/,`${name}: full Initiative route`);
+  assert.match(footer,/href="initiative\.html">Initiative overview<\/a>/,`${name}: legacy Initiative overview remains linked`);
+}
+
+const initiativeHomePath=path.join(out,'initiative','index.html');
+const initiativeHome=await fs.readFile(initiativeHomePath,'utf8');
+assert.equal((initiativeHome.match(/<h1\b/g)||[]).length,1,'initiative/index.html: exactly one H1');
+const initiativeBlockNames=[...initiativeHome.matchAll(/<!-- BLOCK ([a-z-]+): content\/initiative\/blocks\/[a-z-]+\.json -->/g)].map(match=>match[1]);
+assert.deepEqual(initiativeBlockNames,['hero','challenge','oxygen-platform','kipling','microcirculation','focus','work','partners'],'initiative/index.html: approved block order');
+for(const blockName of initiativeBlockNames)assert.match(initiativeHome,new RegExp('data-block="'+blockName+'"'),'initiative/index.html: block marker '+blockName);
+assert.match(initiativeHome,/rel="canonical" href="https:\/\/bhocvet\.com\/initiative\/"/);
+assert.match(initiativeHome,/property="og:image" content="https:\/\/bhocvet\.com\/assets\/initiative\/hero-endangered-red-book\.webp"/);
+assert.match(initiativeHome,/name="twitter:card" content="summary_large_image"/);
+assert.match(initiativeHome,/src="\.\.\/assets\/reference-initiative-mark\.webp"/);
+assert.match(initiativeHome,/src="\.\.\/assets\/initiative\/hero-endangered-red-book\.webp"[^>]*alt="Red List wildlife in a mountain habitat: giant panda, rhinoceros, snow leopard, gorilla, tiger and marine turtle"/);
+assert.match(initiativeHome,/We be of one blood, ye and I\./);
+assert.match(initiativeHome,/Rudyard Kipling, <em>The Jungle Book<\/em>/);
+assert.match(initiativeHome,/href="\.\.\/news\.html">News<\/a>/);
+assert.match(initiativeHome,/href="\.\.\/contact\.html">Contact<\/a>/);
+assert.match(initiativeHome,/href="\.\.\/applications\.html"/);
+assert.match(initiativeHome,/href="\.\.\/index\.html">BHOC Veterinary<\/a>/);
+assert.doesNotMatch(initiativeHome,/bhoc-species-initiative\.archil-jali\.chatgpt\.site/);
+assert.doesNotMatch(initiativeHome,/hbo2therapeutics\.com\/our-product/i);
+assert.doesNotMatch(initiativeHome,/href="\.\.\/(?:news|contact|applications|index)\.html"[^>]*target="_blank"/);
+const initiativeIds=new Set([...initiativeHome.matchAll(/\bid="([^"]+)"/g)].map(match=>match[1]));
+for(const match of initiativeHome.matchAll(/href="#([^"]+)"/g))assert.ok(initiativeIds.has(match[1]),`initiative/index.html: missing anchor #${match[1]}`);
+for(const match of initiativeHome.matchAll(/<(?:img|script|link)\b[^>]*(?:src|href)="([^"]+)"/g)){
+  const ref=match[1];
+  if(/^(?:https:|mailto:|#)/.test(ref))continue;
+  await fs.access(path.resolve(path.dirname(initiativeHomePath),ref.split(/[?#]/)[0]));
+}
+for(const match of initiativeHome.matchAll(/<a\b[^>]*href="([^"]+)"/g)){
+  const ref=match[1];
+  if(/^(?:https:|mailto:|#)/.test(ref))continue;
+  const clean=ref.split(/[?#]/)[0];
+  const target=clean.endsWith('/')?path.join(clean,'index.html'):clean;
+  await fs.access(path.resolve(path.dirname(initiativeHomePath),target));
+}
+for(const match of initiativeHome.matchAll(/<img\b[^>]*>/g)){
+  assert.match(match[0],/\balt="/,'initiative/index.html: image needs ALT');
+  assert.match(match[0],/\bwidth="\d+"/,'initiative/index.html: image needs width');
+  assert.match(match[0],/\bheight="\d+"/,'initiative/index.html: image needs height');
 }
 
 const home=htmlByPage.get('index.html');
@@ -118,12 +160,15 @@ assert.deepEqual(navItems,[
   ['applications.html','Application'],
   ['evidence.html','Evidence'],
   ['science.html','Science'],
-  ['initiative.html','Initiative'],
+  ['./initiative/','Initiative'],
   ['related-information.html','Related Information'],
   ['news.html','News']
 ],`Primary navigation order and labels`);
 
 assert.match(home,/<h1 id="home-heading">Precision Oxygen Therapeutics<\/h1>/);
+assert.equal((home.match(/class="hero-hotspot" href="\.\/initiative\/"[^>]*aria-label="Explore species"/g)||[]).length,2,`Winter and Ocean hero links open the BHOC Initiative`);
+assert.match(home,/class="block-biodiversity"[\s\S]*?href="\.\/initiative\/"/);
+assert.match(home,/href="\.\/initiative\/#focus"[\s\S]*?Species preservation/);
 assert.match(home,/BH<span class="oxygen-initial">O<\/span>C/);
 for(const word of ['Biological','Hemoglobin','Oxygen','Carrier'])assert.match(home,new RegExp(`<strong>${word[0]}</strong>${word.slice(1)}`),`BHOC initials are emphasized`);
 assert.match(home,/For immediate, controlled microvascular and tissue-level oxygenation while endogenous erythropoiesis recovers\./);
@@ -159,6 +204,7 @@ assert.match(htmlByPage.get('related-information.html'),/>Professional publicati
 assert.match(htmlByPage.get('related-information.html'),/>Related scientific information</);
 assert.match(htmlByPage.get('related-information.html'),/>Conservation databases</);
 assert.match(htmlByPage.get('initiative.html'),/>Many species\. Blood group systems, known and unknown\. One BHOC system\. One core design engineered by nature\./);
+assert.match(htmlByPage.get('initiative.html'),/href="\.\/initiative\/"><span>Open Full Initiative<\/span>/);
 assert.match(htmlByPage.get('contact.html'),/data-contact-email="info@bhoctherapeutics\.com"/);
 
 const redirect=await fs.readFile(path.join(out,'publications.html'),'utf8');
@@ -175,6 +221,8 @@ assert.match(sitemap,/bhoc-initiative-ocean-hero\.png/,`Sitemap contains Ocean h
 assert.match(sitemap,/https:\/\/bhocvet\.com\/product\.html/);
 assert.match(sitemap,/https:\/\/bhocvet\.com\/evidence\.html/);
 assert.match(sitemap,/https:\/\/bhocvet\.com\/initiative\.html/);
+assert.match(sitemap,/https:\/\/bhocvet\.com\/initiative\//);
+assert.match(sitemap,/https:\/\/bhocvet\.com\/assets\/initiative\/hero-endangered-red-book\.webp/);
 assert.match(sitemap,/https:\/\/bhocvet\.com\/related-information\.html/);
 assert.doesNotMatch(sitemap,/publications\.html/,`Legacy redirect is omitted from sitemap`);
 
@@ -193,6 +241,23 @@ assert.ok(target,'Mission block is available for independent-content test');
 const edit=structuredClone(target.data);
 edit.description='An independently updated mission paragraph.';
 assert.notEqual(target.render(edit),target.html,'Mission content can change independently');
+
+const initiativeManifestSource=JSON.parse(await fs.readFile(path.join(root,'content/initiative/homepage.json'),'utf8'));
+const renderedInitiative=[];
+for(const block of initiativeManifestSource.blocks.filter(block=>block.enabled)){
+  const data=JSON.parse(await fs.readFile(path.join(root,'content',block.file),'utf8'));
+  const {default:render}=await import('../src/initiative/blocks/'+block.type+'.mjs');
+  renderedInitiative.push({block,data,render,html:render(data)});
+}
+assert.equal(renderedInitiative.length,8,'Initiative homepage has eight independently rendered blocks');
+const initiativeTarget=renderedInitiative.find(item=>item.block.type==='challenge');
+assert.ok(initiativeTarget,'Initiative challenge block is independently editable');
+const initiativeEdit=structuredClone(initiativeTarget.data);
+initiativeEdit.intro='An independently updated Initiative paragraph.';
+assert.notEqual(initiativeTarget.render(initiativeEdit),initiativeTarget.html,'Initiative block content can change independently');
+for(const item of renderedInitiative.filter(item=>item!==initiativeTarget))assert.equal(item.render(item.data),item.html,'Editing Initiative challenge leaves '+item.block.type+' unchanged');
+const initiativeTemplateSource=await fs.readFile(path.join(root,'src/initiative/index.html'),'utf8');
+for(const slot of ['{{HEAD}}','{{HEADER}}','{{BLOCKS}}','{{FOOTER}}'])assert.ok(initiativeTemplateSource.includes(slot),'Initiative template keeps modular slot '+slot);
 for(const item of rendered.filter(item=>item!==target))assert.equal(item.render(item.data),item.html,`Editing mission leaves ${item.block.type} unchanged`);
 
 const {default:story}=await import('../src/blocks/story.mjs');
@@ -201,4 +266,4 @@ assert.match(storyHTML,/A new update/);
 assert.doesNotMatch(storyHTML,/<script>/);
 assert.match(storyHTML,/&lt;script&gt;/);
 
-console.log(`Passed: ${expectedPages.length} indexed pages, legacy redirect, semantic HTML, assets, schema, social previews, navigation and independent content rendering.`);
+console.log(`Passed: ${expectedPages.length} core pages plus the BHOC Initiative homepage, legacy redirect, semantic HTML, assets, schema, social previews, navigation and independent content rendering.`);

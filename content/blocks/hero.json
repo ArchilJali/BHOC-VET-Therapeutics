@@ -50,7 +50,7 @@
       "hotspots": [
         {
           "label": "Explore species",
-          "href": "#species",
+          "href": "./initiative/",
           "left": 67.4,
           "top": 48.4,
           "width": 14.7,
@@ -71,7 +71,7 @@
       "hotspots": [
         {
           "label": "Explore species",
-          "href": "#species",
+          "href": "./initiative/",
           "left": 70,
           "top": 47.5,
           "width": 16.5,
@@ -91,7 +91,7 @@
     "tagline": "One Oxygen. One Biology. One BHOC System.",
     "promise": "For Every Species. Wherever Life Is at Risk.",
     "link": {
-      "href": "initiative.html",
+      "href": "./initiative/",
       "label": "Explore the BHOC Initiative"
     }
   },

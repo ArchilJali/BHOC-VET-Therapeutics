@@ -25,6 +25,12 @@ Editable website pages and independent homepage blocks for [bhocvet.com](https:/
 | Layout for one block | `src/blocks/<type>.mjs`, `src/styles/<type>.css` |
 | Layout for one inner page | `src/pages/<page>.mjs`, `src/styles/pages.css` |
 
+## Initiative block architecture
+
+The full Initiative homepage at /initiative/ is assembled from the ordered manifest in [content/initiative/homepage.json](content/initiative/homepage.json). Each visible section has its own content file in [content/initiative/blocks](content/initiative/blocks) and its own renderer in [src/initiative/blocks](src/initiative/blocks). Header, footer and SEO data are separate files in [content/initiative](content/initiative). The approved Initiative stylesheet remains shared, so a single block can be developed or replaced without rewriting the page.
+
+The historical overview page at /initiative.html remains part of the site. Primary Initiative navigation opens /initiative/ directly.
+
 ## Build
 
 Node 22 or later. The static generator has no npm runtime dependencies.

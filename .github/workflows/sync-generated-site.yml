@@ -57,9 +57,13 @@ jobs:
           cp _site/assets/favicon.svg assets/favicon.svg
           cp _site/assets/bhoc-veterinary-organization-logo.svg assets/bhoc-veterinary-organization-logo.svg
 
+          rm -rf initiative
+          mkdir -p initiative
+          cp -a _site/initiative/. initiative/
+
       - name: Commit synchronized generated files
         run: |
-          git add index.html product.html applications.html evidence.html science.html initiative.html related-information.html news.html contact.html publications.html robots.txt sitemap.xml CNAME app.js .nojekyll assets/css assets/favicon.svg assets/bhoc-veterinary-organization-logo.svg dist
+          git add index.html product.html applications.html evidence.html science.html initiative.html initiative related-information.html news.html contact.html publications.html robots.txt sitemap.xml CNAME app.js .nojekyll assets/css assets/favicon.svg assets/bhoc-veterinary-organization-logo.svg dist
           if git diff --cached --quiet; then
             echo "Generated root and dist are already synchronized."
             exit 0

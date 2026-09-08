@@ -1,0 +1,99 @@
+{
+  "id": "focus",
+  "title": "Our Focus Areas",
+  "intro": "Applying science. Building partnerships. Expanding impact across species and ecosystems.",
+  "cards": [
+    {
+      "href": "#partners",
+      "image": {
+        "src": "assets/initiative/focus-wildlife.webp",
+        "alt": "Snow leopard in mountain habitat representing wildlife rescue",
+        "width": 292,
+        "height": 132
+      },
+      "titleLines": [
+        "Wildlife Rescue"
+      ],
+      "text": "Supporting emergency care and critical solutions."
+    },
+    {
+      "href": "https://www.iucnredlist.org/",
+      "image": {
+        "src": "assets/initiative/focus-red-book.webp",
+        "alt": "Elephant representing endangered and Red List species",
+        "width": 300,
+        "height": 132
+      },
+      "titleLines": [
+        "Endangered &",
+        "Red Book Species"
+      ],
+      "text": "Helping protect the world's most vulnerable species."
+    },
+    {
+      "href": "#partners",
+      "image": {
+        "src": "assets/initiative/focus-zoo.webp",
+        "alt": "Marine wildlife representing zoo and zoological institutions",
+        "width": 300,
+        "height": 132
+      },
+      "titleLines": [
+        "Zoo & Zoological Institutions"
+      ],
+      "text": "Supporting animal health and population resilience."
+    },
+    {
+      "href": "../applications.html",
+      "image": {
+        "src": "assets/initiative/focus-veterinary.webp",
+        "alt": "Gorilla representing veterinary and clinical care across species",
+        "width": 302,
+        "height": 132
+      },
+      "titleLines": [
+        "Veterinary & Clinical Care"
+      ],
+      "text": "Advancing care across species, in the field or clinic."
+    },
+    {
+      "href": "#mission",
+      "image": {
+        "src": "assets/initiative/focus-conservation.webp",
+        "alt": "Birds over a protected landscape representing conservation programs",
+        "width": 314,
+        "height": 132
+      },
+      "titleLines": [
+        "Conservation Programs"
+      ],
+      "text": "Enabling habitat conservation through species support."
+    },
+    {
+      "href": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-index.html",
+      "image": {
+        "src": "assets/initiative/focus-science.webp",
+        "alt": "Linked biological forms representing scientific collaboration",
+        "width": 298,
+        "height": 132
+      },
+      "titleLines": [
+        "Scientific Collaboration"
+      ],
+      "text": "Uniting experts across disciplines and borders."
+    },
+    {
+      "href": "#partners",
+      "image": {
+        "src": "assets/initiative/focus-philanthropy.webp",
+        "alt": "Hands protecting a seedling representing foundations and philanthropy",
+        "width": 296,
+        "height": 132
+      },
+      "titleLines": [
+        "Foundations & Philanthropy"
+      ],
+      "text": "Building a more resilient future through strategic giving."
+    }
+  ]
+}

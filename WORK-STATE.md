@@ -26,9 +26,13 @@ Do not substitute earlier hero, logo or portrait variants. Text, links, buttons 
 
 ## Pages and URL continuity
 
-The indexed pages are `index.html`, `product.html`, `applications.html`, `evidence.html`, `science.html`, `initiative.html`, `related-information.html`, `news.html` and `contact.html`.
+The indexed pages are `index.html`, `product.html`, `applications.html`, `evidence.html`, `science.html`, `initiative.html`, `initiative/`, `related-information.html`, `news.html` and `contact.html`.
+
+`initiative/` is the full BHOC Species & Biodiversity Protection Initiative homepage based on the approved visual. The earlier `initiative.html` overview remains available and links to the full page. Source files live in `src/initiative/`; page-specific image assets live in `assets/initiative/`. Internal BHOC Veterinary routes stay in the same browser tab.
 
 `publications.html` is intentionally retained as a `noindex,follow` redirect to `evidence.html`. Keep it so historical links continue to work. `404.html`, `CNAME`, `robots.txt` and `sitemap.xml` are also required.
+
+The full Initiative homepage now uses the same independent-block architecture as the BHOC Veterinary homepage. Section order and visibility live in content/initiative/homepage.json; each section has its own JSON data file and renderer. The approved visual styling remains shared and unchanged. Main Initiative entry points open /initiative/ directly, while the earlier overview remains available at /initiative.html.
 
 ## Responsive behavior
 
@@ -50,7 +54,7 @@ The indexed pages are `index.html`, `product.html`, `applications.html`, `eviden
 - Canonical URL, Open Graph, X/Twitter metadata, schema, descriptive ALT text and sitemap entries must remain intact.
 - The footer keeps LinkedIn and the full VET Evidence Platform as distinct destinations.
 
-Publication line: `First published 07 Sep 2026 · 7 updates · Last updated 07 Sep 2026 · Version 26.09.07`. Increment `publication.updates` for each future public release.
+Publication line: `First published 07 Sep 2026 · 12 updates · Last updated 08 Sep 2026 · Version 26.09.08`. Increment `publication.updates` for each future public release.
 
 ## Editing and verification
 

@@ -1,0 +1,44 @@
+{
+  "blocks": [
+    {
+      "type": "hero",
+      "file": "initiative/blocks/hero.json",
+      "enabled": true
+    },
+    {
+      "type": "challenge",
+      "file": "initiative/blocks/challenge.json",
+      "enabled": true
+    },
+    {
+      "type": "oxygen-platform",
+      "file": "initiative/blocks/oxygen-platform.json",
+      "enabled": true
+    },
+    {
+      "type": "kipling",
+      "file": "initiative/blocks/kipling.json",
+      "enabled": true
+    },
+    {
+      "type": "microcirculation",
+      "file": "initiative/blocks/microcirculation.json",
+      "enabled": true
+    },
+    {
+      "type": "focus",
+      "file": "initiative/blocks/focus.json",
+      "enabled": true
+    },
+    {
+      "type": "work",
+      "file": "initiative/blocks/work.json",
+      "enabled": true
+    },
+    {
+      "type": "partners",
+      "file": "initiative/blocks/partners.json",
+      "enabled": true
+    }
+  ]
+}

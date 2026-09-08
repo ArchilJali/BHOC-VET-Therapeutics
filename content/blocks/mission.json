@@ -13,6 +13,6 @@
   },
   "button": {
     "label": "Explore the Initiative",
-    "href": "initiative.html"
+    "href": "./initiative/"
   }
 }
