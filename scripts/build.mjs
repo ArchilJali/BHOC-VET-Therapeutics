@@ -77,6 +77,7 @@ const client=await read('src/client/app.js');
 await write('app.js',client);
 
 const absolute=p=>new URL(p,site.canonical).href;
+const imageMime=src=>src.endsWith('.png')?'image/png':src.endsWith('.webp')?'image/webp':'image/jpeg';
 const personId=site.canonical+'#archil-jaliashvili';
 const orgId=site.canonical+'#organization';
 const webId=site.canonical+'#website';
@@ -123,14 +124,14 @@ const renderHeader=active=>`<header class="site-header"><a class="wordmark" href
 const formatDate=iso=>{const [year,month,day]=iso.split('-');return `${day} ${['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'][Number(month)-1]} ${year}`};
 const footerWordmark=[...header.wordmark.letters].map((letter,index)=>index===header.wordmark.accentIndex?`<span class="oxygen-initial">${esc(letter)}</span>`:esc(letter)).join('');
 const renderFooter=()=>{const publication=site.publication;const updateLabel=publication.updates===1?'update':'updates';return `<footer class="site-footer"><div class="footer-primary"><div class="footer-brand"><strong class="footer-wordmark" aria-label="BHOC Veterinary"><span class="footer-bhoc">${footerWordmark}</span><span class="footer-veterinary">VETERINARY</span></strong><span class="footer-expansion">${esc(header.wordmark.expansion)}</span></div><nav class="footer-directory" aria-label="Footer navigation">${site.footer.groups.map(group=>`<div class="footer-column"><h2>${esc(group.title)}</h2>${group.links.map(item=>`<a ${attrs(item)}>${esc(item.label)}</a>`).join('')}</div>`).join('')}</nav></div><div class="footer-secondary"><div class="footer-project"><p class="project-attribution">Project lead: <strong>${esc(site.footer.projectLead)}</strong>.</p><p class="footer-note">${esc(site.footer.note)}</p></div><nav class="footer-links" aria-label="Footer links">${site.footer.links.map(item=>`<a class="footer-link" ${attrs(item)}>${item.icon?icon(item.icon):''}<span>${esc(item.label)}</span></a>`).join('')}</nav><p class="footer-publication">First published <time datetime="${esc(publication.firstPublished)}">${formatDate(publication.firstPublished)}</time><span class="footer-separator" aria-hidden="true"> · </span>${publication.updates} ${updateLabel}<span class="footer-separator" aria-hidden="true"> · </span>Last updated <time datetime="${esc(publication.lastUpdated)}">${formatDate(publication.lastUpdated)}</time><span class="footer-separator" aria-hidden="true"> · </span>Version ${esc(publication.version)}</p><p class="footer-copyright">© ${site.updated.slice(0,4)} ${esc(site.footer.copyright)}</p></div></footer>`};
-const commonEnd=`${dialogHTML.join('\n')}${extras}<noscript><p class="noscript-note">Interactive search requires JavaScript. The main pages and source links remain available.</p><style>dialog{display:block;position:relative;margin:2rem auto}dialog .dialog-close,#search-dialog,#species-dialog,#all-species-dialog{display:none}.menu-toggle,.search-toggle,.round-control,.carousel-dots,.species-dots{display:none}.primary-nav{display:flex;position:static}.science-panel[hidden]{display:block!important}</style></noscript>`;
+const commonEnd=`${dialogHTML.join('\n')}${extras}<noscript><p class="noscript-note">Interactive search requires JavaScript. The main pages and source links remain available.</p><style>dialog{display:block;position:relative;margin:2rem auto}dialog .dialog-close,#search-dialog,#species-dialog,#all-species-dialog{display:none}.menu-toggle,.search-toggle,.round-control,.carousel-dots,.species-dots,.hero-control,.hero-dots{display:none}.primary-nav{display:flex;position:static}.science-panel[hidden]{display:block!important}</style></noscript>`;
 
 const renderHead=(meta,pagePath,isHome=false)=>`<head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#f65c00">
 <title>${esc(meta.title)}</title><meta name="description" content="${esc(meta.description)}"><meta name="author" content="${esc(site.author.name)}"><meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1"><link rel="canonical" href="${esc(absolute(pagePath))}">
 <meta property="og:type" content="website"><meta property="og:locale" content="en_US"><meta property="og:site_name" content="${esc(site.name)}"><meta property="og:title" content="${esc(meta.title)}"><meta property="og:description" content="${esc(meta.description)}"><meta property="og:url" content="${esc(absolute(pagePath))}"><meta property="og:image" content="${absolute(site.socialImage.src)}"><meta property="og:image:secure_url" content="${absolute(site.socialImage.src)}"><meta property="og:image:type" content="image/png"><meta property="og:image:width" content="${site.socialImage.width}"><meta property="og:image:height" content="${site.socialImage.height}"><meta property="og:image:alt" content="${esc(site.socialImage.alt)}">
 <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="${esc(meta.title)}"><meta name="twitter:description" content="${esc(meta.description)}"><meta name="twitter:image" content="${absolute(site.socialImage.src)}"><meta name="twitter:image:alt" content="${esc(site.socialImage.alt)}">
-<link rel="icon" href="./assets/favicon.svg" type="image/svg+xml"><link rel="sitemap" type="application/xml" href="${esc(absolute('sitemap.xml'))}">${isHome?`<link rel="preload" as="image" href="./${esc(hero.image.src)}" type="image/webp" fetchpriority="high">`:''}
+<link rel="icon" href="./assets/favicon.svg" type="image/svg+xml"><link rel="sitemap" type="application/xml" href="${esc(absolute('sitemap.xml'))}">${isHome?`<link rel="preload" as="image" href="./${esc(hero.image.src)}" type="${imageMime(hero.image.src)}" fetchpriority="high">`:''}
 ${cssLinks.join('\n')}
 <script type="application/ld+json">${safeJSON(graphFor(meta,pagePath,isHome))}</script><script id="site-data" type="application/json">${siteData}</script><script src="./app.js?v=${digest(client)}" defer></script>
 </head>`;
@@ -178,6 +179,7 @@ const imageEntries=[...new Map([
   site.socialImage,
   hero.image,
   hero.initiative.image,
+  ...(hero.slides||[]).map(slide=>slide.image),
   ...(blocks.find(b=>b.type==='species')?.data.items||[]).map(item=>item.image)
 ].map(image=>[image.src,image])).values()];
 const sitemapUrls=[{path:'',images:imageEntries},...pages.map(page=>({path:page.slug+'.html',images:[]}))];
