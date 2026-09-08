@@ -91,6 +91,8 @@
 }
 
 .hero-dots button {
+  -webkit-appearance: none;
+  appearance: none;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -98,20 +100,36 @@
   height: clamp(24px, 1.8vw, 36px);
   padding: 0;
   border: 0;
+  border-radius: 0;
+  outline: 0;
   background: transparent;
+  box-shadow: none;
+  filter: none;
 }
 
 .hero-dots span {
+  display: block;
   width: clamp(11px, 1.05vw, 21px);
   height: clamp(11px, 1.05vw, 21px);
   border: 0;
+  outline: 0;
   border-radius: 50%;
-  background: #545a5cd9;
-  box-shadow: 0 1px 6px #18242d66;
+  background: #545a5c;
+  box-shadow: none;
+  filter: none;
 }
 
 .hero-dots button[aria-current="true"] span {
   background: var(--accent);
+}
+
+.hero-dots button:focus-visible {
+  outline: 0;
+}
+
+.hero-dots button:focus-visible span {
+  outline: 2px solid #fff;
+  outline-offset: 3px;
 }
 
 @media (max-width: 720px) {
