@@ -33,11 +33,24 @@ export default page=>`<style>
 @media(max-width:1050px){.news-page .page-hero>div{gap:12px}.news-page .page-hero p{font-size:10.5px}.intelligence-head .section-heading p{display:none}.intelligence-inner{width:88%}}
 @media(max-width:820px){.news-page .page-hero>div{display:grid;grid-template-columns:auto 1fr;gap:5px 12px;white-space:normal}.news-page .page-hero .page-eyebrow{grid-column:1}.news-page .page-hero h1{grid-column:2;max-width:none}.news-page .page-hero p{grid-column:1/-1;max-width:none}.intelligence-inner{width:94%}.intelligence-head{align-items:flex-start;gap:8px}.intelligence-head .section-heading{display:block}.intelligence-head .section-heading .page-eyebrow{margin-bottom:4px}.intelligence-status{text-align:left}.conservation-feed{height:76vh;min-height:500px}.conservation-story{grid-template-columns:175px minmax(0,1fr)}}
 @media(max-width:640px){.news-page .page-hero{padding:11px var(--gutter) 9px}.news-page .page-hero>div{display:block}.news-page .page-hero .page-eyebrow{display:block;margin-bottom:3px}.news-page .page-hero h1{font-size:23px}.news-page .page-hero p{display:none}.intelligence-inner{width:100%}.intelligence-head{margin-bottom:7px}.intelligence-head .section-heading h2{font-size:19px}.intelligence-status{font-size:7.5px}.intelligence-status strong{display:block;margin:0}.scroll-cue{display:block;margin:2px 0 0}.conservation-feed{height:74vh;min-height:440px;padding-right:5px}.conservation-story{grid-template-columns:115px minmax(0,1fr);min-height:126px}.story-media,.story-media img{min-height:126px}.story-copy{padding:10px 11px}.story-copy h3{font-size:15px}.story-copy p{font-size:10px;line-height:1.4;display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden}.story-meta{font-size:7.5px}.story-footer{align-items:flex-start;flex-direction:column;gap:3px}.story-why{text-align:left;font-size:7.5px}.story-credit{font-size:6px}.channels-compact .news-grid{grid-template-columns:1fr}}
+
+/* Compact viewport news layout */
+.news-page .page-hero>div{display:block;max-width:1180px;margin:0;white-space:normal}
+.news-page .page-hero .page-eyebrow{display:block;margin:0 0 5px;font-size:9px}
+.news-page .page-hero h1{display:block;max-width:900px;margin:0;font-size:clamp(30px,4vw,52px);line-height:.98;letter-spacing:-1.2px;white-space:normal}
+.news-page .page-hero p{display:block;max-width:760px;margin:8px 0 0;font-size:11px;line-height:1.35;white-space:normal}
+.intelligence-head{justify-content:flex-end;margin-bottom:7px}
+.intelligence-head .section-heading{display:none}
+.feed-window{height:calc(100dvh - 245px);min-height:430px;max-height:820px;overflow:hidden}
+.conservation-feed{height:100%;min-height:0}
+.story-byline{display:block;margin:0 0 5px;color:#8b5a3c;font-size:9px;line-height:1.25;font-weight:700}
+@media(max-width:820px){.news-page .page-hero h1{font-size:clamp(26px,7vw,38px);line-height:1}.news-page .page-hero p{display:block;max-width:620px;font-size:10px}.feed-window{height:calc(100dvh - 230px);min-height:390px}.conservation-feed{height:100%;min-height:0}}
+@media(max-width:640px){.news-page .page-hero{padding:11px var(--gutter) 8px}.news-page .page-hero h1{font-size:clamp(24px,7.5vw,31px)}.news-page .page-hero p{display:block;margin-top:6px;font-size:9px;line-height:1.35}.intelligence-head{margin-bottom:6px}.intelligence-status{font-size:7.5px}.feed-window{height:calc(100dvh - 205px);min-height:350px;padding:7px 5px 7px 7px}.conservation-feed{height:100%;min-height:0}.story-byline{font-size:8px}}
 </style>
 <main id="main" class="subpage-main news-page">
   <section class="page-hero" aria-labelledby="news-page-heading"><div><span class="page-eyebrow">${esc(page.eyebrow)}</span><h1 id="news-page-heading">${esc(page.heading)}</h1><p>${esc(page.lead)}</p></div></section>
   <section class="page-section intelligence-section" aria-labelledby="intelligence-heading"><div class="intelligence-inner">
-    <div class="intelligence-head"><div class="section-heading"><span class="page-eyebrow">${esc(page.feedEyebrow)}</span><h2 id="intelligence-heading">${esc(page.feedHeading)}</h2><p>${esc(page.feedLead)}</p></div><div class="intelligence-status"><strong>Updated ${esc(page.updated)}</strong>Global · newest first<span class="scroll-cue">Scroll news ↓</span></div></div>
+    <div class="intelligence-head"><div class="intelligence-status"><strong>Updated ${esc(page.updated)}</strong>Global · newest first<span class="scroll-cue">Scroll news ↓</span></div></div>
     <div class="feed-window" aria-label="Scrollable wildlife and species conservation news feed"><div class="conservation-feed" tabindex="0">${page.stories.map(storyHTML).join('')}</div></div>
     <p class="intelligence-note"><strong>BHOC Initiative Scout method:</strong> ${esc(page.feedNote)}</p>
   </div></section>
