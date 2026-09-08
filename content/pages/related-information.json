@@ -80,7 +80,7 @@
     {
       "id": "conservation-databases",
       "number": "03",
-      "title": "Species & Conservation Databases",
+      "title": "Conservation databases · Species & Conservation Databases",
       "description": "Authoritative global resources for species status, taxonomy, protected-species frameworks and biodiversity occurrence data.",
       "items": [
         {
@@ -101,7 +101,12 @@
         {
           "label": "GBIF · Global Biodiversity Information Facility",
           "detail": "Species occurrence records · datasets · biodiversity distribution",
-          "href": "https://www.gbif.org/"
+          "href": "https://www.gbif.org/",
+          "logo": {
+            "src": "https://docs.gbif.org/style/logo.svg",
+            "width": 80,
+            "height": 40
+          }
         }
       ]
     }
