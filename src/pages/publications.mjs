@@ -1,6 +1,6 @@
 import {esc,attrs,icon} from '../lib/html.mjs';
 
-const logoMarkup=logo=>logo?`<span class="publication-logo-wrap" aria-hidden="true"><img class="publication-logo" src="${esc(logo.src)}" alt="" width="${Number(logo.width||80)}" height="${Number(logo.height||40)}" loading="lazy" decoding="async"></span>`:'';
+const logoMarkup=logo=>logo?`<span class="publication-logo-wrap"><img class="publication-logo" src="${esc(logo.src)}" alt="${esc(logo.alt||'')}" width="${Number(logo.width||80)}" height="${Number(logo.height||40)}" loading="lazy" decoding="async"></span>`:'';
 const itemLink=item=>`<a class="publication-link${item.logo?' has-resource-logo':''}" ${attrs(item)}>${logoMarkup(item.logo)}<span class="publication-link-copy"><strong>${esc(item.label)}</strong><small>${esc(item.detail)}</small></span>${icon('arrow')}</a>`;
 
 const resourceStyles=`<style>
