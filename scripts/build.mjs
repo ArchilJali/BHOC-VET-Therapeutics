@@ -40,8 +40,12 @@ const checkData=(d,label)=>{
     if('src'in d&&(!('alt'in d)||!Number.isInteger(d.width)||!Number.isInteger(d.height)||d.width<1||d.height<1))throw new Error(`${label}: every image needs alt, width and height`);
     for(const [k,v] of Object.entries(d)){
       if(['href','url','source'].includes(k))attrs({href:v});
-      if(k==='src'&&!/^assets\/[a-zA-Z0-9_./-]+$/.test(v))throw new Error(label+': invalid asset path');
-      if(k==='src'&&v.includes('..'))throw new Error('Asset path may not traverse directories');
+      if(k==='src'){
+        const local=/^assets\/[a-zA-Z0-9_./-]+$/.test(v);
+        const approvedRemote=/^https:\/\/(?:upload|thumb)\.wikimedia\.org\/wikipedia\/commons\//.test(v);
+        if(!local&&!approvedRemote)throw new Error(label+': invalid image source');
+        if(local&&v.includes('..'))throw new Error('Asset path may not traverse directories');
+      }
       checkData(v,`${label}.${k}`);
     }
   }

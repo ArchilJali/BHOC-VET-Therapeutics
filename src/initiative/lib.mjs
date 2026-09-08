@@ -21,7 +21,9 @@ export function linkAttrs(item){
 }
 
 export function initiativeImage(image,{priority=false,lazy=true}={}){
-  return '<img src="../'+safeHref(image.src)+'" width="'+Number(image.width)+'" height="'+Number(image.height)+'" alt="'+esc(image.alt)+'"'+(priority?' fetchpriority="high"':lazy?' loading="lazy"':'')+'>';
+  const remote=String(image.src).startsWith('https://');
+  const src=remote?safeHref(image.src):'../'+safeHref(image.src);
+  return '<img src="'+src+'" width="'+Number(image.width)+'" height="'+Number(image.height)+'" alt="'+esc(image.alt)+'" decoding="async"'+(remote?' referrerpolicy="no-referrer"':'')+(priority?' fetchpriority="high"':lazy?' loading="lazy"':'')+'>';
 }
 
 export function action(item){

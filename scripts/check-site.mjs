@@ -96,22 +96,29 @@ for(const [name,html] of htmlByPage){
   const footerHrefs=[...footer.matchAll(/href="([^"]+)"/g)].map(match=>match[1]);
   assert.equal(new Set(footerHrefs).size,footerHrefs.length,`${name}: footer destinations are not duplicated`);
   assert.match(footer,/Project lead: <strong>BHOC Team<\/strong>\./,`${name}: team footer attribution`);
-  assert.match(footer,/First published <time datetime="2026-09-07">07 Sep 2026<\/time>.*13 updates.*Last updated <time datetime="2026-09-08">08 Sep 2026<\/time>.*Version 26\.09\.08/,`${name}: publication history`);
+  assert.match(footer,/First published <time datetime="2026-09-07">07 Sep 2026<\/time>.*14 updates.*Last updated <time datetime="2026-09-08">08 Sep 2026<\/time>.*Version 26\.09\.08/,`${name}: publication history`);
   assert.match(footer,/href="\.\/initiative\/">BHOC Initiative<\/a>/,`${name}: full Initiative route`);
   assert.match(footer,/href="initiative\.html">Initiative overview<\/a>/,`${name}: legacy Initiative overview remains linked`);
 }
 
 const initiativeHomePath=path.join(out,'initiative','index.html');
 const initiativeHome=await fs.readFile(initiativeHomePath,'utf8');
+const initiativeCSS=await fs.readFile(path.join(out,'initiative','styles.css'),'utf8');
 assert.equal((initiativeHome.match(/<h1\b/g)||[]).length,1,'initiative/index.html: exactly one H1');
 const initiativeBlockNames=[...initiativeHome.matchAll(/<!-- BLOCK ([a-z-]+): content\/initiative\/blocks\/[a-z-]+\.json -->/g)].map(match=>match[1]);
 assert.deepEqual(initiativeBlockNames,['hero','challenge','oxygen-platform','kipling','microcirculation','focus','work','partners'],'initiative/index.html: approved block order');
 for(const blockName of initiativeBlockNames)assert.match(initiativeHome,new RegExp('data-block="'+blockName+'"'),'initiative/index.html: block marker '+blockName);
 assert.match(initiativeHome,/rel="canonical" href="https:\/\/bhocvet\.com\/initiative\/"/);
-assert.match(initiativeHome,/property="og:image" content="https:\/\/bhocvet\.com\/assets\/initiative\/hero-endangered-red-book\.webp"/);
+assert.match(initiativeHome,/property="og:image" content="https:\/\/bhocvet\.com\/assets\/initiative\/hero-red-list-pencil-v2\.webp"/);
 assert.match(initiativeHome,/name="twitter:card" content="summary_large_image"/);
 assert.match(initiativeHome,/src="\.\.\/assets\/reference-initiative-mark\.webp"/);
-assert.match(initiativeHome,/src="\.\.\/assets\/initiative\/hero-endangered-red-book\.webp"[^>]*alt="Red List wildlife in a mountain habitat: giant panda, rhinoceros, snow leopard, gorilla, tiger and marine turtle"/);
+assert.match(initiativeHome,/src="\.\.\/assets\/initiative\/hero-red-list-pencil-v2\.webp"[^>]*alt="Graphite conservation sketch of a giant panda, black rhinoceros, snow leopard, mountain gorilla, tiger and hawksbill sea turtle"/);
+assert.equal((initiativeHome.match(/class="focus-card"/g)||[]).length,7,'initiative/index.html: seven independently editable focus cards');
+assert.equal((initiativeHome.match(/class="photo-credit"/g)||[]).length,7,'initiative/index.html: every sourced wildlife photograph has a visible credit');
+assert.match(initiativeHome,/alt="Hawksbill sea turtle in Flower Garden Banks National Marine Sanctuary photographed by NOAA"/);
+assert.match(initiativeCSS,/\.hero-art img\s*\{[^}]*object-fit:\s*contain/s,'initiative hero preserves the pencil artwork proportions');
+assert.doesNotMatch(initiativeCSS,/width:\s*158%|translateX\(-24%\)/,'initiative mobile hero is not enlarged or shifted');
+assert.match(initiativeCSS,/\.focus-grid\s*\{[^}]*grid-template-columns:\s*repeat\(12,/s,'initiative desktop focus grid uses balanced columns');
 assert.match(initiativeHome,/We be of one blood, ye and I\./);
 assert.match(initiativeHome,/Rudyard Kipling, <em>The Jungle Book<\/em>/);
 assert.match(initiativeHome,/href="\.\.\/news\.html">News<\/a>/);
@@ -222,7 +229,7 @@ assert.match(sitemap,/https:\/\/bhocvet\.com\/product\.html/);
 assert.match(sitemap,/https:\/\/bhocvet\.com\/evidence\.html/);
 assert.match(sitemap,/https:\/\/bhocvet\.com\/initiative\.html/);
 assert.match(sitemap,/https:\/\/bhocvet\.com\/initiative\//);
-assert.match(sitemap,/https:\/\/bhocvet\.com\/assets\/initiative\/hero-endangered-red-book\.webp/);
+assert.match(sitemap,/https:\/\/bhocvet\.com\/assets\/initiative\/hero-red-list-pencil-v2\.webp/);
 assert.match(sitemap,/https:\/\/bhocvet\.com\/related-information\.html/);
 assert.doesNotMatch(sitemap,/publications\.html/,`Legacy redirect is omitted from sitemap`);
 
@@ -250,6 +257,12 @@ for(const block of initiativeManifestSource.blocks.filter(block=>block.enabled))
   renderedInitiative.push({block,data,render,html:render(data)});
 }
 assert.equal(renderedInitiative.length,8,'Initiative homepage has eight independently rendered blocks');
+const initiativeFocus=renderedInitiative.find(item=>item.block.type==='focus');
+assert.equal(initiativeFocus.data.cards.length,7,'Initiative Focus keeps seven independently editable cards');
+for(const card of initiativeFocus.data.cards){
+  assert.ok(card.image.alt.trim(),'Initiative Focus image has descriptive ALT');
+  assert.ok(card.credit?.label&&card.credit?.href&&card.credit?.license&&card.credit?.licenseHref,'Initiative Focus photograph keeps source and license data');
+}
 const initiativeTarget=renderedInitiative.find(item=>item.block.type==='challenge');
 assert.ok(initiativeTarget,'Initiative challenge block is independently editable');
 const initiativeEdit=structuredClone(initiativeTarget.data);

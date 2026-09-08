@@ -33,6 +33,7 @@ export function renderHead(site,stylesVersion){
     '  <link rel="canonical" href="'+esc(site.canonical)+'">',
     '  <link rel="sitemap" type="application/xml" href="../sitemap.xml">',
     '  <link rel="icon" href="../assets/reference-initiative-mark.webp" type="image/webp">',
+    '  <link rel="preload" as="image" href="../'+esc(image.src)+'" type="image/webp" fetchpriority="high">',
     '  <link rel="stylesheet" href="styles.css?v='+esc(stylesVersion)+'">',
     '  <script type="application/ld+json">'+safeJSON(site.structuredData)+'</script>',
     '</head>'
