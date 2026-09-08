@@ -43,6 +43,25 @@
 
 Научные ссылки разделены по назначению: `BHOC VET-platform` является простой обзорной точкой входа, а `BHOC Platform Veterinary` содержит полную библиографию и регуляторные документы. Не меняйте эти роли местами без отдельного решения по структуре сайта.
 
+## Как менять новую Initiative homepage по блокам
+
+Новая страница Initiative по адресу /initiative/ собирается из независимых секций, как главная BHOCvet. Порядок и включение секций задаёт [homepage.json](content/initiative/homepage.json). Тексты, ссылки и изображения каждой секции находятся отдельно:
+
+| Секция | Файл |
+| --- | --- |
+| Hero | [hero.json](content/initiative/blocks/hero.json) |
+| Challenge | [challenge.json](content/initiative/blocks/challenge.json) |
+| Oxygen platform | [oxygen-platform.json](content/initiative/blocks/oxygen-platform.json) |
+| Цитата Киплинга | [kipling.json](content/initiative/blocks/kipling.json) |
+| Microcirculation | [microcirculation.json](content/initiative/blocks/microcirculation.json) |
+| Focus Areas | [focus.json](content/initiative/blocks/focus.json) |
+| How We Work | [work.json](content/initiative/blocks/work.json) |
+| Partners | [partners.json](content/initiative/blocks/partners.json) |
+
+Шапка, footer и SEO также отделены: [header.json](content/initiative/header.json), [footer.json](content/initiative/footer.json), [site.json](content/initiative/site.json). HTML каждого блока находится в [src/initiative/blocks](src/initiative/blocks), общий визуальный стиль остаётся в [styles.css](src/initiative/styles.css). Для изменения одной секции не нужно переписывать всю страницу.
+
+Старая обзорная страница /initiative.html сохраняется. Основные пункты меню и карточки Initiative ведут на новую /initiative/.
+
 ## Как заменить изображение
 
 Загрузите файл в `assets/`, затем обновите его `src`, `alt`, `width` и `height` в соответствующем блоке.

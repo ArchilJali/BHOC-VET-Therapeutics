@@ -32,6 +32,8 @@ The indexed pages are `index.html`, `product.html`, `applications.html`, `eviden
 
 `publications.html` is intentionally retained as a `noindex,follow` redirect to `evidence.html`. Keep it so historical links continue to work. `404.html`, `CNAME`, `robots.txt` and `sitemap.xml` are also required.
 
+The full Initiative homepage now uses the same independent-block architecture as the BHOC Veterinary homepage. Section order and visibility live in content/initiative/homepage.json; each section has its own JSON data file and renderer. The approved visual styling remains shared and unchanged. Main Initiative entry points open /initiative/ directly, while the earlier overview remains available at /initiative.html.
+
 ## Responsive behavior
 
 - At 1080 px and below, primary navigation moves into the menu.

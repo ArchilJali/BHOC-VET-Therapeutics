@@ -1,0 +1,64 @@
+{
+  "brand": {
+    "href": "#top",
+    "ariaLabel": "BHOC Species and Biodiversity Protection Initiative home",
+    "image": {
+      "src": "assets/reference-initiative-mark.webp",
+      "alt": "Canonical BHOC Species and Biodiversity Protection Initiative emblem with Earth and wild species",
+      "width": 318,
+      "height": 317
+    },
+    "titleLines": [
+      "BHOC Species & Biodiversity",
+      "Protection Initiative"
+    ],
+    "tagline": "One Oxygen. One Biology. One BHOC System.",
+    "promise": "For Every Species. Wherever Life Is at Risk."
+  },
+  "ecosystem": {
+    "href": "https://bhoctherapeutics.com/",
+    "ariaLabel": "Open BHOC Therapeutics",
+    "image": {
+      "src": "assets/initiative/bhoc-ecosystem-mark.png",
+      "alt": "BHOC ecosystem biodiversity mark",
+      "width": 450,
+      "height": 410
+    },
+    "title": "BHOC Therapeutics",
+    "subtitle": "Precision Oxygen Therapeutics"
+  },
+  "navigation": [
+    {
+      "label": "Mission",
+      "href": "#mission"
+    },
+    {
+      "label": "Science",
+      "href": "#science"
+    },
+    {
+      "label": "Focus Areas",
+      "href": "#focus"
+    },
+    {
+      "label": "Partners",
+      "href": "#partners"
+    },
+    {
+      "label": "Support",
+      "href": "#partners"
+    },
+    {
+      "label": "News",
+      "href": "../news.html"
+    },
+    {
+      "label": "Contact",
+      "href": "../contact.html"
+    }
+  ],
+  "search": {
+    "href": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-search.html",
+    "ariaLabel": "Search the BHOC scientific evidence platform"
+  }
+}

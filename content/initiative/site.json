@@ -1,0 +1,89 @@
+{
+  "language": "en",
+  "title": "BHOC Species & Biodiversity Protection Initiative",
+  "description": "BHOC Species & Biodiversity Protection Initiative connects wildlife health, Red List species protection, conservation medicine, veterinary evidence and oxygen-delivery science.",
+  "author": "Archil Jaliashvili",
+  "creator": "BHOC Team",
+  "themeColor": "#ffffff",
+  "canonical": "https://bhocvet.com/initiative/",
+  "openGraph": {
+    "siteName": "BHOC Species & Biodiversity Protection Initiative",
+    "title": "Protect Life. Preserve Species. | BHOC Initiative",
+    "description": "A science-driven initiative for species protection, wildlife health, conservation medicine and oxygen-delivery support across the living world.",
+    "image": {
+      "src": "assets/initiative/hero-endangered-red-book.webp",
+      "alt": "Red List wildlife in a mountain habitat",
+      "width": 760,
+      "height": 320
+    }
+  },
+  "twitter": {
+    "title": "Protect Life. Preserve Species. | BHOC Initiative",
+    "description": "Connecting species protection, wildlife health, veterinary evidence and oxygen-delivery science."
+  },
+  "structuredData": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://bhocvet.com/initiative/#initiative",
+        "name": "BHOC Species & Biodiversity Protection Initiative",
+        "alternateName": "BHOC Initiative",
+        "description": "A science-driven initiative connecting species protection, wildlife health, conservation medicine, veterinary evidence and oxygen-delivery science.",
+        "url": "https://bhocvet.com/initiative/",
+        "logo": "https://bhocvet.com/assets/reference-initiative-mark.webp",
+        "parentOrganization": {
+          "@type": "Organization",
+          "name": "BHOC Therapeutics",
+          "url": "https://bhoctherapeutics.com/"
+        },
+        "sameAs": [
+          "https://bhoctherapeutics.com/",
+          "https://bhocvet.com/",
+          "https://archiljali.github.io/BHOC-platform/",
+          "https://www.linkedin.com/company/bhoc-therapeutics/"
+        ],
+        "knowsAbout": [
+          "species conservation",
+          "biodiversity protection",
+          "wildlife medicine",
+          "zoological medicine",
+          "veterinary science",
+          "comparative biology",
+          "oxygen delivery",
+          "microcirculation",
+          "Biological Hemoglobin Oxygen Carrier",
+          "hemoglobin-based oxygen carrier"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://bhocvet.com/initiative/#website",
+        "url": "https://bhocvet.com/initiative/",
+        "name": "BHOC Species & Biodiversity Protection Initiative",
+        "inLanguage": "en",
+        "publisher": {
+          "@id": "https://bhocvet.com/initiative/#initiative"
+        }
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://bhocvet.com/initiative/#webpage",
+        "url": "https://bhocvet.com/initiative/",
+        "name": "Protect Life. Preserve Species.",
+        "description": "BHOC Species & Biodiversity Protection Initiative homepage.",
+        "isPartOf": {
+          "@id": "https://bhocvet.com/initiative/#website"
+        },
+        "about": {
+          "@id": "https://bhocvet.com/initiative/#initiative"
+        },
+        "author": {
+          "@type": "Person",
+          "name": "Archil Jaliashvili",
+          "url": "https://www.linkedin.com/in/archil-jaliashvili-bhoc/"
+        }
+      }
+    ]
+  }
+}

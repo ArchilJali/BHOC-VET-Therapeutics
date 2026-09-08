@@ -1,0 +1,13 @@
+{
+  "id": "microcirculation",
+  "ariaLabel": "Smaller. Faster. Further. Microcirculation concept",
+  "title": "Smaller. Faster. Further.",
+  "text": "BHOC molecules are designed to circulate in plasma at a scale far below erythrocytes, with microvascular oxygen delivery as a core scientific focus.",
+  "image": {
+    "src": "assets/initiative/microcirculation.webp",
+    "alt": "BHOC and erythrocyte size comparison inside a microvessel, illustrating oxygen delivery toward tissue in need",
+    "width": 1198,
+    "height": 112
+  },
+  "caption": "Smaller. Faster. Further. BHOC molecules move through plasma at a smaller scale than erythrocytes. The illustration presents microvascular oxygen delivery as a scientific development focus."
+}

@@ -17,7 +17,7 @@
     "tagline": "One Oxygen. One Biology. One BHOC System.",
     "promise": "For Every Species. Wherever Life Is at Risk.",
     "link": {
-      "href": "initiative.html",
+      "href": "./initiative/",
       "label": "Explore the BHOC Initiative"
     }
   },

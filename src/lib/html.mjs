@@ -1,6 +1,6 @@
 export const esc=value=>String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 export const lines=value=>(Array.isArray(value)?value:[value]).map(esc).join('<br> ');
-export function url(value){ if(!/^(https:\/\/|mailto:|#|\.?\/?[a-zA-Z0-9_-])/.test(value)||/^\w+:/i.test(value)&&!/^https:|^mailto:/i.test(value)) throw new Error('Unsupported link: '+value); return esc(value); }
+export function url(value){ if(!/^(https:\/\/|mailto:|#|\.\.\/|\.?\/?[a-zA-Z0-9_-])/.test(value)||/^\w+:/i.test(value)&&!/^https:|^mailto:/i.test(value)) throw new Error('Unsupported link: '+value); return esc(value); }
 export const icon=name=>`<svg aria-hidden="true" focusable="false"><use href="#${esc(name)}"/></svg>`;
 export function attrs(link){return `href="${url(link.href)}"${link.dialog?` data-open="${esc(link.dialog)}"`:''}${link.href.startsWith('https://')?' target="_blank" rel="noopener noreferrer"':''}`;}
 export const link=(data,classes='text-link',label=data.label)=>`<a class="${esc(classes)}" ${attrs(data)}>${esc(label)}</a>`;
