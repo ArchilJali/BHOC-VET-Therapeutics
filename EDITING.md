@@ -51,7 +51,6 @@
 | --- | --- |
 | Hero | [hero.json](content/initiative/blocks/hero.json) |
 | Challenge | [challenge.json](content/initiative/blocks/challenge.json) |
-| Oxygen platform | [oxygen-platform.json](content/initiative/blocks/oxygen-platform.json) |
 | Цитата Киплинга | [kipling.json](content/initiative/blocks/kipling.json) |
 | Microcirculation | [microcirculation.json](content/initiative/blocks/microcirculation.json) |
 | Focus Areas | [focus.json](content/initiative/blocks/focus.json) |

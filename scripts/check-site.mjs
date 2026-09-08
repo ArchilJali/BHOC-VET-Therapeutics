@@ -74,7 +74,8 @@ for(const [name,html] of htmlByPage){
   assert.ok(!titles.has(title),`${name}: unique title`); titles.add(title);
   assert.ok(!descriptions.has(description),`${name}: unique description`); descriptions.add(description);
   assert.match(html,/<meta name="author" content="Archil Jaliashvili">/,`${name}: author metadata`);
-  assert.match(html,/property="og:image" content="https:\/\/bhocvet\.com\/assets\/bhoc-wildlife-rainbow-20260906-v2\.png"/,`${name}: share image`);
+  assert.match(html,/property="og:image" content="https:\/\/bhocvet\.com\/assets\/bhoc-initiative-land-social\.jpg"/,`${name}: share image`);
+  assert.match(html,/property="og:image:type" content="image\/jpeg"/,`${name}: share image MIME type`);
   assert.match(html,/name="twitter:card" content="summary_large_image"/,`${name}: large social card`);
   assert.doesNotMatch(html,/<meta name="keywords"/,`${name}: no obsolete keyword meta tag`);
   assert.doesNotMatch(html,/https?:\/\/localhost|http:\/\/[^"<\s]*(?:\.css|\.js|\.webp)/,`${name}: no development URLs`);
@@ -118,9 +119,9 @@ assert.match(initiativeHeaderHTML,/class="ecosystem-brand-dot"/,'BHOC Therapeuti
 assert.match(initiativeHeaderHTML,/class="site-return"[^>]*href="\.\.\/index\.html"/,'initiative header includes a visible BHOC Veterinary return link');
 assert.match(initiativeHeaderHTML,/class="nav-return"[^>]*href="\.\.\/index\.html"/,'initiative menu includes a BHOC Veterinary return action');
 assert.match(initiativeHome,/src="\.\.\/assets\/initiative\/hero-red-list-pencil-v2\.webp"[^>]*alt="Graphite conservation sketch of a giant panda, black rhinoceros, snow leopard, mountain gorilla, tiger and hawksbill sea turtle"/);
-assert.doesNotMatch(initiativeHome,/data-block="oxygen-platform"/,'initiative oxygen cascade is hidden');
-assert.doesNotMatch(initiativeHome,/class="hero-principles"/,'initiative priority strip is hidden');
-assert.doesNotMatch(initiativeHome,/class="evidence-boundary"/,'initiative evidence boundary is hidden with the oxygen cascade');
+assert.doesNotMatch(initiativeHome,/data-block="oxygen-platform"/,'removed Initiative oxygen cascade stays absent');
+assert.doesNotMatch(initiativeHome,/class="hero-principles"/,'removed Initiative priority strip stays absent');
+assert.doesNotMatch(initiativeHome,/class="evidence-boundary"/,'removed Initiative evidence boundary stays absent');
 assert.equal((initiativeHome.match(/class="micro-node"/g)||[]).length,3,'initiative microcirculation concept uses three crisp schematic nodes');
 assert.doesNotMatch(initiativeHome,/microcirculation\.webp/,'initiative no longer renders the low-resolution microcirculation banner');
 assert.equal((initiativeHome.match(/src="\.\.\/assets\/initiative\/cascade-[a-z-]+\.svg"/g)||[]).length,2,'initiative renders the remaining microcirculation symbols');
@@ -236,7 +237,7 @@ assert.match(redirect,/rel="canonical" href="https:\/\/bhocvet\.com\/evidence\.h
 
 const sitemap=await fs.readFile(path.join(out,'sitemap.xml'),'utf8');
 assert.match(sitemap,/bhoc-veterinary-organization-logo\.svg/,`Sitemap contains organization logo`);
-assert.match(sitemap,/bhoc-wildlife-rainbow-20260906-v2\.png/,`Sitemap contains social image`);
+assert.match(sitemap,/bhoc-initiative-land-social\.jpg/,`Sitemap contains social image`);
 assert.match(sitemap,/bhoc-initiative-land-hero\.webp/,`Sitemap contains Land hero`);
 assert.match(sitemap,/bhoc-initiative-winter-hero\.webp/,`Sitemap contains Winter hero`);
 assert.match(sitemap,/bhoc-initiative-ocean-hero-v2\.webp/,`Sitemap contains Ocean hero`);

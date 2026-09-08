@@ -63,7 +63,7 @@ for(const entry of manifest.blocks){
   blocks.push({type:entry.type,data:d,html:render(d)});
 }
 
-const initiativeAllowed=['hero','challenge','oxygen-platform','kipling','microcirculation','focus','work','partners'];
+const initiativeAllowed=['hero','challenge','kipling','microcirculation','focus','work','partners'];
 const initiativeRequired=['hero','challenge','kipling','microcirculation','focus','work','partners'];
 const initiativeIds=new Set();
 const initiativeBlocks=[];
@@ -97,8 +97,13 @@ for(const [i,page] of pages.entries()){
 }
 for(const type of allowed.filter(type=>type!=='story'))if(blocks.filter(b=>b.type===type).length>1)throw new Error('Only one '+type+' block is supported');
 
-const sourceAssets=await fs.stat(path.join(root,'assets')).then(()=>path.join(root,'assets')).catch(()=>path.join(root,'dist/assets'));
-if(path.resolve(sourceAssets)!==path.join(out,'assets'))await fs.cp(sourceAssets,path.join(out,'assets'),{recursive:true});
+const relativeOut=path.relative(root,out);
+if(!['dist','_site'].includes(relativeOut))throw new Error('Build output must be the project dist or _site directory');
+const sourceAssets=path.join(root,'assets');
+await fs.access(sourceAssets);
+await fs.rm(out,{recursive:true,force:true});
+await fs.mkdir(out,{recursive:true});
+await fs.cp(sourceAssets,path.join(out,'assets'),{recursive:true});
 
 const cssNames=[...new Set(['theme','header',...blocks.map(b=>b.type),'science','pages','dialogs'])];
 const cssLinks=[];
@@ -166,7 +171,7 @@ const dialogNames=(await fs.readdir(path.join(root,'content/dialogs'))).filter(n
 const dialogHTML=await Promise.all(dialogNames.map(name=>read('content/dialogs/'+name)));
 const extras=`<dialog id="species-dialog" aria-labelledby="species-detail-heading"><button class="dialog-close" aria-label="Close species details">×</button><span class="eyebrow">${esc(labels.speciesEyebrow)}</span><div id="species-detail"></div></dialog><dialog id="all-species-dialog" aria-labelledby="all-species-heading"><button class="dialog-close" aria-label="Close all species">×</button><span id="all-species" class="eyebrow">Explore species</span><h2 id="all-species-heading">${esc(labels.allSpeciesTitle)}</h2><p>${esc(labels.allSpeciesIntro)}</p><div class="all-species-grid"></div><p class="small-copy">${esc(labels.allSpeciesNote)}</p></dialog><dialog id="search-dialog" aria-labelledby="search-heading"><button class="dialog-close" aria-label="Close search">×</button><h2 id="search-heading">${esc(labels.searchHeading)}</h2><label for="site-search">${esc(labels.searchLabel)}</label><input id="site-search" type="search" placeholder="${esc(labels.searchPlaceholder)}" autocomplete="off"><p class="sr-only" id="search-status" aria-live="polite"></p><div id="search-results"></div></dialog>`;
 const visibleSearchText=value=>JSON.stringify(value,function(key,item){
-  if(key==='seo'||(key==='principles'&&this.principlesEnabled===false))return undefined;
+  if(key==='seo')return undefined;
   return item;
 });
 
@@ -195,7 +200,7 @@ const initiativeSlashRedirect='<script>if(location.pathname.endsWith("/initiativ
 const renderHead=(meta,pagePath,isHome=false)=>`<head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#f65c00">
 <title>${esc(meta.title)}</title><meta name="description" content="${esc(meta.description)}"><meta name="author" content="${esc(site.author.name)}"><meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1"><link rel="canonical" href="${esc(absolute(pagePath))}">
-<meta property="og:type" content="website"><meta property="og:locale" content="en_US"><meta property="og:site_name" content="${esc(site.name)}"><meta property="og:title" content="${esc(meta.title)}"><meta property="og:description" content="${esc(meta.description)}"><meta property="og:url" content="${esc(absolute(pagePath))}"><meta property="og:image" content="${absolute(site.socialImage.src)}"><meta property="og:image:secure_url" content="${absolute(site.socialImage.src)}"><meta property="og:image:type" content="image/png"><meta property="og:image:width" content="${site.socialImage.width}"><meta property="og:image:height" content="${site.socialImage.height}"><meta property="og:image:alt" content="${esc(site.socialImage.alt)}">
+<meta property="og:type" content="website"><meta property="og:locale" content="en_US"><meta property="og:site_name" content="${esc(site.name)}"><meta property="og:title" content="${esc(meta.title)}"><meta property="og:description" content="${esc(meta.description)}"><meta property="og:url" content="${esc(absolute(pagePath))}"><meta property="og:image" content="${absolute(site.socialImage.src)}"><meta property="og:image:secure_url" content="${absolute(site.socialImage.src)}"><meta property="og:image:type" content="${imageMime(site.socialImage.src)}"><meta property="og:image:width" content="${site.socialImage.width}"><meta property="og:image:height" content="${site.socialImage.height}"><meta property="og:image:alt" content="${esc(site.socialImage.alt)}">
 <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="${esc(meta.title)}"><meta name="twitter:description" content="${esc(meta.description)}"><meta name="twitter:image" content="${absolute(site.socialImage.src)}"><meta name="twitter:image:alt" content="${esc(site.socialImage.alt)}">
 <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml"><link rel="sitemap" type="application/xml" href="${esc(absolute('sitemap.xml'))}">${isHome?`<link rel="preload" as="image" href="./${esc(hero.image.src)}" type="${imageMime(hero.image.src)}" fetchpriority="high">`:''}
 ${cssLinks.join('\n')}
@@ -260,4 +265,5 @@ await write('sitemap.xml',`<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns
 await write('robots.txt',`User-agent: *\nAllow: /\nSitemap: ${absolute('sitemap.xml')}\n`);
 await write('CNAME',new URL(site.canonical).hostname+'\n');
 await write('.nojekyll','');
+await write('404.html',await read('404.html'));
 console.log(`Built ${blocks.length} homepage blocks and ${pages.length} inner pages to ${path.relative(root,out)||'.'}.`);
