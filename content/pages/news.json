@@ -2,26 +2,12 @@
   "slug": "news",
   "navLabel": "News",
   "title": "Wildlife Conservation News & Intelligence | BHOC Veterinary",
-  "description": "Global wildlife conservation intelligence from BHOC Veterinary: endangered species, wildlife rescue, reintroduction, conservation medicine, zoos, research, funding and species recovery.",
+  "description": "Global wildlife conservation intelligence from BHOC Veterinary, covering endangered species, rescue, reintroduction, zoos, veterinary science, funding and recovery.",
   "schemaType": "CollectionPage",
   "seo": {
     "primaryKeyword": "wildlife conservation news",
-    "secondaryKeywords": [
-      "endangered species",
-      "wildlife rescue",
-      "species reintroduction",
-      "wildlife veterinary medicine",
-      "zoo conservation"
-    ],
-    "supportingTerms": [
-      "species recovery",
-      "conservation medicine",
-      "biodiversity",
-      "One Health",
-      "wildlife research",
-      "conservation funding",
-      "BHOC Initiative"
-    ]
+    "secondaryKeywords": ["endangered species", "wildlife rescue", "species reintroduction", "wildlife veterinary medicine", "zoo conservation"],
+    "supportingTerms": ["species recovery", "conservation medicine", "biodiversity", "One Health", "wildlife research", "conservation funding", "BHOC Initiative"]
   },
   "eyebrow": "BHOC Initiative · Global Intelligence",
   "heading": "Wildlife & Species Conservation Intelligence.",
@@ -41,18 +27,9 @@
       "title": "Assam advances ₹534 crore Wildlife Safari and Rescue Centre.",
       "text": "Assam is moving ahead with a 235-hectare wildlife complex in Dibrugarh. Phase I includes a veterinary hospital and wildlife rescue centre for species including rhinoceroses, tigers, leopards and bears; Phase II adds advanced research infrastructure. The project brings wildlife treatment, rehabilitation, research and conservation capacity into one major facility.",
       "why": "BHOC Initiative: veterinary + rescue + research infrastructure",
-      "image": {
-        "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/The_one-horned_rhinoceros_of_Kaziranga_National_Park.jpg?width=900",
-        "alt": "Greater one-horned rhinoceros in Assam, representing wildlife rescue and conservation infrastructure"
-      },
-      "credit": {
-        "label": "Photo: Wikimedia Commons · CC0",
-        "href": "https://commons.wikimedia.org/wiki/File:The_one-horned_rhinoceros_of_Kaziranga_National_Park.jpg"
-      },
-      "link": {
-        "label": "Read more",
-        "href": "https://www.indiatodayne.in/amp/assam/video/rs-534-crore-wildlife-safari-and-rescue-centre-planned-in-assams-tingkhong-1447933-2026-09-08"
-      }
+      "image": {"url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/The_one-horned_rhinoceros_of_Kaziranga_National_Park.jpg?width=900", "alt": "Greater one-horned rhinoceros in Assam, representing wildlife rescue and conservation infrastructure"},
+      "credit": {"label": "Photo: Wikimedia Commons · CC0", "href": "https://commons.wikimedia.org/wiki/File:The_one-horned_rhinoceros_of_Kaziranga_National_Park.jpg"},
+      "link": {"label": "Read more", "href": "https://www.indiatodayne.in/amp/assam/video/rs-534-crore-wildlife-safari-and-rescue-centre-planned-in-assams-tingkhong-1447933-2026-09-08"}
     },
     {
       "id": "turtle-dove-reintroduction",
@@ -63,18 +40,9 @@
       "title": "Thirty turtle doves released to rebuild a South Downs stronghold.",
       "text": "Thirty European turtle doves were released in Hampshire after a roughly 98% UK population decline from their late-1960s peak to 2023. Habitat work includes restored ponds, hedgerows and food plants, while another 100 birds are being prepared for 2027. One released female returning to lay eggs is an early biological signal worth watching.",
       "why": "Recovery pathway: release → migration → return → reproduction",
-      "image": {
-        "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/European_Turtle_Dove.jpg?width=900",
-        "alt": "European turtle dove representing species recovery and reintroduction in the South Downs"
-      },
-      "credit": {
-        "label": "Photo: Ron Knight · Wikimedia Commons",
-        "href": "https://commons.wikimedia.org/wiki/File:European_Turtle_Dove.jpg"
-      },
-      "link": {
-        "label": "Read more",
-        "href": "https://www.itv.com/news/meridian/2026-09-07/turtle-doves-released-in-national-park-to-help-species-recover"
-      }
+      "image": {"url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/European_Turtle_Dove.jpg?width=900", "alt": "European turtle dove representing species recovery and reintroduction in the South Downs"},
+      "credit": {"label": "Photo: Ron Knight · Wikimedia Commons", "href": "https://commons.wikimedia.org/wiki/File:European_Turtle_Dove.jpg"},
+      "link": {"label": "Read more", "href": "https://www.itv.com/news/meridian/2026-09-07/turtle-doves-released-in-national-park-to-help-species-recover"}
     },
     {
       "id": "ictc-2026",
@@ -85,18 +53,9 @@
       "title": "Global conservation translocation specialists meet in Edinburgh.",
       "text": "The 4th International Conservation Translocation Conference brings together specialists in reintroduction, ecosystem restoration and conservation management, with 174 presentations. Organisers include NatureScot, the University of Edinburgh’s Royal (Dick) School of Veterinary Studies, the Royal Botanic Garden Edinburgh and the Royal Zoological Society of Scotland.",
       "why": "Priority network: wildlife vets + IUCN + reintroduction science",
-      "image": {
-        "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sunset_at_Edinburgh_Castle.jpg?width=900",
-        "alt": "Edinburgh, host city of the International Conservation Translocation Conference 2026"
-      },
-      "credit": {
-        "label": "Photo: Gary Campbell-Hall · CC BY 2.0",
-        "href": "https://commons.wikimedia.org/wiki/File:Sunset_at_Edinburgh_Castle.jpg"
-      },
-      "link": {
-        "label": "Read more",
-        "href": "https://vet.ed.ac.uk/ictc"
-      }
+      "image": {"url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sunset_at_Edinburgh_Castle.jpg?width=900", "alt": "Edinburgh, host city of the International Conservation Translocation Conference 2026"},
+      "credit": {"label": "Photo: Gary Campbell-Hall · CC BY 2.0", "href": "https://commons.wikimedia.org/wiki/File:Sunset_at_Edinburgh_Castle.jpg"},
+      "link": {"label": "Read more", "href": "https://vet.ed.ac.uk/ictc"}
     },
     {
       "id": "wolf-protection-review",
@@ -107,18 +66,9 @@
       "title": "Federal order starts review of gray wolf and Mexican wolf protections.",
       "text": "A White House executive order directs the Interior Secretary, within 90 days, to determine whether gray wolves and Mexican wolves meet Endangered Species Act recovery criteria for delisting or downlisting. The order itself does not delist the wolves. It initiates a policy and scientific review that could materially change future protection and management.",
       "why": "Conservation intelligence includes regulatory risk",
-      "image": {
-        "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Mexican_wolf_canis_lupus_baileyi.jpg?width=900",
-        "alt": "Mexican wolf, an endangered species included in a US federal protection review"
-      },
-      "credit": {
-        "label": "Photo: Jim Clark / USFWS · Public domain",
-        "href": "https://commons.wikimedia.org/wiki/File:Mexican_wolf_canis_lupus_baileyi.jpg"
-      },
-      "link": {
-        "label": "Read primary source",
-        "href": "https://www.whitehouse.gov/presidential-actions/2026/09/supporting-americas-ranchers/"
-      }
+      "image": {"url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Mexican_wolf_canis_lupus_baileyi.jpg?width=900", "alt": "Mexican wolf, an endangered species included in a US federal protection review"},
+      "credit": {"label": "Photo: Jim Clark / USFWS · Public domain", "href": "https://commons.wikimedia.org/wiki/File:Mexican_wolf_canis_lupus_baileyi.jpg"},
+      "link": {"label": "Read primary source", "href": "https://www.whitehouse.gov/presidential-actions/2026/09/supporting-americas-ranchers/"}
     },
     {
       "id": "kent-chough-recovery",
@@ -129,18 +79,9 @@
       "title": "Eight wild-born red-billed chough chicks mark a recovery turning point.",
       "text": "Eight chicks fledged naturally in Kent this summer, bringing the county population to 35 choughs, including nine born in the wild. The partnership led by Kent Wildlife Trust and Wildwood Trust returned the species after more than two centuries of absence. The key milestone is no longer release alone: the birds are breeding and expanding their range.",
       "why": "Outcome metric: survival + reproduction + range expansion",
-      "image": {
-        "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Red-billed_chough_(Pyrrhocorax_pyrrhocorax).jpg?width=900",
-        "alt": "Red-billed chough representing the species reintroduction and recovery program in Kent"
-      },
-      "credit": {
-        "label": "Photo: Hobbyfotowiki · CC0",
-        "href": "https://commons.wikimedia.org/wiki/File:Red-billed_chough_(Pyrrhocorax_pyrrhocorax).jpg"
-      },
-      "link": {
-        "label": "Read primary source",
-        "href": "https://www.kentwildlifetrust.org.uk/news/red-billed-chough-recovery-kent-takes-flight-wild-population-grows"
-      }
+      "image": {"url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Red-billed_chough_(Pyrrhocorax_pyrrhocorax).jpg?width=900", "alt": "Red-billed chough representing the species reintroduction and recovery program in Kent"},
+      "credit": {"label": "Photo: Hobbyfotowiki · CC0", "href": "https://commons.wikimedia.org/wiki/File:Red-billed_chough_(Pyrrhocorax_pyrrhocorax).jpg"},
+      "link": {"label": "Read primary source", "href": "https://www.kentwildlifetrust.org.uk/news/red-billed-chough-recovery-kent-takes-flight-wild-population-grows"}
     },
     {
       "id": "kakapo-325",
@@ -151,47 +92,14 @@
       "title": "Kākāpō population reaches a recovery-era high of 325 birds.",
       "text": "Ninety chicks from the 2026 breeding season were added to the official population, taking the critically endangered kākāpō to 325 birds. The recovery programme began in 1995 with only 51 birds. New approaches increasingly use remote nest technology and reduced intervention, moving from intensive rescue toward more natural breeding and long-term population resilience.",
       "why": "Recovery metric: population growth + reduced intervention",
-      "image": {
-        "url": "https://dxcprod.doc.govt.nz/thumbs/hero/globalassets/images/nature/native-animals/birds/kkp/hananui-a2-1920.jpg",
-        "alt": "Kākāpō in New Zealand's critically endangered species recovery programme"
-      },
-      "credit": {
-        "label": "Photo: Sarah Manktelow / DOC",
-        "href": "https://dxcprod.doc.govt.nz/news/media-releases/2026-media-releases/kakapo-population-reaches-new-milestone/"
-      },
-      "link": {
-        "label": "Read primary source",
-        "href": "https://dxcprod.doc.govt.nz/news/media-releases/2026-media-releases/kakapo-population-reaches-new-milestone/"
-      }
+      "image": {"url": "https://dxcprod.doc.govt.nz/thumbs/hero/globalassets/images/nature/native-animals/birds/kkp/hananui-a2-1920.jpg", "alt": "Kākāpō in New Zealand's critically endangered species recovery programme"},
+      "credit": {"label": "Photo: Sarah Manktelow / DOC", "href": "https://dxcprod.doc.govt.nz/news/media-releases/2026-media-releases/kakapo-population-reaches-new-milestone/"},
+      "link": {"label": "Read primary source", "href": "https://dxcprod.doc.govt.nz/news/media-releases/2026-media-releases/kakapo-population-reaches-new-milestone/"}
     }
   ],
   "channels": [
-    {
-      "icon": "linkedin",
-      "title": "BHOC LinkedIn",
-      "text": "Company news, scientific discussion and BHOC publications.",
-      "link": {
-        "label": "Open LinkedIn",
-        "href": "https://www.linkedin.com/company/bhoc-therapeutics/"
-      }
-    },
-    {
-      "icon": "book",
-      "title": "BHOC VET-platform",
-      "text": "Guided veterinary evidence map, oxygen biology and routes into the source library.",
-      "link": {
-        "label": "Open evidence platform",
-        "href": "https://archiljali.github.io/BHOC-VET-platform/"
-      }
-    },
-    {
-      "icon": "book",
-      "title": "Veterinary Evidence Library",
-      "text": "Source-linked bibliography, regulatory records and publication archive.",
-      "link": {
-        "label": "Open full library",
-        "href": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-index.html"
-      }
-    }
+    {"icon": "linkedin", "title": "BHOC LinkedIn", "text": "Company news, scientific discussion and BHOC publications.", "link": {"label": "Open LinkedIn", "href": "https://www.linkedin.com/company/bhoc-therapeutics/"}},
+    {"icon": "book", "title": "BHOC VET-platform", "text": "Guided veterinary evidence map, oxygen biology and routes into the source library.", "link": {"label": "Open evidence platform", "href": "https://archiljali.github.io/BHOC-VET-platform/"}},
+    {"icon": "book", "title": "Veterinary Evidence Library", "text": "Source-linked bibliography, regulatory records and publication archive.", "link": {"label": "Open full library", "href": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-index.html"}}
   ]
 }
