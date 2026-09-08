@@ -142,8 +142,14 @@ for(const match of initiativeHome.matchAll(/<img\b[^>]*>/g)){
 }
 
 const home=htmlByPage.get('index.html');
-assert.match(home,/<link rel="preload" as="image" href="\.\/assets\/bhoc-wildlife-rainbow-20260906-v2\.webp" type="image\/webp" fetchpriority="high">/);
-assert.match(home,/<img src="\.\/assets\/bhoc-wildlife-rainbow-20260906-v2\.webp"[^>]*fetchpriority="high"/);
+assert.match(home,/<link rel="preload" as="image" href="\.\/assets\/bhoc-initiative-land-hero\.png" type="image\/png" fetchpriority="high">/);
+assert.match(home,/<img src="\.\/assets\/bhoc-initiative-land-hero\.png"[^>]*fetchpriority="high"/);
+assert.equal((home.match(/data-hero-slide/g)||[]).length,3,`Three hero slides`);
+assert.match(home,/data-slide-label="Land"[\s\S]*data-slide-label="Winter"[\s\S]*data-slide-label="Ocean"/,`Hero order is Land, Winter, Ocean`);
+assert.match(home,/data-autoplay-ms="300000"/,`Hero rotates every five minutes`);
+assert.equal((home.match(/data-hero-dot=/g)||[]).length,3,`Three hero selection dots`);
+assert.match(home,/class="hero-control hero-prev"/);
+assert.match(home,/class="hero-control hero-next"/);
 assert.match(home,/<div class="landscape" aria-hidden="true"><img [^>]*alt=""/,`Decorative landscape keeps an intentionally empty ALT`);
 assert.match(home,/class="wordmark-expansion">Biological Hemoglobin Oxygen Carrier<\/span>/,`Header expands BHOC`);
 
@@ -160,13 +166,14 @@ assert.deepEqual(navItems,[
 ],`Primary navigation order and labels`);
 
 assert.match(home,/<h1 id="home-heading">Precision Oxygen Therapeutics<\/h1>/);
-assert.match(home,/class="initiative-mark" href="\.\/initiative\/" aria-label="Explore the BHOC Initiative"/);
+assert.equal((home.match(/class="hero-hotspot" href="\.\/initiative\/"[^>]*aria-label="Explore species"/g)||[]).length,2,`Winter and Ocean hero links open the BHOC Initiative`);
 assert.match(home,/class="block-biodiversity"[\s\S]*?href="\.\/initiative\/"/);
 assert.match(home,/href="\.\/initiative\/#focus"[\s\S]*?Species preservation/);
 assert.match(home,/BH<span class="oxygen-initial">O<\/span>C/);
 for(const word of ['Biological','Hemoglobin','Oxygen','Carrier'])assert.match(home,new RegExp(`<strong>${word[0]}</strong>${word.slice(1)}`),`BHOC initials are emphasized`);
 assert.match(home,/For immediate, controlled microvascular and tissue-level oxygenation while endogenous erythropoiesis recovers\./);
-assert.match(home,/>Product<\/span>.*href="applications\.html"><span>Application<\/span>/s);
+assert.match(home,/class="hero-hotspot" href="product\.html"[^>]*aria-label="Open Product"/);
+assert.match(home,/class="hero-hotspot" href="applications\.html"[^>]*aria-label="Open Application"/);
 
 const statAnchors=[...home.matchAll(/<a class="stat-source"[\s\S]*?<\/a>/g)].map(match=>match[0]);
 assert.equal(statAnchors.length,3,`Three linked biodiversity icons`);
@@ -182,7 +189,7 @@ assert.match(home,/long room-temperature shelf life/);
 assert.match(home,/href="evidence\.html"[^>]*>Explore Evidence/);
 assert.match(home,/We be of one blood, ye and I\./);
 assert.match(home,/Rudyard Kipling, The Jungle Book/);
-assert.match(home,/One BHOC System\.<\/span> <span class="initiative-promise">For Every Species\./);
+assert.match(home,/One BHOC System\. For Every Species\./);
 assert.match(home,/Nature kept the core\./);
 assert.match(home,/href="science\.html#foundation"/);
 assert.doesNotMatch(home,/Healthy species|Healthy ecosystems|A healthier tomorrow/);
@@ -208,7 +215,9 @@ assert.match(redirect,/rel="canonical" href="https:\/\/bhocvet\.com\/evidence\.h
 const sitemap=await fs.readFile(path.join(out,'sitemap.xml'),'utf8');
 assert.match(sitemap,/bhoc-veterinary-organization-logo\.svg/,`Sitemap contains organization logo`);
 assert.match(sitemap,/bhoc-wildlife-rainbow-20260906-v2\.png/,`Sitemap contains social image`);
-assert.match(sitemap,/bhoc-wildlife-rainbow-20260906-v2\.webp/,`Sitemap contains optimized hero`);
+assert.match(sitemap,/bhoc-initiative-land-hero\.png/,`Sitemap contains Land hero`);
+assert.match(sitemap,/bhoc-initiative-winter-hero\.png/,`Sitemap contains Winter hero`);
+assert.match(sitemap,/bhoc-initiative-ocean-hero\.png/,`Sitemap contains Ocean hero`);
 assert.match(sitemap,/https:\/\/bhocvet\.com\/product\.html/);
 assert.match(sitemap,/https:\/\/bhocvet\.com\/evidence\.html/);
 assert.match(sitemap,/https:\/\/bhocvet\.com\/initiative\.html/);

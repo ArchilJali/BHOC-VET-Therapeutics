@@ -1,11 +1,85 @@
 {
   "id": "home",
   "image": {
-    "src": "assets/bhoc-wildlife-rainbow-20260906-v2.webp",
-    "alt": "BHOC Veterinary wildlife illustration with a lion, giraffe, horse, elephant, camel, giant panda, orangutan, tabby cat, wire-haired dachshunds and marine turtle beneath a distant rainbow.",
-    "width": 1672,
-    "height": 941
+    "src": "assets/bhoc-initiative-land-hero.png",
+    "alt": "BHOC Species and Biodiversity Protection Initiative land hero with diverse wildlife in a mountain landscape.",
+    "width": 2019,
+    "height": 779
   },
+  "rotationMs": 300000,
+  "slides": [
+    {
+      "id": "land",
+      "label": "Land",
+      "image": {
+        "src": "assets/bhoc-initiative-land-hero.png",
+        "alt": "BHOC land wildlife scene with lion, elephant, giraffe, camel, rhinoceros, panda, orangutan, snow leopard, tortoise, cat and wire-haired dachshunds.",
+        "width": 2019,
+        "height": 779
+      },
+      "accessibleText": "Precision Oxygen Therapeutics. BHOC - Biological Hemoglobin Oxygen Carrier. For immediate, controlled microvascular and tissue-level oxygenation while endogenous erythropoiesis recovers.",
+      "hotspots": [
+        {
+          "label": "Open Product",
+          "href": "product.html",
+          "left": 7,
+          "top": 77.8,
+          "width": 10.8,
+          "height": 8.2
+        },
+        {
+          "label": "Open Application",
+          "href": "applications.html",
+          "left": 18.4,
+          "top": 77.8,
+          "width": 12.5,
+          "height": 8.2
+        }
+      ]
+    },
+    {
+      "id": "winter",
+      "label": "Winter",
+      "image": {
+        "src": "assets/bhoc-initiative-winter-hero.png",
+        "alt": "BHOC winter wildlife scene with polar bear, snow leopard, reindeer, wolf, Arctic fox, snowy owl, seal and penguin in a mountain and sea-ice landscape.",
+        "width": 2019,
+        "height": 779
+      },
+      "accessibleText": "BHOC Species and Biodiversity Protection Initiative. One Oxygen. Every Species. One Living Planet. Protect Life. Preserve Species.",
+      "hotspots": [
+        {
+          "label": "Explore species",
+          "href": "./initiative/",
+          "left": 67.4,
+          "top": 48.4,
+          "width": 14.7,
+          "height": 8.5
+        }
+      ]
+    },
+    {
+      "id": "ocean",
+      "label": "Ocean",
+      "image": {
+        "src": "assets/bhoc-initiative-ocean-hero.png",
+        "alt": "BHOC ocean wildlife scene with humpback whale, dolphins, sea turtle, manta ray, seal, whale shark, fish and coral reef.",
+        "width": 2019,
+        "height": 779
+      },
+      "accessibleText": "BHOC Species and Biodiversity Protection Initiative. One Oxygen. Every Species. One Living Planet. Protect Life. Preserve Species.",
+      "hotspots": [
+        {
+          "label": "Explore species",
+          "href": "./initiative/",
+          "left": 70,
+          "top": 47.5,
+          "width": 16.5,
+          "height": 9.5
+        }
+      ]
+    }
+  ],
   "initiative": {
     "image": {
       "src": "assets/reference-initiative-mark.webp",
