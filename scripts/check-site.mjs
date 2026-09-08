@@ -96,7 +96,7 @@ for(const [name,html] of htmlByPage){
   const footerHrefs=[...footer.matchAll(/href="([^"]+)"/g)].map(match=>match[1]);
   assert.equal(new Set(footerHrefs).size,footerHrefs.length,`${name}: footer destinations are not duplicated`);
   assert.match(footer,/Project lead: <strong>BHOC Team<\/strong>\./,`${name}: team footer attribution`);
-  assert.match(footer,/First published <time datetime="2026-09-07">07 Sep 2026<\/time>.*14 updates.*Last updated <time datetime="2026-09-08">08 Sep 2026<\/time>.*Version 26\.09\.08/,`${name}: publication history`);
+  assert.match(footer,/First published <time datetime="2026-09-07">07 Sep 2026<\/time>.*15 updates.*Last updated <time datetime="2026-09-08">08 Sep 2026<\/time>.*Version 26\.09\.08/,`${name}: publication history`);
   assert.match(footer,/href="\.\/initiative\/">BHOC Initiative<\/a>/,`${name}: full Initiative route`);
   assert.match(footer,/href="initiative\.html">Initiative overview<\/a>/,`${name}: legacy Initiative overview remains linked`);
 }
@@ -213,6 +213,7 @@ assert.match(htmlByPage.get('related-information.html'),/>Related scientific inf
 assert.match(htmlByPage.get('related-information.html'),/>Conservation databases</);
 assert.match(htmlByPage.get('initiative.html'),/>Many species\. Blood group systems, known and unknown\. One BHOC system\. One core design engineered by nature\./);
 assert.match(htmlByPage.get('initiative.html'),/href="\.\/initiative\/"><span>Open Full Initiative<\/span>/);
+assert.match(htmlByPage.get('initiative.html'),/if\(location\.pathname\.endsWith\("\/initiative"\)\)location\.replace\(location\.pathname\+"\/"\+location\.search\+location\.hash\)/,'Extensionless Initiative route redirects to the full Initiative homepage');
 assert.match(htmlByPage.get('contact.html'),/data-contact-email="info@bhoctherapeutics\.com"/);
 
 const redirect=await fs.readFile(path.join(out,'publications.html'),'utf8');
