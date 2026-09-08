@@ -37,14 +37,14 @@ export default page=>`<style>
 /* Compact viewport news layout */
 .news-page .page-hero>div{display:block;max-width:1180px;margin:0;white-space:normal}
 .news-page .page-hero .page-eyebrow{display:block;margin:0 0 5px;font-size:9px}
-.news-page .page-hero h1{display:block;max-width:900px;margin:0;font-size:clamp(30px,4vw,52px);line-height:.98;letter-spacing:-1.2px;white-space:normal}
+.news-page .page-hero h1{display:block;max-width:none;margin:0;font-size:clamp(30px,4vw,52px);line-height:.98;letter-spacing:-1.2px;white-space:nowrap}
 .news-page .page-hero p{display:block;max-width:760px;margin:8px 0 0;font-size:11px;line-height:1.35;white-space:normal}
 .intelligence-head{justify-content:flex-end;margin-bottom:7px}
 .intelligence-head .section-heading{display:none}
 .feed-window{height:calc(100dvh - 245px);min-height:430px;max-height:820px;overflow:hidden}
 .conservation-feed{height:100%;min-height:0}
 .story-byline{display:block;margin:0 0 5px;color:#8b5a3c;font-size:9px;line-height:1.25;font-weight:700}
-@media(max-width:820px){.news-page .page-hero h1{font-size:clamp(26px,7vw,38px);line-height:1}.news-page .page-hero p{display:block;max-width:620px;font-size:10px}.feed-window{height:calc(100dvh - 230px);min-height:390px}.conservation-feed{height:100%;min-height:0}}
+@media(max-width:820px){.news-page .page-hero h1{font-size:clamp(26px,7vw,38px);line-height:1;white-space:normal}.news-page .page-hero p{display:block;max-width:620px;font-size:10px}.feed-window{height:calc(100dvh - 230px);min-height:390px}.conservation-feed{height:100%;min-height:0}}
 @media(max-width:640px){.news-page .page-hero{padding:11px var(--gutter) 8px}.news-page .page-hero h1{font-size:clamp(24px,7.5vw,31px)}.news-page .page-hero p{display:block;margin-top:6px;font-size:9px;line-height:1.35}.intelligence-head{margin-bottom:6px}.intelligence-status{font-size:7.5px}.feed-window{height:calc(100dvh - 205px);min-height:350px;padding:7px 5px 7px 7px}.conservation-feed{height:100%;min-height:0}.story-byline{font-size:8px}}
 </style>
 <main id="main" class="subpage-main news-page">
