@@ -104,10 +104,10 @@
 .hero-dots span {
   width: clamp(11px, 1.05vw, 21px);
   height: clamp(11px, 1.05vw, 21px);
-  border: 2px solid #fff;
+  border: 0;
   border-radius: 50%;
-  background: #545a5cd9;
-  box-shadow: 0 1px 7px #18242d55;
+  background: #fff;
+  box-shadow: 0 1px 6px #18242d66;
 }
 
 .hero-dots button[aria-current="true"] span {
@@ -123,7 +123,7 @@
 
   .hero-dots { bottom: 1%; }
   .hero-dots button { width: 25px; height: 25px; }
-  .hero-dots span { width: 10px; height: 10px; border-width: 1px; }
+  .hero-dots span { width: 10px; height: 10px; }
 }
 
 @media (max-width: 420px) {
