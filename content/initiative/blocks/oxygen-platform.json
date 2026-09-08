@@ -9,12 +9,10 @@
   "pathwayLabel": "Conceptual BHOC oxygen-delivery pathway",
   "pathwayIntro": {
     "titleLines": [
-      "From problem",
-      "to possibility."
+      "From problem to possibility."
     ],
     "subtitleLines": [
-      "A simple view",
-      "of how BHOC works."
+      "A simple view of how BHOC works."
     ]
   },
   "steps": [
@@ -61,9 +59,7 @@
     }
   ],
   "scienceScriptLines": [
-    "Science",
-    "That Serves",
-    "Life"
+    "Science That Serves Life"
   ],
   "evidenceBoundary": {
     "label": "Evidence boundary:",

@@ -6,10 +6,10 @@
     {
       "href": "#partners",
       "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/5/52/Baby_elephants_at_David_Sheldrick_Wildlife_Trust_2.jpg",
+        "src": "assets/initiative/focus-wildlife-rescue-photo.webp",
         "alt": "Orphaned African elephant calves at the Sheldrick Wildlife Trust in Nairobi during wildlife rescue and rehabilitation",
-        "width": 1200,
-        "height": 800
+        "width": 640,
+        "height": 480
       },
       "titleLines": [
         "Wildlife Rescue"
@@ -25,10 +25,10 @@
     {
       "href": "https://www.iucnredlist.org/",
       "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/9/99/African_elephant_high_resolution.jpg",
+        "src": "assets/initiative/focus-red-book-photo.webp",
         "alt": "African elephant photographed in its natural habitat by the United States Fish and Wildlife Service",
-        "width": 1083,
-        "height": 734
+        "width": 640,
+        "height": 480
       },
       "titleLines": [
         "Endangered &",
@@ -45,29 +45,29 @@
     {
       "href": "#partners",
       "image": {
-        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Giant_panda_in_Edinburgh_Zoo_01.jpg/1280px-Giant_panda_in_Edinburgh_Zoo_01.jpg",
-        "alt": "Giant panda at Edinburgh Zoo in a zoological conservation setting",
-        "width": 1280,
-        "height": 853
+        "src": "assets/initiative/focus-zoo-photo.webp",
+        "alt": "Giant panda Tai Shan at the Smithsonian National Zoological Park",
+        "width": 640,
+        "height": 480
       },
       "titleLines": [
         "Zoo & Zoological Institutions"
       ],
       "text": "Supporting animal health and population resilience.",
       "credit": {
-        "label": "Adam Harangozó",
-        "href": "https://commons.wikimedia.org/wiki/File:Giant_panda_in_Edinburgh_Zoo_01.jpg",
-        "license": "CC0 1.0",
-        "licenseHref": "https://creativecommons.org/publicdomain/zero/1.0/"
+        "label": "Fernando Revilla",
+        "href": "https://commons.wikimedia.org/wiki/File:Giant_Panda_Tai_Shan.JPG",
+        "license": "CC BY-SA 2.5",
+        "licenseHref": "https://creativecommons.org/licenses/by-sa/2.5/"
       }
     },
     {
       "href": "../applications.html",
       "image": {
-        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/Black_Rhino_at_Working_with_Wildlife.jpg/1280px-Black_Rhino_at_Working_with_Wildlife.jpg",
+        "src": "assets/initiative/focus-veterinary-photo.webp",
         "alt": "Black rhinoceros in South Africa during Working with Wildlife conservation operations",
-        "width": 1280,
-        "height": 720
+        "width": 640,
+        "height": 480
       },
       "titleLines": [
         "Veterinary & Clinical Care"
@@ -83,29 +83,29 @@
     {
       "href": "#mission",
       "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Californian_Condor_50_MC.jpg/1280px-Californian_Condor_50_MC.jpg",
-        "alt": "California condor in flight above Marble Canyon during species recovery and conservation",
-        "width": 1280,
-        "height": 601
+        "src": "assets/initiative/focus-conservation-photo.webp",
+        "alt": "Juvenile California condor at Pinnacles National Monument during species recovery work",
+        "width": 640,
+        "height": 480
       },
       "titleLines": [
         "Conservation Programs"
       ],
       "text": "Enabling habitat conservation through species support.",
       "credit": {
-        "label": "Christian Mehlführer",
-        "href": "https://commons.wikimedia.org/wiki/File:Californian_Condor_50_MC.jpg",
-        "license": "CC BY-SA 3.0",
-        "licenseHref": "https://creativecommons.org/licenses/by-sa/3.0/"
+        "label": "Jim Bahn",
+        "href": "https://commons.wikimedia.org/wiki/File:California_Condor_Pinnacles_NM_1.jpg",
+        "license": "CC BY 2.0",
+        "licenseHref": "https://creativecommons.org/licenses/by/2.0/"
       }
     },
     {
       "href": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-index.html",
       "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/FGBNMS_-_Hawksbill_Turtle_%2827618418831%29.jpg/1280px-FGBNMS_-_Hawksbill_Turtle_%2827618418831%29.jpg",
+        "src": "assets/initiative/focus-science-photo.webp",
         "alt": "Hawksbill sea turtle in Flower Garden Banks National Marine Sanctuary photographed by NOAA",
-        "width": 1280,
-        "height": 850
+        "width": 640,
+        "height": 480
       },
       "titleLines": [
         "Scientific Collaboration"
@@ -121,20 +121,20 @@
     {
       "href": "#partners",
       "image": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Snow_leopard_in_fully_covered_snow.jpg/1280px-Snow_leopard_in_fully_covered_snow.jpg",
-        "alt": "Snow leopard moving through deep snow in its high-altitude habitat",
-        "width": 1280,
-        "height": 853
+        "src": "assets/initiative/focus-philanthropy-photo.webp",
+        "alt": "Close portrait of a snow leopard representing endangered-species philanthropy",
+        "width": 640,
+        "height": 480
       },
       "titleLines": [
         "Foundations & Philanthropy"
       ],
       "text": "Building a more resilient future through strategic giving.",
       "credit": {
-        "label": "In India Travel",
-        "href": "https://commons.wikimedia.org/wiki/File:Snow_leopard_in_fully_covered_snow.jpg",
-        "license": "CC BY-SA 4.0",
-        "licenseHref": "https://creativecommons.org/licenses/by-sa/4.0/"
+        "label": "Eric Kilby",
+        "href": "https://commons.wikimedia.org/wiki/File:Snow_Leopard_Closeup_(13883260104).jpg",
+        "license": "CC BY-SA 2.0",
+        "licenseHref": "https://creativecommons.org/licenses/by-sa/2.0/"
       }
     }
   ]

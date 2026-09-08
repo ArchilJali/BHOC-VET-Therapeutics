@@ -17,6 +17,9 @@
 - Current Open Graph and WhatsApp image: `assets/bhoc-wildlife-rainbow-20260906-v2.png` (1672 × 941).
 - Initiative mark: `assets/reference-initiative-mark.webp`.
 - The same Initiative mark is used across the site; shared CSS masking prevents its square raster backing from showing against the cream/white layouts.
+- The full Initiative homepage header shows one canonical Initiative logo. BHOC Therapeutics remains a clearly labelled text link, without a second logo.
+- The Initiative homepage palette uses forest green with a warm sunrise accent. The blood and microcirculation illustration retains its scientifically relevant red palette.
+- Focus-area wildlife photographs are local, optimized 640 × 480 WebP assets with visible Wikimedia Commons credits and licenses. They render as equal compact thumbnails on desktop, tablet and mobile.
 - Species row: `rem-wirehaired-dachshund-sketch.webp`, `cat-loose-pencil-sketch.webp`, `camel-loose-pencil-sketch.webp`, `orangutan-loose-pencil-sketch.webp`, `marine-turtle-loose-pencil-sketch.webp` and `panda-loose-pencil-sketch.webp`.
 - Rem identity reference: `assets/reference-dog-pencil.webp`. Preserve the face, expression and wiry beard.
 - Molecular structures: `assets/chlorophyll.svg` and `assets/heme.svg`.
@@ -32,7 +35,7 @@ The indexed pages are `index.html`, `product.html`, `applications.html`, `eviden
 
 `publications.html` is intentionally retained as a `noindex,follow` redirect to `evidence.html`. Keep it so historical links continue to work. `404.html`, `CNAME`, `robots.txt` and `sitemap.xml` are also required.
 
-The full Initiative homepage now uses the same independent-block architecture as the BHOC Veterinary homepage. Section order and visibility live in content/initiative/homepage.json; each section has its own JSON data file and renderer. The approved visual styling remains shared and unchanged. Main Initiative entry points open /initiative/ directly, while the earlier overview remains available at /initiative.html.
+The full Initiative homepage now uses the same independent-block architecture as the BHOC Veterinary homepage. Section order and visibility live in content/initiative/homepage.json; each section has its own JSON data file and renderer. The Initiative layout is compact and editorial, with a four-plus-three desktop focus grid, two columns on tablet and one column on phone. Main Initiative entry points open /initiative/ directly, while the earlier overview remains available at /initiative.html.
 
 ## Responsive behavior
 
@@ -54,7 +57,7 @@ The full Initiative homepage now uses the same independent-block architecture as
 - Canonical URL, Open Graph, X/Twitter metadata, schema, descriptive ALT text and sitemap entries must remain intact.
 - The footer keeps LinkedIn and the full VET Evidence Platform as distinct destinations.
 
-Publication line: `First published 07 Sep 2026 · 12 updates · Last updated 08 Sep 2026 · Version 26.09.08`. Increment `publication.updates` for each future public release.
+Publication line: `First published 07 Sep 2026 · 15 updates · Last updated 08 Sep 2026 · Version 26.09.08`. Increment `publication.updates` only when the shared BHOC Veterinary pages are intentionally republished.
 
 ## Editing and verification
 

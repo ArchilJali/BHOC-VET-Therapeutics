@@ -55,7 +55,7 @@ export function renderHeader(header){
     '    </a>',
     '',
     '    <a class="ecosystem-brand" '+linkAttrs(header.ecosystem)+' aria-label="'+esc(header.ecosystem.ariaLabel)+'">',
-    '      '+initiativeImage(header.ecosystem.image,{lazy:false}),
+    '      <span class="ecosystem-brand-dot" aria-hidden="true"></span>',
     '      <span>',
     '        <strong>'+esc(header.ecosystem.title)+'</strong>',
     '        <small>'+esc(header.ecosystem.subtitle)+'</small>',
