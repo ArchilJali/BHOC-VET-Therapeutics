@@ -96,7 +96,45 @@ for(const [name,html] of htmlByPage){
   const footerHrefs=[...footer.matchAll(/href="([^"]+)"/g)].map(match=>match[1]);
   assert.equal(new Set(footerHrefs).size,footerHrefs.length,`${name}: footer destinations are not duplicated`);
   assert.match(footer,/Project lead: <strong>BHOC Team<\/strong>\./,`${name}: team footer attribution`);
-  assert.match(footer,/First published <time datetime="2026-09-07">07 Sep 2026<\/time>.*11 updates.*Last updated <time datetime="2026-09-08">08 Sep 2026<\/time>.*Version 26\.09\.08/,`${name}: publication history`);
+  assert.match(footer,/First published <time datetime="2026-09-07">07 Sep 2026<\/time>.*12 updates.*Last updated <time datetime="2026-09-08">08 Sep 2026<\/time>.*Version 26\.09\.08/,`${name}: publication history`);
+  assert.match(footer,/href="\.\/initiative\/">Full Initiative<\/a>/,`${name}: full Initiative route`);
+}
+
+const initiativeHomePath=path.join(out,'initiative','index.html');
+const initiativeHome=await fs.readFile(initiativeHomePath,'utf8');
+assert.equal((initiativeHome.match(/<h1\b/g)||[]).length,1,'initiative/index.html: exactly one H1');
+assert.match(initiativeHome,/rel="canonical" href="https:\/\/bhocvet\.com\/initiative\/"/);
+assert.match(initiativeHome,/property="og:image" content="https:\/\/bhocvet\.com\/assets\/initiative\/hero-endangered-red-book\.webp"/);
+assert.match(initiativeHome,/name="twitter:card" content="summary_large_image"/);
+assert.match(initiativeHome,/src="\.\.\/assets\/reference-initiative-mark\.webp"/);
+assert.match(initiativeHome,/src="\.\.\/assets\/initiative\/hero-endangered-red-book\.webp"[^>]*alt="Red List wildlife in a mountain habitat: giant panda, rhinoceros, snow leopard, gorilla, tiger and marine turtle"/);
+assert.match(initiativeHome,/We be of one blood, ye and I\./);
+assert.match(initiativeHome,/Rudyard Kipling, <em>The Jungle Book<\/em>/);
+assert.match(initiativeHome,/href="\.\.\/news\.html">News<\/a>/);
+assert.match(initiativeHome,/href="\.\.\/contact\.html">Contact<\/a>/);
+assert.match(initiativeHome,/href="\.\.\/applications\.html"/);
+assert.match(initiativeHome,/href="\.\.\/index\.html">BHOC Veterinary<\/a>/);
+assert.doesNotMatch(initiativeHome,/bhoc-species-initiative\.archil-jali\.chatgpt\.site/);
+assert.doesNotMatch(initiativeHome,/hbo2therapeutics\.com\/our-product/i);
+assert.doesNotMatch(initiativeHome,/href="\.\.\/(?:news|contact|applications|index)\.html"[^>]*target="_blank"/);
+const initiativeIds=new Set([...initiativeHome.matchAll(/\bid="([^"]+)"/g)].map(match=>match[1]));
+for(const match of initiativeHome.matchAll(/href="#([^"]+)"/g))assert.ok(initiativeIds.has(match[1]),`initiative/index.html: missing anchor #${match[1]}`);
+for(const match of initiativeHome.matchAll(/<(?:img|script|link)\b[^>]*(?:src|href)="([^"]+)"/g)){
+  const ref=match[1];
+  if(/^(?:https:|mailto:|#)/.test(ref))continue;
+  await fs.access(path.resolve(path.dirname(initiativeHomePath),ref.split(/[?#]/)[0]));
+}
+for(const match of initiativeHome.matchAll(/<a\b[^>]*href="([^"]+)"/g)){
+  const ref=match[1];
+  if(/^(?:https:|mailto:|#)/.test(ref))continue;
+  const clean=ref.split(/[?#]/)[0];
+  const target=clean.endsWith('/')?path.join(clean,'index.html'):clean;
+  await fs.access(path.resolve(path.dirname(initiativeHomePath),target));
+}
+for(const match of initiativeHome.matchAll(/<img\b[^>]*>/g)){
+  assert.match(match[0],/\balt="/,'initiative/index.html: image needs ALT');
+  assert.match(match[0],/\bwidth="\d+"/,'initiative/index.html: image needs width');
+  assert.match(match[0],/\bheight="\d+"/,'initiative/index.html: image needs height');
 }
 
 const home=htmlByPage.get('index.html');
@@ -152,6 +190,7 @@ assert.match(htmlByPage.get('related-information.html'),/>Professional publicati
 assert.match(htmlByPage.get('related-information.html'),/>Related scientific information</);
 assert.match(htmlByPage.get('related-information.html'),/>Conservation databases</);
 assert.match(htmlByPage.get('initiative.html'),/>Many species\. Blood group systems, known and unknown\. One BHOC system\. One core design engineered by nature\./);
+assert.match(htmlByPage.get('initiative.html'),/href="\.\/initiative\/"><span>Open Full Initiative<\/span>/);
 assert.match(htmlByPage.get('contact.html'),/data-contact-email="info@bhoctherapeutics\.com"/);
 
 const redirect=await fs.readFile(path.join(out,'publications.html'),'utf8');
@@ -166,6 +205,8 @@ assert.match(sitemap,/bhoc-wildlife-rainbow-20260906-v2\.webp/,`Sitemap contains
 assert.match(sitemap,/https:\/\/bhocvet\.com\/product\.html/);
 assert.match(sitemap,/https:\/\/bhocvet\.com\/evidence\.html/);
 assert.match(sitemap,/https:\/\/bhocvet\.com\/initiative\.html/);
+assert.match(sitemap,/https:\/\/bhocvet\.com\/initiative\//);
+assert.match(sitemap,/https:\/\/bhocvet\.com\/assets\/initiative\/hero-endangered-red-book\.webp/);
 assert.match(sitemap,/https:\/\/bhocvet\.com\/related-information\.html/);
 assert.doesNotMatch(sitemap,/publications\.html/,`Legacy redirect is omitted from sitemap`);
 
@@ -192,4 +233,4 @@ assert.match(storyHTML,/A new update/);
 assert.doesNotMatch(storyHTML,/<script>/);
 assert.match(storyHTML,/&lt;script&gt;/);
 
-console.log(`Passed: ${expectedPages.length} indexed pages, legacy redirect, semantic HTML, assets, schema, social previews, navigation and independent content rendering.`);
+console.log(`Passed: ${expectedPages.length} core pages plus the BHOC Initiative homepage, legacy redirect, semantic HTML, assets, schema, social previews, navigation and independent content rendering.`);

@@ -31,6 +31,15 @@
     "width": 318,
     "height": 317
   },
+  "fullPage": {
+    "eyebrow": "Full Initiative",
+    "title": "Protect Life. Preserve Species.",
+    "text": "Explore the complete mission, scientific framework, focus areas and partnership pathways of the BHOC Species & Biodiversity Protection Initiative.",
+    "link": {
+      "label": "Open Full Initiative",
+      "href": "./initiative/"
+    }
+  },
   "purpose": {
     "eyebrow": "Purpose",
     "title": "Animal health and species protection belong in the same future.",
