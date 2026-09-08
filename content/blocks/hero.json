@@ -1,11 +1,38 @@
 {
   "id": "home",
   "image": {
-    "src": "assets/bhoc-wildlife-rainbow-20260906-v2.webp",
-    "alt": "BHOC Veterinary wildlife illustration with a lion, giraffe, horse, elephant, camel, giant panda, orangutan, tabby cat, wire-haired dachshunds and marine turtle beneath a distant rainbow.",
-    "width": 1672,
-    "height": 941
+    "src": "assets/bhoc-hero-land-20260908.webp",
+    "alt": "BHOC Veterinary conservation landscape with diverse land species including lion, giraffe, elephant, camel, horse, rhinoceros, giant panda, orangutan, cat, wirehaired dachshunds and marine turtle.",
+    "width": 1200,
+    "height": 463
   },
+  "slides": [
+    {
+      "id": "land",
+      "label": "Land and savanna species",
+      "src": "assets/bhoc-hero-land-20260908.webp",
+      "alt": "BHOC Veterinary conservation landscape with diverse land species including lion, giraffe, elephant, camel, horse, rhinoceros, giant panda, orangutan, cat, wirehaired dachshunds and marine turtle.",
+      "width": 1200,
+      "height": 463
+    },
+    {
+      "id": "winter",
+      "label": "Polar and mountain species",
+      "src": "assets/bhoc-hero-winter-20260908.webp",
+      "alt": "BHOC Veterinary winter habitat with polar and mountain species including polar bear, snow leopard, reindeer, arctic fox, wolf, snowy owl, seal and penguin.",
+      "width": 1200,
+      "height": 463
+    },
+    {
+      "id": "ocean",
+      "label": "Marine species",
+      "src": "assets/bhoc-hero-ocean-20260908.webp",
+      "alt": "BHOC Veterinary underwater habitat with marine species including whale, dolphins, sea turtle, manta ray, seal and whale shark.",
+      "width": 1200,
+      "height": 463
+    }
+  ],
+  "intervalMs": 300000,
   "initiative": {
     "image": {
       "src": "assets/reference-initiative-mark.webp",
@@ -14,11 +41,11 @@
       "height": 317
     },
     "title": "BHOC Species & Biodiversity Protection Initiative",
-    "tagline": "One Oxygen. One Biology. One BHOC System.",
-    "promise": "For Every Species. Wherever Life Is at Risk.",
+    "tagline": "One Oxygen. Every Species. One Living Planet.",
+    "promise": "Protect Life. Preserve Species.",
     "link": {
-      "href": "initiative.html",
-      "label": "Explore the BHOC Initiative"
+      "href": "index.html#species",
+      "label": "Explore species"
     }
   },
   "heading": [
