@@ -19,7 +19,12 @@
       "chlorophyll a",
       "Antarctic icefish",
       "IUCN Red List",
-      "Catalogue of Life"
+      "Catalogue of Life",
+      "Species+",
+      "CITES",
+      "CMS",
+      "GBIF",
+      "biodiversity data"
     ]
   },
   "eyebrow": "Related Information",
@@ -75,18 +80,28 @@
     {
       "id": "conservation-databases",
       "number": "03",
-      "title": "Conservation databases",
-      "description": "Authoritative global resources for taxonomy and species conservation status.",
+      "title": "Species & Conservation Databases",
+      "description": "Authoritative global resources for species status, taxonomy, protected-species frameworks and biodiversity occurrence data.",
       "items": [
         {
-          "label": "IUCN Red List of Threatened Species",
-          "detail": "Global conservation-status assessments and threatened-species information.",
+          "label": "IUCN Red List",
+          "detail": "Extinction risk · population · threats · conservation actions",
           "href": "https://www.iucnredlist.org/"
         },
         {
-          "label": "Catalogue of Life global species catalogue",
-          "detail": "Authoritative global taxonomic catalogue maintained by specialist communities.",
+          "label": "Catalogue of Life",
+          "detail": "Global taxonomy · accepted species names · classification",
           "href": "https://www.catalogueoflife.org/"
+        },
+        {
+          "label": "Species+ · CITES / CMS",
+          "detail": "Protected-species listings · taxonomy · legislation · distribution · wildlife-trade context",
+          "href": "https://speciesplus.net/"
+        },
+        {
+          "label": "GBIF · Global Biodiversity Information Facility",
+          "detail": "Species occurrence records · datasets · biodiversity distribution",
+          "href": "https://www.gbif.org/"
         }
       ]
     }
