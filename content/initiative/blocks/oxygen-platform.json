@@ -1,0 +1,72 @@
+{
+  "id": "science",
+  "title": "One Oxygen. One Biology. One BHOC System.",
+  "intro": "Species differ. Blood systems differ. But the biological need for oxygen is universal. The BHOC Initiative applies comparative biology and veterinary evidence to support species protection across the living world.",
+  "evidenceLink": {
+    "label": "Explore the source-linked evidence",
+    "href": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-index.html"
+  },
+  "pathwayLabel": "Conceptual BHOC oxygen-delivery pathway",
+  "pathwayIntro": {
+    "titleLines": [
+      "From problem",
+      "to possibility."
+    ],
+    "subtitleLines": [
+      "A simple view",
+      "of how BHOC works."
+    ]
+  },
+  "steps": [
+    {
+      "image": {
+        "src": "assets/initiative/step-oxygen.webp",
+        "alt": "Oxygen droplet symbol",
+        "width": 144,
+        "height": 124
+      },
+      "title": "Oxygen binds to BHOC",
+      "text": "A cell-free hemoglobin carrier is designed to bind and transport oxygen."
+    },
+    {
+      "className": "pathway-bhoc",
+      "image": {
+        "src": "assets/initiative/step-bhoc.webp",
+        "alt": "Small blue BHOC oxygen-carrier molecules",
+        "width": 380,
+        "height": 148
+      },
+      "title": "BHOC",
+      "text": "Small oxygen-carrying molecules travel in plasma without a red-cell membrane."
+    },
+    {
+      "image": {
+        "src": "assets/initiative/step-delivery.webp",
+        "alt": "Lungs representing oxygen delivery",
+        "width": 164,
+        "height": 140
+      },
+      "title": "Oxygen is delivered where needed",
+      "text": "Research focuses on tissue and microvascular oxygen delivery."
+    },
+    {
+      "image": {
+        "src": "assets/initiative/step-recovery.webp",
+        "alt": "Red blood cells representing oxygen support",
+        "width": 184,
+        "height": 136
+      },
+      "title": "Supports life and recovery",
+      "text": "The goal is to protect organ function when oxygen delivery is compromised."
+    }
+  ],
+  "scienceScriptLines": [
+    "Science",
+    "That Serves",
+    "Life"
+  ],
+  "evidenceBoundary": {
+    "label": "Evidence boundary:",
+    "text": "Veterinary evidence is product and species specific. Historical Oxyglobin approvals and study outcomes do not establish BHOC approval or efficacy across species. The current veterinary index contains 236 bibliographic records, including 235 source-linked citations."
+  }
+}

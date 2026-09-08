@@ -1,0 +1,63 @@
+{
+  "brand": {
+    "image": {
+      "src": "assets/reference-initiative-mark.webp",
+      "alt": "BHOC Species and Biodiversity Protection Initiative emblem",
+      "width": 318,
+      "height": 317
+    },
+    "titleLines": [
+      "BHOC Species & Biodiversity",
+      "Protection Initiative"
+    ],
+    "tagline": "One Oxygen. One Biology. One BHOC System.",
+    "promise": "For Every Species. Wherever Life Is at Risk."
+  },
+  "navigation": [
+    {
+      "label": "Mission",
+      "href": "#mission"
+    },
+    {
+      "label": "Science",
+      "href": "#science"
+    },
+    {
+      "label": "Focus Areas",
+      "href": "#focus"
+    },
+    {
+      "label": "Partners",
+      "href": "#partners"
+    },
+    {
+      "label": "News",
+      "href": "../news.html"
+    }
+  ],
+  "ecosystemLinks": [
+    {
+      "label": "BHOC Therapeutics",
+      "href": "https://bhoctherapeutics.com/"
+    },
+    {
+      "label": "BHOC Veterinary",
+      "href": "../index.html"
+    },
+    {
+      "label": "BHOC Scientific Platform",
+      "href": "https://archiljali.github.io/BHOC-platform/"
+    }
+  ],
+  "action": {
+    "label": "Partner with the Initiative",
+    "href": "mailto:info@bhoctherapeutics.com?subject=BHOC%20Species%20and%20Biodiversity%20Protection%20Initiative"
+  },
+  "copyright": "© 2026 BHOC Species & Biodiversity Protection Initiative. All rights reserved.",
+  "projectLead": "Project lead: BHOC Team",
+  "social": {
+    "label": "LinkedIn",
+    "href": "https://www.linkedin.com/company/bhoc-therapeutics/",
+    "ariaLabel": "BHOC Therapeutics on LinkedIn"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "partners",
+  "title": "For Foundations & Philanthropic Partners",
+  "items": [
+    {
+      "symbol": "⌂",
+      "title": "Evidence expansion",
+      "text": "Real-world and cross-species applications."
+    },
+    {
+      "symbol": "●●",
+      "title": "Wildlife and zoo collaboration",
+      "text": "Support institutional partnerships."
+    },
+    {
+      "symbol": "▤",
+      "title": "Knowledge platform",
+      "text": "Open science and education."
+    }
+  ],
+  "callout": {
+    "title": "Science in service of life.",
+    "text": "A stronger future for conservation starts with stronger science."
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "id": "mission",
+  "headingLines": [
+    "Protect Life.",
+    "Preserve Species."
+  ],
+  "name": "BHOC Species & Biodiversity Protection Initiative",
+  "tagline": "From Nature. Through Science. Back to Nature.",
+  "lead": "Advancing a science-driven vision for species protection, wildlife health, and oxygen-delivery support across the living world.",
+  "actions": [
+    {
+      "label": "Explore the Initiative",
+      "href": "#focus",
+      "style": "primary",
+      "arrow": true
+    },
+    {
+      "label": "View Scientific Basis",
+      "href": "https://archiljali.github.io/BHOC-platform/science/",
+      "style": "secondary"
+    }
+  ],
+  "image": {
+    "src": "assets/initiative/hero-endangered-red-book.webp",
+    "alt": "Red List wildlife in a mountain habitat: giant panda, rhinoceros, snow leopard, gorilla, tiger and marine turtle",
+    "width": 760,
+    "height": 320
+  },
+  "caption": "Wildlife hero showing threatened and Red List wild species only.",
+  "principlesLabel": "Initiative priorities",
+  "principles": [
+    {
+      "symbol": "◎",
+      "lines": [
+        "Endangered",
+        "species"
+      ]
+    },
+    {
+      "symbol": "◒",
+      "lines": [
+        "Thriving",
+        "ecosystems"
+      ]
+    },
+    {
+      "symbol": "∞",
+      "lines": [
+        "A healthier",
+        "tomorrow"
+      ]
+    }
+  ]
+}

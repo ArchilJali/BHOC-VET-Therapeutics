@@ -1,0 +1,32 @@
+{
+  "id": "work",
+  "title": "How We Work",
+  "cards": [
+    {
+      "href": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-index.html",
+      "symbol": "⌬",
+      "title": "Robust Science & Evidence",
+      "text": "Grounded in a 236-record evidence index with species and model labels kept explicit."
+    },
+    {
+      "symbol": "●●",
+      "title": "Local and Institutional Partnerships",
+      "text": "Working with zoos, wildlife organizations, veterinary teams and academia."
+    },
+    {
+      "symbol": "✦",
+      "title": "Capacity Building",
+      "text": "Training, practical knowledge tools and expertise."
+    },
+    {
+      "symbol": "▥",
+      "title": "Measurable Impact",
+      "text": "Tracking outcomes for species, habitats and ecosystems."
+    },
+    {
+      "symbol": "▣",
+      "title": "Ethical Transparency",
+      "text": "Open accountability, integrity and a long-term conservation vision."
+    }
+  ]
+}

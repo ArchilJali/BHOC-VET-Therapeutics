@@ -1,0 +1,43 @@
+{
+  "id": "challenge",
+  "title": "When life is at risk, donor blood is not always there.",
+  "intro": "Across the living world, extraordinary species face unique challenges. Even with the best care, access to donor blood can be limited, precisely when it is needed most.",
+  "cards": [
+    {
+      "image": {
+        "src": "assets/initiative/challenge-species.webp",
+        "alt": "Snow leopard representing species diversity and wildlife health",
+        "width": 300,
+        "height": 156
+      },
+      "title": "Species diversity",
+      "text": "Stronger species help safeguard both nature and people."
+    },
+    {
+      "image": {
+        "src": "assets/initiative/challenge-operations.webp",
+        "alt": "Elephant representing remote wildlife care and operational realities",
+        "width": 300,
+        "height": 156
+      },
+      "title": "Operational reality",
+      "text": "In remote areas, donor supply, storage, and logistics can be limited or unavailable."
+    },
+    {
+      "image": {
+        "src": "assets/initiative/challenge-oxygen.webp",
+        "alt": "Wild landscape representing the oxygen-delivery gap in remote care",
+        "width": 300,
+        "height": 156
+      },
+      "title": "Oxygen-delivery gap",
+      "text": "Oxygen-delivery options may bridge critical needs when donor blood is unavailable or delayed."
+    }
+  ],
+  "quoteLines": [
+    "Across species.",
+    "Across continents.",
+    "A shared need.",
+    "A stronger tomorrow."
+  ]
+}

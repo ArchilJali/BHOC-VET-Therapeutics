@@ -4,6 +4,11 @@ import {fileURLToPath} from 'node:url';
 import {createHash} from 'node:crypto';
 import {esc,attrs,img,icon,link} from '../src/lib/html.mjs';
 import renderScienceBlock from '../src/blocks/science.mjs';
+import {
+  renderFooter as renderInitiativeFooter,
+  renderHead as renderInitiativeHead,
+  renderHeader as renderInitiativeHeader
+} from '../src/initiative/chrome.mjs';
 
 const root=path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 const args=process.argv.slice(2);
@@ -19,6 +24,10 @@ const manifest=await json('content/homepage.json');
 const species=await json('content/species-details.json');
 const labels=await json('content/interface.json');
 const scienceData=await json('content/blocks/science.json');
+const initiativeManifest=await json('content/initiative/homepage.json');
+const initiativeSite=await json('content/initiative/site.json');
+const initiativeHeader=await json('content/initiative/header.json');
+const initiativeFooter=await json('content/initiative/footer.json');
 const pageFiles=(await fs.readdir(path.join(root,'content/pages'))).filter(name=>name.endsWith('.json')).sort();
 const pages=await Promise.all(pageFiles.map(name=>json('content/pages/'+name)));
 
@@ -50,12 +59,32 @@ for(const entry of manifest.blocks){
   blocks.push({type:entry.type,data:d,html:render(d)});
 }
 
+const initiativeAllowed=['hero','challenge','oxygen-platform','kipling','microcirculation','focus','work','partners'];
+const initiativeIds=new Set();
+const initiativeBlocks=[];
+for(const entry of initiativeManifest.blocks){
+  if(!initiativeAllowed.includes(entry.type))throw new Error('Unknown Initiative block type '+entry.type);
+  if(!/^initiative\/blocks\/[a-z0-9-]+\.json$/.test(entry.file))throw new Error('Invalid Initiative content file');
+  if(!entry.enabled)continue;
+  const data=await json('content/'+entry.file);
+  checkData(data,entry.file);
+  if(!/^[a-z][a-z0-9-]*$/.test(data.id)||initiativeIds.has(data.id))throw new Error('Invalid or duplicate Initiative block ID '+data.id);
+  initiativeIds.add(data.id);
+  const {default:render}=await import('../src/initiative/blocks/'+entry.type+'.mjs');
+  initiativeBlocks.push({type:entry.type,file:entry.file,data,html:render(data)});
+}
+
 if(!blocks.some(b=>b.type==='hero'))throw new Error('Homepage needs exactly one hero');
 if(blocks.filter(b=>b.type==='hero').length!==1)throw new Error('Multiple hero blocks');
+if(initiativeBlocks.filter(block=>block.type==='hero').length!==1)throw new Error('Initiative homepage needs exactly one hero');
+for(const type of initiativeAllowed)if(initiativeBlocks.filter(block=>block.type===type).length!==1)throw new Error('Initiative homepage needs exactly one '+type+' block');
 checkData(site,'site');
 checkData(header,'header');
 checkData(species,'species');
 checkData(scienceData,'science page block');
+checkData(initiativeSite,'initiative site');
+checkData(initiativeHeader,'initiative header');
+checkData(initiativeFooter,'initiative footer');
 for(const [i,page] of pages.entries()){
   checkData(page,`pages[${i}]`);
   if(!/^[a-z][a-z0-9-]*$/.test(page.slug))throw new Error('Invalid page slug '+page.slug);
@@ -65,7 +94,6 @@ for(const type of allowed.filter(type=>type!=='story'))if(blocks.filter(b=>b.typ
 
 const sourceAssets=await fs.stat(path.join(root,'assets')).then(()=>path.join(root,'assets')).catch(()=>path.join(root,'dist/assets'));
 if(path.resolve(sourceAssets)!==path.join(out,'assets'))await fs.cp(sourceAssets,path.join(out,'assets'),{recursive:true});
-await fs.cp(path.join(root,'src/initiative'),path.join(out,'initiative'),{recursive:true});
 
 const cssNames=[...new Set(['theme','header',...blocks.map(b=>b.type),'science','pages','dialogs'])];
 const cssLinks=[];
@@ -76,6 +104,28 @@ for(const name of cssNames){
 }
 const client=await read('src/client/app.js');
 await write('app.js',client);
+
+const initiativeStyles=await read('src/initiative/styles.css');
+const initiativeClient=await read('src/initiative/app.js');
+await write('initiative/styles.css',initiativeStyles);
+await write('initiative/app.js',initiativeClient);
+const initiativeTemplate=await read('src/initiative/index.html');
+const initiativeBody=initiativeBlocks.map(block=>
+  '<!-- BLOCK '+block.type+': content/'+block.file+' -->\n'+block.html
+).join('\n');
+const initiativeSlots={
+  '{{LANGUAGE}}':initiativeSite.language,
+  '{{HEAD}}':renderInitiativeHead(initiativeSite,digest(initiativeStyles)),
+  '{{HEADER}}':renderInitiativeHeader(initiativeHeader),
+  '{{BLOCKS}}':initiativeBody,
+  '{{FOOTER}}':renderInitiativeFooter(initiativeFooter),
+  '{{APP_VERSION}}':digest(initiativeClient)
+};
+let initiativeDocument=initiativeTemplate;
+for(const [slot,value] of Object.entries(initiativeSlots))initiativeDocument=initiativeDocument.replaceAll(slot,value);
+if(/\{\{[A-Z_]+\}\}/.test(initiativeDocument))throw new Error('Unresolved Initiative template slot');
+if((initiativeDocument.match(/<h1\b/g)||[]).length!==1)throw new Error('initiative/index.html: exactly one H1 required');
+await write('initiative/index.html',initiativeDocument);
 
 const absolute=p=>new URL(p,site.canonical).href;
 const personId=site.canonical+'#archil-jaliashvili';
@@ -114,6 +164,12 @@ const visibleSearchText=value=>JSON.stringify(value,(key,item)=>key==='seo'?unde
 const search=[
   ...Object.entries(species).map(([key,s])=>({title:s.name,category:'Species',text:`${s.text} ${s.context}`,species:key})),
   ...blocks.filter(b=>b.type!=='pillars').map(b=>({title:b.data.title||(Array.isArray(b.data.heading)?b.data.heading.join(' '):b.data.heading)||'Our initiative',category:'Homepage',text:visibleSearchText(b.data),href:'index.html#'+b.data.id})),
+  ...initiativeBlocks.map(block=>({
+    title:block.data.title||(Array.isArray(block.data.headingLines)?block.data.headingLines.join(' '):'BHOC Initiative'),
+    category:'Initiative',
+    text:visibleSearchText(block.data),
+    href:'./initiative/#'+block.data.id
+  })),
   ...pages.map(page=>({title:page.navLabel,category:'Page',text:visibleSearchText(page),href:page.slug+'.html'})),
   ...dialogHTML.map((html,i)=>({title:html.match(/<h2[^>]*>([\s\S]*?)<\/h2>/)?.[1].replace(/<[^>]*>/g,' ')||dialogNames[i],category:'Information',text:html.replace(/<[^>]*>/g,' '),dialog:dialogNames[i].replace('.html','')}))
 ];
@@ -182,9 +238,9 @@ const imageEntries=[...new Map([
   ...(blocks.find(b=>b.type==='species')?.data.items||[]).map(item=>item.image)
 ].map(image=>[image.src,image])).values()];
 const initiativeImages=[
-  {src:'assets/reference-initiative-mark.webp'},
-  {src:'assets/initiative/hero-endangered-red-book.webp'},
-  {src:'assets/initiative/microcirculation.webp'}
+  initiativeHeader.brand.image,
+  initiativeBlocks.find(block=>block.type==='hero').data.image,
+  initiativeBlocks.find(block=>block.type==='microcirculation').data.image
 ];
 const sitemapUrls=[{path:'',images:imageEntries},...pages.map(page=>({path:page.slug+'.html',images:[]})),{path:'initiative/',images:initiativeImages}];
 await write('sitemap.xml',`<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">${sitemapUrls.map(entry=>`<url><loc>${absolute(entry.path)}</loc><lastmod>${site.updated}</lastmod>${entry.images.map(image=>`<image:image><image:loc>${absolute(image.src)}</image:image>`).join('')}</url>`).join('')}</urlset>\n`);
