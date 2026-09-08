@@ -5,30 +5,39 @@
   "cards": [
     {
       "image": {
-        "src": "assets/initiative/challenge-species.webp",
-        "alt": "Snow leopard representing species diversity and wildlife health",
-        "width": 300,
-        "height": 156
+        "src": "assets/initiative/challenge-sumatran-tiger-usfws.webp",
+        "alt": "Endangered Sumatran tiger walking through a green habitat, representing wildlife diversity and species protection",
+        "width": 960,
+        "height": 960,
+        "credit": "Joe Milmoe, U.S. Fish and Wildlife Service",
+        "license": "Public domain",
+        "source": "https://commons.wikimedia.org/wiki/File:Sumatran_Tiger_USFWS.jpg"
       },
       "title": "Species diversity",
       "text": "Stronger species help safeguard both nature and people."
     },
     {
       "image": {
-        "src": "assets/initiative/challenge-operations.webp",
-        "alt": "Elephant representing remote wildlife care and operational realities",
-        "width": 300,
-        "height": 156
+        "src": "assets/initiative/challenge-african-elephant-usfws.webp",
+        "alt": "African forest elephant family at a remote forest water source, representing wildlife-care logistics",
+        "width": 960,
+        "height": 960,
+        "credit": "Daphne Carlson Bremer, U.S. Fish and Wildlife Service",
+        "license": "Public domain",
+        "source": "https://commons.wikimedia.org/wiki/File:African_elephant,_Dzanga_Sangha,_Central_African_Republic_(18945940511).jpg"
       },
       "title": "Operational reality",
       "text": "In remote areas, donor supply, storage, and logistics can be limited or unavailable."
     },
     {
       "image": {
-        "src": "assets/initiative/challenge-oxygen.webp",
-        "alt": "Wild landscape representing the oxygen-delivery gap in remote care",
-        "width": 300,
-        "height": 156
+        "src": "assets/initiative/challenge-hawksbill-turtle-noaa.webp",
+        "alt": "Critically endangered hawksbill sea turtle swimming above a coral reef, representing remote conservation-care needs",
+        "width": 960,
+        "height": 960,
+        "credit": "GP Schmahl, NOAA Flower Garden Banks National Marine Sanctuary",
+        "license": "Public domain",
+        "source": "https://commons.wikimedia.org/wiki/File:FGBNMS_-_Hawksbill_Turtle_(27618418831).jpg"
       },
       "title": "Oxygen-delivery gap",
       "text": "Oxygen-delivery options may bridge critical needs when donor blood is unavailable or delayed."

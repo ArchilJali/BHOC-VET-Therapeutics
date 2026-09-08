@@ -21,6 +21,7 @@
 - The Initiative header includes a visible return link to the BHOC Veterinary homepage. The responsive navigation menu repeats it as the first return action.
 - The Initiative homepage palette uses forest green with a warm sunrise accent. The oxygen cascade and microcirculation concepts use crisp monochrome SVG symbols with warm sunrise connectors.
 - Focus-area wildlife photographs are local, optimized 640 × 480 WebP assets with visible Wikimedia Commons credits and licenses. They render as equal compact thumbnails on desktop, tablet and mobile.
+- The three Challenge cards use sharp, equal 960 × 960 WebP crops sourced from public-domain USFWS and NOAA photographs. Exact authors, source pages and license status are stored in `content/initiative/blocks/challenge.json`.
 - The oxygen-delivery cascade follows the biological order Lungs → Blood → Organ → Cell → Mitochondrion. Each stage is a separate content item with a crisp monochrome SVG symbol and native HTML text.
 - The earlier 1198 × 112 microcirculation raster is no longer rendered. The section now uses a responsive three-node vector schematic for erythrocytes, BHOC in plasma and microvascular tissue focus.
 - Lung, blood-cell, organ and cell symbols are adapted from the CC0 Health Icons outline set. Asset provenance is recorded in assets/initiative/DIAGRAM-SOURCES.md.
