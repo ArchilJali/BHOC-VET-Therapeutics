@@ -104,6 +104,7 @@
           "href": "https://www.gbif.org/",
           "logo": {
             "src": "https://docs.gbif.org/style/logo.svg",
+            "alt": "GBIF logo",
             "width": 80,
             "height": 40
           }
