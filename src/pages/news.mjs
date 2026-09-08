@@ -1,7 +1,7 @@
 import {esc,attrs,icon} from '../lib/html.mjs';
 
 const storyHTML=(story,index)=>`<article class="conservation-story" id="${esc(story.id)}" itemscope itemtype="https://schema.org/NewsArticle">
-  <figure class="story-media"><img src="${esc(story.image.url)}" alt="${esc(story.image.alt)}" ${index===0?'loading="eager"':'loading="lazy"'} decoding="async" itemprop="image"><a class="story-credit" ${attrs(story.credit)} target="_blank" rel="noopener noreferrer">${esc(story.credit.label)}</a></figure>
+  <figure class="story-media"><img src="${esc(story.image.url)}" alt="${esc(story.image.alt)}" width="900" height="600" ${index===0?'loading="eager"':'loading="lazy"'} decoding="async" itemprop="image"><a class="story-credit" ${attrs(story.credit)} target="_blank" rel="noopener noreferrer">${esc(story.credit.label)}</a></figure>
   <div class="story-copy"><div class="story-meta"><time datetime="${esc(story.date)}" itemprop="datePublished">${esc(story.dateLabel)}</time><span>${esc(story.region)}</span><span>${esc(story.category)}</span></div><h3 itemprop="headline">${esc(story.title)}</h3><p itemprop="description">${esc(story.text)}</p><div class="story-footer"><a class="story-link" ${attrs(story.link)} target="_blank" rel="noopener noreferrer" itemprop="url">${esc(story.link.label)} →</a><span class="story-why">${esc(story.why)}</span></div></div>
 </article>`;
 
