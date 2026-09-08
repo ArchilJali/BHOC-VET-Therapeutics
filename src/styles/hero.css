@@ -106,7 +106,7 @@
   height: clamp(11px, 1.05vw, 21px);
   border: 0;
   border-radius: 50%;
-  background: #fff;
+  background: #545a5cd9;
   box-shadow: 0 1px 6px #18242d66;
 }
 
