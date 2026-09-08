@@ -2,12 +2,40 @@
   "slug": "news",
   "navLabel": "News",
   "title": "Wildlife Conservation News & Intelligence | BHOC Veterinary",
-  "description": "Global wildlife conservation intelligence from BHOC Veterinary, covering endangered species, rescue, reintroduction, zoos, veterinary science, funding and recovery.",
+  "description": "Latest wildlife conservation news from BHOC Veterinary, covering wildlife rescue, species recovery, veterinary medicine, conservation funding, One Health, wildlife welfare and the people and organisations protecting animals across countries.",
   "schemaType": "CollectionPage",
   "seo": {
     "primaryKeyword": "wildlife conservation news",
-    "secondaryKeywords": ["endangered species", "wildlife rescue", "species reintroduction", "wildlife veterinary medicine", "zoo conservation"],
-    "supportingTerms": ["species recovery", "conservation medicine", "biodiversity", "One Health", "wildlife research", "conservation funding", "BHOC Initiative"]
+    "secondaryKeywords": [
+      "endangered species",
+      "wildlife rescue",
+      "species recovery",
+      "wildlife veterinary medicine",
+      "conservation medicine",
+      "veterinary infrastructure",
+      "animal health",
+      "conservation funding",
+      "wildlife welfare",
+      "One Health"
+    ],
+    "supportingTerms": [
+      "biodiversity",
+      "wildlife research",
+      "responsible wildlife tourism",
+      "rabies elimination",
+      "Mars Impact Fund",
+      "Worldwide Veterinary Service",
+      "Andy Pharoah",
+      "Thailand",
+      "Natuurhulpcentrum Oudsbergen",
+      "Belgium",
+      "Annick Hus",
+      "Pablo P. Castelló",
+      "University of Denver",
+      "Jeff Kremer",
+      "Humane World for Animals",
+      "BHOC Initiative"
+    ]
   },
   "eyebrow": "BHOC Initiative · Global Intelligence",
   "heading": "Wildlife & Species Conservation Intelligence.",
@@ -27,9 +55,18 @@
       "title": "Assam advances ₹534 crore Wildlife Safari and Rescue Centre.",
       "text": "Assam is moving ahead with a 235-hectare wildlife complex in Dibrugarh. Phase I includes a veterinary hospital and wildlife rescue centre for species including rhinoceroses, tigers, leopards and bears; Phase II adds advanced research infrastructure. The project brings wildlife treatment, rehabilitation, research and conservation capacity into one major facility.",
       "why": "BHOC Initiative: veterinary + rescue + research infrastructure",
-      "image": {"url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/The_one-horned_rhinoceros_of_Kaziranga_National_Park.jpg?width=900", "alt": "Greater one-horned rhinoceros in Assam, representing wildlife rescue and conservation infrastructure"},
-      "credit": {"label": "Photo: Wikimedia Commons · CC0", "href": "https://commons.wikimedia.org/wiki/File:The_one-horned_rhinoceros_of_Kaziranga_National_Park.jpg"},
-      "link": {"label": "Read more", "href": "https://www.indiatodayne.in/amp/assam/video/rs-534-crore-wildlife-safari-and-rescue-centre-planned-in-assams-tingkhong-1447933-2026-09-08"}
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/The_one-horned_rhinoceros_of_Kaziranga_National_Park.jpg?width=900",
+        "alt": "Greater one-horned rhinoceros in Assam, representing wildlife rescue and conservation infrastructure"
+      },
+      "credit": {
+        "label": "Photo: Wikimedia Commons · CC0",
+        "href": "https://commons.wikimedia.org/wiki/File:The_one-horned_rhinoceros_of_Kaziranga_National_Park.jpg"
+      },
+      "link": {
+        "label": "Read more",
+        "href": "https://www.indiatodayne.in/amp/assam/video/rs-534-crore-wildlife-safari-and-rescue-centre-planned-in-assams-tingkhong-1447933-2026-09-08"
+      }
     },
     {
       "id": "turtle-dove-reintroduction",
@@ -40,9 +77,18 @@
       "title": "Thirty turtle doves released to rebuild a South Downs stronghold.",
       "text": "Thirty European turtle doves were released in Hampshire after a roughly 98% UK population decline from their late-1960s peak to 2023. Habitat work includes restored ponds, hedgerows and food plants, while another 100 birds are being prepared for 2027. One released female returning to lay eggs is an early biological signal worth watching.",
       "why": "Recovery pathway: release → migration → return → reproduction",
-      "image": {"url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/European_Turtle_Dove.jpg?width=900", "alt": "European turtle dove representing species recovery and reintroduction in the South Downs"},
-      "credit": {"label": "Photo: Ron Knight · Wikimedia Commons", "href": "https://commons.wikimedia.org/wiki/File:European_Turtle_Dove.jpg"},
-      "link": {"label": "Read more", "href": "https://www.itv.com/news/meridian/2026-09-07/turtle-doves-released-in-national-park-to-help-species-recover"}
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/European_Turtle_Dove.jpg?width=900",
+        "alt": "European turtle dove representing species recovery and reintroduction in the South Downs"
+      },
+      "credit": {
+        "label": "Photo: Ron Knight · Wikimedia Commons",
+        "href": "https://commons.wikimedia.org/wiki/File:European_Turtle_Dove.jpg"
+      },
+      "link": {
+        "label": "Read more",
+        "href": "https://www.itv.com/news/meridian/2026-09-07/turtle-doves-released-in-national-park-to-help-species-recover"
+      }
     },
     {
       "id": "ictc-2026",
@@ -53,9 +99,48 @@
       "title": "Global conservation translocation specialists meet in Edinburgh.",
       "text": "The 4th International Conservation Translocation Conference brings together specialists in reintroduction, ecosystem restoration and conservation management, with 174 presentations. Organisers include NatureScot, the University of Edinburgh’s Royal (Dick) School of Veterinary Studies, the Royal Botanic Garden Edinburgh and the Royal Zoological Society of Scotland.",
       "why": "Priority network: wildlife vets + IUCN + reintroduction science",
-      "image": {"url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sunset_at_Edinburgh_Castle.jpg?width=900", "alt": "Edinburgh, host city of the International Conservation Translocation Conference 2026"},
-      "credit": {"label": "Photo: Gary Campbell-Hall · CC BY 2.0", "href": "https://commons.wikimedia.org/wiki/File:Sunset_at_Edinburgh_Castle.jpg"},
-      "link": {"label": "Read more", "href": "https://vet.ed.ac.uk/ictc"}
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sunset_at_Edinburgh_Castle.jpg?width=900",
+        "alt": "Edinburgh, host city of the International Conservation Translocation Conference 2026"
+      },
+      "credit": {
+        "label": "Photo: Gary Campbell-Hall · CC BY 2.0",
+        "href": "https://commons.wikimedia.org/wiki/File:Sunset_at_Edinburgh_Castle.jpg"
+      },
+      "link": {
+        "label": "Read more",
+        "href": "https://vet.ed.ac.uk/ictc"
+      }
+    },
+    {
+      "id": "wildlife-tourism-responsibility",
+      "date": "2026-09-04",
+      "dateLabel": "04 Sep 2026",
+      "region": "United States · Global",
+      "category": "Wildlife welfare",
+      "title": "Responsible wildlife tourism begins with preserving choice and distance.",
+      "text": "Jeff Kremer shared a public campaign, drawing on material from Humane World for Animals, that challenges tourist attractions allowing direct contact with wild animals. The discussion highlights the long-term welfare cost of turning wild animals into photo props and calls for tourism that protects natural behaviour.",
+      "why": "BHOC Initiative: animal welfare + public education",
+      "image": {
+        "url": "assets/bhoc-wildlife-rainbow-20260906-v2.png",
+        "alt": "BHOC Veterinary wildlife and biodiversity illustration representing wildlife welfare and responsible tourism",
+        "width": 1672,
+        "height": 941
+      },
+      "credit": {
+        "label": "BHOC Veterinary visual",
+        "href": "https://bhocvet.com/"
+      },
+      "link": {
+        "label": "Read source",
+        "href": "https://www.linkedin.com/posts/jeff-kremer-53601712_keepingwildlifewild-whatdoesthesciencesay-activity-7501653905710366720-DxiF"
+      },
+      "keywords": [
+        "wildlife welfare",
+        "responsible wildlife tourism",
+        "animal protection",
+        "United States"
+      ]
     },
     {
       "id": "wolf-protection-review",
@@ -66,9 +151,18 @@
       "title": "Federal order starts review of gray wolf and Mexican wolf protections.",
       "text": "A White House executive order directs the Interior Secretary, within 90 days, to determine whether gray wolves and Mexican wolves meet Endangered Species Act recovery criteria for delisting or downlisting. The order itself does not delist the wolves. It initiates a policy and scientific review that could materially change future protection and management.",
       "why": "Conservation intelligence includes regulatory risk",
-      "image": {"url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Mexican_wolf_canis_lupus_baileyi.jpg?width=900", "alt": "Mexican wolf, an endangered species included in a US federal protection review"},
-      "credit": {"label": "Photo: Jim Clark / USFWS · Public domain", "href": "https://commons.wikimedia.org/wiki/File:Mexican_wolf_canis_lupus_baileyi.jpg"},
-      "link": {"label": "Read primary source", "href": "https://www.whitehouse.gov/presidential-actions/2026/09/supporting-americas-ranchers/"}
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Mexican_wolf_canis_lupus_baileyi.jpg?width=900",
+        "alt": "Mexican wolf, an endangered species included in a US federal protection review"
+      },
+      "credit": {
+        "label": "Photo: Jim Clark / USFWS · Public domain",
+        "href": "https://commons.wikimedia.org/wiki/File:Mexican_wolf_canis_lupus_baileyi.jpg"
+      },
+      "link": {
+        "label": "Read primary source",
+        "href": "https://www.whitehouse.gov/presidential-actions/2026/09/supporting-americas-ranchers/"
+      }
     },
     {
       "id": "kent-chough-recovery",
@@ -79,9 +173,83 @@
       "title": "Eight wild-born red-billed chough chicks mark a recovery turning point.",
       "text": "Eight chicks fledged naturally in Kent this summer, bringing the county population to 35 choughs, including nine born in the wild. The partnership led by Kent Wildlife Trust and Wildwood Trust returned the species after more than two centuries of absence. The key milestone is no longer release alone: the birds are breeding and expanding their range.",
       "why": "Outcome metric: survival + reproduction + range expansion",
-      "image": {"url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Red-billed_chough_(Pyrrhocorax_pyrrhocorax).jpg?width=900", "alt": "Red-billed chough representing the species reintroduction and recovery program in Kent"},
-      "credit": {"label": "Photo: Hobbyfotowiki · CC0", "href": "https://commons.wikimedia.org/wiki/File:Red-billed_chough_(Pyrrhocorax_pyrrhocorax).jpg"},
-      "link": {"label": "Read primary source", "href": "https://www.kentwildlifetrust.org.uk/news/red-billed-chough-recovery-kent-takes-flight-wild-population-grows"}
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Red-billed_chough_(Pyrrhocorax_pyrrhocorax).jpg?width=900",
+        "alt": "Red-billed chough representing the species reintroduction and recovery program in Kent"
+      },
+      "credit": {
+        "label": "Photo: Hobbyfotowiki · CC0",
+        "href": "https://commons.wikimedia.org/wiki/File:Red-billed_chough_(Pyrrhocorax_pyrrhocorax).jpg"
+      },
+      "link": {
+        "label": "Read primary source",
+        "href": "https://www.kentwildlifetrust.org.uk/news/red-billed-chough-recovery-kent-takes-flight-wild-population-grows"
+      }
+    },
+    {
+      "id": "mars-impact-fund-wvs-thailand",
+      "date": "2026-09-01",
+      "dateLabel": "01 Sep 2026",
+      "region": "Thailand · Global",
+      "category": "Veterinary philanthropy",
+      "title": "Mars Impact Fund backs long-term veterinary capacity through a $3 million WVS grant.",
+      "text": "Andy Pharoah, Vice President of Corporate Affairs and Sustainability at Mars, is associated with a Mars Impact Fund grant round awarding more than $13 million to six partners. Worldwide Veterinary Service received $3 million for a Thailand rabies-elimination programme designed to strengthen local veterinary infrastructure and protect animals and communities. Durable veterinary capacity is as important as campaign activity.",
+      "why": "BHOC Initiative: veterinary infrastructure + One Health",
+      "image": {
+        "url": "assets/bhoc-wildlife-rainbow-20260906-v2.png",
+        "alt": "BHOC Veterinary wildlife and biodiversity illustration representing veterinary philanthropy, rabies elimination and One Health",
+        "width": 1672,
+        "height": 941
+      },
+      "credit": {
+        "label": "BHOC Veterinary visual",
+        "href": "https://bhocvet.com/"
+      },
+      "link": {
+        "label": "Read source",
+        "href": "https://www.mars.com/news-and-stories/press-releases-statements/mars-impact-fund-awards-more-than-13-million-in-new-grants"
+      },
+      "keywords": [
+        "Mars Impact Fund",
+        "Worldwide Veterinary Service",
+        "Andy Pharoah",
+        "rabies elimination",
+        "Thailand",
+        "veterinary infrastructure",
+        "One Health"
+      ]
+    },
+    {
+      "id": "wildlife-territorial-rights-research",
+      "date": "2026-09-01",
+      "dateLabel": "01 Sep 2026",
+      "region": "United States · Global",
+      "category": "Conservation law",
+      "title": "New research connects wildlife survival with territory, migration routes and access to resources.",
+      "text": "Pablo P. Castelló, Faculty Co-Director of Animals Forward and Research Fellow in the Animal Law Program at the University of Denver, shared a new American Journal of Political Science publication on the political interests of wild animals. Treating an injured animal is only one part of protection when survival also depends on habitat, movement corridors and ecological continuity.",
+      "why": "BHOC Initiative: conservation medicine + habitat protection",
+      "image": {
+        "url": "assets/bhoc-wildlife-rainbow-20260906-v2.png",
+        "alt": "BHOC Veterinary wildlife and biodiversity illustration representing wildlife habitat, conservation law and species protection",
+        "width": 1672,
+        "height": 941
+      },
+      "credit": {
+        "label": "BHOC Veterinary visual",
+        "href": "https://bhocvet.com/"
+      },
+      "link": {
+        "label": "Read source",
+        "href": "https://www.linkedin.com/posts/pablo-p-castello-8aa65a18b_american-journal-of-political-science-mpsa-activity-7500548163158806529-Uns_"
+      },
+      "keywords": [
+        "Pablo P. Castelló",
+        "University of Denver",
+        "Animals Forward",
+        "wildlife habitat",
+        "conservation law",
+        "conservation medicine"
+      ]
     },
     {
       "id": "kakapo-325",
@@ -92,14 +260,80 @@
       "title": "Kākāpō population reaches a recovery-era high of 325 birds.",
       "text": "Ninety chicks from the 2026 breeding season were added to the official population, taking the critically endangered kākāpō to 325 birds. The recovery programme began in 1995 with only 51 birds. New approaches increasingly use remote nest technology and reduced intervention, moving from intensive rescue toward more natural breeding and long-term population resilience.",
       "why": "Recovery metric: population growth + reduced intervention",
-      "image": {"url": "https://dxcprod.doc.govt.nz/thumbs/hero/globalassets/images/nature/native-animals/birds/kkp/hananui-a2-1920.jpg", "alt": "Kākāpō in New Zealand's critically endangered species recovery programme"},
-      "credit": {"label": "Photo: Sarah Manktelow / DOC", "href": "https://dxcprod.doc.govt.nz/news/media-releases/2026-media-releases/kakapo-population-reaches-new-milestone/"},
-      "link": {"label": "Read primary source", "href": "https://dxcprod.doc.govt.nz/news/media-releases/2026-media-releases/kakapo-population-reaches-new-milestone/"}
+      "image": {
+        "url": "https://dxcprod.doc.govt.nz/thumbs/hero/globalassets/images/nature/native-animals/birds/kkp/hananui-a2-1920.jpg",
+        "alt": "Kākāpō in New Zealand's critically endangered species recovery programme"
+      },
+      "credit": {
+        "label": "Photo: Sarah Manktelow / DOC",
+        "href": "https://dxcprod.doc.govt.nz/news/media-releases/2026-media-releases/kakapo-population-reaches-new-milestone/"
+      },
+      "link": {
+        "label": "Read primary source",
+        "href": "https://dxcprod.doc.govt.nz/news/media-releases/2026-media-releases/kakapo-population-reaches-new-milestone/"
+      }
+    },
+    {
+      "id": "natuurhulpcentrum-wildlife-rescue-pressure",
+      "date": "2026-08-26",
+      "dateLabel": "26 Aug 2026",
+      "region": "Belgium · Oudsbergen",
+      "category": "Wildlife rescue and funding",
+      "title": "Wildlife rescue centres face a sharp rise in admissions while public funding remains limited.",
+      "text": "Annick Hus highlighted that Natuurhulpcentrum Oudsbergen has admitted more than 10,000 wild animals amid heat, drought and disease pressure. The centre reports that only 7% of its funding comes from government support, leaving the remaining 93% to be raised independently. The story shows why wildlife rescue is also a medical and infrastructure challenge.",
+      "why": "BHOC Initiative: rescue capacity + conservation medicine",
+      "image": {
+        "url": "assets/bhoc-wildlife-rainbow-20260906-v2.png",
+        "alt": "BHOC Veterinary wildlife and biodiversity illustration representing wildlife rescue, rehabilitation and conservation medicine",
+        "width": 1672,
+        "height": 941
+      },
+      "credit": {
+        "label": "BHOC Veterinary visual",
+        "href": "https://bhocvet.com/"
+      },
+      "link": {
+        "label": "Read source",
+        "href": "https://www.linkedin.com/posts/annickhus_more-than-10000-wild-animals-have-been-admitted-activity-7498273289182580736-mudP"
+      },
+      "keywords": [
+        "Annick Hus",
+        "Natuurhulpcentrum Oudsbergen",
+        "Belgium",
+        "wildlife rescue",
+        "wildlife rehabilitation",
+        "conservation funding",
+        "conservation medicine"
+      ]
     }
   ],
   "channels": [
-    {"icon": "linkedin", "title": "BHOC LinkedIn", "text": "Company news, scientific discussion and BHOC publications.", "link": {"label": "Open LinkedIn", "href": "https://www.linkedin.com/company/bhoc-therapeutics/"}},
-    {"icon": "book", "title": "BHOC VET-platform", "text": "Guided veterinary evidence map, oxygen biology and routes into the source library.", "link": {"label": "Open evidence platform", "href": "https://archiljali.github.io/BHOC-VET-platform/"}},
-    {"icon": "book", "title": "Veterinary Evidence Library", "text": "Source-linked bibliography, regulatory records and publication archive.", "link": {"label": "Open full library", "href": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-index.html"}}
+    {
+      "icon": "linkedin",
+      "title": "BHOC LinkedIn",
+      "text": "Company news, scientific discussion and BHOC publications.",
+      "link": {
+        "label": "Open LinkedIn",
+        "href": "https://www.linkedin.com/company/bhoc-therapeutics/"
+      }
+    },
+    {
+      "icon": "book",
+      "title": "BHOC VET-platform",
+      "text": "Guided veterinary evidence map, oxygen biology and routes into the source library.",
+      "link": {
+        "label": "Open evidence platform",
+        "href": "https://archiljali.github.io/BHOC-VET-platform/"
+      }
+    },
+    {
+      "icon": "book",
+      "title": "Veterinary Evidence Library",
+      "text": "Source-linked bibliography, regulatory records and publication archive.",
+      "link": {
+        "label": "Open full library",
+        "href": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-index.html"
+      }
+    }
   ]
 }
