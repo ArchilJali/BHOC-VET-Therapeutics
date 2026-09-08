@@ -11,11 +11,6 @@
       "enabled": true
     },
     {
-      "type": "oxygen-platform",
-      "file": "initiative/blocks/oxygen-platform.json",
-      "enabled": false
-    },
-    {
       "type": "kipling",
       "file": "initiative/blocks/kipling.json",
       "enabled": true

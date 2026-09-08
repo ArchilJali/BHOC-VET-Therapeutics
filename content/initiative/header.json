@@ -25,12 +25,6 @@
   "ecosystem": {
     "href": "https://bhoctherapeutics.com/",
     "ariaLabel": "Open BHOC Therapeutics",
-    "image": {
-      "src": "assets/initiative/bhoc-ecosystem-mark.png",
-      "alt": "BHOC ecosystem biodiversity mark",
-      "width": 450,
-      "height": 410
-    },
     "title": "BHOC Therapeutics",
     "subtitle": "Precision Oxygen Therapeutics"
   },

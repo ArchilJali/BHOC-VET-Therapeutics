@@ -20,9 +20,9 @@ Describe concrete tradeoffs before undertaking a materially different approach. 
 
 ## Current hero and carousel
 
-The current approved display asset is `assets/bhoc-wildlife-rainbow-20260906-v2.webp`; its exact 1672 × 941 PNG is retained for Open Graph and WhatsApp sharing at `assets/bhoc-wildlife-rainbow-20260906-v2.png`. Preserve every animal's face, the composition, rainbow, birds and landscape. Do not make any broader redraw or substitution without a new explicit request. The heading is Precision Oxygen Therapeutics, followed by BHOC - Biological Hemoglobin Oxygen Carrier. The initiative image keeps its 318:317 aspect ratio, with height automatic at every viewport.
+The current approved homepage carousel uses exactly three optimized assets: `assets/bhoc-initiative-land-hero.webp`, `assets/bhoc-initiative-winter-hero.webp` and `assets/bhoc-initiative-ocean-hero-v2.webp`, in that order. `assets/bhoc-initiative-land-social.jpg` is a format-optimized, uncropped copy of the exact Land hero for Open Graph and WhatsApp sharing. Preserve every animal, the approved composition and the original proportions. Do not make a broader redraw or substitution without a new explicit request. The heading is Precision Oxygen Therapeutics, followed by BHOC - Biological Hemoglobin Oxygen Carrier. The initiative image keeps its 318:317 aspect ratio, with height automatic at every viewport.
 
-The main hero media area is intended to accept additional approved images later. Preserve its carousel-ready structure and bottom navigation controls when new images are supplied; adding a slide must not require redesigning the hero copy or navigation.
+Preserve the carousel structure and bottom navigation controls. Adding or replacing a slide must not require redesigning the hero copy or navigation.
 
 The species row uses original independent portrait nodes, circular arrow/dot selection and native touch scrolling. Dots are generated from the content item count. Keep the six approved sketches and Rem's identity intact.
 

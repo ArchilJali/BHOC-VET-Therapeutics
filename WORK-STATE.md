@@ -1,6 +1,6 @@
 # Current BHOC Veterinary work state
 
-7 September 2026. This file records only the current implementation. Earlier experiments and authoring archives are intentionally excluded from the public repository.
+8 September 2026. This file records only the current implementation. Earlier experiments and authoring archives are intentionally excluded from the public repository.
 
 ## Identity and navigation
 
@@ -13,8 +13,8 @@
 
 ## Current visual authority
 
-- Current desktop/mobile hero: `assets/bhoc-wildlife-rainbow-20260906-v2.webp`.
-- Current Open Graph and WhatsApp image: `assets/bhoc-wildlife-rainbow-20260906-v2.png` (1672 × 941).
+- Current desktop/mobile hero carousel: `assets/bhoc-initiative-land-hero.webp`, `assets/bhoc-initiative-winter-hero.webp` and `assets/bhoc-initiative-ocean-hero-v2.webp`, in Land, Winter, Ocean order.
+- Current Open Graph and WhatsApp image: `assets/bhoc-initiative-land-social.jpg` (1200 × 463), an uncropped copy of the approved Land hero.
 - Initiative mark: `assets/reference-initiative-mark.webp`.
 - The same Initiative mark is used across the site; shared CSS masking prevents its square raster backing from showing against the cream/white layouts.
 - The full Initiative homepage header shows one canonical Initiative logo. BHOC Therapeutics remains a clearly labelled text link, without a second logo.
@@ -22,16 +22,15 @@
 - The Initiative homepage palette uses forest green with a warm sunrise accent. The remaining microcirculation concept uses crisp monochrome SVG symbols with warm sunrise connectors.
 - Focus-area wildlife photographs are local, optimized 640 × 480 WebP assets with visible Wikimedia Commons credits and licenses. They render as equal compact thumbnails on desktop, tablet and mobile.
 - The three Challenge cards use sharp, equal 960 × 960 WebP crops sourced from public-domain USFWS and NOAA photographs. Exact authors, source pages and license status are stored in `content/initiative/blocks/challenge.json`.
-- The oxygen-delivery cascade remains preserved as an independent content block but is disabled on the Initiative homepage at the user's request.
-- The three-item Initiative priorities strip is removed from the hero. Its removal does not affect the hero artwork, copy, buttons or links.
-- The earlier 1198 × 112 microcirculation raster is no longer rendered. The section now uses a responsive three-node vector schematic for erythrocytes, BHOC in plasma and microvascular tissue focus.
-- Lung, blood-cell, organ and cell symbols are adapted from the CC0 Health Icons outline set. Asset provenance is recorded in assets/initiative/DIAGRAM-SOURCES.md.
+- The removed oxygen-delivery cascade and Initiative priorities strip are no longer retained in the active source tree.
+- The microcirculation section uses a responsive three-node vector schematic for erythrocytes, BHOC in plasma and microvascular tissue focus.
+- The blood-cell and cell symbols are adapted from the CC0 Health Icons outline set. Asset provenance is recorded in `SOURCES.md`.
 - Species row: `rem-wirehaired-dachshund-sketch.webp`, `cat-loose-pencil-sketch.webp`, `camel-loose-pencil-sketch.webp`, `orangutan-loose-pencil-sketch.webp`, `marine-turtle-loose-pencil-sketch.webp` and `panda-loose-pencil-sketch.webp`.
 - Rem identity reference: `assets/reference-dog-pencil.webp`. Preserve the face, expression and wiry beard.
 - Molecular structures: `assets/chlorophyll.svg` and `assets/heme.svg`.
 - Lower landscape: `assets/bhoc-mountain-landscape-pencil.webp`.
 
-Do not substitute earlier hero, logo or portrait variants. Text, links, buttons and molecular labels remain native HTML/SVG and must not be baked into raster artwork.
+Do not substitute earlier hero, logo or portrait variants. Superseded and unused public assets have been removed. Text, links, buttons and molecular labels remain native HTML/SVG and must not be baked into raster artwork.
 
 ## Pages and URL continuity
 

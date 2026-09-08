@@ -1,17 +1,21 @@
 # BHOC Veterinary sources and provenance
 
-Current as of 7 September 2026. This file lists only sources used by the present website.
+Current as of 8 September 2026. This file lists only sources used by the present website.
 
 ## Current artwork
 
-- Hero display: `assets/bhoc-wildlife-rainbow-20260906-v2.webp`.
-- Open Graph and WhatsApp image: `assets/bhoc-wildlife-rainbow-20260906-v2.png` (1672 × 941).
+- Homepage hero carousel: `assets/bhoc-initiative-land-hero.webp`, `assets/bhoc-initiative-winter-hero.webp` and `assets/bhoc-initiative-ocean-hero-v2.webp`.
+- Open Graph and WhatsApp image: `assets/bhoc-initiative-land-social.jpg` (1200 × 463), a format-optimized copy of the approved Land hero without cropping.
+- Initiative hero: `assets/initiative/hero-red-list-pencil-v2.webp`.
+- Initiative Challenge photographs: the three `challenge-*-usfws.webp` / `challenge-*-noaa.webp` files named in `content/initiative/blocks/challenge.json`.
+- Initiative Focus photographs: the seven `focus-*-photo.webp` files named in `content/initiative/blocks/focus.json`.
 - Initiative mark: `assets/reference-initiative-mark.webp`.
 - Species portraits: the six `*-loose-pencil-sketch.webp`/`rem-wirehaired-dachshund-sketch.webp` files named in `content/blocks/species.json`.
 - Rem identity reference: `assets/reference-dog-pencil.webp`.
 - Molecular diagrams: exact ChEBI SVG structures in `assets/chlorophyll.svg` and `assets/heme.svg`.
+- Initiative blood-cell and cell symbols: adapted from the CC0 Health Icons outline set by Resolve to Save Lives, https://github.com/resolvetosavelives/healthicons. The BHOC carrier schematic was created for this site.
 
-Private photographs, intermediate generations, screenshots and superseded hero variants are not part of the public repository.
+Private photographs, intermediate generations, screenshots, superseded hero variants and unused full-resolution exports are not part of the public repository.
 
 ## Data and scientific sources
 
