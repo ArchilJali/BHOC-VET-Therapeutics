@@ -18,8 +18,12 @@
 - Initiative mark: `assets/reference-initiative-mark.webp`.
 - The same Initiative mark is used across the site; shared CSS masking prevents its square raster backing from showing against the cream/white layouts.
 - The full Initiative homepage header shows one canonical Initiative logo. BHOC Therapeutics remains a clearly labelled text link, without a second logo.
-- The Initiative homepage palette uses forest green with a warm sunrise accent. The blood and microcirculation illustration retains its scientifically relevant red palette.
+- The Initiative header includes a visible return link to the BHOC Veterinary homepage. The responsive navigation menu repeats it as the first return action.
+- The Initiative homepage palette uses forest green with a warm sunrise accent. The oxygen cascade and microcirculation concepts use crisp monochrome SVG symbols with warm sunrise connectors.
 - Focus-area wildlife photographs are local, optimized 640 × 480 WebP assets with visible Wikimedia Commons credits and licenses. They render as equal compact thumbnails on desktop, tablet and mobile.
+- The oxygen-delivery cascade follows the biological order Lungs → Blood → Organ → Cell → Mitochondrion. Each stage is a separate content item with a crisp monochrome SVG symbol and native HTML text.
+- The earlier 1198 × 112 microcirculation raster is no longer rendered. The section now uses a responsive three-node vector schematic for erythrocytes, BHOC in plasma and microvascular tissue focus.
+- Lung, blood-cell, organ and cell symbols are adapted from the CC0 Health Icons outline set. Asset provenance is recorded in assets/initiative/DIAGRAM-SOURCES.md.
 - Species row: `rem-wirehaired-dachshund-sketch.webp`, `cat-loose-pencil-sketch.webp`, `camel-loose-pencil-sketch.webp`, `orangutan-loose-pencil-sketch.webp`, `marine-turtle-loose-pencil-sketch.webp` and `panda-loose-pencil-sketch.webp`.
 - Rem identity reference: `assets/reference-dog-pencil.webp`. Preserve the face, expression and wiry beard.
 - Molecular structures: `assets/chlorophyll.svg` and `assets/heme.svg`.

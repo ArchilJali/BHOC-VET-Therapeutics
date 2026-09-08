@@ -15,6 +15,13 @@
     "tagline": "One Oxygen. One Biology. One BHOC System.",
     "promise": "For Every Species. Wherever Life Is at Risk."
   },
+  "returnLink": {
+    "label": "BHOC Veterinary",
+    "menuLabel": "Return to BHOC Veterinary",
+    "subtitle": "Main veterinary site",
+    "href": "../index.html",
+    "ariaLabel": "Return to the BHOC Veterinary homepage"
+  },
   "ecosystem": {
     "href": "https://bhoctherapeutics.com/",
     "ariaLabel": "Open BHOC Therapeutics",

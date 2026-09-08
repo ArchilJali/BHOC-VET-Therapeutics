@@ -6,56 +6,70 @@
     "label": "Explore the source-linked evidence",
     "href": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-index.html"
   },
-  "pathwayLabel": "Conceptual BHOC oxygen-delivery pathway",
+  "pathwayLabel": "Conceptual oxygen-delivery cascade from the lungs to mitochondria",
   "pathwayIntro": {
     "titleLines": [
-      "From problem to possibility."
+      "From lungs to mitochondria."
     ],
     "subtitleLines": [
-      "A simple view of how BHOC works."
+      "The biological oxygen-delivery cascade."
     ]
   },
   "steps": [
     {
+      "stage": "Lungs",
       "image": {
-        "src": "assets/initiative/step-oxygen.webp",
-        "alt": "Oxygen droplet symbol",
-        "width": 144,
-        "height": 124
+        "src": "assets/initiative/cascade-lungs.svg",
+        "alt": "Black line schematic of the lungs",
+        "width": 48,
+        "height": 48
       },
-      "title": "Oxygen binds to BHOC",
-      "text": "A cell-free hemoglobin carrier is designed to bind and transport oxygen."
+      "title": "Oxygen enters the lungs",
+      "text": "Gas exchange moves oxygen from inhaled air into pulmonary blood."
     },
     {
-      "className": "pathway-bhoc",
+      "stage": "Blood",
       "image": {
-        "src": "assets/initiative/step-bhoc.webp",
-        "alt": "Small blue BHOC oxygen-carrier molecules",
-        "width": 380,
-        "height": 148
+        "src": "assets/initiative/cascade-blood.svg",
+        "alt": "Black line schematic of blood cells",
+        "width": 48,
+        "height": 48
       },
-      "title": "BHOC",
-      "text": "Small oxygen-carrying molecules travel in plasma without a red-cell membrane."
+      "title": "Blood carries oxygen",
+      "text": "Erythrocytes carry oxygen. BHOC is designed to carry oxygen in plasma."
     },
     {
+      "stage": "Organ",
       "image": {
-        "src": "assets/initiative/step-delivery.webp",
-        "alt": "Lungs representing oxygen delivery",
-        "width": 164,
-        "height": 140
+        "src": "assets/initiative/cascade-organ.svg",
+        "alt": "Black line schematic of a vital organ",
+        "width": 48,
+        "height": 48
       },
-      "title": "Oxygen is delivered where needed",
-      "text": "Research focuses on tissue and microvascular oxygen delivery."
+      "title": "Blood reaches the organ",
+      "text": "Circulation brings oxygen toward organ tissue and its microvasculature."
     },
     {
+      "stage": "Cell",
       "image": {
-        "src": "assets/initiative/step-recovery.webp",
-        "alt": "Red blood cells representing oxygen support",
-        "width": 184,
-        "height": 136
+        "src": "assets/initiative/cascade-cell.svg",
+        "alt": "Black line schematic of a biological cell",
+        "width": 48,
+        "height": 48
       },
-      "title": "Supports life and recovery",
-      "text": "The goal is to protect organ function when oxygen delivery is compromised."
+      "title": "Oxygen reaches the cell",
+      "text": "Oxygen moves from the microcirculation through tissue to cells."
+    },
+    {
+      "stage": "Mitochondrion",
+      "image": {
+        "src": "assets/initiative/cascade-mitochondrion.svg",
+        "alt": "Black line schematic of a mitochondrion",
+        "width": 48,
+        "height": 48
+      },
+      "title": "Mitochondria use oxygen",
+      "text": "Mitochondria use oxygen in aerobic metabolism to support ATP production."
     }
   ],
   "scienceScriptLines": [

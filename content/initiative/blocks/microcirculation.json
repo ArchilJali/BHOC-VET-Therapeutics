@@ -1,13 +1,39 @@
 {
   "id": "microcirculation",
-  "ariaLabel": "Smaller. Faster. Further. Microcirculation concept",
+  "ariaLabel": "Conceptual comparison of erythrocytes, BHOC in plasma and microvascular tissue oxygen delivery",
   "title": "Smaller. Faster. Further.",
-  "text": "BHOC molecules are designed to circulate in plasma at a scale far below erythrocytes, with microvascular oxygen delivery as a core scientific focus.",
-  "image": {
-    "src": "assets/initiative/microcirculation.webp",
-    "alt": "BHOC and erythrocyte size comparison inside a microvessel, illustrating oxygen delivery toward tissue in need",
-    "width": 1198,
-    "height": 112
-  },
-  "caption": "Smaller. Faster. Further. BHOC molecules move through plasma at a smaller scale than erythrocytes. The illustration presents microvascular oxygen delivery as a scientific development focus."
+  "text": "BHOC molecules are designed to circulate in plasma at a scale far below erythrocytes. Microvascular and tissue-level oxygen delivery remains a core scientific focus.",
+  "nodes": [
+    {
+      "image": {
+        "src": "assets/initiative/cascade-blood.svg",
+        "alt": "Black line schematic of erythrocytes",
+        "width": 48,
+        "height": 48
+      },
+      "title": "Erythrocyte",
+      "text": "Cell-bound oxygen transport"
+    },
+    {
+      "image": {
+        "src": "assets/initiative/diagram-bhoc.svg",
+        "alt": "Black line schematic of a small BHOC molecular carrier",
+        "width": 48,
+        "height": 48
+      },
+      "title": "BHOC in plasma",
+      "text": "Cell-free oxygen-carrier concept"
+    },
+    {
+      "image": {
+        "src": "assets/initiative/cascade-cell.svg",
+        "alt": "Black line schematic of cells receiving oxygen",
+        "width": 48,
+        "height": 48
+      },
+      "title": "Microvascular focus",
+      "text": "Oxygen delivery toward tissue and cells"
+    }
+  ],
+  "caption": "Conceptual comparison of cell-bound erythrocyte transport, BHOC in plasma and oxygen delivery toward tissue at the microvascular level."
 }

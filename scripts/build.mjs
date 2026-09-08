@@ -245,11 +245,14 @@ const imageEntries=[...new Map([
   ...(hero.slides||[]).map(slide=>slide.image),
   ...(blocks.find(b=>b.type==='species')?.data.items||[]).map(item=>item.image)
 ].map(image=>[image.src,image])).values()];
-const initiativeImages=[
+const initiativeOxygen=initiativeBlocks.find(block=>block.type==='oxygen-platform').data;
+const initiativeMicrocirculation=initiativeBlocks.find(block=>block.type==='microcirculation').data;
+const initiativeImages=[...new Map([
   initiativeHeader.brand.image,
   initiativeBlocks.find(block=>block.type==='hero').data.image,
-  initiativeBlocks.find(block=>block.type==='microcirculation').data.image
-];
+  ...initiativeOxygen.steps.map(step=>step.image),
+  ...initiativeMicrocirculation.nodes.map(node=>node.image)
+].map(image=>[image.src,image])).values()];
 const sitemapUrls=[{path:'',images:imageEntries},...pages.map(page=>({path:page.slug+'.html',images:[]})),{path:'initiative/',images:initiativeImages}];
 await write('sitemap.xml',`<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">${sitemapUrls.map(entry=>`<url><loc>${absolute(entry.path)}</loc><lastmod>${site.updated}</lastmod>${entry.images.map(image=>`<image:image><image:loc>${absolute(image.src)}</image:image>`).join('')}</url>`).join('')}</urlset>\n`);
 await write('robots.txt',`User-agent: *\nAllow: /\nSitemap: ${absolute('sitemap.xml')}\n`);

@@ -2,9 +2,10 @@ import {esc,initiativeImage,lines,linkAttrs} from '../lib.mjs';
 
 export default function renderOxygenPlatform(data){
   const evidence='<a '+linkAttrs(data.evidenceLink)+'>'+esc(data.evidenceLink.label)+'</a>';
-  const steps=data.steps.map(step=>{
+  const steps=data.steps.map((step,index)=>{
     const className='pathway-step'+(step.className?' '+esc(step.className):'');
     return '<article class="'+className+'">'+
+      '<span class="pathway-stage"><b>'+String(index+1).padStart(2,'0')+'</b>'+esc(step.stage)+'</span>'+
       initiativeImage(step.image)+
       '<h3>'+esc(step.title)+'</h3>'+
       '<p>'+esc(step.text)+'</p>'+
