@@ -21,12 +21,12 @@
     }
   ],
   "image": {
-    "src": "assets/initiative/hero-endangered-red-book.webp",
-    "alt": "Red List wildlife in a mountain habitat: giant panda, rhinoceros, snow leopard, gorilla, tiger and marine turtle",
-    "width": 760,
-    "height": 320
+    "src": "assets/initiative/hero-red-list-pencil-v2.webp",
+    "alt": "Graphite conservation sketch of a giant panda, black rhinoceros, snow leopard, mountain gorilla, tiger and hawksbill sea turtle",
+    "width": 1599,
+    "height": 900
   },
-  "caption": "Wildlife hero showing threatened and Red List wild species only.",
+  "caption": "A pencil study of threatened and Red List wild species, drawn as a visual metaphor for preserving every animal.",
   "principlesLabel": "Initiative priorities",
   "principles": [
     {

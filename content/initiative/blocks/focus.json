@@ -6,94 +6,136 @@
     {
       "href": "#partners",
       "image": {
-        "src": "assets/initiative/focus-wildlife.webp",
-        "alt": "Snow leopard in mountain habitat representing wildlife rescue",
-        "width": 292,
-        "height": 132
+        "src": "https://upload.wikimedia.org/wikipedia/commons/5/52/Baby_elephants_at_David_Sheldrick_Wildlife_Trust_2.jpg",
+        "alt": "Orphaned African elephant calves at the Sheldrick Wildlife Trust in Nairobi during wildlife rescue and rehabilitation",
+        "width": 1200,
+        "height": 800
       },
       "titleLines": [
         "Wildlife Rescue"
       ],
-      "text": "Supporting emergency care and critical solutions."
+      "text": "Supporting emergency care and critical solutions.",
+      "credit": {
+        "label": "Andrea Hanks / The White House",
+        "href": "https://commons.wikimedia.org/wiki/File:Baby_elephants_at_David_Sheldrick_Wildlife_Trust_2.jpg",
+        "license": "Public domain",
+        "licenseHref": "https://creativecommons.org/publicdomain/mark/1.0/"
+      }
     },
     {
       "href": "https://www.iucnredlist.org/",
       "image": {
-        "src": "assets/initiative/focus-red-book.webp",
-        "alt": "Elephant representing endangered and Red List species",
-        "width": 300,
-        "height": 132
+        "src": "https://upload.wikimedia.org/wikipedia/commons/9/99/African_elephant_high_resolution.jpg",
+        "alt": "African elephant photographed in its natural habitat by the United States Fish and Wildlife Service",
+        "width": 1083,
+        "height": 734
       },
       "titleLines": [
         "Endangered &",
         "Red Book Species"
       ],
-      "text": "Helping protect the world's most vulnerable species."
+      "text": "Helping protect the world's most vulnerable species.",
+      "credit": {
+        "label": "Gary M. Stolz / USFWS",
+        "href": "https://commons.wikimedia.org/wiki/File:African_elephant_high_resolution.jpg",
+        "license": "Public domain",
+        "licenseHref": "https://creativecommons.org/publicdomain/mark/1.0/"
+      }
     },
     {
       "href": "#partners",
       "image": {
-        "src": "assets/initiative/focus-zoo.webp",
-        "alt": "Marine wildlife representing zoo and zoological institutions",
-        "width": 300,
-        "height": 132
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Giant_panda_in_Edinburgh_Zoo_01.jpg/1280px-Giant_panda_in_Edinburgh_Zoo_01.jpg",
+        "alt": "Giant panda at Edinburgh Zoo in a zoological conservation setting",
+        "width": 1280,
+        "height": 853
       },
       "titleLines": [
         "Zoo & Zoological Institutions"
       ],
-      "text": "Supporting animal health and population resilience."
+      "text": "Supporting animal health and population resilience.",
+      "credit": {
+        "label": "Adam Harangozó",
+        "href": "https://commons.wikimedia.org/wiki/File:Giant_panda_in_Edinburgh_Zoo_01.jpg",
+        "license": "CC0 1.0",
+        "licenseHref": "https://creativecommons.org/publicdomain/zero/1.0/"
+      }
     },
     {
       "href": "../applications.html",
       "image": {
-        "src": "assets/initiative/focus-veterinary.webp",
-        "alt": "Gorilla representing veterinary and clinical care across species",
-        "width": 302,
-        "height": 132
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/Black_Rhino_at_Working_with_Wildlife.jpg/1280px-Black_Rhino_at_Working_with_Wildlife.jpg",
+        "alt": "Black rhinoceros in South Africa during Working with Wildlife conservation operations",
+        "width": 1280,
+        "height": 720
       },
       "titleLines": [
         "Veterinary & Clinical Care"
       ],
-      "text": "Advancing care across species, in the field or clinic."
+      "text": "Advancing care across species, in the field or clinic.",
+      "credit": {
+        "label": "AfricanConservation / Working with Wildlife",
+        "href": "https://commons.wikimedia.org/wiki/File:Black_Rhino_at_Working_with_Wildlife.jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseHref": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
     },
     {
       "href": "#mission",
       "image": {
-        "src": "assets/initiative/focus-conservation.webp",
-        "alt": "Birds over a protected landscape representing conservation programs",
-        "width": 314,
-        "height": 132
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Californian_Condor_50_MC.jpg/1280px-Californian_Condor_50_MC.jpg",
+        "alt": "California condor in flight above Marble Canyon during species recovery and conservation",
+        "width": 1280,
+        "height": 601
       },
       "titleLines": [
         "Conservation Programs"
       ],
-      "text": "Enabling habitat conservation through species support."
+      "text": "Enabling habitat conservation through species support.",
+      "credit": {
+        "label": "Christian Mehlführer",
+        "href": "https://commons.wikimedia.org/wiki/File:Californian_Condor_50_MC.jpg",
+        "license": "CC BY-SA 3.0",
+        "licenseHref": "https://creativecommons.org/licenses/by-sa/3.0/"
+      }
     },
     {
       "href": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-index.html",
       "image": {
-        "src": "assets/initiative/focus-science.webp",
-        "alt": "Linked biological forms representing scientific collaboration",
-        "width": 298,
-        "height": 132
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/FGBNMS_-_Hawksbill_Turtle_%2827618418831%29.jpg/1280px-FGBNMS_-_Hawksbill_Turtle_%2827618418831%29.jpg",
+        "alt": "Hawksbill sea turtle in Flower Garden Banks National Marine Sanctuary photographed by NOAA",
+        "width": 1280,
+        "height": 850
       },
       "titleLines": [
         "Scientific Collaboration"
       ],
-      "text": "Uniting experts across disciplines and borders."
+      "text": "Uniting experts across disciplines and borders.",
+      "credit": {
+        "label": "GP Schmahl / NOAA",
+        "href": "https://commons.wikimedia.org/wiki/File:FGBNMS_-_Hawksbill_Turtle_(27618418831).jpg",
+        "license": "Public domain",
+        "licenseHref": "https://creativecommons.org/publicdomain/mark/1.0/"
+      }
     },
     {
       "href": "#partners",
       "image": {
-        "src": "assets/initiative/focus-philanthropy.webp",
-        "alt": "Hands protecting a seedling representing foundations and philanthropy",
-        "width": 296,
-        "height": 132
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Snow_leopard_in_fully_covered_snow.jpg/1280px-Snow_leopard_in_fully_covered_snow.jpg",
+        "alt": "Snow leopard moving through deep snow in its high-altitude habitat",
+        "width": 1280,
+        "height": 853
       },
       "titleLines": [
         "Foundations & Philanthropy"
       ],
-      "text": "Building a more resilient future through strategic giving."
+      "text": "Building a more resilient future through strategic giving.",
+      "credit": {
+        "label": "In India Travel",
+        "href": "https://commons.wikimedia.org/wiki/File:Snow_leopard_in_fully_covered_snow.jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseHref": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
     }
   ]
 }

@@ -1,13 +1,19 @@
 import {esc,initiativeImage,lines,linkAttrs} from '../lib.mjs';
 
 export default function renderFocus(data){
-  const cards=data.cards.map(card=>
-    '<a class="focus-card" '+linkAttrs(card)+'>'+
-      initiativeImage(card.image)+
-      '<h3>'+lines(card.titleLines)+'</h3>'+
-      '<p>'+esc(card.text)+'</p>'+
-    '</a>'
-  ).join('');
+  const cards=data.cards.map(card=>{
+    const credit=card.credit?
+      '<small class="photo-credit">Photo: <a '+linkAttrs(card.credit)+'>'+esc(card.credit.label)+'</a><span aria-hidden="true"> · </span><a '+linkAttrs({href:card.credit.licenseHref})+'>'+esc(card.credit.license)+'</a></small>':'';
+    return '<article class="focus-card">'+
+      '<a class="focus-card-main" '+linkAttrs(card)+'>'+
+        initiativeImage(card.image)+
+        '<span class="focus-card-copy">'+
+          '<h3>'+lines(card.titleLines)+'</h3>'+
+          '<p>'+esc(card.text)+'</p>'+
+        '</span>'+
+      '</a>'+credit+
+    '</article>';
+  }).join('');
   return '<section class="focus compact-section" id="'+esc(data.id)+'" data-block="focus" aria-labelledby="focus-title">'+
     '<div class="shell">'+
       '<header class="section-heading inline-heading">'+

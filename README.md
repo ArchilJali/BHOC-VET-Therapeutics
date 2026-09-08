@@ -27,7 +27,7 @@ Editable website pages and independent homepage blocks for [bhocvet.com](https:/
 
 ## Initiative block architecture
 
-The full Initiative homepage at /initiative/ is assembled from the ordered manifest in [content/initiative/homepage.json](content/initiative/homepage.json). Each visible section has its own content file in [content/initiative/blocks](content/initiative/blocks) and its own renderer in [src/initiative/blocks](src/initiative/blocks). Header, footer and SEO data are separate files in [content/initiative](content/initiative). The approved Initiative stylesheet remains shared, so a single block can be developed or replaced without rewriting the page.
+The full Initiative homepage at /initiative/ is assembled from the ordered manifest in [content/initiative/homepage.json](content/initiative/homepage.json). Each visible section has its own content file in [content/initiative/blocks](content/initiative/blocks) and its own renderer in [src/initiative/blocks](src/initiative/blocks). Header, footer and SEO data are separate files in [content/initiative](content/initiative). The Initiative stylesheet remains shared, while every section and every Focus card can be developed or replaced without rewriting the page. Photo credits and licenses travel with each Focus card in its content data.
 
 The historical overview page at /initiative.html remains part of the site. Primary Initiative navigation opens /initiative/ directly.
 
@@ -57,7 +57,7 @@ Each level links to the next level and back to BHOC Veterinary so visitors do no
 
 ## Artwork
 
-Animals and initiative artwork are exported from the supplied mockup. A bounded sky cleanup removes raster interface text only. Do not regenerate the scene to change copy, links or typography. A tightly bounded image correction is permitted only when Archil explicitly requests it, and must preserve the approved faces and the rest of the composition. Original animal photographs and authoring files are private and are not included in the public repository.
+The main BHOC Veterinary wildlife artwork remains the approved asset exported from the supplied mockup. Do not regenerate that scene to change copy, links or typography. The Initiative homepage uses its separately approved graphite wildlife study and independently sourced Focus photographs. Do not replace either visual system without a new explicit request.
 
 ## Scientific and search identity
 

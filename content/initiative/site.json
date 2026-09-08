@@ -11,10 +11,10 @@
     "title": "Protect Life. Preserve Species. | BHOC Initiative",
     "description": "A science-driven initiative for species protection, wildlife health, conservation medicine and oxygen-delivery support across the living world.",
     "image": {
-      "src": "assets/initiative/hero-endangered-red-book.webp",
-      "alt": "Red List wildlife in a mountain habitat",
-      "width": 760,
-      "height": 320
+      "src": "assets/initiative/hero-red-list-pencil-v2.webp",
+      "alt": "Graphite conservation sketch of six threatened wild species",
+      "width": 1599,
+      "height": 900
     }
   },
   "twitter": {
@@ -77,6 +77,15 @@
         },
         "about": {
           "@id": "https://bhocvet.com/initiative/#initiative"
+        },
+        "primaryImageOfPage": {
+          "@type": "ImageObject",
+          "@id": "https://bhocvet.com/initiative/#primaryimage",
+          "url": "https://bhocvet.com/assets/initiative/hero-red-list-pencil-v2.webp",
+          "contentUrl": "https://bhocvet.com/assets/initiative/hero-red-list-pencil-v2.webp",
+          "caption": "Graphite conservation sketch of a giant panda, black rhinoceros, snow leopard, mountain gorilla, tiger and hawksbill sea turtle",
+          "width": 1599,
+          "height": 900
         },
         "author": {
           "@type": "Person",
