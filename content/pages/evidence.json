@@ -1,61 +1,104 @@
 {
   "slug": "evidence",
   "navLabel": "Evidence",
-  "title": "Veterinary Oxygen Carrier Evidence | BHOC Veterinary",
-  "description": "Find veterinary oxygen carrier evidence, Oxyglobin FDA and EMA records, HBOC publications and source-linked regulatory history.",
+  "title": "Veterinary Oxygen Carrier Evidence | Oxyglobin, HBOC & BHOC",
+  "description": "Explore source-linked veterinary HBOC evidence, including the FDA Oxyglobin canine field-trial result of 95% treatment success vs 32% control, 236 indexed publications, and FDA/EMA regulatory records.",
   "schemaType": "CollectionPage",
   "seo": {
     "primaryKeyword": "veterinary oxygen carrier evidence",
     "secondaryKeywords": [
       "Oxyglobin FDA approval",
-      "Oxyglobin EMA authorization",
-      "HBOC publications",
+      "Oxyglobin 95% treatment success",
+      "veterinary HBOC evidence",
+      "hemoglobin-based oxygen carrier",
       "veterinary hemoglobin oxygen carrier",
       "BHOC evidence"
     ],
     "supportingTerms": [
       "canine anemia",
-      "regulatory records",
+      "95% vs 32%",
+      "24 hour treatment success endpoint",
       "FDA NADA 141-067",
       "EMA EU/2/99/015",
+      "Oxyglobin",
+      "HBOC publications",
       "scientific publications",
       "primary source documents",
-      "HBOC history"
+      "veterinary transfusion medicine"
     ]
   },
-  "eyebrow": "Evidence",
-  "heading": "Veterinary oxygen carrier evidence.",
-  "lead": "Scientific publications and regulatory records remain source-linked and separate from BHOC development objectives.",
+  "eyebrow": "Evidence · Source-linked",
+  "heading": "Veterinary oxygen-carrier evidence.",
+  "lead": "Historical Oxyglobin regulatory evidence and the wider veterinary oxygen-carrier literature are presented together, with the population, endpoint and source boundaries kept explicit.",
+  "spotlight": {
+    "eyebrow": "Original FDA canine field trial",
+    "marker": "95%",
+    "markerLabel": "efficacy population",
+    "title": "95% treatment success vs 32% control",
+    "detail": "FDA efficacy population: 20/21 Oxyglobin-treated dogs achieved treatment success versus 9/28 untreated controls; p≤0.001.",
+    "secondary": "Intent-to-treat population: 73% (22/30) vs 29% (10/34); p≤0.001.",
+    "endpoint": "Treatment success meant no need for additional oxygen-carrying support for 24 hours. This was not a survival endpoint.",
+    "trial": "Pivotal multicenter field trial: 64 client-owned anaemic dogs; 30 randomized to Oxyglobin and 34 to untreated control.",
+    "links": [
+      {
+        "label": "Read the original FDA FOI summary",
+        "href": "https://animaldrugsatfda.fda.gov/adafda/app/search/public/document/downloadFoi/3700"
+      },
+      {
+        "label": "Open the FDA evidence record",
+        "href": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-FDA-registry.html"
+      }
+    ]
+  },
+  "snapshot": {
+    "eyebrow": "Evidence library",
+    "title": "236 records. Built to be traceable.",
+    "text": "The veterinary index is a source-linked bibliography across 10 species/model groups. It is not a claim that all 236 records are veterinary treatment trials.",
+    "metrics": [
+      {
+        "value": "236",
+        "label": "indexed publications"
+      },
+      {
+        "value": "235",
+        "label": "source-linked citations"
+      },
+      {
+        "value": "225 / 217",
+        "label": "PubMed / DOI links"
+      },
+      {
+        "value": "154",
+        "label": "author institutions"
+      }
+    ],
+    "scope": "Indexed groups: canine 25 · feline 6 · equine 4 · porcine 38 · ovine 4 · rodent 39 · avian 18 · exotic/other 15 · human 89 · other/in vitro 21. Records may carry more than one species/model label; group counts must not be added to derive the 236 total."
+  },
   "groups": [
     {
       "id": "scientific-evidence",
       "number": "01",
-      "title": "Scientific publications",
-      "description": "Start with the guided BHOC VET-platform, then continue into the complete veterinary evidence library, searchable bibliography and transparent methodology.",
+      "title": "Search the evidence",
+      "description": "Go directly to the full veterinary evidence hub, searchable bibliography, citation catalogue and methodology. No intermediate catalogue page is required to reach the search tool.",
       "items": [
         {
-          "label": "BHOC VET-platform",
-          "detail": "A guided veterinary evidence map with oxygen biology and clear evidence boundaries.",
-          "href": "https://archiljali.github.io/BHOC-VET-platform/"
-        },
-        {
-          "label": "BHOC Platform Veterinary evidence hub",
-          "detail": "The full veterinary library with publications, species filters, institutions and regulatory context.",
+          "label": "Veterinary evidence hub",
+          "detail": "Main source library: 236 records, species/model distribution, institutions, regulatory milestones and evidence routes.",
           "href": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-index.html"
         },
         {
-          "label": "Search veterinary oxygen-carrier evidence",
-          "detail": "Filter by species, author, institution, journal, year or topic.",
+          "label": "Search veterinary publications",
+          "detail": "Filter the indexed literature by species, author, institution, journal, year or topic.",
           "href": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-search.html"
         },
         {
-          "label": "Browse the publication catalogue",
-          "detail": "Titles, authors, journals, PubMed records, DOI links and affiliations.",
+          "label": "Full citation catalogue",
+          "detail": "Browse all 236 retained records with source links, PubMed records, DOI links and affiliations where available.",
           "href": "https://archiljali.github.io/BHOC-platform/veterinary/publication-catalogue.html"
         },
         {
-          "label": "Read the publication methodology",
-          "detail": "Citation coverage, affiliations, species labels and evidence limits.",
+          "label": "Evidence methodology",
+          "detail": "How citation identity, affiliations, species/model labels and evidence limits are handled.",
           "href": "https://archiljali.github.io/BHOC-platform/veterinary/publication-methodology.html"
         }
       ]
@@ -64,25 +107,25 @@
       "id": "regulatory-evidence",
       "number": "02",
       "title": "Regulatory records",
-      "description": "Historical Oxyglobin records are presented as product-, species-, jurisdiction- and indication-specific evidence.",
+      "description": "Oxyglobin is the historical veterinary HBOC precedent. The records below remain product-, species-, jurisdiction- and indication-specific.",
       "items": [
         {
-          "label": "FDA detail: NADA 141-067",
-          "detail": "United States approval record for anemia in dogs.",
-          "href": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-FDA-registry.html"
+          "label": "FDA / EMA Oxyglobin source library",
+          "detail": "One regulatory route connecting the original US approval, EU authorisation and subsequent source documents.",
+          "href": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-fda-ema.html"
         },
         {
-          "label": "EMA and EU detail: EU/2/99/015",
-          "detail": "European regulatory chronology and source notes.",
-          "href": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-EMA-approvals-summary.html"
-        },
-        {
-          "label": "FDA Freedom of Information summary",
-          "detail": "Primary regulatory PDF for the 1998 decision.",
+          "label": "FDA original approval · NADA 141-067",
+          "detail": "Primary FDA Freedom of Information summary. Approval date: 12 January 1998; indication: anaemia in dogs.",
           "href": "https://animaldrugsatfda.fda.gov/adafda/app/search/public/document/downloadFoi/3700"
+        },
+        {
+          "label": "EMA Oxyglobin EPAR · EMEA/V/C/000045",
+          "detail": "Official European Medicines Agency record for Oxyglobin, haemoglobin glutamer-200 (bovine).",
+          "href": "https://www.ema.europa.eu/en/medicines/veterinary/EPAR/oxyglobin"
         }
       ]
     }
   ],
-  "note": "Inclusion does not establish BHOC efficacy, regulatory approval, affiliation or endorsement. Historical approvals apply only to the named product, jurisdiction and indication."
+  "note": "Evidence boundaries: the 95% vs 32% result is the FDA-defined 24-hour treatment-success endpoint in the Oxyglobin efficacy population, not survival. Historical Oxyglobin approvals do not establish BHOC efficacy, BHOC regulatory approval, approval for other species, affiliation or endorsement."
 }
