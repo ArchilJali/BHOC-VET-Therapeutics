@@ -11,10 +11,10 @@
     "title": "Protect Life. Preserve Species. | BHOC Initiative",
     "description": "A science-driven initiative for species protection, wildlife health, conservation medicine and oxygen-delivery support across the living world.",
     "image": {
-      "src": "assets/initiative/hero-red-list-pencil-v2.webp",
-      "alt": "Graphite conservation sketch of six threatened wild species",
-      "width": 1599,
-      "height": 900
+      "src": "assets/initiative/challenge-african-elephant-usfws.webp",
+      "alt": "African forest elephant family representing wildlife protection and biodiversity",
+      "width": 960,
+      "height": 960
     }
   },
   "twitter": {
@@ -81,11 +81,11 @@
         "primaryImageOfPage": {
           "@type": "ImageObject",
           "@id": "https://bhocvet.com/initiative/#primaryimage",
-          "url": "https://bhocvet.com/assets/initiative/hero-red-list-pencil-v2.webp",
-          "contentUrl": "https://bhocvet.com/assets/initiative/hero-red-list-pencil-v2.webp",
-          "caption": "Graphite conservation sketch of a giant panda, black rhinoceros, snow leopard, mountain gorilla, tiger and hawksbill sea turtle",
-          "width": 1599,
-          "height": 900
+          "url": "https://bhocvet.com/assets/initiative/challenge-african-elephant-usfws.webp",
+          "contentUrl": "https://bhocvet.com/assets/initiative/challenge-african-elephant-usfws.webp",
+          "caption": "African forest elephant family representing wildlife protection and biodiversity",
+          "width": 960,
+          "height": 960
         },
         "author": {
           "@type": "Person",

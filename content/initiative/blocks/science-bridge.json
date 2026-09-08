@@ -1,0 +1,35 @@
+{
+  "id": "science",
+  "eyebrow": "The science bridge",
+  "titleLines": ["Every species is different.", "The need for oxygen is universal."],
+  "text": "BHOC Therapeutics is developing a next-generation oxygen carrier designed to support veterinary medicine, including wildlife, exotic and endangered species. By improving oxygen delivery at the microcirculatory level, we aim to help more animals survive when every second counts.",
+  "action": {
+    "label": "Discover the Science",
+    "href": "../science.html",
+    "style": "primary",
+    "arrow": true
+  },
+  "image": {
+    "src": "assets/initiative/focus-philanthropy-photo.webp",
+    "alt": "Close portrait of a snow leopard representing cross-species veterinary science",
+    "width": 640,
+    "height": 480,
+    "credit": "Eric Kilby",
+    "license": "CC BY-SA 2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Snow_Leopard_Closeup_(13883260104).jpg"
+  },
+  "claimLines": ["Smaller.", "Faster.", "Further."],
+  "comparison": [
+    {
+      "image": {"src": "assets/initiative/cascade-blood.svg", "alt": "Line schematic of red blood cells", "width": 48, "height": 48},
+      "label": "Red blood cell",
+      "detail": "Cell-bound oxygen transport"
+    },
+    {
+      "image": {"src": "assets/initiative/diagram-bhoc.svg", "alt": "Line schematic of a BHOC carrier", "width": 48, "height": 48},
+      "label": "BHOC carrier",
+      "detail": "Cell-free molecular scale"
+    }
+  ],
+  "caption": "Advancing oxygen delivery for a wilder tomorrow."
+}

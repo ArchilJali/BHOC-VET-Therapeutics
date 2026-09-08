@@ -63,8 +63,8 @@ for(const entry of manifest.blocks){
   blocks.push({type:entry.type,data:d,html:render(d)});
 }
 
-const initiativeAllowed=['hero','challenge','kipling','microcirculation','focus','work','partners'];
-const initiativeRequired=['hero','challenge','kipling','microcirculation','focus','work','partners'];
+const initiativeAllowed=['hero','stats','mission-panel','focus','science-bridge'];
+const initiativeRequired=['hero','stats','mission-panel','focus','science-bridge'];
 const initiativeIds=new Set();
 const initiativeBlocks=[];
 for(const entry of initiativeManifest.blocks){
@@ -254,11 +254,17 @@ const imageEntries=[...new Map([
   ...(hero.slides||[]).map(slide=>slide.image),
   ...(blocks.find(b=>b.type==='species')?.data.items||[]).map(item=>item.image)
 ].map(image=>[image.src,image])).values()];
-const initiativeMicrocirculation=initiativeBlocks.find(block=>block.type==='microcirculation').data;
+const initiativeHero=initiativeBlocks.find(block=>block.type==='hero').data;
+const initiativeMission=initiativeBlocks.find(block=>block.type==='mission-panel').data;
+const initiativeFocus=initiativeBlocks.find(block=>block.type==='focus').data;
+const initiativeScience=initiativeBlocks.find(block=>block.type==='science-bridge').data;
 const initiativeImages=[...new Map([
   initiativeHeader.brand.image,
-  initiativeBlocks.find(block=>block.type==='hero').data.image,
-  ...initiativeMicrocirculation.nodes.map(node=>node.image)
+  ...initiativeHero.slides.flatMap(slide=>slide.images),
+  initiativeMission.image,
+  ...initiativeFocus.cards.map(card=>card.image),
+  initiativeScience.image,
+  ...initiativeScience.comparison.map(item=>item.image)
 ].map(image=>[image.src,image])).values()];
 const sitemapUrls=[{path:'',images:imageEntries},...pages.map(page=>({path:page.slug+'.html',images:[]})),{path:'initiative/',images:initiativeImages}];
 await write('sitemap.xml',`<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">${sitemapUrls.map(entry=>`<url><loc>${absolute(entry.path)}</loc><lastmod>${site.updated}</lastmod>${entry.images.map(image=>`<image:image><image:loc>${absolute(image.src)}</image:image>`).join('')}</url>`).join('')}</urlset>\n`);

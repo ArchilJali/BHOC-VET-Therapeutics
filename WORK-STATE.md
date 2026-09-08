@@ -17,13 +17,13 @@
 - Current Open Graph and WhatsApp image: `assets/bhoc-initiative-land-social.jpg` (1200 × 463), an uncropped copy of the approved Land hero.
 - Initiative mark: `assets/reference-initiative-mark.webp`.
 - The same Initiative mark is used across the site; shared CSS masking prevents its square raster backing from showing against the cream/white layouts.
-- The full Initiative homepage header shows one canonical Initiative logo. BHOC Therapeutics remains a clearly labelled text link, without a second logo.
-- The Initiative header includes a visible return link to the BHOC Veterinary homepage. The responsive navigation menu repeats it as the first return action.
-- The Initiative homepage palette uses forest green with a warm sunrise accent. The remaining microcirculation concept uses crisp monochrome SVG symbols with warm sunrise connectors.
-- Focus-area wildlife photographs are local, optimized 640 × 480 WebP assets with visible Wikimedia Commons credits and licenses. They render as equal compact thumbnails on desktop, tablet and mobile.
-- The three Challenge cards use sharp, equal 960 × 960 WebP crops sourced from public-domain USFWS and NOAA photographs. Exact authors, source pages and license status are stored in `content/initiative/blocks/challenge.json`.
-- The removed oxygen-delivery cascade and Initiative priorities strip are no longer retained in the active source tree.
-- The microcirculation section uses a responsive three-node vector schematic for erythrocytes, BHOC in plasma and microvascular tissue focus.
+- The full Initiative homepage header shows one canonical Initiative logo and a visible Home link back to BHOC Veterinary. Its navigation collapses into the same menu on narrow screens.
+- The Initiative homepage palette uses white and deep forest green, with a restrained blue science field and red microcirculation panel.
+- The Initiative hero is a modular six-photo wildlife composition. Every photograph, credit and license is stored independently in `content/initiative/blocks/hero.json`.
+- The Initiative hero renders three lower controls. The first gallery is active; controls two and three remain visibly reserved and disabled until approved slides are supplied.
+- Focus-area wildlife photographs are local, optimized 640 × 480 WebP assets with visible Wikimedia Commons credits and licenses. They render in seven, four, two and one-column layouts as the viewport narrows.
+- The tiger, elephant and turtle 960 × 960 WebP crops remain sourced from public-domain or attribution-compatible USFWS and NOAA photographs. Their current uses and exact source data are stored in the active Initiative block JSON.
+- The science bridge uses two crisp SVG symbols for the red-cell and cell-free-carrier comparison.
 - The blood-cell and cell symbols are adapted from the CC0 Health Icons outline set. Asset provenance is recorded in `SOURCES.md`.
 - Species row: `rem-wirehaired-dachshund-sketch.webp`, `cat-loose-pencil-sketch.webp`, `camel-loose-pencil-sketch.webp`, `orangutan-loose-pencil-sketch.webp`, `marine-turtle-loose-pencil-sketch.webp` and `panda-loose-pencil-sketch.webp`.
 - Rem identity reference: `assets/reference-dog-pencil.webp`. Preserve the face, expression and wiry beard.
@@ -40,11 +40,12 @@ The indexed pages are `index.html`, `product.html`, `applications.html`, `eviden
 
 `publications.html` is intentionally retained as a `noindex,follow` redirect to `evidence.html`. Keep it so historical links continue to work. `404.html`, `CNAME`, `robots.txt` and `sitemap.xml` are also required.
 
-The full Initiative homepage now uses the same independent-block architecture as the BHOC Veterinary homepage. Section order and visibility live in content/initiative/homepage.json; each section has its own JSON data file and renderer. The Initiative layout is compact and editorial, with a four-plus-three desktop focus grid, two columns on tablet and one column on phone. Main Initiative entry points open /initiative/ directly, while the earlier overview remains available at /initiative.html.
+The full Initiative homepage uses five independent blocks: hero, evidence statistics, conservation mission, focus areas and science bridge. Section order and visibility live in `content/initiative/homepage.json`; each section has its own JSON data file and renderer. Main Initiative entry points open `/initiative/` directly, while the earlier overview remains available at `/initiative.html`.
 
 ## Responsive behavior
 
 - At 1080 px and below, primary navigation moves into the menu.
+- The Initiative hero keeps its copy, six licensed photographs and slide controls as separate responsive layers.
 - At 600 px and below, the BHOC Veterinary wordmark becomes a compact horizontal row.
 - At 720 px and below, the initiative mark and copy move below the hero as a readable row.
 - On phones the order is hero copy, full-width wildlife image and initiative strip.

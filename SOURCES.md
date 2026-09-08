@@ -6,8 +6,8 @@ Current as of 8 September 2026. This file lists only sources used by the present
 
 - Homepage hero carousel: `assets/bhoc-initiative-land-hero.webp`, `assets/bhoc-initiative-winter-hero.webp` and `assets/bhoc-initiative-ocean-hero-v2.webp`.
 - Open Graph and WhatsApp image: `assets/bhoc-initiative-land-social.jpg` (1200 × 463), a format-optimized copy of the approved Land hero without cropping.
-- Initiative hero: `assets/initiative/hero-red-list-pencil-v2.webp`.
-- Initiative Challenge photographs: the three `challenge-*-usfws.webp` / `challenge-*-noaa.webp` files named in `content/initiative/blocks/challenge.json`.
+- Initiative hero: the six independently rendered wildlife photographs, author credits, source pages and reuse terms named in `content/initiative/blocks/hero.json`.
+- Initiative mission photograph: `assets/initiative/challenge-sumatran-tiger-usfws.webp`, with its public-domain USFWS source recorded in `content/initiative/blocks/mission-panel.json`.
 - Initiative Focus photographs: the seven `focus-*-photo.webp` files named in `content/initiative/blocks/focus.json`.
 - Initiative mark: `assets/reference-initiative-mark.webp`.
 - Species portraits: the six `*-loose-pencil-sketch.webp`/`rem-wirehaired-dachshund-sketch.webp` files named in `content/blocks/species.json`.

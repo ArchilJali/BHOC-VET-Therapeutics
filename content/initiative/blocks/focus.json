@@ -1,141 +1,57 @@
 {
   "id": "focus",
   "title": "Our Focus Areas",
-  "intro": "Applying science. Building partnerships. Expanding impact across species and ecosystems.",
+  "intro": "Seven connected paths from emergency care to evidence, conservation and long-term partnership.",
+  "moreLink": {"label": "See all focus areas", "href": "#focus"},
   "cards": [
     {
-      "href": "#partners",
-      "image": {
-        "src": "assets/initiative/focus-wildlife-rescue-photo.webp",
-        "alt": "Orphaned African elephant calves at the Sheldrick Wildlife Trust in Nairobi during wildlife rescue and rehabilitation",
-        "width": 640,
-        "height": 480
-      },
-      "titleLines": [
-        "Wildlife Rescue"
-      ],
-      "text": "Supporting emergency care and critical solutions.",
-      "credit": {
-        "label": "Andrea Hanks / The White House",
-        "href": "https://commons.wikimedia.org/wiki/File:Baby_elephants_at_David_Sheldrick_Wildlife_Trust_2.jpg",
-        "license": "Public domain",
-        "licenseHref": "https://creativecommons.org/publicdomain/mark/1.0/"
-      }
+      "href": "#mission",
+      "image": {"src": "assets/initiative/focus-wildlife-rescue-photo.webp", "alt": "Orphaned African elephant calves during wildlife rescue and rehabilitation", "width": 640, "height": 480},
+      "titleLines": ["Wildlife Rescue"],
+      "text": "Emergency care for wild animals",
+      "credit": {"label": "Andrea Hanks / The White House", "href": "https://commons.wikimedia.org/wiki/File:Baby_elephants_at_David_Sheldrick_Wildlife_Trust_2.jpg", "license": "Public domain", "licenseHref": "https://creativecommons.org/publicdomain/mark/1.0/"}
     },
     {
       "href": "https://www.iucnredlist.org/",
-      "image": {
-        "src": "assets/initiative/focus-red-book-photo.webp",
-        "alt": "African elephant photographed in its natural habitat by the United States Fish and Wildlife Service",
-        "width": 640,
-        "height": 480
-      },
-      "titleLines": [
-        "Endangered &",
-        "Red Book Species"
-      ],
-      "text": "Helping protect the world's most vulnerable species.",
-      "credit": {
-        "label": "Gary M. Stolz / USFWS",
-        "href": "https://commons.wikimedia.org/wiki/File:African_elephant_high_resolution.jpg",
-        "license": "Public domain",
-        "licenseHref": "https://creativecommons.org/publicdomain/mark/1.0/"
-      }
+      "image": {"src": "assets/initiative/focus-philanthropy-photo.webp", "alt": "Close portrait of a snow leopard", "width": 640, "height": 480},
+      "titleLines": ["Endangered Species"],
+      "text": "Conservation of threatened species",
+      "credit": {"label": "Eric Kilby", "href": "https://commons.wikimedia.org/wiki/File:Snow_Leopard_Closeup_(13883260104).jpg", "license": "CC BY-SA 2.0", "licenseHref": "https://creativecommons.org/licenses/by-sa/2.0/"}
     },
     {
-      "href": "#partners",
-      "image": {
-        "src": "assets/initiative/focus-zoo-photo.webp",
-        "alt": "Giant panda Tai Shan at the Smithsonian National Zoological Park",
-        "width": 640,
-        "height": 480
-      },
-      "titleLines": [
-        "Zoo & Zoological Institutions"
-      ],
-      "text": "Supporting animal health and population resilience.",
-      "credit": {
-        "label": "Fernando Revilla",
-        "href": "https://commons.wikimedia.org/wiki/File:Giant_Panda_Tai_Shan.JPG",
-        "license": "CC BY-SA 2.5",
-        "licenseHref": "https://creativecommons.org/licenses/by-sa/2.5/"
-      }
+      "href": "mailto:info@bhoctherapeutics.com?subject=BHOC%20Initiative%20Zoo%20Collaboration",
+      "image": {"src": "assets/initiative/focus-zoo-photo.webp", "alt": "Giant panda Tai Shan at the Smithsonian National Zoological Park", "width": 640, "height": 480},
+      "titleLines": ["Zoos & Conservation", "Centers"],
+      "text": "Veterinary support and collaboration",
+      "credit": {"label": "Fernando Revilla", "href": "https://commons.wikimedia.org/wiki/File:Giant_Panda_Tai_Shan.JPG", "license": "CC BY-SA 2.5", "licenseHref": "https://creativecommons.org/licenses/by-sa/2.5/"}
     },
     {
       "href": "../applications.html",
-      "image": {
-        "src": "assets/initiative/focus-veterinary-photo.webp",
-        "alt": "Black rhinoceros in South Africa during Working with Wildlife conservation operations",
-        "width": 640,
-        "height": 480
-      },
-      "titleLines": [
-        "Veterinary & Clinical Care"
-      ],
-      "text": "Advancing care across species, in the field or clinic.",
-      "credit": {
-        "label": "AfricanConservation / Working with Wildlife",
-        "href": "https://commons.wikimedia.org/wiki/File:Black_Rhino_at_Working_with_Wildlife.jpg",
-        "license": "CC BY-SA 4.0",
-        "licenseHref": "https://creativecommons.org/licenses/by-sa/4.0/"
-      }
+      "image": {"src": "assets/initiative/focus-veterinary-photo.webp", "alt": "Black rhinoceros in South Africa during conservation operations", "width": 640, "height": 480},
+      "titleLines": ["Field & Remote", "Medicine"],
+      "text": "Care beyond traditional infrastructure",
+      "credit": {"label": "AfricanConservation / Working with Wildlife", "href": "https://commons.wikimedia.org/wiki/File:Black_Rhino_at_Working_with_Wildlife.jpg", "license": "CC BY-SA 4.0", "licenseHref": "https://creativecommons.org/licenses/by-sa/4.0/"}
     },
     {
-      "href": "#mission",
-      "image": {
-        "src": "assets/initiative/focus-conservation-photo.webp",
-        "alt": "Juvenile California condor at Pinnacles National Monument during species recovery work",
-        "width": 640,
-        "height": 480
-      },
-      "titleLines": [
-        "Conservation Programs"
-      ],
-      "text": "Enabling habitat conservation through species support.",
-      "credit": {
-        "label": "Jim Bahn",
-        "href": "https://commons.wikimedia.org/wiki/File:California_Condor_Pinnacles_NM_1.jpg",
-        "license": "CC BY 2.0",
-        "licenseHref": "https://creativecommons.org/licenses/by/2.0/"
-      }
+      "href": "../science.html",
+      "image": {"src": "assets/initiative/focus-conservation-photo.webp", "alt": "Juvenile California condor during species recovery work", "width": 640, "height": 480},
+      "titleLines": ["Comparative Biology"],
+      "text": "Cross-species insights for better medicine",
+      "credit": {"label": "Jim Bahn", "href": "https://commons.wikimedia.org/wiki/File:California_Condor_Pinnacles_NM_1.jpg", "license": "CC BY 2.0", "licenseHref": "https://creativecommons.org/licenses/by/2.0/"}
     },
     {
       "href": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-index.html",
-      "image": {
-        "src": "assets/initiative/focus-science-photo.webp",
-        "alt": "Hawksbill sea turtle in Flower Garden Banks National Marine Sanctuary photographed by NOAA",
-        "width": 640,
-        "height": 480
-      },
-      "titleLines": [
-        "Scientific Collaboration"
-      ],
-      "text": "Uniting experts across disciplines and borders.",
-      "credit": {
-        "label": "GP Schmahl / NOAA",
-        "href": "https://commons.wikimedia.org/wiki/File:FGBNMS_-_Hawksbill_Turtle_(27618418831).jpg",
-        "license": "Public domain",
-        "licenseHref": "https://creativecommons.org/publicdomain/mark/1.0/"
-      }
+      "image": {"src": "assets/initiative/focus-science-photo.webp", "alt": "Hawksbill sea turtle in Flower Garden Banks National Marine Sanctuary", "width": 640, "height": 480},
+      "titleLines": ["Evidence & Research"],
+      "text": "A growing scientific foundation",
+      "credit": {"label": "GP Schmahl / NOAA", "href": "https://commons.wikimedia.org/wiki/File:FGBNMS_-_Hawksbill_Turtle_(27618418831).jpg", "license": "Public domain", "licenseHref": "https://creativecommons.org/publicdomain/mark/1.0/"}
     },
     {
-      "href": "#partners",
-      "image": {
-        "src": "assets/initiative/focus-philanthropy-photo.webp",
-        "alt": "Close portrait of a snow leopard representing endangered-species philanthropy",
-        "width": 640,
-        "height": 480
-      },
-      "titleLines": [
-        "Foundations & Philanthropy"
-      ],
-      "text": "Building a more resilient future through strategic giving.",
-      "credit": {
-        "label": "Eric Kilby",
-        "href": "https://commons.wikimedia.org/wiki/File:Snow_Leopard_Closeup_(13883260104).jpg",
-        "license": "CC BY-SA 2.0",
-        "licenseHref": "https://creativecommons.org/licenses/by-sa/2.0/"
-      }
+      "href": "mailto:info@bhoctherapeutics.com?subject=BHOC%20Initiative%20Partnership",
+      "image": {"src": "assets/initiative/focus-red-book-photo.webp", "alt": "African elephant in its natural habitat", "width": 640, "height": 480},
+      "titleLines": ["Philanthropy &", "Partnerships"],
+      "text": "Stronger together for greater impact",
+      "credit": {"label": "Gary M. Stolz / USFWS", "href": "https://commons.wikimedia.org/wiki/File:African_elephant_high_resolution.jpg", "license": "Public domain", "licenseHref": "https://creativecommons.org/publicdomain/mark/1.0/"}
     }
   ]
 }

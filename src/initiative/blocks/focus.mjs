@@ -17,8 +17,8 @@ export default function renderFocus(data){
   return '<section class="focus compact-section" id="'+esc(data.id)+'" data-block="focus" aria-labelledby="focus-title">'+
     '<div class="shell">'+
       '<header class="section-heading inline-heading">'+
-        '<h2 id="focus-title">'+esc(data.title)+'</h2>'+
-        '<p>'+esc(data.intro)+'</p>'+
+        '<div><p class="eyebrow">'+esc(data.title)+'</p><h2 id="focus-title" class="visually-hidden">'+esc(data.title)+'</h2><p>'+esc(data.intro)+'</p></div>'+
+        '<a class="focus-more" '+linkAttrs(data.moreLink)+'>'+esc(data.moreLink.label)+' <span aria-hidden="true">→</span></a>'+
       '</header>'+
       '<div class="focus-grid">'+cards+'</div>'+
     '</div>'+

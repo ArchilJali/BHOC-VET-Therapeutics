@@ -6,18 +6,13 @@
       "enabled": true
     },
     {
-      "type": "challenge",
-      "file": "initiative/blocks/challenge.json",
+      "type": "stats",
+      "file": "initiative/blocks/stats.json",
       "enabled": true
     },
     {
-      "type": "kipling",
-      "file": "initiative/blocks/kipling.json",
-      "enabled": true
-    },
-    {
-      "type": "microcirculation",
-      "file": "initiative/blocks/microcirculation.json",
+      "type": "mission-panel",
+      "file": "initiative/blocks/mission-panel.json",
       "enabled": true
     },
     {
@@ -26,13 +21,8 @@
       "enabled": true
     },
     {
-      "type": "work",
-      "file": "initiative/blocks/work.json",
-      "enabled": true
-    },
-    {
-      "type": "partners",
-      "file": "initiative/blocks/partners.json",
+      "type": "science-bridge",
+      "file": "initiative/blocks/science-bridge.json",
       "enabled": true
     }
   ]
