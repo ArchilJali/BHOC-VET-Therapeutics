@@ -13,7 +13,7 @@
     {
       "type": "oxygen-platform",
       "file": "initiative/blocks/oxygen-platform.json",
-      "enabled": true
+      "enabled": false
     },
     {
       "type": "kipling",

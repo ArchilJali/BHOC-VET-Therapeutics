@@ -106,7 +106,7 @@ const initiativeHome=await fs.readFile(initiativeHomePath,'utf8');
 const initiativeCSS=await fs.readFile(path.join(out,'initiative','styles.css'),'utf8');
 assert.equal((initiativeHome.match(/<h1\b/g)||[]).length,1,'initiative/index.html: exactly one H1');
 const initiativeBlockNames=[...initiativeHome.matchAll(/<!-- BLOCK ([a-z-]+): content\/initiative\/blocks\/[a-z-]+\.json -->/g)].map(match=>match[1]);
-assert.deepEqual(initiativeBlockNames,['hero','challenge','oxygen-platform','kipling','microcirculation','focus','work','partners'],'initiative/index.html: approved block order');
+assert.deepEqual(initiativeBlockNames,['hero','challenge','kipling','microcirculation','focus','work','partners'],'initiative/index.html: approved block order');
 for(const blockName of initiativeBlockNames)assert.match(initiativeHome,new RegExp('data-block="'+blockName+'"'),'initiative/index.html: block marker '+blockName);
 assert.match(initiativeHome,/rel="canonical" href="https:\/\/bhocvet\.com\/initiative\/"/);
 assert.match(initiativeHome,/property="og:image" content="https:\/\/bhocvet\.com\/assets\/initiative\/hero-red-list-pencil-v2\.webp"/);
@@ -118,12 +118,12 @@ assert.match(initiativeHeaderHTML,/class="ecosystem-brand-dot"/,'BHOC Therapeuti
 assert.match(initiativeHeaderHTML,/class="site-return"[^>]*href="\.\.\/index\.html"/,'initiative header includes a visible BHOC Veterinary return link');
 assert.match(initiativeHeaderHTML,/class="nav-return"[^>]*href="\.\.\/index\.html"/,'initiative menu includes a BHOC Veterinary return action');
 assert.match(initiativeHome,/src="\.\.\/assets\/initiative\/hero-red-list-pencil-v2\.webp"[^>]*alt="Graphite conservation sketch of a giant panda, black rhinoceros, snow leopard, mountain gorilla, tiger and hawksbill sea turtle"/);
-assert.equal((initiativeHome.match(/class="pathway-step"/g)||[]).length,5,'initiative oxygen cascade has five independently editable stages');
-const cascadeStages=[...initiativeHome.matchAll(/class="pathway-stage"><b>\d{2}<\/b>([^<]+)<\/span>/g)].map(match=>match[1]);
-assert.deepEqual(cascadeStages,['Lungs','Blood','Organ','Cell','Mitochondrion'],'initiative oxygen cascade follows the biological sequence');
+assert.doesNotMatch(initiativeHome,/data-block="oxygen-platform"/,'initiative oxygen cascade is hidden');
+assert.doesNotMatch(initiativeHome,/class="hero-principles"/,'initiative priority strip is hidden');
+assert.doesNotMatch(initiativeHome,/class="evidence-boundary"/,'initiative evidence boundary is hidden with the oxygen cascade');
 assert.equal((initiativeHome.match(/class="micro-node"/g)||[]).length,3,'initiative microcirculation concept uses three crisp schematic nodes');
 assert.doesNotMatch(initiativeHome,/microcirculation\.webp/,'initiative no longer renders the low-resolution microcirculation banner');
-assert.equal((initiativeHome.match(/src="\.\.\/assets\/initiative\/cascade-[a-z-]+\.svg"/g)||[]).length,7,'initiative renders vector cascade and microcirculation symbols');
+assert.equal((initiativeHome.match(/src="\.\.\/assets\/initiative\/cascade-[a-z-]+\.svg"/g)||[]).length,2,'initiative renders the remaining microcirculation symbols');
 assert.equal((initiativeHome.match(/class="focus-card"/g)||[]).length,7,'initiative/index.html: seven independently editable focus cards');
 assert.equal((initiativeHome.match(/class="photo-credit"/g)||[]).length,7,'initiative/index.html: every sourced wildlife photograph has a visible credit');
 assert.equal((initiativeHome.match(/src="\.\.\/assets\/initiative\/focus-[a-z-]+-photo\.webp"/g)||[]).length,7,'initiative/index.html: seven local optimized wildlife photographs');
@@ -132,7 +132,6 @@ assert.match(initiativeCSS,/\.hero-art img\s*\{[^}]*object-fit:\s*contain/s,'ini
 assert.doesNotMatch(initiativeCSS,/width:\s*158%|translateX\(-24%\)/,'initiative mobile hero is not enlarged or shifted');
 assert.match(initiativeCSS,/\.focus-grid\s*\{[^}]*grid-template-columns:\s*repeat\(8,/s,'initiative desktop focus grid uses a balanced four-plus-three layout');
 assert.match(initiativeCSS,/\.focus-card-main\s*\{[^}]*grid-template-columns:\s*96px 1fr/s,'initiative focus cards use uniform compact photo columns');
-assert.match(initiativeCSS,/\.pathway\s*\{[^}]*grid-template-columns:\s*repeat\(5,/s,'initiative desktop cascade uses five ordered columns');
 assert.match(initiativeHome,/We be of one blood, ye and I\./);
 assert.match(initiativeHome,/Rudyard Kipling, <em>The Jungle Book<\/em>/);
 assert.match(initiativeHome,/href="\.\.\/news\.html">News<\/a>/);
@@ -276,7 +275,7 @@ for(const block of initiativeManifestSource.blocks.filter(block=>block.enabled))
   const {default:render}=await import('../src/initiative/blocks/'+block.type+'.mjs');
   renderedInitiative.push({block,data,render,html:render(data)});
 }
-assert.equal(renderedInitiative.length,8,'Initiative homepage has eight independently rendered blocks');
+assert.equal(renderedInitiative.length,7,'Initiative homepage has seven independently rendered blocks');
 const initiativeFocus=renderedInitiative.find(item=>item.block.type==='focus');
 assert.equal(initiativeFocus.data.cards.length,7,'Initiative Focus keeps seven independently editable cards');
 for(const card of initiativeFocus.data.cards){

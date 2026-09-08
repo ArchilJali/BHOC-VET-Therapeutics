@@ -2,7 +2,12 @@ import {action,esc,initiativeImage,lines} from '../lib.mjs';
 
 export default function renderHero(data){
   const actions=data.actions.map(action).join('\n            ');
-  const principles=data.principles.map(item=>'<span><b aria-hidden="true">'+esc(item.symbol)+'</b> '+lines(item.lines)+'</span>').join('\n          ');
+  const principles=(data.principles||[]).map(item=>'<span><b aria-hidden="true">'+esc(item.symbol)+'</b> '+lines(item.lines)+'</span>').join('\n          ');
+  const principlesBlock=principles?[
+    '    <div class="hero-principles" aria-label="'+esc(data.principlesLabel||'Initiative priorities')+'">',
+    '      '+principles,
+    '    </div>'
+  ].join('\n'):'';
   return [
     '<section class="hero" id="'+esc(data.id)+'" data-block="hero" aria-labelledby="hero-title">',
     '  <div class="shell hero-grid">',
@@ -21,9 +26,7 @@ export default function renderHero(data){
     '      <figcaption class="visually-hidden">'+esc(data.caption)+'</figcaption>',
     '    </figure>',
     '',
-    '    <div class="hero-principles" aria-label="'+esc(data.principlesLabel)+'">',
-    '      '+principles,
-    '    </div>',
+    principlesBlock,
     '  </div>',
     '</section>'
   ].join('\n');

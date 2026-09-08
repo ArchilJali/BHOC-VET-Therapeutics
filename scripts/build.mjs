@@ -64,6 +64,7 @@ for(const entry of manifest.blocks){
 }
 
 const initiativeAllowed=['hero','challenge','oxygen-platform','kipling','microcirculation','focus','work','partners'];
+const initiativeRequired=['hero','challenge','kipling','microcirculation','focus','work','partners'];
 const initiativeIds=new Set();
 const initiativeBlocks=[];
 for(const entry of initiativeManifest.blocks){
@@ -80,8 +81,8 @@ for(const entry of initiativeManifest.blocks){
 
 if(!blocks.some(b=>b.type==='hero'))throw new Error('Homepage needs exactly one hero');
 if(blocks.filter(b=>b.type==='hero').length!==1)throw new Error('Multiple hero blocks');
-if(initiativeBlocks.filter(block=>block.type==='hero').length!==1)throw new Error('Initiative homepage needs exactly one hero');
-for(const type of initiativeAllowed)if(initiativeBlocks.filter(block=>block.type===type).length!==1)throw new Error('Initiative homepage needs exactly one '+type+' block');
+for(const type of initiativeAllowed)if(initiativeBlocks.filter(block=>block.type===type).length>1)throw new Error('Initiative homepage may not repeat '+type+' blocks');
+for(const type of initiativeRequired)if(initiativeBlocks.filter(block=>block.type===type).length!==1)throw new Error('Initiative homepage needs exactly one '+type+' block');
 checkData(site,'site');
 checkData(header,'header');
 checkData(species,'species');
@@ -245,12 +246,10 @@ const imageEntries=[...new Map([
   ...(hero.slides||[]).map(slide=>slide.image),
   ...(blocks.find(b=>b.type==='species')?.data.items||[]).map(item=>item.image)
 ].map(image=>[image.src,image])).values()];
-const initiativeOxygen=initiativeBlocks.find(block=>block.type==='oxygen-platform').data;
 const initiativeMicrocirculation=initiativeBlocks.find(block=>block.type==='microcirculation').data;
 const initiativeImages=[...new Map([
   initiativeHeader.brand.image,
   initiativeBlocks.find(block=>block.type==='hero').data.image,
-  ...initiativeOxygen.steps.map(step=>step.image),
   ...initiativeMicrocirculation.nodes.map(node=>node.image)
 ].map(image=>[image.src,image])).values()];
 const sitemapUrls=[{path:'',images:imageEntries},...pages.map(page=>({path:page.slug+'.html',images:[]})),{path:'initiative/',images:initiativeImages}];
