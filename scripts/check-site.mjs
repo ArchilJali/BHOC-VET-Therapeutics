@@ -96,7 +96,7 @@ for(const [name,html] of htmlByPage){
   const footerHrefs=[...footer.matchAll(/href="([^"]+)"/g)].map(match=>match[1]);
   assert.equal(new Set(footerHrefs).size,footerHrefs.length,`${name}: footer destinations are not duplicated`);
   assert.match(footer,/Project lead: <strong>BHOC Team<\/strong>\./,`${name}: team footer attribution`);
-  assert.match(footer,/First published <time datetime=\"2026-09-07\">07 Sep 2026<\\/time>.*11 updates.*Last updated <time datetime=\"2026-09-08\">08 Sep 2026<\\/time>.*Version 26\\.09\\.08/,`${name}: publication history`);
+  assert.match(footer,/First published <time datetime="2026-09-07">07 Sep 2026<\/time>.*11 updates.*Last updated <time datetime="2026-09-08">08 Sep 2026<\/time>.*Version 26\.09\.08/,`${name}: publication history`);
 }
 
 const home=htmlByPage.get('index.html');
