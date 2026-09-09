@@ -14,6 +14,8 @@ const localFiles=files=>'<details class="rights-technical"><summary>Local file v
   '<li><code>'+esc(file.path)+'</code><span>Introduced '+dated(file.introducedOn)+'</span><span>SHA-256: <code>'+esc(file.sha256)+'</code></span></li>'
 ).join('')+'</ul></details>';
 
+const sourceReferences=links=>links.map(link=>'<a '+linkAttrs({href:link.href})+'>'+esc(link.label)+'</a>').join('<br>');
+
 const recordCard=record=>'<article class="rights-record" id="'+esc(record.id)+'">'+
   '<header><p class="rights-subject">'+esc(record.subject)+'</p><h2>'+esc(record.title)+'</h2></header>'+
   '<dl>'+[
@@ -21,6 +23,7 @@ const recordCard=record=>'<article class="rights-record" id="'+esc(record.id)+'"
     ['Original date',dated(record.originalDate)],
     ['Licence','<a '+linkAttrs({href:record.licenseUrl})+'>'+esc(record.license)+'</a>'],
     ['Source','<a '+linkAttrs({href:record.source})+'>'+esc(record.sourceLabel)+'</a>'],
+    ...(record.sourceReferences?.length?[['Additional source records',sourceReferences(record.sourceReferences)]]:[]),
     ['Source status',esc(record.sourceStatus)],
     ['Verified',dated(record.verifiedOn)],
     ['Used in',esc(record.usedIn.join(' · '))],
@@ -36,6 +39,7 @@ const projectCard=record=>'<article class="rights-record rights-project-record" 
     ['Provided by',esc(record.provider)],
     ['Provided',dated(record.providedOn)],
     ['Rights status',esc(record.rightsStatus)],
+    ...(record.thirdPartyRecord?[['Embedded third-party source','<a href="#'+esc(record.thirdPartyRecord.id)+'">'+esc(record.thirdPartyRecord.label)+'</a>']]:[]),
     ['Why selected',esc(record.reason)],
     ['Processing',esc(record.modifications)]
   ].map(([term,value])=>'<div><dt>'+term+'</dt><dd>'+value+'</dd></div>').join('')+'</dl>'+localFiles(record.localFiles)+

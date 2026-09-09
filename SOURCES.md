@@ -1,14 +1,15 @@
 # BHOC Veterinary sources and provenance
 
-Current as of 9 September 2026. This file lists only sources used by the present website.
+Current as of 9 September 2026. This file lists only sources used by the present website. The single detailed legal register for all Initiative and homepage Science Bridge imagery is `content/initiative/image-provenance.json`, published at `initiative/image-rights.html`.
 
 ## Current artwork
 
 - Homepage hero carousel: `assets/bhoc-initiative-land-hero-v2.webp`, `assets/bhoc-initiative-winter-hero.webp` and `assets/bhoc-initiative-ocean-hero-v2.webp`. The Land v2 asset removes the obsolete baked-in indicator artwork so the shared live controls render once on every slide.
 - Open Graph and WhatsApp image: `assets/bhoc-initiative-land-social.jpg` (1200 × 463), a format-optimized copy of the approved Land hero without cropping.
-- Initiative hero: the six independently rendered wildlife photographs, author credits, source pages and reuse terms named in `content/initiative/blocks/hero.json`.
-- Initiative mission photograph: `assets/initiative/challenge-sumatran-tiger-usfws.webp`, with its public-domain USFWS source recorded in `content/initiative/blocks/mission-panel.json`.
-- Initiative Focus photographs: the seven `focus-*-photo.webp` files named in `content/initiative/blocks/focus.json`.
+- Homepage Science Bridge: `assets/science-bridge-reference.png`, a project-supplied composite whose underlying Gary Kramer / USFWS wolf photograph, public-domain status, source references, processing and file hash are preserved under `gray-wolf` in the central image-rights register. The attribution is not overlaid on the homepage image.
+- Initiative hero: the six independently rendered wildlife photographs named in `content/initiative/blocks/hero.json`; their creator, source, licence, processing and reuse records are centralized in `content/initiative/image-provenance.json`.
+- Initiative mission photograph: `assets/initiative/challenge-sumatran-tiger-usfws.webp`, with its public-domain USFWS source centralized in the same image-rights register.
+- Initiative Focus photographs: the seven WebP files named in `content/initiative/blocks/focus.json`, with their complete legal records centralized in the same image-rights register.
 - Initiative mark: `assets/reference-initiative-mark.webp`.
 - Species & Biodiversity Protection logo: `assets/bhoc-species-biodiversity-logo.webp`, an optimized copy of the brand artwork supplied by Archil on 9 September 2026. It is used without redrawing in the main navigation.
 - Species portraits: the six `*-loose-pencil-sketch.webp`/`rem-wirehaired-dachshund-sketch.webp` files named in `content/blocks/species.json`.

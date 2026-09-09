@@ -1,0 +1,16 @@
+{
+  "id": "initiative-intro",
+  "image": {
+    "src": "assets/reference-initiative-mark.webp",
+    "alt": "BHOC Species and Biodiversity Protection Initiative logo with wildlife surrounding the Earth",
+    "width": 318,
+    "height": 317
+  },
+  "title": "BHOC Species & Biodiversity Protection Initiative",
+  "tagline": "One Oxygen. One Biology. One BHOC System.",
+  "promise": "For Every Species. Wherever Life Is at Risk or Needs Support to Heal.",
+  "link": {
+    "href": "./initiative/",
+    "label": "Explore the BHOC Initiative"
+  }
+}

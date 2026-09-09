@@ -38,6 +38,35 @@
     reducedMotion.addEventListener('change',schedule);
     select(0,false);
   }
+  const bridgeCarousel=$('[data-bridge-carousel]');
+  if(bridgeCarousel){
+    const slides=$$('[data-bridge-slide]',bridgeCarousel),dots=$$('[data-bridge-dot]',bridgeCarousel),prev=$('.science-bridge-prev',bridgeCarousel),next=$('.science-bridge-next',bridgeCarousel),announcement=$('[data-bridge-announcement]',bridgeCarousel);
+    const delay=Math.max(0,Number(bridgeCarousel.dataset.autoplayMs)||0),reducedMotion=matchMedia('(prefers-reduced-motion: reduce)');
+    let index=0,timer=null,touchStart=null,hovering=false,focusWithin=false;
+    const stop=()=>{if(timer!==null){clearTimeout(timer);timer=null;}};
+    const schedule=()=>{stop();if(delay&&slides.length>1&&!reducedMotion.matches&&!document.hidden&&!hovering&&!focusWithin)timer=setTimeout(()=>select(index+1,false),delay);};
+    const select=(nextIndex,announce=true)=>{
+      if(!slides.length)return;
+      index=(nextIndex+slides.length)%slides.length;
+      slides.forEach((slide,i)=>{slide.hidden=i!==index;});
+      dots.forEach((dot,i)=>{if(i===index)dot.setAttribute('aria-current','true');else dot.removeAttribute('aria-current');});
+      if(announce&&announcement)announcement.textContent=`Science Bridge visual: ${slides[index].dataset.slideLabel}`;
+      schedule();
+    };
+    prev?.addEventListener('click',()=>select(index-1));
+    next?.addEventListener('click',()=>select(index+1));
+    dots.forEach(dot=>dot.addEventListener('click',()=>select(Number(dot.dataset.bridgeDot))));
+    bridgeCarousel.addEventListener('keydown',e=>{if(['ArrowLeft','ArrowRight','Home','End'].includes(e.key)){e.preventDefault();select(e.key==='Home'?0:e.key==='End'?slides.length-1:index+(e.key==='ArrowRight'?1:-1));}});
+    bridgeCarousel.addEventListener('touchstart',e=>{touchStart=e.changedTouches[0];},{passive:true});
+    bridgeCarousel.addEventListener('touchend',e=>{if(!touchStart)return;const dx=e.changedTouches[0].clientX-touchStart.clientX,dy=e.changedTouches[0].clientY-touchStart.clientY;if(Math.abs(dx)>55&&Math.abs(dx)>Math.abs(dy)*1.5)select(index+(dx<0?1:-1));touchStart=null;},{passive:true});
+    bridgeCarousel.addEventListener('mouseenter',()=>{hovering=true;stop();});
+    bridgeCarousel.addEventListener('mouseleave',()=>{hovering=false;schedule();});
+    bridgeCarousel.addEventListener('focusin',()=>{focusWithin=true;stop();});
+    bridgeCarousel.addEventListener('focusout',e=>{if(!bridgeCarousel.contains(e.relatedTarget)){focusWithin=false;schedule();}});
+    document.addEventListener('visibilitychange',schedule);
+    reducedMotion.addEventListener('change',schedule);
+    select(0,false);
+  }
   let returnFocus=null;
   function openDialog(id,opener){
     const dialog=document.getElementById(id);if(!dialog)return;

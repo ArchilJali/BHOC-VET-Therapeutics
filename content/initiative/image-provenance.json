@@ -1,9 +1,9 @@
 {
   "title": "Image rights & provenance",
-  "description": "Source, authorship, licence and processing records for images used on the BHOC Species & Biodiversity Protection Initiative website.",
+  "description": "Source, authorship, licence and processing records for images used across the BHOC Veterinary and BHOC Species & Biodiversity Protection Initiative websites.",
   "canonical": "https://bhocvet.com/initiative/image-rights.html",
   "verifiedOn": "2026-09-09",
-  "policy": "Individual photo credits are kept off the main Initiative composition. This separate register preserves the source, creator, licence, verification date, processing history and reason for every displayed image.",
+  "policy": "Individual photo credits are kept off the main BHOC Veterinary and Initiative compositions. This separate register preserves the source, creator, licence, verification date, processing history and reason for every displayed image.",
   "rightsBoundary": "Third-party terms apply only to the underlying photographs identified below. They do not license the surrounding BHOC text, branding, scientific materials, layout, design or code. No photographer, source platform or public agency is represented as endorsing BHOC or this Initiative.",
   "records": [
     {
@@ -282,19 +282,34 @@
       "creator": "Gary Kramer / U.S. Fish and Wildlife Service",
       "source": "https://www.flickr.com/photos/usfwshq/5584759091/",
       "sourceLabel": "U.S. Fish and Wildlife Service Flickr source record",
+      "sourceReferences": [
+        {
+          "label": "Current U.S. Fish and Wildlife Service media record",
+          "href": "https://www.fws.gov/media/gray-wolf-12"
+        },
+        {
+          "label": "Wikimedia Commons provenance record",
+          "href": "https://commons.wikimedia.org/wiki/File:Gray-wolf-gary-kramer-usfws.jpg"
+        }
+      ],
       "originalDate": "2011-04-03",
       "license": "Public domain",
       "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
-      "sourceStatus": "The USFWS Flickr record credits Gary Kramer, identifies the capture date and labels the photograph Public domain.",
+      "sourceStatus": "The USFWS records and Wikimedia Commons identify Gary Kramer/USFWS and label the photograph Public Domain as a U.S. federal government work.",
       "verifiedOn": "2026-09-09",
-      "usedIn": ["Science Bridge"],
+      "usedIn": ["Initiative Science Bridge", "BHOC Veterinary homepage Science Bridge"],
       "reason": "Connects oxygen-delivery science with wildlife and cross-species veterinary care.",
-      "modifications": "Resized, cropped to a 4:3 display frame and converted to WebP for responsive web delivery; no generative or subject-altering edit is documented.",
+      "modifications": "The Initiative copy was resized, cropped to a 4:3 frame and converted to WebP. The homepage uses the project-supplied composite as a responsive crop. No generative or subject-altering edit to the wolf photograph is documented.",
       "reuse": "Public-domain status applies to the underlying photograph, not to surrounding BHOC content or design.",
       "localFiles": [
         {
           "path": "assets/initiative/science-gray-wolf-usfws.webp",
           "sha256": "09777a6c3af9c3f53cf1d2eb8165f419accfceea7de5257eb15a04123d82ec5b",
+          "introducedOn": "2026-09-09"
+        },
+        {
+          "path": "assets/science-bridge-reference.png",
+          "sha256": "9b84fd62a0e7a5d9b4a8acdab301325afbef09b7401d6b99f0cb4c03e6ee7f23",
           "introducedOn": "2026-09-09"
         }
       ]
@@ -313,6 +328,26 @@
         {
           "path": "assets/initiative/bhoc-vs-rbc-400x-comparison.webp",
           "sha256": "c985e53d4f89c88e6bcadda08efd709658006dff435eb7ef11fc4eb05efbf44a",
+          "introducedOn": "2026-09-09"
+        }
+      ]
+    },
+    {
+      "id": "homepage-science-bridge-composite",
+      "title": "BHOC Veterinary homepage Science Bridge composite",
+      "provider": "Archil Jaliashvili, BHOC project lead",
+      "providedOn": "2026-09-09",
+      "rightsStatus": "Project-supplied composition; not offered under an open third-party licence. The embedded gray-wolf photograph is separately recorded under gray-wolf as a public-domain U.S. federal government work.",
+      "reason": "Connects the BHOC oxygen-delivery concept with wildlife and the relative scale of a red blood cell and BHOC molecule.",
+      "modifications": "Stored as the supplied PNG and cropped responsively into separate wolf and comparison panels without changing the source file.",
+      "thirdPartyRecord": {
+        "id": "gray-wolf",
+        "label": "Gray wolf — Gary Kramer / U.S. Fish and Wildlife Service"
+      },
+      "localFiles": [
+        {
+          "path": "assets/science-bridge-reference.png",
+          "sha256": "9b84fd62a0e7a5d9b4a8acdab301325afbef09b7401d6b99f0cb4c03e6ee7f23",
           "introducedOn": "2026-09-09"
         }
       ]

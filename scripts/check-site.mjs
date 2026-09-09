@@ -97,7 +97,7 @@ for(const [name,html] of htmlByPage){
   const footerHrefs=[...footer.matchAll(/href="([^"]+)"/g)].map(match=>match[1]);
   assert.equal(new Set(footerHrefs).size,footerHrefs.length,`${name}: footer destinations are not duplicated`);
   assert.match(footer,/Project lead: <strong>BHOC Team<\/strong>\./,`${name}: team footer attribution`);
-  assert.match(footer,/First published <time datetime="2026-09-07">07 Sep 2026<\/time>.*17 updates.*Last updated <time datetime="2026-09-09">09 Sep 2026<\/time>.*Version 26\.09\.09/,`${name}: publication history`);
+  assert.match(footer,/First published <time datetime="2026-09-07">07 Sep 2026<\/time>.*18 updates.*Last updated <time datetime="2026-09-09">09 Sep 2026<\/time>.*Version 26\.09\.09/,`${name}: publication history`);
   assert.match(footer,/href="\.\/initiative\/">BHOC Initiative<\/a>/,`${name}: full Initiative route`);
   assert.match(footer,/href="initiative\.html">Initiative overview<\/a>/,`${name}: legacy Initiative overview remains linked`);
 }
@@ -214,10 +214,10 @@ for(const match of initiativeHome.matchAll(/<img\b[^>]*>/g)){
 assert.equal((initiativeRights.match(/<h1\b/g)||[]).length,1,'initiative/image-rights.html: exactly one H1');
 assert.match(initiativeRights,/<meta name="robots" content="noindex,follow">/,'image-rights register is excluded from search indexing');
 assert.match(initiativeRights,/rel="canonical" href="https:\/\/bhocvet\.com\/initiative\/image-rights\.html"/,'image-rights register has a stable canonical URL');
-assert.match(initiativeRights,/Individual photo credits are kept off the main Initiative composition/,'image-rights register explains the display policy');
+assert.match(initiativeRights,/Individual photo credits are kept off the main BHOC Veterinary and Initiative compositions/,'image-rights register explains the display policy');
 assert.match(initiativeRights,/No photographer, source platform or public agency is represented as endorsing BHOC/,'image-rights register states the endorsement boundary');
-assert.equal((initiativeRights.match(/class="rights-record(?: |")/g)||[]).length,14,'image-rights register renders twelve photo records and two project-asset records');
-assert.equal((initiativeRights.match(/class="rights-technical"/g)||[]).length,14,'every image-rights record includes local-file verification');
+assert.equal((initiativeRights.match(/class="rights-record(?: |")/g)||[]).length,15,'image-rights register renders twelve photo records and three project-asset records');
+assert.equal((initiativeRights.match(/class="rights-technical"/g)||[]).length,15,'every image-rights record includes local-file verification');
 assert.match(initiativeRights,/Daphne Carlson Bremer \/ U\.S\. Fish and Wildlife Service/);
 assert.match(initiativeRights,/Eric Kilby/);
 assert.match(initiativeRights,/AfricanConservation \/ Working with Wildlife/);
@@ -225,6 +225,9 @@ assert.match(initiativeRights,/Fernando Revilla/);
 assert.match(initiativeRights,/Joe Milmoe \/ U\.S\. Fish and Wildlife Service/);
 assert.match(initiativeRights,/GP Schmahl \/ NOAA/);
 assert.match(initiativeRights,/Gary Kramer \/ U\.S\. Fish and Wildlife Service/);
+assert.match(initiativeRights,/href="https:\/\/www\.fws\.gov\/media\/gray-wolf-12"/);
+assert.match(initiativeRights,/href="https:\/\/commons\.wikimedia\.org\/wiki\/File:Gray-wolf-gary-kramer-usfws\.jpg"/);
+assert.match(initiativeRights,/homepage Science Bridge composite/);
 assert.match(initiativeRights,/CC BY-SA 2\.0/);
 assert.match(initiativeRights,/CC BY-SA 4\.0/);
 assert.match(initiativeRights,/CC BY-SA 2\.5/);
@@ -246,6 +249,8 @@ for(const match of initiativeRights.matchAll(/<a\b[^>]*href="([^"]+)"/g)){
 }
 
 const home=htmlByPage.get('index.html');
+const homeBlockNames=[...home.matchAll(/<!-- BLOCK ([a-z-]+): content\/blocks\/[a-z-]+\.json -->/g)].map(match=>match[1]);
+assert.deepEqual(homeBlockNames,['hero','initiative-intro','science-bridge','biodiversity','species','science','mission','pillars'],'index.html: Initiative introduction and Science Bridge follow the hero');
 assert.match(home,/<link rel="preload" as="image" href="\.\/assets\/bhoc-initiative-land-hero-v2\.webp" type="image\/webp" fetchpriority="high">/);
 assert.match(home,/<img src="\.\/assets\/bhoc-initiative-land-hero-v2\.webp"[^>]*fetchpriority="high"/);
 assert.equal((home.match(/data-hero-slide/g)||[]).length,3,`Three hero slides`);
@@ -281,6 +286,17 @@ for(const word of ['Biological','Hemoglobin','Oxygen','Carrier'])assert.match(ho
 assert.match(home,/For immediate, controlled microvascular and tissue-level oxygenation while endogenous erythropoiesis recovers\./);
 assert.match(home,/class="hero-hotspot" href="product\.html"[^>]*aria-label="Open Product"/);
 assert.match(home,/class="hero-hotspot" href="applications\.html"[^>]*aria-label="Open Application"/);
+assert.match(home,/class="initiative-intro-logo" href="\.\/initiative\/" aria-label="Explore the BHOC Initiative"/);
+assert.match(home,/class="initiative-intro-link" href="\.\/initiative\/">Explore the BHOC Initiative/);
+assert.match(home,/One Oxygen\. One Biology\. One BHOC System\./);
+assert.match(home,/For Every Species\. Wherever Life Is at Risk or Needs Support to Heal\./);
+assert.match(home,/class="science-bridge-action" href="science\.html#foundation"/);
+assert.match(home,/data-bridge-carousel data-autoplay-ms="18000"/);
+assert.match(home,/src="\.\/assets\/science-bridge-reference\.png"/);
+assert.match(home,/Compatible with all blood types for all species\./);
+const scienceBridgePhoto=home.match(/<figure class="science-bridge-photo"[\s\S]*?<\/figure>/)?.[0]||'';
+assert.ok(scienceBridgePhoto,'Science Bridge photograph renders');
+assert.doesNotMatch(scienceBridgePhoto,/<figcaption>/,'Science Bridge photograph has no visible source overlay');
 
 const statAnchors=[...home.matchAll(/<a class="stat-source"[\s\S]*?<\/a>/g)].map(match=>match[0]);
 assert.equal(statAnchors.length,3,`Three linked biodiversity icons`);
@@ -354,6 +370,14 @@ assert.ok(target,'Mission block is available for independent-content test');
 const edit=structuredClone(target.data);
 edit.description='An independently updated mission paragraph.';
 assert.notEqual(target.render(edit),target.html,'Mission content can change independently');
+const initiativeIntroTarget=rendered.find(x=>x.block.type==='initiative-intro');
+const scienceBridgeTarget=rendered.find(x=>x.block.type==='science-bridge');
+assert.ok(initiativeIntroTarget&&scienceBridgeTarget,'Homepage keeps Initiative introduction and Science Bridge as separate blocks');
+assert.ok(Array.isArray(scienceBridgeTarget.data.slides)&&scienceBridgeTarget.data.slides.length===1,'Science Bridge is configured as an extensible slide collection');
+const scienceBridgeEdit=structuredClone(scienceBridgeTarget.data);
+scienceBridgeEdit.slides[0].description='An independently updated Science Bridge slide.';
+assert.notEqual(scienceBridgeTarget.render(scienceBridgeEdit),scienceBridgeTarget.html,'Science Bridge visual can change independently');
+assert.equal(initiativeIntroTarget.render(initiativeIntroTarget.data),initiativeIntroTarget.html,'Editing Science Bridge leaves the Initiative introduction unchanged');
 
 const initiativeManifestSource=JSON.parse(await fs.readFile(path.join(root,'content/initiative/homepage.json'),'utf8'));
 const renderedInitiative=[];
@@ -371,7 +395,7 @@ for(const card of initiativeFocus.data.cards){
 }
 const initiativeProvenance=JSON.parse(await fs.readFile(path.join(root,'content/initiative/image-provenance.json'),'utf8'));
 assert.equal(initiativeProvenance.records.length,12,'Initiative provenance keeps twelve third-party source records');
-assert.equal(initiativeProvenance.projectAssets.length,2,'Initiative provenance keeps two project-asset records');
+assert.equal(initiativeProvenance.projectAssets.length,3,'Initiative provenance keeps three project-asset records');
 const provenanceRecords=[...initiativeProvenance.records,...initiativeProvenance.projectAssets];
 assert.equal(new Set(provenanceRecords.map(record=>record.id)).size,provenanceRecords.length,'Initiative provenance record IDs are unique');
 for(const record of initiativeProvenance.records){
@@ -380,6 +404,10 @@ for(const record of initiativeProvenance.records){
   assert.ok(record.reason&&record.modifications&&record.reuse,'Third-party image record keeps purpose, processing and reuse boundary');
 }
 const registeredAssets=new Set(provenanceRecords.flatMap(record=>record.localFiles.map(file=>file.path)));
+assert.ok(registeredAssets.has('assets/science-bridge-reference.png'),'Homepage Science Bridge composite is included in the central provenance register');
+const homepageWolfRecord=initiativeProvenance.records.find(record=>record.id==='gray-wolf');
+assert.ok(homepageWolfRecord?.usedIn.includes('BHOC Veterinary homepage Science Bridge'),'Gray-wolf record includes the homepage use');
+assert.equal(scienceBridgeTarget.data.slides[0].photo.registryId,'gray-wolf','Homepage wolf links to the central provenance record');
 const displayedInitiativeAssets=new Set([
   ...renderedInitiative.flatMap(item=>{
     if(item.block.type==='hero')return item.data.slides.flatMap(slide=>slide.images.map(image=>image.src));

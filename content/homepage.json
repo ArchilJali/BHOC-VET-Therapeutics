@@ -6,6 +6,16 @@
       "enabled": true
     },
     {
+      "type": "initiative-intro",
+      "file": "blocks/initiative-intro.json",
+      "enabled": true
+    },
+    {
+      "type": "science-bridge",
+      "file": "blocks/science-bridge.json",
+      "enabled": true
+    },
+    {
       "type": "biodiversity",
       "file": "blocks/biodiversity.json",
       "enabled": true

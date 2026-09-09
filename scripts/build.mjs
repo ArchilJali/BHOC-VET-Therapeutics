@@ -34,7 +34,7 @@ const initiativeImageProvenance=await json('content/initiative/image-provenance.
 const pageFiles=(await fs.readdir(path.join(root,'content/pages'))).filter(name=>name.endsWith('.json')).sort();
 const pages=await Promise.all(pageFiles.map(name=>json('content/pages/'+name)));
 
-const allowed=['hero','biodiversity','species','science','mission','pillars','story'];
+const allowed=['hero','initiative-intro','science-bridge','biodiversity','species','science','mission','pillars','story'];
 const ids=new Set();
 const blocks=[];
 const checkData=(d,label)=>{

@@ -1,0 +1,3 @@
+import {attrs,esc,icon,img} from '../lib/html.mjs';
+
+export default d=>`<section id="${esc(d.id)}" class="block-initiative-intro" data-block="initiative-intro" aria-labelledby="${esc(d.id)}-heading"><div class="initiative-intro-inner"><a class="initiative-intro-logo" ${attrs(d.link)} aria-label="${esc(d.link.label)}">${img(d.image,'loading="lazy"')}</a><div class="initiative-intro-copy"><h2 id="${esc(d.id)}-heading">${esc(d.title)}</h2><p class="initiative-intro-tagline">${esc(d.tagline)}</p><p class="initiative-intro-promise">${esc(d.promise)}</p></div><a class="initiative-intro-link" ${attrs(d.link)}>${esc(d.link.label)} ${icon('arrow')}</a></div></section>`;
