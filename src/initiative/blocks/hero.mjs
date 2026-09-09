@@ -1,4 +1,4 @@
-import {action,esc,initiativeIcon,initiativeImage,lines,linkAttrs} from '../lib.mjs';
+import {action,esc,initiativeIcon,initiativeImage,lines} from '../lib.mjs';
 
 export default function renderHero(data){
   const actions=data.actions.map(action).join('\n            ');
@@ -11,12 +11,8 @@ export default function renderHero(data){
         initiativeImage(image,{priority:index===0&&imageIndex===0,lazy:false})+
       '</figure>'
     ).join('');
-    const credits=slide.images.map(image=>
-      '<span><a '+linkAttrs({href:image.source})+'>'+esc(image.credit)+'</a>, '+esc(image.license)+'</span>'
-    ).join('');
     return '<div class="hero-slide'+(index===0?' is-active':'')+'" id="hero-slide-'+esc(slide.id)+'" data-hero-slide="'+esc(slide.id)+'"'+(index===0?'':' hidden')+'>'+images+
       '<span class="visually-hidden">'+esc(slide.label)+'</span>'+
-      '<details class="hero-credits"><summary>Photo credits</summary><span>'+credits+'</span></details>'+
     '</div>';
   }).join('');
   const controls=data.controls.map((item,index)=>{

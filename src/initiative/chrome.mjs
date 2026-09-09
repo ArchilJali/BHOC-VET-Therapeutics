@@ -42,6 +42,23 @@ export function renderHead(site,stylesVersion){
   ].join('\n');
 }
 
+export function renderRightsHead(site,rights,stylesVersion){
+  return [
+    '<head>',
+    '  <meta charset="utf-8">',
+    '  <meta name="viewport" content="width=device-width, initial-scale=1">',
+    '  <title>'+esc(rights.title)+' | BHOC Initiative</title>',
+    '  <meta name="description" content="'+esc(rights.description)+'">',
+    '  <meta name="author" content="'+esc(site.author)+'">',
+    '  <meta name="robots" content="noindex,follow">',
+    '  <meta name="theme-color" content="'+esc(site.themeColor)+'">',
+    '  <link rel="canonical" href="'+esc(rights.canonical)+'">',
+    '  <link rel="icon" href="../assets/reference-initiative-mark.webp" type="image/webp">',
+    '  <link rel="stylesheet" href="styles.css?v='+esc(stylesVersion)+'">',
+    '</head>'
+  ].join('\n');
+}
+
 export function renderHeader(header){
   const nav=header.navigation.map(item=>'<a '+linkAttrs(item)+'>'+esc(item.label)+'</a>').join('');
   return [
@@ -95,7 +112,7 @@ export function renderFooter(footer){
     '  </div>',
     '  <aside class="shell protected-content" aria-label="'+esc(footer.legal.title)+'">',
     '    <span class="protected-content-icon" aria-hidden="true">!</span>',
-    '    <div><strong>'+esc(footer.legal.title)+'</strong><p>'+esc(footer.legal.copyright)+' '+esc(footer.legal.text)+'</p><small>'+esc(footer.legal.licenseNote)+' <a '+linkAttrs({href:footer.legal.permissionHref})+'>'+esc(footer.legal.permissionLabel)+'</a>.</small></div>',
+    '    <div><strong>'+esc(footer.legal.title)+'</strong><p>'+esc(footer.legal.copyright)+' '+esc(footer.legal.text)+'</p><small>'+esc(footer.legal.licenseNote)+' <a '+linkAttrs({href:footer.legal.provenanceHref})+'>'+esc(footer.legal.provenanceLabel)+'</a> <span aria-hidden="true">·</span> <a '+linkAttrs({href:footer.legal.permissionHref})+'>'+esc(footer.legal.permissionLabel)+'</a>.</small></div>',
     '  </aside>',
     '  <div class="shell footer-bottom">',
     '    <span>'+esc(footer.projectLead)+'</span>',

@@ -63,7 +63,9 @@
     "title": "Protected content notice",
     "copyright": "© 2026 BHOC Species & Biodiversity Protection Initiative. All rights reserved.",
     "text": "Original text, visual design, graphics, scientific materials, code and BHOC branding on this website may not be copied, scraped, reproduced, adapted, redistributed or republished, in whole or in part, without prior written permission.",
-    "licenseNote": "Third-party photographs and source materials remain governed by the credits and licenses displayed with each item.",
+    "licenseNote": "Third-party image terms are preserved in a separate source and licence register.",
+    "provenanceLabel": "Image rights & provenance",
+    "provenanceHref": "image-rights.html",
     "permissionLabel": "Request permission",
     "permissionHref": "mailto:info@bhoctherapeutics.com?subject=BHOC%20Initiative%20Content%20Permission"
   }
