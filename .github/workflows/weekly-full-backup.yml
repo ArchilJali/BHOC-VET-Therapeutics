@@ -5,6 +5,8 @@ on:
     branches: [main]
     paths:
       - '.github/workflows/weekly-full-backup.yml'
+      - '.github/workflows/pages.yml'
+      - '.github/workflows/sync-generated-site.yml'
   schedule:
     - cron: '15 4 * * 1'
   workflow_dispatch:
