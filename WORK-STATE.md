@@ -7,7 +7,7 @@
 - Public website: `https://bhocvet.com/`.
 - Primary name: `BHOC Veterinary`; alternate names: `BHOC Vet` and `BHOC Veterinary Therapeutics`.
 - BHOC expands to `Biological Hemoglobin Oxygen Carrier`.
-- Main navigation: `Product · Application · Evidence · Science · Initiative · Related Information · News`.
+- Main navigation starts with a visually distinct `Species & Biodiversity Protection` entry carrying the Initiative logo, followed by `Product · Application · Evidence · Science · Related Information · News`.
 - The header links to active `www.bhoctherapeutics.com`; `www.bhoctransplant.com` remains visibly inactive until launch.
 - Contact is available in the footer and search.
 
@@ -62,7 +62,7 @@ The full Initiative homepage now uses the same independent-block architecture as
 - Canonical URL, Open Graph, X/Twitter metadata, schema, descriptive ALT text and sitemap entries must remain intact.
 - The footer keeps LinkedIn and the full VET Evidence Platform as distinct destinations.
 
-Publication line: `First published 07 Sep 2026 · 16 updates · Last updated 09 Sep 2026 · Version 26.09.09`. Increment `publication.updates` only when the shared BHOC Veterinary pages are intentionally republished.
+Publication line: `First published 07 Sep 2026 · 17 updates · Last updated 09 Sep 2026 · Version 26.09.09`. Increment `publication.updates` only when the shared BHOC Veterinary pages are intentionally republished.
 
 ## Editing and verification
 

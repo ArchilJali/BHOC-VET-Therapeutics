@@ -10,6 +10,7 @@ Current as of 9 September 2026. This file lists only sources used by the present
 - Initiative Challenge photographs: the three `challenge-*-usfws.webp` / `challenge-*-noaa.webp` files named in `content/initiative/blocks/challenge.json`.
 - Initiative Focus photographs: the seven `focus-*-photo.webp` files named in `content/initiative/blocks/focus.json`.
 - Initiative mark: `assets/reference-initiative-mark.webp`.
+- Species & Biodiversity Protection logo: `assets/bhoc-species-biodiversity-logo.webp`, an optimized copy of the brand artwork supplied by Archil on 9 September 2026. It is used without redrawing in the main navigation.
 - Species portraits: the six `*-loose-pencil-sketch.webp`/`rem-wirehaired-dachshund-sketch.webp` files named in `content/blocks/species.json`.
 - Rem identity reference: `assets/reference-dog-pencil.webp`.
 - Molecular diagrams: exact ChEBI SVG structures in `assets/chlorophyll.svg` and `assets/heme.svg`.
