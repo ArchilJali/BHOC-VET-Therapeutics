@@ -18,7 +18,8 @@
 - Initiative mark: `assets/reference-initiative-mark.webp`.
 - The same Initiative mark is used across the site; shared CSS masking prevents its square raster backing from showing against the cream/white layouts.
 - The full Initiative homepage header shows one canonical Initiative logo and a visible Home link back to BHOC Veterinary. Its navigation collapses into the same menu on narrow screens.
-- The Initiative homepage palette uses white and deep forest green, with a restrained blue science field and red microcirculation panel.
+- The Initiative homepage has its own conservation palette: white and near-black forest green, one vivid emerald action accent, oxygen teal reserved for the Science Bridge and red reserved for the RBC/BHOC comparison.
+- The canonical Initiative mark is also the page favicon and the `Organization.logo` ImageObject in structured data; preserve its current file, dimensions, ALT text and identity.
 - The Initiative hero is a modular six-photo wildlife composition. Every photograph, credit and license is stored independently in `content/initiative/blocks/hero.json`.
 - The Initiative hero renders three lower controls. The first gallery is active; controls two and three remain visibly reserved and disabled until approved slides are supplied.
 - Focus-area wildlife photographs are local, optimized 640 × 480 WebP assets with visible Wikimedia Commons credits and licenses. They render in seven, four, two and one-column layouts as the viewport narrows.
