@@ -14,11 +14,12 @@
     ],
     "title": "BHOC Species & Biodiversity Protection Initiative"
   },
+  "returnLink": {
+    "label": "Back to BHOC Veterinary",
+    "href": "../index.html",
+    "ariaLabel": "Return to the BHOC Veterinary website"
+  },
   "navigation": [
-    {
-      "label": "Home",
-      "href": "../index.html"
-    },
     {
       "label": "Our Mission",
       "href": "#mission"

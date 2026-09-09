@@ -90,6 +90,11 @@
         "about": {
           "@id": "https://bhocvet.com/initiative/#initiative"
         },
+        "significantLink": [
+          "https://bhocvet.com/",
+          "https://bhoctherapeutics.com/",
+          "https://archiljali.github.io/BHOC-platform/veterinary/Vet-index.html"
+        ],
         "primaryImageOfPage": {
           "@type": "ImageObject",
           "@id": "https://bhocvet.com/initiative/#primaryimage",

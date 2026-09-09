@@ -7,8 +7,10 @@ import renderScienceBlock from '../src/blocks/science.mjs';
 import {
   renderFooter as renderInitiativeFooter,
   renderHead as renderInitiativeHead,
-  renderHeader as renderInitiativeHeader
+  renderHeader as renderInitiativeHeader,
+  renderRightsHead as renderInitiativeRightsHead
 } from '../src/initiative/chrome.mjs';
+import renderInitiativeImageRights from '../src/initiative/image-rights.mjs';
 
 const root=path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 const args=process.argv.slice(2);
@@ -28,6 +30,7 @@ const initiativeManifest=await json('content/initiative/homepage.json');
 const initiativeSite=await json('content/initiative/site.json');
 const initiativeHeader=await json('content/initiative/header.json');
 const initiativeFooter=await json('content/initiative/footer.json');
+const initiativeImageProvenance=await json('content/initiative/image-provenance.json');
 const pageFiles=(await fs.readdir(path.join(root,'content/pages'))).filter(name=>name.endsWith('.json')).sort();
 const pages=await Promise.all(pageFiles.map(name=>json('content/pages/'+name)));
 
@@ -90,6 +93,19 @@ checkData(scienceData,'science page block');
 checkData(initiativeSite,'initiative site');
 checkData(initiativeHeader,'initiative header');
 checkData(initiativeFooter,'initiative footer');
+checkData(initiativeImageProvenance,'initiative image provenance');
+const provenanceRecords=[...initiativeImageProvenance.records,...initiativeImageProvenance.projectAssets];
+for(const record of provenanceRecords){
+  if(!/^[a-z][a-z0-9-]*$/.test(record.id))throw new Error('Invalid Initiative provenance record ID '+record.id);
+  if(!Array.isArray(record.localFiles)||record.localFiles.length<1)throw new Error('Initiative provenance record needs local files: '+record.id);
+  for(const file of record.localFiles){
+    if(!/^assets\/[a-zA-Z0-9_./-]+$/.test(file.path)||file.path.includes('..'))throw new Error('Invalid Initiative provenance asset path '+file.path);
+    if(!/^[a-f0-9]{64}$/.test(file.sha256))throw new Error('Invalid Initiative provenance SHA-256 for '+file.path);
+    const bytes=await fs.readFile(path.join(root,file.path));
+    const actual=createHash('sha256').update(bytes).digest('hex');
+    if(actual!==file.sha256)throw new Error('Initiative provenance SHA-256 mismatch for '+file.path);
+  }
+}
 for(const [i,page] of pages.entries()){
   checkData(page,`pages[${i}]`);
   if(!/^[a-z][a-z0-9-]*$/.test(page.slug))throw new Error('Invalid page slug '+page.slug);
@@ -136,6 +152,27 @@ for(const [slot,value] of Object.entries(initiativeSlots))initiativeDocument=ini
 if(/\{\{[A-Z_]+\}\}/.test(initiativeDocument))throw new Error('Unresolved Initiative template slot');
 if((initiativeDocument.match(/<h1\b/g)||[]).length!==1)throw new Error('initiative/index.html: exactly one H1 required');
 await write('initiative/index.html',initiativeDocument);
+
+const routeToInitiativeHome=item=>({...item,href:String(item.href).startsWith('#')?'./'+item.href:item.href});
+const imageRightsHeader=structuredClone(initiativeHeader);
+imageRightsHeader.brand.href='./';
+imageRightsHeader.navigation=imageRightsHeader.navigation.map(routeToInitiativeHome);
+const imageRightsFooter=structuredClone(initiativeFooter);
+imageRightsFooter.groups=imageRightsFooter.groups.map(group=>({...group,links:group.links.map(routeToInitiativeHome)}));
+const imageRightsTemplate=await read('src/initiative/image-rights.html');
+const imageRightsSlots={
+  '{{LANGUAGE}}':initiativeSite.language,
+  '{{HEAD}}':renderInitiativeRightsHead(initiativeSite,initiativeImageProvenance,digest(initiativeStyles)),
+  '{{HEADER}}':renderInitiativeHeader(imageRightsHeader),
+  '{{BODY}}':renderInitiativeImageRights(initiativeImageProvenance),
+  '{{FOOTER}}':renderInitiativeFooter(imageRightsFooter),
+  '{{APP_VERSION}}':digest(initiativeClient)
+};
+let imageRightsDocument=imageRightsTemplate;
+for(const [slot,value] of Object.entries(imageRightsSlots))imageRightsDocument=imageRightsDocument.replaceAll(slot,value);
+if(/\{\{[A-Z_]+\}\}/.test(imageRightsDocument))throw new Error('Unresolved Initiative image-rights template slot');
+if((imageRightsDocument.match(/<h1\b/g)||[]).length!==1)throw new Error('initiative/image-rights.html: exactly one H1 required');
+await write('initiative/image-rights.html',imageRightsDocument);
 
 const absolute=p=>new URL(p,site.canonical).href;
 const imageMime=src=>src.endsWith('.png')?'image/png':src.endsWith('.webp')?'image/webp':'image/jpeg';
@@ -271,6 +308,11 @@ const initiativeImages=[...new Map([
   initiativeScience.image,
   initiativeScience.comparisonGraphic
 ].map(image=>[image.src,image])).values()];
+const registeredInitiativeAssets=new Set(provenanceRecords.flatMap(record=>record.localFiles.map(file=>file.path)));
+for(const image of initiativeImages){
+  if(!String(image.src).startsWith('assets/'))continue;
+  if(!registeredInitiativeAssets.has(image.src))throw new Error('Displayed Initiative image is missing from the provenance register: '+image.src);
+}
 const sitemapUrls=[{path:'',images:imageEntries},...pages.map(page=>({path:page.slug+'.html',images:[]})),{path:'initiative/',images:initiativeImages}];
 await write('sitemap.xml',`<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">${sitemapUrls.map(entry=>`<url><loc>${absolute(entry.path)}</loc><lastmod>${site.updated}</lastmod>${entry.images.map(image=>`<image:image><image:loc>${absolute(image.src)}</image:image>`).join('')}</url>`).join('')}</urlset>\n`);
 await write('robots.txt',`User-agent: *\nAllow: /\nSitemap: ${absolute('sitemap.xml')}\n`);

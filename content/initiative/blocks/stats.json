@@ -1,6 +1,11 @@
 {
   "id": "evidence",
   "eyebrow": "A world worth protecting",
+  "quotation": {
+    "quote": "We be of one blood, ye and I.",
+    "author": "Rudyard Kipling",
+    "work": "The Jungle Book"
+  },
   "metrics": [
     {"value": "1.78M+", "labelLines": ["Animalia species", "catalogued"]},
     {"value": "175K+", "labelLines": ["species assessed", "for conservation status"]},

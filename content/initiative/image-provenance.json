@@ -1,0 +1,337 @@
+{
+  "title": "Image rights & provenance",
+  "description": "Source, authorship, licence and processing records for images used on the BHOC Species & Biodiversity Protection Initiative website.",
+  "canonical": "https://bhocvet.com/initiative/image-rights.html",
+  "verifiedOn": "2026-09-09",
+  "policy": "Individual photo credits are kept off the main Initiative composition. This separate register preserves the source, creator, licence, verification date, processing history and reason for every displayed image.",
+  "rightsBoundary": "Third-party terms apply only to the underlying photographs identified below. They do not license the surrounding BHOC text, branding, scientific materials, layout, design or code. No photographer, source platform or public agency is represented as endorsing BHOC or this Initiative.",
+  "records": [
+    {
+      "id": "african-forest-elephant",
+      "title": "African elephant, Dzanga Sangha, Central African Republic",
+      "subject": "African forest elephant family at a forest water source",
+      "creator": "Daphne Carlson Bremer / U.S. Fish and Wildlife Service",
+      "source": "https://commons.wikimedia.org/wiki/File:African_elephant,_Dzanga_Sangha,_Central_African_Republic_(18945940511).jpg",
+      "sourceLabel": "Wikimedia Commons source record",
+      "originalDate": "2015-05-27",
+      "license": "CC BY 2.0; the source record also carries a U.S. Fish and Wildlife Service public-domain notice",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "sourceStatus": "The Commons record identifies a CC BY 2.0 licence and separately notes U.S. federal-work public-domain status.",
+      "verifiedOn": "2026-09-09",
+      "usedIn": ["Initiative hero"],
+      "reason": "Primary wildlife image representing threatened-species protection and the Initiative's global scope.",
+      "modifications": "Resized, square-cropped and converted from JPEG to WebP for responsive web delivery; no generative or subject-altering edit is documented.",
+      "reuse": "The underlying photograph remains subject to its source terms. Appropriate credit, licence link and the modification notice are supplied in this register.",
+      "localFiles": [
+        {
+          "path": "assets/initiative/challenge-african-elephant-usfws.webp",
+          "sha256": "11320d77f7b04c46878fa554667ab1dc15f13c803da0571d31405efce757c6bf",
+          "introducedOn": "2026-09-09"
+        }
+      ]
+    },
+    {
+      "id": "snow-leopard",
+      "title": "Snow Leopard Closeup",
+      "subject": "Close portrait of a snow leopard",
+      "creator": "Eric Kilby",
+      "source": "https://commons.wikimedia.org/wiki/File:Snow_Leopard_Closeup_(13883260104).jpg",
+      "sourceLabel": "Wikimedia Commons source record",
+      "originalDate": "2014-04-06",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "sourceStatus": "The Commons record identifies the creator and confirms the Attribution-ShareAlike 2.0 Generic licence.",
+      "verifiedOn": "2026-09-09",
+      "usedIn": ["Initiative hero", "Endangered Species focus card"],
+      "reason": "Represents threatened wildlife and endangered-species conservation.",
+      "modifications": "Resized, cropped to the displayed aspect ratios and converted from JPEG to WebP for responsive web delivery; no generative or subject-altering edit is documented.",
+      "reuse": "The processed photograph is redistributed under CC BY-SA 2.0. The licence does not extend to surrounding BHOC content or design.",
+      "localFiles": [
+        {
+          "path": "assets/initiative/focus-philanthropy-photo.webp",
+          "sha256": "6f32bd69e64583c36f4efb1da481ac671736af566ba4f8d4e33646454a08e954",
+          "introducedOn": "2026-09-08"
+        }
+      ]
+    },
+    {
+      "id": "black-rhinoceros",
+      "title": "Black Rhino at Working with Wildlife",
+      "subject": "Black rhinoceros in a conservation setting",
+      "creator": "AfricanConservation / Working with Wildlife",
+      "source": "https://commons.wikimedia.org/wiki/File:Black_Rhino_at_Working_with_Wildlife.jpg",
+      "sourceLabel": "Wikimedia Commons source record",
+      "originalDate": "2022-11-17",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "sourceStatus": "The Commons record identifies AfricanConservation as author, records verified permission and states CC BY-SA 4.0.",
+      "verifiedOn": "2026-09-09",
+      "usedIn": ["Initiative hero"],
+      "reason": "Represents field conservation and veterinary collaboration for critically threatened megafauna.",
+      "modifications": "Resized, cropped to a 4:3 display frame and converted from JPEG to WebP for responsive web delivery; no generative or subject-altering edit is documented.",
+      "reuse": "The processed photograph is redistributed under CC BY-SA 4.0. The licence does not extend to surrounding BHOC content or design.",
+      "localFiles": [
+        {
+          "path": "assets/initiative/focus-veterinary-photo.webp",
+          "sha256": "791c7770b2ba127c6b21cca06865c083c092f63364c807f6cdd3651df08bd111",
+          "introducedOn": "2026-09-08"
+        }
+      ]
+    },
+    {
+      "id": "giant-panda-tai-shan",
+      "title": "Giant Panda Tai Shan",
+      "subject": "Giant panda Tai Shan eating bamboo",
+      "creator": "Fernando Revilla",
+      "source": "https://commons.wikimedia.org/wiki/File:Giant_Panda_Tai_Shan.JPG",
+      "sourceLabel": "Wikimedia Commons source record",
+      "originalDate": "2007-06-10",
+      "license": "CC BY-SA 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/",
+      "sourceStatus": "The Commons record identifies Fernando Revilla as author and states the Attribution-ShareAlike 2.5 Generic licence.",
+      "verifiedOn": "2026-09-09",
+      "usedIn": ["Initiative hero"],
+      "reason": "Represents ex-situ conservation and the role of zoological institutions.",
+      "modifications": "Resized and converted from JPEG to WebP for responsive web delivery; the source itself records an earlier crop on Wikimedia Commons.",
+      "reuse": "The processed photograph is redistributed under CC BY-SA 2.5. The licence does not extend to surrounding BHOC content or design.",
+      "localFiles": [
+        {
+          "path": "assets/initiative/focus-zoo-photo.webp",
+          "sha256": "9d4d7f0e9b725cc3aa1b0ba6aa68479d8dda4ad4f151279c91bc81e4bea24153",
+          "introducedOn": "2026-09-08"
+        }
+      ]
+    },
+    {
+      "id": "sumatran-tiger",
+      "title": "Sumatran Tiger",
+      "subject": "Sumatran tiger walking through a green habitat",
+      "creator": "Joe Milmoe / U.S. Fish and Wildlife Service",
+      "source": "https://commons.wikimedia.org/wiki/File:Sumatran_Tiger_USFWS.jpg",
+      "sourceLabel": "Wikimedia Commons source record",
+      "originalDate": "Unknown",
+      "license": "Public domain; U.S. federal government work; Public Domain Mark 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "sourceStatus": "The Commons record identifies a U.S. federal government work and marks the file free of known copyright restrictions.",
+      "verifiedOn": "2026-09-09",
+      "usedIn": ["Initiative hero", "Conservation mission"],
+      "reason": "Represents endangered-species conservation and anchors the mission panel.",
+      "modifications": "Resized, square-cropped and converted from JPEG to WebP for responsive web delivery; no generative or subject-altering edit is documented.",
+      "reuse": "Public-domain status applies to the underlying photograph, not to surrounding BHOC content or design.",
+      "localFiles": [
+        {
+          "path": "assets/initiative/challenge-sumatran-tiger-usfws.webp",
+          "sha256": "082899f5dc0741b0645917b4f86f12c7cba76035001101d13fe235a2899b1199",
+          "introducedOn": "2026-09-09"
+        }
+      ]
+    },
+    {
+      "id": "hawksbill-turtle",
+      "title": "FGBNMS – Hawksbill Turtle",
+      "subject": "Hawksbill sea turtle above a coral reef",
+      "creator": "GP Schmahl / NOAA, Flower Garden Banks National Marine Sanctuary",
+      "source": "https://commons.wikimedia.org/wiki/File:FGBNMS_-_Hawksbill_Turtle_(27618418831).jpg",
+      "sourceLabel": "Wikimedia Commons source record",
+      "originalDate": "2012-06-29",
+      "license": "Public domain; NOAA employee work",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "sourceStatus": "The Commons record identifies NOAA material created as part of official duties and confirms Public Domain Mark status.",
+      "verifiedOn": "2026-09-09",
+      "usedIn": ["Initiative hero", "Field & Remote Medicine focus card"],
+      "reason": "Represents marine biodiversity, threatened species and remote veterinary care.",
+      "modifications": "Resized, cropped to the displayed aspect ratios and converted from JPEG to WebP for responsive web delivery; no generative or subject-altering edit is documented.",
+      "reuse": "Public-domain status applies to the underlying photograph, not to surrounding BHOC content or design.",
+      "localFiles": [
+        {
+          "path": "assets/initiative/challenge-hawksbill-turtle-noaa.webp",
+          "sha256": "f2327f1a1b9df243c804a90a935e31e1743deab92d94261fe8cd589a2a4917b0",
+          "introducedOn": "2026-09-09"
+        },
+        {
+          "path": "assets/initiative/focus-science-photo.webp",
+          "sha256": "2099ceeca81ae1eac6448a7c843d0be4fbbac18690e1abd73e48b1f8cef23147",
+          "introducedOn": "2026-09-08"
+        }
+      ]
+    },
+    {
+      "id": "rescued-elephant-calves",
+      "title": "Baby elephants at David Sheldrick Wildlife Trust",
+      "subject": "Orphaned African elephant calves during rescue and rehabilitation",
+      "creator": "Andrea Hanks / The White House",
+      "source": "https://commons.wikimedia.org/wiki/File:Baby_elephants_at_David_Sheldrick_Wildlife_Trust_2.jpg",
+      "sourceLabel": "Wikimedia Commons source record",
+      "originalDate": "2018-10-05",
+      "license": "Public domain; U.S. federal government work; Public Domain Mark 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "sourceStatus": "The Commons record identifies an official White House photograph and confirms Public Domain Mark status.",
+      "verifiedOn": "2026-09-09",
+      "usedIn": ["Wildlife Rescue focus card"],
+      "reason": "Represents emergency rescue, rehabilitation and veterinary support for wildlife.",
+      "modifications": "Resized, cropped to a 4:3 display frame and converted from JPEG to WebP for responsive web delivery; no generative or subject-altering edit is documented.",
+      "reuse": "Public-domain status applies to the underlying photograph, not to surrounding BHOC content or design.",
+      "localFiles": [
+        {
+          "path": "assets/initiative/focus-wildlife-rescue-photo.webp",
+          "sha256": "1a8f1b8d881a0be2cb3ee7197312bf5558b1bebf50ed3866906179af1ab826b4",
+          "introducedOn": "2026-09-08"
+        }
+      ]
+    },
+    {
+      "id": "giraffe",
+      "title": "Giraffe in an African savanna",
+      "subject": "Giraffe representing zoo and conservation-centre collaboration",
+      "creator": "Public-domain source via Rawpixel / free-images.com",
+      "source": "https://www.rawpixel.com/image/6060950/free-public-domain-cc0-photo",
+      "sourceLabel": "Rawpixel source record",
+      "originalDate": "Not stated",
+      "license": "Public domain / CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "sourceStatus": "Rawpixel labels the image Public Domain and free for personal and business use, with a CC0 licence link.",
+      "verifiedOn": "2026-09-09",
+      "usedIn": ["Zoos & Conservation Centers focus card"],
+      "reason": "Represents conservation-centre and zoological-institution collaboration.",
+      "modifications": "Resized, cropped to a 4:3 display frame and converted to WebP for responsive web delivery; no generative or subject-altering edit is documented.",
+      "reuse": "The source identifies the underlying photograph as public domain / CC0. That status does not extend to surrounding BHOC content or design.",
+      "localFiles": [
+        {
+          "path": "assets/initiative/focus-giraffe-public-domain.webp",
+          "sha256": "322a9400e5ef328a6b1645678c3793ce1b299a4447d25386c9e95c54a40effb2",
+          "introducedOn": "2026-09-09"
+        }
+      ]
+    },
+    {
+      "id": "toucan",
+      "title": "Toucan bird, animal photography",
+      "subject": "Keel-billed toucan representing comparative biology",
+      "creator": "Public-domain source via Rawpixel / free-images.com",
+      "source": "https://www.rawpixel.com/image/6017074/photo-image-public-domain-nature-tropical",
+      "sourceLabel": "Rawpixel source record",
+      "originalDate": "Not stated",
+      "license": "Public domain / CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "sourceStatus": "Rawpixel labels the image Public Domain and free for personal and business use, with a CC0 licence link.",
+      "verifiedOn": "2026-09-09",
+      "usedIn": ["Comparative Biology focus card"],
+      "reason": "Represents cross-species comparative biology beyond mammalian examples.",
+      "modifications": "Resized, cropped to a 4:3 display frame and converted to WebP for responsive web delivery; no generative or subject-altering edit is documented.",
+      "reuse": "The source identifies the underlying photograph as public domain / CC0. That status does not extend to surrounding BHOC content or design.",
+      "localFiles": [
+        {
+          "path": "assets/initiative/focus-toucan-public-domain.webp",
+          "sha256": "67bcf0355927906359c453ea8f54d96b617e6d088fa33019f13e1e93876d74e8",
+          "introducedOn": "2026-09-09"
+        }
+      ]
+    },
+    {
+      "id": "open-book",
+      "title": "Open book",
+      "subject": "Open scientific book representing evidence and research",
+      "creator": "Public-domain source via Rawpixel / PxHere",
+      "source": "https://www.rawpixel.com/image/5922583/free-open-book-photo-public-domain-cc0-image",
+      "sourceLabel": "Rawpixel source record",
+      "originalDate": "Not stated",
+      "license": "Public domain / CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "sourceStatus": "Rawpixel labels the image Public Domain and free for personal and business use, with a CC0 licence link.",
+      "verifiedOn": "2026-09-09",
+      "usedIn": ["Evidence & Research focus card"],
+      "reason": "Represents source-linked evidence, literature and veterinary research.",
+      "modifications": "Resized, cropped to a 4:3 display frame and converted to WebP for responsive web delivery; no generative or subject-altering edit is documented.",
+      "reuse": "The source identifies the underlying photograph as public domain / CC0. That status does not extend to surrounding BHOC content or design.",
+      "localFiles": [
+        {
+          "path": "assets/initiative/focus-open-book-public-domain.webp",
+          "sha256": "cce96006c3a7423534d83671a432b5bc4573c5e1f657064b084c3aae070485c9",
+          "introducedOn": "2026-09-09"
+        }
+      ]
+    },
+    {
+      "id": "mountain-landscape",
+      "title": "Mountain lake landscape",
+      "subject": "Protected landscape representing philanthropy and conservation partnerships",
+      "creator": "Public-domain source via Rawpixel / free-images.com",
+      "source": "https://www.rawpixel.com/image/6034042/photo-image-public-domain-tree-plant",
+      "sourceLabel": "Rawpixel source record",
+      "originalDate": "Not stated",
+      "license": "Public domain / CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "sourceStatus": "Rawpixel labels the image Public Domain and free for personal and business use, with a CC0 licence link.",
+      "verifiedOn": "2026-09-09",
+      "usedIn": ["Philanthropy & Partnerships focus card"],
+      "reason": "Represents protected habitats and the scale of conservation partnerships.",
+      "modifications": "Resized, cropped to a 4:3 display frame and converted to WebP for responsive web delivery; no generative or subject-altering edit is documented.",
+      "reuse": "The source identifies the underlying photograph as public domain / CC0. That status does not extend to surrounding BHOC content or design.",
+      "localFiles": [
+        {
+          "path": "assets/initiative/focus-mountain-landscape-public-domain.webp",
+          "sha256": "0086e82f8523218cfd5855fa9b1de9707bda3a09e1c01d670fbfd7adc3a80517",
+          "introducedOn": "2026-09-09"
+        }
+      ]
+    },
+    {
+      "id": "gray-wolf",
+      "title": "Gray wolf",
+      "subject": "Gray wolf representing cross-species veterinary science",
+      "creator": "Gary Kramer / U.S. Fish and Wildlife Service",
+      "source": "https://www.flickr.com/photos/usfwshq/5584759091/",
+      "sourceLabel": "U.S. Fish and Wildlife Service Flickr source record",
+      "originalDate": "2011-04-03",
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "sourceStatus": "The USFWS Flickr record credits Gary Kramer, identifies the capture date and labels the photograph Public domain.",
+      "verifiedOn": "2026-09-09",
+      "usedIn": ["Science Bridge"],
+      "reason": "Connects oxygen-delivery science with wildlife and cross-species veterinary care.",
+      "modifications": "Resized, cropped to a 4:3 display frame and converted to WebP for responsive web delivery; no generative or subject-altering edit is documented.",
+      "reuse": "Public-domain status applies to the underlying photograph, not to surrounding BHOC content or design.",
+      "localFiles": [
+        {
+          "path": "assets/initiative/science-gray-wolf-usfws.webp",
+          "sha256": "09777a6c3af9c3f53cf1d2eb8165f419accfceea7de5257eb15a04123d82ec5b",
+          "introducedOn": "2026-09-09"
+        }
+      ]
+    }
+  ],
+  "projectAssets": [
+    {
+      "id": "bhoc-rbc-comparison",
+      "title": "BHOC versus RBC size comparison",
+      "provider": "Archil Jaliashvili, BHOC project lead",
+      "providedOn": "2026-09-09",
+      "rightsStatus": "Project-supplied scientific concept visual; not offered under an open third-party licence.",
+      "reason": "Explains the relative scale of a red blood cell and the BHOC concept in the Science Bridge.",
+      "modifications": "Optimized and converted to WebP without changing the supplied composition.",
+      "localFiles": [
+        {
+          "path": "assets/initiative/bhoc-vs-rbc-400x-comparison.webp",
+          "sha256": "c985e53d4f89c88e6bcadda08efd709658006dff435eb7ef11fc4eb05efbf44a",
+          "introducedOn": "2026-09-09"
+        }
+      ]
+    },
+    {
+      "id": "initiative-mark",
+      "title": "BHOC Species & Biodiversity Protection Initiative mark",
+      "provider": "Archil Jaliashvili, BHOC project lead",
+      "providedOn": "2026-09-06",
+      "rightsStatus": "Canonical project brand asset; all rights reserved; not offered under an open third-party licence.",
+      "reason": "Provides the approved visual identity of the Initiative in the header, footer, favicon and structured data.",
+      "modifications": "Stored as the approved WebP asset; no visual redesign is documented in this publication.",
+      "localFiles": [
+        {
+          "path": "assets/reference-initiative-mark.webp",
+          "sha256": "80f9a9f0737bfe921bd5610541bd00847cead8d3b12698340c41be2758b6f325",
+          "introducedOn": "2026-09-06"
+        }
+      ]
+    }
+  ]
+}

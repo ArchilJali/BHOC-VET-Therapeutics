@@ -13,51 +13,60 @@
     "tagline": "One Oxygen. One Biology. One BHOC System.",
     "promise": "For Every Species. Wherever Life Is at Risk."
   },
-  "navigation": [
+  "groups": [
     {
-      "label": "Mission",
-      "href": "#mission"
+      "title": "Initiative",
+      "links": [
+        {"label": "Our Mission", "href": "#mission"},
+        {"label": "Focus Areas", "href": "#focus"},
+        {"label": "Science Bridge", "href": "#science"}
+      ]
     },
     {
-      "label": "Science",
-      "href": "#science"
+      "title": "Conservation",
+      "links": [
+        {"label": "IUCN Red List", "href": "https://www.iucnredlist.org/"},
+        {"label": "Catalogue of Life", "href": "https://www.catalogueoflife.org/"},
+        {"label": "Species+", "href": "https://speciesplus.net/"}
+      ]
     },
     {
-      "label": "Focus Areas",
-      "href": "#focus"
+      "title": "BHOC Network",
+      "links": [
+        {"label": "BHOC Veterinary", "href": "../index.html"},
+        {"label": "BHOC Therapeutics", "href": "https://bhoctherapeutics.com/"},
+        {"label": "VET Evidence Library", "href": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-index.html"}
+      ]
     },
     {
-      "label": "Partners",
-      "href": "mailto:info@bhoctherapeutics.com?subject=BHOC%20Initiative%20Partnership"
-    },
-    {
-      "label": "News",
-      "href": "../news.html"
-    }
-  ],
-  "ecosystemLinks": [
-    {
-      "label": "BHOC Therapeutics",
-      "href": "https://bhoctherapeutics.com/"
-    },
-    {
-      "label": "BHOC Veterinary",
-      "href": "../index.html"
-    },
-    {
-      "label": "BHOC Scientific Platform",
-      "href": "https://archiljali.github.io/BHOC-platform/"
+      "title": "Connect",
+      "links": [
+        {"label": "News & Intelligence", "href": "../news.html"},
+        {"label": "Evidence Directory", "href": "../evidence.html"},
+        {"label": "Contact", "href": "mailto:info@bhoctherapeutics.com"},
+        {"label": "LinkedIn", "href": "https://www.linkedin.com/company/bhoc-therapeutics/"}
+      ]
     }
   ],
   "action": {
     "label": "Partner with the Initiative",
     "href": "mailto:info@bhoctherapeutics.com?subject=BHOC%20Species%20and%20Biodiversity%20Protection%20Initiative"
   },
-  "copyright": "© 2026 BHOC Species & Biodiversity Protection Initiative. All rights reserved.",
+  "actionLead": "Science, veterinary medicine and conservation working in one direction.",
   "projectLead": "Project lead: BHOC Team",
-  "social": {
-    "label": "LinkedIn",
-    "href": "https://www.linkedin.com/company/bhoc-therapeutics/",
-    "ariaLabel": "BHOC Therapeutics on LinkedIn"
+  "publication": {
+    "firstPublished": "2026-09-09",
+    "lastUpdated": "2026-09-09",
+    "version": "26.09.09"
+  },
+  "legal": {
+    "title": "Protected content notice",
+    "copyright": "© 2026 BHOC Species & Biodiversity Protection Initiative. All rights reserved.",
+    "text": "Original text, visual design, graphics, scientific materials, code and BHOC branding on this website may not be copied, scraped, reproduced, adapted, redistributed or republished, in whole or in part, without prior written permission.",
+    "licenseNote": "Third-party image terms are preserved in a separate source and licence register.",
+    "provenanceLabel": "Image rights & provenance",
+    "provenanceHref": "image-rights.html",
+    "permissionLabel": "Request permission",
+    "permissionHref": "mailto:info@bhoctherapeutics.com?subject=BHOC%20Initiative%20Content%20Permission"
   }
 }

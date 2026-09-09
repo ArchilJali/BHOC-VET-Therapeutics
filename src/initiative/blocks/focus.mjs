@@ -3,8 +3,6 @@ import {esc,initiativeImage,lines,linkAttrs} from '../lib.mjs';
 export default function renderFocus(data){
   const intro=data.intro?'<p>'+esc(data.intro)+'</p>':'';
   const cards=data.cards.map(card=>{
-    const credit=card.credit?
-      '<small class="photo-credit">Photo: <a '+linkAttrs(card.credit)+'>'+esc(card.credit.label)+'</a><span aria-hidden="true"> · </span><a '+linkAttrs({href:card.credit.licenseHref})+'>'+esc(card.credit.license)+'</a></small>':'';
     return '<article class="focus-card">'+
       '<a class="focus-card-main" '+linkAttrs(card)+'>'+
         initiativeImage(card.image)+
@@ -12,7 +10,7 @@ export default function renderFocus(data){
           '<h3>'+lines(card.titleLines)+'</h3>'+
           '<p>'+esc(card.text)+'</p>'+
         '</span>'+
-      '</a>'+credit+
+      '</a>'+
     '</article>';
   }).join('');
   return '<section class="focus compact-section" id="'+esc(data.id)+'" data-block="focus" aria-labelledby="focus-title">'+

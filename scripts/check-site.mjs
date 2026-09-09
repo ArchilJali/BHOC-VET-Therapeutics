@@ -104,6 +104,8 @@ for(const [name,html] of htmlByPage){
 
 const initiativeHomePath=path.join(out,'initiative','index.html');
 const initiativeHome=await fs.readFile(initiativeHomePath,'utf8');
+const initiativeRightsPath=path.join(out,'initiative','image-rights.html');
+const initiativeRights=await fs.readFile(initiativeRightsPath,'utf8');
 const initiativeCSS=await fs.readFile(path.join(out,'initiative','styles.css'),'utf8');
 const initiativeJS=await fs.readFile(path.join(out,'initiative','app.js'),'utf8');
 assert.equal((initiativeHome.match(/<h1\b/g)||[]).length,1,'initiative/index.html: exactly one H1');
@@ -126,10 +128,16 @@ assert.equal(initiativeOrganization.logo.width,318,'initiative logo schema prese
 assert.equal(initiativeOrganization.logo.height,317,'initiative logo schema preserves source height');
 assert.equal(initiativeWebPage.publisher['@id'],'https://bhocvet.com/initiative/#initiative','initiative page schema identifies its publisher');
 assert.equal(initiativeWebPage.inLanguage,'en','initiative page schema identifies its language');
+assert.deepEqual(initiativeWebPage.significantLink,[
+  'https://bhocvet.com/',
+  'https://bhoctherapeutics.com/',
+  'https://archiljali.github.io/BHOC-platform/veterinary/Vet-index.html'
+],'initiative page schema identifies the three primary BHOC visitor routes');
 const initiativeHeaderHTML=initiativeHome.match(/<header class="site-header"[\s\S]*?<\/header>/)?.[0]||'';
 assert.equal((initiativeHeaderHTML.match(/<img\b/g)||[]).length,1,'initiative header uses one canonical logo');
 assert.match(initiativeHeaderHTML,/class="initiative-brand-copy">[\s\S]*<strong>BHOC Species &amp; Biodiversity<br>Protection Initiative<\/strong>/,'initiative header retains the canonical BHOC Initiative identity');
-assert.match(initiativeHeaderHTML,/href="\.\.\/index\.html">Home<\/a>/,'initiative navigation includes a visible BHOC Veterinary return link');
+assert.match(initiativeHeaderHTML,/class="initiative-return-link" href="\.\.\/index\.html" aria-label="Return to the BHOC Veterinary website">[\s\S]*Back to BHOC Veterinary<\/a>/,'initiative header includes an explicit BHOC Veterinary return bar');
+assert.doesNotMatch(initiativeHeaderHTML,/href="\.\.\/index\.html">Home<\/a>/,'initiative navigation does not duplicate the return link');
 assert.match(initiativeHeaderHTML,/class="header-action"[^>]*>Support the Initiative/,'initiative header retains the support action');
 assert.equal((initiativeHome.match(/class="hero-photo hero-photo-/g)||[]).length,6,'hero uses six independently editable real photographs');
 assert.equal((initiativeHome.match(/class="hero-dot/g)||[]).length,3,'hero renders three requested slide controls');
@@ -141,9 +149,12 @@ assert.doesNotMatch(initiativeHome,/hero-red-list-pencil/,'initiative hero no lo
 assert.doesNotMatch(initiativeHome,/data-block="oxygen-platform"/,'removed Initiative oxygen cascade stays absent');
 assert.doesNotMatch(initiativeHome,/class="evidence-boundary"/,'removed Initiative evidence boundary stays absent');
 assert.doesNotMatch(initiativeHome,/microcirculation\.webp/,'initiative no longer renders the low-resolution microcirculation banner');
+assert.doesNotMatch(initiativeHome,/class="hero-credits"/,'photo credits are not overlaid on the Initiative hero');
+assert.doesNotMatch(initiativeHome,/class="photo-credit"/,'photo credits are not overlaid on Initiative focus cards');
+assert.doesNotMatch(initiativeHome,/<figcaption>Photo:/,'photo credits are not overlaid on mission or science photographs');
 const initiativeFocusHTML=initiativeHome.match(/<section class="focus[\s\S]*?<\/section>/)?.[0]||'';
 assert.equal((initiativeFocusHTML.match(/class="focus-card"/g)||[]).length,7,'initiative/index.html: seven independently editable focus cards');
-assert.equal((initiativeFocusHTML.match(/class="photo-credit"/g)||[]).length,7,'initiative/index.html: every sourced wildlife photograph has a visible credit');
+assert.equal((initiativeFocusHTML.match(/class="photo-credit"/g)||[]).length,0,'initiative/index.html: legal credits stay out of the visual card composition');
 assert.equal((initiativeFocusHTML.match(/src="\.\.\/assets\/initiative\/focus-[a-z-]+\.webp"/g)||[]).length,7,'initiative/index.html: seven local optimized photographs');
 assert.match(initiativeHome,/alt="Hawksbill sea turtle in a remote marine conservation setting"/);
 assert.match(initiativeHome,/src="\.\.\/assets\/initiative\/science-gray-wolf-usfws\.webp"/);
@@ -152,6 +163,12 @@ assert.match(initiativeHome,/alt="Concept illustration comparing a red blood cel
 assert.doesNotMatch(initiativeHome,/src="\.\.\/assets\/initiative\/bhoc-carrier-concept\.webp"/);
 assert.match(initiativeHome,/Compatible with all blood types for all species\./);
 assert.match(initiativeHome,/3\+ year shelf life at room temperature\./);
+assert.match(initiativeHome,/A world worth protecting[\s\S]*class="stats-quotation"[\s\S]*We be of one blood, ye and I\.[\s\S]*Rudyard Kipling[\s\S]*The Jungle Book/,'Kipling quotation appears directly beneath the world-worth-protecting heading');
+assert.equal((initiativeHome.match(/class="science-related-links"/g)||[]).length,1,'science bridge renders one related-links directory');
+assert.equal((initiativeHome.match(/class="science-related-links"[\s\S]*?<\/nav>/)?.[0].match(/<a\b/g)||[]).length,3,'science bridge renders three primary BHOC routes');
+assert.match(initiativeHome,/class="science-related-links"[\s\S]*href="\.\.\/index\.html"[\s\S]*BHOC Veterinary/);
+assert.match(initiativeHome,/class="science-related-links"[\s\S]*href="https:\/\/bhoctherapeutics\.com\/"[\s\S]*BHOC Therapeutics/);
+assert.match(initiativeHome,/class="science-related-links"[\s\S]*href="https:\/\/archiljali\.github\.io\/BHOC-platform\/veterinary\/Vet-index\.html"[\s\S]*VET Evidence Library/);
 assert.match(initiativeCSS,/\.focus-grid\s*\{[^}]*grid-template-columns:\s*repeat\(7,/s,'initiative desktop focus grid follows the seven-card reference');
 assert.match(initiativeCSS,/--emerald:\s*#16a05d;/,'initiative palette includes one vivid conservation accent');
 assert.match(initiativeCSS,/--oxygen:\s*#1cb5ab;/,'initiative palette reserves teal for oxygen science');
@@ -160,7 +177,15 @@ assert.match(initiativeHome,/A world worth protecting/);
 assert.match(initiativeHome,/Endangered Species\.<br>Real Solutions\./);
 assert.match(initiativeHome,/Every species is different\.<br>The need for oxygen is universal\./);
 assert.equal((initiativeHome.match(/class="science-claim-graphic"/g)||[]).length,1,'science bridge renders the complete supplied BHOC versus RBC comparison once');
-assert.match(initiativeHome,/href="\.\.\/news\.html">News<\/a>/);
+const initiativeFooterHTML=initiativeHome.match(/<footer class="site-footer">[\s\S]*?<\/footer>/)?.[0]||'';
+assert.equal((initiativeFooterHTML.match(/class="footer-group"/g)||[]).length,4,'initiative footer has four dedicated navigation groups');
+for(const heading of ['Initiative','Conservation','BHOC Network','Connect'])assert.match(initiativeFooterHTML,new RegExp('<h2>'+heading.replace('&','&amp;')+'<\\/h2>'),'initiative footer group '+heading);
+assert.match(initiativeFooterHTML,/class="shell protected-content"[^>]*>[\s\S]*Protected content notice/,'initiative footer includes the requested rights warning');
+assert.match(initiativeFooterHTML,/may not be copied, scraped, reproduced, adapted, redistributed or republished/,'initiative footer states the protected-content restrictions');
+assert.match(initiativeFooterHTML,/Third-party image terms are preserved in a separate source and licence register/,'initiative footer preserves third-party licensing accuracy');
+assert.match(initiativeFooterHTML,/href="image-rights\.html">Image rights &amp; provenance<\/a>/,'initiative footer links to the separate image-rights register');
+assert.match(initiativeFooterHTML,/First published <time datetime="2026-09-09">09 Sep 2026<\/time>.*Last updated <time datetime="2026-09-09">09 Sep 2026<\/time>.*Version 26\.09\.09/,'initiative footer carries its publication history');
+assert.match(initiativeHome,/href="\.\.\/news\.html">News &amp; Intelligence<\/a>/);
 assert.match(initiativeHome,/href="\.\.\/applications\.html"/);
 assert.match(initiativeHome,/href="\.\.\/index\.html">BHOC Veterinary<\/a>/);
 assert.doesNotMatch(initiativeHome,/bhoc-species-initiative\.archil-jali\.chatgpt\.site/);
@@ -184,6 +209,40 @@ for(const match of initiativeHome.matchAll(/<img\b[^>]*>/g)){
   assert.match(match[0],/\balt="/,'initiative/index.html: image needs ALT');
   assert.match(match[0],/\bwidth="\d+"/,'initiative/index.html: image needs width');
   assert.match(match[0],/\bheight="\d+"/,'initiative/index.html: image needs height');
+}
+
+assert.equal((initiativeRights.match(/<h1\b/g)||[]).length,1,'initiative/image-rights.html: exactly one H1');
+assert.match(initiativeRights,/<meta name="robots" content="noindex,follow">/,'image-rights register is excluded from search indexing');
+assert.match(initiativeRights,/rel="canonical" href="https:\/\/bhocvet\.com\/initiative\/image-rights\.html"/,'image-rights register has a stable canonical URL');
+assert.match(initiativeRights,/Individual photo credits are kept off the main Initiative composition/,'image-rights register explains the display policy');
+assert.match(initiativeRights,/No photographer, source platform or public agency is represented as endorsing BHOC/,'image-rights register states the endorsement boundary');
+assert.equal((initiativeRights.match(/class="rights-record(?: |")/g)||[]).length,14,'image-rights register renders twelve photo records and two project-asset records');
+assert.equal((initiativeRights.match(/class="rights-technical"/g)||[]).length,14,'every image-rights record includes local-file verification');
+assert.match(initiativeRights,/Daphne Carlson Bremer \/ U\.S\. Fish and Wildlife Service/);
+assert.match(initiativeRights,/Eric Kilby/);
+assert.match(initiativeRights,/AfricanConservation \/ Working with Wildlife/);
+assert.match(initiativeRights,/Fernando Revilla/);
+assert.match(initiativeRights,/Joe Milmoe \/ U\.S\. Fish and Wildlife Service/);
+assert.match(initiativeRights,/GP Schmahl \/ NOAA/);
+assert.match(initiativeRights,/Gary Kramer \/ U\.S\. Fish and Wildlife Service/);
+assert.match(initiativeRights,/CC BY-SA 2\.0/);
+assert.match(initiativeRights,/CC BY-SA 4\.0/);
+assert.match(initiativeRights,/CC BY-SA 2\.5/);
+assert.match(initiativeRights,/Public domain \/ CC0/);
+assert.match(initiativeRights,/href="\.\/">← Return to the Initiative<\/a>/);
+const initiativeRightsMain=initiativeRights.match(/<main class="rights-page"[\s\S]*?<\/main>/)?.[0]||'';
+assert.doesNotMatch(initiativeRightsMain,/<img\b/,'the legal register records provenance without redisplaying photographs');
+for(const match of initiativeRights.matchAll(/<(?:img|script|link)\b[^>]*(?:src|href)="([^"]+)"/g)){
+  const ref=match[1];
+  if(/^(?:https:|mailto:|#)/.test(ref))continue;
+  await fs.access(path.resolve(path.dirname(initiativeRightsPath),ref.split(/[?#]/)[0]));
+}
+for(const match of initiativeRights.matchAll(/<a\b[^>]*href="([^"]+)"/g)){
+  const ref=match[1];
+  if(/^(?:https:|mailto:|#)/.test(ref))continue;
+  const clean=ref.split(/[?#]/)[0];
+  const target=clean.endsWith('/')?path.join(clean,'index.html'):clean;
+  await fs.access(path.resolve(path.dirname(initiativeRightsPath),target));
 }
 
 const home=htmlByPage.get('index.html');
@@ -310,6 +369,28 @@ for(const card of initiativeFocus.data.cards){
   assert.ok(card.image.alt.trim(),'Initiative Focus image has descriptive ALT');
   assert.ok(card.credit?.label&&card.credit?.href&&card.credit?.license&&card.credit?.licenseHref,'Initiative Focus photograph keeps source and license data');
 }
+const initiativeProvenance=JSON.parse(await fs.readFile(path.join(root,'content/initiative/image-provenance.json'),'utf8'));
+assert.equal(initiativeProvenance.records.length,12,'Initiative provenance keeps twelve third-party source records');
+assert.equal(initiativeProvenance.projectAssets.length,2,'Initiative provenance keeps two project-asset records');
+const provenanceRecords=[...initiativeProvenance.records,...initiativeProvenance.projectAssets];
+assert.equal(new Set(provenanceRecords.map(record=>record.id)).size,provenanceRecords.length,'Initiative provenance record IDs are unique');
+for(const record of initiativeProvenance.records){
+  assert.ok(record.creator&&record.source&&record.license&&record.licenseUrl,'Third-party image record keeps creator, source and licence');
+  assert.match(record.verifiedOn,/^\d{4}-\d{2}-\d{2}$/,'Third-party image record keeps its verification date');
+  assert.ok(record.reason&&record.modifications&&record.reuse,'Third-party image record keeps purpose, processing and reuse boundary');
+}
+const registeredAssets=new Set(provenanceRecords.flatMap(record=>record.localFiles.map(file=>file.path)));
+const displayedInitiativeAssets=new Set([
+  ...renderedInitiative.flatMap(item=>{
+    if(item.block.type==='hero')return item.data.slides.flatMap(slide=>slide.images.map(image=>image.src));
+    if(item.block.type==='mission-panel')return [item.data.image.src];
+    if(item.block.type==='focus')return item.data.cards.map(card=>card.image.src);
+    if(item.block.type==='science-bridge')return [item.data.image.src,item.data.comparisonGraphic.src];
+    return [];
+  }),
+  JSON.parse(await fs.readFile(path.join(root,'content/initiative/header.json'),'utf8')).brand.image.src
+]);
+for(const asset of displayedInitiativeAssets)assert.ok(registeredAssets.has(asset),'Displayed Initiative asset has provenance: '+asset);
 const initiativeTarget=renderedInitiative.find(item=>item.block.type==='mission-panel');
 assert.ok(initiativeTarget,'Initiative mission panel is independently editable');
 const initiativeEdit=structuredClone(initiativeTarget.data);
