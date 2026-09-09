@@ -208,7 +208,7 @@ const dialogNames=(await fs.readdir(path.join(root,'content/dialogs'))).filter(n
 const dialogHTML=await Promise.all(dialogNames.map(name=>read('content/dialogs/'+name)));
 const extras=`<dialog id="species-dialog" aria-labelledby="species-detail-heading"><button class="dialog-close" aria-label="Close species details">×</button><span class="eyebrow">${esc(labels.speciesEyebrow)}</span><div id="species-detail"></div></dialog><dialog id="all-species-dialog" aria-labelledby="all-species-heading"><button class="dialog-close" aria-label="Close all species">×</button><span id="all-species" class="eyebrow">Explore species</span><h2 id="all-species-heading">${esc(labels.allSpeciesTitle)}</h2><p>${esc(labels.allSpeciesIntro)}</p><div class="all-species-grid"></div><p class="small-copy">${esc(labels.allSpeciesNote)}</p></dialog><dialog id="search-dialog" aria-labelledby="search-heading"><button class="dialog-close" aria-label="Close search">×</button><h2 id="search-heading">${esc(labels.searchHeading)}</h2><label for="site-search">${esc(labels.searchLabel)}</label><input id="site-search" type="search" placeholder="${esc(labels.searchPlaceholder)}" autocomplete="off"><p class="sr-only" id="search-status" aria-live="polite"></p><div id="search-results"></div></dialog>`;
 const visibleSearchText=value=>JSON.stringify(value,function(key,item){
-  if(key==='seo')return undefined;
+  if(key==='seo'||key==='brandMark')return undefined;
   return item;
 });
 

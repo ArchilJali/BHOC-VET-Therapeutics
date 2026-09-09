@@ -163,7 +163,7 @@ assert.match(initiativeHome,/alt="Concept illustration comparing a red blood cel
 assert.doesNotMatch(initiativeHome,/src="\.\.\/assets\/initiative\/bhoc-carrier-concept\.webp"/);
 assert.match(initiativeHome,/Compatible with all blood types for all species\./);
 assert.match(initiativeHome,/3\+ year shelf life at room temperature\./);
-assert.match(initiativeHome,/A world worth protecting[\s\S]*class="stats-quotation"[\s\S]*We be of one blood, ye and I\.[\s\S]*Rudyard Kipling[\s\S]*The Jungle Book/,'Kipling quotation appears directly beneath the world-worth-protecting heading');
+assert.match(initiativeHome,/class="stats-heading-row"[\s\S]*A world worth protecting[\s\S]*class="stats-heading-mark"[\s\S]*reference-initiative-mark\.webp[\s\S]*class="stats-quotation"[\s\S]*We be of one blood, ye and I\.[\s\S]*Rudyard Kipling[\s\S]*The Jungle Book/,'statistics heading pairs the canonical mark with the centered Kipling quotation below');
 assert.equal((initiativeHome.match(/class="science-related-links"/g)||[]).length,1,'science bridge renders one related-links directory');
 assert.equal((initiativeHome.match(/class="science-related-links"[\s\S]*?<\/nav>/)?.[0].match(/<a\b/g)||[]).length,3,'science bridge renders three primary BHOC routes');
 assert.match(initiativeHome,/class="science-related-links"[\s\S]*href="\.\.\/index\.html"[\s\S]*BHOC Veterinary/);
