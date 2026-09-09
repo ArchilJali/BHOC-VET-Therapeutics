@@ -97,7 +97,7 @@ for(const [name,html] of htmlByPage){
   const footerHrefs=[...footer.matchAll(/href="([^"]+)"/g)].map(match=>match[1]);
   assert.equal(new Set(footerHrefs).size,footerHrefs.length,`${name}: footer destinations are not duplicated`);
   assert.match(footer,/Project lead: <strong>BHOC Team<\/strong>\./,`${name}: team footer attribution`);
-  assert.match(footer,/First published <time datetime="2026-09-07">07 Sep 2026<\/time>.*16 updates.*Last updated <time datetime="2026-09-09">09 Sep 2026<\/time>.*Version 26\.09\.09/,`${name}: publication history`);
+  assert.match(footer,/First published <time datetime="2026-09-07">07 Sep 2026<\/time>.*17 updates.*Last updated <time datetime="2026-09-09">09 Sep 2026<\/time>.*Version 26\.09\.09/,`${name}: publication history`);
   assert.match(footer,/href="\.\/initiative\/">BHOC Initiative<\/a>/,`${name}: full Initiative route`);
   assert.match(footer,/href="initiative\.html">Initiative overview<\/a>/,`${name}: legacy Initiative overview remains linked`);
 }
@@ -177,18 +177,22 @@ assert.match(home,/class="wordmark-expansion">Biological Hemoglobin Oxygen Carri
 
 const primaryNav=home.match(/<nav id="primary-nav"[\s\S]*?<\/nav>/)?.[0]||'';
 const navItems=[...primaryNav.matchAll(/href="([^"]+)">([^<]+)<\/a>/g)].map(match=>[match[1],match[2]]);
-assert.deepEqual(navItems,[
+assert.match(primaryNav,/^<nav[^>]*><a class="nav-initiative-entry" href="\.\/initiative\/">[\s\S]*<span>Species &amp; Biodiversity Protection<\/span><\/a>/,`Species and Biodiversity Protection is the first, distinct navigation entry`);
+assert.equal((primaryNav.match(/class="nav-initiative-logo"/g)||[]).length,1,`Primary navigation uses one Initiative logo`);
+for(const [href,label] of [
   ['product.html','Product'],
   ['applications.html','Application'],
   ['evidence.html','Evidence'],
   ['science.html','Science'],
-  ['./initiative/','Initiative'],
   ['related-information.html','Related Information'],
   ['news.html','News']
-],`Primary navigation order and labels`);
+])assert.match(primaryNav,new RegExp(`href="${href.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')}"[^>]*>${label}<\\/a>`),`Primary navigation keeps ${label}`);
 
 assert.match(home,/<h1 id="home-heading">Precision Oxygen Therapeutics<\/h1>/);
 assert.equal((home.match(/class="hero-hotspot" href="\.\/initiative\/"[^>]*aria-label="Explore species"/g)||[]).length,2,`Winter and Ocean hero links open the BHOC Initiative`);
+assert.equal((home.match(/class="hero-initiative-brand hero-initiative-brand-/g)||[]).length,3,`Every hero slide uses the approved clickable Initiative logo`);
+assert.equal((home.match(/aria-label="Open BHOC Species &amp; Biodiversity Protection"/g)||[]).length,3,`Every hero logo opens the Initiative`);
+assert.match(home,/href="\.\/assets\/bhoc-species-biodiversity-logo\.webp"/);
 assert.match(home,/class="block-biodiversity"[\s\S]*?href="\.\/initiative\/"/);
 assert.match(home,/href="\.\/initiative\/#focus"[\s\S]*?Species preservation/);
 assert.match(home,/BH<span class="oxygen-initial">O<\/span>C/);
