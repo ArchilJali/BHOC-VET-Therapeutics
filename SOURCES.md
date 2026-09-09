@@ -1,10 +1,10 @@
 # BHOC Veterinary sources and provenance
 
-Current as of 8 September 2026. This file lists only sources used by the present website.
+Current as of 9 September 2026. This file lists only sources used by the present website.
 
 ## Current artwork
 
-- Homepage hero carousel: `assets/bhoc-initiative-land-hero.webp`, `assets/bhoc-initiative-winter-hero.webp` and `assets/bhoc-initiative-ocean-hero-v2.webp`.
+- Homepage hero carousel: `assets/bhoc-initiative-land-hero-v2.webp`, `assets/bhoc-initiative-winter-hero.webp` and `assets/bhoc-initiative-ocean-hero-v2.webp`. The Land v2 asset removes the obsolete baked-in indicator artwork so the shared live controls render once on every slide.
 - Open Graph and WhatsApp image: `assets/bhoc-initiative-land-social.jpg` (1200 × 463), a format-optimized copy of the approved Land hero without cropping.
 - Initiative hero: `assets/initiative/hero-red-list-pencil-v2.webp`.
 - Initiative Challenge photographs: the three `challenge-*-usfws.webp` / `challenge-*-noaa.webp` files named in `content/initiative/blocks/challenge.json`.

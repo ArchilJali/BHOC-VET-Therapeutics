@@ -1,6 +1,6 @@
 # Current BHOC Veterinary work state
 
-8 September 2026. This file records only the current implementation. Earlier experiments and authoring archives are intentionally excluded from the public repository.
+9 September 2026. This file records only the current implementation. Earlier experiments and authoring archives are intentionally excluded from the public repository.
 
 ## Identity and navigation
 
@@ -13,7 +13,7 @@
 
 ## Current visual authority
 
-- Current desktop/mobile hero carousel: `assets/bhoc-initiative-land-hero.webp`, `assets/bhoc-initiative-winter-hero.webp` and `assets/bhoc-initiative-ocean-hero-v2.webp`, in Land, Winter, Ocean order.
+- Current desktop/mobile hero carousel: `assets/bhoc-initiative-land-hero-v2.webp`, `assets/bhoc-initiative-winter-hero.webp` and `assets/bhoc-initiative-ocean-hero-v2.webp`, in Land, Winter, Ocean order. The Land artwork has no baked-in carousel indicators; all three slides use only the live accessible controls.
 - Current Open Graph and WhatsApp image: `assets/bhoc-initiative-land-social.jpg` (1200 × 463), an uncropped copy of the approved Land hero.
 - Initiative mark: `assets/reference-initiative-mark.webp`.
 - The same Initiative mark is used across the site; shared CSS masking prevents its square raster backing from showing against the cream/white layouts.
@@ -62,7 +62,7 @@ The full Initiative homepage now uses the same independent-block architecture as
 - Canonical URL, Open Graph, X/Twitter metadata, schema, descriptive ALT text and sitemap entries must remain intact.
 - The footer keeps LinkedIn and the full VET Evidence Platform as distinct destinations.
 
-Publication line: `First published 07 Sep 2026 · 15 updates · Last updated 08 Sep 2026 · Version 26.09.08`. Increment `publication.updates` only when the shared BHOC Veterinary pages are intentionally republished.
+Publication line: `First published 07 Sep 2026 · 16 updates · Last updated 09 Sep 2026 · Version 26.09.09`. Increment `publication.updates` only when the shared BHOC Veterinary pages are intentionally republished.
 
 ## Editing and verification
 

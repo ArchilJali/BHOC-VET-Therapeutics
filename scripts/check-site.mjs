@@ -97,7 +97,7 @@ for(const [name,html] of htmlByPage){
   const footerHrefs=[...footer.matchAll(/href="([^"]+)"/g)].map(match=>match[1]);
   assert.equal(new Set(footerHrefs).size,footerHrefs.length,`${name}: footer destinations are not duplicated`);
   assert.match(footer,/Project lead: <strong>BHOC Team<\/strong>\./,`${name}: team footer attribution`);
-  assert.match(footer,/First published <time datetime="2026-09-07">07 Sep 2026<\/time>.*15 updates.*Last updated <time datetime="2026-09-08">08 Sep 2026<\/time>.*Version 26\.09\.08/,`${name}: publication history`);
+  assert.match(footer,/First published <time datetime="2026-09-07">07 Sep 2026<\/time>.*16 updates.*Last updated <time datetime="2026-09-09">09 Sep 2026<\/time>.*Version 26\.09\.09/,`${name}: publication history`);
   assert.match(footer,/href="\.\/initiative\/">BHOC Initiative<\/a>/,`${name}: full Initiative route`);
   assert.match(footer,/href="initiative\.html">Initiative overview<\/a>/,`${name}: legacy Initiative overview remains linked`);
 }
@@ -163,8 +163,8 @@ for(const match of initiativeHome.matchAll(/<img\b[^>]*>/g)){
 }
 
 const home=htmlByPage.get('index.html');
-assert.match(home,/<link rel="preload" as="image" href="\.\/assets\/bhoc-initiative-land-hero\.webp" type="image\/webp" fetchpriority="high">/);
-assert.match(home,/<img src="\.\/assets\/bhoc-initiative-land-hero\.webp"[^>]*fetchpriority="high"/);
+assert.match(home,/<link rel="preload" as="image" href="\.\/assets\/bhoc-initiative-land-hero-v2\.webp" type="image\/webp" fetchpriority="high">/);
+assert.match(home,/<img src="\.\/assets\/bhoc-initiative-land-hero-v2\.webp"[^>]*fetchpriority="high"/);
 assert.equal((home.match(/data-hero-slide/g)||[]).length,3,`Three hero slides`);
 assert.match(home,/data-slide-label="Land"[\s\S]*data-slide-label="Winter"[\s\S]*data-slide-label="Ocean"/,`Hero order is Land, Winter, Ocean`);
 assert.match(home,/data-autoplay-ms="300000"/,`Hero rotates every five minutes`);
@@ -238,10 +238,10 @@ assert.match(redirect,/rel="canonical" href="https:\/\/bhocvet\.com\/evidence\.h
 const sitemap=await fs.readFile(path.join(out,'sitemap.xml'),'utf8');
 assert.match(sitemap,/bhoc-veterinary-organization-logo\.svg/,`Sitemap contains organization logo`);
 assert.match(sitemap,/bhoc-initiative-land-social\.jpg/,`Sitemap contains social image`);
-assert.match(sitemap,/bhoc-initiative-land-hero\.webp/,`Sitemap contains Land hero`);
+assert.match(sitemap,/bhoc-initiative-land-hero-v2\.webp/,`Sitemap contains Land hero`);
 assert.match(sitemap,/bhoc-initiative-winter-hero\.webp/,`Sitemap contains Winter hero`);
 assert.match(sitemap,/bhoc-initiative-ocean-hero-v2\.webp/,`Sitemap contains Ocean hero`);
-for(const heroAsset of ['bhoc-initiative-land-hero.webp','bhoc-initiative-winter-hero.webp','bhoc-initiative-ocean-hero-v2.webp']){
+for(const heroAsset of ['bhoc-initiative-land-hero-v2.webp','bhoc-initiative-winter-hero.webp','bhoc-initiative-ocean-hero-v2.webp']){
   const {size}=await fs.stat(path.join(out,'assets',heroAsset));
   assert.ok(size<400_000,`${heroAsset}: optimized hero asset stays below 400 KB`);
 }
