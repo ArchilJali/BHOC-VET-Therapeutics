@@ -1,7 +1,7 @@
 {
   "id": "home",
   "image": {
-    "src": "assets/bhoc-initiative-land-hero.webp",
+    "src": "assets/bhoc-initiative-land-hero-v2.webp",
     "alt": "BHOC Species and Biodiversity Protection Initiative land hero with diverse wildlife in a mountain landscape.",
     "width": 2019,
     "height": 779
@@ -12,7 +12,7 @@
       "id": "land",
       "label": "Land",
       "image": {
-        "src": "assets/bhoc-initiative-land-hero.webp",
+        "src": "assets/bhoc-initiative-land-hero-v2.webp",
         "alt": "BHOC land wildlife scene with lion, elephant, giraffe, camel, rhinoceros, panda, orangutan, snow leopard, tortoise, cat and wire-haired dachshunds.",
         "width": 2019,
         "height": 779
