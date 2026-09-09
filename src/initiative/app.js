@@ -25,6 +25,19 @@ window.addEventListener('resize', () => {
   if (window.innerWidth > 1120) setMenu(false);
 });
 
+const rightsDialog = document.querySelector('[data-rights-dialog]');
+const rightsOpen = document.querySelector('[data-rights-open]');
+
+rightsOpen?.addEventListener('click', () => {
+  if (!rightsDialog) return;
+  if (typeof rightsDialog.showModal === 'function') rightsDialog.showModal();
+  else rightsDialog.setAttribute('open', '');
+});
+
+rightsDialog?.addEventListener('click', (event) => {
+  if (event.target === rightsDialog) rightsDialog.close();
+});
+
 document.querySelectorAll('[data-hero-carousel]').forEach((carousel) => {
   const slides = [...carousel.querySelectorAll('[data-hero-slide]')];
   const controls = [...carousel.querySelectorAll('[data-hero-target]:not(:disabled)')];

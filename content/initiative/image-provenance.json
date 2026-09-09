@@ -299,7 +299,7 @@
       "verifiedOn": "2026-09-09",
       "usedIn": ["Initiative Science Bridge", "BHOC Veterinary homepage Science Bridge"],
       "reason": "Connects oxygen-delivery science with wildlife and cross-species veterinary care.",
-      "modifications": "The Initiative copy was resized, cropped to a 4:3 frame and converted to WebP. The homepage uses the project-supplied composite as a responsive crop. No generative or subject-altering edit to the wolf photograph is documented.",
+      "modifications": "The Initiative copy was resized, cropped to a 4:3 frame and converted to WebP. On the homepage composite, the visible credit strip was moved off the artwork and into this legal register at the owner's request. A tightly bounded 691 × 52 pixel area at the lower edge was reconstructed; every pixel outside that area is unchanged, and the wolf itself was not altered.",
       "reuse": "Public-domain status applies to the underlying photograph, not to surrounding BHOC content or design.",
       "localFiles": [
         {
@@ -309,7 +309,7 @@
         },
         {
           "path": "assets/science-bridge-reference.png",
-          "sha256": "9b84fd62a0e7a5d9b4a8acdab301325afbef09b7401d6b99f0cb4c03e6ee7f23",
+          "sha256": "8c668d5466acd5faf75abd27d3b95a002e65cd85d91114570203f0b71aa7a361",
           "introducedOn": "2026-09-09"
         }
       ]
@@ -339,7 +339,7 @@
       "providedOn": "2026-09-09",
       "rightsStatus": "Project-supplied composition; not offered under an open third-party licence. The embedded gray-wolf photograph is separately recorded under gray-wolf as a public-domain U.S. federal government work.",
       "reason": "Connects the BHOC oxygen-delivery concept with wildlife and the relative scale of a red blood cell and BHOC molecule.",
-      "modifications": "Stored as the supplied PNG and cropped responsively into separate wolf and comparison panels without changing the source file.",
+      "modifications": "The original supplied PNG had SHA-256 9b84fd62a0e7a5d9b4a8acdab301325afbef09b7401d6b99f0cb4c03e6ee7f23. At the owner's request, only its baked-in wolf credit strip was removed from the visible composition and the complete credit was retained under gray-wolf in this register. The edit was confined to a 691 × 52 pixel area along the lower edge; every pixel outside that area is unchanged. The result continues to be cropped responsively into separate wolf and comparison panels.",
       "thirdPartyRecord": {
         "id": "gray-wolf",
         "label": "Gray wolf — Gary Kramer / U.S. Fish and Wildlife Service"
@@ -347,7 +347,7 @@
       "localFiles": [
         {
           "path": "assets/science-bridge-reference.png",
-          "sha256": "9b84fd62a0e7a5d9b4a8acdab301325afbef09b7401d6b99f0cb4c03e6ee7f23",
+          "sha256": "8c668d5466acd5faf75abd27d3b95a002e65cd85d91114570203f0b71aa7a361",
           "introducedOn": "2026-09-09"
         }
       ]

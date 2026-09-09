@@ -61,6 +61,9 @@
   },
   "legal": {
     "title": "Protected content notice",
+    "summary": "© 2026 BHOC Initiative. All rights reserved.",
+    "detailsLabel": "Legal details",
+    "dialogEyebrow": "Rights, sources and permissions",
     "copyright": "© 2026 BHOC Species & Biodiversity Protection Initiative. All rights reserved.",
     "text": "Original text, visual design, graphics, scientific materials, code and BHOC branding on this website may not be copied, scraped, reproduced, adapted, redistributed or republished, in whole or in part, without prior written permission.",
     "licenseNote": "Third-party image terms are preserved in a separate source and licence register.",
