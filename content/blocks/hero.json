@@ -7,18 +7,6 @@
     "height": 779
   },
   "rotationMs": 300000,
-  "brandLogo": {
-    "image": {
-      "src": "assets/bhoc-species-biodiversity-logo.webp",
-      "alt": "BHOC Species & Biodiversity Protection logo",
-      "width": 1254,
-      "height": 1254
-    },
-    "link": {
-      "href": "./initiative/",
-      "label": "Open BHOC Species & Biodiversity Protection"
-    }
-  },
   "slides": [
     {
       "id": "land",
@@ -30,11 +18,6 @@
         "height": 779
       },
       "accessibleText": "Precision Oxygen Therapeutics. BHOC - Biological Hemoglobin Oxygen Carrier. For immediate, controlled microvascular and tissue-level oxygenation while endogenous erythropoiesis recovers.",
-      "brandPlacement": {
-        "left": 47.7,
-        "top": 1,
-        "width": 22.5
-      },
       "hotspots": [
         {
           "label": "Open Product",
@@ -64,11 +47,6 @@
         "height": 779
       },
       "accessibleText": "BHOC Species and Biodiversity Protection Initiative. One Oxygen. Every Species. One Living Planet. Protect Life. Preserve Species.",
-      "brandPlacement": {
-        "left": 58.3,
-        "top": 5,
-        "width": 32.1
-      },
       "hotspots": [
         {
           "label": "Explore species",
@@ -90,11 +68,6 @@
         "height": 779
       },
       "accessibleText": "BHOC Species and Biodiversity Protection Initiative. One Oxygen. Every Species. One Living Planet. Protect Life. Preserve Species.",
-      "brandPlacement": {
-        "left": 60.8,
-        "top": 4.5,
-        "width": 29.8
-      },
       "hotspots": [
         {
           "label": "Explore species",

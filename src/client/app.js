@@ -9,7 +9,7 @@
   nav?.addEventListener('click',e=>{if(e.target.closest('a'))closeMenu();});
   document.addEventListener('keydown',e=>{if(e.key==='Escape')closeMenu();});
   document.addEventListener('click',e=>{if(!e.target.closest('.site-header'))closeMenu();});
-  matchMedia('(min-width: 1261px)').addEventListener('change',e=>{if(e.matches)closeMenu();});
+  matchMedia('(min-width: 1001px)').addEventListener('change',e=>{if(e.matches)closeMenu();});
   const heroCarousel=$('.hero-carousel');
   if(heroCarousel){
     const slides=$$('[data-hero-slide]',heroCarousel),dots=$$('[data-hero-dot]',heroCarousel),prev=$('.hero-prev',heroCarousel),next=$('.hero-next',heroCarousel),announcement=$('#hero-announcement');
