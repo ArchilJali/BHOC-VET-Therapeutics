@@ -22,6 +22,8 @@ export function renderHead(site,stylesVersion){
     '  <meta property="og:description" content="'+esc(site.openGraph.description)+'">',
     '  <meta property="og:url" content="'+esc(site.canonical)+'">',
     '  <meta property="og:image" content="'+esc(absoluteImage)+'">',
+    '  <meta property="og:image:secure_url" content="'+esc(absoluteImage)+'">',
+    '  <meta property="og:image:type" content="image/webp">',
     '  <meta property="og:image:width" content="'+Number(image.width)+'">',
     '  <meta property="og:image:height" content="'+Number(image.height)+'">',
     '  <meta property="og:image:alt" content="'+esc(image.alt)+'">',

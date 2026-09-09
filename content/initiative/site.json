@@ -4,7 +4,7 @@
   "description": "BHOC Species & Biodiversity Protection Initiative connects wildlife health, Red List species protection, conservation medicine, veterinary evidence and oxygen-delivery science.",
   "author": "Archil Jaliashvili",
   "creator": "BHOC Team",
-  "themeColor": "#0b5a43",
+  "themeColor": "#071713",
   "canonical": "https://bhocvet.com/initiative/",
   "openGraph": {
     "siteName": "BHOC Species & Biodiversity Protection Initiative",
@@ -31,7 +31,15 @@
         "alternateName": "BHOC Initiative",
         "description": "A science-driven initiative connecting species protection, wildlife health, conservation medicine, veterinary evidence and oxygen-delivery science.",
         "url": "https://bhocvet.com/initiative/",
-        "logo": "https://bhocvet.com/assets/reference-initiative-mark.webp",
+        "logo": {
+          "@type": "ImageObject",
+          "@id": "https://bhocvet.com/initiative/#logo",
+          "url": "https://bhocvet.com/assets/reference-initiative-mark.webp",
+          "contentUrl": "https://bhocvet.com/assets/reference-initiative-mark.webp",
+          "caption": "BHOC Species & Biodiversity Protection Initiative emblem",
+          "width": 318,
+          "height": 317
+        },
         "parentOrganization": {
           "@type": "Organization",
           "name": "BHOC Therapeutics",
@@ -72,8 +80,12 @@
         "url": "https://bhocvet.com/initiative/",
         "name": "Protect Life. Preserve Species.",
         "description": "BHOC Species & Biodiversity Protection Initiative homepage.",
+        "inLanguage": "en",
         "isPartOf": {
           "@id": "https://bhocvet.com/initiative/#website"
+        },
+        "publisher": {
+          "@id": "https://bhocvet.com/initiative/#initiative"
         },
         "about": {
           "@id": "https://bhocvet.com/initiative/#initiative"

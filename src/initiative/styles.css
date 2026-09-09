@@ -1,17 +1,18 @@
 :root {
-  --forest-950: #061f18;
-  --forest-900: #082b20;
-  --forest-800: #0c3e2c;
-  --forest-700: #15583b;
-  --forest-600: #1f6a47;
-  --forest-100: #eaf2ec;
-  --ink: #13251e;
-  --muted: #53635c;
+  --forest-950: #071713;
+  --forest-900: #0b211a;
+  --forest-800: #103b2b;
+  --emerald: #16a05d;
+  --emerald-deep: #087847;
+  --oxygen: #1cb5ab;
+  --oxygen-deep: #147872;
+  --oxygen-wash: #eaf6f5;
+  --ink: #101814;
+  --muted: #52615a;
   --paper: #ffffff;
-  --cream: #f7f8f4;
-  --line: #dce3de;
+  --cream: #f6f8f7;
+  --line: #dce6e1;
   --red: #8e251f;
-  --blue-wash: #edf6fa;
   --shell: min(1440px, calc(100% - 72px));
   --shadow: 0 18px 48px rgba(4, 28, 20, 0.18);
 }
@@ -142,7 +143,7 @@ h2 {
 .initiative-brand-copy {
   display: grid;
   min-width: 0;
-  color: #0b211a;
+  color: var(--forest-900);
   line-height: 1.12;
 }
 
@@ -174,7 +175,7 @@ h2 {
   bottom: -7px;
   left: 0;
   height: 1px;
-  background: var(--forest-700);
+  background: var(--emerald);
   content: "";
   transform: scaleX(0);
   transform-origin: left;
@@ -195,8 +196,8 @@ h2 {
   padding: 0.68rem 1.35rem;
   border-radius: 999px;
   color: #fff;
-  background: var(--forest-700);
-  box-shadow: 0 8px 20px rgba(12, 62, 44, 0.17);
+  background: var(--emerald-deep);
+  box-shadow: 0 8px 20px rgba(8, 120, 71, 0.2);
   font-family: Georgia, "Times New Roman", serif;
   font-size: 0.86rem;
   text-decoration: none;
@@ -247,7 +248,7 @@ h2 {
   color: #fff;
   background:
     radial-gradient(circle at 78% 12%, rgba(239, 213, 159, 0.18), transparent 22%),
-    linear-gradient(112deg, #071f1c 0%, #0a3027 52%, #174d35 100%);
+    linear-gradient(112deg, var(--forest-950) 0%, var(--forest-900) 52%, var(--forest-800) 100%);
 }
 
 .hero::before {
@@ -255,7 +256,7 @@ h2 {
   inset: 0;
   background:
     linear-gradient(90deg, rgba(2, 18, 15, 0.32), transparent 55%),
-    radial-gradient(circle at 5% 100%, rgba(34, 104, 69, 0.34), transparent 32%);
+    radial-gradient(circle at 5% 100%, rgba(22, 160, 93, 0.24), transparent 32%);
   content: "";
   pointer-events: none;
 }
@@ -314,7 +315,7 @@ h2 {
   justify-content: center;
   gap: 9px;
   padding: 0.76rem 1.65rem;
-  border: 1px solid var(--forest-600);
+  border: 1px solid var(--emerald-deep);
   border-radius: 999px;
   font-size: 0.94rem;
   font-weight: 620;
@@ -331,12 +332,12 @@ h2 {
 
 .button-primary {
   color: #fff;
-  background: var(--forest-700);
+  background: var(--emerald-deep);
 }
 
 .hero .button-primary {
   border-color: rgba(255, 255, 255, 0.7);
-  background: #2a7547;
+  background: var(--emerald-deep);
 }
 
 .button-secondary {
@@ -760,7 +761,7 @@ h2 {
   justify-content: center;
   padding: 35px clamp(28px, 3.3vw, 52px);
   background:
-    radial-gradient(circle at 35% 50%, rgba(61, 112, 71, 0.32), transparent 54%),
+    radial-gradient(circle at 35% 50%, rgba(22, 160, 93, 0.2), transparent 54%),
     var(--forest-950);
 }
 
@@ -783,7 +784,7 @@ h2 {
 .mission-copy .button {
   width: max-content;
   border-color: rgba(255, 255, 255, 0.58);
-  background: #2a7547;
+  background: var(--emerald-deep);
 }
 
 .mission-features {
@@ -792,7 +793,7 @@ h2 {
   gap: 16px;
   padding: 28px clamp(26px, 3.3vw, 50px);
   border-left: 1px solid rgba(255, 255, 255, 0.16);
-  background: linear-gradient(145deg, #0e4a35, #073427);
+  background: linear-gradient(145deg, var(--forest-800), var(--forest-950));
 }
 
 .mission-features article {
@@ -852,7 +853,7 @@ h2 {
 
 .focus-more {
   flex: 0 0 auto;
-  color: var(--forest-700);
+  color: var(--emerald-deep);
   font-size: 0.75rem;
   text-decoration: none;
 }
@@ -870,9 +871,9 @@ h2 {
   min-width: 0;
   overflow: hidden;
   flex-direction: column;
-  border: 1px solid #e2e7e3;
+  border: 1px solid var(--line);
   border-radius: 4px;
-  background: #f7f8f6;
+  background: var(--cream);
   transition: transform 0.18s ease, box-shadow 0.18s ease;
 }
 
@@ -913,7 +914,7 @@ h2 {
 
 .focus-card p {
   margin: 0;
-  color: #34463e;
+  color: var(--muted);
   font-size: 0.7rem;
   line-height: 1.35;
 }
@@ -945,7 +946,7 @@ h2 {
 
 .science-bridge {
   overflow: hidden;
-  background: var(--blue-wash);
+  background: var(--oxygen-wash);
 }
 
 .science-grid {
@@ -963,7 +964,7 @@ h2 {
 
 .science-copy h2 {
   max-width: 680px;
-  color: #0b2630;
+  color: #0b2926;
   font-size: clamp(2.35rem, 3vw, 3.35rem);
   line-height: 1.02;
 }
@@ -971,13 +972,23 @@ h2 {
 .science-copy > p:not(.eyebrow) {
   max-width: 660px;
   margin-bottom: 1.35rem;
-  color: #354950;
+  color: #3d5350;
   font-size: 0.88rem;
   line-height: 1.48;
 }
 
 .science-copy .button {
   width: max-content;
+  border-color: var(--oxygen-deep);
+}
+
+.science-copy .eyebrow {
+  color: var(--oxygen-deep);
+}
+
+.science-copy .button-primary {
+  color: var(--forest-950);
+  background: var(--oxygen);
 }
 
 .science-photo {
@@ -990,7 +1001,7 @@ h2 {
 .science-photo::after {
   position: absolute;
   inset: 0;
-  background: linear-gradient(90deg, var(--blue-wash), transparent 18%, transparent 82%, rgba(102, 23, 22, 0.55));
+  background: linear-gradient(90deg, var(--oxygen-wash), transparent 18%, transparent 82%, rgba(102, 23, 22, 0.55));
   content: "";
   pointer-events: none;
 }
@@ -1007,7 +1018,7 @@ h2 {
   overflow: hidden;
   min-height: 420px;
   padding: 0;
-  background: #7a1d1d;
+  background: var(--red);
 }
 
 .science-claim-media {
@@ -1019,7 +1030,7 @@ h2 {
 .science-claim-media::after {
   position: absolute;
   inset: 0;
-  background: linear-gradient(145deg, rgba(166, 50, 42, 0.6), rgba(92, 13, 18, 0.86));
+  background: linear-gradient(145deg, rgba(166, 50, 42, 0.58), rgba(112, 21, 26, 0.9));
   content: "";
 }
 
@@ -1136,7 +1147,7 @@ h2 {
 
 .site-footer {
   border-top: 1px solid var(--line);
-  background: #f7faf7;
+  background: var(--cream);
 }
 
 .footer-main {
@@ -1175,7 +1186,7 @@ h2 {
 
 .footer-brand span {
   margin-top: 5px;
-  color: var(--forest-700);
+  color: var(--emerald-deep);
   font-family: Georgia, "Times New Roman", serif;
   font-size: 0.72rem;
   font-weight: 700;
@@ -1231,7 +1242,7 @@ h2 {
 }
 
 :focus-visible {
-  outline: 3px solid #d6a83d;
+  outline: 3px solid var(--emerald-deep);
   outline-offset: 3px;
 }
 
@@ -1497,7 +1508,7 @@ h2 {
   }
 
   .science-photo::after {
-    background: linear-gradient(180deg, var(--blue-wash), transparent 16%, transparent 84%, rgba(102, 23, 22, 0.42));
+    background: linear-gradient(180deg, var(--oxygen-wash), transparent 16%, transparent 84%, rgba(102, 23, 22, 0.42));
   }
 
   .science-claim {
