@@ -1,0 +1,17 @@
+{
+  "id": "evidence",
+  "eyebrow": "A world worth protecting",
+  "metrics": [
+    {"value": "1.78M+", "labelLines": ["Animalia species", "catalogued"]},
+    {"value": "175K+", "labelLines": ["species assessed", "for conservation status"]},
+    {"value": "49K+", "labelLines": ["threatened species", "(CR / EN / VU)"]}
+  ],
+  "promiseLines": ["A healthier", "tomorrow", "for all species"],
+  "sourcesLabel": "Sources",
+  "sources": [
+    {"labelLines": ["IUCN", "Red List"], "href": "https://www.iucnredlist.org/"},
+    {"labelLines": ["Catalogue", "of Life"], "href": "https://www.catalogueoflife.org/"},
+    {"labelLines": ["Species+", "CITES / CMS"], "href": "https://speciesplus.net/"},
+    {"labelLines": ["GBIF"], "href": "https://www.gbif.org/"}
+  ]
+}

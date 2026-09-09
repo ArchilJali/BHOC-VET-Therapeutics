@@ -1,0 +1,27 @@
+{
+  "id": "mission",
+  "eyebrow": "Our conservation mission",
+  "titleLines": ["Endangered Species.", "Real Solutions."],
+  "text": "We support the protection of endangered and Red Book species by advancing veterinary medicine, emergency care, research and international collaboration.",
+  "action": {
+    "label": "Explore the Red Book Program",
+    "href": "https://www.iucnredlist.org/",
+    "style": "primary",
+    "arrow": true
+  },
+  "image": {
+    "src": "assets/initiative/challenge-sumatran-tiger-usfws.webp",
+    "alt": "Sumatran tiger walking through a green habitat",
+    "width": 960,
+    "height": 960,
+    "credit": "Joe Milmoe / U.S. Fish and Wildlife Service",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Sumatran_Tiger_USFWS.jpg"
+  },
+  "features": [
+    {"icon": "care", "title": "Rescue & Emergency Care", "text": "Immediate support for animals in critical need"},
+    {"icon": "institution", "title": "Zoos & Conservation Centers", "text": "Improving veterinary care in zoological institutions"},
+    {"icon": "recovery", "title": "Rehabilitation & Reintroduction", "text": "Supporting recovery and return to natural habitats"},
+    {"icon": "field", "title": "Field & Remote Medicine", "text": "Solutions for wildlife in remote and challenging environments"}
+  ]
+}

@@ -4,17 +4,17 @@
   "description": "BHOC Species & Biodiversity Protection Initiative connects wildlife health, Red List species protection, conservation medicine, veterinary evidence and oxygen-delivery science.",
   "author": "Archil Jaliashvili",
   "creator": "BHOC Team",
-  "themeColor": "#0b5a43",
+  "themeColor": "#071713",
   "canonical": "https://bhocvet.com/initiative/",
   "openGraph": {
     "siteName": "BHOC Species & Biodiversity Protection Initiative",
     "title": "Protect Life. Preserve Species. | BHOC Initiative",
     "description": "A science-driven initiative for species protection, wildlife health, conservation medicine and oxygen-delivery support across the living world.",
     "image": {
-      "src": "assets/initiative/hero-red-list-pencil-v2.webp",
-      "alt": "Graphite conservation sketch of six threatened wild species",
-      "width": 1599,
-      "height": 900
+      "src": "assets/initiative/challenge-african-elephant-usfws.webp",
+      "alt": "African forest elephant family representing wildlife protection and biodiversity",
+      "width": 960,
+      "height": 960
     }
   },
   "twitter": {
@@ -31,7 +31,15 @@
         "alternateName": "BHOC Initiative",
         "description": "A science-driven initiative connecting species protection, wildlife health, conservation medicine, veterinary evidence and oxygen-delivery science.",
         "url": "https://bhocvet.com/initiative/",
-        "logo": "https://bhocvet.com/assets/reference-initiative-mark.webp",
+        "logo": {
+          "@type": "ImageObject",
+          "@id": "https://bhocvet.com/initiative/#logo",
+          "url": "https://bhocvet.com/assets/reference-initiative-mark.webp",
+          "contentUrl": "https://bhocvet.com/assets/reference-initiative-mark.webp",
+          "caption": "BHOC Species & Biodiversity Protection Initiative emblem",
+          "width": 318,
+          "height": 317
+        },
         "parentOrganization": {
           "@type": "Organization",
           "name": "BHOC Therapeutics",
@@ -72,8 +80,12 @@
         "url": "https://bhocvet.com/initiative/",
         "name": "Protect Life. Preserve Species.",
         "description": "BHOC Species & Biodiversity Protection Initiative homepage.",
+        "inLanguage": "en",
         "isPartOf": {
           "@id": "https://bhocvet.com/initiative/#website"
+        },
+        "publisher": {
+          "@id": "https://bhocvet.com/initiative/#initiative"
         },
         "about": {
           "@id": "https://bhocvet.com/initiative/#initiative"
@@ -81,11 +93,11 @@
         "primaryImageOfPage": {
           "@type": "ImageObject",
           "@id": "https://bhocvet.com/initiative/#primaryimage",
-          "url": "https://bhocvet.com/assets/initiative/hero-red-list-pencil-v2.webp",
-          "contentUrl": "https://bhocvet.com/assets/initiative/hero-red-list-pencil-v2.webp",
-          "caption": "Graphite conservation sketch of a giant panda, black rhinoceros, snow leopard, mountain gorilla, tiger and hawksbill sea turtle",
-          "width": 1599,
-          "height": 900
+          "url": "https://bhocvet.com/assets/initiative/challenge-african-elephant-usfws.webp",
+          "contentUrl": "https://bhocvet.com/assets/initiative/challenge-african-elephant-usfws.webp",
+          "caption": "African forest elephant family representing wildlife protection and biodiversity",
+          "width": 960,
+          "height": 960
         },
         "author": {
           "@type": "Person",

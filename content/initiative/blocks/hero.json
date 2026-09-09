@@ -1,30 +1,104 @@
 {
-  "id": "mission",
+  "id": "initiative-home",
   "headingLines": [
     "Protect Life.",
     "Preserve Species."
   ],
-  "name": "BHOC Species & Biodiversity Protection Initiative",
   "tagline": "From Nature. Through Science. Back to Nature.",
-  "lead": "Advancing a science-driven vision for species protection, wildlife health, and oxygen-delivery support across the living world.",
+  "lead": "The BHOC Species & Biodiversity Protection Initiative works at the intersection of science, veterinary medicine and conservation to support the health and survival of animals around the world.",
   "actions": [
     {
-      "label": "Explore the Initiative",
-      "href": "#focus",
+      "label": "Join the Initiative",
+      "href": "mailto:info@bhoctherapeutics.com?subject=Join%20the%20BHOC%20Initiative",
       "style": "primary",
       "arrow": true
     },
     {
-      "label": "View Scientific Basis",
-      "href": "https://archiljali.github.io/BHOC-platform/science/",
+      "label": "Learn More",
+      "href": "#mission",
       "style": "secondary"
     }
   ],
-  "image": {
-    "src": "assets/initiative/hero-red-list-pencil-v2.webp",
-    "alt": "Graphite conservation sketch of a giant panda, black rhinoceros, snow leopard, mountain gorilla, tiger and hawksbill sea turtle",
-    "width": 1599,
-    "height": 900
-  },
-  "caption": "A pencil study of threatened and Red List wild species, drawn as a visual metaphor for preserving every animal."
+  "principles": [
+    {"icon": "leaf", "labelLines": ["Wildlife", "Medicine"]},
+    {"icon": "paw", "labelLines": ["Conservation", "Action"]},
+    {"icon": "science", "labelLines": ["Science &", "Innovation"]},
+    {"icon": "globe", "labelLines": ["A Healthier", "Planet"]}
+  ],
+  "promiseLines": ["A healthier tomorrow", "for all species"],
+  "closingLines": ["Different species.", "A shared tomorrow."],
+  "slides": [
+    {
+      "id": "species-gallery",
+      "label": "Threatened species gallery",
+      "enabled": true,
+      "images": [
+        {
+          "role": "primary",
+          "src": "assets/initiative/challenge-african-elephant-usfws.webp",
+          "alt": "African forest elephant family at a remote forest water source",
+          "width": 960,
+          "height": 960,
+          "credit": "Daphne Carlson Bremer / USFWS",
+          "license": "Public domain / CC BY 2.0",
+          "source": "https://commons.wikimedia.org/wiki/File:African_elephant,_Dzanga_Sangha,_Central_African_Republic_(18945940511).jpg"
+        },
+        {
+          "role": "snow-leopard",
+          "src": "assets/initiative/focus-philanthropy-photo.webp",
+          "alt": "Close portrait of a snow leopard",
+          "width": 640,
+          "height": 480,
+          "credit": "Eric Kilby",
+          "license": "CC BY-SA 2.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Snow_Leopard_Closeup_(13883260104).jpg"
+        },
+        {
+          "role": "rhino",
+          "src": "assets/initiative/focus-veterinary-photo.webp",
+          "alt": "Black rhinoceros in a conservation setting",
+          "width": 640,
+          "height": 480,
+          "credit": "AfricanConservation / Working with Wildlife",
+          "license": "CC BY-SA 4.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Black_Rhino_at_Working_with_Wildlife.jpg"
+        },
+        {
+          "role": "panda",
+          "src": "assets/initiative/focus-zoo-photo.webp",
+          "alt": "Giant panda Tai Shan eating bamboo",
+          "width": 640,
+          "height": 480,
+          "credit": "Fernando Revilla",
+          "license": "CC BY-SA 2.5",
+          "source": "https://commons.wikimedia.org/wiki/File:Giant_Panda_Tai_Shan.JPG"
+        },
+        {
+          "role": "tiger",
+          "src": "assets/initiative/challenge-sumatran-tiger-usfws.webp",
+          "alt": "Sumatran tiger walking through a green habitat",
+          "width": 960,
+          "height": 960,
+          "credit": "Joe Milmoe / USFWS",
+          "license": "Public domain",
+          "source": "https://commons.wikimedia.org/wiki/File:Sumatran_Tiger_USFWS.jpg"
+        },
+        {
+          "role": "turtle",
+          "src": "assets/initiative/challenge-hawksbill-turtle-noaa.webp",
+          "alt": "Hawksbill sea turtle swimming above a coral reef",
+          "width": 960,
+          "height": 960,
+          "credit": "GP Schmahl / NOAA",
+          "license": "Public domain",
+          "source": "https://commons.wikimedia.org/wiki/File:FGBNMS_-_Hawksbill_Turtle_(27618418831).jpg"
+        }
+      ]
+    }
+  ],
+  "controls": [
+    {"slideId": "species-gallery", "label": "Show species gallery", "enabled": true},
+    {"label": "Reserved for future slide 2", "enabled": false},
+    {"label": "Reserved for future slide 3", "enabled": false}
+  ]
 }

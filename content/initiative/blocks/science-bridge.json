@@ -1,0 +1,33 @@
+{
+  "id": "science",
+  "eyebrow": "The science bridge",
+  "titleLines": ["Every species is different.", "The need for oxygen is universal."],
+  "text": "BHOC Therapeutics is developing a next-generation oxygen carrier designed to support veterinary medicine, including wildlife, exotic and endangered species. By improving oxygen delivery at the microcirculatory level, we aim to help more animals survive when every second counts.",
+  "action": {
+    "label": "Discover the Science",
+    "href": "../science.html",
+    "style": "primary",
+    "arrow": true
+  },
+  "image": {
+    "src": "assets/initiative/science-gray-wolf-usfws.webp",
+    "alt": "Gray wolf representing cross-species veterinary science and oxygen delivery",
+    "width": 720,
+    "height": 540,
+    "credit": "Gary Kramer / U.S. Fish and Wildlife Service",
+    "license": "Public domain",
+    "source": "https://www.flickr.com/photos/usfwshq/5584759091/"
+  },
+  "comparisonGraphic": {
+    "src": "assets/initiative/bhoc-vs-rbc-400x-comparison.webp",
+    "alt": "Concept illustration comparing a red blood cell and a BHOC molecule, with BHOC shown as more than 400 times smaller",
+    "width": 1000,
+    "height": 730,
+    "caption": "BHOC versus red blood cell size comparison"
+  },
+  "statements": [
+    "Compatible with all blood types for all species.",
+    "3+ year shelf life at room temperature."
+  ],
+  "caption": "Advancing oxygen delivery for a wilder tomorrow."
+}

@@ -6,15 +6,15 @@ Current as of 9 September 2026. This file lists only sources used by the present
 
 - Homepage hero carousel: `assets/bhoc-initiative-land-hero-v2.webp`, `assets/bhoc-initiative-winter-hero.webp` and `assets/bhoc-initiative-ocean-hero-v2.webp`. The Land v2 asset removes the obsolete baked-in indicator artwork so the shared live controls render once on every slide.
 - Open Graph and WhatsApp image: `assets/bhoc-initiative-land-social.jpg` (1200 × 463), a format-optimized copy of the approved Land hero without cropping.
-- Initiative hero: `assets/initiative/hero-red-list-pencil-v2.webp`.
-- Initiative Challenge photographs: the three `challenge-*-usfws.webp` / `challenge-*-noaa.webp` files named in `content/initiative/blocks/challenge.json`.
+- Initiative hero: the six independently rendered wildlife photographs, author credits, source pages and reuse terms named in `content/initiative/blocks/hero.json`.
+- Initiative mission photograph: `assets/initiative/challenge-sumatran-tiger-usfws.webp`, with its public-domain USFWS source recorded in `content/initiative/blocks/mission-panel.json`.
 - Initiative Focus photographs: the seven `focus-*-photo.webp` files named in `content/initiative/blocks/focus.json`.
 - Initiative mark: `assets/reference-initiative-mark.webp`.
 - Species & Biodiversity Protection logo: `assets/bhoc-species-biodiversity-logo.webp`, an optimized copy of the brand artwork supplied by Archil on 9 September 2026. It is used without redrawing in the main navigation.
 - Species portraits: the six `*-loose-pencil-sketch.webp`/`rem-wirehaired-dachshund-sketch.webp` files named in `content/blocks/species.json`.
 - Rem identity reference: `assets/reference-dog-pencil.webp`.
 - Molecular diagrams: exact ChEBI SVG structures in `assets/chlorophyll.svg` and `assets/heme.svg`.
-- Initiative blood-cell and cell symbols: adapted from the CC0 Health Icons outline set by Resolve to Save Lives, https://github.com/resolvetosavelives/healthicons. The BHOC carrier schematic was created for this site.
+- Initiative BHOC-versus-RBC comparison: the user-supplied concept graphic is preserved in full and format-optimized as `assets/initiative/bhoc-vs-rbc-400x-comparison.webp`; its descriptive ALT text and adjacent product statements remain native page content.
 
 Private photographs, intermediate generations, screenshots, superseded hero variants and unused full-resolution exports are not part of the public repository.
 

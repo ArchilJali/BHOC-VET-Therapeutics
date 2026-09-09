@@ -12,54 +12,37 @@
       "BHOC Species & Biodiversity",
       "Protection Initiative"
     ],
-    "tagline": "One Oxygen. One Biology. One BHOC System.",
-    "promise": "For Every Species. Wherever Life Is at Risk."
-  },
-  "returnLink": {
-    "label": "BHOC Veterinary",
-    "menuLabel": "Return to BHOC Veterinary",
-    "subtitle": "Main veterinary site",
-    "href": "../index.html",
-    "ariaLabel": "Return to the BHOC Veterinary homepage"
-  },
-  "ecosystem": {
-    "href": "https://bhoctherapeutics.com/",
-    "ariaLabel": "Open BHOC Therapeutics",
-    "title": "BHOC Therapeutics",
-    "subtitle": "Precision Oxygen Therapeutics"
+    "title": "BHOC Species & Biodiversity Protection Initiative"
   },
   "navigation": [
     {
-      "label": "Mission",
-      "href": "#mission"
+      "label": "Home",
+      "href": "../index.html"
     },
     {
-      "label": "Science",
-      "href": "#microcirculation"
+      "label": "Our Mission",
+      "href": "#mission"
     },
     {
       "label": "Focus Areas",
       "href": "#focus"
     },
     {
+      "label": "Evidence",
+      "href": "../evidence.html"
+    },
+    {
       "label": "Partners",
-      "href": "#partners"
+      "href": "mailto:info@bhoctherapeutics.com?subject=BHOC%20Initiative%20Partnership"
     },
     {
-      "label": "Support",
-      "href": "#partners"
-    },
-    {
-      "label": "News",
-      "href": "../news.html"
-    },
-    {
-      "label": "Contact",
-      "href": "../contact.html"
+      "label": "Get Involved",
+      "href": "mailto:info@bhoctherapeutics.com?subject=Support%20the%20BHOC%20Initiative"
     }
   ],
-  "search": {
-    "href": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-search.html",
-    "ariaLabel": "Search the BHOC scientific evidence platform"
+  "action": {
+    "label": "Support the Initiative",
+    "href": "mailto:info@bhoctherapeutics.com?subject=Support%20the%20BHOC%20Initiative",
+    "arrow": true
   }
 }

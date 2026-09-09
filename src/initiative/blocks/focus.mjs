@@ -1,6 +1,7 @@
 import {esc,initiativeImage,lines,linkAttrs} from '../lib.mjs';
 
 export default function renderFocus(data){
+  const intro=data.intro?'<p>'+esc(data.intro)+'</p>':'';
   const cards=data.cards.map(card=>{
     const credit=card.credit?
       '<small class="photo-credit">Photo: <a '+linkAttrs(card.credit)+'>'+esc(card.credit.label)+'</a><span aria-hidden="true"> · </span><a '+linkAttrs({href:card.credit.licenseHref})+'>'+esc(card.credit.license)+'</a></small>':'';
@@ -17,8 +18,8 @@ export default function renderFocus(data){
   return '<section class="focus compact-section" id="'+esc(data.id)+'" data-block="focus" aria-labelledby="focus-title">'+
     '<div class="shell">'+
       '<header class="section-heading inline-heading">'+
-        '<h2 id="focus-title">'+esc(data.title)+'</h2>'+
-        '<p>'+esc(data.intro)+'</p>'+
+        '<div><p class="eyebrow">'+esc(data.title)+'</p><h2 id="focus-title" class="visually-hidden">'+esc(data.title)+'</h2>'+intro+'</div>'+
+        '<a class="focus-more" '+linkAttrs(data.moreLink)+'>'+esc(data.moreLink.label)+' <span aria-hidden="true">→</span></a>'+
       '</header>'+
       '<div class="focus-grid">'+cards+'</div>'+
     '</div>'+
