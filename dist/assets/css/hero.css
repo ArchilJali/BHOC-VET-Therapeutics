@@ -34,6 +34,45 @@
   object-fit: contain;
 }
 
+.hero-initiative-brand {
+  position: absolute;
+  z-index: 3;
+  top: var(--brand-top);
+  left: var(--brand-left);
+  display: flex;
+  width: var(--brand-width);
+  aspect-ratio: 960 / 290;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border: 0;
+  border-radius: clamp(8px, .75vw, 15px);
+  background: #fffefa;
+  box-shadow: none;
+  transition: filter .2s ease, transform .2s ease;
+}
+
+.hero-initiative-brand-winter { background: #fbfcfd; }
+.hero-initiative-brand-ocean { background: #f6fcfd; }
+
+.hero-initiative-brand svg {
+  display: block;
+  width: 94%;
+  height: 94%;
+}
+
+.hero-initiative-brand:hover,
+.hero-initiative-brand:focus-visible {
+  filter: drop-shadow(0 4px 8px #1637592c);
+  text-decoration: none;
+  transform: translateY(-1px);
+}
+
+.hero-initiative-brand:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 2px;
+}
+
 .hero-hotspot {
   position: absolute;
   z-index: 2;
