@@ -1,6 +1,12 @@
 {
   "id": "evidence",
   "eyebrow": "A world worth protecting",
+  "brandMark": {
+    "src": "assets/reference-initiative-mark.webp",
+    "alt": "BHOC Species and Biodiversity Protection Initiative emblem",
+    "width": 318,
+    "height": 317
+  },
   "quotation": {
     "quote": "We be of one blood, ye and I.",
     "author": "Rudyard Kipling",

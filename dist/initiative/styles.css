@@ -629,34 +629,59 @@ h2 {
   grid-template-columns: repeat(3, minmax(135px, 1fr)) minmax(145px, 0.85fr);
 }
 
-.stats-copy > .eyebrow {
-  margin-bottom: 0.45rem;
+.stats-heading-row {
+  display: flex;
+  width: max-content;
+  max-width: 100%;
+  align-items: center;
+  gap: 11px;
+  margin-bottom: 0.5rem;
+}
+
+.stats-heading-row .eyebrow {
+  margin: 0;
   font-size: 0.84rem;
   font-weight: 800;
 }
 
+.stats-heading-mark {
+  display: block;
+  width: 42px;
+  height: 42px;
+  flex: 0 0 auto;
+}
+
+.stats-heading-mark img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
 .stats-quotation {
-  display: flex;
-  width: max-content;
-  max-width: 100%;
-  align-items: baseline;
-  gap: 11px;
-  margin: 0 0 18px;
-  padding: 4px 0 9px;
-  border-bottom: 1px solid rgba(8, 120, 71, 0.24);
+  position: relative;
+  left: 4%;
+  display: grid;
+  width: min(620px, 90%);
+  justify-items: center;
+  gap: 8px;
+  margin: 5px auto 22px;
+  padding: 5px 22px 8px;
   color: var(--forest-900);
 }
 
 .stats-quotation blockquote {
   margin: 0;
   font-family: Georgia, "Times New Roman", serif;
-  font-size: 1.08rem;
+  font-size: clamp(1.1rem, 1.55vw, 1.34rem);
+  font-style: italic;
   font-weight: 700;
-  line-height: 1.25;
+  line-height: 1.35;
+  text-align: center;
 }
 
 .stats-quotation blockquote span {
-  padding-bottom: 4px;
+  padding: 0 3px 5px;
   background-image: linear-gradient(90deg, var(--emerald-deep), var(--oxygen));
   background-position: 0 100%;
   background-repeat: no-repeat;
@@ -664,14 +689,18 @@ h2 {
 }
 
 .stats-quotation figcaption {
+  width: 100%;
+  padding-right: 9%;
   color: var(--muted);
-  font-size: 0.72rem;
+  font-size: 0.74rem;
   font-weight: 620;
+  text-align: right;
   white-space: nowrap;
 }
 
 .stats-quotation cite {
   font-family: Georgia, "Times New Roman", serif;
+  font-style: italic;
 }
 
 .stat,
@@ -1957,14 +1986,25 @@ h2 {
     padding-block: 26px;
   }
 
+  .stats-heading-row {
+    gap: 8px;
+  }
+
+  .stats-heading-mark {
+    width: 36px;
+    height: 36px;
+  }
+
   .stats-grid {
     grid-template-columns: 1fr;
   }
 
   .stats-quotation {
-    display: grid;
+    left: 0;
+    width: 100%;
     gap: 6px;
-    margin-bottom: 14px;
+    margin: 8px 0 18px;
+    padding-inline: 6px;
   }
 
   .stats-quotation blockquote {
@@ -1972,6 +2012,8 @@ h2 {
   }
 
   .stats-quotation figcaption {
+    padding-right: 0;
+    text-align: center;
     white-space: normal;
   }
 
