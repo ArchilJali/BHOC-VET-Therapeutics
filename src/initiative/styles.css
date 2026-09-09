@@ -1102,6 +1102,29 @@ h2 {
   font-size: 0.67rem;
 }
 
+.science-comparison-item.has-statements {
+  align-items: start;
+}
+
+.science-comparison-item.has-statements > img {
+  margin-top: 2px;
+  padding: 2px;
+}
+
+.science-comparison-statements {
+  display: grid;
+  gap: 4px;
+  margin-top: 8px;
+}
+
+.science-comparison-statements em {
+  color: #fff;
+  font-size: 0.66rem;
+  font-style: normal;
+  font-weight: 650;
+  line-height: 1.35;
+}
+
 .science-claim-content > p {
   margin: 24px 0 0;
   font-size: 0.65rem;

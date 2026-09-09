@@ -35,9 +35,18 @@
       "detail": "Cell-bound oxygen transport"
     },
     {
-      "image": {"src": "assets/initiative/diagram-bhoc.svg", "alt": "Line schematic of a BHOC carrier", "width": 48, "height": 48},
+      "image": {
+        "src": "assets/initiative/bhoc-carrier-concept.webp",
+        "alt": "Concept illustration of a compact BHOC molecular oxygen carrier",
+        "width": 160,
+        "height": 160
+      },
       "label": "BHOC carrier",
-      "detail": "Cell-free molecular scale"
+      "detail": "Cell-free molecular scale",
+      "statements": [
+        "Compatible with all blood types across species.",
+        "3+ year shelf life at room temperature."
+      ]
     }
   ],
   "caption": "Advancing oxygen delivery for a wilder tomorrow."

@@ -136,11 +136,14 @@ assert.equal((initiativeFocusHTML.match(/src="\.\.\/assets\/initiative\/focus-[a
 assert.match(initiativeHome,/alt="Hawksbill sea turtle in a remote marine conservation setting"/);
 assert.match(initiativeHome,/src="\.\.\/assets\/initiative\/science-gray-wolf-usfws\.webp"/);
 assert.match(initiativeHome,/src="\.\.\/assets\/initiative\/science-red-blood-cells-nci\.webp"/);
+assert.match(initiativeHome,/src="\.\.\/assets\/initiative\/bhoc-carrier-concept\.webp"/);
+assert.match(initiativeHome,/Compatible with all blood types across species\./);
+assert.match(initiativeHome,/3\+ year shelf life at room temperature\./);
 assert.match(initiativeCSS,/\.focus-grid\s*\{[^}]*grid-template-columns:\s*repeat\(7,/s,'initiative desktop focus grid follows the seven-card reference');
 assert.match(initiativeHome,/A world worth protecting/);
 assert.match(initiativeHome,/Endangered Species\.<br>Real Solutions\./);
 assert.match(initiativeHome,/Every species is different\.<br>The need for oxygen is universal\./);
-assert.equal((initiativeHome.match(/class="science-comparison-item"/g)||[]).length,2,'science bridge uses two crisp schematic comparisons');
+assert.equal((initiativeHome.match(/class="science-comparison-item/g)||[]).length,2,'science bridge uses two comparison items');
 assert.match(initiativeHome,/href="\.\.\/news\.html">News<\/a>/);
 assert.match(initiativeHome,/href="\.\.\/applications\.html"/);
 assert.match(initiativeHome,/href="\.\.\/index\.html">BHOC Veterinary<\/a>/);
