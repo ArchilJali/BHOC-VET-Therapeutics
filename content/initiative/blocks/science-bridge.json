@@ -29,5 +29,22 @@
     "Compatible with all blood types for all species.",
     "3+ year shelf life at room temperature."
   ],
-  "caption": "Advancing oxygen delivery for a wilder tomorrow."
+  "caption": "Advancing oxygen delivery for a wilder tomorrow.",
+  "relatedLinks": [
+    {
+      "label": "BHOC Veterinary",
+      "description": "Veterinary website",
+      "href": "../index.html"
+    },
+    {
+      "label": "BHOC Therapeutics",
+      "description": "Oxygen therapeutics platform",
+      "href": "https://bhoctherapeutics.com/"
+    },
+    {
+      "label": "VET Evidence Library",
+      "description": "Source-linked veterinary research",
+      "href": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-index.html"
+    }
+  ]
 }

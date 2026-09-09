@@ -126,10 +126,16 @@ assert.equal(initiativeOrganization.logo.width,318,'initiative logo schema prese
 assert.equal(initiativeOrganization.logo.height,317,'initiative logo schema preserves source height');
 assert.equal(initiativeWebPage.publisher['@id'],'https://bhocvet.com/initiative/#initiative','initiative page schema identifies its publisher');
 assert.equal(initiativeWebPage.inLanguage,'en','initiative page schema identifies its language');
+assert.deepEqual(initiativeWebPage.significantLink,[
+  'https://bhocvet.com/',
+  'https://bhoctherapeutics.com/',
+  'https://archiljali.github.io/BHOC-platform/veterinary/Vet-index.html'
+],'initiative page schema identifies the three primary BHOC visitor routes');
 const initiativeHeaderHTML=initiativeHome.match(/<header class="site-header"[\s\S]*?<\/header>/)?.[0]||'';
 assert.equal((initiativeHeaderHTML.match(/<img\b/g)||[]).length,1,'initiative header uses one canonical logo');
 assert.match(initiativeHeaderHTML,/class="initiative-brand-copy">[\s\S]*<strong>BHOC Species &amp; Biodiversity<br>Protection Initiative<\/strong>/,'initiative header retains the canonical BHOC Initiative identity');
-assert.match(initiativeHeaderHTML,/href="\.\.\/index\.html">Home<\/a>/,'initiative navigation includes a visible BHOC Veterinary return link');
+assert.match(initiativeHeaderHTML,/class="initiative-return-link" href="\.\.\/index\.html" aria-label="Return to the BHOC Veterinary website">[\s\S]*Back to BHOC Veterinary<\/a>/,'initiative header includes an explicit BHOC Veterinary return bar');
+assert.doesNotMatch(initiativeHeaderHTML,/href="\.\.\/index\.html">Home<\/a>/,'initiative navigation does not duplicate the return link');
 assert.match(initiativeHeaderHTML,/class="header-action"[^>]*>Support the Initiative/,'initiative header retains the support action');
 assert.equal((initiativeHome.match(/class="hero-photo hero-photo-/g)||[]).length,6,'hero uses six independently editable real photographs');
 assert.equal((initiativeHome.match(/class="hero-dot/g)||[]).length,3,'hero renders three requested slide controls');
@@ -152,6 +158,12 @@ assert.match(initiativeHome,/alt="Concept illustration comparing a red blood cel
 assert.doesNotMatch(initiativeHome,/src="\.\.\/assets\/initiative\/bhoc-carrier-concept\.webp"/);
 assert.match(initiativeHome,/Compatible with all blood types for all species\./);
 assert.match(initiativeHome,/3\+ year shelf life at room temperature\./);
+assert.match(initiativeHome,/A world worth protecting[\s\S]*class="stats-quotation"[\s\S]*We be of one blood, ye and I\.[\s\S]*Rudyard Kipling[\s\S]*The Jungle Book/,'Kipling quotation appears directly beneath the world-worth-protecting heading');
+assert.equal((initiativeHome.match(/class="science-related-links"/g)||[]).length,1,'science bridge renders one related-links directory');
+assert.equal((initiativeHome.match(/class="science-related-links"[\s\S]*?<\/nav>/)?.[0].match(/<a\b/g)||[]).length,3,'science bridge renders three primary BHOC routes');
+assert.match(initiativeHome,/class="science-related-links"[\s\S]*href="\.\.\/index\.html"[\s\S]*BHOC Veterinary/);
+assert.match(initiativeHome,/class="science-related-links"[\s\S]*href="https:\/\/bhoctherapeutics\.com\/"[\s\S]*BHOC Therapeutics/);
+assert.match(initiativeHome,/class="science-related-links"[\s\S]*href="https:\/\/archiljali\.github\.io\/BHOC-platform\/veterinary\/Vet-index\.html"[\s\S]*VET Evidence Library/);
 assert.match(initiativeCSS,/\.focus-grid\s*\{[^}]*grid-template-columns:\s*repeat\(7,/s,'initiative desktop focus grid follows the seven-card reference');
 assert.match(initiativeCSS,/--emerald:\s*#16a05d;/,'initiative palette includes one vivid conservation accent');
 assert.match(initiativeCSS,/--oxygen:\s*#1cb5ab;/,'initiative palette reserves teal for oxygen science');
@@ -160,7 +172,14 @@ assert.match(initiativeHome,/A world worth protecting/);
 assert.match(initiativeHome,/Endangered Species\.<br>Real Solutions\./);
 assert.match(initiativeHome,/Every species is different\.<br>The need for oxygen is universal\./);
 assert.equal((initiativeHome.match(/class="science-claim-graphic"/g)||[]).length,1,'science bridge renders the complete supplied BHOC versus RBC comparison once');
-assert.match(initiativeHome,/href="\.\.\/news\.html">News<\/a>/);
+const initiativeFooterHTML=initiativeHome.match(/<footer class="site-footer">[\s\S]*?<\/footer>/)?.[0]||'';
+assert.equal((initiativeFooterHTML.match(/class="footer-group"/g)||[]).length,4,'initiative footer has four dedicated navigation groups');
+for(const heading of ['Initiative','Conservation','BHOC Network','Connect'])assert.match(initiativeFooterHTML,new RegExp('<h2>'+heading.replace('&','&amp;')+'<\\/h2>'),'initiative footer group '+heading);
+assert.match(initiativeFooterHTML,/class="shell protected-content"[^>]*>[\s\S]*Protected content notice/,'initiative footer includes the requested rights warning');
+assert.match(initiativeFooterHTML,/may not be copied, scraped, reproduced, adapted, redistributed or republished/,'initiative footer states the protected-content restrictions');
+assert.match(initiativeFooterHTML,/Third-party photographs and source materials remain governed by the credits and licenses/,'initiative footer preserves third-party licensing accuracy');
+assert.match(initiativeFooterHTML,/First published <time datetime="2026-09-09">09 Sep 2026<\/time>.*Last updated <time datetime="2026-09-09">09 Sep 2026<\/time>.*Version 26\.09\.09/,'initiative footer carries its publication history');
+assert.match(initiativeHome,/href="\.\.\/news\.html">News &amp; Intelligence<\/a>/);
 assert.match(initiativeHome,/href="\.\.\/applications\.html"/);
 assert.match(initiativeHome,/href="\.\.\/index\.html">BHOC Veterinary<\/a>/);
 assert.doesNotMatch(initiativeHome,/bhoc-species-initiative\.archil-jali\.chatgpt\.site/);

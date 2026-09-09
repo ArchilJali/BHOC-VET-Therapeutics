@@ -46,6 +46,11 @@ export function renderHeader(header){
   const nav=header.navigation.map(item=>'<a '+linkAttrs(item)+'>'+esc(item.label)+'</a>').join('');
   return [
     '<header class="site-header" id="top">',
+    '  <div class="initiative-return-bar">',
+    '    <div class="shell initiative-return-inner">',
+    '      <a class="initiative-return-link" '+linkAttrs(header.returnLink)+' aria-label="'+esc(header.returnLink.ariaLabel)+'"><span aria-hidden="true">←</span>'+esc(header.returnLink.label)+'</a>',
+    '    </div>',
+    '  </div>',
     '  <div class="shell header-inner">',
     '    <a class="initiative-brand" '+linkAttrs(header.brand)+' aria-label="'+esc(header.brand.ariaLabel)+'">',
     '      '+initiativeImage(header.brand.image,{priority:true,lazy:false}),
@@ -68,8 +73,8 @@ export function renderHeader(header){
 }
 
 export function renderFooter(footer){
-  const nav=footer.navigation.map(item=>'<a '+linkAttrs(item)+'>'+esc(item.label)+'</a>').join('');
-  const ecosystem=footer.ecosystemLinks.map(item=>'<a '+linkAttrs(item)+'>'+esc(item.label)+'</a>').join('');
+  const groups=footer.groups.map(group=>'<div class="footer-group"><h2>'+esc(group.title)+'</h2>'+group.links.map(item=>'<a '+linkAttrs(item)+'>'+esc(item.label)+'</a>').join('')+'</div>').join('');
+  const formatDate=iso=>{const [year,month,day]=iso.split('-');return day+' '+['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'][Number(month)-1]+' '+year};
   return [
     '<footer class="site-footer">',
     '  <div class="shell footer-main">',
@@ -82,14 +87,19 @@ export function renderFooter(footer){
     '      </div>',
     '    </div>',
     '',
-    '    <nav class="footer-nav" aria-label="Footer navigation">'+nav+'</nav>',
-    '    <div class="ecosystem-links" aria-label="BHOC ecosystem links">'+ecosystem+'</div>',
+    '    <nav class="footer-directory" aria-label="Initiative footer navigation">'+groups+'</nav>',
+    '  </div>',
+    '  <div class="shell footer-action-row">',
+    '    <p>'+esc(footer.actionLead)+'</p>',
     '    <a class="button button-primary footer-button" '+linkAttrs(footer.action)+'>'+esc(footer.action.label)+'</a>',
     '  </div>',
+    '  <aside class="shell protected-content" aria-label="'+esc(footer.legal.title)+'">',
+    '    <span class="protected-content-icon" aria-hidden="true">!</span>',
+    '    <div><strong>'+esc(footer.legal.title)+'</strong><p>'+esc(footer.legal.copyright)+' '+esc(footer.legal.text)+'</p><small>'+esc(footer.legal.licenseNote)+' <a '+linkAttrs({href:footer.legal.permissionHref})+'>'+esc(footer.legal.permissionLabel)+'</a>.</small></div>',
+    '  </aside>',
     '  <div class="shell footer-bottom">',
-    '    <span>© 2026 BHOC Species &amp; Biodiversity Protection Initiative. All rights reserved.</span>',
-    '    <span>Project lead: BHOC Team</span>',
-    '    <a href="https://www.linkedin.com/company/bhoc-therapeutics/" target="_blank" rel="noopener" aria-label="BHOC Therapeutics on LinkedIn">LinkedIn</a>',
+    '    <span>'+esc(footer.projectLead)+'</span>',
+    '    <span>First published <time datetime="'+esc(footer.publication.firstPublished)+'">'+formatDate(footer.publication.firstPublished)+'</time> · Last updated <time datetime="'+esc(footer.publication.lastUpdated)+'">'+formatDate(footer.publication.lastUpdated)+'</time> · Version '+esc(footer.publication.version)+'</span>',
     '  </div>',
     '</footer>'
   ].join('\n');

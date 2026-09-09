@@ -17,14 +17,16 @@
 - Current Open Graph and WhatsApp image: `assets/bhoc-initiative-land-social.jpg` (1200 × 463), an uncropped copy of the approved Land hero.
 - Initiative mark: `assets/reference-initiative-mark.webp`.
 - The same Initiative mark is used across the site; shared CSS masking prevents its square raster backing from showing against the cream/white layouts.
-- The full Initiative homepage header shows one canonical Initiative logo and a visible Home link back to BHOC Veterinary. Its navigation collapses into the same menu on narrow screens.
+- The full Initiative homepage header shows one canonical Initiative logo and a slim, explicit `Back to BHOC Veterinary` return bar above the Initiative navigation. Its navigation collapses into the same menu on narrow screens.
 - The Initiative homepage has its own conservation palette: white and near-black forest green, one vivid emerald action accent, oxygen teal reserved for the Science Bridge and red reserved for the RBC/BHOC comparison.
 - The canonical Initiative mark is also the page favicon and the `Organization.logo` ImageObject in structured data; preserve its current file, dimensions, ALT text and identity.
 - The Initiative hero is a modular six-photo wildlife composition. Every photograph, credit and license is stored independently in `content/initiative/blocks/hero.json`.
 - The Initiative hero renders three lower controls. The first gallery is active; controls two and three remain visibly reserved and disabled until approved slides are supplied.
+- The Kipling quotation `We be of one blood, ye and I.` appears directly beneath `A world worth protecting` in the evidence statistics strip, with its author and *The Jungle Book* attribution.
 - Focus-area wildlife photographs are local, optimized 640 × 480 WebP assets with visible Wikimedia Commons credits and licenses. They render in seven, four, two and one-column layouts as the viewport narrows.
 - The tiger, elephant and turtle 960 × 960 WebP crops remain sourced from public-domain or attribution-compatible USFWS and NOAA photographs. Their current uses and exact source data are stored in the active Initiative block JSON.
-- The Science Bridge shows the complete user-supplied `BHOC vs RBC >400× smaller` comparison as an independent optimized image. The compatibility and room-temperature shelf-life statements remain separate native text below it.
+- The Science Bridge shows the complete user-supplied `BHOC vs RBC >400× smaller` comparison as an independent optimized image. The compatibility and room-temperature shelf-life statements remain separate native text below it, followed by public links to BHOC Veterinary, BHOC Therapeutics and the full VET Evidence Library.
+- The Initiative footer has its own four-part navigation directory, BHOC network links, publication details and a visible protected-content notice. The notice reserves rights in original BHOC material while preserving the separate licenses and credits attached to third-party photographs and sources.
 - Species row: `rem-wirehaired-dachshund-sketch.webp`, `cat-loose-pencil-sketch.webp`, `camel-loose-pencil-sketch.webp`, `orangutan-loose-pencil-sketch.webp`, `marine-turtle-loose-pencil-sketch.webp` and `panda-loose-pencil-sketch.webp`.
 - Rem identity reference: `assets/reference-dog-pencil.webp`. Preserve the face, expression and wiry beard.
 - Molecular structures: `assets/chlorophyll.svg` and `assets/heme.svg`.
