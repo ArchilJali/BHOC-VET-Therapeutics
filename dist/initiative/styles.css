@@ -605,7 +605,7 @@ h2 {
 }
 
 .stats-strip {
-  padding: 30px 0 34px;
+  padding: 23px 0 26px;
   border-bottom: 1px solid var(--line);
   background: #fff;
 }
@@ -613,7 +613,7 @@ h2 {
 .stats-inner {
   display: grid;
   grid-template-columns: minmax(600px, 1.25fr) minmax(430px, 0.9fr);
-  gap: 42px;
+  gap: 30px;
   align-items: end;
 }
 
@@ -624,8 +624,8 @@ h2 {
 
 .stat,
 .stats-promise {
-  min-height: 92px;
-  padding: 0 24px;
+  min-height: 76px;
+  padding: 0 20px;
   border-right: 1px solid var(--line);
 }
 
@@ -637,7 +637,7 @@ h2 {
   display: block;
   color: var(--forest-800);
   font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(2.3rem, 3.2vw, 3.2rem);
+  font-size: clamp(2.1rem, 2.8vw, 2.85rem);
   font-weight: 500;
   letter-spacing: -0.045em;
   line-height: 0.92;
@@ -645,8 +645,8 @@ h2 {
 
 .stat span {
   display: block;
-  margin-top: 11px;
-  font-size: 0.8rem;
+  margin-top: 7px;
+  font-size: 0.74rem;
   line-height: 1.35;
 }
 
@@ -655,7 +655,7 @@ h2 {
   align-items: center;
   margin: 0;
   color: var(--forest-800);
-  font-size: 0.76rem;
+  font-size: 0.7rem;
   font-weight: 650;
   letter-spacing: 0.12em;
   line-height: 1.4;
@@ -664,7 +664,7 @@ h2 {
 
 .stats-sources > span {
   display: block;
-  margin-bottom: 13px;
+  margin-bottom: 8px;
   color: var(--muted);
   font-size: 0.68rem;
   letter-spacing: 0.12em;
@@ -679,8 +679,8 @@ h2 {
 .stats-sources a {
   display: grid;
   align-content: center;
-  min-height: 62px;
-  padding: 0 18px;
+  min-height: 54px;
+  padding: 0 15px;
   border-left: 1px solid var(--line);
   text-decoration: none;
 }
@@ -692,7 +692,7 @@ h2 {
 
 .stats-sources strong {
   font-family: Georgia, "Times New Roman", serif;
-  font-size: 1.05rem;
+  font-size: 0.98rem;
   line-height: 1.05;
 }
 
@@ -705,14 +705,14 @@ h2 {
 .mission-panel {
   display: grid;
   grid-template-columns: minmax(330px, 0.95fr) minmax(390px, 1.05fr) minmax(430px, 1fr);
-  min-height: 415px;
+  min-height: 372px;
   color: #fff;
   background: var(--forest-950);
 }
 
 .mission-photo {
   position: relative;
-  min-height: 415px;
+  min-height: 372px;
   margin: 0;
   overflow: hidden;
 }
@@ -729,7 +729,9 @@ h2 {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: 50% 48%;
+  object-position: 50% 38%;
+  transform: scale(1.22);
+  transform-origin: 50% 38%;
 }
 
 .mission-photo figcaption,
@@ -756,7 +758,7 @@ h2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 48px clamp(28px, 4vw, 64px);
+  padding: 35px clamp(28px, 3.3vw, 52px);
   background:
     radial-gradient(circle at 35% 50%, rgba(61, 112, 71, 0.32), transparent 54%),
     var(--forest-950);
@@ -774,8 +776,8 @@ h2 {
   max-width: 520px;
   margin-bottom: 1.35rem;
   color: rgba(255, 255, 255, 0.83);
-  font-size: 0.93rem;
-  line-height: 1.55;
+  font-size: 0.87rem;
+  line-height: 1.48;
 }
 
 .mission-copy .button {
@@ -787,22 +789,22 @@ h2 {
 .mission-features {
   display: grid;
   align-content: center;
-  gap: 22px;
-  padding: 36px clamp(28px, 4vw, 62px);
+  gap: 16px;
+  padding: 28px clamp(26px, 3.3vw, 50px);
   border-left: 1px solid rgba(255, 255, 255, 0.16);
   background: linear-gradient(145deg, #0e4a35, #073427);
 }
 
 .mission-features article {
   display: grid;
-  grid-template-columns: 54px 1fr;
+  grid-template-columns: 49px 1fr;
   align-items: center;
   gap: 15px;
 }
 
 .mission-features .line-icon {
-  width: 52px;
-  height: 52px;
+  width: 47px;
+  height: 47px;
   padding: 10px;
   border: 1px solid rgba(255, 255, 255, 0.55);
   border-radius: 50%;
@@ -811,18 +813,18 @@ h2 {
 .mission-features h3 {
   margin: 0 0 4px;
   color: #fff;
-  font-size: 1.04rem;
+  font-size: 0.98rem;
 }
 
 .mission-features p {
   margin: 0;
   color: rgba(255, 255, 255, 0.76);
-  font-size: 0.76rem;
+  font-size: 0.72rem;
   line-height: 1.35;
 }
 
 .compact-section {
-  padding: 42px 0 44px;
+  padding: 30px 0 36px;
 }
 
 .focus {
@@ -858,11 +860,12 @@ h2 {
 .focus-grid {
   display: grid;
   grid-template-columns: repeat(7, minmax(0, 1fr));
-  gap: 14px;
-  margin-top: 20px;
+  gap: 10px;
+  margin-top: 14px;
 }
 
 .focus-card {
+  position: relative;
   display: flex;
   min-width: 0;
   overflow: hidden;
@@ -888,7 +891,8 @@ h2 {
 
 .focus-card img {
   width: 100%;
-  aspect-ratio: 1.12 / 1;
+  height: 156px;
+  aspect-ratio: auto;
   object-fit: cover;
 }
 
@@ -896,36 +900,46 @@ h2 {
   display: flex;
   flex: 1;
   flex-direction: column;
-  padding: 11px 12px 13px;
+  padding: 10px 10px 12px;
 }
 
 .focus-card h3 {
   min-height: 2.35em;
-  margin: 0 0 7px;
+  margin: 0 0 6px;
   color: var(--ink);
-  font-size: 0.98rem;
+  font-size: 0.89rem;
   line-height: 1.12;
 }
 
 .focus-card p {
   margin: 0;
   color: #34463e;
-  font-size: 0.74rem;
+  font-size: 0.7rem;
   line-height: 1.35;
 }
 
 .photo-credit {
+  position: absolute;
+  z-index: 2;
+  top: 135px;
+  right: 7px;
+  left: 7px;
   display: block;
-  padding: 7px 10px 8px;
-  border-top: 1px solid #e6ebe7;
-  color: #68766f;
-  background: #fff;
-  font-size: 0.57rem;
-  line-height: 1.25;
+  overflow: hidden;
+  padding: 3px 5px;
+  border: 0;
+  border-radius: 3px;
+  color: rgba(255, 255, 255, 0.9);
+  background: rgba(4, 30, 22, 0.7);
+  font-size: 0.49rem;
+  line-height: 1.15;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .photo-credit a {
-  text-decoration-color: #9ba79f;
+  color: inherit;
+  text-decoration-color: rgba(255, 255, 255, 0.58);
   text-underline-offset: 2px;
 }
 
@@ -936,28 +950,30 @@ h2 {
 
 .science-grid {
   display: grid;
-  grid-template-columns: minmax(420px, 0.9fr) minmax(360px, 0.8fr) minmax(300px, 0.65fr);
-  min-height: 430px;
+  grid-template-columns: minmax(410px, 0.95fr) minmax(360px, 0.86fr) minmax(300px, 0.7fr);
+  min-height: 420px;
 }
 
 .science-copy {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 48px clamp(30px, 4vw, 64px) 48px 0;
+  padding: 42px clamp(30px, 3.5vw, 54px) 42px 0;
 }
 
 .science-copy h2 {
   max-width: 680px;
   color: #0b2630;
+  font-size: clamp(2.35rem, 3vw, 3.35rem);
+  line-height: 1.02;
 }
 
 .science-copy > p:not(.eyebrow) {
   max-width: 660px;
   margin-bottom: 1.35rem;
   color: #354950;
-  font-size: 0.94rem;
-  line-height: 1.52;
+  font-size: 0.88rem;
+  line-height: 1.48;
 }
 
 .science-copy .button {
@@ -966,7 +982,7 @@ h2 {
 
 .science-photo {
   position: relative;
-  min-height: 430px;
+  min-height: 420px;
   margin: 0;
   overflow: hidden;
 }
@@ -983,23 +999,63 @@ h2 {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: 54% center;
+  object-position: 50% center;
 }
 
 .science-claim {
   position: relative;
+  overflow: hidden;
+  min-height: 420px;
+  padding: 0;
+  background: #7a1d1d;
+}
+
+.science-claim-media {
+  position: absolute;
+  inset: 0;
+  margin: 0;
+}
+
+.science-claim-media::after {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(145deg, rgba(166, 50, 42, 0.6), rgba(92, 13, 18, 0.86));
+  content: "";
+}
+
+.science-claim-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: saturate(1.2) contrast(1.05);
+}
+
+.science-claim-media figcaption {
+  position: absolute;
+  z-index: 2;
+  right: 10px;
+  bottom: 8px;
+  left: 10px;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 0.52rem;
+}
+
+.science-claim-media figcaption a {
+  color: inherit;
+}
+
+.science-claim-content {
+  position: relative;
+  z-index: 1;
   display: flex;
+  min-height: 420px;
   flex-direction: column;
   justify-content: center;
   padding: 42px clamp(26px, 3vw, 48px);
   color: #fff;
-  background:
-    radial-gradient(circle at 78% 20%, rgba(255, 255, 255, 0.18) 0 5px, transparent 6px),
-    radial-gradient(circle at 25% 75%, rgba(255, 255, 255, 0.12) 0 9px, transparent 10px),
-    linear-gradient(145deg, #b2493f, #6d1719 70%);
 }
 
-.science-claim > strong {
+.science-claim-content > strong {
   font-family: Georgia, "Times New Roman", serif;
   font-size: clamp(2.15rem, 3.2vw, 3.55rem);
   font-weight: 500;
@@ -1046,7 +1102,7 @@ h2 {
   font-size: 0.67rem;
 }
 
-.science-claim > p {
+.science-claim-content > p {
   margin: 24px 0 0;
   font-size: 0.65rem;
   font-weight: 650;
@@ -1312,7 +1368,12 @@ h2 {
 
   .science-claim {
     grid-column: 1 / -1;
+    min-height: 310px;
+  }
+
+  .science-claim-content {
     display: grid;
+    min-height: 310px;
     grid-template-columns: 0.7fr 1.3fr;
     align-items: center;
     gap: 30px;
@@ -1323,7 +1384,7 @@ h2 {
     margin-top: 0;
   }
 
-  .science-claim > p {
+  .science-claim-content > p {
     grid-column: 1 / -1;
     margin-top: 0;
   }
@@ -1418,6 +1479,11 @@ h2 {
 
   .science-claim {
     grid-column: auto;
+  }
+
+  .science-claim-content {
+    display: flex;
+    min-height: 360px;
   }
 
   .footer-main {
@@ -1669,6 +1735,14 @@ h2 {
     aspect-ratio: auto;
   }
 
+  .photo-credit {
+    top: auto;
+    right: auto;
+    bottom: 6px;
+    left: 6px;
+    max-width: 38%;
+  }
+
   .focus-card h3 {
     min-height: 0;
   }
@@ -1682,7 +1756,12 @@ h2 {
   }
 
   .science-claim {
-    display: block;
+    min-height: 360px;
+    padding: 0;
+  }
+
+  .science-claim-content {
+    min-height: 360px;
     padding: 34px 24px;
   }
 
@@ -1691,7 +1770,7 @@ h2 {
     margin-top: 24px;
   }
 
-  .science-claim > p {
+  .science-claim-content > p {
     margin-top: 22px;
   }
 

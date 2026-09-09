@@ -132,8 +132,10 @@ assert.doesNotMatch(initiativeHome,/microcirculation\.webp/,'initiative no longe
 const initiativeFocusHTML=initiativeHome.match(/<section class="focus[\s\S]*?<\/section>/)?.[0]||'';
 assert.equal((initiativeFocusHTML.match(/class="focus-card"/g)||[]).length,7,'initiative/index.html: seven independently editable focus cards');
 assert.equal((initiativeFocusHTML.match(/class="photo-credit"/g)||[]).length,7,'initiative/index.html: every sourced wildlife photograph has a visible credit');
-assert.equal((initiativeFocusHTML.match(/src="\.\.\/assets\/initiative\/focus-[a-z-]+-photo\.webp"/g)||[]).length,7,'initiative/index.html: seven local optimized wildlife photographs');
-assert.match(initiativeHome,/alt="Hawksbill sea turtle in Flower Garden Banks National Marine Sanctuary"/);
+assert.equal((initiativeFocusHTML.match(/src="\.\.\/assets\/initiative\/focus-[a-z-]+\.webp"/g)||[]).length,7,'initiative/index.html: seven local optimized photographs');
+assert.match(initiativeHome,/alt="Hawksbill sea turtle in a remote marine conservation setting"/);
+assert.match(initiativeHome,/src="\.\.\/assets\/initiative\/science-gray-wolf-usfws\.webp"/);
+assert.match(initiativeHome,/src="\.\.\/assets\/initiative\/science-red-blood-cells-nci\.webp"/);
 assert.match(initiativeCSS,/\.focus-grid\s*\{[^}]*grid-template-columns:\s*repeat\(7,/s,'initiative desktop focus grid follows the seven-card reference');
 assert.match(initiativeHome,/A world worth protecting/);
 assert.match(initiativeHome,/Endangered Species\.<br>Real Solutions\./);

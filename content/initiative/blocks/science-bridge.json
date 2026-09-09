@@ -10,13 +10,22 @@
     "arrow": true
   },
   "image": {
-    "src": "assets/initiative/focus-philanthropy-photo.webp",
-    "alt": "Close portrait of a snow leopard representing cross-species veterinary science",
-    "width": 640,
-    "height": 480,
-    "credit": "Eric Kilby",
-    "license": "CC BY-SA 2.0",
-    "source": "https://commons.wikimedia.org/wiki/File:Snow_Leopard_Closeup_(13883260104).jpg"
+    "src": "assets/initiative/science-gray-wolf-usfws.webp",
+    "alt": "Gray wolf representing cross-species veterinary science and oxygen delivery",
+    "width": 720,
+    "height": 540,
+    "credit": "Gary Kramer / U.S. Fish and Wildlife Service",
+    "license": "Public domain",
+    "source": "https://www.flickr.com/photos/usfwshq/5584759091/"
+  },
+  "claimImage": {
+    "src": "assets/initiative/science-red-blood-cells-nci.webp",
+    "alt": "National Cancer Institute illustration of red blood cells and oxygen transport",
+    "width": 720,
+    "height": 540,
+    "credit": "Donald Bliss / National Cancer Institute",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Red_blood_cells_illustration.jpg"
   },
   "claimLines": ["Smaller.", "Faster.", "Further."],
   "comparison": [

@@ -1,7 +1,7 @@
 {
   "id": "focus",
   "title": "Our Focus Areas",
-  "intro": "Seven connected paths from emergency care to evidence, conservation and long-term partnership.",
+  "intro": "",
   "moreLink": {"label": "See all focus areas", "href": "#focus"},
   "cards": [
     {
@@ -20,38 +20,38 @@
     },
     {
       "href": "mailto:info@bhoctherapeutics.com?subject=BHOC%20Initiative%20Zoo%20Collaboration",
-      "image": {"src": "assets/initiative/focus-zoo-photo.webp", "alt": "Giant panda Tai Shan at the Smithsonian National Zoological Park", "width": 640, "height": 480},
+      "image": {"src": "assets/initiative/focus-giraffe-public-domain.webp", "alt": "Giraffe in an African savanna representing zoo and conservation-center collaboration", "width": 720, "height": 540},
       "titleLines": ["Zoos & Conservation", "Centers"],
       "text": "Veterinary support and collaboration",
-      "credit": {"label": "Fernando Revilla", "href": "https://commons.wikimedia.org/wiki/File:Giant_Panda_Tai_Shan.JPG", "license": "CC BY-SA 2.5", "licenseHref": "https://creativecommons.org/licenses/by-sa/2.5/"}
+      "credit": {"label": "Rawpixel / free-images.com", "href": "https://www.rawpixel.com/image/6060950/free-public-domain-cc0-photo", "license": "Public domain / CC0", "licenseHref": "https://creativecommons.org/publicdomain/zero/1.0/"}
     },
     {
       "href": "../applications.html",
-      "image": {"src": "assets/initiative/focus-veterinary-photo.webp", "alt": "Black rhinoceros in South Africa during conservation operations", "width": 640, "height": 480},
+      "image": {"src": "assets/initiative/focus-science-photo.webp", "alt": "Hawksbill sea turtle in a remote marine conservation setting", "width": 640, "height": 480},
       "titleLines": ["Field & Remote", "Medicine"],
       "text": "Care beyond traditional infrastructure",
-      "credit": {"label": "AfricanConservation / Working with Wildlife", "href": "https://commons.wikimedia.org/wiki/File:Black_Rhino_at_Working_with_Wildlife.jpg", "license": "CC BY-SA 4.0", "licenseHref": "https://creativecommons.org/licenses/by-sa/4.0/"}
-    },
-    {
-      "href": "../science.html",
-      "image": {"src": "assets/initiative/focus-conservation-photo.webp", "alt": "Juvenile California condor during species recovery work", "width": 640, "height": 480},
-      "titleLines": ["Comparative Biology"],
-      "text": "Cross-species insights for better medicine",
-      "credit": {"label": "Jim Bahn", "href": "https://commons.wikimedia.org/wiki/File:California_Condor_Pinnacles_NM_1.jpg", "license": "CC BY 2.0", "licenseHref": "https://creativecommons.org/licenses/by/2.0/"}
-    },
-    {
-      "href": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-index.html",
-      "image": {"src": "assets/initiative/focus-science-photo.webp", "alt": "Hawksbill sea turtle in Flower Garden Banks National Marine Sanctuary", "width": 640, "height": 480},
-      "titleLines": ["Evidence & Research"],
-      "text": "A growing scientific foundation",
       "credit": {"label": "GP Schmahl / NOAA", "href": "https://commons.wikimedia.org/wiki/File:FGBNMS_-_Hawksbill_Turtle_(27618418831).jpg", "license": "Public domain", "licenseHref": "https://creativecommons.org/publicdomain/mark/1.0/"}
     },
     {
+      "href": "../science.html",
+      "image": {"src": "assets/initiative/focus-toucan-public-domain.webp", "alt": "Keel-billed toucan illustrating comparative biology across species", "width": 720, "height": 540},
+      "titleLines": ["Comparative Biology"],
+      "text": "Cross-species insights for better medicine",
+      "credit": {"label": "Rawpixel / free-images.com", "href": "https://www.rawpixel.com/image/6017074/photo-image-public-domain-nature-tropical", "license": "Public domain / CC0", "licenseHref": "https://creativecommons.org/publicdomain/zero/1.0/"}
+    },
+    {
+      "href": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-index.html",
+      "image": {"src": "assets/initiative/focus-open-book-public-domain.webp", "alt": "Open scientific book representing veterinary evidence and research", "width": 720, "height": 540},
+      "titleLines": ["Evidence & Research"],
+      "text": "A growing scientific foundation",
+      "credit": {"label": "Rawpixel / PxHere", "href": "https://www.rawpixel.com/image/5922583/free-open-book-photo-public-domain-cc0-image", "license": "Public domain / CC0", "licenseHref": "https://creativecommons.org/publicdomain/zero/1.0/"}
+    },
+    {
       "href": "mailto:info@bhoctherapeutics.com?subject=BHOC%20Initiative%20Partnership",
-      "image": {"src": "assets/initiative/focus-red-book-photo.webp", "alt": "African elephant in its natural habitat", "width": 640, "height": 480},
+      "image": {"src": "assets/initiative/focus-mountain-landscape-public-domain.webp", "alt": "Protected mountain lake landscape representing conservation philanthropy and partnerships", "width": 720, "height": 540},
       "titleLines": ["Philanthropy &", "Partnerships"],
       "text": "Stronger together for greater impact",
-      "credit": {"label": "Gary M. Stolz / USFWS", "href": "https://commons.wikimedia.org/wiki/File:African_elephant_high_resolution.jpg", "license": "Public domain", "licenseHref": "https://creativecommons.org/publicdomain/mark/1.0/"}
+      "credit": {"label": "Rawpixel / public-domain archive", "href": "https://www.rawpixel.com/image/6034042/photo-image-public-domain-tree-plant", "license": "Public domain / CC0", "licenseHref": "https://creativecommons.org/publicdomain/zero/1.0/"}
     }
   ]
 }
