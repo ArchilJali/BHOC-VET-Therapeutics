@@ -1,6 +1,17 @@
 {
   "navigation": [
     {
+      "label": "Species & Biodiversity Protection",
+      "href": "./initiative/",
+      "role": "initiative",
+      "logo": {
+        "src": "assets/bhoc-species-biodiversity-logo.webp",
+        "alt": "",
+        "width": 1254,
+        "height": 1254
+      }
+    },
+    {
       "label": "Product",
       "href": "product.html"
     },
@@ -15,10 +26,6 @@
     {
       "label": "Science",
       "href": "science.html"
-    },
-    {
-      "label": "Initiative",
-      "href": "./initiative/"
     },
     {
       "label": "Related Information",
