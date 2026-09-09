@@ -13,7 +13,7 @@ Current as of 8 September 2026. This file lists only sources used by the present
 - Species portraits: the six `*-loose-pencil-sketch.webp`/`rem-wirehaired-dachshund-sketch.webp` files named in `content/blocks/species.json`.
 - Rem identity reference: `assets/reference-dog-pencil.webp`.
 - Molecular diagrams: exact ChEBI SVG structures in `assets/chlorophyll.svg` and `assets/heme.svg`.
-- Initiative blood-cell and cell symbols: adapted from the CC0 Health Icons outline set by Resolve to Save Lives, https://github.com/resolvetosavelives/healthicons. The BHOC carrier schematic was created for this site.
+- Initiative BHOC-versus-RBC comparison: the user-supplied concept graphic is preserved in full and format-optimized as `assets/initiative/bhoc-vs-rbc-400x-comparison.webp`; its descriptive ALT text and adjacent product statements remain native page content.
 
 Private photographs, intermediate generations, screenshots, superseded hero variants and unused full-resolution exports are not part of the public repository.
 

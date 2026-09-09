@@ -264,7 +264,7 @@ const initiativeImages=[...new Map([
   initiativeMission.image,
   ...initiativeFocus.cards.map(card=>card.image),
   initiativeScience.image,
-  ...initiativeScience.comparison.map(item=>item.image)
+  initiativeScience.comparisonGraphic
 ].map(image=>[image.src,image])).values()];
 const sitemapUrls=[{path:'',images:imageEntries},...pages.map(page=>({path:page.slug+'.html',images:[]})),{path:'initiative/',images:initiativeImages}];
 await write('sitemap.xml',`<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">${sitemapUrls.map(entry=>`<url><loc>${absolute(entry.path)}</loc><lastmod>${site.updated}</lastmod>${entry.images.map(image=>`<image:image><image:loc>${absolute(image.src)}</image:image>`).join('')}</url>`).join('')}</urlset>\n`);

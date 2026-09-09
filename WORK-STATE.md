@@ -24,8 +24,7 @@
 - The Initiative hero renders three lower controls. The first gallery is active; controls two and three remain visibly reserved and disabled until approved slides are supplied.
 - Focus-area wildlife photographs are local, optimized 640 × 480 WebP assets with visible Wikimedia Commons credits and licenses. They render in seven, four, two and one-column layouts as the viewport narrows.
 - The tiger, elephant and turtle 960 × 960 WebP crops remain sourced from public-domain or attribution-compatible USFWS and NOAA photographs. Their current uses and exact source data are stored in the active Initiative block JSON.
-- The science bridge uses two crisp SVG symbols for the red-cell and cell-free-carrier comparison.
-- The blood-cell and cell symbols are adapted from the CC0 Health Icons outline set. Asset provenance is recorded in `SOURCES.md`.
+- The Science Bridge shows the complete user-supplied `BHOC vs RBC >400× smaller` comparison as an independent optimized image. The compatibility and room-temperature shelf-life statements remain separate native text below it.
 - Species row: `rem-wirehaired-dachshund-sketch.webp`, `cat-loose-pencil-sketch.webp`, `camel-loose-pencil-sketch.webp`, `orangutan-loose-pencil-sketch.webp`, `marine-turtle-loose-pencil-sketch.webp` and `panda-loose-pencil-sketch.webp`.
 - Rem identity reference: `assets/reference-dog-pencil.webp`. Preserve the face, expression and wiry beard.
 - Molecular structures: `assets/chlorophyll.svg` and `assets/heme.svg`.

@@ -147,9 +147,10 @@ assert.equal((initiativeFocusHTML.match(/class="photo-credit"/g)||[]).length,7,'
 assert.equal((initiativeFocusHTML.match(/src="\.\.\/assets\/initiative\/focus-[a-z-]+\.webp"/g)||[]).length,7,'initiative/index.html: seven local optimized photographs');
 assert.match(initiativeHome,/alt="Hawksbill sea turtle in a remote marine conservation setting"/);
 assert.match(initiativeHome,/src="\.\.\/assets\/initiative\/science-gray-wolf-usfws\.webp"/);
-assert.match(initiativeHome,/src="\.\.\/assets\/initiative\/science-red-blood-cells-nci\.webp"/);
-assert.match(initiativeHome,/src="\.\.\/assets\/initiative\/bhoc-carrier-concept\.webp"/);
-assert.match(initiativeHome,/Compatible with all blood types across species\./);
+assert.match(initiativeHome,/src="\.\.\/assets\/initiative\/bhoc-vs-rbc-400x-comparison\.webp"/);
+assert.match(initiativeHome,/alt="Concept illustration comparing a red blood cell and a BHOC molecule, with BHOC shown as more than 400 times smaller"/);
+assert.doesNotMatch(initiativeHome,/src="\.\.\/assets\/initiative\/bhoc-carrier-concept\.webp"/);
+assert.match(initiativeHome,/Compatible with all blood types for all species\./);
 assert.match(initiativeHome,/3\+ year shelf life at room temperature\./);
 assert.match(initiativeCSS,/\.focus-grid\s*\{[^}]*grid-template-columns:\s*repeat\(7,/s,'initiative desktop focus grid follows the seven-card reference');
 assert.match(initiativeCSS,/--emerald:\s*#16a05d;/,'initiative palette includes one vivid conservation accent');
@@ -158,7 +159,7 @@ assert.match(initiativeCSS,/--red:\s*#8e251f;/,'initiative palette reserves red 
 assert.match(initiativeHome,/A world worth protecting/);
 assert.match(initiativeHome,/Endangered Species\.<br>Real Solutions\./);
 assert.match(initiativeHome,/Every species is different\.<br>The need for oxygen is universal\./);
-assert.equal((initiativeHome.match(/class="science-comparison-item/g)||[]).length,2,'science bridge uses two comparison items');
+assert.equal((initiativeHome.match(/class="science-claim-graphic"/g)||[]).length,1,'science bridge renders the complete supplied BHOC versus RBC comparison once');
 assert.match(initiativeHome,/href="\.\.\/news\.html">News<\/a>/);
 assert.match(initiativeHome,/href="\.\.\/applications\.html"/);
 assert.match(initiativeHome,/href="\.\.\/index\.html">BHOC Veterinary<\/a>/);

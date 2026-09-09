@@ -18,36 +18,16 @@
     "license": "Public domain",
     "source": "https://www.flickr.com/photos/usfwshq/5584759091/"
   },
-  "claimImage": {
-    "src": "assets/initiative/science-red-blood-cells-nci.webp",
-    "alt": "National Cancer Institute illustration of red blood cells and oxygen transport",
-    "width": 720,
-    "height": 540,
-    "credit": "Donald Bliss / National Cancer Institute",
-    "license": "Public domain",
-    "source": "https://commons.wikimedia.org/wiki/File:Red_blood_cells_illustration.jpg"
+  "comparisonGraphic": {
+    "src": "assets/initiative/bhoc-vs-rbc-400x-comparison.webp",
+    "alt": "Concept illustration comparing a red blood cell and a BHOC molecule, with BHOC shown as more than 400 times smaller",
+    "width": 1000,
+    "height": 730,
+    "caption": "BHOC versus red blood cell size comparison"
   },
-  "claimLines": ["Smaller.", "Faster.", "Further."],
-  "comparison": [
-    {
-      "image": {"src": "assets/initiative/cascade-blood.svg", "alt": "Line schematic of red blood cells", "width": 48, "height": 48},
-      "label": "Red blood cell",
-      "detail": "Cell-bound oxygen transport"
-    },
-    {
-      "image": {
-        "src": "assets/initiative/bhoc-carrier-concept.webp",
-        "alt": "Concept illustration of a compact BHOC molecular oxygen carrier",
-        "width": 160,
-        "height": 160
-      },
-      "label": "BHOC carrier",
-      "detail": "Cell-free molecular scale",
-      "statements": [
-        "Compatible with all blood types across species.",
-        "3+ year shelf life at room temperature."
-      ]
-    }
+  "statements": [
+    "Compatible with all blood types for all species.",
+    "3+ year shelf life at room temperature."
   ],
   "caption": "Advancing oxygen delivery for a wilder tomorrow."
 }
