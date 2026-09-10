@@ -1,39 +1,33 @@
 {
   "slug": "news",
   "navLabel": "News",
-  "title": "Wildlife Conservation News & Intelligence | BHOC Veterinary",
-  "description": "Wildlife conservation news from BHOC Veterinary covering species recovery, wildlife rescue, conservation medicine, funding and One Health programs worldwide.",
+  "title": "Veterinary & Wildlife Conservation News | BHOC Veterinary",
+  "description": "Veterinary and wildlife conservation news from BHOC Veterinary, covering animal blood, species recovery, wildlife rescue, conservation medicine and One Health.",
   "schemaType": "CollectionPage",
   "seo": {
     "primaryKeyword": "wildlife conservation news",
     "secondaryKeywords": [
-      "endangered species",
-      "wildlife rescue",
-      "species recovery",
       "wildlife veterinary medicine",
       "conservation medicine",
-      "veterinary infrastructure",
-      "animal health",
-      "conservation funding",
-      "wildlife welfare",
-      "One Health"
+      "endangered species recovery",
+      "wildlife rescue",
+      "veterinary infrastructure"
     ],
     "supportingTerms": [
+      "BHOC Veterinary",
+      "BHOC Vet",
+      "animal blood",
+      "veterinary medicine",
+      "veterinary blood transfusion",
+      "veterinary oxygen carrier",
+      "BHOC",
+      "Biological Hemoglobin Oxygen Carrier",
+      "HBOC",
+      "Oxyglobin",
+      "animal health",
+      "wildlife welfare",
+      "One Health",
       "biodiversity",
-      "wildlife research",
-      "responsible wildlife tourism",
-      "rabies elimination",
-      "Mars Impact Fund",
-      "Worldwide Veterinary Service",
-      "Andy Pharoah",
-      "Thailand",
-      "Natuurhulpcentrum Oudsbergen",
-      "Belgium",
-      "Annick Hus",
-      "Pablo P. Castelló",
-      "University of Denver",
-      "Jeff Kremer",
-      "Humane World for Animals",
       "BHOC Initiative"
     ]
   },
@@ -41,6 +35,21 @@
   "heading": "Wildlife & Species Conservation Intelligence.",
   "lead": "Tracking the people, science, funding and programs working to protect wildlife, restore endangered species and strengthen conservation medicine worldwide.",
   "updated": "10 Sep 2026",
+  "seoContext": {
+    "eyebrow": "BHOC Veterinary context",
+    "heading": "Animal-health intelligence, separate from product evidence.",
+    "text": "BHOC Veterinary tracks animal blood availability, veterinary (vet) transfusion medicine, wildlife rescue and species recovery. This feed provides context around animal health; it does not present individual news reports as evidence for BHOC, HBOC or Oxyglobin. Scientific and regulatory evidence is kept in the evidence directory.",
+    "links": [
+      {
+        "label": "Explore BHOC evidence",
+        "href": "evidence.html"
+      },
+      {
+        "label": "Open veterinary evidence library",
+        "href": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-index.html"
+      }
+    ]
+  },
   "feedNote": "BHOC Initiative Scout screens material developments for duplication. A republished story is not added again; an existing program returns only when there is a substantive new milestone such as funding, release, rescue, scientific result, partnership, regulatory change or measurable recovery outcome.",
   "stories": [
     {
@@ -62,6 +71,7 @@
         "label": "Image provenance",
         "href": "https://bhocvet.com/initiative/image-rights.html"
       },
+      "sourceName": "Associated Press",
       "link": {
         "label": "Read primary source",
         "href": "https://apnews.com/article/greece-endangered-tigers-sumatra-indonesia-6c798264b1477bbcfee8c509119f2b44"
@@ -94,10 +104,19 @@
         "label": "Photo: Wikimedia Commons · CC0",
         "href": "https://commons.wikimedia.org/wiki/File:The_one-horned_rhinoceros_of_Kaziranga_National_Park.jpg"
       },
+      "sourceName": "India Today NE",
       "link": {
         "label": "Read more",
         "href": "https://www.indiatodayne.in/amp/assam/video/rs-534-crore-wildlife-safari-and-rescue-centre-planned-in-assams-tingkhong-1447933-2026-09-08"
-      }
+      },
+      "keywords": [
+        "Greater one-horned rhinoceros",
+        "wildlife rescue",
+        "veterinary hospital",
+        "Dibrugarh",
+        "Assam",
+        "India"
+      ]
     },
     {
       "id": "turtle-dove-reintroduction",
@@ -116,10 +135,18 @@
         "label": "Photo: Ron Knight · Wikimedia Commons",
         "href": "https://commons.wikimedia.org/wiki/File:European_Turtle_Dove.jpg"
       },
+      "sourceName": "ITV News",
       "link": {
         "label": "Read more",
         "href": "https://www.itv.com/news/meridian/2026-09-07/turtle-doves-released-in-national-park-to-help-species-recover"
-      }
+      },
+      "keywords": [
+        "European turtle dove",
+        "species reintroduction",
+        "South Downs",
+        "Hampshire",
+        "United Kingdom"
+      ]
     },
     {
       "id": "ictc-2026",
@@ -138,10 +165,19 @@
         "label": "Photo: Gary Campbell-Hall · CC BY 2.0",
         "href": "https://commons.wikimedia.org/wiki/File:Sunset_at_Edinburgh_Castle.jpg"
       },
+      "sourceName": "University of Edinburgh",
       "link": {
         "label": "Read more",
         "href": "https://vet.ed.ac.uk/ictc"
-      }
+      },
+      "keywords": [
+        "International Conservation Translocation Conference",
+        "University of Edinburgh",
+        "NatureScot",
+        "wildlife veterinary medicine",
+        "species reintroduction",
+        "Scotland"
+      ]
     },
     {
       "id": "wildlife-tourism-responsibility",
@@ -162,6 +198,7 @@
         "label": "BHOC Veterinary visual",
         "href": "https://bhocvet.com/"
       },
+      "sourceName": "LinkedIn · Jeff Kremer",
       "link": {
         "label": "Read source",
         "href": "https://www.linkedin.com/posts/jeff-kremer-53601712_keepingwildlifewild-whatdoesthesciencesay-activity-7501653905710366720-DxiF"
@@ -190,10 +227,18 @@
         "label": "Photo: Jim Clark / USFWS · Public domain",
         "href": "https://commons.wikimedia.org/wiki/File:Mexican_wolf_canis_lupus_baileyi.jpg"
       },
+      "sourceName": "The White House",
       "link": {
         "label": "Read primary source",
         "href": "https://www.whitehouse.gov/presidential-actions/2026/09/supporting-americas-ranchers/"
-      }
+      },
+      "keywords": [
+        "gray wolf",
+        "Mexican wolf",
+        "Endangered Species Act",
+        "species protection",
+        "United States"
+      ]
     },
     {
       "id": "kent-chough-recovery",
@@ -212,10 +257,19 @@
         "label": "Photo: Hobbyfotowiki · CC0",
         "href": "https://commons.wikimedia.org/wiki/File:Red-billed_chough_(Pyrrhocorax_pyrrhocorax).jpg"
       },
+      "sourceName": "Kent Wildlife Trust",
       "link": {
         "label": "Read primary source",
         "href": "https://www.kentwildlifetrust.org.uk/news/red-billed-chough-recovery-kent-takes-flight-wild-population-grows"
-      }
+      },
+      "keywords": [
+        "red-billed chough",
+        "Kent Wildlife Trust",
+        "Wildwood Trust",
+        "species recovery",
+        "Kent",
+        "United Kingdom"
+      ]
     },
     {
       "id": "mars-impact-fund-wvs-thailand",
@@ -237,6 +291,7 @@
         "label": "Mars Veterinary Health",
         "href": "https://marsveterinary.com/"
       },
+      "sourceName": "Mars",
       "link": {
         "label": "Read source",
         "href": "https://www.mars.com/news-and-stories/press-releases-statements/mars-impact-fund-awards-more-than-13-million-in-new-grants"
@@ -270,6 +325,7 @@
         "label": "BHOC Veterinary visual",
         "href": "https://bhocvet.com/"
       },
+      "sourceName": "LinkedIn · Pablo P. Castelló",
       "link": {
         "label": "Read source",
         "href": "https://www.linkedin.com/posts/pablo-p-castello-8aa65a18b_american-journal-of-political-science-mpsa-activity-7500548163158806529-Uns_"
@@ -300,10 +356,18 @@
         "label": "Photo: Sarah Manktelow / DOC",
         "href": "https://dxcprod.doc.govt.nz/news/media-releases/2026-media-releases/kakapo-population-reaches-new-milestone/"
       },
+      "sourceName": "New Zealand Department of Conservation",
       "link": {
         "label": "Read primary source",
         "href": "https://dxcprod.doc.govt.nz/news/media-releases/2026-media-releases/kakapo-population-reaches-new-milestone/"
-      }
+      },
+      "keywords": [
+        "kākāpō",
+        "New Zealand Department of Conservation",
+        "critically endangered species",
+        "species recovery",
+        "New Zealand"
+      ]
     }
   ],
   "channels": [
