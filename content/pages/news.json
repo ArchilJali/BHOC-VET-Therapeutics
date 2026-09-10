@@ -40,9 +40,43 @@
   "eyebrow": "BHOC Initiative · Global Intelligence",
   "heading": "Wildlife & Species Conservation Intelligence.",
   "lead": "Tracking the people, science, funding and programs working to protect wildlife, restore endangered species and strengthen conservation medicine worldwide.",
-  "updated": "08 Sep 2026",
+  "updated": "10 Sep 2026",
   "feedNote": "BHOC Initiative Scout screens material developments for duplication. A republished story is not added again; an existing program returns only when there is a substantive new milestone such as funding, release, rescue, scientific result, partnership, regulatory change or measurable recovery outcome.",
   "stories": [
+    {
+      "id": "sumatran-tiger-cubs-attica-zoo",
+      "date": "2026-09-08",
+      "dateLabel": "08 Sep 2026",
+      "region": "Greece · Attica",
+      "category": "Conservation veterinary medicine",
+      "title": "Three Sumatran tiger cubs add to a global conservation safety population.",
+      "text": "At Attica Zoological Park near Athens, three two-month-old Sumatran tiger cubs received their first vaccinations and identification microchips as part of an international effort to maintain a backup population for the critically endangered species. Zoo and wildlife veterinarian Dr. Arsinoi Psaroudaki, mammal curator Antonis Balas and head keeper Theodoros Babilis are among the team highlighted by AP. With as few as 400 believed to remain in the wild, managed zoo populations may support potential future reintroductions.",
+      "why": "BHOC Initiative: veterinary medicine + endangered species + conservation",
+      "image": {
+        "url": "assets/initiative/challenge-sumatran-tiger-usfws.webp",
+        "alt": "Sumatran tiger walking through a green habitat, representing conservation of the critically endangered species",
+        "width": 960,
+        "height": 960
+      },
+      "credit": {
+        "label": "Image provenance",
+        "href": "https://bhocvet.com/initiative/image-rights.html"
+      },
+      "link": {
+        "label": "Read primary source",
+        "href": "https://apnews.com/article/greece-endangered-tigers-sumatra-indonesia-6c798264b1477bbcfee8c509119f2b44"
+      },
+      "keywords": [
+        "Sumatran tiger",
+        "Attica Zoological Park",
+        "Arsinoi Psaroudaki",
+        "Antonis Balas",
+        "Theodoros Babilis",
+        "conservation veterinary medicine",
+        "critically endangered species",
+        "Greece"
+      ]
+    },
     {
       "id": "assam-wildlife-rescue-centre",
       "date": "2026-09-08",
