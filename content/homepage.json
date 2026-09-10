@@ -11,6 +11,11 @@
       "enabled": true
     },
     {
+      "type": "story",
+      "file": "blocks/companion-domestic.json",
+      "enabled": true
+    },
+    {
       "type": "science-bridge",
       "file": "blocks/science-bridge.json",
       "enabled": true
