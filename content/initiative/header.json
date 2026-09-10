@@ -19,6 +19,22 @@
     "href": "../index.html",
     "ariaLabel": "Return to the BHOC Veterinary website"
   },
+  "networkLinks": [
+    {
+      "label": "VET Evidence Hub ↗",
+      "href": "https://archiljali.github.io/BHOC-VET-platform/",
+      "enabled": true
+    },
+    {
+      "label": "BHOC Therapeutics ↗",
+      "href": "https://bhoctherapeutics.com/",
+      "enabled": true
+    },
+    {
+      "label": "BHOC Transplant · coming soon",
+      "enabled": false
+    }
+  ],
   "navigation": [
     {
       "label": "Our Mission",
