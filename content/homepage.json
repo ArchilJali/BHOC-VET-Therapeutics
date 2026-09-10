@@ -16,11 +16,6 @@
       "enabled": true
     },
     {
-      "type": "story",
-      "file": "blocks/companion-domestic.json",
-      "enabled": true
-    },
-    {
       "type": "biodiversity",
       "file": "blocks/biodiversity.json",
       "enabled": true
