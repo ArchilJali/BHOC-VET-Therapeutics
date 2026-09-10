@@ -81,10 +81,11 @@ for(const [name,html] of htmlByPage){
   assert.doesNotMatch(html,/https?:\/\/localhost|http:\/\/[^"<\s]*(?:\.css|\.js|\.webp)/,`${name}: no development URLs`);
 
   const network=html.match(/<nav class="site-network-bar"[\s\S]*?<\/nav>/)?.[0]||'';
-  assert.equal((network.match(/class="network-link network-link-enabled"/g)||[]).length,1,`${name}: one active sister-site link`);
+  assert.equal((network.match(/class="network-link network-link-enabled"/g)||[]).length,2,`${name}: two active network links`);
   assert.equal((network.match(/class="network-link network-link-disabled"/g)||[]).length,1,`${name}: one future sister-site label`);
-  assert.match(network,/href="https:\/\/www\.bhoctherapeutics\.com\/"[^>]*>[\s\S]*www\.bhoctherapeutics\.com/,`${name}: corporate link`);
-  assert.match(network,/aria-disabled="true"[^>]*>[\s\S]*www\.bhoctransplant\.com/,`${name}: transplant site remains inactive`);
+  assert.match(network,/href="https:\/\/archiljali\.github\.io\/BHOC-VET-platform\/"[^>]*>[\s\S]*VET Evidence Hub ↗/,`${name}: VET Evidence Hub is first and active`);
+  assert.match(network,/href="https:\/\/bhoctherapeutics\.com\/"[^>]*>[\s\S]*BHOC Therapeutics ↗/,`${name}: corporate link`);
+  assert.match(network,/aria-disabled="true"[^>]*>[\s\S]*BHOC Transplant · coming soon/,`${name}: transplant site remains inactive`);
   assert.doesNotMatch(network,/href="[^"]*bhoctransplant/,`${name}: inactive transplant label is not linked`);
 
   const footer=html.match(/<footer class="site-footer">[\s\S]*?<\/footer>/)?.[0]||'';
@@ -337,7 +338,6 @@ assert.match(htmlByPage.get('initiative.html'),/>Many species\. Blood group syst
 assert.match(htmlByPage.get('initiative.html'),/href="\.\/initiative\/"><span>Open Full Initiative<\/span>/);
 assert.match(htmlByPage.get('initiative.html'),/if\(location\.pathname\.endsWith\("\/initiative"\)\)location\.replace\(location\.pathname\+"\/"\+location\.search\+location\.hash\)/,'Extensionless Initiative route redirects to the full Initiative homepage');
 assert.match(htmlByPage.get('contact.html'),/data-contact-email="info@bhoctherapeutics\.com"/);
-
 const redirect=await fs.readFile(path.join(out,'publications.html'),'utf8');
 assert.match(redirect,/<meta name="robots" content="noindex,follow">/,`Legacy publications route is excluded from indexing`);
 assert.match(redirect,/http-equiv="refresh" content="0;url=evidence\.html"/,`Legacy publications route redirects to Evidence`);
