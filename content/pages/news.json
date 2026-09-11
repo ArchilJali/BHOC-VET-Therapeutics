@@ -34,7 +34,7 @@
   "eyebrow": "BHOC Initiative · Global Intelligence",
   "heading": "Wildlife & Species Conservation Intelligence.",
   "lead": "Tracking the people, science, funding and programs working to protect wildlife, restore endangered species and strengthen conservation medicine worldwide.",
-  "updated": "10 Sep 2026",
+  "updated": "11 Sep 2026",
   "seoContext": {
     "eyebrow": "BHOC Veterinary context",
     "heading": "Animal-health intelligence, separate from product evidence.",
@@ -50,8 +50,43 @@
       }
     ]
   },
-  "feedNote": "BHOC Initiative Scout screens material developments for duplication. A republished story is not added again; an existing program returns only when there is a substantive new milestone such as funding, release, rescue, scientific result, partnership, regulatory change or measurable recovery outcome.",
+  "feedNote": "BHOC Initiative Scout applies a high publication threshold and screens every candidate for duplication. New items are added only for exceptional rescue or recovery outcomes, globally significant conservation initiatives, or substantive new milestones; routine news is excluded.",
   "stories": [
+    {
+      "id": "lulingu-gorilla-rewilding-birth",
+      "date": "2026-09-10",
+      "dateLabel": "10 Sep 2026",
+      "region": "DR Congo · Virunga National Park",
+      "category": "Species recovery & conservation medicine",
+      "title": "Rescued Grauer’s gorilla gives birth after historic return to the wild.",
+      "text": "Lulingu, a critically endangered eastern lowland (Grauer’s) gorilla rescued from the illegal wildlife trade at about 18 months old, has given birth after being rewilded at Mt. Tshiaberimu in Virunga National Park. She was one of four females returned from the GRACE sanctuary to reinforce a small isolated population judged at high risk of extinction without reproductive females. The infant, fathered by wild silverback Mwasa, shows that Lulingu has integrated into the wild group; both mother and infant were reported healthy, and none of the four rewilded females has required veterinary treatment for illness or injury since release.",
+      "why": "Top-tier outcome: rescue → rehabilitation → rewilding → wild integration → reproduction",
+      "image": {
+        "url": "https://www.rewild.org/uploads/2026/09/P1960322-scaled.jpg?format=auto&optimize=high&width=1440",
+        "alt": "Eastern lowland gorilla Lulingu caring for her infant after successful rewilding in Virunga National Park"
+      },
+      "credit": {
+        "label": "Photo: GRACE Gorillas / Re:wild",
+        "href": "https://www.rewild.org/press/eastern-lowland-gorilla-gives-birth-virunga"
+      },
+      "sourceName": "Re:wild · GRACE Gorillas · Virunga National Park · Gorilla Doctors",
+      "link": {
+        "label": "Read primary source",
+        "href": "https://www.rewild.org/press/eastern-lowland-gorilla-gives-birth-virunga"
+      },
+      "keywords": [
+        "Grauer’s gorilla",
+        "eastern lowland gorilla",
+        "Lulingu",
+        "GRACE Gorillas",
+        "Virunga National Park",
+        "Gorilla Doctors",
+        "rewilding",
+        "conservation medicine",
+        "critically endangered species",
+        "Democratic Republic of the Congo"
+      ]
+    },
     {
       "id": "sumatran-tiger-cubs-attica-zoo",
       "date": "2026-09-08",
