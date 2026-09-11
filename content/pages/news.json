@@ -11,7 +11,9 @@
       "conservation medicine",
       "endangered species recovery",
       "wildlife rescue",
-      "veterinary infrastructure"
+      "veterinary infrastructure",
+      "One Health veterinary medicine",
+      "veterinary public health"
     ],
     "supportingTerms": [
       "BHOC Veterinary",
@@ -28,7 +30,18 @@
       "wildlife welfare",
       "One Health",
       "biodiversity",
-      "BHOC Initiative"
+      "BHOC Initiative",
+      "Ross University School of Veterinary Medicine",
+      "Ross Vet",
+      "PAHO",
+      "WHO",
+      "PAHO WHO One Health partnership",
+      "Eastern Caribbean",
+      "zoonotic disease surveillance",
+      "rabies elimination",
+      "schistosomiasis elimination",
+      "antimicrobial resistance",
+      "St. Kitts and Nevis"
     ]
   },
   "eyebrow": "BHOC Initiative · Global Intelligence",
@@ -85,6 +98,50 @@
         "conservation medicine",
         "critically endangered species",
         "Democratic Republic of the Congo"
+      ]
+    },
+    {
+      "id": "ross-vet-paho-who-one-health-partnership",
+      "date": "2026-09-09",
+      "dateLabel": "09 Sep 2026",
+      "region": "Eastern Caribbean · St. Kitts and Nevis",
+      "category": "One Health & veterinary public health",
+      "title": "Ross Vet and PAHO/WHO launch One Health partnership across the Eastern Caribbean.",
+      "text": "Ross University School of Veterinary Medicine and the Pan American Health Organization/World Health Organization have signed a Framework Agreement to advance One Health across the Eastern Caribbean. The partnership covers veterinary and public-health education, interdisciplinary research, zoonotic and emerging-disease surveillance, disease elimination and regional capacity building. Ross Vet will contribute technical expertise for certification work on schistosomiasis and dog bite-mediated human rabies, while the wider programme will address antimicrobial resistance, climate change and emerging infectious diseases.",
+      "why": "BHOC Initiative: veterinary medicine + One Health + disease surveillance + regional health capacity",
+      "image": {
+        "url": "assets/bhoc-initiative-land-social.jpg",
+        "alt": "BHOC Veterinary wildlife and animal-health landscape representing the One Health connection between animals, people and the environment",
+        "width": 1200,
+        "height": 463
+      },
+      "credit": {
+        "label": "BHOC Veterinary visual",
+        "href": "https://bhocvet.com/"
+      },
+      "sourceName": "Ross University School of Veterinary Medicine",
+      "link": {
+        "label": "Read primary source",
+        "href": "https://veterinary.rossu.edu/news/ross-vet-pahowho-launch-one-health-partnership"
+      },
+      "keywords": [
+        "Ross University School of Veterinary Medicine",
+        "Ross Vet",
+        "PAHO",
+        "WHO",
+        "One Health",
+        "One Health partnership",
+        "veterinary public health",
+        "Eastern Caribbean",
+        "St. Kitts and Nevis",
+        "zoonotic diseases",
+        "disease surveillance",
+        "dog bite-mediated human rabies",
+        "schistosomiasis",
+        "antimicrobial resistance",
+        "emerging infectious diseases",
+        "Prabhjot Singh",
+        "Rob Gilbert"
       ]
     },
     {
