@@ -48,7 +48,7 @@
         "sameAs": [
           "https://bhoctherapeutics.com/",
           "https://bhocvet.com/",
-          "https://archiljali.github.io/BHOC-platform/",
+          "https://evidence.bhoctherapeutics.com/",
           "https://www.linkedin.com/company/bhoc-therapeutics/"
         ],
         "knowsAbout": [
@@ -93,7 +93,7 @@
         "significantLink": [
           "https://bhocvet.com/",
           "https://bhoctherapeutics.com/",
-          "https://archiljali.github.io/BHOC-platform/veterinary/Vet-index.html"
+          "https://evidence.bhoctherapeutics.com/veterinary/Vet-index.html"
         ],
         "primaryImageOfPage": {
           "@type": "ImageObject",
