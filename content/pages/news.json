@@ -41,13 +41,18 @@
       "rabies elimination",
       "schistosomiasis elimination",
       "antimicrobial resistance",
-      "St. Kitts and Nevis"
+      "St. Kitts and Nevis",
+      "Nairobi Flyways Declaration",
+      "Global Flyways Summit",
+      "BirdLife International",
+      "migratory bird conservation",
+      "conservation finance"
     ]
   },
   "eyebrow": "BHOC Initiative · Global Intelligence",
   "heading": "Wildlife & Species Conservation Intelligence.",
   "lead": "Tracking the people, science, funding and programs working to protect wildlife, restore endangered species and strengthen conservation medicine worldwide.",
-  "updated": "11 Sep 2026",
+  "updated": "12 Sep 2026",
   "seoContext": {
     "eyebrow": "BHOC Veterinary context",
     "heading": "Animal-health intelligence, separate from product evidence.",
@@ -65,6 +70,43 @@
   },
   "feedNote": "BHOC Initiative Scout applies a high publication threshold and screens every candidate for duplication. New items are added only for exceptional rescue or recovery outcomes, globally significant conservation initiatives, or substantive new milestones; routine news is excluded.",
   "stories": [
+    {
+      "id": "nairobi-flyways-declaration-2026",
+      "date": "2026-09-11",
+      "dateLabel": "11 Sep 2026",
+      "region": "Global · Nairobi, Kenya",
+      "category": "Global flyway conservation & finance",
+      "title": "Nairobi Flyways Declaration links migratory-bird recovery to development finance.",
+      "text": "At the Global Flyways Summit, governments, scientists, NGOs, conservationists and financial institutions signed the Nairobi Flyways Declaration, committing to coordinated conservation across entire migration routes. BirdLife reports that three multilateral development banks are integrating flyway conservation into lending frameworks, with more than $6 billion in conservation finance being mobilised since 2021. The Asian Development Bank is mobilising $3 billion over 10 years for at least 50 priority wetlands; CAF is mobilising $3–5 billion through 2050 for more than 30 landscapes and seascapes; and the World Bank and BirdLife are mobilising several billion dollars across Africa, Europe and Asia. The scale matches the biological problem: 45% of migratory bird species are declining and one in nine is threatened with extinction.",
+      "why": "Top-tier global initiative: cross-border conservation + multilateral development finance + whole-flyway scale",
+      "image": {
+        "url": "https://www.birdlife.org/wp-content/uploads/2026/09/Lesser-and-Greater-Flamingos-at-Lake-Natron-%C2%A9-Akshita-Rabdiya-1024x683.jpg",
+        "alt": "Large flocks of lesser and greater flamingos at Lake Natron, representing migratory-bird flyway conservation across borders"
+      },
+      "credit": {
+        "label": "Photo: Akshita Rabdiya / BirdLife International",
+        "href": "https://www.birdlife.org/news/2026/09/11/birds-are-running-out-of-places-to-land-45-of-migratory-bird-species-now-in-decline/"
+      },
+      "sourceName": "BirdLife International · Nature Kenya · Global Flyways Summit",
+      "link": {
+        "label": "Read primary source",
+        "href": "https://www.birdlife.org/news/2026/09/11/birds-are-running-out-of-places-to-land-45-of-migratory-bird-species-now-in-decline/"
+      },
+      "keywords": [
+        "Nairobi Flyways Declaration",
+        "Global Flyways Summit",
+        "BirdLife International",
+        "Nature Kenya",
+        "migratory birds",
+        "flyway conservation",
+        "wetland conservation",
+        "conservation finance",
+        "Asian Development Bank",
+        "CAF",
+        "World Bank",
+        "Kenya"
+      ]
+    },
     {
       "id": "lulingu-gorilla-rewilding-birth",
       "date": "2026-09-10",
