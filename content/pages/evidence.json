@@ -49,11 +49,11 @@
     "links": [
       {
         "label": "Open the full Veterinary Evidence Hub",
-        "href": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-index.html"
+        "href": "https://evidence.bhoctherapeutics.com/veterinary/Vet-index.html"
       },
       {
         "label": "Open the BHOC VET-platform",
-        "href": "https://archiljali.github.io/BHOC-VET-platform/"
+        "href": "https://evidence.bhocvet.com/"
       }
     ]
   },
@@ -91,22 +91,22 @@
         {
           "label": "Veterinary evidence hub",
           "detail": "Main source library: 236 records, species/model distribution, institutions, regulatory milestones and evidence routes.",
-          "href": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-index.html"
+          "href": "https://evidence.bhoctherapeutics.com/veterinary/Vet-index.html"
         },
         {
           "label": "Search veterinary publications",
           "detail": "Filter the indexed literature by species, author, institution, journal, year or topic.",
-          "href": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-search.html"
+          "href": "https://evidence.bhoctherapeutics.com/veterinary/Vet-search.html"
         },
         {
           "label": "Full citation catalogue",
           "detail": "Browse all 236 retained records with source links, PubMed records, DOI links and affiliations where available.",
-          "href": "https://archiljali.github.io/BHOC-platform/veterinary/publication-catalogue.html"
+          "href": "https://evidence.bhoctherapeutics.com/veterinary/publication-catalogue.html"
         },
         {
           "label": "Evidence methodology",
           "detail": "How citation identity, affiliations, species/model labels and evidence limits are handled.",
-          "href": "https://archiljali.github.io/BHOC-platform/veterinary/publication-methodology.html"
+          "href": "https://evidence.bhoctherapeutics.com/veterinary/publication-methodology.html"
         }
       ]
     },
@@ -119,7 +119,7 @@
         {
           "label": "FDA / EMA Oxyglobin source library",
           "detail": "One regulatory route connecting the original US approval, EU authorisation and subsequent source documents.",
-          "href": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-fda-ema.html"
+          "href": "https://evidence.bhoctherapeutics.com/veterinary/Vet-fda-ema.html"
         },
         {
           "label": "FDA original approval · NADA 141-067",

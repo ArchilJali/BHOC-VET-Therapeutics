@@ -56,7 +56,7 @@
     },
     "evidenceLink": {
       "label": "Open FDA veterinary record",
-      "href": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-FDA-registry.html"
+      "href": "https://evidence.bhoctherapeutics.com/veterinary/Vet-FDA-registry.html"
     }
   },
   "evidence": {
@@ -65,11 +65,11 @@
     "text": "Use the BHOC VET-platform for guided veterinary context, or search the full source-linked veterinary bibliography by topic, species, author, institution and year.",
     "map": {
       "label": "Open BHOC VET-platform",
-      "href": "https://archiljali.github.io/BHOC-VET-platform/"
+      "href": "https://evidence.bhocvet.com/"
     },
     "search": {
       "label": "Search veterinary publications",
-      "href": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-search.html"
+      "href": "https://evidence.bhoctherapeutics.com/veterinary/Vet-search.html"
     }
   },
   "contact": {

@@ -48,15 +48,15 @@
     "text": "BHOC VET-platform provides a guided overview of veterinary oxygen biology and evidence boundaries. The BHOC Platform Veterinary library holds the full source-linked bibliography and regulatory archive.",
     "link": {
       "label": "Open BHOC VET-platform",
-      "href": "https://archiljali.github.io/BHOC-VET-platform/"
+      "href": "https://evidence.bhocvet.com/"
     },
     "library": {
       "label": "Open the full evidence library",
-      "href": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-index.html"
+      "href": "https://evidence.bhoctherapeutics.com/veterinary/Vet-index.html"
     },
     "search": {
       "label": "Search veterinary publications",
-      "href": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-search.html"
+      "href": "https://evidence.bhoctherapeutics.com/veterinary/Vet-search.html"
     }
   },
   "references": [

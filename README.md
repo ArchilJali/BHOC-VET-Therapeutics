@@ -49,8 +49,8 @@ The build checks image descriptions/dimensions, local and cross-page links, uniq
 ## Website roles
 
 - [BHOC Veterinary](https://bhocvet.com/) is the main public veterinary website.
-- [BHOC VET-platform](https://archiljali.github.io/BHOC-VET-platform/) is the guided veterinary evidence map.
-- [BHOC Platform Veterinary](https://archiljali.github.io/BHOC-platform/veterinary/Vet-index.html) is the full bibliography and regulatory source library.
+- [BHOC VET-platform](https://evidence.bhocvet.com/) is the guided veterinary evidence map.
+- [BHOC Platform Veterinary](https://evidence.bhoctherapeutics.com/veterinary/Vet-index.html) is the full bibliography and regulatory source library.
 - [BHOC Therapeutics](https://bhoctherapeutics.com/) is the corporate parent website.
 
 Each level links to the next level and back to BHOC Veterinary so visitors do not need to infer the relationship from similar project names.
