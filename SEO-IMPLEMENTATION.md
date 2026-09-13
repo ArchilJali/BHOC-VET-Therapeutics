@@ -1,6 +1,6 @@
 # BHOC Veterinary SEO implementation
 
-Audited 7 September 2026 against current Google Search guidance and the corporate keyword authority. The implementation keeps search language natural and page-specific; it does not add the obsolete `meta keywords` tag or invisible keyword lists.
+Audited 13 September 2026 against current Google Search guidance and the corporate keyword authority. The implementation keeps search language natural and page-specific; it does not add the obsolete `meta keywords` tag or invisible keyword lists.
 
 ## Identity
 
@@ -10,6 +10,7 @@ Audited 7 September 2026 against current Google Search guidance and the corporat
 - Author and creator: `Archil Jaliashvili`, retained in author metadata and schema.org `Person`, `WebSite` and page records.
 - Public footer responsibility line: `Project lead: BHOC Team`.
 - Parent organization: `BHOC Therapeutics`.
+- Canonical veterinary evidence architecture: `Vet Real-World Evidence & Cases` at `https://archiljali.github.io/BHOC-platform/veterinary/Vet-index.html`.
 
 ## Page ownership
 
@@ -18,29 +19,32 @@ Audited 7 September 2026 against current Google Search guidance and the corporat
 | Home | Precision Oxygen Therapeutics | WebPage |
 | Product | Biological Hemoglobin Oxygen Carrier product | WebPage |
 | Applications | veterinary oxygen carrier applications | WebPage |
-| Evidence | veterinary oxygen carrier evidence | CollectionPage |
 | Science | Biological Hemoglobin Oxygen Carrier science | WebPage |
-| Initiative | BHOC Species and Biodiversity Protection Initiative | WebPage |
+| Initiative overview | BHOC Species and Biodiversity Protection Initiative | WebPage |
 | Related Information | related veterinary oxygen information | CollectionPage |
 | News | BHOC Veterinary news | CollectionPage |
 | Contact | Contact BHOC Veterinary | ContactPage |
+| Full Initiative `/initiative/` | wildlife, conservation medicine and species protection | WebPage |
 
-Each content file owns one primary phrase, three to five secondary phrases and a bounded set of supporting semantic terms. Titles, descriptions and H1 headings are unique. Legacy terms such as `hemoglobin-based oxygen carrier` and `HBOC` appear only where they clarify scientific or historical context; competitor and regulatory names remain tied to source-linked evidence.
+Veterinary publications, regulatory records and documented real-world cases are intentionally maintained once in **Vet Real-World Evidence & Cases** rather than duplicated as a BHOC Veterinary Evidence page. The historical `evidence.html` and `publications.html` URLs are `noindex,follow` migration redirects directly to that canonical veterinary library.
 
-The homepage now uses the natural-language terms `animal blood types`, `blood-group systems`, `cross-species oxygen carrier`, `donor-independent oxygen carrier` and `room-temperature shelf life` in visible, relevant copy and structured topics. The message links directly to Evidence and explicitly keeps product and species evidence boundaries; no hidden keyword list or unsupported universal efficacy claim is used.
+Each BHOC Veterinary content file owns one primary phrase, three to five secondary phrases and a bounded set of supporting semantic terms. Titles, descriptions and H1 headings are unique. Legacy terms such as `hemoglobin-based oxygen carrier` and `HBOC` appear where they clarify scientific or historical context; regulatory names remain tied to source-linked records.
+
+The homepage uses the natural-language terms `animal blood types`, `blood-group systems`, `cross-species oxygen carrier`, `donor-independent oxygen carrier` and `room-temperature shelf life` in visible, relevant copy and structured topics. Its veterinary evidence CTA links directly to Vet Real-World Evidence & Cases and keeps product- and species-specific evidence boundaries explicit; no hidden keyword list or unsupported universal efficacy claim is used.
 
 ## Technical coverage
 
-- Static English HTML, one H1 per page and crawlable descriptive internal links.
-- Unique title and description for all nine indexable pages. The legacy `publications.html` URL is a `noindex,follow` redirect canonically consolidated into Evidence.
-- Canonical URL, `index,follow` controls, Open Graph and X/Twitter large-image metadata on every page.
+- Static English HTML, one H1 per indexed page and crawlable descriptive links.
+- Eight core BHOC Veterinary pages plus the full Initiative homepage are indexable. `evidence.html` and `publications.html` are `noindex,follow` migration redirects and are excluded from the sitemap.
+- The two migration URLs redirect directly to `https://archiljali.github.io/BHOC-platform/veterinary/Vet-index.html` and use that destination as their canonical URL; no indexed BHOC Veterinary page links back to the retired local Evidence URL.
+- Canonical URL, `index,follow` controls, Open Graph and X/Twitter large-image metadata on every indexed BHOC Veterinary page.
 - `WebSite`, `Organization`, `Person`, `WebPage`, `CollectionPage`, `ContactPage` and `ImageObject` JSON-LD as appropriate.
-- A crawlable 512 × 512 organization logo and consistent `name` / `alternateName` values.
-- XML sitemap with all current indexable pages, organization logo, optimized hero, original social image, initiative mark and species images; the legacy redirect is omitted.
+- A crawlable organization logo and consistent `name` / `alternateName` values.
+- XML sitemap with all current indexable BHOC Veterinary URLs and relevant images; migration redirects are omitted.
 - `robots.txt` points to the sitemap; the custom 404 page remains `noindex`.
-- Descriptive ALT text on informative images. The lower landscape keeps an empty ALT inside `aria-hidden="true"` because it is decorative.
-- The displayed hero is a 1672 × 941 WebP of about 139 KB with priority loading. The approved 1672 × 941 PNG remains the Open Graph image for WhatsApp and other link previews.
-- Image dimensions are explicit to reduce layout shift. Secondary images use lazy loading.
+- Descriptive ALT text on informative images. Decorative artwork retains empty ALT where appropriate.
+- Image dimensions are explicit to reduce layout shift. Secondary images use lazy loading where appropriate.
+- Site navigation, homepage CTA, Product boundary, News context and Initiative footer all route veterinary evidence users to the single Vet Real-World Evidence & Cases architecture.
 
 The vocabulary source of truth remains [BHOC-Therapeutics/seo/BHOC-SEO-Keywords.md](https://github.com/ArchilJali/BHOC-Therapeutics/blob/main/seo/BHOC-SEO-Keywords.md); this repository does not create a competing master list.
 

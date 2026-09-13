@@ -35,14 +35,14 @@
       "links": [
         {"label": "BHOC Veterinary", "href": "../index.html"},
         {"label": "BHOC Therapeutics", "href": "https://bhoctherapeutics.com/"},
-        {"label": "VET Evidence Library", "href": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-index.html"}
+        {"label": "Vet Real-World Evidence & Cases", "href": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-index.html"}
       ]
     },
     {
       "title": "Connect",
       "links": [
         {"label": "News & Intelligence", "href": "../news.html"},
-        {"label": "Evidence Directory", "href": "../evidence.html"},
+        {"label": "Search veterinary publications", "href": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-search.html"},
         {"label": "Contact", "href": "mailto:info@bhoctherapeutics.com"},
         {"label": "LinkedIn", "href": "https://www.linkedin.com/company/bhoc-therapeutics/"}
       ]
@@ -56,8 +56,8 @@
   "projectLead": "Project lead: BHOC Team",
   "publication": {
     "firstPublished": "2026-09-09",
-    "lastUpdated": "2026-09-09",
-    "version": "26.09.09"
+    "lastUpdated": "2026-09-13",
+    "version": "26.09.13"
   },
   "legal": {
     "title": "Protected content notice",

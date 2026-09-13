@@ -18,12 +18,14 @@ Editable website pages and independent homepage blocks for [bhocvet.com](https:/
 | Lower landscape and call to action | `content/blocks/mission.json` |
 | Four initiative priorities | `content/blocks/pillars.json` |
 | Species information and references | `content/species-details.json` |
-| Product, Application, Evidence, Science, Initiative, Related Information, News and Contact pages | `content/pages/*.json` |
+| Product, Application, Science, Initiative, Related Information, News and Contact pages | `content/pages/*.json` |
 | Supporting About dialog text | `content/dialogs/about-dialog.html` |
 | Search and interface labels | `content/interface.json` |
 | Shared colors, typography and spacing | `src/styles/theme.css` |
 | Layout for one block | `src/blocks/<type>.mjs`, `src/styles/<type>.css` |
 | Layout for one inner page | `src/pages/<page>.mjs`, `src/styles/pages.css` |
+
+Veterinary evidence is intentionally not duplicated on BHOC Veterinary. The canonical source-linked veterinary library is **Vet Real-World Evidence & Cases** at [BHOC Platform Veterinary](https://archiljali.github.io/BHOC-platform/veterinary/Vet-index.html). Historical `evidence.html` and `publications.html` URLs are retained only as `noindex,follow` migration redirects to that canonical library.
 
 ## Initiative block architecture
 
@@ -37,23 +39,24 @@ Node 22 or later. The static generator has no npm runtime dependencies.
 
 ```sh
 node scripts/build.mjs --out dist
+node scripts/write-migration-redirects.mjs dist
 node scripts/check-site.mjs dist
 ```
 
 The public repository keeps only current assets in `assets/` and source in `content/`, `src/`, `scripts/`. A GitHub Pages workflow generates the deployable HTML. Root `index.html` is a compiled fallback, not the editing source. The Work checkout keeps deployable output under `dist/`. Private photographs and intermediate art files are excluded.
 
-The homepage and eight inner pages are present in HTML before JavaScript. Small client code adds navigation, dialogs, search, the contact-email handoff and carousels. No external font request, framework hydration or content API is required.
+The homepage, seven indexed inner pages and the full Initiative homepage are present in HTML before JavaScript. Small client code adds navigation, dialogs, search, the contact-email handoff and carousels. No external font request, framework hydration or content API is required.
 
-The build checks image descriptions/dimensions, local and cross-page links, unique block IDs and a single H1 on every page. The static gate checks nine indexed pages, unique titles and descriptions, social previews and the legacy Publications redirect. Unknown blocks and links to removed sections fail with a clear message. Existing singleton sections may appear once; `story` blocks can repeat with different IDs.
+The build checks image descriptions/dimensions, local and cross-page links, unique block IDs and a single H1 on every indexed page. The static gate checks eight indexed BHOC Veterinary pages, unique titles and descriptions, social previews, the full Initiative, direct routes to Vet Real-World Evidence & Cases and the two migration redirects. Unknown blocks and links to removed sections fail with a clear message. Existing singleton sections may appear once; `story` blocks can repeat with different IDs.
 
 ## Website roles
 
 - [BHOC Veterinary](https://bhocvet.com/) is the main public veterinary website.
 - [BHOC VET-platform](https://archiljali.github.io/BHOC-VET-platform/) is the guided veterinary evidence map.
-- [BHOC Platform Veterinary](https://archiljali.github.io/BHOC-platform/veterinary/Vet-index.html) is the full bibliography and regulatory source library.
+- [Vet Real-World Evidence & Cases](https://archiljali.github.io/BHOC-platform/veterinary/Vet-index.html) is the canonical source-linked veterinary library for publications, regulatory records and documented cases.
 - [BHOC Therapeutics](https://bhoctherapeutics.com/) is the corporate parent website.
 
-Each level links to the next level and back to BHOC Veterinary so visitors do not need to infer the relationship from similar project names.
+Each level links to the appropriate next level and back to BHOC Veterinary so visitors do not need to infer the relationship from similar project names. BHOC Veterinary does not maintain a competing local evidence directory.
 
 ## Artwork
 
@@ -65,4 +68,4 @@ Primary: **BHOC Veterinary**. Alternate names: **BHOC Vet**, **BHOC Veterinary T
 
 Keyword authority remains [BHOC-Therapeutics/seo/BHOC-SEO-Keywords.md](https://github.com/ArchilJali/BHOC-Therapeutics/blob/main/seo/BHOC-SEO-Keywords.md). This repository does not maintain a competing keyword master.
 
-Scientific and regulatory references describe their original products, species and contexts. Product, Application, Evidence, Science, Initiative, Related Information, News and Contact are maintained as ordinary inner pages rather than modal windows.
+Scientific and regulatory references describe their original products, species and contexts. Product, Application, Science, Initiative, Related Information, News and Contact are maintained as ordinary BHOC Veterinary pages. Veterinary real-world evidence and cases are maintained once, in the canonical Vet Real-World Evidence & Cases library.

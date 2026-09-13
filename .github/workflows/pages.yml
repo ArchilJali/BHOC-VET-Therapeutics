@@ -24,6 +24,8 @@ jobs:
         run: node scripts/build.mjs --out _site
       - name: Preserve the custom error page
         run: cp dist/404.html _site/404.html
+      - name: Write retired Evidence migration redirects
+        run: node scripts/write-migration-redirects.mjs _site
       - name: Validate HTML, metadata, images and block isolation
         run: node scripts/check-site.mjs _site
       - name: Reject forbidden outbound domains

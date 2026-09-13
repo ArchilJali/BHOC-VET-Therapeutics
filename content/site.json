@@ -80,7 +80,7 @@
     "Veterinary public health"
   ],
   "language": "en",
-  "updated": "2026-09-09",
+  "updated": "2026-09-13",
   "contactEmail": "info@bhoctherapeutics.com",
   "organizationLogo": {
     "src": "assets/bhoc-veterinary-organization-logo.svg",
@@ -90,9 +90,9 @@
   },
   "publication": {
     "firstPublished": "2026-09-07",
-    "updates": 18,
-    "lastUpdated": "2026-09-09",
-    "version": "26.09.09"
+    "updates": 19,
+    "lastUpdated": "2026-09-13",
+    "version": "26.09.13"
   },
   "sameAs": [
     "https://www.linkedin.com/company/bhoc-therapeutics/"
@@ -114,7 +114,7 @@
         "icon": "linkedin"
       },
       {
-        "label": "VET Evidence Platform",
+        "label": "Vet Real-World Evidence & Cases",
         "href": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-index.html",
         "icon": "book"
       }
@@ -147,15 +147,15 @@
         ]
       },
       {
-        "title": "Evidence & Science",
+        "title": "Real-World Evidence & Cases",
         "links": [
           {
-            "label": "Evidence directory",
-            "href": "evidence.html"
+            "label": "Search veterinary publications",
+            "href": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-search.html"
           },
           {
             "label": "Regulatory records",
-            "href": "evidence.html#regulatory-evidence"
+            "href": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-fda-ema.html"
           }
         ]
       },

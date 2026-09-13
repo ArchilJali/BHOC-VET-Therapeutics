@@ -1,13 +1,14 @@
 # Current BHOC Veterinary work state
 
-9 September 2026. This file records only the current implementation. Earlier experiments and authoring archives are intentionally excluded from the public repository.
+13 September 2026. This file records only the current implementation. Earlier experiments and authoring archives are intentionally excluded from the public repository.
 
 ## Identity and navigation
 
 - Public website: `https://bhocvet.com/`.
 - Primary name: `BHOC Veterinary`; alternate names: `BHOC Vet` and `BHOC Veterinary Therapeutics`.
 - BHOC expands to `Biological Hemoglobin Oxygen Carrier`.
-- Main navigation starts with a visually distinct `Species & Biodiversity Protection` entry carrying the Initiative logo, followed by `Product · Application · Evidence · Science · Related Information · News`.
+- Main navigation starts with a visually distinct `Species & Biodiversity Protection` entry carrying the Initiative logo, followed by `Product · Application · Vet Real-World Evidence & Cases · Science · Related Information · News`.
+- `Vet Real-World Evidence & Cases` links directly to the canonical veterinary library at `https://archiljali.github.io/BHOC-platform/veterinary/Vet-index.html`; BHOC Veterinary does not maintain a duplicate local Evidence section.
 - The header links to active `www.bhoctherapeutics.com`; `www.bhoctransplant.com` remains visibly inactive until launch.
 - Contact is available in the footer and search.
 
@@ -26,7 +27,7 @@
 - The evidence statistics strip pairs `A world worth protecting` with a small canonical Initiative mark. The Kipling quotation `We be of one blood, ye and I.` sits in its own centered, lightly offset editorial line below, with its author and *The Jungle Book* attribution underneath.
 - Focus-area wildlife photographs are local, optimized WebP assets. Photo-credit overlays are intentionally absent from the main Initiative composition. Creator, source, licence, verification date, processing history, purpose and file hash remain preserved in `content/initiative/image-provenance.json` and the separate `noindex` page at `initiative/image-rights.html`.
 - The tiger, elephant and turtle 960 × 960 WebP crops remain sourced from public-domain or attribution-compatible USFWS and NOAA photographs. Their current uses and exact source data are stored in the active Initiative block JSON.
-- The Science Bridge shows the complete user-supplied `BHOC vs RBC >400× smaller` comparison as an independent optimized image. The compatibility and room-temperature shelf-life statements remain separate native text below it, followed by public links to BHOC Veterinary, BHOC Therapeutics and the full VET Evidence Library.
+- The Science Bridge shows the complete user-supplied `BHOC vs RBC >400× smaller` comparison as an independent optimized image. The compatibility and room-temperature shelf-life statements remain separate native text below it, followed by public links to BHOC Veterinary, BHOC Therapeutics and Vet Real-World Evidence & Cases.
 - The Initiative footer has its own four-part navigation directory, BHOC network links and publication details. Its legal notice is now a compact warning line; `Legal details` opens a small accessible dialog containing the full protected-content terms, third-party image boundary, image-rights register link and permission contact.
 - Species row: `rem-wirehaired-dachshund-sketch.webp`, `cat-loose-pencil-sketch.webp`, `camel-loose-pencil-sketch.webp`, `orangutan-loose-pencil-sketch.webp`, `marine-turtle-loose-pencil-sketch.webp` and `panda-loose-pencil-sketch.webp`.
 - Rem identity reference: `assets/reference-dog-pencil.webp`. Preserve the face, expression and wiry beard.
@@ -37,13 +38,15 @@ Do not substitute earlier hero, logo or portrait variants. Superseded and unused
 
 ## Pages and URL continuity
 
-The indexed pages are `index.html`, `product.html`, `applications.html`, `evidence.html`, `science.html`, `initiative.html`, `initiative/`, `related-information.html`, `news.html` and `contact.html`.
+The indexed BHOC Veterinary pages are `index.html`, `product.html`, `applications.html`, `science.html`, `initiative.html`, `initiative/`, `related-information.html`, `news.html` and `contact.html`.
 
 `initiative/` is the full BHOC Species & Biodiversity Protection Initiative homepage based on the approved visual. The earlier `initiative.html` overview remains available and links to the full page. Source files live in `src/initiative/`; page-specific image assets live in `assets/initiative/`. Internal BHOC Veterinary routes stay in the same browser tab.
 
 `initiative/image-rights.html` is a separate `noindex,follow` image-rights and provenance register. It is generated from `content/initiative/image-provenance.json`, is linked only from the Initiative protected-content notice and must not be replaced by visible per-photo captions on the main Initiative page.
 
-`publications.html` is intentionally retained as a `noindex,follow` redirect to `evidence.html`. Keep it so historical links continue to work. `404.html`, `CNAME`, `robots.txt` and `sitemap.xml` are also required.
+The former `evidence.html` page is retired as a content page. It is retained only as a `noindex,follow` migration redirect to `https://archiljali.github.io/BHOC-platform/veterinary/Vet-index.html` so historical external links do not break. `publications.html` is also a `noindex,follow` migration redirect directly to the same canonical Vet Real-World Evidence & Cases library. Neither redirect belongs in navigation, internal content links, site search or the sitemap.
+
+`404.html`, `CNAME`, `robots.txt` and `sitemap.xml` are required.
 
 The full Initiative homepage uses five independent blocks: hero, evidence statistics, conservation mission, focus areas and science bridge. Section order and visibility live in `content/initiative/homepage.json`; each section has its own JSON data file and renderer. Main Initiative entry points open `/initiative/` directly, while the earlier overview remains available at `/initiative.html`.
 
@@ -66,9 +69,10 @@ The full Initiative homepage uses five independent blocks: hero, evidence statis
 - Public attribution: `Project lead: BHOC Team`.
 - Author and structured-data creator: `Archil Jaliashvili`.
 - Canonical URL, Open Graph, X/Twitter metadata, schema, descriptive ALT text and sitemap entries must remain intact.
-- The footer keeps LinkedIn and the full VET Evidence Platform as distinct destinations.
+- Veterinary publications, regulatory records and documented real-world cases have one canonical home: `Vet Real-World Evidence & Cases` in `BHOC-platform/veterinary/`.
+- The BHOC Veterinary footer keeps LinkedIn and Vet Real-World Evidence & Cases as distinct destinations.
 
-Publication line: `First published 07 Sep 2026 · 18 updates · Last updated 09 Sep 2026 · Version 26.09.09`. Increment `publication.updates` only when the shared BHOC Veterinary pages are intentionally republished.
+Publication line: `First published 07 Sep 2026 · 19 updates · Last updated 13 Sep 2026 · Version 26.09.13`. Increment `publication.updates` only when the shared BHOC Veterinary pages are intentionally republished.
 
 ## Editing and verification
 

@@ -20,7 +20,7 @@ Describe concrete tradeoffs before undertaking a materially different approach. 
 
 ## Current hero and carousel
 
-The current approved homepage carousel uses exactly three optimized assets: `assets/bhoc-initiative-land-hero.webp`, `assets/bhoc-initiative-winter-hero.webp` and `assets/bhoc-initiative-ocean-hero-v2.webp`, in that order. `assets/bhoc-initiative-land-social.jpg` is a format-optimized, uncropped copy of the exact Land hero for Open Graph and WhatsApp sharing. Preserve every animal, the approved composition and the original proportions. Do not make a broader redraw or substitution without a new explicit request. The heading is Precision Oxygen Therapeutics, followed by BHOC - Biological Hemoglobin Oxygen Carrier. The initiative image keeps its 318:317 aspect ratio, with height automatic at every viewport.
+The current approved homepage carousel uses exactly three optimized assets: `assets/bhoc-initiative-land-hero-v2.webp`, `assets/bhoc-initiative-winter-hero.webp` and `assets/bhoc-initiative-ocean-hero-v2.webp`, in Land, Winter, Ocean order. `assets/bhoc-initiative-land-social.jpg` is a format-optimized, uncropped copy of the exact Land hero for Open Graph and WhatsApp sharing. Preserve every animal, the approved composition and the original proportions. Do not make a broader redraw or substitution without a new explicit request. The heading is Precision Oxygen Therapeutics, followed by BHOC - Biological Hemoglobin Oxygen Carrier. The initiative image keeps its 318:317 aspect ratio, with height automatic at every viewport.
 
 Preserve the carousel structure and bottom navigation controls. Adding or replacing a slide must not require redesigning the hero copy or navigation.
 
@@ -28,6 +28,8 @@ The species row uses original independent portrait nodes, circular arrow/dot sel
 
 ## Inner pages and linked platforms
 
-Product, Application, Evidence, Science, Initiative, Related Information, News and Contact are ordinary HTML pages using the same wordmark, navigation, BHOC network bar and footer. Keep internal page links in the same browser tab. External scientific and corporate links may open a separate tab and must be labelled by destination rather than with an ambiguous generic action.
+Product, Application, Science, Initiative, Related Information, News and Contact are ordinary BHOC Veterinary HTML pages using the same wordmark, navigation, BHOC network bar and footer. Keep internal page links in the same browser tab. External scientific, evidence and corporate links may open a separate tab and must be labelled by destination rather than with an ambiguous generic action.
 
-Preserve the visitor path: BHOC Veterinary is the public veterinary website, BHOC VET-platform is the guided evidence map, and BHOC Platform Veterinary is the full source library. Evidence and Related Information separate scientific publications, regulatory records, professional publications and conservation databases.
+Preserve the visitor path: BHOC Veterinary is the public veterinary website, BHOC VET-platform is the guided evidence map, and **Vet Real-World Evidence & Cases** in BHOC Platform Veterinary is the single source-linked library for veterinary publications, regulatory records and documented cases. Do not recreate a separate BHOC Veterinary Evidence page. The legacy `evidence.html` and `publications.html` URLs exist only as `noindex,follow` migration redirects to Vet Real-World Evidence & Cases and must not be used as internal destinations.
+
+Related Information remains the separate location for professional publications, connected science and conservation databases that are contextual rather than direct veterinary RWE records.
