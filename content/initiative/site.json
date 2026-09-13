@@ -107,7 +107,10 @@
         "author": {
           "@type": "Person",
           "name": "Archil Jaliashvili",
-          "url": "https://www.linkedin.com/in/archil-jaliashvili-bhoc/"
+          "url": "https://bhoctherapeutics.com/archil-jaliashvili/",
+          "sameAs": [
+            "https://www.linkedin.com/in/archil-jaliashvili-bhoc/"
+          ]
         }
       }
     ]

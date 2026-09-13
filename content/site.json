@@ -49,7 +49,10 @@
     "givenName": "Archil",
     "familyName": "Jaliashvili",
     "jobTitle": "Project Lead, BHOC Veterinary",
-    "url": "https://www.linkedin.com/in/archil-jaliashvili-bhoc/"
+    "url": "https://bhoctherapeutics.com/archil-jaliashvili/",
+    "sameAs": [
+      "https://www.linkedin.com/in/archil-jaliashvili-bhoc/"
+    ]
   },
   "parent": {
     "name": "BHOC Therapeutics",
