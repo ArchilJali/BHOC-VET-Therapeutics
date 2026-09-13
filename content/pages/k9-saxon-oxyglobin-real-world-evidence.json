@@ -34,6 +34,17 @@
   "eyebrow": "Documented real-world case · Working K-9 · 2002",
   "heading": "K-9 Saxon: Oxyglobin, survival and the legacy of the Saxon Award.",
   "lead": "On 22 August 2002, Fresno Police K-9 Saxon sustained near-fatal shotgun injuries in the line of duty. A contemporaneous letter from Police Chief Jerry Dyer, published in Biopure Corporation's 2002 Annual Report, described Oxyglobin as playing a pivotal role in Saxon's survival. Fresno Police later named the Saxon Award in his honor.",
+  "image": {
+    "src": "assets/k9-saxon-fresno-police-oxyglobin-2002.webp",
+    "alt": "Fresno Police K-9 Saxon pictured in Biopure's 2002 Annual Report.",
+    "width": 111,
+    "height": 141,
+    "caption": "K-9 Saxon. Historical photograph from Biopure Corporation's 2002 Annual Report. The same report contains Police Chief Jerry Dyer's account of Oxyglobin use after Saxon's 22 August 2002 injuries.",
+    "credit": {
+      "label": "Historical source image · Biopure Annual Report 2002",
+      "href": "https://archiljali.github.io/BHOC-platform/historical-sources/biopure-annual-report-2002/"
+    }
+  },
   "classification": {
     "label": "Evidence classification",
     "value": "Documented real-world case",
