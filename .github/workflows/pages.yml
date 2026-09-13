@@ -25,13 +25,7 @@ jobs:
       - name: Preserve the custom error page
         run: cp dist/404.html _site/404.html
       - name: Write retired Evidence migration redirects
-        run: |
-          cat > _site/evidence.html <<'EOF'
-          <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,follow"><meta http-equiv="refresh" content="0;url=https://archiljali.github.io/BHOC-platform/veterinary/Vet-index.html"><link rel="canonical" href="https://archiljali.github.io/BHOC-platform/veterinary/Vet-index.html"><title>Vet Real-World Evidence & Cases | BHOC Veterinary</title></head><body><p>This page has moved to <a href="https://archiljali.github.io/BHOC-platform/veterinary/Vet-index.html">Vet Real-World Evidence & Cases</a>.</p></body></html>
-          EOF
-          cat > _site/publications.html <<'EOF'
-          <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,follow"><meta http-equiv="refresh" content="0;url=https://archiljali.github.io/BHOC-platform/veterinary/Vet-index.html"><link rel="canonical" href="https://archiljali.github.io/BHOC-platform/veterinary/Vet-index.html"><title>Vet Real-World Evidence & Cases | BHOC Veterinary</title></head><body><p>Veterinary publications and cases are maintained in <a href="https://archiljali.github.io/BHOC-platform/veterinary/Vet-index.html">Vet Real-World Evidence & Cases</a>.</p></body></html>
-          EOF
+        run: node scripts/write-migration-redirects.mjs _site
       - name: Validate HTML, metadata, images and block isolation
         run: node scripts/check-site.mjs _site
       - name: Reject forbidden outbound domains
