@@ -21,7 +21,8 @@
   "sourceName": "BHOC Veterinary case file",
   "link": {
     "label": "Read documented case",
-    "href": "k9-saxon-oxyglobin-real-world-evidence.html"
+    "href": "k9-saxon-oxyglobin-real-world-evidence.html",
+    "kind": "case"
   },
   "citation": "https://archiljali.github.io/BHOC-platform/historical-sources/biopure-annual-report-2002/",
   "keywords": [
