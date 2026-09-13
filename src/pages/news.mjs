@@ -4,15 +4,11 @@ const canonicalNewsURL='https://bhocvet.com/news.html';
 const absoluteURL=value=>/^https:\/\//.test(value)?value:new URL(value,'https://bhocvet.com/').href;
 const safeJSON=value=>JSON.stringify(value).replace(/</g,'\\u003c');
 const saxonVisual={
-  url:'assets/news/k9-saxon-oxyglobin-biopure-annual-report-2002.svg',
+  url:'assets/news/k9-saxon-oxyglobin-biopure-annual-report-2002.webp',
   alt:'Historical panel from the 2002 Biopure Annual Report showing Fresno Police K-9 Saxon and the Oxyglobin treatment account after catastrophic line-of-duty injuries.',
-  width:1800,
-  height:600,
+  width:2048,
+  height:682,
   variant:'document'
-};
-const saxonCredit={
-  label:'Historical source: Biopure Annual Report 2002',
-  href:'https://archiljali.github.io/BHOC-platform/historical-sources/biopure-annual-report-2002/'
 };
 const saxonFeature={
   dateLabel:'13 Sep 2026 · Historical feature · 25 years after 9/11 · Saxon case: 22 Aug 2002',
@@ -27,7 +23,7 @@ const saxonFeature={
     'September 11 K-9','9/11 rescue dogs','World Trade Center search dogs','Ground Zero rescue dogs','search-and-rescue dogs','SAR dogs','K-9','K9','working dogs','working K-9','police dogs','police K-9','police service animal','veterinary disaster response','Veterinary Medical Assistance Team','VMAT','K-9 Saxon','Saxon Award','Oxyglobin','HBOC','hemoglobin-based oxygen carrier','BHOC','Biological Hemoglobin Oxygen Carrier','veterinary real-world evidence','working-dog trauma','veterinary emergency medicine','veterinary critical care','oxygen delivery','Fresno Police Department','Jerry Dyer','Roger Gfeller','United States'
   ]
 };
-const enrichPage=page=>({...page,stories:page.stories.map(story=>story.id==='k9-saxon-oxyglobin-2002'?{...story,...saxonFeature,image:saxonVisual,credit:saxonCredit}:story)});
+const enrichPage=page=>({...page,stories:page.stories.map(story=>story.id==='k9-saxon-oxyglobin-2002'?{...story,...saxonFeature,image:saxonVisual,credit:null}:story)});
 
 const itemListSchema=page=>safeJSON({
   '@context':'https://schema.org',
