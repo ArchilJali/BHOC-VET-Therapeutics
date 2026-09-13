@@ -1,6 +1,6 @@
 # Current BHOC Veterinary work state
 
-9 September 2026. This file records only the current implementation. Earlier experiments and authoring archives are intentionally excluded from the public repository.
+13 September 2026. This file records only the current implementation. Earlier experiments and authoring archives are intentionally excluded from the public repository.
 
 ## Identity and navigation
 
@@ -68,7 +68,7 @@ The full Initiative homepage uses five independent blocks: hero, evidence statis
 - Canonical URL, Open Graph, X/Twitter metadata, schema, descriptive ALT text and sitemap entries must remain intact.
 - The footer keeps LinkedIn and the full VET Evidence Platform as distinct destinations.
 
-Publication line: `First published 07 Sep 2026 · 18 updates · Last updated 09 Sep 2026 · Version 26.09.09`. Increment `publication.updates` only when the shared BHOC Veterinary pages are intentionally republished.
+Publication line: `First published 07 Sep 2026 · 19 updates · Last updated 13 Sep 2026 · Version 26.09.13`. Increment `publication.updates` only when the shared BHOC Veterinary pages are intentionally republished.
 
 ## Editing and verification
 
