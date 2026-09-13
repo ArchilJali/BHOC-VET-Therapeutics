@@ -1,4 +1,4 @@
-import renderNewsBase from './news-base.mjs';
+import renderNewsFeed from './news-feed-renderer.mjs';
 import saxonStory from '../../content/news/saxon.json' with {type:'json'};
 
 const saxonCaseURL='k9-saxon-oxyglobin-real-world-evidence.html';
@@ -6,7 +6,7 @@ const saxonHistoricalSource='https://archiljali.github.io/BHOC-platform/historic
 
 export default page=>{
   const augmented={...page,updated:'13 Sep 2026',stories:[saxonStory,...page.stories]};
-  let html=renderNewsBase(augmented);
+  let html=renderNewsFeed(augmented);
 
   // This editorial story points to the complete BHOC Veterinary case file.
   // Primary evidence remains inside the case page and in structured-data citation.
