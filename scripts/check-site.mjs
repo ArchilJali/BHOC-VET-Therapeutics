@@ -57,6 +57,8 @@ for(const [name,html] of htmlByPage){
   assert.deepEqual(website.alternateName,['BHOC Vet','BHOC Veterinary Therapeutics'],`${name}: alternate names`);
   assert.equal(person.name,'Archil Jaliashvili',`${name}: author identity`);
   assert.equal(person.jobTitle,'Project Lead, BHOC Veterinary',`${name}: author role`);
+  assert.equal(person.url,'https://bhoctherapeutics.com/archil-jaliashvili/',`${name}: author canonical profile`);
+  assert.deepEqual(person.sameAs,['https://www.linkedin.com/in/archil-jaliashvili-bhoc/'],`${name}: author LinkedIn identity`);
   assert.equal(organization.email,'info@bhoctherapeutics.com',`${name}: organization contact`);
   assert.equal(organization.logo['@type'],'ImageObject',`${name}: organization logo object`);
   assert.ok(webPage,`${name}: expected page schema`);
@@ -133,6 +135,10 @@ assert.match(htmlByPage.get('contact.html'),/data-contact-email="info@bhoctherap
 const initiativeHomePath=path.join(out,'initiative','index.html');
 const initiativeHome=await fs.readFile(initiativeHomePath,'utf8');
 assert.equal((initiativeHome.match(/<h1\b/g)||[]).length,1,'initiative/index.html: exactly one H1');
+const initiativeStructured=JSON.parse(initiativeHome.match(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/)[1]);
+const initiativePage=initiativeStructured['@graph'].find(item=>item['@type']==='WebPage');
+assert.equal(initiativePage.author.url,'https://bhoctherapeutics.com/archil-jaliashvili/','Initiative author canonical profile');
+assert.deepEqual(initiativePage.author.sameAs,['https://www.linkedin.com/in/archil-jaliashvili-bhoc/'],'Initiative author LinkedIn identity');
 const initiativeBlockNames=[...initiativeHome.matchAll(/<!-- BLOCK ([a-z-]+): content\/initiative\/blocks\/[a-z-]+\.json -->/g)].map(match=>match[1]);
 assert.deepEqual(initiativeBlockNames,['hero','stats','mission-panel','focus','science-bridge'],'Initiative modular block order');
 assert.match(initiativeHome,/rel="canonical" href="https:\/\/bhocvet\.com\/initiative\/"/,'Initiative canonical');

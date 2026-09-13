@@ -198,7 +198,7 @@ const organizationLogo={
 };
 const graphFor=(meta,pagePath,isHome=false)=>({'@context':'https://schema.org','@graph':[
   {'@type':'Organization','@id':orgId,name:site.name,alternateName:site.alternateNames,url:site.canonical,description:site.description,email:site.contactEmail,logo:organizationLogo,contactPoint:{'@type':'ContactPoint',email:site.contactEmail,contactType:'research inquiries',availableLanguage:['English']},parentOrganization:{'@type':'Organization',...site.parent},sameAs:site.sameAs},
-  {'@type':'Person','@id':personId,...site.author,sameAs:[site.author.url],affiliation:{'@id':orgId},knowsAbout:site.topics},
+  {'@type':'Person','@id':personId,...site.author,affiliation:{'@id':orgId},knowsAbout:site.topics},
   {'@type':'WebSite','@id':webId,name:site.name,alternateName:site.alternateNames,url:site.canonical,description:site.description,inLanguage:site.language,datePublished:site.publication.firstPublished,dateModified:site.updated,keywords:seoTerms(site).join(', '),publisher:{'@id':orgId},creator:{'@id':personId}},
   ...(isHome?[{'@type':'ImageObject','@id':site.canonical+'#hero-image',contentUrl:absolute(hero.image.src),caption:hero.image.alt,width:hero.image.width,height:hero.image.height,representativeOfPage:true}]:[]),
   {'@type':meta.schemaType||'WebPage','@id':absolute(pagePath)+'#webpage',url:absolute(pagePath),name:meta.title,description:meta.description,isPartOf:{'@id':webId},inLanguage:site.language,datePublished:site.publication.firstPublished,dateModified:site.updated,author:{'@id':personId},creator:{'@id':personId},publisher:{'@id':orgId},about:pageTopics(meta).map(name=>({'@type':'Thing',name})),keywords:seoTerms(meta).join(', '),...(isHome?{primaryImageOfPage:{'@id':site.canonical+'#hero-image'}}:{})}
