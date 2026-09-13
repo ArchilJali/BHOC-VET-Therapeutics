@@ -150,8 +150,8 @@
         "title": "Real-World Evidence & Cases",
         "links": [
           {
-            "label": "Vet Real-World Evidence & Cases",
-            "href": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-index.html"
+            "label": "Search veterinary publications",
+            "href": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-search.html"
           },
           {
             "label": "Regulatory records",
