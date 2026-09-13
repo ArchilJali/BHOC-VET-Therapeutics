@@ -42,7 +42,7 @@
       "title": "Connect",
       "links": [
         {"label": "News & Intelligence", "href": "../news.html"},
-        {"label": "Vet Real-World Evidence & Cases", "href": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-index.html"},
+        {"label": "Search veterinary publications", "href": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-search.html"},
         {"label": "Contact", "href": "mailto:info@bhoctherapeutics.com"},
         {"label": "LinkedIn", "href": "https://www.linkedin.com/company/bhoc-therapeutics/"}
       ]
