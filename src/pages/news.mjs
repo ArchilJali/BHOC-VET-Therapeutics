@@ -23,13 +23,13 @@ const itemListSchema=page=>safeJSON({
       description:story.text,
       datePublished:story.date,
       inLanguage:'en',
-      image:{
+      ...(story.image?{image:{
         '@type':'ImageObject',
         url:absoluteURL(story.image.url),
         caption:story.image.alt,
         ...(story.image.width?{width:story.image.width}:{}),
         ...(story.image.height?{height:story.image.height}:{})
-      },
+      }}:{}),
       citation:story.link.href,
       keywords:(story.keywords||[]).join(', '),
       about:(story.keywords||[]).map(name=>({'@type':'Thing',name}))
@@ -38,15 +38,16 @@ const itemListSchema=page=>safeJSON({
 });
 
 const contextLinkHTML=item=>`<a class="seo-context-link" ${attrs(item)}${/^https:\/\//.test(item.href)?' target="_blank" rel="noopener noreferrer"':''}>${esc(item.label)} ${icon('arrow')}</a>`;
+const storyMedia=story=>story.image?`<figure class="story-media${story.image.variant==='logo'?' story-media-logo':''}"><img src="${esc(story.image.url)}" alt="${esc(story.image.alt)}" width="${story.image.width||900}" height="${story.image.height||600}" loading="lazy" decoding="async">${story.credit?`<a class="story-credit" ${attrs(story.credit)} target="_blank" rel="noopener noreferrer">${esc(story.credit.label)}</a>`:''}</figure>`:'';
 
-const storyHTML=(story,index)=>`<article class="conservation-story${index===0?' conservation-story-featured':''}" id="${esc(story.id)}">
-  <figure class="story-media${story.image.variant==='logo'?' story-media-logo':''}"><img src="${esc(story.image.url)}" alt="${esc(story.image.alt)}" width="${story.image.width||900}" height="${story.image.height||600}" ${index===0?'loading="eager"':'loading="lazy"'} decoding="async"><a class="story-credit" ${attrs(story.credit)} target="_blank" rel="noopener noreferrer">${esc(story.credit.label)}</a></figure>
+const storyHTML=(story,index)=>`<article class="conservation-story${index===0?' conservation-story-featured':''}${story.image?'':' conservation-story-no-media'}" id="${esc(story.id)}">
+  ${storyMedia(story)}
   <div class="story-copy">
     <div class="story-meta">${index===0?'<span class="story-latest">Latest</span>':''}<time datetime="${esc(story.date)}">${esc(story.dateLabel)}</time><span>${esc(story.region)}</span><span>${esc(story.category)}</span></div>
     <h3>${esc(story.title)}</h3>
     <p>${esc(story.text)}</p>
     <div class="story-why"><strong>Why it matters</strong><span>${esc(story.why)}</span></div>
-    <div class="story-footer"><a class="story-link" ${attrs(story.link)} target="_blank" rel="noopener noreferrer">Original source · ${esc(story.sourceName||story.link.label)} <span aria-hidden="true">↗</span></a></div>
+    <div class="story-footer"><a class="story-link" ${attrs(story.link)} target="_blank" rel="noopener noreferrer">${esc(story.link.label)} <span aria-hidden="true">↗</span></a></div>
   </div>
 </article>`;
 
@@ -66,6 +67,7 @@ export default page=>`<style>
 .conservation-feed{display:grid;gap:22px;height:auto;min-height:0;overflow:visible}
 .conservation-story{display:grid;grid-template-columns:minmax(250px,31%) minmax(0,1fr);background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:0 10px 30px rgba(16,47,73,.06)}
 .conservation-story-featured{grid-template-columns:minmax(390px,46%) minmax(0,1fr);border-color:#d9c1b1;box-shadow:0 16px 42px rgba(16,47,73,.09)}
+.conservation-story-no-media,.conservation-story-featured.conservation-story-no-media{grid-template-columns:1fr;border-left:6px solid var(--accent)}.conservation-story-no-media .story-copy{max-width:920px;padding:36px 38px}.conservation-story-no-media .story-copy h3{max-width:850px}
 .story-media{position:relative;display:block;min-height:260px;overflow:hidden;background:#edf2ef;margin:0}.story-media img{width:100%;height:100%;min-height:260px;object-fit:cover;display:block;transition:transform .2s ease}.conservation-story-featured .story-media,.conservation-story-featured .story-media img{min-height:390px}.conservation-story:hover .story-media img{transform:scale(1.012)}
 .story-media-logo{display:flex;align-items:center;justify-content:center;padding:38px;background:#fff}.story-media-logo img{width:100%;height:auto;min-height:0;max-height:180px;object-fit:contain!important;transform:none!important}.conservation-story:hover .story-media-logo img{transform:none}
 .story-credit{position:absolute;left:10px;bottom:10px;max-width:calc(100% - 20px);padding:5px 7px;border-radius:5px;background:rgba(7,31,38,.76);color:#fff;font-size:11px;line-height:1.2;text-decoration:none}
@@ -77,8 +79,8 @@ export default page=>`<style>
 .story-footer{margin-top:20px}.story-link{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;padding:11px 18px;border:1px solid var(--accent);border-radius:999px;background:var(--accent);color:#fff;font-size:14px;font-weight:800;line-height:1.25;text-decoration:none}.story-link:hover{border-color:var(--accent-strong);background:var(--accent-strong);text-decoration:none}
 .intelligence-note{margin:20px 0 0;padding:13px 15px;border-left:3px solid #4e8b70;background:#f5f8f5;color:var(--muted);font-size:12px;line-height:1.55}
 .channels-compact{margin-top:8px;padding-top:26px!important;border-top:1px solid var(--line)}.channels-compact .section-heading{margin-bottom:18px}.channels-compact .news-grid{gap:14px}.channels-compact .news-card{padding:20px;min-height:0}.channels-compact .news-card p{font-size:13px}.channels-compact .news-card .text-link{padding-top:14px}
-@media(max-width:920px){.seo-context{grid-template-columns:145px minmax(0,1fr)}.seo-context-links{grid-column:2;display:flex;flex-wrap:wrap;column-gap:18px}.conservation-story,.conservation-story-featured{grid-template-columns:minmax(225px,35%) minmax(0,1fr)}.conservation-story-featured .story-media,.conservation-story-featured .story-media img{min-height:350px}.story-copy{padding:24px}.conservation-story-featured .story-copy h3{font-size:30px}}
-@media(max-width:700px){.news-page .page-hero{padding:18px var(--gutter) 15px}.news-page .page-hero h1{font-size:clamp(29px,9vw,39px)}.news-page .page-hero p{margin-top:9px;font-size:14px;line-height:1.48}.intelligence-inner{width:min(calc(100% - 28px),1160px)}.intelligence-head{align-items:flex-start;margin-bottom:12px}.intelligence-status{font-size:12px}.intelligence-status strong,.scroll-cue{display:block;margin:0}.scroll-cue{margin-top:3px}.seo-context{display:block;margin-top:16px;padding:17px}.seo-context .page-eyebrow{display:block;margin:0 0 7px}.seo-context-copy h2{font-size:18px}.seo-context-copy p{font-size:13px}.seo-context-links{display:grid;margin-top:12px}.conservation-feed{gap:16px}.conservation-story,.conservation-story-featured{grid-template-columns:1fr;border-radius:15px}.story-media,.story-media img,.conservation-story-featured .story-media,.conservation-story-featured .story-media img{min-height:0;aspect-ratio:16/9}.story-media-logo{min-height:190px;aspect-ratio:auto;padding:34px}.story-media-logo img{aspect-ratio:auto!important;max-height:120px}.story-copy{padding:21px 20px 23px}.story-meta{gap:5px 9px;margin-bottom:10px;font-size:12px}.story-copy h3,.conservation-story-featured .story-copy h3{font-size:24px;line-height:1.14}.story-copy>p{font-size:16px;line-height:1.58}.story-why{margin-top:15px;font-size:13px}.story-footer{width:100%;margin-top:17px}.story-link{width:100%;font-size:14px}.story-credit{font-size:10px}.intelligence-note{font-size:12px}.channels-compact .news-grid{grid-template-columns:1fr}}
+@media(max-width:920px){.seo-context{grid-template-columns:145px minmax(0,1fr)}.seo-context-links{grid-column:2;display:flex;flex-wrap:wrap;column-gap:18px}.conservation-story,.conservation-story-featured{grid-template-columns:minmax(225px,35%) minmax(0,1fr)}.conservation-story-no-media,.conservation-story-featured.conservation-story-no-media{grid-template-columns:1fr}.conservation-story-featured .story-media,.conservation-story-featured .story-media img{min-height:350px}.story-copy{padding:24px}.conservation-story-featured .story-copy h3{font-size:30px}}
+@media(max-width:700px){.news-page .page-hero{padding:18px var(--gutter) 15px}.news-page .page-hero h1{font-size:clamp(29px,9vw,39px)}.news-page .page-hero p{margin-top:9px;font-size:14px;line-height:1.48}.intelligence-inner{width:min(calc(100% - 28px),1160px)}.intelligence-head{align-items:flex-start;margin-bottom:12px}.intelligence-status{font-size:12px}.intelligence-status strong,.scroll-cue{display:block;margin:0}.scroll-cue{margin-top:3px}.seo-context{display:block;margin-top:16px;padding:17px}.seo-context .page-eyebrow{display:block;margin:0 0 7px}.seo-context-copy h2{font-size:18px}.seo-context-copy p{font-size:13px}.seo-context-links{display:grid;margin-top:12px}.conservation-feed{gap:16px}.conservation-story,.conservation-story-featured{grid-template-columns:1fr;border-radius:15px}.conservation-story-no-media .story-copy{padding:25px 20px}.story-media,.story-media img,.conservation-story-featured .story-media,.conservation-story-featured .story-media img{min-height:0;aspect-ratio:16/9}.story-media-logo{min-height:190px;aspect-ratio:auto;padding:34px}.story-media-logo img{aspect-ratio:auto!important;max-height:120px}.story-copy{padding:21px 20px 23px}.story-meta{gap:5px 9px;margin-bottom:10px;font-size:12px}.story-copy h3,.conservation-story-featured .story-copy h3{font-size:24px;line-height:1.14}.story-copy>p{font-size:16px;line-height:1.58}.story-why{margin-top:15px;font-size:13px}.story-footer{width:100%;margin-top:17px}.story-link{width:100%;font-size:14px}.story-credit{font-size:10px}.intelligence-note{font-size:12px}.channels-compact .news-grid{grid-template-columns:1fr}}
 </style>
 <main id="main" class="subpage-main news-page">
   <section class="page-hero" aria-labelledby="news-page-heading"><div><span class="page-eyebrow">${esc(page.eyebrow)}</span><h1 id="news-page-heading">${esc(page.heading)}</h1><p>${esc(page.lead)}</p></div></section>
