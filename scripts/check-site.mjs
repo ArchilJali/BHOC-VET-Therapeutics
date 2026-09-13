@@ -7,6 +7,8 @@ const root=path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 const out=path.resolve(root,process.argv[2]||'dist');
 const vetRWE='https://archiljali.github.io/BHOC-platform/veterinary/Vet-index.html';
 const vetSearch='https://archiljali.github.io/BHOC-platform/veterinary/Vet-search.html';
+const re=s=>String(s).replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
+const htmlText=s=>String(s).replaceAll('&','&amp;');
 
 const expectedPages=[
   'index.html',
@@ -82,15 +84,15 @@ for(const [name,html] of htmlByPage){
   const network=html.match(/<nav class="site-network-bar"[\s\S]*?<\/nav>/)?.[0]||'';
   assert.equal((network.match(/class="network-link network-link-enabled"/g)||[]).length,2,`${name}: two active network links`);
   assert.equal((network.match(/class="network-link network-link-disabled"/g)||[]).length,1,`${name}: one future sister-site label`);
-  assert.match(network,new RegExp(`href="${vetRWE.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')}"[^>]*>[\\s\\S]*Vet Real-World Evidence &amp; Cases ↗`),`${name}: Vet RWE is primary network evidence route`);
+  assert.match(network,new RegExp(`href="${re(vetRWE)}"[^>]*>[\\s\\S]*Vet Real-World Evidence &amp; Cases ↗`),`${name}: Vet RWE is primary network evidence route`);
   assert.match(network,/href="https:\/\/bhoctherapeutics\.com\/"[^>]*>[\s\S]*BHOC Therapeutics ↗/,`${name}: corporate link`);
   assert.match(network,/aria-disabled="true"[^>]*>[\s\S]*BHOC Transplant · coming soon/,`${name}: transplant remains inactive`);
 
   const footer=html.match(/<footer class="site-footer">[\s\S]*?<\/footer>/)?.[0]||'';
   assert.equal((footer.match(/class="footer-column"/g)||[]).length,5,`${name}: five footer groups`);
   for(const heading of ['Product','Application','Real-World Evidence &amp; Cases','Initiative','Information'])assert.ok(footer.includes(`<h2>${heading}</h2>`),`${name}: footer group ${heading}`);
-  assert.match(footer,new RegExp(`href="${vetRWE.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')}"[^>]*>[\\s\\S]*Vet Real-World Evidence &amp; Cases`),`${name}: footer primary RWE route`);
-  assert.match(footer,new RegExp(`href="${vetSearch.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')}"[^>]*>Search veterinary publications`),`${name}: footer publication-search route`);
+  assert.match(footer,new RegExp(`href="${re(vetRWE)}"[^>]*>[\\s\\S]*Vet Real-World Evidence &amp; Cases`),`${name}: footer primary RWE route`);
+  assert.match(footer,new RegExp(`href="${re(vetSearch)}"[^>]*>Search veterinary publications`),`${name}: footer publication-search route`);
   assert.match(footer,/href="https:\/\/www\.linkedin\.com\/company\/bhoc-therapeutics\/"/,`${name}: footer LinkedIn route`);
   const footerHrefs=[...footer.matchAll(/href="([^"]+)"/g)].map(match=>match[1]);
   assert.equal(new Set(footerHrefs).size,footerHrefs.length,`${name}: footer destinations are unique`);
@@ -103,26 +105,26 @@ assert.match(primaryNav,/class="nav-initiative-entry" href="\.\/initiative\/"/,'
 for(const [href,label] of [
   ['product.html','Product'],
   ['applications.html','Application'],
-  [vetRWE,'Vet Real-World Evidence &amp; Cases'],
+  [vetRWE,'Vet Real-World Evidence & Cases'],
   ['science.html','Science'],
   ['related-information.html','Related Information'],
   ['news.html','News']
-])assert.match(primaryNav,new RegExp(`href="${href.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')}"[^>]*>${label.replace('&','&amp;')}<\\/a>`),`Primary navigation keeps ${label}`);
-assert.match(home,new RegExp(`href="${vetRWE.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')}"[^>]*>Vet Real-World Evidence &amp; Cases`),'Homepage biodiversity CTA opens Vet RWE & Cases');
+])assert.match(primaryNav,new RegExp(`href="${re(href)}"[^>]*>${htmlText(label)}<\\/a>`),`Primary navigation keeps ${label}`);
+assert.match(home,new RegExp(`href="${re(vetRWE)}"[^>]*>Vet Real-World Evidence &amp; Cases`),'Homepage biodiversity CTA opens Vet RWE & Cases');
 assert.match(home,/<h1 id="home-heading">Precision Oxygen Therapeutics<\/h1>/,'Homepage H1 preserved');
 assert.equal((home.match(/data-hero-slide/g)||[]).length,3,'Three hero slides preserved');
 assert.match(home,/We be of one blood, ye and I\./,'Kipling quotation preserved');
 
 const product=htmlByPage.get('product.html');
 assert.match(product,/Product objectives are not regulatory approval\./,'Product boundary preserved');
-assert.match(product,new RegExp(`href="${vetRWE.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')}"[^>]*>Open Vet Real-World Evidence &amp; Cases`),'Product routes to Vet RWE & Cases');
+assert.match(product,new RegExp(`href="${re(vetRWE)}"[^>]*>Open Vet Real-World Evidence &amp; Cases`),'Product routes to Vet RWE & Cases');
 
 const news=htmlByPage.get('news.html');
 assert.match(news,/Vet Real-World Evidence &amp; Cases/,'News identifies the canonical veterinary RWE library');
-assert.match(news,new RegExp(`href="${vetRWE.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')}"`),'News routes directly to Vet RWE & Cases');
+assert.match(news,new RegExp(`href="${re(vetRWE)}"`),'News routes directly to Vet RWE & Cases');
 assert.doesNotMatch(news,/evidence directory/i,'News no longer describes a duplicate evidence directory');
 
-assert.match(htmlByPage.get('science.html'),new RegExp(vetRWE.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')),'Science routes to Vet RWE');
+assert.match(htmlByPage.get('science.html'),new RegExp(re(vetRWE)),'Science routes to Vet RWE');
 assert.match(htmlByPage.get('applications.html'),/Vet-search\.html/,'Applications routes into veterinary source search');
 assert.match(htmlByPage.get('related-information.html'),/>Professional publications</,'Related Information preserved');
 assert.match(htmlByPage.get('contact.html'),/data-contact-email="info@bhoctherapeutics\.com"/,'Contact preserved');
@@ -135,8 +137,8 @@ assert.deepEqual(initiativeBlockNames,['hero','stats','mission-panel','focus','s
 assert.match(initiativeHome,/rel="canonical" href="https:\/\/bhocvet\.com\/initiative\/"/,'Initiative canonical');
 assert.equal((initiativeHome.match(/class="hero-photo hero-photo-/g)||[]).length,6,'Initiative hero keeps six photographs');
 assert.equal((initiativeHome.match(/class="focus-card"/g)||[]).length,7,'Initiative keeps seven focus cards');
-assert.match(initiativeHome,new RegExp(`href="${vetRWE.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')}"[\\s\\S]*Vet Real-World Evidence &amp; Cases`),'Initiative links to Vet RWE & Cases');
-assert.match(initiativeHome,new RegExp(`href="${vetSearch.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')}"[\\s\\S]*Search veterinary publications`),'Initiative has distinct publication search route');
+assert.match(initiativeHome,new RegExp(`href="${re(vetRWE)}"[\\s\\S]*Vet Real-World Evidence &amp; Cases`),'Initiative links to Vet RWE & Cases');
+assert.match(initiativeHome,new RegExp(`href="${re(vetSearch)}"[\\s\\S]*Search veterinary publications`),'Initiative has distinct publication search route');
 assert.doesNotMatch(initiativeHome,/href="\.\.\/evidence\.html"/,'Initiative no longer links to retired Evidence page');
 assert.doesNotMatch(initiativeHome,/https:\/\/bhocvet\.com\/evidence\.html/,'Initiative has no absolute retired Evidence URL');
 assert.doesNotMatch(initiativeHome,/hbo2therapeutics\.com\/our-product/i,'Initiative forbidden corporate link absent');
