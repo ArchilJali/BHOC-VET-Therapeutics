@@ -1,0 +1,73 @@
+{
+  "title": "K-9 Saxon, Oxyglobin & the Saxon Award | Veterinary HBOC History",
+  "description": "Documented 2002 real-world case of Fresno Police K-9 Saxon, Oxyglobin emergency use and the later Saxon Award, with source-linked veterinary HBOC context.",
+  "eyebrow": "Vet Real-World Evidence & Cases · Working K-9 · Oxyglobin",
+  "heading": "K-9 Saxon: Oxyglobin, survival and the legacy of the Saxon Award",
+  "dateLabel": "Historical case · 22 Aug 2002",
+  "classification": "Documented real-world case",
+  "lead": "A critically injured police K-9 survived catastrophic line-of-duty trauma. The case was documented in Biopure's 2002 Annual Report, and Saxon's name later became part of Fresno Police Department policy through the Saxon Award.",
+  "seo": {
+    "primaryKeyword": "K-9 Saxon Oxyglobin",
+    "secondaryKeywords": [
+      "Saxon Award Fresno Police",
+      "Oxyglobin police dog",
+      "Oxyglobin real-world evidence",
+      "veterinary HBOC case",
+      "working dog trauma",
+      "veterinary oxygen carrier"
+    ],
+    "supportingTerms": [
+      "BHOC",
+      "Biological Hemoglobin Oxygen Carrier",
+      "HBOC",
+      "hemoglobin-based oxygen carrier",
+      "oxygen delivery",
+      "veterinary emergency medicine",
+      "canine critical care",
+      "Fresno Police Department",
+      "Roger Gfeller",
+      "Jerry Dyer"
+    ]
+  },
+  "sections": [
+    {
+      "heading": "The documented case",
+      "paragraphs": [
+        "On 22 August 2002, Fresno Police Department K-9 Officer Saxon was shot at point-blank range during a line-of-duty incident. The Biopure Annual Report describes life-threatening injuries including lung injury, two broken legs and extensive trauma to his left side.",
+        "In a letter dated 26 November 2002 and reproduced in the report, Fresno Police Chief Jerry Dyer wrote that conversations with veterinarian Dr. Roger Gfeller left no doubt, in their view, about the pivotal role Oxyglobin played in saving Saxon's life. This is a historical company-published record and should be read as such, not as a controlled clinical trial."
+      ]
+    },
+    {
+      "heading": "The legacy became official",
+      "paragraphs": [
+        "Saxon's story did not end with recovery. Fresno Police Department policy later established the Saxon Award in his honor, identifying him as the first Fresno Police Service Animal to be seriously injured in the line of duty on 22 August 2002.",
+        "The award recognizes a police service animal seriously injured in the performance of duty by unlawful force that could have resulted in death."
+      ]
+    },
+    {
+      "heading": "Why this case matters",
+      "paragraphs": [
+        "Saxon is a documented historical example of a veterinary hemoglobin-based oxygen carrier being used in a real emergency involving a working dog. The case is relevant to the history of Oxyglobin, HBOC development and the broader concept of supporting oxygen delivery when conventional red-cell oxygen-carrying capacity is compromised.",
+        "For BHOC Veterinary, this case is historical context, not evidence of BHOC efficacy. It shows that oxygen-carrying therapeutics were used in real veterinary emergency care more than two decades ago."
+      ]
+    }
+  ],
+  "evidenceTrail": [
+    {
+      "label": "Biopure Annual Report 2002 · BHOC Historical Sources",
+      "detail": "Our source note for the 2002 Biopure Annual Report, including Oxyglobin veterinary experience and the Saxon record.",
+      "href": "https://archiljali.github.io/BHOC-platform/historical-sources/biopure-annual-report-2002/"
+    },
+    {
+      "label": "Official Saxon Award · Fresno Police Department",
+      "detail": "Fresno Police policy section 1030.5.10 identifies the Saxon Award and its origin.",
+      "href": "https://www.fresno.gov/wp-content/uploads/2023/06/PolicyManual-Redacted-June-2023_Redacted.pdf"
+    },
+    {
+      "label": "Oxyglobin regulatory evidence · BHOC Veterinary",
+      "detail": "Source-linked FDA and EMA Oxyglobin records and the original canine field-trial context.",
+      "href": "evidence.html"
+    }
+  ],
+  "sourceNote": "This page presents a documented historical real-world case. The Saxon account is a historical company-published record supported by an official Fresno Police legacy record. It is not a controlled trial, does not establish BHOC efficacy and should not be read as current clinical guidance."
+}
