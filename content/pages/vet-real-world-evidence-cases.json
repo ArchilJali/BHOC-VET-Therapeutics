@@ -1,0 +1,27 @@
+{
+  "slug": "vet-real-world-evidence-cases",
+  "navLabel": "Vet Real-World Evidence & Cases",
+  "title": "Vet Real-World Evidence & Cases | BHOC Veterinary",
+  "description": "Source-linked veterinary real-world evidence and documented cases involving Oxyglobin, HBOCs, oxygen delivery, emergency medicine and working animals.",
+  "schemaType": "CollectionPage",
+  "seo": {
+    "primaryKeyword": "veterinary real-world evidence cases",
+    "secondaryKeywords": ["veterinary real-world evidence","Oxyglobin real-world case","veterinary HBOC cases","working dog emergency medicine","hemoglobin-based oxygen carrier veterinary"],
+    "supportingTerms": ["BHOC","Biological Hemoglobin Oxygen Carrier","HBOC","Oxyglobin","oxygen delivery","veterinary emergency medicine","working animals","canine trauma"]
+  },
+  "eyebrow": "BHOC Veterinary · Real-World Evidence & Cases",
+  "heading": "Vet Real-World Evidence & Cases",
+  "lead": "Documented veterinary cases, field experience, working-animal use and historical real-world evidence involving Oxyglobin, HBOCs and oxygen-delivery therapeutics.",
+  "introNote": "This section separates documented real-world cases from controlled scientific and regulatory evidence. Each case is classified by source strength and links directly to its supporting records.",
+  "cases": [
+    {
+      "id": "k9-saxon-oxyglobin",
+      "status": "Documented real-world case",
+      "date": "22 Aug 2002",
+      "category": "Working K-9 · catastrophic trauma · Oxyglobin",
+      "title": "K-9 Saxon: Oxyglobin, survival and the legacy of the Saxon Award",
+      "summary": "Fresno Police K-9 Saxon survived catastrophic line-of-duty injuries in 2002. A letter from Police Chief Jerry Dyer reproduced in Biopure's 2002 Annual Report described Oxyglobin as playing a pivotal role in Saxon's survival. Fresno Police later established the Saxon Award in his honor.",
+      "href": "k9-saxon-oxyglobin.html"
+    }
+  ]
+}
