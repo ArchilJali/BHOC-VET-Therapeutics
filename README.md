@@ -39,6 +39,7 @@ Node 22 or later. The static generator has no npm runtime dependencies.
 
 ```sh
 node scripts/build.mjs --out dist
+node scripts/write-migration-redirects.mjs dist
 node scripts/check-site.mjs dist
 ```
 
