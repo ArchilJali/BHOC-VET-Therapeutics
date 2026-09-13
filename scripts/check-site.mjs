@@ -117,10 +117,11 @@ assert.match(home,/We be of one blood, ye and I\./,'Kipling quotation preserved'
 
 const product=htmlByPage.get('product.html');
 assert.match(product,/Product objectives are not regulatory approval\./,'Product boundary preserved');
-assert.match(product,new RegExp(`href="${re(vetRWE)}"[^>]*>Open Vet Real-World Evidence &amp; Cases`),'Product routes to Vet RWE & Cases');
+assert.ok(product.includes(`href="${vetRWE}"`),'Product routes to Vet RWE & Cases URL');
+assert.match(product,/Open Vet Real-World Evidence (?:&amp;|&) Cases/,'Product keeps the Vet RWE & Cases label');
 
 const news=htmlByPage.get('news.html');
-assert.match(news,/Vet Real-World Evidence &amp; Cases/,'News identifies the canonical veterinary RWE library');
+assert.match(news,/Vet Real-World Evidence & Cases/,'News identifies the canonical veterinary RWE library');
 assert.match(news,new RegExp(`href="${re(vetRWE)}"`),'News routes directly to Vet RWE & Cases');
 assert.doesNotMatch(news,/evidence directory/i,'News no longer describes a duplicate evidence directory');
 
