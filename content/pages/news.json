@@ -51,13 +51,18 @@
       "Global Flyways Summit",
       "BirdLife International",
       "migratory bird conservation",
-      "conservation finance"
+      "conservation finance",
+      "healthy animal donors",
+      "feline blood donation",
+      "donor welfare",
+      "veterinary blood shortage",
+      "donor-independent oxygen delivery"
     ]
   },
   "eyebrow": "BHOC Initiative · Global Intelligence",
   "heading": "Wildlife & Species Conservation Intelligence.",
   "lead": "Tracking the people, science, funding and programs working to protect wildlife, restore endangered species and strengthen conservation medicine worldwide.",
-  "updated": "13 Sep 2026",
+  "updated": "14 Sep 2026",
   "seoContext": {
     "eyebrow": "BHOC Veterinary context",
     "heading": "Animal-health intelligence, separate from product claims.",
@@ -71,6 +76,44 @@
   },
   "feedNote": "BHOC Initiative Scout applies a high publication threshold and screens every candidate for duplication. New items are added only for exceptional rescue or recovery outcomes, globally significant conservation initiatives, substantive veterinary evidence milestones or other material developments; routine news is excluded.",
   "stories": [
+    {
+      "id": "healthy-animal-donors-2026",
+      "date": "2026-09-14",
+      "dateLabel": "14 Sep 2026",
+      "region": "Global",
+      "category": "Research concept · Veterinary transfusion · Donor welfare",
+      "title": "Do we have the right to depend on healthy animal donors?",
+      "text": "Veterinary blood donation saves lives. But it also depends on healthy animals becoming donors. A new BHOC Veterinary research concept examines this question across species. In a study covering 29,201 feline blood-donation events, 95.6% involved sedation. Adverse reactions were uncommon overall, but conscious donors had 4.4 times higher odds of an adverse reaction. Beyond cats and dogs, the challenge becomes even more complex in horses, camels, birds, zoo animals, endangered species and marine mammals, where compatible donors may be difficult to identify, access or support in time.",
+      "why": "The question is not whether donor blood should disappear. It is whether veterinary medicine should also investigate a donor-independent, shelf-stable oxygen-delivery reserve for the critical period before compatible blood or definitive treatment becomes available.",
+      "image": {
+        "url": "assets/reference-initiative-mark.webp",
+        "alt": "BHOC Species and Biodiversity Protection Initiative logo",
+        "width": 318,
+        "height": 317,
+        "variant": "logo"
+      },
+      "sourceName": "BHOC VET-platform · Concepts & Questions",
+      "link": {
+        "label": "Read the research concept & sources",
+        "href": "https://archiljali.github.io/BHOC-VET-platform/concepts-questions/healthy-animal-donors.html"
+      },
+      "keywords": [
+        "healthy animal donors",
+        "veterinary blood donation",
+        "animal blood donation",
+        "feline blood donation",
+        "cat blood donation sedation",
+        "donor welfare",
+        "veterinary transfusion medicine",
+        "veterinary blood shortage",
+        "animal blood bank",
+        "cross-species transfusion",
+        "donor-independent oxygen delivery",
+        "Biological Hemoglobin Oxygen Carrier",
+        "BHOC Veterinary",
+        "Precision Oxygen Therapeutics"
+      ]
+    },
     {
       "id": "k9-saxon-oxyglobin-2002",
       "date": "2026-09-13",
