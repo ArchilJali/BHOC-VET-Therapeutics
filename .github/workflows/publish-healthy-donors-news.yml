@@ -1,0 +1,130 @@
+name: Publish healthy animal donors news
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/publish-healthy-donors-news.yml'
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: bhoc-veterinary-healthy-donors-news
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: 22
+
+      - name: Add BHOC Veterinary news story
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          path = Path('content/pages/news.json')
+          page = json.loads(path.read_text(encoding='utf-8'))
+
+          story_id = 'healthy-animal-donors-2026'
+          story = {
+            'id': story_id,
+            'date': '2026-09-14',
+            'dateLabel': '14 Sep 2026',
+            'region': 'Global',
+            'category': 'Research concept · Veterinary transfusion · Donor welfare',
+            'title': 'Do we have the right to depend on healthy animal donors?',
+            'text': 'Veterinary blood donation saves lives. But it also depends on healthy animals becoming donors. A new BHOC Veterinary research concept examines this question across species. In a study covering 29,201 feline blood-donation events, 95.6% involved sedation. Adverse reactions were uncommon overall, but conscious donors had 4.4 times higher odds of an adverse reaction. Beyond cats and dogs, the challenge becomes even more complex in horses, camels, birds, zoo animals, endangered species and marine mammals, where compatible donors may be difficult to identify, access or support in time.',
+            'why': 'The question is not whether donor blood should disappear. It is whether veterinary medicine should also investigate a donor-independent, shelf-stable oxygen-delivery reserve for the critical period before compatible blood or definitive treatment becomes available.',
+            'image': {
+              'url': 'assets/reference-initiative-mark.webp',
+              'alt': 'BHOC Species and Biodiversity Protection Initiative logo',
+              'width': 318,
+              'height': 317,
+              'variant': 'logo'
+            },
+            'sourceName': 'BHOC VET-platform · Concepts & Questions',
+            'link': {
+              'label': 'Read the research concept & sources',
+              'href': 'https://archiljali.github.io/BHOC-VET-platform/concepts-questions/healthy-animal-donors.html'
+            },
+            'keywords': [
+              'healthy animal donors',
+              'veterinary blood donation',
+              'animal blood donation',
+              'feline blood donation',
+              'cat blood donation sedation',
+              'donor welfare',
+              'veterinary transfusion medicine',
+              'veterinary blood shortage',
+              'animal blood bank',
+              'cross-species transfusion',
+              'donor-independent oxygen delivery',
+              'Biological Hemoglobin Oxygen Carrier',
+              'BHOC Veterinary',
+              'Precision Oxygen Therapeutics'
+            ]
+          }
+
+          stories = [s for s in page.get('stories', []) if s.get('id') != story_id]
+          page['stories'] = [story, *stories]
+          page['updated'] = '14 Sep 2026'
+
+          seo = page.setdefault('seo', {})
+          terms = seo.setdefault('supportingTerms', [])
+          for term in [
+            'healthy animal donors',
+            'feline blood donation',
+            'donor welfare',
+            'veterinary blood shortage',
+            'donor-independent oxygen delivery'
+          ]:
+            if term not in terms:
+              terms.append(term)
+
+          path.write_text(json.dumps(page, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+          PY
+
+      - name: Remove one-shot workflow and save source update
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git rm .github/workflows/publish-healthy-donors-news.yml
+          git add content/pages/news.json
+          git commit -m "Add healthy animal donors research concept to BHOC Veterinary news"
+          git push origin HEAD:main
+
+      - name: Assemble website
+        run: node scripts/build.mjs --out _site
+
+      - name: Preserve the custom error page
+        run: cp dist/404.html _site/404.html
+
+      - name: Write retired Evidence migration redirects
+        run: node scripts/write-migration-redirects.mjs _site
+
+      - name: Validate HTML, metadata, images and block isolation
+        run: node scripts/check-site.mjs _site
+
+      - name: Reject forbidden outbound domains
+        run: node scripts/check-forbidden-links.mjs _site
+
+      - uses: actions/upload-pages-artifact@7b1f4a764d45c48632c6b24a0339c27f5614fb0b # v4
+        with:
+          path: _site
+
+      - name: Publish checked website
+        id: deployment
+        uses: actions/deploy-pages@d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e # v4
