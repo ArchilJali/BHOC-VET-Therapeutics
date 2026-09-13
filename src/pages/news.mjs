@@ -4,10 +4,10 @@ const canonicalNewsURL='https://bhocvet.com/news.html';
 const absoluteURL=value=>/^https:\/\//.test(value)?value:new URL(value,'https://bhocvet.com/').href;
 const safeJSON=value=>JSON.stringify(value).replace(/</g,'\\u003c');
 const saxonVisual={
-  url:'assets/news/k9-saxon-oxyglobin-biopure-annual-report-2002.webp',
+  url:'assets/news/k9-saxon-oxyglobin-biopure-annual-report-2002.svg',
   alt:'Historical panel from the 2002 Biopure Annual Report showing Fresno Police K-9 Saxon and the Oxyglobin treatment account after catastrophic line-of-duty injuries.',
-  width:1200,
-  height:400,
+  width:1800,
+  height:600,
   variant:'document'
 };
 const saxonCredit={
