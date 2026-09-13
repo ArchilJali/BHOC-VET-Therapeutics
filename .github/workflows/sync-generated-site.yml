@@ -8,6 +8,7 @@ on:
       - 'src/**'
       - 'assets/**'
       - 'scripts/build.mjs'
+      - 'scripts/write-migration-redirects.mjs'
       - 'scripts/check-site.mjs'
       - 'scripts/check-forbidden-links.mjs'
       - 'package.json'
@@ -39,15 +40,7 @@ jobs:
         run: |
           node scripts/build.mjs --out _site
           cp dist/404.html _site/404.html
-
-          cat > _site/evidence.html <<'EOF'
-          <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,follow"><meta http-equiv="refresh" content="0;url=https://archiljali.github.io/BHOC-platform/veterinary/Vet-index.html"><link rel="canonical" href="https://archiljali.github.io/BHOC-platform/veterinary/Vet-index.html"><title>Vet Real-World Evidence & Cases | BHOC Veterinary</title></head><body><p>This page has moved to <a href="https://archiljali.github.io/BHOC-platform/veterinary/Vet-index.html">Vet Real-World Evidence & Cases</a>.</p></body></html>
-          EOF
-
-          cat > _site/publications.html <<'EOF'
-          <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,follow"><meta http-equiv="refresh" content="0;url=https://archiljali.github.io/BHOC-platform/veterinary/Vet-index.html"><link rel="canonical" href="https://archiljali.github.io/BHOC-platform/veterinary/Vet-index.html"><title>Vet Real-World Evidence & Cases | BHOC Veterinary</title></head><body><p>Veterinary publications and cases are maintained in <a href="https://archiljali.github.io/BHOC-platform/veterinary/Vet-index.html">Vet Real-World Evidence & Cases</a>.</p></body></html>
-          EOF
-
+          node scripts/write-migration-redirects.mjs _site
           node scripts/check-site.mjs _site
           node scripts/check-forbidden-links.mjs _site
 
