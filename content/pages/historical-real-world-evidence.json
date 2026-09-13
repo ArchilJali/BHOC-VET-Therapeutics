@@ -61,10 +61,14 @@
   "firstCase": {
     "eyebrow": "First case file",
     "title": "K-9 Saxon · Fresno Police · 2002",
-    "text": "A documented working-dog trauma case involving Oxyglobin, followed by an enduring institutional legacy in the Fresno Police Department's Saxon Award. The full case page will connect the contemporaneous Biopure record, the official Saxon Award policy and Oxyglobin regulatory context.",
-    "status": "Case file being assembled in this preview branch."
+    "text": "A documented working-dog trauma case involving Oxyglobin, followed by an enduring institutional legacy in the Fresno Police Department's Saxon Award. The case page connects the contemporaneous Biopure record, the official Saxon Award policy and Oxyglobin regulatory context.",
+    "status": "Documented real-world case · source-linked"
   },
   "links": [
+    {
+      "label": "Open the K-9 Saxon case",
+      "href": "k9-saxon-oxyglobin-real-world-evidence.html"
+    },
     {
       "label": "Veterinary oxygen-carrier evidence",
       "href": "evidence.html"
