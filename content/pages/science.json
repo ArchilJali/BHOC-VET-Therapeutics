@@ -20,7 +20,11 @@
       "species-specific physiology",
       "tetrapyrrole chemistry",
       "heme b",
-      "chlorophyll a"
+      "chlorophyll a",
+      "red blood cell compartmentalization",
+      "nitric oxide scavenging",
+      "vascular control",
+      "microcirculation"
     ]
   },
   "eyebrow": "BHOC Veterinary Science",
@@ -60,6 +64,11 @@
     }
   },
   "references": [
+    {
+      "label": "BHOC research concept: hemoglobin size, RBC compartmentalization and vascular control",
+      "detail": "Author hypothesis connecting molecular scale, nitric oxide biology, vascular response and tissue oxygen delivery.",
+      "href": "https://archiljali.github.io/BHOC-platform/concepts-hypotheses/size-compartmentalization-vascular-control.html"
+    },
     {
       "label": "ChEBI: Heme b",
       "detail": "CHEBI:26355. Iron-containing tetrapyrrole chemistry.",
