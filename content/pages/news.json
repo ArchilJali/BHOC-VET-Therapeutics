@@ -52,18 +52,14 @@
   "eyebrow": "BHOC Initiative · Global Intelligence",
   "heading": "Wildlife & Species Conservation Intelligence.",
   "lead": "Tracking the people, science, funding and programs working to protect wildlife, restore endangered species and strengthen conservation medicine worldwide.",
-  "updated": "12 Sep 2026",
+  "updated": "13 Sep 2026",
   "seoContext": {
     "eyebrow": "BHOC Veterinary context",
-    "heading": "Animal-health intelligence, separate from product evidence.",
-    "text": "BHOC Veterinary tracks animal blood availability, veterinary (vet) transfusion medicine, wildlife rescue and species recovery. This feed provides context around animal health; it does not present individual news reports as evidence for BHOC, HBOC or Oxyglobin. Scientific and regulatory evidence is kept in the evidence directory.",
+    "heading": "Animal-health intelligence, separate from product claims.",
+    "text": "BHOC Veterinary tracks animal blood availability, veterinary (vet) transfusion medicine, wildlife rescue and species recovery. This feed provides context around animal health; it does not present individual news reports as evidence for BHOC, HBOC or Oxyglobin. Source-linked veterinary evidence, regulatory records and documented cases are maintained in Vet Real-World Evidence & Cases.",
     "links": [
       {
-        "label": "Explore BHOC evidence",
-        "href": "evidence.html"
-      },
-      {
-        "label": "Open veterinary evidence library",
+        "label": "Open Vet Real-World Evidence & Cases",
         "href": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-index.html"
       }
     ]
@@ -525,10 +521,10 @@
     },
     {
       "icon": "book",
-      "title": "Veterinary Evidence Library",
-      "text": "Source-linked bibliography, regulatory records and publication archive.",
+      "title": "Vet Real-World Evidence & Cases",
+      "text": "Source-linked veterinary evidence, regulatory records, publications and documented cases.",
       "link": {
-        "label": "Open full library",
+        "label": "Open Vet Real-World Evidence & Cases",
         "href": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-index.html"
       }
     }
