@@ -132,6 +132,19 @@
           "href": "https://www.ema.europa.eu/en/medicines/veterinary/EPAR/oxyglobin"
         }
       ]
+    },
+    {
+      "id": "historical-real-world-evidence",
+      "number": "03",
+      "title": "Historical Real-World Evidence",
+      "description": "Documented veterinary cases and field experience are kept separate from controlled and regulatory evidence, with the source type and evidence boundary visible for every case.",
+      "items": [
+        {
+          "label": "Historical Real-World Evidence",
+          "detail": "Documented clinical cases, working-animal experience, operational use and historical Oxyglobin/HBOC records.",
+          "href": "historical-real-world-evidence.html"
+        }
+      ]
     }
   ],
   "note": "Evidence boundaries: the 95% vs 32% result is the FDA-defined 24-hour treatment-success endpoint in the Oxyglobin efficacy population, not survival. Historical Oxyglobin approvals do not establish BHOC efficacy, BHOC regulatory approval, approval for other species, affiliation or endorsement."

@@ -1,0 +1,42 @@
+{
+  "id": "k9-saxon-oxyglobin-real-world-evidence",
+  "date": "2026-09-13",
+  "dateLabel": "13 Sep 2026",
+  "region": "United States · Fresno, California",
+  "category": "Historical Real-World Evidence · Working K-9",
+  "title": "K-9 Saxon: from near-fatal trauma to the Saxon Award.",
+  "text": "In 2002, Fresno Police K-9 Saxon survived catastrophic line-of-duty injuries. A contemporaneous letter from Police Chief Jerry Dyer published in Biopure's Annual Report described Oxyglobin as playing a pivotal role in his survival. Fresno Police later named the Saxon Award in his honor.",
+  "why": "A documented veterinary HBOC case linking emergency oxygen-carrying support, working-dog trauma and an institutional legacy preserved in Fresno Police policy.",
+  "image": {
+    "url": "assets/k9-saxon-fresno-police-oxyglobin-2002.webp",
+    "alt": "Fresno Police K-9 Saxon pictured in Biopure's 2002 Annual Report.",
+    "width": 111,
+    "height": 141,
+    "variant": "logo"
+  },
+  "credit": {
+    "label": "Historical source image · Biopure Annual Report 2002",
+    "href": "https://archiljali.github.io/BHOC-platform/historical-sources/biopure-annual-report-2002/"
+  },
+  "sourceName": "BHOC Veterinary case file",
+  "link": {
+    "label": "Read documented case",
+    "href": "k9-saxon-oxyglobin-real-world-evidence.html",
+    "kind": "case"
+  },
+  "citation": "https://archiljali.github.io/BHOC-platform/historical-sources/biopure-annual-report-2002/",
+  "keywords": [
+    "K-9 Saxon",
+    "Saxon Award",
+    "Fresno Police Department",
+    "Oxyglobin",
+    "HBOC",
+    "hemoglobin-based oxygen carrier",
+    "veterinary oxygen therapeutics",
+    "working dog trauma",
+    "veterinary emergency medicine",
+    "historical real-world evidence",
+    "BHOC",
+    "Biological Hemoglobin Oxygen Carrier"
+  ]
+}

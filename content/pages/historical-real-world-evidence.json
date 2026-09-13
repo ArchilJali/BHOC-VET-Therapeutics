@@ -1,0 +1,82 @@
+{
+  "slug": "historical-real-world-evidence",
+  "navLabel": "Real-World Evidence",
+  "title": "Historical Real-World Evidence | Veterinary HBOC & Oxyglobin",
+  "description": "Documented veterinary real-world cases, field use and historical evidence involving Oxyglobin, HBOCs and oxygen-delivery therapeutics in animals.",
+  "schemaType": "CollectionPage",
+  "seo": {
+    "primaryKeyword": "historical veterinary real-world evidence",
+    "secondaryKeywords": [
+      "veterinary real-world evidence",
+      "Oxyglobin real-world evidence",
+      "veterinary HBOC cases",
+      "hemoglobin-based oxygen carrier veterinary use",
+      "working dog emergency medicine",
+      "veterinary oxygen carrier history"
+    ],
+    "supportingTerms": [
+      "BHOC",
+      "Biological Hemoglobin Oxygen Carrier",
+      "Oxyglobin",
+      "HBOC",
+      "hemoglobin-based oxygen carrier",
+      "oxygen delivery",
+      "oxygen therapeutics",
+      "canine critical care",
+      "police K-9 trauma",
+      "military working dogs",
+      "veterinary emergency medicine",
+      "documented clinical cases"
+    ]
+  },
+  "eyebrow": "Historical Real-World Evidence",
+  "heading": "Historical Real-World Evidence in Veterinary Oxygen Therapeutics.",
+  "lead": "Documented clinical cases, field use, working-animal experience and historical records involving Oxyglobin, HBOCs and oxygen-delivery therapeutics. Each case is classified by source strength so a real-world story is not confused with controlled clinical evidence.",
+  "principle": {
+    "heading": "Real-world use is valuable evidence, but not all evidence is equal.",
+    "text": "This collection separates individual documented cases, regulatory field evidence, published clinical reports, operational or military use and historical company-reported experience. Source type and evidence boundaries remain explicit on every case page."
+  },
+  "classes": [
+    {
+      "label": "Documented real-world case",
+      "text": "A named animal or clinical event supported by traceable documentary records."
+    },
+    {
+      "label": "Regulatory field evidence",
+      "text": "Field data reviewed within a regulatory dossier, with population and endpoint boundaries stated."
+    },
+    {
+      "label": "Published clinical case",
+      "text": "A peer-reviewed case report or clinical series with a citable publication record."
+    },
+    {
+      "label": "Operational or military use",
+      "text": "Documented deployment or treatment experience in working-animal or field settings."
+    },
+    {
+      "label": "Historical company-reported use",
+      "text": "Contemporaneous company documentation retained as a historical source and labelled as such."
+    }
+  ],
+  "firstCase": {
+    "eyebrow": "First case file",
+    "title": "K-9 Saxon · Fresno Police · 2002",
+    "text": "A documented working-dog trauma case involving Oxyglobin, followed by an enduring institutional legacy in the Fresno Police Department's Saxon Award. The case page connects the contemporaneous Biopure record, the official Saxon Award policy and Oxyglobin regulatory context.",
+    "status": "Documented real-world case · source-linked"
+  },
+  "links": [
+    {
+      "label": "Open the K-9 Saxon case",
+      "href": "k9-saxon-oxyglobin-real-world-evidence.html"
+    },
+    {
+      "label": "Veterinary oxygen-carrier evidence",
+      "href": "evidence.html"
+    },
+    {
+      "label": "Biopure 2002 Annual Report · BHOC Historical Sources",
+      "href": "https://archiljali.github.io/BHOC-platform/historical-sources/biopure-annual-report-2002/"
+    }
+  ],
+  "note": "Historical Oxyglobin experience does not establish efficacy, safety, approval or endorsement for BHOC. This collection is designed to preserve documented precedent while keeping product, species, indication, source type and evidence level explicit."
+}
