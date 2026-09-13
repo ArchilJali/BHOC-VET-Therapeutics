@@ -35,5 +35,16 @@
       ],
       "closing": "Advancing oxygen delivery for a wilder tomorrow."
     }
-  ]
+  ],
+  "companion": {
+    "eyebrow": "Welcome to BHOCvet.com",
+    "heading": "Built for veterinary teams.",
+    "description": "From emergency care to any situation where oxygen delivery is compromised.",
+    "image": {
+      "src": "assets/bhoc-companion-domestic-animals-banner.webp",
+      "alt": "Black-and-white pencil illustration of companion and domestic animals including dogs, a cat, rabbit, horse, donkey, cattle, camel, sheep and a bird.",
+      "width": 1024,
+      "height": 341
+    }
+  }
 }
