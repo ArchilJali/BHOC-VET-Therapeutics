@@ -20,8 +20,8 @@
       "href": "applications.html"
     },
     {
-      "label": "Evidence",
-      "href": "evidence.html"
+      "label": "Vet Real-World Evidence & Cases",
+      "href": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-index.html"
     },
     {
       "label": "Science",
@@ -38,9 +38,9 @@
   ],
   "networkLinks": [
     {
-      "label": "VET Evidence Hub ↗",
-      "compactLabel": "VET Evidence Hub ↗",
-      "href": "https://archiljali.github.io/BHOC-VET-platform/",
+      "label": "Vet Real-World Evidence & Cases ↗",
+      "compactLabel": "Vet RWE & Cases ↗",
+      "href": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-index.html",
       "enabled": true
     },
     {

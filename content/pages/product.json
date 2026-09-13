@@ -64,10 +64,10 @@
   "boundary": {
     "eyebrow": "Development boundary",
     "title": "Product objectives are not regulatory approval.",
-    "text": "BHOC development requires product-specific and species-specific evidence for formulation, dosing, safety and efficacy. Historical HBOC and Oxyglobin evidence is presented separately in the Evidence section.",
+    "text": "BHOC development requires product-specific and species-specific evidence for formulation, dosing, safety and efficacy. Historical HBOC and Oxyglobin evidence, regulatory records and veterinary real-world cases are maintained in Vet Real-World Evidence & Cases.",
     "link": {
-      "label": "Open Evidence",
-      "href": "evidence.html"
+      "label": "Open Vet Real-World Evidence & Cases",
+      "href": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-index.html"
     }
   }
 }

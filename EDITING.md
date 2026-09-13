@@ -34,14 +34,16 @@
 | Четыре направления инициативы | [pillars.json](content/blocks/pillars.json) |
 | Основное и альтернативные названия, ваше имя, SEO | [site.json](content/site.json) |
 | Подробности о видах | [species-details.json](content/species-details.json) |
-| Страницы Product, Application, Evidence, Science, Initiative, Related Information, News и Contact | [content/pages](content/pages) |
+| Страницы Product, Application, Science, Initiative, Related Information, News и Contact | [content/pages](content/pages) |
 | Информационное окно About | [about-dialog.html](content/dialogs/about-dialog.html) |
 
 ## Как менять отдельную страницу
 
-Текст каждой страницы хранится в одноимённом JSON-файле папки `content/pages/`: `product.json`, `applications.json`, `evidence.json`, `science.json`, `initiative.json`, `related-information.json`, `news.json` или `contact.json`. Меняйте подписи и ссылки там. HTML-шаблон страницы находится в `src/pages/`, а общий внешний вид внутренних страниц - в `src/styles/pages.css`.
+Текст каждой индексируемой страницы BHOC Veterinary хранится в одноимённом JSON-файле папки `content/pages/`: `product.json`, `applications.json`, `science.json`, `initiative.json`, `related-information.json`, `news.json` или `contact.json`. Меняйте подписи и ссылки там. HTML-шаблон страницы находится в `src/pages/`, а общий внешний вид внутренних страниц - в `src/styles/pages.css`.
 
-Научные ссылки разделены по назначению: `BHOC VET-platform` является простой обзорной точкой входа, а `BHOC Platform Veterinary` содержит полную библиографию и регуляторные документы. Не меняйте эти роли местами без отдельного решения по структуре сайта.
+Ветеринарная доказательная база не дублируется на BHOC Veterinary. Её единая каноническая архитектура — **Vet Real-World Evidence & Cases**: `https://archiljali.github.io/BHOC-platform/veterinary/Vet-index.html`. `BHOC VET-platform` остаётся обзорной точкой входа, а `Vet Real-World Evidence & Cases` содержит публикации, регуляторные документы и документированные случаи. Не создавайте новый локальный Evidence-раздел.
+
+Старые URL `evidence.html` и `publications.html` сохраняются только как `noindex,follow` redirects на Vet Real-World Evidence & Cases. В навигации, контенте, поиске и sitemap на них ссылаться нельзя.
 
 ## Как менять новую Initiative homepage по блокам
 
@@ -123,4 +125,4 @@ ALT описывает то, что видно. Имя автора или сп�
 
 Достаточно сказать: «Измени текст только в блоке Science» или «Добавь новость после Species». Редактируется файл указанного блока, затем собирается и проверяется страница. Исходный рисунок не перерисовывается.
 
-Ручная сборка для разработчика: `node scripts/build.mjs --out dist`, затем `node scripts/check-site.mjs dist`. Проверка охватывает главную, восемь внутренних страниц и старый URL-редирект Publications.
+Ручная сборка для разработчика: `node scripts/build.mjs --out dist`, затем `node scripts/check-site.mjs dist`. Проверка охватывает главную, семь индексируемых внутренних страниц, полную Initiative homepage и два migration redirect URL (`evidence.html`, `publications.html`).

@@ -8,6 +8,7 @@ on:
       - 'src/**'
       - 'assets/**'
       - 'scripts/build.mjs'
+      - 'scripts/write-migration-redirects.mjs'
       - 'scripts/check-site.mjs'
       - 'scripts/check-forbidden-links.mjs'
       - 'package.json'
@@ -39,6 +40,7 @@ jobs:
         run: |
           node scripts/build.mjs --out _site
           cp dist/404.html _site/404.html
+          node scripts/write-migration-redirects.mjs _site
           node scripts/check-site.mjs _site
           node scripts/check-forbidden-links.mjs _site
 

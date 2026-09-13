@@ -26,6 +26,11 @@
       "Biological Hemoglobin Oxygen Carrier",
       "HBOC",
       "Oxyglobin",
+      "veterinary real-world evidence",
+      "K-9 Saxon",
+      "Saxon Award",
+      "working K-9",
+      "Fresno Police Department",
       "animal health",
       "wildlife welfare",
       "One Health",
@@ -52,24 +57,51 @@
   "eyebrow": "BHOC Initiative · Global Intelligence",
   "heading": "Wildlife & Species Conservation Intelligence.",
   "lead": "Tracking the people, science, funding and programs working to protect wildlife, restore endangered species and strengthen conservation medicine worldwide.",
-  "updated": "12 Sep 2026",
+  "updated": "13 Sep 2026",
   "seoContext": {
     "eyebrow": "BHOC Veterinary context",
-    "heading": "Animal-health intelligence, separate from product evidence.",
-    "text": "BHOC Veterinary tracks animal blood availability, veterinary (vet) transfusion medicine, wildlife rescue and species recovery. This feed provides context around animal health; it does not present individual news reports as evidence for BHOC, HBOC or Oxyglobin. Scientific and regulatory evidence is kept in the evidence directory.",
+    "heading": "Animal-health intelligence, separate from product claims.",
+    "text": "BHOC Veterinary tracks animal blood availability, veterinary (vet) transfusion medicine, wildlife rescue and species recovery. This feed provides context around animal health; it does not present individual news reports as evidence for BHOC, HBOC or Oxyglobin. Source-linked veterinary evidence, regulatory records and documented cases are maintained in Vet Real-World Evidence & Cases.",
     "links": [
       {
-        "label": "Explore BHOC evidence",
-        "href": "evidence.html"
-      },
-      {
-        "label": "Open veterinary evidence library",
+        "label": "Open Vet Real-World Evidence & Cases",
         "href": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-index.html"
       }
     ]
   },
-  "feedNote": "BHOC Initiative Scout applies a high publication threshold and screens every candidate for duplication. New items are added only for exceptional rescue or recovery outcomes, globally significant conservation initiatives, or substantive new milestones; routine news is excluded.",
+  "feedNote": "BHOC Initiative Scout applies a high publication threshold and screens every candidate for duplication. New items are added only for exceptional rescue or recovery outcomes, globally significant conservation initiatives, substantive veterinary evidence milestones or other material developments; routine news is excluded.",
   "stories": [
+    {
+      "id": "k9-saxon-oxyglobin-2002",
+      "date": "2026-09-13",
+      "dateLabel": "13 Sep 2026 · Historical case: 22 Aug 2002",
+      "region": "United States · Fresno, California",
+      "category": "Historical real-world veterinary case",
+      "title": "K-9 Saxon: the survival story that became the Saxon Award.",
+      "text": "Fresno Police K-9 Saxon survived catastrophic line-of-duty injuries after being shot at point-blank range in 2002. In a letter reproduced in Biopure's 2002 Annual Report, Police Chief Jerry Dyer wrote that discussions with veterinarian Dr. Roger Gfeller left no doubt, in their view, about the pivotal role Oxyglobin played in saving Saxon's life. The story later became an institutional legacy when Fresno Police established the Saxon Award in his honor.",
+      "why": "A documented veterinary HBOC real-world case connecting emergency oxygen-carrying support, working-dog trauma and an official law-enforcement legacy.",
+      "sourceName": "Vet Real-World Evidence & Cases",
+      "link": {
+        "label": "Read the documented case & sources",
+        "href": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-case-K9-Saxon-Oxyglobin.html"
+      },
+      "keywords": [
+        "K-9 Saxon",
+        "Saxon Award",
+        "Oxyglobin",
+        "HBOC",
+        "hemoglobin-based oxygen carrier",
+        "veterinary real-world evidence",
+        "working K-9",
+        "police dog trauma",
+        "veterinary emergency medicine",
+        "oxygen delivery",
+        "Fresno Police Department",
+        "Jerry Dyer",
+        "Roger Gfeller",
+        "United States"
+      ]
+    },
     {
       "id": "nairobi-flyways-declaration-2026",
       "date": "2026-09-11",
@@ -525,10 +557,10 @@
     },
     {
       "icon": "book",
-      "title": "Veterinary Evidence Library",
-      "text": "Source-linked bibliography, regulatory records and publication archive.",
+      "title": "Vet Real-World Evidence & Cases",
+      "text": "Source-linked veterinary evidence, regulatory records, publications and documented cases.",
       "link": {
-        "label": "Open full library",
+        "label": "Open Vet Real-World Evidence & Cases",
         "href": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-index.html"
       }
     }
