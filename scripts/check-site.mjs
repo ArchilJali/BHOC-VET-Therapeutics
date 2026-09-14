@@ -176,4 +176,20 @@ assert.equal(cname,'bhocvet.com','CNAME preserved');
 const notFound=await fs.readFile(path.join(out,'404.html'),'utf8');
 assert.match(notFound,/<meta name="robots" content="noindex">/,'404 stays noindex');
 
-console.log(`Passed: ${expectedPages.length} indexed BHOC Veterinary pages, Initiative, migration redirects, schema, links, sitemap and retired-Evidence cleanup.`);
+const generatedHtml=[];
+async function collectHtml(directory){
+  for(const entry of await fs.readdir(directory,{withFileTypes:true})){
+    const absolute=path.join(directory,entry.name);
+    if(entry.isDirectory())await collectHtml(absolute);
+    else if(entry.isFile()&&/\.html?$/i.test(entry.name))generatedHtml.push(absolute);
+  }
+}
+await collectHtml(out);
+for(const absolute of generatedHtml){
+  const relative=path.relative(out,absolute);
+  const html=await fs.readFile(absolute,'utf8');
+  const directives=[...html.matchAll(/<meta\b(?=[^>]*\bname=["']yandex["'])(?=[^>]*\bcontent=["']noindex["'])[^>]*>/gi)];
+  assert.equal(directives.length,1,`${relative}: exactly one Yandex-only noindex directive required`);
+}
+
+console.log(`Passed: ${expectedPages.length} indexed BHOC Veterinary pages, Initiative, migration redirects, ${generatedHtml.length} Yandex-blocked HTML files, schema, links, sitemap and retired-Evidence cleanup.`);
