@@ -94,3 +94,12 @@ document.querySelectorAll('[data-hero-carousel]').forEach((carousel) => {
     touchStart = null;
   }, { passive: true });
 });
+
+;(() => {
+  if (window.__bhocContextLoader) return;
+  window.__bhocContextLoader = true;
+  const script = document.createElement('script');
+  script.src = '/assets/navigation-context.js?v=20260916';
+  script.defer = true;
+  document.head.appendChild(script);
+})();
