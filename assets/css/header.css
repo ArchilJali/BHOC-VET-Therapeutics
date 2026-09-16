@@ -120,6 +120,32 @@
   background: var(--accent);
 }
 
+.page-route {
+  display: flex;
+  min-height: 42px;
+  align-items: center;
+  gap: 8px;
+  width: min(1180px, calc(100% - 40px));
+  margin: 0 auto;
+  color: #756f69;
+  font-size: 12px;
+}
+
+.page-route a {
+  color: #71401f;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.page-route [aria-current="page"] {
+  padding: 4px 10px;
+  border: 1px solid #f0c7af;
+  border-radius: 999px;
+  background: #fff4ed;
+  color: #8b3212;
+  font-weight: 800;
+}
+
 .search-toggle {
   flex: none;
   width: 38px;
