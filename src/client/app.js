@@ -144,3 +144,12 @@
   contactForm?.addEventListener('submit',e=>{e.preventDefault();const form=new FormData(contactForm),email=contactForm.dataset.contactEmail,subject=`BHOC Veterinary enquiry: ${form.get('area')||'General'}`,body=[`Name: ${form.get('name')||''}`,`Email: ${form.get('email')||''}`,`Organisation: ${form.get('organisation')||''}`,`Area: ${form.get('area')||''}`,'',String(form.get('message')||'')].join('\n');$('.form-status').textContent='Your email application is opening. Review the message and press Send.';location.href=`mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;});
   if('IntersectionObserver'in window&&document.body.dataset.page==='home'){const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting)$$('a',nav).forEach(a=>a.classList.toggle('active',(a.getAttribute('href')||'').endsWith('#'+entry.target.id)));}),{rootMargin:'-15% 0px -55% 0px'});$$('main>section[id]').forEach(s=>observer.observe(s));}
 })();
+
+;(() => {
+  if (window.__bhocContextLoader) return;
+  window.__bhocContextLoader = true;
+  const script = document.createElement('script');
+  script.src = '/assets/navigation-context.js?v=20260916';
+  script.defer = true;
+  document.head.appendChild(script);
+})();
