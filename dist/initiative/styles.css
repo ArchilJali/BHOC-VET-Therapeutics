@@ -228,6 +228,30 @@ h2 {
   transform: scaleX(1);
 }
 
+.initiative-location {
+  display: flex;
+  min-height: 42px;
+  align-items: center;
+  gap: 8px;
+  color: #52615a;
+  font-size: 0.76rem;
+}
+
+.initiative-location a {
+  color: var(--forest);
+  font-weight: 650;
+  text-decoration: none;
+}
+
+.initiative-location [aria-current="page"] {
+  padding: 4px 10px;
+  border: 1px solid #bcd8ca;
+  border-radius: 999px;
+  background: #eef7f2;
+  color: var(--forest);
+  font-weight: 760;
+}
+
 .header-action {
   display: inline-flex;
   min-height: 45px;

@@ -1,6 +1,7 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import assert from 'node:assert/strict';
+import {spawnSync} from 'node:child_process';
 import {fileURLToPath} from 'node:url';
 
 const root=path.dirname(path.dirname(fileURLToPath(import.meta.url)));
@@ -164,6 +165,8 @@ for(const redirectName of ['evidence.html','publications.html']){
 }
 
 const sitemap=await fs.readFile(path.join(out,'sitemap.xml'),'utf8');
+const sitemapParse=spawnSync('python3',['-c','import sys, xml.etree.ElementTree as ET; ET.parse(sys.argv[1])',path.join(out,'sitemap.xml')],{encoding:'utf8'});
+assert.equal(sitemapParse.status,0,`Sitemap is well-formed XML: ${sitemapParse.stderr.trim()}`);
 for(const page of ['product.html','applications.html','science.html','initiative.html','related-information.html','news.html','contact.html'])assert.match(sitemap,new RegExp(`https:\/\/bhocvet\\.com\/${page.replace('.','\\.')}`),`Sitemap includes ${page}`);
 assert.match(sitemap,/https:\/\/bhocvet\.com\/initiative\//,'Sitemap includes full Initiative');
 assert.doesNotMatch(sitemap,/https:\/\/bhocvet\.com\/evidence\.html/,'Sitemap excludes retired Evidence page');
