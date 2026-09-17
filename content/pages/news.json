@@ -33,7 +33,16 @@
       "Fresno Police Department",
       "animal health",
       "wildlife welfare",
+      "wildlife health",
       "One Health",
+      "One Health wildlife health",
+      "conservation medicine",
+      "Zoological Society of London",
+      "ZSL",
+      "Royal Veterinary College",
+      "Proceedings of the Royal Society B",
+      "Andrés Valenzuela-Sánchez",
+      "Andrew A. Cunningham",
       "biodiversity",
       "BHOC Initiative",
       "Ross University School of Veterinary Medicine",
@@ -62,7 +71,7 @@
   "eyebrow": "BHOC Initiative · Global Intelligence",
   "heading": "Wildlife & Species Conservation Intelligence.",
   "lead": "Tracking the people, science, funding and programs working to protect wildlife, restore endangered species and strengthen conservation medicine worldwide.",
-  "updated": "14 Sep 2026",
+  "updated": "17 Sep 2026",
   "seoContext": {
     "eyebrow": "BHOC Veterinary context",
     "heading": "Animal-health intelligence, separate from product claims.",
@@ -76,6 +85,51 @@
   },
   "feedNote": "BHOC Initiative Scout applies a high publication threshold and screens every candidate for duplication. New items are added only for exceptional rescue or recovery outcomes, globally significant conservation initiatives, substantive veterinary evidence milestones or other material developments; routine news is excluded.",
   "stories": [
+    {
+      "id": "wildlife-health-one-health-zsl-2026",
+      "date": "2026-09-16",
+      "dateLabel": "16 Sep 2026",
+      "region": "United Kingdom · Global",
+      "category": "Wildlife health · One Health · Conservation medicine",
+      "title": "Wildlife health is broader than disease: a 200-year One Health perspective.",
+      "text": "A new open-access paper in Proceedings of the Royal Society B uses the Zoological Society of London’s 200-year history to examine what wildlife health means in practice. Andrés Valenzuela-Sánchez and colleagues show that the scientific literature remains strongly disease-centred, especially around infection and disease ecology, while wildlife health also includes broader well-being, veterinary science, welfare, ecological responses, management and policy. Drawing on historical analysis and six applied examples, the authors argue for stronger routes from evidence to action and for a more reciprocal One Health model in which wildlife is not viewed only as a source of risk to people and domestic animals, but as an integral part of healthy social-ecological systems.",
+      "why": "For veterinary and wildlife medicine, the practical shift is important: diagnosis and disease surveillance are only part of health. Treatment, welfare, recovery, rehabilitation, release and the animal’s ability to function after intervention belong in the same One Health picture.",
+      "image": {
+        "url": "assets/initiative/focus-veterinary-photo.webp",
+        "alt": "Wildlife veterinary care representing the connection between animal health, welfare, conservation medicine and One Health",
+        "width": 960,
+        "height": 960
+      },
+      "credit": {
+        "label": "BHOC Initiative image provenance",
+        "href": "https://bhocvet.com/initiative/image-rights.html"
+      },
+      "sourceName": "Proceedings of the Royal Society B · Valenzuela-Sánchez et al. · ZSL / Royal Veterinary College",
+      "link": {
+        "label": "Read original open-access paper",
+        "href": "https://doi.org/10.1098/rspb.2026.0285"
+      },
+      "keywords": [
+        "wildlife health",
+        "One Health",
+        "wildlife veterinary medicine",
+        "wildlife welfare",
+        "conservation medicine",
+        "animal health",
+        "Zoological Society of London",
+        "ZSL",
+        "Royal Veterinary College",
+        "Proceedings of the Royal Society B",
+        "Andrés Valenzuela-Sánchez",
+        "Andrew A. Cunningham",
+        "wildlife disease",
+        "disease ecology",
+        "wildlife management",
+        "wildlife rehabilitation",
+        "BHOC Veterinary",
+        "BHOC Species and Biodiversity Protection Initiative"
+      ]
+    },
     {
       "id": "healthy-animal-donors-2026",
       "date": "2026-09-14",
