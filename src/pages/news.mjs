@@ -23,7 +23,35 @@ const saxonFeature={
     'September 11 K-9','9/11 rescue dogs','World Trade Center search dogs','Ground Zero rescue dogs','search-and-rescue dogs','SAR dogs','K-9','K9','working dogs','working K-9','police dogs','police K-9','police service animal','veterinary disaster response','Veterinary Medical Assistance Team','VMAT','K-9 Saxon','Saxon Award','Oxyglobin','HBOC','hemoglobin-based oxygen carrier','BHOC','Biological Hemoglobin Oxygen Carrier','veterinary real-world evidence','working-dog trauma','veterinary emergency medicine','veterinary critical care','oxygen delivery','Fresno Police Department','Jerry Dyer','Roger Gfeller','United States'
   ]
 };
-const enrichPage=page=>({...page,stories:page.stories.map(story=>story.id==='k9-saxon-oxyglobin-2002'?{...story,...saxonFeature,image:saxonVisual,credit:null}:story)});
+const kakarikiStory={
+  id:'kakariki-karaka-nelson-recovery-2026',
+  date:'2026-09-17',
+  dateLabel:'17 Sep 2026',
+  region:'New Zealand · Nelson',
+  category:'Critically endangered species · Recovery milestone',
+  title:'Kākāriki karaka recovery reaches a new scale in Nelson.',
+  text:'New Zealand’s Department of Conservation reports that a joint annual survey counted more than 285 kākāriki karaka/orange-fronted parakeets at Brook Waimārama Sanctuary on one survey day and 229 on the next, almost 100 more than last year. The critically endangered species has around 450 birds remaining overall, and the sanctuary now supports the world’s largest population. The birds were first introduced there in 2021, making the new count a measurable recovery outcome rather than a simple release milestone.',
+  why:'Top-tier recovery outcome: reintroduction → sustained breeding → major population growth → world’s largest secure population.',
+  image:{
+    url:'https://commons.wikimedia.org/wiki/Special:Redirect/file/Cyanoramphus_malherbi.jpg?width=900',
+    alt:'Kākāriki karaka or orange-fronted parakeet, a critically endangered New Zealand species whose Nelson sanctuary population has grown strongly',
+    width:800,
+    height:600
+  },
+  credit:{
+    label:'Photo: Jon Sullivan / Wikimedia Commons · CC BY 2.0',
+    href:'https://commons.wikimedia.org/wiki/File:Cyanoramphus_malherbi.jpg'
+  },
+  sourceName:'New Zealand Department of Conservation · Brook Waimārama Sanctuary · Kākāriki Karaka Recovery Programme',
+  link:{
+    label:'Read primary source',
+    href:'https://www.doc.govt.nz/news/media-releases/2026-media-releases/new-zealands-rarest-parakeet-numbers-soar-in-nelson/'
+  },
+  keywords:[
+    'kākāriki karaka','orange-fronted parakeet','Cyanoramphus malherbi','critically endangered species','species recovery','reintroduction','Brook Waimārama Sanctuary','Kākāriki Karaka Recovery Programme','New Zealand Department of Conservation','Te Rūnanga o Ngāi Tahu','Nelson','New Zealand'
+  ]
+};
+const enrichPage=page=>({...page,stories:[kakarikiStory,...page.stories.map(story=>story.id==='k9-saxon-oxyglobin-2002'?{...story,...saxonFeature,image:saxonVisual,credit:null}:story)]});
 
 const itemListSchema=page=>safeJSON({
   '@context':'https://schema.org',
