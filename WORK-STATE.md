@@ -14,7 +14,7 @@
 ## Current visual authority
 
 - Current desktop/mobile hero carousel: `assets/bhoc-initiative-land-hero-v2.webp`, `assets/bhoc-initiative-winter-hero.webp` and `assets/bhoc-initiative-ocean-hero-v2.webp`, in Land, Winter, Ocean order. The Land artwork has no baked-in carousel indicators; all three slides use only the live accessible controls.
-- Directly below that hero, the BHOC Veterinary homepage has two independently editable blocks: the Initiative introduction strip and the Science Bridge carousel. The Science Bridge uses `assets/science-bridge-reference.png`; its wolf credit is not overlaid on the image, while the full creator, source, licence, verification and file-history record is preserved under `gray-wolf` in `content/initiative/image-provenance.json` and `initiative/image-rights.html`.
+- Directly below that hero, the BHOC Veterinary homepage has two independently editable blocks: the Initiative introduction strip and the Science Bridge carousel. The Science Bridge uses the pixel-identical lossless asset `assets/science-bridge-reference.webp`; its wolf credit is not overlaid on the image, while the full creator, source, licence, verification and file-history record is preserved under `gray-wolf` in `content/initiative/image-provenance.json` and `initiative/image-rights.html`.
 - Current Open Graph and WhatsApp image: `assets/bhoc-initiative-land-social.jpg` (1200 × 463), an uncropped copy of the approved Land hero.
 - Initiative mark: `assets/reference-initiative-mark.webp`.
 - The same Initiative mark is used across the site; shared CSS masking prevents its square raster backing from showing against the cream/white layouts.

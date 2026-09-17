@@ -308,8 +308,8 @@
           "introducedOn": "2026-09-09"
         },
         {
-          "path": "assets/science-bridge-reference.png",
-          "sha256": "8c668d5466acd5faf75abd27d3b95a002e65cd85d91114570203f0b71aa7a361",
+          "path": "assets/science-bridge-reference.webp",
+          "sha256": "c4f13debbfefb24afb73a8b28dfbdd49f7658bcde14a9d7b055f52f82fa21c42",
           "introducedOn": "2026-09-09"
         }
       ]
@@ -339,15 +339,15 @@
       "providedOn": "2026-09-09",
       "rightsStatus": "Project-supplied composition; not offered under an open third-party licence. The embedded gray-wolf photograph is separately recorded under gray-wolf as a public-domain U.S. federal government work.",
       "reason": "Connects the BHOC oxygen-delivery concept with wildlife and the relative scale of a red blood cell and BHOC molecule.",
-      "modifications": "The original supplied PNG had SHA-256 9b84fd62a0e7a5d9b4a8acdab301325afbef09b7401d6b99f0cb4c03e6ee7f23. At the owner's request, only its baked-in wolf credit strip was removed from the visible composition and the complete credit was retained under gray-wolf in this register. The edit was confined to a 691 × 52 pixel area along the lower edge; every pixel outside that area is unchanged. The result continues to be cropped responsively into separate wolf and comparison panels.",
+      "modifications": "The original supplied PNG had SHA-256 9b84fd62a0e7a5d9b4a8acdab301325afbef09b7401d6b99f0cb4c03e6ee7f23. At the owner's request, only its baked-in wolf credit strip was removed from the visible composition and the complete credit was retained under gray-wolf in this register. The edit was confined to a 691 × 52 pixel area along the lower edge; every pixel outside that area is unchanged. The result was then encoded as lossless WebP with zero differing pixels and continues to be cropped responsively into separate wolf and comparison panels.",
       "thirdPartyRecord": {
         "id": "gray-wolf",
         "label": "Gray wolf — Gary Kramer / U.S. Fish and Wildlife Service"
       },
       "localFiles": [
         {
-          "path": "assets/science-bridge-reference.png",
-          "sha256": "8c668d5466acd5faf75abd27d3b95a002e65cd85d91114570203f0b71aa7a361",
+          "path": "assets/science-bridge-reference.webp",
+          "sha256": "c4f13debbfefb24afb73a8b28dfbdd49f7658bcde14a9d7b055f52f82fa21c42",
           "introducedOn": "2026-09-09"
         }
       ]
