@@ -51,7 +51,7 @@ const kakarikiStory={
     'kākāriki karaka','orange-fronted parakeet','Cyanoramphus malherbi','critically endangered species','species recovery','reintroduction','Brook Waimārama Sanctuary','Kākāriki Karaka Recovery Programme','New Zealand Department of Conservation','Te Rūnanga o Ngāi Tahu','Nelson','New Zealand'
   ]
 };
-const enrichPage=page=>({...page,stories:[kakarikiStory,...page.stories.map(story=>story.id==='k9-saxon-oxyglobin-2002'?{...story,...saxonFeature,image:saxonVisual,credit:null}:story)]});
+const enrichPage=page=>({...page,stories:[kakarikiStory,...page.stories.map(story=>story.id==='k9-saxon-oxyglobin-2002'?{...story,...saxonFeature,image:saxonVisual,credit:null}:story)].sort((a,b)=>b.date.localeCompare(a.date))});
 
 const itemListSchema=page=>safeJSON({
   '@context':'https://schema.org',
