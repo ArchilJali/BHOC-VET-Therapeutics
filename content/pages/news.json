@@ -65,13 +65,18 @@
       "feline blood donation",
       "donor welfare",
       "veterinary blood shortage",
-      "donor-independent oxygen delivery"
+      "donor-independent oxygen delivery",
+      "Leopardus tilcayo",
+      "Bolivian Yungas",
+      "nondomestic felid blood type",
+      "wild felid transfusion",
+      "wildlife oxygen delivery"
     ]
   },
   "eyebrow": "BHOC Initiative · Global Intelligence",
   "heading": "Wildlife & Species Conservation Intelligence.",
   "lead": "Tracking the people, science, funding and programs working to protect wildlife, restore endangered species and strengthen conservation medicine worldwide.",
-  "updated": "17 Sep 2026",
+  "updated": "18 Sep 2026",
   "seoContext": {
     "eyebrow": "BHOC Veterinary context",
     "heading": "Animal-health intelligence, separate from product claims.",
@@ -85,6 +90,45 @@
   },
   "feedNote": "BHOC Initiative Scout applies a high publication threshold and screens every candidate for duplication. New items are added only for exceptional rescue or recovery outcomes, globally significant conservation initiatives, substantive veterinary evidence milestones or other material developments; routine news is excluded.",
   "stories": [
+    {
+      "id": "leopardus-tilcayo-bolivia-2026",
+      "date": "2026-09-18",
+      "dateLabel": "18 Sep 2026",
+      "region": "Bolivia · Yungas",
+      "category": "Species discovery · Wildlife medicine · Blood compatibility",
+      "title": "A new wild cat species. Do we know what blood we could safely give it?",
+      "text": "Researchers have described Leopardus tilcayo, a small wild cat from Bolivia's Yungas and the first new living cat species formally described in more than a century. Genomic analysis suggests its lineage separated from related tiger cats about 1.4 million years ago. At present, no blood type has been reported for L. tilcayo. That matters in a veterinary emergency. Studies in other nondomestic felids show that blood typing alone may not predict transfusion compatibility, and compatible donors can be difficult to find, especially for rare species.",
+      "why": "We can discover a new species in 2026 and still know almost nothing about its transfusion biology. Species differ. Blood groups differ. Compatibility differs. But the fundamental need is the same: tissues need oxygen. This is why BHOC Veterinary is interested in donor-independent oxygen-delivery bridge concepts for wildlife emergencies, while species-specific safety and efficacy would still need to be established. One Oxygen. One Biology. One BHOC System.",
+      "sourceName": "Reuters · National Geographic · Journal of Zoo and Wildlife Medicine",
+      "link": {
+        "label": "See the new species at National Geographic",
+        "href": "https://www.nationalgeographic.com/animals/article/meet-the-first-new-cat-species-discovered-in-100-years"
+      },
+      "contextLink": {
+        "label": "Read the nondomestic felid blood compatibility study",
+        "href": "https://pubmed.ncbi.nlm.nih.gov/38453497/"
+      },
+      "keywords": [
+        "Leopardus tilcayo",
+        "Tilcayo",
+        "Bolivia",
+        "Bolivian Yungas",
+        "tiger cat",
+        "wild felid",
+        "new species",
+        "species discovery",
+        "wildlife veterinary medicine",
+        "wildlife transfusion",
+        "felid blood type",
+        "blood compatibility",
+        "nondomestic felid transfusion",
+        "oxygen delivery",
+        "donor-independent oxygen delivery",
+        "BHOC Veterinary",
+        "BHOC Species and Biodiversity Protection Initiative",
+        "One Oxygen One Biology One BHOC System"
+      ]
+    },
     {
       "id": "wildlife-health-one-health-zsl-2026",
       "date": "2026-09-16",
