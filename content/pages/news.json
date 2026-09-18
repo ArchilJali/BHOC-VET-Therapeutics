@@ -125,12 +125,14 @@
         "One Oxygen One Biology One BHOC System"
       ],
       "image": {
-        "url": "https://i.natgeofe.com/n/d711c594-0cd9-4e5d-8e02-3d694540c703/ANI100_00214_HR_.jpg",
-        "alt": "Leopardus tilcayo, the newly described wild cat species from Bolivia's Yungas, photographed against a dark background"
+        "url": "assets/news/leopardus-tilcayo-bolivia-bhoc-veterinary-pencil-illustration.webp",
+        "alt": "Leopardus tilcayo, newly described wild cat from the Bolivian Yungas, shown as an original BHOC Veterinary scientific pencil illustration",
+        "width": 800,
+        "height": 952
       },
       "credit": {
-        "label": "Photo: Joel Sartore / National Geographic Photo Ark",
-        "href": "https://www.nationalgeographic.com/animals/article/meet-the-first-new-cat-species-discovered-in-100-years"
+        "label": "Original scientific illustration: BHOC Veterinary",
+        "href": "https://bhocvet.com/news.html#leopardus-tilcayo-bolivia-2026"
       }
     },
     {
