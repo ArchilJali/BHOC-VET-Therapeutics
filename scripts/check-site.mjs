@@ -99,7 +99,7 @@ for(const [name,html] of htmlByPage){
   assert.match(footer,/href="https:\/\/www\.linkedin\.com\/company\/bhoc-therapeutics\/"/,`${name}: footer LinkedIn route`);
   const footerHrefs=[...footer.matchAll(/href="([^"]+)"/g)].map(match=>match[1]);
   assert.equal(new Set(footerHrefs).size,footerHrefs.length,`${name}: footer destinations are unique`);
-  assert.match(footer,/First published <time datetime="2026-09-07">07 Sep 2026<\/time>.*19 updates.*Last updated <time datetime="2026-09-13">13 Sep 2026<\/time>.*Version 26\.09\.13/,`${name}: publication history`);
+  assert.match(footer,/First published <time datetime="2026-09-07">07 Sep 2026<\/time>.*19 updates.*Last updated <time datetime="2026-09-18">18 Sep 2026<\/time>.*Version 26\.09\.18/,`${name}: publication history`);
 }
 
 const home=htmlByPage.get('index.html');
