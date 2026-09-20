@@ -2319,3 +2319,28 @@ h2 {
     transition-duration: 0.01ms !important;
   }
 }
+
+/* Preview refinement: clearer professional audience and evidence boundary */
+.hero-audience{
+  max-width:540px;
+  margin:1rem 0 0;
+  padding:10px 14px;
+  border-left:3px solid #4fe095;
+  color:#fff;
+  background:rgba(255,255,255,.06);
+  font-size:.88rem;
+  font-weight:650;
+  line-height:1.45;
+}
+.science-boundary{
+  margin:.85rem 0 1rem!important;
+  padding:.75rem .9rem;
+  border-left:3px solid var(--oxygen);
+  color:var(--muted)!important;
+  background:var(--oxygen-wash);
+  font-size:.76rem!important;
+  line-height:1.45!important;
+}
+@media(max-width:720px){
+  .hero-audience{font-size:.8rem}
+}

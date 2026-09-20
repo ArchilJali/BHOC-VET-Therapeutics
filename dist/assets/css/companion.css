@@ -1,0 +1,46 @@
+.block-companion{padding:10px 0;background:#fff;border-bottom:1px solid var(--line)}
+.companion-stage{position:relative;width:100%;height:clamp(315px,25vw,360px);margin:0;overflow:hidden;background:#fff}
+.companion-banner{height:100%;margin:0;background:url("../companion-animals-wide-v4.webp") right 2vw bottom 8px/auto 94% no-repeat}
+.companion-banner-art{display:block;width:100%;height:100%;object-fit:contain;object-position:center;opacity:0}
+.companion-fade{position:absolute;inset:0 auto 0 0;width:53%;background:linear-gradient(90deg,#fff 0%,#fff 62%,rgba(255,255,255,.97) 74%,rgba(255,255,255,.82) 85%,transparent 100%);pointer-events:none}
+.companion-copy{position:absolute;z-index:2;left:max(4%,var(--gutter));top:34px;width:min(43%,590px)}
+.companion-copy h2{margin:0;color:var(--ink);font:400 clamp(36px,3.4vw,54px)/.98 var(--font-display);letter-spacing:-.045em}
+.companion-subtitle{max-width:520px;margin-top:10px;color:var(--ink);font-size:clamp(13px,.95vw,16px);line-height:1.35}
+.companion-supporting{max-width:520px;margin-top:6px;color:var(--accent-strong);font:italic 400 clamp(14px,1.05vw,18px)/1.25 var(--font-display)}
+.companion-links{display:flex;flex-wrap:wrap;gap:7px 15px;margin-top:12px}
+.companion-links a{display:inline-flex;align-items:center;gap:5px;color:var(--accent-strong);font-size:12px;font-weight:750;line-height:1.25}
+.companion-links a svg{width:13px;height:13px}
+.companion-signature{position:absolute;z-index:2;left:max(4%,var(--gutter));bottom:22px;display:flex;align-items:center;gap:14px}
+.companion-signature-mark{width:72px;height:80px;object-fit:contain;mix-blend-mode:multiply}
+.companion-signature p{max-width:220px;margin:0;color:#5e6266;font:400 15px/1.25 var(--font-display);letter-spacing:.045em;text-transform:uppercase}
+.companion-quote{position:absolute;z-index:2;top:24px;right:max(3.2%,var(--gutter));width:min(32vw,430px);margin:0;color:#303436;text-align:right}
+.companion-quote p{margin:0;white-space:nowrap;font:italic 400 clamp(16px,1.35vw,21px)/1.12 var(--font-display)}
+.companion-quote cite{display:block;margin-top:7px;color:#666;font:italic 400 clamp(11px,.85vw,13px)/1.25 var(--font-display)}
+@media(max-width:900px) and (min-width:641px){
+ .companion-stage{height:335px}
+ .companion-fade{width:65%}
+ .companion-copy{width:52%}
+ .companion-copy h2{font-size:40px}
+ .companion-signature-mark{width:60px;height:67px}
+ .companion-signature p{font-size:13px}
+ .companion-quote{right:3%;width:min(46vw,420px)}
+}
+@media(max-width:640px){
+ .block-companion{padding:8px 0 10px}
+ .companion-stage{height:520px}
+ .companion-banner{position:absolute;right:0;bottom:0;left:0;overflow:hidden;background-image:none}
+ .companion-banner-art{width:100%;max-width:none;object-position:center bottom;opacity:1;transform:none}
+ .companion-fade{display:none}
+ .companion-copy{left:0;top:0;width:100%;min-height:220px;padding:24px 6% 16px;background:#fff}
+ .companion-copy h2{font-size:clamp(32px,8.5vw,43px)}
+ .companion-subtitle{font-size:12px}
+ .companion-supporting{font-size:13px}
+ .companion-links{gap:7px 13px;margin-top:12px}
+ .companion-links a{font-size:12px}
+ .companion-signature{left:6%;top:168px;bottom:auto;gap:7px;padding:0;background:transparent}
+ .companion-signature-mark{width:38px;height:42px}
+ .companion-signature p{max-width:145px;font-size:9px}
+ .companion-quote{top:232px;right:5%;width:90%;padding:8px 10px;background:rgba(255,255,255,.88);border-radius:10px}
+ .companion-quote p{font-size:clamp(11px,3.5vw,14px)}
+ .companion-quote cite{margin-top:4px;font-size:10px}
+}

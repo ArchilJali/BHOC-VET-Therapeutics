@@ -1,2 +1,18 @@
-.block-mission{position:relative;isolation:isolate;display:flex;align-items:center;justify-content:space-between;gap:35px;padding:28px var(--gutter);min-height:160px;background:var(--accent-pale);overflow:hidden;border-top:1px solid #efb18b}.block-mission .landscape{position:absolute;inset:0;z-index:-1}.block-mission .landscape img{width:100%;height:100%;object-fit:cover;opacity:.48;mask-image:linear-gradient(90deg,#0004,#000)}.mission-copy h2{font-size:clamp(30px,3vw,42px);color:var(--ink)}.mission-copy p{margin-top:8px}.block-mission>.button{max-width:290px;flex-shrink:0}
-@media(max-width:600px){.block-mission{align-items:start;flex-direction:column;padding:30px 22px;gap:23px}.mission-copy h2{font-size:34px}.block-mission>.button{font-size:13px}}
+.block-mission{position:relative;padding:12px var(--gutter) 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:#fff}
+.mission-carousel{position:relative;max-width:1460px;margin:0 auto;overflow:hidden;border-radius:14px;background:#f6f4f2}
+.mission-slides{aspect-ratio:2.8/1}
+.mission-banner{position:relative;width:100%;height:100%;margin:0;overflow:hidden;background:#fff}
+.mission-banner img{display:block;width:100%;height:100%;object-fit:cover}
+.mission-hotspot{position:absolute;z-index:2;top:var(--hotspot-top);left:var(--hotspot-left);width:var(--hotspot-width);height:var(--hotspot-height);border-radius:999px;cursor:pointer}
+.mission-hotspot:hover{box-shadow:0 0 0 3px #ffffffb8,0 8px 24px #0003;text-decoration:none}
+.mission-hotspot-visible{display:flex;align-items:center;justify-content:center;border:2px solid #f26a21;background:rgba(255,255,255,.94);box-shadow:0 7px 22px #17354a24;color:#c95010;font-size:clamp(10px,1vw,16px);font-weight:750;letter-spacing:.02em;text-transform:uppercase}
+.mission-hotspot-visible:hover,.mission-hotspot-visible:focus-visible{background:#fff;color:#a9410b}
+.mission-controls{position:absolute;z-index:3;left:50%;bottom:12px;display:flex;align-items:center;gap:3px;padding:4px 6px;border-radius:999px;background:#585858d9;transform:translateX(-50%)}
+.mission-controls button{display:grid;place-items:center;width:30px;height:30px;padding:6px;border:0;border-radius:50%;background:transparent;color:#fff}
+.mission-controls svg{width:14px;height:14px}.mission-prev svg{transform:rotate(180deg)}
+.mission-dots{display:flex}.mission-dots button{width:22px;padding:0}.mission-dots button:before{width:7px;height:7px;border-radius:50%;background:#ffffff73;content:''}.mission-dots button[aria-current="true"]:before{background:#fff}
+.mission-bottom{display:flex;align-items:center;justify-content:space-between;gap:20px;max-width:1460px;margin:0 auto;padding:9px 0 12px;background:#fff}
+.mission-bottom p{color:var(--ink);font:400 clamp(15px,1.15vw,19px)/1.3 var(--font-display)}
+.mission-bottom .button{flex:0 0 auto;min-height:44px;padding:10px 20px}
+@media(max-width:680px){.block-mission{padding:8px 0 0}.mission-carousel{border-radius:0}.mission-slides{aspect-ratio:2.55/1}.mission-hotspot-visible{border-width:1px;font-size:7px}.mission-controls{bottom:7px}.mission-bottom{align-items:flex-start;flex-direction:column;padding:10px 22px 14px}.mission-bottom .button{width:100%}}
+@media(prefers-reduced-motion:reduce){.mission-carousel{scroll-behavior:auto}}

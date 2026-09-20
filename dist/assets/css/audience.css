@@ -1,0 +1,30 @@
+.block-hero{display:none!important}
+.block-audience{display:grid;grid-template-columns:minmax(0,.92fr) minmax(420px,1.08fr);gap:clamp(18px,2.5vw,34px);align-items:center;padding:20px var(--gutter) 12px;border-bottom:1px solid var(--line);background:linear-gradient(90deg,#fff 0%,#fff 62%,#fff8f3 100%);overflow:hidden}
+.audience-copy{position:relative;z-index:2;max-width:650px}
+.block-audience .eyebrow{color:var(--accent-strong);font-weight:800;letter-spacing:.15em;text-transform:uppercase}
+.block-audience h2{margin-top:7px;color:var(--ink);font:400 clamp(40px,4.2vw,64px)/1 var(--font-display);letter-spacing:-.04em}
+.audience-lead{max-width:590px;margin-top:10px;color:var(--ink);font:400 clamp(19px,1.6vw,26px)/1.16 var(--font-display)}
+.audience-text{max-width:600px;margin-top:8px;color:var(--body);font-size:clamp(14px,.92vw,16px);line-height:1.45}
+.audience-links{display:flex;align-items:center;flex-wrap:wrap;gap:9px 17px;margin-top:16px}
+.audience-links .button{min-height:42px;padding:9px 18px}
+.audience-text-link{display:inline-flex;align-items:center;gap:7px;color:var(--accent-strong);font-weight:750}
+.audience-text-link svg{width:15px;height:15px}
+.audience-roles{display:flex;flex-wrap:wrap;gap:6px;margin-top:13px}
+.audience-roles span{padding:5px 9px;border:1px solid #e2dcd8;border-radius:999px;background:#fff7f2;color:#585858;font-size:11px;font-weight:700}
+.audience-carousel{position:relative;height:330px;min-height:0;overflow:hidden;border-radius:18px;background:linear-gradient(145deg,#fff 0%,#fff 72%,#fff5ef 100%)}
+.audience-slides,.audience-art{position:absolute;inset:0}
+.audience-art{margin:0;display:grid;place-items:center;overflow:hidden}
+.audience-art[hidden]{display:none!important}
+.audience-art img{display:block;width:100%;height:100%;object-fit:contain;object-position:center center}
+.audience-dots{position:absolute;z-index:4;left:50%;bottom:6px;display:flex;gap:8px;transform:translateX(-50%)}
+.audience-dots button{width:10px;height:10px;padding:0;border:1px solid #fff;border-radius:50%;background:#cfc8c4;box-shadow:0 1px 5px #0002}
+.audience-dots button[aria-current="true"]{background:var(--accent)}
+@media(max-width:900px){
+ .block-audience{grid-template-columns:1fr;padding:24px 22px 10px}
+ .audience-carousel{height:320px}
+}
+@media(max-width:520px){
+ .block-audience{padding-top:20px}
+ .audience-links{align-items:flex-start;flex-direction:column}
+ .audience-carousel{height:265px;border-radius:12px}
+}

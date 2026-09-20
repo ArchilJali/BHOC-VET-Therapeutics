@@ -45,6 +45,8 @@
 }
 
 .hero-hotspot:hover { text-decoration: none; }
+.hero-hotspot-visible{display:flex;align-items:center;justify-content:center;border:2px solid #f26a21;background:rgba(255,255,255,.94);box-shadow:0 7px 22px #17354a24;color:#c95010;font-size:clamp(10px,1vw,16px);font-weight:750;letter-spacing:.02em;text-transform:uppercase}
+.hero-hotspot-visible:hover,.hero-hotspot-visible:focus-visible{background:#fff;color:#a9410b}
 
 .hero-control {
   position: absolute;
@@ -158,4 +160,31 @@
 
 @media (prefers-reduced-motion: reduce) {
   .hero-carousel { scroll-behavior: auto; }
+}
+
+.hero-copy-override{
+  position:absolute;
+  z-index:3;
+  left:6.1%;
+  top:64%;
+  width:42%;
+  min-height:11%;
+  padding:.45% .85%;
+  background:rgba(255,255,255,.97);
+  color:#515151;
+  font-size:clamp(8px,.86vw,15px);
+  line-height:1.32;
+}
+.hero-copy-override p{margin:0}
+.hero-copy-override small{
+  display:block;
+  margin-top:.35em;
+  padding-left:.75em;
+  border-left:2px solid var(--accent);
+  color:#626262;
+  font-size:.76em;
+  line-height:1.3;
+}
+@media(max-width:720px){
+  .hero-copy-override{font-size:clamp(5px,1.65vw,9px);left:6%;top:63.4%;width:43%;padding:.35% .6%}
 }

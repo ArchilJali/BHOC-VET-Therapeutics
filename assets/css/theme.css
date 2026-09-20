@@ -1,21 +1,21 @@
 :root {
   color-scheme: light;
-  --ink: #3a3a3a;
-  --body: #515151;
-  --muted: #737373;
-  --bhoc-blue: #173f5f;
+  --ink: #585858;
+  --body: #585858;
+  --muted: #777777;
+  --bhoc-blue: #585858;
   --bhoc-red: #f65c00;
   --accent: #f65c00;
-  --accent-strong: #d84f00;
-  --accent-soft: #faad7f;
-  --accent-pale: #f8dfce;
-  --accent-wash: #fff2ea;
-  --line: #ead8cc;
+  --accent-strong: #cf4d00;
+  --accent-soft: #ffd4bd;
+  --accent-pale: #fff2ea;
+  --accent-wash: #fff7f2;
+  --line: #e6e0dc;
   --paper: #fff;
-  --charcoal: #333333;
+  --charcoal: #585858;
   --font-body: Arial, Helvetica, sans-serif;
   --font-display: Georgia, 'Times New Roman', serif;
-  --gutter: clamp(20px, 3.8vw, 62px);
+  --gutter: clamp(20px, 2.4vw, 42px);
   --page-width: 1600px;
 }
 
@@ -101,7 +101,7 @@ svg {
 .skip-link:focus { transform: none; }
 
 :focus-visible {
-  outline: 3px solid var(--bhoc-blue);
+  outline: 3px solid var(--accent);
   outline-offset: 4px;
 }
 
@@ -170,7 +170,7 @@ svg {
   width: 40px;
   height: 40px;
   padding: 8px;
-  border: 1px solid #d2a98f;
+  border: 1px solid #d9d2cd;
   border-radius: 50%;
   background: #fff;
   color: var(--ink);
