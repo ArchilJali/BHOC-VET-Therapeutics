@@ -309,7 +309,7 @@ const initiativeImages=[...new Map([
   ...initiativeHero.slides.flatMap(slide=>slide.images),
   initiativeMission.image,
   ...initiativeFocus.cards.map(card=>card.image),
-  initiativeScience.image,
+  ...(initiativeScience.images||[initiativeScience.image]).filter(Boolean),
   initiativeScience.comparisonGraphic
 ].map(image=>[image.src,image])).values()];
 const registeredInitiativeAssets=new Set(provenanceRecords.flatMap(record=>record.localFiles.map(file=>file.path)));

@@ -9,15 +9,53 @@
     "style": "primary",
     "arrow": true
   },
-  "image": {
-    "src": "assets/initiative/science-gray-wolf-usfws.webp",
-    "alt": "Gray wolf representing cross-species veterinary science and oxygen delivery",
-    "width": 720,
-    "height": 540,
-    "credit": "Gary Kramer / U.S. Fish and Wildlife Service",
-    "license": "Public domain",
-    "source": "https://www.flickr.com/photos/usfwshq/5584759091/"
-  },
+  "rotationMs": 18000,
+  "images": [
+    {
+      "id": "gray-wolf",
+      "label": "Gray wolf",
+      "src": "assets/initiative/science-gray-wolf-usfws.webp",
+      "alt": "Gray wolf representing cross-species veterinary science and oxygen delivery",
+      "width": 720,
+      "height": 540,
+      "credit": "Gary Kramer / U.S. Fish and Wildlife Service",
+      "license": "Public domain",
+      "source": "https://www.flickr.com/photos/usfwshq/5584759091/"
+    },
+    {
+      "id": "sumatran-tiger",
+      "label": "Sumatran tiger",
+      "src": "assets/initiative/challenge-sumatran-tiger-usfws.webp",
+      "alt": "Sumatran tiger representing veterinary and conservation medicine",
+      "width": 960,
+      "height": 960,
+      "credit": "Joe Milmoe / U.S. Fish and Wildlife Service",
+      "license": "Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Sumatran_Tiger_USFWS.jpg"
+    },
+    {
+      "id": "hawksbill-turtle",
+      "label": "Marine turtle",
+      "src": "assets/initiative/challenge-hawksbill-turtle-noaa.webp",
+      "alt": "Hawksbill sea turtle representing marine veterinary and conservation medicine",
+      "width": 960,
+      "height": 960,
+      "credit": "GP Schmahl / NOAA",
+      "license": "Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:FGBNMS_-_Hawksbill_Turtle_(27618418831).jpg"
+    },
+    {
+      "id": "african-elephant",
+      "label": "African elephant",
+      "src": "assets/initiative/challenge-african-elephant-usfws.webp",
+      "alt": "African elephant representing large-animal and wildlife medicine",
+      "width": 960,
+      "height": 960,
+      "credit": "Daphne Carlson Bremer / U.S. Fish and Wildlife Service",
+      "license": "Public domain / CC BY 2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:African_elephant,_Dzanga_Sangha,_Central_African_Republic_(18945940511).jpg"
+    }
+  ],
   "comparisonGraphic": {
     "src": "assets/initiative/bhoc-vs-rbc-400x-comparison.webp",
     "alt": "Concept illustration comparing a red blood cell and a BHOC molecule, with BHOC shown as more than 400 times smaller",
