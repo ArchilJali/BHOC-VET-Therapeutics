@@ -86,8 +86,8 @@ const itemListSchema=page=>safeJSON({
   }))
 });
 
-const contextLinkHTML=item=>`<a class="seo-context-link" ${attrs(item)}${/^https:\/\//.test(item.href)?' target="_blank" rel="noopener noreferrer"':''}>${esc(item.label)} ${icon('arrow')}</a>`;
-const storyMedia=story=>story.image?`<figure class="story-media${story.image.variant==='logo'?' story-media-logo':story.image.variant==='portrait'?' story-media-portrait':story.image.variant==='document'?' story-media-document':''}"><img src="${esc(story.image.url)}" alt="${esc(story.image.alt)}" width="${story.image.width||900}" height="${story.image.height||600}" loading="lazy" decoding="async">${story.credit?`<a class="story-credit" ${attrs(story.credit)} target="_blank" rel="noopener noreferrer">${esc(story.credit.label)}</a>`:''}</figure>`:'';
+const contextLinkHTML=item=>`<a class="seo-context-link" ${attrs(item)}>${esc(item.label)} ${icon('arrow')}</a>`;
+const storyMedia=story=>story.image?`<figure class="story-media${story.image.variant==='logo'?' story-media-logo':story.image.variant==='portrait'?' story-media-portrait':story.image.variant==='document'?' story-media-document':''}"><img src="${esc(story.image.url)}" alt="${esc(story.image.alt)}" width="${story.image.width||900}" height="${story.image.height||600}" loading="lazy" decoding="async">${story.credit?`<a class="story-credit" ${attrs(story.credit)}>${esc(story.credit.label)}</a>`:''}</figure>`:'';
 
 const storyHTML=(story,index)=>`<article class="conservation-story${index===0?' conservation-story-featured':''}${story.image?'':' conservation-story-no-media'}${story.image?.variant==='document'?' conservation-story-document':''}" id="${esc(story.id)}">
   ${storyMedia(story)}
@@ -96,7 +96,7 @@ const storyHTML=(story,index)=>`<article class="conservation-story${index===0?' 
     <h3>${esc(story.title)}</h3>
     <p>${esc(story.text)}</p>
     <div class="story-why"><strong>Why it matters</strong><span>${esc(story.why)}</span></div>
-    <div class="story-footer"><a class="story-link" ${attrs(story.link)} target="_blank" rel="noopener noreferrer">${esc(story.link.label)} <span aria-hidden="true">↗</span></a>${story.contextLink?`<a class="story-source-link" ${attrs(story.contextLink)} target="_blank" rel="noopener noreferrer">${esc(story.contextLink.label)} <span aria-hidden="true">↗</span></a>`:''}</div>
+    <div class="story-footer"><a class="story-link" ${attrs(story.link)}>${esc(story.link.label)} <span aria-hidden="true">${story.link.href.startsWith('https://')?'↗':'→'}</span></a>${story.contextLink?`<a class="story-source-link" ${attrs(story.contextLink)}>${esc(story.contextLink.label)} <span aria-hidden="true">${story.contextLink.href.startsWith('https://')?'↗':'→'}</span></a>`:''}</div>
   </div>
 </article>`;
 

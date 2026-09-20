@@ -1,7 +1,7 @@
 {
   "language": "en",
   "title": "BHOC Species & Biodiversity Protection Initiative",
-  "description": "BHOC Species & Biodiversity Protection Initiative connects wildlife health, Red List species protection, conservation medicine, veterinary evidence and oxygen-delivery science.",
+  "description": "BHOC Species & Biodiversity Protection Initiative connects species protection, conservation medicine, veterinary capacity and oxygen-delivery science to global biodiversity goals.",
   "author": "Archil Jaliashvili",
   "creator": "BHOC Team",
   "themeColor": "#071713",
@@ -9,7 +9,7 @@
   "openGraph": {
     "siteName": "BHOC Species & Biodiversity Protection Initiative",
     "title": "Protect Life. Preserve Species. | BHOC Initiative",
-    "description": "A science-driven initiative for species protection, wildlife health, conservation medicine and oxygen-delivery support across the living world.",
+    "description": "A science-driven initiative connecting species protection, wildlife health, conservation medicine, veterinary capacity and oxygen-delivery science with global biodiversity goals.",
     "image": {
       "src": "assets/initiative/challenge-african-elephant-usfws.webp",
       "alt": "African forest elephant family representing wildlife protection and biodiversity",
@@ -19,7 +19,7 @@
   },
   "twitter": {
     "title": "Protect Life. Preserve Species. | BHOC Initiative",
-    "description": "Connecting species protection, wildlife health, veterinary evidence and oxygen-delivery science."
+    "description": "Connecting species protection, wildlife health, veterinary capacity and oxygen-delivery science with global biodiversity goals."
   },
   "structuredData": {
     "@context": "https://schema.org",
@@ -29,7 +29,7 @@
         "@id": "https://bhocvet.com/initiative/#initiative",
         "name": "BHOC Species & Biodiversity Protection Initiative",
         "alternateName": "BHOC Initiative",
-        "description": "A science-driven initiative connecting species protection, wildlife health, conservation medicine, veterinary evidence and oxygen-delivery science.",
+        "description": "A science-driven initiative connecting species protection, wildlife health, conservation medicine, veterinary capacity and oxygen-delivery science with global biodiversity goals.",
         "url": "https://bhocvet.com/initiative/",
         "logo": {
           "@type": "ImageObject",
@@ -54,6 +54,11 @@
         "knowsAbout": [
           "species conservation",
           "biodiversity protection",
+          "Kunming-Montreal Global Biodiversity Framework",
+          "global biodiversity goals",
+          "species recovery",
+          "conservation technology",
+          "veterinary capacity",
           "wildlife medicine",
           "zoological medicine",
           "veterinary science",
@@ -79,7 +84,7 @@
         "@id": "https://bhocvet.com/initiative/#webpage",
         "url": "https://bhocvet.com/initiative/",
         "name": "Protect Life. Preserve Species.",
-        "description": "BHOC Species & Biodiversity Protection Initiative homepage.",
+        "description": "BHOC Species & Biodiversity Protection Initiative connects conservation medicine, veterinary capacity and oxygen-delivery science with wider global biodiversity goals.",
         "inLanguage": "en",
         "isPartOf": {
           "@id": "https://bhocvet.com/initiative/#website"
@@ -93,7 +98,8 @@
         "significantLink": [
           "https://bhocvet.com/",
           "https://bhoctherapeutics.com/",
-          "https://archiljali.github.io/BHOC-platform/veterinary/Vet-index.html"
+          "https://archiljali.github.io/BHOC-platform/veterinary/Vet-index.html",
+          "https://www.cbd.int/gbf/goals"
         ],
         "primaryImageOfPage": {
           "@type": "ImageObject",

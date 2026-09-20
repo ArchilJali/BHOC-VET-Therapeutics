@@ -23,5 +23,21 @@
     {"icon": "institution", "title": "Zoos & Conservation Centers", "text": "Improving veterinary care in zoological institutions"},
     {"icon": "recovery", "title": "Rehabilitation & Reintroduction", "text": "Supporting recovery and return to natural habitats"},
     {"icon": "field", "title": "Field & Remote Medicine", "text": "Solutions for wildlife in remote and challenging environments"}
-  ]
+  ],
+  "framework": {
+    "id": "global-biodiversity-framework",
+    "eyebrow": "Global biodiversity context",
+    "title": "Part of a Wider Global Effort",
+    "paragraphs": [
+      "We recognize the extraordinary contribution of scientists, veterinarians, conservationists, institutions, local communities, and international initiatives already working to protect species and ecosystems around the world.",
+      "BHOC has studied the goals and targets of the Kunming-Montreal Global Biodiversity Framework and considered where our own knowledge and capabilities may contribute. Our Species & Biodiversity Protection Initiative is independently aligned with this wider direction, particularly in species recovery, veterinary capacity, knowledge sharing, and access to practical conservation technologies.",
+      "This does not imply a formal partnership or endorsement by the Convention on Biological Diversity. It expresses our intention to become a useful part of the existing global conservation ecosystem and to contribute what we know best: oxygen-delivery science developed from principles already created by nature."
+    ],
+    "action": {
+      "label": "Official framework goals",
+      "href": "https://www.cbd.int/gbf/goals",
+      "style": "secondary",
+      "arrow": true
+    }
+  }
 }

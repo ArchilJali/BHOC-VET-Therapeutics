@@ -130,6 +130,10 @@ const news=htmlByPage.get('news.html');
 assert.match(news,/Vet Real-World Evidence & Cases/,'News identifies the canonical veterinary RWE library');
 assert.match(news,new RegExp(`href="${re(vetRWE)}"`),'News routes directly to Vet RWE & Cases');
 assert.doesNotMatch(news,/evidence directory/i,'News no longer describes a duplicate evidence directory');
+assert.match(news,/BHOC reviews its Initiative in relation to the Kunming-Montreal Global Biodiversity Framework\./,'News contains the dated global biodiversity position');
+const frameworkNewsLink=news.match(/<a class="story-link" href="\.\/initiative\/#global-biodiversity-framework"[^>]*>/)?.[0]||'';
+assert.ok(frameworkNewsLink,'News routes to the existing Initiative framework section');
+assert.doesNotMatch(frameworkNewsLink,/target="_blank"/,'Internal Initiative position link stays in the same tab');
 
 assert.match(htmlByPage.get('science.html'),new RegExp(re(vetRWE)),'Science routes to Vet RWE');
 assert.match(htmlByPage.get('applications.html'),/Vet-search\.html/,'Applications routes into veterinary source search');
@@ -150,6 +154,10 @@ assert.equal((initiativeHome.match(/class="hero-photo hero-photo-/g)||[]).length
 assert.equal((initiativeHome.match(/class="focus-card"/g)||[]).length,7,'Initiative keeps seven focus cards');
 assert.match(initiativeHome,new RegExp(`href="${re(vetRWE)}"[\\s\\S]*Vet Real-World Evidence &amp; Cases`),'Initiative links to Vet RWE & Cases');
 assert.match(initiativeHome,new RegExp(`href="${re(vetSearch)}"[\\s\\S]*Search veterinary publications`),'Initiative has distinct publication search route');
+assert.match(initiativeHome,/id="global-biodiversity-framework"/,'Initiative contains the anchored global biodiversity framework statement');
+assert.match(initiativeHome,/Kunming-Montreal Global Biodiversity Framework/,'Initiative names the global framework in visible copy');
+assert.match(initiativeHome,/This does not imply a formal partnership or endorsement by the Convention on Biological Diversity\./,'Initiative preserves the non-affiliation boundary');
+assert.match(initiativeHome,/href="https:\/\/www\.cbd\.int\/gbf\/goals"/,'Initiative links to the official framework goals');
 assert.doesNotMatch(initiativeHome,/href="\.\.\/evidence\.html"/,'Initiative no longer links to retired Evidence page');
 assert.doesNotMatch(initiativeHome,/https:\/\/bhocvet\.com\/evidence\.html/,'Initiative has no absolute retired Evidence URL');
 assert.doesNotMatch(initiativeHome,/hbo2therapeutics\.com\/our-product/i,'Initiative forbidden corporate link absent');

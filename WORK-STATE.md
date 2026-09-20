@@ -28,6 +28,7 @@
 - The Initiative hero is a modular six-photo wildlife composition. Every photograph remains independently editable in `content/initiative/blocks/hero.json`; its full legal source record is also preserved in `content/initiative/image-provenance.json`.
 - The Initiative hero renders three lower controls. The first gallery is active; controls two and three remain visibly reserved and disabled until approved slides are supplied.
 - The evidence statistics strip pairs `A world worth protecting` with a small canonical Initiative mark. The Kipling quotation `We be of one blood, ye and I.` sits in its own centered, lightly offset editorial line below, with its author and *The Jungle Book* attribution underneath.
+- The conservation mission block now includes a separately anchored `Part of a Wider Global Effort` statement at `#global-biodiversity-framework`. It records BHOC's independent alignment with the goals and targets of the Kunming-Montreal Global Biodiversity Framework, links to the official CBD goals page and explicitly states that no formal partnership or endorsement is implied.
 - Focus-area wildlife photographs are local, optimized WebP assets. Photo-credit overlays are intentionally absent from the main Initiative composition. Creator, source, licence, verification date, processing history, purpose and file hash remain preserved in `content/initiative/image-provenance.json` and the separate `noindex` page at `initiative/image-rights.html`.
 - The tiger, elephant and turtle 960 × 960 WebP crops remain sourced from public-domain or attribution-compatible USFWS and NOAA photographs. Their current uses and exact source data are stored in the active Initiative block JSON.
 - The Science Bridge shows the complete user-supplied `BHOC vs RBC >400× smaller` comparison as an independent optimized image. The compatibility and room-temperature shelf-life statements remain separate native text below it, followed by public links to BHOC Veterinary, BHOC Therapeutics and the full VET Evidence Library.
@@ -73,10 +74,11 @@ The full Initiative homepage uses five independent blocks: hero, evidence statis
 - Public attribution: `Project lead: BHOC Team`.
 - Author and structured-data creator: `Archil Jaliashvili`.
 - Canonical URL, Open Graph, X/Twitter metadata, schema, descriptive ALT text and sitemap entries must remain intact.
+- The Initiative and News pages use the visible terms `Kunming-Montreal Global Biodiversity Framework`, `global biodiversity goals`, `species recovery`, `veterinary capacity` and `conservation technology` in context. Structured data points to the official framework goals without declaring an organizational relationship.
 - Project-supplied Companion and Land/Winter/Ocean artwork is recorded with local file hashes and rights status in `content/initiative/image-provenance.json`; third-party Initiative imagery retains its creator, source and licence records.
 - The footer keeps LinkedIn and the full VET Evidence Platform as distinct destinations.
 
-Publication line: `First published 07 Sep 2026 · 20 updates · Last updated 20 Sep 2026 · Version 26.09.20`. Increment `publication.updates` only when the shared BHOC Veterinary pages are intentionally republished.
+Publication line: `First published 07 Sep 2026 · 21 updates · Last updated 20 Sep 2026 · Version 26.09.20`. Increment `publication.updates` only when the shared BHOC Veterinary pages are intentionally republished.
 
 ## Editing and verification
 

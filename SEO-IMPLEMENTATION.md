@@ -24,11 +24,13 @@ Audited 13 September 2026 against current Google Search guidance and the corpora
 | Related Information | related veterinary oxygen information | CollectionPage |
 | News | BHOC Veterinary news | CollectionPage |
 | Contact | Contact BHOC Veterinary | ContactPage |
-| Full Initiative `/initiative/` | wildlife, conservation medicine and species protection | WebPage |
+| Full Initiative `/initiative/` | wildlife, conservation medicine, species protection and global biodiversity goals | WebPage |
 
 Veterinary publications, regulatory records and documented real-world cases are intentionally maintained once in **Vet Real-World Evidence & Cases** rather than duplicated as a BHOC Veterinary Evidence page. The historical `evidence.html` and `publications.html` URLs are `noindex,follow` migration redirects directly to that canonical veterinary library.
 
 Each BHOC Veterinary content file owns one primary phrase, three to five secondary phrases and a bounded set of supporting semantic terms. Titles, descriptions and H1 headings are unique. Legacy terms such as `hemoglobin-based oxygen carrier` and `HBOC` appear where they clarify scientific or historical context; regulatory names remain tied to source-linked records.
+
+The full Initiative page contains a visible, source-linked statement on the `Kunming-Montreal Global Biodiversity Framework`. It describes independent alignment with wider biodiversity goals and explicitly excludes any claim of formal partnership or endorsement by the Convention on Biological Diversity. The News page provides one dated entry point to that existing Initiative section rather than creating a duplicate article URL.
 
 The homepage uses the natural-language terms `animal blood types`, `blood-group systems`, `cross-species oxygen carrier`, `donor-independent oxygen carrier` and `room-temperature shelf life` in visible, relevant copy and structured topics. Its veterinary evidence CTA links directly to Vet Real-World Evidence & Cases and keeps product- and species-specific evidence boundaries explicit; no hidden keyword list or unsupported universal efficacy claim is used.
 
