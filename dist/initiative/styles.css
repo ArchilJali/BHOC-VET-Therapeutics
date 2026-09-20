@@ -908,6 +908,61 @@ h2 {
   line-height: 1.35;
 }
 
+.framework-context {
+  display: grid;
+  grid-column: 1 / -1;
+  grid-template-columns: minmax(240px, 0.72fr) minmax(440px, 1.5fr) minmax(190px, auto);
+  gap: clamp(24px, 3.6vw, 58px);
+  align-items: start;
+  padding: clamp(36px, 4.8vw, 68px) clamp(24px, 5vw, 72px);
+  border-top: 1px solid var(--line);
+  color: var(--forest-900);
+  background: linear-gradient(135deg, #f4f8f5, #fff);
+  scroll-margin-top: 120px;
+}
+
+.framework-heading .eyebrow {
+  margin-bottom: 9px;
+  color: var(--emerald-deep);
+}
+
+.framework-heading h3 {
+  max-width: 360px;
+  margin: 0;
+  color: var(--forest-900);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2rem, 3.2vw, 3.25rem);
+  font-weight: 500;
+  letter-spacing: -0.035em;
+  line-height: 1.02;
+}
+
+.framework-copy {
+  display: grid;
+  gap: 14px;
+  max-width: 780px;
+}
+
+.framework-copy p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.62;
+}
+
+.framework-action {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+.framework-action .button {
+  width: max-content;
+  border-color: var(--forest-800);
+  color: var(--forest-900);
+  background: #fff;
+}
+
 .compact-section {
   padding: 30px 0 36px;
 }
@@ -1883,6 +1938,15 @@ h2 {
     border-left: 0;
   }
 
+  .framework-context {
+    grid-template-columns: minmax(240px, 0.7fr) minmax(0, 1.3fr);
+  }
+
+  .framework-action {
+    grid-column: 2;
+    justify-content: flex-start;
+  }
+
   .science-grid {
     width: 100%;
     grid-template-columns: 1fr 1fr;
@@ -1963,6 +2027,18 @@ h2 {
 
   .mission-panel {
     grid-template-columns: 1fr;
+  }
+
+  .framework-context {
+    grid-template-columns: 1fr;
+  }
+
+  .framework-heading h3 {
+    max-width: 640px;
+  }
+
+  .framework-action {
+    grid-column: auto;
   }
 
   .mission-photo {
@@ -2257,6 +2333,24 @@ h2 {
     grid-template-columns: 1fr;
     gap: 18px;
     padding: 28px 22px;
+  }
+
+  .framework-context {
+    gap: 22px;
+    padding: 34px 22px 40px;
+  }
+
+  .framework-copy {
+    gap: 12px;
+  }
+
+  .framework-copy p {
+    font-size: 1rem;
+    line-height: 1.58;
+  }
+
+  .framework-action .button {
+    width: 100%;
   }
 
   .inline-heading {
