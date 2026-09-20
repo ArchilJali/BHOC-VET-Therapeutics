@@ -103,8 +103,8 @@
     "expansion": "Biological Hemoglobin Oxygen Carrier"
   },
   "intent": "For immediate, controlled microvascular and tissue-level oxygenation while endogenous erythropoiesis recovers.",
-  "profile": "A donor-independent oxygen carrier with long shelf life at room temperature, designed to be endotoxin-free and red-cell-antigen-free, with compatibility across all blood types. For all species.",
-  "evidenceNote": "Development objectives. Species-specific dosing, safety and efficacy require independent evidence.",
+  "profile": "A donor-independent oxygen carrier with long shelf life at room temperature, designed to be endotoxin-free and red-cell-antigen-free, with compatibility across all blood types. For Every Species.",
+  "evidenceNote": "Development objectives. Administration, delivery speed and treatment volume remain species-specific and require independent evidence for formulation, dosing, safety and efficacy.",
   "actions": [
     {
       "label": "Product",
