@@ -1,44 +1,14 @@
 {
   "blocks": [
-    {
-      "type": "hero",
-      "file": "blocks/hero.json",
-      "enabled": true
-    },
-    {
-      "type": "initiative-intro",
-      "file": "blocks/initiative-intro.json",
-      "enabled": true
-    },
-    {
-      "type": "science-bridge",
-      "file": "blocks/science-bridge.json",
-      "enabled": true
-    },
-    {
-      "type": "biodiversity",
-      "file": "blocks/biodiversity.json",
-      "enabled": true
-    },
-    {
-      "type": "species",
-      "file": "blocks/species.json",
-      "enabled": true
-    },
-    {
-      "type": "science",
-      "file": "blocks/science.json",
-      "enabled": true
-    },
-    {
-      "type": "mission",
-      "file": "blocks/mission.json",
-      "enabled": true
-    },
-    {
-      "type": "pillars",
-      "file": "blocks/pillars.json",
-      "enabled": true
-    }
+    {"type":"hero","file":"blocks/hero.json","enabled":true},
+    {"type":"audience","file":"blocks/audience.json","enabled":true},
+    {"type":"initiative-intro","file":"blocks/initiative-intro.json","enabled":true},
+    {"type":"companion","file":"blocks/companion.json","enabled":true},
+    {"type":"species","file":"blocks/species.json","enabled":true},
+    {"type":"science-bridge","file":"blocks/science-bridge.json","enabled":true},
+    {"type":"science","file":"blocks/science.json","enabled":true},
+    {"type":"mission","file":"blocks/mission.json","enabled":true},
+    {"type":"pillars","file":"blocks/pillars.json","enabled":true},
+    {"type":"biodiversity","file":"blocks/biodiversity.json","enabled":false}
   ]
 }

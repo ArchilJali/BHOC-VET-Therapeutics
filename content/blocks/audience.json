@@ -1,0 +1,41 @@
+{
+  "id": "veterinary-teams",
+  "number": "1",
+  "eyebrow": "BHOC Veterinary",
+  "heading": "For Veterinary Teams",
+  "lead": "Advancing oxygen delivery for better animal care.",
+  "text": "For veterinarians, veterinary clinics, animal hospitals and veterinary-industry partners working with dogs, cats and other veterinary species.",
+  "rotationMs": 0,
+  "slides": [
+    {
+      "id": "team",
+      "label": "Veterinary team",
+      "image": {
+        "src": "assets/veterinary-team-approved.webp",
+        "alt": "Graphite illustration of a veterinarian caring for a dog beside a cat",
+        "width": 480,
+        "height": 280
+      }
+    }
+  ],
+  "roles": [
+    "Veterinary doctors",
+    "Clinics & animal hospitals",
+    "Veterinary industry",
+    "Research partners"
+  ],
+  "links": [
+    {
+      "label": "Veterinary Applications",
+      "href": "applications.html"
+    },
+    {
+      "label": "Evidence & Cases",
+      "href": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-index.html"
+    },
+    {
+      "label": "Research & Partnerships",
+      "href": "contact.html"
+    }
+  ]
+}

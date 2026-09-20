@@ -1,6 +1,6 @@
 # Current BHOC Veterinary work state
 
-13 September 2026. This file records only the current implementation. Earlier experiments and authoring archives are intentionally excluded from the public repository.
+20 September 2026. This file records only the current implementation. Earlier experiments and authoring archives are intentionally excluded from the public repository.
 
 ## Identity and navigation
 
@@ -12,6 +12,10 @@
 - Contact is available in the footer and search.
 
 ## Current visual authority
+
+- The production homepage uses a veterinary-first opening. Block 1 has one approved static image, `assets/veterinary-team-approved.webp`, showing a veterinarian with a dog and cat. No alternate slides, indicators or automatic rotation are displayed.
+- Block 3 uses `assets/companion-animals-wide-v4.webp`, a full-width graphite composition that keeps Rem and Evchika visible and shows the complete horse with proportionate hindquarters and a natural tail. The title, exact Kipling quotation and attribution, navigation, and reference stethoscope/paw signature are accessible HTML layers and remain within the banner at desktop and phone widths; no duplicate baked copy is visible.
+- Homepage review numbering is fixed as: 1 Veterinary Teams, 2 Initiative Introduction, 3 Companion Animals, 4 Explore Species, 5 Science Bridge, 6 Oxygen Delivery Science, 7 Initiative Wildlife Banner, 8 Initiative Pathways.
 
 - Current desktop/mobile hero carousel: `assets/bhoc-initiative-land-hero-v2.webp`, `assets/bhoc-initiative-winter-hero.webp` and `assets/bhoc-initiative-ocean-hero-v2.webp`, in Land, Winter, Ocean order. The Land artwork has no baked-in carousel indicators; all three slides use only the live accessible controls.
 - Directly below that hero, the BHOC Veterinary homepage has two independently editable blocks: the Initiative introduction strip and the Science Bridge carousel. The Science Bridge uses the pixel-identical lossless asset `assets/science-bridge-reference.webp`; its wolf credit is not overlaid on the image, while the full creator, source, licence, verification and file-history record is preserved under `gray-wolf` in `content/initiative/image-provenance.json` and `initiative/image-rights.html`.
@@ -37,18 +41,21 @@ Do not substitute earlier hero, logo or portrait variants. Superseded and unused
 
 ## Pages and URL continuity
 
-The indexed pages are `index.html`, `product.html`, `applications.html`, `evidence.html`, `science.html`, `initiative.html`, `initiative/`, `related-information.html`, `news.html` and `contact.html`.
+The indexed pages are `index.html`, `product.html`, `applications.html`, `science.html`, `initiative.html`, `initiative/`, `related-information.html`, `news.html` and `contact.html`.
 
 `initiative/` is the full BHOC Species & Biodiversity Protection Initiative homepage based on the approved visual. The earlier `initiative.html` overview remains available and links to the full page. Source files live in `src/initiative/`; page-specific image assets live in `assets/initiative/`. Internal BHOC Veterinary routes stay in the same browser tab.
 
 `initiative/image-rights.html` is a separate `noindex,follow` image-rights and provenance register. It is generated from `content/initiative/image-provenance.json`, is linked only from the Initiative protected-content notice and must not be replaced by visible per-photo captions on the main Initiative page.
 
-`publications.html` is intentionally retained as a `noindex,follow` redirect to `evidence.html`. Keep it so historical links continue to work. `404.html`, `CNAME`, `robots.txt` and `sitemap.xml` are also required.
+`evidence.html` and `publications.html` are intentionally retained as `noindex,follow` migration routes to the canonical Vet Real-World Evidence & Cases library. Keep both so historical links continue to work. `404.html`, `CNAME`, `robots.txt` and `sitemap.xml` are also required.
 
 The full Initiative homepage uses five independent blocks: hero, evidence statistics, conservation mission, focus areas and science bridge. Section order and visibility live in `content/initiative/homepage.json`; each section has its own JSON data file and renderer. Main Initiative entry points open `/initiative/` directly, while the earlier overview remains available at `/initiative.html`.
 
 ## Responsive behavior
 
+- Homepage review layout is intentionally denser: shared horizontal gutters are reduced, the Science Bridge stage is wider, and desktop block heights are moderately compacted without removing content.
+- Homepage block 3 Companion Animals is full-width and intentionally compact in height. Its navigation remains lightweight native text links, not a bottom button: Veterinary Applications, Evidence & Cases and Explore Species.
+- Homepage block 7 is a three-scene wildlife carousel using the approved production land, winter and ocean artwork. The land scene with the two wire-haired dachshunds is the visual base and opening slide. Product and Application hotspots on that scene remain active; Winter and Ocean each retain `Explore species` and now add a visible `Application` button to `applications.html`. The carousel auto-rotates and supports arrows, dots, swipe and keyboard.
 - At 1080 px and below, primary navigation moves into the menu.
 - The Initiative hero keeps its copy, six licensed photographs and slide controls as separate responsive layers.
 - At 600 px and below, the BHOC Veterinary wordmark becomes a compact horizontal row.
@@ -66,9 +73,10 @@ The full Initiative homepage uses five independent blocks: hero, evidence statis
 - Public attribution: `Project lead: BHOC Team`.
 - Author and structured-data creator: `Archil Jaliashvili`.
 - Canonical URL, Open Graph, X/Twitter metadata, schema, descriptive ALT text and sitemap entries must remain intact.
+- Project-supplied Companion and Land/Winter/Ocean artwork is recorded with local file hashes and rights status in `content/initiative/image-provenance.json`; third-party Initiative imagery retains its creator, source and licence records.
 - The footer keeps LinkedIn and the full VET Evidence Platform as distinct destinations.
 
-Publication line: `First published 07 Sep 2026 · 19 updates · Last updated 13 Sep 2026 · Version 26.09.13`. Increment `publication.updates` only when the shared BHOC Veterinary pages are intentionally republished.
+Publication line: `First published 07 Sep 2026 · 20 updates · Last updated 20 Sep 2026 · Version 26.09.20`. Increment `publication.updates` only when the shared BHOC Veterinary pages are intentionally republished.
 
 ## Editing and verification
 

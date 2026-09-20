@@ -1,72 +1,33 @@
 {
   "id": "science",
-  "heading": [
-    "Nature kept the core.",
-    "Bioengineers build on",
-    "that foundation."
-  ],
-  "description": "Across vertebrate species, oxygen transport shares a common molecular foundation in hemoglobin.",
+  "number": "6",
+  "heading": ["Understanding oxygen delivery"],
+  "description": "A quick route from biological chemistry to functional oxygen delivery.",
   "button": {
-    "label": "Read the science",
+    "label": "Understand the Science",
     "href": "science.html#foundation"
   },
-  "discoverTitle": "Discover",
-  "slides": [
+  "items": [
     {
-      "type": "molecules",
-      "title": "Chlorophyll and heme",
-      "items": [
-        {
-          "name": "Chlorophyll a",
-          "caption": "Magnesium (Mg)",
-          "href": "https://www.ebi.ac.uk/chebi/CHEBI:18230",
-          "image": {
-            "src": "assets/chlorophyll.svg",
-            "alt": "Chlorophyll a tetrapyrrole core with magnesium at the centre",
-            "width": 250,
-            "height": 220
-          }
-        },
-        {
-          "name": "Heme in hemoglobin",
-          "caption": "Iron (Fe)",
-          "href": "https://www.ebi.ac.uk/chebi/CHEBI:26355",
-          "image": {
-            "src": "assets/heme.svg",
-            "alt": "Heme b molecular structure with iron at the centre",
-            "width": 250,
-            "height": 220
-          }
-        }
-      ]
-    },
-    {
-      "type": "story",
-      "title": "Related chemistry. Different roles.",
-      "paragraphs": [
-        "Heme and chlorophyll belong to the tetrapyrrole family. Their metals, ring structures and side chains differ.",
-        "Hemoglobin transports oxygen. Chlorophyll absorbs light in photosynthesis."
-      ],
-      "link": {
-        "label": "Explore the science",
-        "href": "science.html#foundation"
+      "name": "Chlorophyll",
+      "caption": "Nature's design inspires innovation.",
+      "href": "https://www.ebi.ac.uk/chebi/CHEBI:18230",
+      "image": {
+        "src": "assets/chlorophyll.svg",
+        "alt": "Chlorophyll a tetrapyrrole core with magnesium at the centre",
+        "width": 250,
+        "height": 220
       }
     },
     {
-      "type": "story",
-      "title": "One living planet. Connected biology.",
+      "name": "Heme & Oxygen",
+      "caption": "The biology of oxygen transport across species.",
+      "href": "https://www.ebi.ac.uk/chebi/CHEBI:26355",
       "image": {
-        "src": "assets/bhoc-mountain-landscape-pencil.webp",
-        "alt": "Soft pencil drawing of mountains and their shared landscape",
-        "width": 450,
-        "height": 88
-      },
-      "paragraphs": [
-        "Animal health and species protection are at the heart of our initiative."
-      ],
-      "link": {
-        "label": "Explore the initiative",
-        "href": "./initiative/"
+        "src": "assets/heme.svg",
+        "alt": "Heme b molecular structure with iron at the centre",
+        "width": 250,
+        "height": 220
       }
     }
   ]

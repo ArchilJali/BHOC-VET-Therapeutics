@@ -1,29 +1,51 @@
 {
   "id": "priorities",
+  "number": "8",
+  "label": "Our pathways to impact",
   "items": [
     {
-      "title": "Animal health",
-      "text": "Better treatments. Better lives.",
-      "icon": "paw",
-      "href": "applications.html"
+      "title": "Wildlife Rescue",
+      "text": "Supporting critical care in the field",
+      "href": "./initiative/#mission",
+      "image": {
+        "src": "assets/initiative/focus-wildlife-rescue-photo.webp",
+        "alt": "Orphaned African elephant calves during wildlife rescue and rehabilitation",
+        "width": 640,
+        "height": 480
+      }
     },
     {
-      "title": "Species preservation",
-      "text": "Supporting conservation through science.",
-      "icon": "tree",
-      "href": "./initiative/#focus"
+      "title": "Conservation Partners",
+      "text": "Stronger together for greater impact",
+      "href": "./initiative/#focus",
+      "image": {
+        "src": "assets/initiative/focus-conservation-photo.webp",
+        "alt": "Wildlife conservation field scene from the BHOC Initiative image library",
+        "width": 640,
+        "height": 480
+      }
     },
     {
-      "title": "A shared planet",
-      "text": "Healthier animals. Healthier ecosystems.",
-      "icon": "globe",
-      "href": "./initiative/"
+      "title": "Evidence & Research",
+      "text": "Turning science into real-world change",
+      "href": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-index.html",
+      "image": {
+        "src": "assets/initiative/focus-open-book-public-domain.webp",
+        "alt": "Open scientific book representing veterinary evidence and research",
+        "width": 720,
+        "height": 540
+      }
     },
     {
-      "title": "One Health",
-      "text": "People. Animals. Planet.",
-      "icon": "people",
-      "href": "related-information.html"
+      "title": "Philanthropy & Partnerships",
+      "text": "Expanding access. A stronger tomorrow",
+      "href": "./initiative/#focus",
+      "image": {
+        "src": "assets/initiative/focus-mountain-landscape-public-domain.webp",
+        "alt": "Protected mountain landscape representing conservation philanthropy and partnerships",
+        "width": 720,
+        "height": 540
+      }
     }
   ]
 }

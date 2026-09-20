@@ -55,6 +55,15 @@
           "top": 48.4,
           "width": 14.7,
           "height": 8.5
+        },
+        {
+          "label": "Application",
+          "href": "applications.html",
+          "visible": true,
+          "left": 67.4,
+          "top": 59.2,
+          "width": 14.7,
+          "height": 8.5
         }
       ]
     },
@@ -74,6 +83,15 @@
           "href": "./initiative/",
           "left": 70,
           "top": 47.5,
+          "width": 16.5,
+          "height": 9.5
+        },
+        {
+          "label": "Application",
+          "href": "applications.html",
+          "visible": true,
+          "left": 70,
+          "top": 59.4,
           "width": 16.5,
           "height": 9.5
         }

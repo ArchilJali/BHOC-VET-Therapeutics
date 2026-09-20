@@ -1,2 +1,11 @@
-import {esc,lines,attrs,icon,img,button,section} from '../lib/html.mjs';
-export default d=>section(d,'science',`<div class="science-copy"><h2 id="${d.id}-heading">${lines(d.heading)}</h2><p>${esc(d.description)}</p>${button(d.button)}</div><div class="science-carousel" aria-label="${esc(d.discoverTitle)}" aria-roledescription="carousel"><h3 class="discover-heading">${esc(d.discoverTitle)}</h3>${d.slides.map((s,i)=>`<div class="science-panel ${s.type==='molecules'?'molecular-pair':'discover-story'}" role="group" aria-roledescription="slide" aria-label="${i+1} of ${d.slides.length}. ${esc(s.title)}" tabindex="0"${i?' hidden':''}>${s.type==='molecules'?s.items.map(m=>`<figure><h4>${esc(m.name)}</h4><a ${attrs(m)}>${img(m.image,'loading="lazy"')}</a><figcaption>${esc(m.caption)}</figcaption></figure>`).join(''):`${s.image?img(s.image,'class="discover-landscape" loading="lazy"'):''}<h4>${esc(s.title)}</h4>${s.paragraphs.map(p=>`<p>${esc(p)}</p>`).join('')}${s.link?`<a class="text-link" ${attrs(s.link)}>${esc(s.link.label)} ${icon('arrow')}</a>`:''}`}</div>`).join('')}<div class="discover-controls"><button class="round-control science-prev" aria-label="Previous Discover slide">${icon('chevron')}</button><div class="carousel-dots" aria-label="Choose Discover slide">${d.slides.map((s,i)=>`<button ${i?'':'class="selected" aria-current="true"'} data-slide="${i}" aria-label="Show ${esc(s.title)}"></button>`).join('')}</div><button class="round-control science-next" aria-label="Next Discover slide">${icon('chevron')}</button></div><span class="sr-only" id="discover-announcement" aria-live="polite"></span></div>`);
+import {esc,attrs,img,button,section} from '../lib/html.mjs';
+
+export default d=>section(d,'science',`
+  <div class="science-strip-heading">
+    <span class="eyebrow">${esc(d.heading[0])}</span>
+    <p>${esc(d.description)}</p>
+  </div>
+  <div class="science-strip-items">
+    ${d.items.map(item=>`<a class="science-strip-card" ${attrs(item)}>${img(item.image,'loading="lazy"')}<span><strong>${esc(item.name)}</strong><small>${esc(item.caption)}</small></span></a>`).join('')}
+  </div>
+  <div class="science-strip-action">${button(d.button)}</div>`);

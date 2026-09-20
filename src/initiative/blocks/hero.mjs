@@ -28,6 +28,7 @@ export default function renderHero(data){
     '      <h1 id="hero-title">'+lines(data.headingLines)+'</h1>',
     '      <p class="hero-tagline">'+esc(data.tagline)+'</p>',
     '      <p class="hero-lead">'+esc(data.lead)+'</p>',
+    data.audience?'      <p class="hero-audience">'+esc(data.audience)+'</p>':'',
     '      <div class="hero-actions">',
     '        '+actions,
     '      </div>',

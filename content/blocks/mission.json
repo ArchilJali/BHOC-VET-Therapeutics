@@ -1,16 +1,90 @@
 {
   "id": "mission",
+  "number": "7",
   "heading": [
-    "Helping animals today.",
-    "Preserving tomorrow."
+    "BHOC Species & Biodiversity Protection Initiative"
   ],
-  "description": "Because every species matters.",
-  "image": {
-    "src": "assets/bhoc-mountain-landscape-pencil.webp",
-    "alt": "",
-    "width": 450,
-    "height": 88
-  },
+  "description": "One Oxygen. Every Species. One Living Planet.",
+  "rotationMs": 6000,
+  "images": [
+    {
+      "label": "Land wildlife",
+      "src": "assets/bhoc-initiative-land-hero-v2.webp",
+      "alt": "BHOC land wildlife scene with lion, elephant, giraffe, camel, rhinoceros, panda, orangutan, snow leopard, tortoise, cat and wire-haired dachshunds",
+      "width": 2019,
+      "height": 779,
+      "hotspots": [
+        {
+          "label": "Open Product",
+          "href": "product.html",
+          "left": 7,
+          "top": 80,
+          "width": 10.8,
+          "height": 8.2
+        },
+        {
+          "label": "Open Application",
+          "href": "applications.html",
+          "left": 18.4,
+          "top": 80,
+          "width": 12.5,
+          "height": 8.2
+        }
+      ]
+    },
+    {
+      "label": "Winter wildlife",
+      "src": "assets/bhoc-initiative-winter-hero.webp",
+      "alt": "BHOC winter wildlife scene with polar bear, snow leopard, reindeer, wolf, Arctic fox, snowy owl, seal and penguin",
+      "width": 2019,
+      "height": 779,
+      "hotspots": [
+        {
+          "label": "Explore species",
+          "href": "./initiative/",
+          "left": 67.4,
+          "top": 48.4,
+          "width": 14.7,
+          "height": 8.5
+        },
+        {
+          "label": "Application",
+          "href": "applications.html",
+          "visible": true,
+          "left": 67.4,
+          "top": 59.2,
+          "width": 14.7,
+          "height": 8.5
+        }
+      ]
+    },
+    {
+      "label": "Ocean wildlife",
+      "src": "assets/bhoc-initiative-ocean-hero-v2.webp",
+      "alt": "BHOC ocean wildlife scene with humpback whale, dolphins, sea turtle, manta ray, seal, walrus, dugong, whale shark, fish and coral reef",
+      "width": 2019,
+      "height": 779,
+      "hotspots": [
+        {
+          "label": "Explore species",
+          "href": "./initiative/",
+          "left": 70,
+          "top": 47.5,
+          "width": 16.5,
+          "height": 9.5
+        },
+        {
+          "label": "Application",
+          "href": "applications.html",
+          "visible": true,
+          "left": 70,
+          "top": 59.4,
+          "width": 16.5,
+          "height": 9.5
+        }
+      ]
+    }
+  ],
   "button": {
     "label": "Explore the Initiative",
     "href": "./initiative/"

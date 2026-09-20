@@ -7,7 +7,7 @@ export default function renderScienceBridge(data){
     '<div class="shell science-grid">'+
       '<div class="science-copy"><p class="eyebrow">'+esc(data.eyebrow)+'</p><h2 id="science-title">'+lines(data.titleLines)+'</h2><p>'+esc(data.text)+'</p>'+action(data.action)+'</div>'+
       '<figure class="science-photo">'+initiativeImage(data.image)+'</figure>'+
-      '<div class="science-claim"><figure class="science-claim-graphic">'+initiativeImage(data.comparisonGraphic)+'<figcaption class="visually-hidden">'+esc(data.comparisonGraphic.caption)+'</figcaption></figure><div class="science-claim-content"><ul>'+statements+'</ul><p>'+esc(data.caption)+'</p><nav class="science-related-links" aria-label="Explore the BHOC network">'+relatedLinks+'</nav></div></div>'+
+      '<div class="science-claim"><figure class="science-claim-graphic">'+initiativeImage(data.comparisonGraphic)+'<figcaption class="visually-hidden">'+esc(data.comparisonGraphic.caption)+'</figcaption></figure><div class="science-claim-content"><ul>'+statements+'</ul>'+(data.boundary?'<p class="science-boundary">'+esc(data.boundary)+'</p>':'')+'<p>'+esc(data.caption)+'</p><nav class="science-related-links" aria-label="Explore the BHOC network">'+relatedLinks+'</nav></div></div>'+
     '</div>'+
   '</section>';
 }

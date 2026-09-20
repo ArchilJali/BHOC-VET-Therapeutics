@@ -38,6 +38,50 @@
     reducedMotion.addEventListener('change',schedule);
     select(0,false);
   }
+  const audienceCarousel=$('[data-audience-carousel]');
+  if(audienceCarousel){
+    const slides=$$('[data-audience-slide]',audienceCarousel),dots=$$('[data-audience-dot]',audienceCarousel),announcement=$('[data-audience-announcement]',audienceCarousel);
+    const delay=Math.max(0,Number(audienceCarousel.dataset.autoplayMs)||0),reducedMotion=matchMedia('(prefers-reduced-motion: reduce)');
+    let index=0,timer=null,touchStart=null,hovering=false,focusWithin=false;
+    const stop=()=>{if(timer!==null){clearTimeout(timer);timer=null;}};
+    const schedule=()=>{stop();if(delay&&slides.length>1&&!reducedMotion.matches&&!document.hidden&&!hovering&&!focusWithin)timer=setTimeout(()=>select(index+1,false),delay);};
+    const select=(nextIndex,announce=true)=>{
+      if(!slides.length)return;
+      index=(nextIndex+slides.length)%slides.length;
+      slides.forEach((slide,i)=>{slide.hidden=i!==index;});
+      dots.forEach((dot,i)=>{if(i===index)dot.setAttribute('aria-current','true');else dot.removeAttribute('aria-current');});
+      if(announce&&announcement)announcement.textContent=`Veterinary illustration: ${slides[index].dataset.slideLabel}`;
+      schedule();
+    };
+    dots.forEach(dot=>dot.addEventListener('click',()=>select(Number(dot.dataset.audienceDot))));
+    audienceCarousel.addEventListener('keydown',e=>{if(['ArrowLeft','ArrowRight','Home','End'].includes(e.key)){e.preventDefault();select(e.key==='Home'?0:e.key==='End'?slides.length-1:index+(e.key==='ArrowRight'?1:-1));}});
+    audienceCarousel.addEventListener('touchstart',e=>{touchStart=e.changedTouches[0];},{passive:true});
+    audienceCarousel.addEventListener('touchend',e=>{if(!touchStart)return;const dx=e.changedTouches[0].clientX-touchStart.clientX,dy=e.changedTouches[0].clientY-touchStart.clientY;if(Math.abs(dx)>55&&Math.abs(dx)>Math.abs(dy)*1.5)select(index+(dx<0?1:-1));touchStart=null;},{passive:true});
+    audienceCarousel.addEventListener('mouseenter',()=>{hovering=true;stop();});
+    audienceCarousel.addEventListener('mouseleave',()=>{hovering=false;schedule();});
+    audienceCarousel.addEventListener('focusin',()=>{focusWithin=true;stop();});
+    audienceCarousel.addEventListener('focusout',e=>{if(!audienceCarousel.contains(e.relatedTarget)){focusWithin=false;schedule();}});
+    document.addEventListener('visibilitychange',schedule);
+    reducedMotion.addEventListener('change',schedule);
+    select(0,false);
+  }
+  const companionCarousel=$('[data-companion-carousel]');
+  if(companionCarousel){
+    const slides=$$('[data-companion-slide]',companionCarousel),dots=$$('[data-companion-dot]',companionCarousel),announcement=$('[data-companion-announcement]',companionCarousel);
+    let index=0,touchStart=null;
+    const select=(nextIndex,announce=true)=>{
+      if(!slides.length)return;
+      index=(nextIndex+slides.length)%slides.length;
+      slides.forEach((slide,i)=>{slide.hidden=i!==index;});
+      dots.forEach((dot,i)=>{if(i===index)dot.setAttribute('aria-current','true');else dot.removeAttribute('aria-current');});
+      if(announce&&announcement)announcement.textContent=`Companion Animals visual: ${slides[index].dataset.slideLabel}`;
+    };
+    dots.forEach(dot=>dot.addEventListener('click',()=>select(Number(dot.dataset.companionDot))));
+    companionCarousel.addEventListener('keydown',e=>{if(['ArrowLeft','ArrowRight','Home','End'].includes(e.key)){e.preventDefault();select(e.key==='Home'?0:e.key==='End'?slides.length-1:index+(e.key==='ArrowRight'?1:-1));}});
+    companionCarousel.addEventListener('touchstart',e=>{touchStart=e.changedTouches[0];},{passive:true});
+    companionCarousel.addEventListener('touchend',e=>{if(!touchStart)return;const dx=e.changedTouches[0].clientX-touchStart.clientX,dy=e.changedTouches[0].clientY-touchStart.clientY;if(Math.abs(dx)>55&&Math.abs(dx)>Math.abs(dy)*1.5)select(index+(dx<0?1:-1));touchStart=null;},{passive:true});
+    select(0,false);
+  }
   const bridgeCarousel=$('[data-bridge-carousel]');
   if(bridgeCarousel){
     const slides=$$('[data-bridge-slide]',bridgeCarousel),dots=$$('[data-bridge-dot]',bridgeCarousel),prev=$('.science-bridge-prev',bridgeCarousel),next=$('.science-bridge-next',bridgeCarousel),announcement=$('[data-bridge-announcement]',bridgeCarousel);
@@ -63,6 +107,35 @@
     bridgeCarousel.addEventListener('mouseleave',()=>{hovering=false;schedule();});
     bridgeCarousel.addEventListener('focusin',()=>{focusWithin=true;stop();});
     bridgeCarousel.addEventListener('focusout',e=>{if(!bridgeCarousel.contains(e.relatedTarget)){focusWithin=false;schedule();}});
+    document.addEventListener('visibilitychange',schedule);
+    reducedMotion.addEventListener('change',schedule);
+    select(0,false);
+  }
+  const missionCarousel=$('[data-mission-carousel]');
+  if(missionCarousel){
+    const slides=$$('[data-mission-slide]',missionCarousel),dots=$$('[data-mission-dot]',missionCarousel),prev=$('.mission-prev',missionCarousel),next=$('.mission-next',missionCarousel),announcement=$('[data-mission-announcement]',missionCarousel);
+    const delay=Math.max(0,Number(missionCarousel.dataset.autoplayMs)||0),reducedMotion=matchMedia('(prefers-reduced-motion: reduce)');
+    let index=0,timer=null,touchStart=null,hovering=false,focusWithin=false;
+    const stop=()=>{if(timer!==null){clearTimeout(timer);timer=null;}};
+    const schedule=()=>{stop();if(delay&&slides.length>1&&!reducedMotion.matches&&!document.hidden&&!hovering&&!focusWithin)timer=setTimeout(()=>select(index+1,false),delay);};
+    const select=(nextIndex,announce=true)=>{
+      if(!slides.length)return;
+      index=(nextIndex+slides.length)%slides.length;
+      slides.forEach((slide,i)=>{slide.hidden=i!==index;});
+      dots.forEach((dot,i)=>{if(i===index)dot.setAttribute('aria-current','true');else dot.removeAttribute('aria-current');});
+      if(announce&&announcement)announcement.textContent=`Wildlife landscape: ${slides[index].dataset.slideLabel}`;
+      schedule();
+    };
+    prev?.addEventListener('click',()=>select(index-1));
+    next?.addEventListener('click',()=>select(index+1));
+    dots.forEach(dot=>dot.addEventListener('click',()=>select(Number(dot.dataset.missionDot))));
+    missionCarousel.addEventListener('keydown',e=>{if(['ArrowLeft','ArrowRight','Home','End'].includes(e.key)){e.preventDefault();select(e.key==='Home'?0:e.key==='End'?slides.length-1:index+(e.key==='ArrowRight'?1:-1));}});
+    missionCarousel.addEventListener('touchstart',e=>{touchStart=e.changedTouches[0];},{passive:true});
+    missionCarousel.addEventListener('touchend',e=>{if(!touchStart)return;const dx=e.changedTouches[0].clientX-touchStart.clientX,dy=e.changedTouches[0].clientY-touchStart.clientY;if(Math.abs(dx)>55&&Math.abs(dx)>Math.abs(dy)*1.5)select(index+(dx<0?1:-1));touchStart=null;},{passive:true});
+    missionCarousel.addEventListener('mouseenter',()=>{hovering=true;stop();});
+    missionCarousel.addEventListener('mouseleave',()=>{hovering=false;schedule();});
+    missionCarousel.addEventListener('focusin',()=>{focusWithin=true;stop();});
+    missionCarousel.addEventListener('focusout',e=>{if(!missionCarousel.contains(e.relatedTarget)){focusWithin=false;schedule();}});
     document.addEventListener('visibilitychange',schedule);
     reducedMotion.addEventListener('change',schedule);
     select(0,false);

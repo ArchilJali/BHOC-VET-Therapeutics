@@ -6,6 +6,7 @@ import {fileURLToPath} from 'node:url';
 
 const root=path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 const out=path.resolve(root,process.argv[2]||'dist');
+const site=JSON.parse(await fs.readFile(path.join(root,'content/site.json'),'utf8'));
 const vetRWE='https://archiljali.github.io/BHOC-platform/veterinary/Vet-index.html';
 const vetSearch='https://archiljali.github.io/BHOC-platform/veterinary/Vet-search.html';
 const re=s=>String(s).replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
@@ -99,7 +100,9 @@ for(const [name,html] of htmlByPage){
   assert.match(footer,/href="https:\/\/www\.linkedin\.com\/company\/bhoc-therapeutics\/"/,`${name}: footer LinkedIn route`);
   const footerHrefs=[...footer.matchAll(/href="([^"]+)"/g)].map(match=>match[1]);
   assert.equal(new Set(footerHrefs).size,footerHrefs.length,`${name}: footer destinations are unique`);
-  assert.match(footer,/First published <time datetime="2026-09-07">07 Sep 2026<\/time>.*19 updates.*Last updated <time datetime="2026-09-18">18 Sep 2026<\/time>.*Version 26\.09\.18/,`${name}: publication history`);
+  const published=site.publication;
+  const displayDate=iso=>{const [year,month,day]=iso.split('-');return `${day} ${['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'][Number(month)-1]} ${year}`;};
+  assert.match(footer,new RegExp(`First published <time datetime="${re(published.firstPublished)}">${re(displayDate(published.firstPublished))}<\\/time>.*${published.updates} updates.*Last updated <time datetime="${re(published.lastUpdated)}">${re(displayDate(published.lastUpdated))}<\\/time>.*Version ${re(published.version)}`),`${name}: publication history`);
 }
 
 const home=htmlByPage.get('index.html');

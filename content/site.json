@@ -20,6 +20,7 @@
     "supportingTerms": [
       "hemoglobin-based oxygen carrier",
       "HBOC",
+      "Precision Oxygenation Therapeutics",
       "Oxyglobin",
       "Oxyglobin evidence",
       "oxygen delivery",
@@ -65,6 +66,7 @@
     "BHOC Vet",
     "Biological Hemoglobin Oxygen Carrier",
     "Precision Oxygen Therapeutics",
+    "Precision Oxygenation Therapeutics",
     "Veterinary oxygen carrier",
     "Hemoglobin-based oxygen carrier (HBOC)",
     "Oxyglobin",
@@ -83,7 +85,7 @@
     "Veterinary public health"
   ],
   "language": "en",
-  "updated": "2026-09-17",
+  "updated": "2026-09-20",
   "contactEmail": "info@bhoctherapeutics.com",
   "organizationLogo": {
     "src": "assets/bhoc-veterinary-organization-logo.svg",
@@ -93,9 +95,9 @@
   },
   "publication": {
     "firstPublished": "2026-09-07",
-    "updates": 19,
-    "lastUpdated": "2026-09-18",
-    "version": "26.09.18"
+    "updates": 20,
+    "lastUpdated": "2026-09-20",
+    "version": "26.09.20"
   },
   "sameAs": [
     "https://www.linkedin.com/company/bhoc-therapeutics/"

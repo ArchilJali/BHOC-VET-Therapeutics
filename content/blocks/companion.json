@@ -1,0 +1,44 @@
+{
+  "id": "companion-animals",
+  "number": "3",
+  "title": "Companion Animals",
+  "subtitle": "From everyday veterinary care to critical oxygen-delivery needs.",
+  "supporting": "Veterinary teams. Healthier animals. Brighter tomorrows.",
+  "quote": {
+    "text": "We be of one blood, ye and I.",
+    "attribution": "Rudyard Kipling, The Jungle Book"
+  },
+  "signature": {
+    "src": "assets/companion-stethoscope-paw.webp",
+    "alt": "Stethoscope forming a heart around a paw print",
+    "width": 205,
+    "height": 228,
+    "text": "Supporting veterinary teams across species"
+  },
+  "image": {
+    "src": "assets/companion-animals-wide-v4.webp",
+    "alt": "Graphite panorama of companion and domestic animals with Rem, Evchika, a veterinary retriever and a full horse.",
+    "width": 2163,
+    "height": 727
+  },
+  "mobileImage": {
+    "src": "assets/companion-animals-wide-v4.webp",
+    "alt": "Graphite veterinary panorama with Rem, Evchika, a retriever and a full horse.",
+    "width": 2163,
+    "height": 727
+  },
+  "links": [
+    {
+      "label": "Veterinary Applications",
+      "href": "applications.html"
+    },
+    {
+      "label": "Evidence & Cases",
+      "href": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-index.html"
+    },
+    {
+      "label": "Explore Species",
+      "href": "#species"
+    }
+  ]
+}
