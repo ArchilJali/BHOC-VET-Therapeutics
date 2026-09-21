@@ -131,6 +131,11 @@ assert.match(news,/Vet Real-World Evidence & Cases/,'News identifies the canonic
 assert.match(news,new RegExp(`href="${re(vetRWE)}"`),'News routes directly to Vet RWE & Cases');
 assert.doesNotMatch(news,/evidence directory/i,'News no longer describes a duplicate evidence directory');
 assert.match(news,/BHOC reviews its Initiative in relation to the Kunming-Montreal Global Biodiversity Framework\./,'News contains the dated global biodiversity position');
+const frameworkStory=news.match(/<article class="[^"]*" id="bhoc-kunming-montreal-global-biodiversity-framework-2026">[\s\S]*?<\/article>/)?.[0]||'';
+assert.ok(frameworkStory,'News renders the global biodiversity position as a distinct story');
+assert.match(frameworkStory,/src="assets\/news\/kunming-montreal-global-biodiversity-framework\.png"/,'Framework story uses the supplied GBF visual identity instead of the BHOC Initiative mark');
+assert.match(frameworkStory,/alt="Kunming-Montreal Global Biodiversity Framework visual identity, shown for informational context only"/,'Framework visual has precise non-affiliation ALT text');
+assert.doesNotMatch(frameworkStory,/assets\/reference-initiative-mark\.webp/,'Framework story does not display the BHOC Initiative mark');
 const frameworkNewsLink=news.match(/<a class="story-link" href="\.\/initiative\/#global-biodiversity-framework"[^>]*>/)?.[0]||'';
 assert.ok(frameworkNewsLink,'News routes to the existing Initiative framework section');
 assert.doesNotMatch(frameworkNewsLink,/target="_blank"/,'Internal Initiative position link stays in the same tab');

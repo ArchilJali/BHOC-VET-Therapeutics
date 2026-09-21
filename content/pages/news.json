@@ -107,11 +107,15 @@
       "text": "BHOC has reviewed the goals and targets of the Kunming-Montreal Global Biodiversity Framework to understand where the BHOC Species & Biodiversity Protection Initiative may contribute within the conservation work already led by scientists, veterinarians, institutions, local communities and international initiatives worldwide. Relevant areas include species recovery, veterinary capacity, knowledge sharing and access to practical conservation technologies. This is an independent positioning statement. It does not represent a formal partnership with, participation in or endorsement by the Convention on Biological Diversity.",
       "why": "The purpose is not to claim that BHOC began this work. It is to define a focused contribution within the wider conservation ecosystem: oxygen-delivery science developed from biological principles created by nature, applied responsibly to animal health and species protection.",
       "image": {
-        "url": "assets/reference-initiative-mark.webp",
-        "alt": "BHOC Species and Biodiversity Protection Initiative emblem",
-        "width": 318,
-        "height": 317,
+        "url": "assets/news/kunming-montreal-global-biodiversity-framework.png",
+        "alt": "Kunming-Montreal Global Biodiversity Framework visual identity, shown for informational context only",
+        "width": 1096,
+        "height": 256,
         "variant": "logo"
+      },
+      "credit": {
+        "label": "Visual identity: Kunming-Montreal Global Biodiversity Framework · CBD",
+        "href": "https://www.cbd.int/gbf/goals"
       },
       "sourceName": "BHOC Species & Biodiversity Protection Initiative · Convention on Biological Diversity",
       "link": {
