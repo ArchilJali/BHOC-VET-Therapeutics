@@ -2,9 +2,9 @@
   "id": "veterinary-teams",
   "number": "1",
   "eyebrow": "BHOC Veterinary",
-  "heading": "For Veterinary Teams",
-  "lead": "Advancing oxygen delivery for better animal care.",
-  "text": "For veterinarians, veterinary clinics, animal hospitals and veterinary-industry partners working with dogs, cats and other veterinary species.",
+  "heading": "Precision Oxygen Delivery. Ready on the Shelf.",
+  "lead": "A shelf-ready oxygen-delivery product for veterinarians, designed for situations where donor blood is unavailable, delayed or difficult to provide.",
+  "text": "For dogs, cats, horses, wildlife and other species when oxygen delivery needs immediate support.",
   "rotationMs": 0,
   "slides": [
     {
@@ -19,10 +19,10 @@
     }
   ],
   "roles": [
-    "Veterinary doctors",
-    "Clinics & animal hospitals",
-    "Veterinary industry",
-    "Research partners"
+    "Anemia",
+    "Blood Loss",
+    "Ischemia",
+    "Hypoxia"
   ],
   "links": [
     {
