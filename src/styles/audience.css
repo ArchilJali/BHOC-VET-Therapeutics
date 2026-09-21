@@ -2,7 +2,9 @@
 .block-audience{display:grid;grid-template-columns:minmax(0,.92fr) minmax(420px,1.08fr);gap:clamp(18px,2.5vw,34px);align-items:center;padding:20px var(--gutter) 12px;border-bottom:1px solid var(--line);background:linear-gradient(90deg,#fff 0%,#fff 62%,#fff8f3 100%);overflow:hidden}
 .audience-copy{position:relative;z-index:2;max-width:650px}
 .block-audience .eyebrow{color:var(--accent-strong);font-weight:800;letter-spacing:.15em;text-transform:uppercase}
-.block-audience h2{margin-top:7px;color:var(--ink);font:400 clamp(38px,3.25vw,52px)/1 var(--font-display);letter-spacing:-.04em}\n.audience-heading-line{display:block}\n@media(min-width:901px){.audience-heading-line:first-child{white-space:nowrap}}
+.block-audience h2{margin-top:7px;color:var(--ink);font:400 clamp(38px,3.25vw,52px)/1 var(--font-display);letter-spacing:-.04em}
+.audience-heading-line{display:block}
+@media(min-width:901px){.audience-heading-line:first-child{white-space:nowrap}}
 .audience-lead{max-width:590px;margin-top:10px;color:var(--ink);font:400 clamp(19px,1.6vw,26px)/1.16 var(--font-display)}
 .audience-text{max-width:600px;margin-top:8px;color:var(--body);font-size:clamp(14px,.92vw,16px);line-height:1.45}
 .audience-links{display:flex;align-items:center;flex-wrap:wrap;gap:9px 17px;margin-top:16px}
