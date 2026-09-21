@@ -5,44 +5,128 @@
   "rotationMs": 18000,
   "slides": [
     {
-      "id":"gray-wolf","label":"Gray wolf","eyebrow":"The Science Bridge",
-      "heading":["Every species is different.","The need for oxygen is universal."],
-      "description":"BHOC is developing a next-generation oxygen-delivery platform for veterinary medicine, including companion, wildlife, exotic and endangered species.",
-      "action":{"href":"science.html#foundation","label":"Discover the Science"},
-      "photo":{"src":"assets/initiative/science-gray-wolf-usfws.webp","alt":"Gray wolf representing cross-species veterinary science and oxygen delivery","width":720,"height":540},
-      "comparison":{"src":"assets/initiative/bhoc-vs-rbc-400x-comparison.webp","alt":"BHOC versus red blood cell size comparison","width":1000,"height":730},
-      "benefits":["Designed to reduce dependence on red-cell blood-group matching.","Target profile includes 3+ year room-temperature shelf life."],
-      "closing":"Development objectives. Product- and species-specific evidence is required."
+      "id": "gray-wolf",
+      "label": "Gray wolf",
+      "eyebrow": "The Science Bridge",
+      "heading": [
+        "Every species is different.",
+        "The need for oxygen is universal."
+      ],
+      "description": "BHOC is developing a next-generation oxygen-delivery platform for veterinary medicine, including companion, wildlife, exotic and endangered species.",
+      "action": {
+        "href": "science.html#foundation",
+        "label": "Discover the Science"
+      },
+      "photo": {
+        "src": "assets/initiative/science-gray-wolf-usfws.webp",
+        "alt": "Gray wolf representing cross-species veterinary science and oxygen delivery",
+        "width": 720,
+        "height": 540
+      },
+      "comparison": {
+        "src": "assets/initiative/bhoc-vs-rbc-400x-comparison.webp",
+        "alt": "BHOC versus red blood cell size comparison",
+        "width": 1000,
+        "height": 730
+      },
+      "benefits": [
+        "Designed to reduce dependence on red-cell blood-group matching.",
+        "Target profile includes 3+ year room-temperature shelf life."
+      ],
+      "closing": "Development objectives. Product- and species-specific evidence is required."
     },
     {
-      "id":"sumatran-tiger","label":"Sumatran tiger","eyebrow":"The Science Bridge",
-      "heading":["Every species is different.","The need for oxygen is universal."],
-      "description":"The animal changes. The biological requirement for effective oxygen delivery does not.",
-      "action":{"href":"science.html#foundation","label":"Discover the Science"},
-      "photo":{"src":"assets/initiative/challenge-sumatran-tiger-usfws.webp","alt":"Sumatran tiger representing veterinary and conservation medicine","width":960,"height":960},
-      "comparison":{"src":"assets/initiative/bhoc-vs-rbc-400x-comparison.webp","alt":"BHOC versus red blood cell size comparison","width":1000,"height":730},
-      "benefits":["Designed to reduce dependence on red-cell blood-group matching.","Target profile includes 3+ year room-temperature shelf life."],
-      "closing":"Development objectives. Product- and species-specific evidence is required."
+      "id": "sumatran-tiger",
+      "label": "Sumatran tiger",
+      "eyebrow": "The Science Bridge",
+      "heading": [
+        "Every species is different.",
+        "The need for oxygen is universal."
+      ],
+      "description": "BHOC is developing a next-generation oxygen-delivery platform for veterinary medicine, including companion, wildlife, exotic and endangered species.",
+      "action": {
+        "href": "science.html#foundation",
+        "label": "Discover the Science"
+      },
+      "photo": {
+        "src": "assets/initiative/challenge-sumatran-tiger-usfws.webp",
+        "alt": "Sumatran tiger representing veterinary and conservation medicine",
+        "width": 960,
+        "height": 960
+      },
+      "comparison": {
+        "src": "assets/initiative/bhoc-vs-rbc-400x-comparison.webp",
+        "alt": "BHOC versus red blood cell size comparison",
+        "width": 1000,
+        "height": 730
+      },
+      "benefits": [
+        "Designed to reduce dependence on red-cell blood-group matching.",
+        "Target profile includes 3+ year room-temperature shelf life."
+      ],
+      "closing": "Development objectives. Product- and species-specific evidence is required."
     },
     {
-      "id":"hawksbill-turtle","label":"Marine turtle","eyebrow":"The Science Bridge",
-      "heading":["Every species is different.","The need for oxygen is universal."],
-      "description":"BHOC Veterinary connects oxygen-delivery science with animal health across terrestrial and marine species.",
-      "action":{"href":"science.html#foundation","label":"Discover the Science"},
-      "photo":{"src":"assets/initiative/challenge-hawksbill-turtle-noaa.webp","alt":"Hawksbill sea turtle representing marine veterinary and conservation medicine","width":960,"height":960},
-      "comparison":{"src":"assets/initiative/bhoc-vs-rbc-400x-comparison.webp","alt":"BHOC versus red blood cell size comparison","width":1000,"height":730},
-      "benefits":["Designed to reduce dependence on red-cell blood-group matching.","Target profile includes 3+ year room-temperature shelf life."],
-      "closing":"Development objectives. Product- and species-specific evidence is required."
+      "id": "hawksbill-turtle",
+      "label": "Marine turtle",
+      "eyebrow": "The Science Bridge",
+      "heading": [
+        "Every species is different.",
+        "The need for oxygen is universal."
+      ],
+      "description": "BHOC is developing a next-generation oxygen-delivery platform for veterinary medicine, including companion, wildlife, exotic and endangered species.",
+      "action": {
+        "href": "science.html#foundation",
+        "label": "Discover the Science"
+      },
+      "photo": {
+        "src": "assets/initiative/challenge-hawksbill-turtle-noaa.webp",
+        "alt": "Hawksbill sea turtle representing marine veterinary and conservation medicine",
+        "width": 960,
+        "height": 960
+      },
+      "comparison": {
+        "src": "assets/initiative/bhoc-vs-rbc-400x-comparison.webp",
+        "alt": "BHOC versus red blood cell size comparison",
+        "width": 1000,
+        "height": 730
+      },
+      "benefits": [
+        "Designed to reduce dependence on red-cell blood-group matching.",
+        "Target profile includes 3+ year room-temperature shelf life."
+      ],
+      "closing": "Development objectives. Product- and species-specific evidence is required."
     },
     {
-      "id":"african-elephant","label":"African elephant","eyebrow":"The Science Bridge",
-      "heading":["Every species is different.","The need for oxygen is universal."],
-      "description":"A cross-species veterinary platform must be studied species by species while preserving the same core oxygen-delivery question.",
-      "action":{"href":"science.html#foundation","label":"Discover the Science"},
-      "photo":{"src":"assets/initiative/challenge-african-elephant-usfws.webp","alt":"African elephant representing large-animal and wildlife medicine","width":960,"height":960},
-      "comparison":{"src":"assets/initiative/bhoc-vs-rbc-400x-comparison.webp","alt":"BHOC versus red blood cell size comparison","width":1000,"height":730},
-      "benefits":["Designed to reduce dependence on red-cell blood-group matching.","Target profile includes 3+ year room-temperature shelf life."],
-      "closing":"Development objectives. Product- and species-specific evidence is required."
+      "id": "african-elephant",
+      "label": "African elephant",
+      "eyebrow": "The Science Bridge",
+      "heading": [
+        "Every species is different.",
+        "The need for oxygen is universal."
+      ],
+      "description": "BHOC is developing a next-generation oxygen-delivery platform for veterinary medicine, including companion, wildlife, exotic and endangered species.",
+      "action": {
+        "href": "science.html#foundation",
+        "label": "Discover the Science"
+      },
+      "photo": {
+        "src": "assets/initiative/challenge-african-elephant-usfws.webp",
+        "alt": "African elephant representing large-animal and wildlife medicine",
+        "width": 960,
+        "height": 960
+      },
+      "comparison": {
+        "src": "assets/initiative/bhoc-vs-rbc-400x-comparison.webp",
+        "alt": "BHOC versus red blood cell size comparison",
+        "width": 1000,
+        "height": 730
+      },
+      "benefits": [
+        "Designed to reduce dependence on red-cell blood-group matching.",
+        "Target profile includes 3+ year room-temperature shelf life."
+      ],
+      "closing": "Development objectives. Product- and species-specific evidence is required."
     }
   ]
 }
