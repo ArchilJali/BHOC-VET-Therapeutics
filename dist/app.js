@@ -214,7 +214,10 @@
   function openHash(){if(document.body.dataset.page==='home'&&legacyPages[location.hash]){location.replace(legacyPages[location.hash]);return;}if(hashes[location.hash])openDialog(hashes[location.hash]);else if(location.hash.startsWith('#species-'))showSpecies(location.hash.slice(9));}
   openHash();window.addEventListener('hashchange',openHash);
   const contactForm=$('.contact-form');
-  contactForm?.addEventListener('submit',e=>{e.preventDefault();const form=new FormData(contactForm),email=contactForm.dataset.contactEmail,subject=`BHOC Veterinary enquiry: ${form.get('area')||'General'}`,body=[`Name: ${form.get('name')||''}`,`Email: ${form.get('email')||''}`,`Organisation: ${form.get('organisation')||''}`,`Area: ${form.get('area')||''}`,'',String(form.get('message')||'')].join('\n');$('.form-status').textContent='Your email application is opening. Review the message and press Send.';location.href=`mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;});
+  if(contactForm&&new URLSearchParams(location.search).get('sent')==='1'){
+    const status=$('.form-status');
+    if(status)status.textContent='Thank you. Your message has been sent.';
+  }
   if('IntersectionObserver'in window&&document.body.dataset.page==='home'){const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting)$$('a',nav).forEach(a=>a.classList.toggle('active',(a.getAttribute('href')||'').endsWith('#'+entry.target.id)));}),{rootMargin:'-15% 0px -55% 0px'});$$('main>section[id]').forEach(s=>observer.observe(s));}
 })();
 
