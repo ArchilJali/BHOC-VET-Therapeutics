@@ -20,9 +20,9 @@
   ],
   "roles": [
     "Anemia",
-    "Blood Loss",
     "Ischemia",
-    "Hypoxia"
+    "Hypoxia",
+    "Blood Loss"
   ],
   "links": [
     {
