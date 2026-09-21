@@ -122,11 +122,6 @@
         "label": "Vet Real-World Evidence & Cases",
         "href": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-index.html",
         "icon": "book"
-      },
-      {
-        "label": "Contact",
-        "href": "contact.html",
-        "icon": "mail"
       }
     ],
     "groups": [
@@ -198,7 +193,7 @@
             "href": "news.html"
           },
           {
-            "label": "Contact",
+            "label": "Contact BHOC Veterinary",
             "href": "contact.html"
           }
         ]
