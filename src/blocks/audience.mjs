@@ -5,7 +5,7 @@ export default d=>{const multiple=d.slides.length>1;const heading=Array.isArray(
     <p class="eyebrow">${esc(d.eyebrow)}</p>
     <h2 id="${esc(d.id)}-heading">${heading}</h2>
     <p class="audience-lead">${esc(d.lead)}</p>
-    <p class="audience-text">${esc(d.text)}</p>
+    ${d.text?`<p class="audience-text">${esc(d.text)}</p>`:""}
     <nav class="audience-links" aria-label="Veterinary routes">${d.links.map((link,index)=>`<a class="${index===0?'button':'audience-text-link'}" ${attrs(link)}>${esc(link.label)} ${icon('arrow')}</a>`).join('')}</nav>
     <div class="audience-roles" aria-label="Who BHOC Veterinary is for">${d.roles.map(role=>`<span>${esc(role)}</span>`).join('')}</div>
   </div>
