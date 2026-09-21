@@ -427,6 +427,27 @@
 .contact-email-link { margin-top: 18px; color: #fff; overflow-wrap: anywhere; font-size: 13px; text-decoration: underline; text-underline-offset: 4px; }
 .heart-fill { fill: none; }
 
+
+.contact-success {
+  padding: 24px 2px 4px;
+}
+.contact-success h2 {
+  margin: 8px 0 10px;
+  color: var(--ink);
+  font: 400 clamp(30px, 3vw, 40px)/1.05 var(--font-display);
+}
+.contact-success p {
+  max-width: 560px;
+  margin-bottom: 20px;
+  color: var(--body);
+  font-size: 15px;
+  line-height: 1.55;
+}
+.contact-submit-row .button:disabled {
+  opacity: .55;
+  cursor: wait;
+}
+
 /* Product */
 .product-definition {
   display: grid;
