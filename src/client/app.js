@@ -214,9 +214,34 @@
   function openHash(){if(document.body.dataset.page==='home'&&legacyPages[location.hash]){location.replace(legacyPages[location.hash]);return;}if(hashes[location.hash])openDialog(hashes[location.hash]);else if(location.hash.startsWith('#species-'))showSpecies(location.hash.slice(9));}
   openHash();window.addEventListener('hashchange',openHash);
   const contactForm=$('.contact-form');
-  if(contactForm&&new URLSearchParams(location.search).get('sent')==='1'){
-    const status=$('.form-status');
-    if(status)status.textContent='Thank you. Your message has been sent.';
+  if(contactForm){
+    const status=$('.form-status'),success=$('.contact-success'),submitButton=$('button[type="submit"]',contactForm);
+    contactForm.addEventListener('submit',async e=>{
+      e.preventDefault();
+      if(!contactForm.reportValidity())return;
+      const honey=$('input[name="_honey"]',contactForm);
+      if(honey&&honey.value)return;
+      if(status)status.textContent='Sending...';
+      if(submitButton)submitButton.disabled=true;
+      try{
+        const form=new FormData(contactForm),payload={};
+        form.forEach((value,key)=>{if(key!=='_honey')payload[key]=value;});
+        const response=await fetch(contactForm.dataset.formEndpoint,{
+          method:'POST',
+          headers:{'Content-Type':'application/json','Accept':'application/json'},
+          body:JSON.stringify(payload)
+        });
+        const result=await response.json().catch(()=>({}));
+        if(!response.ok||result.success===false)throw new Error(result.message||'Submission failed');
+        contactForm.reset();
+        contactForm.hidden=true;
+        if(success)success.hidden=false;
+      }catch(error){
+        if(status)status.textContent='Your message could not be sent. Please try again or use the direct email option.';
+      }finally{
+        if(submitButton)submitButton.disabled=false;
+      }
+    });
   }
   if('IntersectionObserver'in window&&document.body.dataset.page==='home'){const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting)$$('a',nav).forEach(a=>a.classList.toggle('active',(a.getAttribute('href')||'').endsWith('#'+entry.target.id)));}),{rootMargin:'-15% 0px -55% 0px'});$$('main>section[id]').forEach(s=>observer.observe(s));}
 })();
