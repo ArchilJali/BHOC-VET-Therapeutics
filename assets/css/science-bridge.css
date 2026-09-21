@@ -1,6 +1,6 @@
 .block-science-bridge{overflow:hidden;border-bottom:1px solid var(--line);background:#f7f5f3}
 .science-bridge-carousel{position:relative;max-width:1460px;margin:0 auto}
-.science-bridge-slide{display:grid;grid-template-columns:38% 35% 27%;width:100%;min-height:370px;max-height:430px;overflow:hidden}
+.science-bridge-slide{display:grid;grid-template-columns:38% 35% 27%;width:100%;height:400px;min-height:400px;max-height:400px;overflow:hidden}
 .science-bridge-copy{display:flex;flex-direction:column;justify-content:center;min-width:0;padding:clamp(24px,3vw,46px) clamp(22px,2.6vw,44px);background:#fff7f2}
 .science-bridge-eyebrow{margin-bottom:10px;color:var(--accent-strong);font-size:clamp(11px,.8vw,15px);font-weight:800;letter-spacing:.22em;text-transform:uppercase}
 .science-bridge-copy h2{color:#585858;font-size:clamp(32px,2.6vw,48px);line-height:1.02;letter-spacing:-.04em}
@@ -21,6 +21,6 @@
 .science-bridge-dots{display:flex;gap:0}.science-bridge-dots button{width:21px}
 .science-bridge-dots button:before{width:6px;height:6px;border-radius:50%;background:#ffffff73;content:''}
 .science-bridge-dots button[aria-current="true"]:before{background:#fff}
-@media(max-width:1050px){.science-bridge-slide{grid-template-columns:56% 44%;min-height:0;max-height:none}.science-bridge-copy{grid-column:1/-1;padding:34px var(--gutter)}.science-bridge-photo{aspect-ratio:4/3}.science-bridge-side{grid-template-rows:auto auto}.science-bridge-comparison{aspect-ratio:4/3}.science-bridge-claims{min-height:170px}}
+@media(max-width:1050px){.science-bridge-slide{grid-template-columns:56% 44%;height:auto;min-height:0;max-height:none}.science-bridge-copy{grid-column:1/-1;padding:34px var(--gutter)}.science-bridge-photo{aspect-ratio:4/3}.science-bridge-side{grid-template-rows:auto auto}.science-bridge-comparison{aspect-ratio:4/3}.science-bridge-claims{min-height:170px}}
 @media(max-width:650px){.science-bridge-slide{display:block}.science-bridge-copy{padding:30px 22px 34px}.science-bridge-copy h2{font-size:clamp(34px,9.5vw,44px)}.science-bridge-photo{aspect-ratio:4/3}.science-bridge-comparison{aspect-ratio:4/3}.science-bridge-claims{min-height:170px;padding:24px 22px}.science-bridge-controls{bottom:8px}}
 @media(prefers-reduced-motion:reduce){.science-bridge-carousel{scroll-behavior:auto}}
