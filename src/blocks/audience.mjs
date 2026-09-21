@@ -1,9 +1,9 @@
 import {esc,attrs,icon,img,section} from '../lib/html.mjs';
 
-export default d=>{const multiple=d.slides.length>1;return section(d,'audience',`
+export default d=>{const multiple=d.slides.length>1;const heading=Array.isArray(d.headingLines)&&d.headingLines.length?d.headingLines.map(line=>`<span class="audience-heading-line">${esc(line)}</span>`).join(''):esc(d.heading);return section(d,'audience',`
   <div class="audience-copy">
     <p class="eyebrow">${esc(d.eyebrow)}</p>
-    <h2 id="${esc(d.id)}-heading">${esc(d.heading)}</h2>
+    <h2 id="${esc(d.id)}-heading">${heading}</h2>
     <p class="audience-lead">${esc(d.lead)}</p>
     <p class="audience-text">${esc(d.text)}</p>
     <nav class="audience-links" aria-label="Veterinary routes">${d.links.map((link,index)=>`<a class="${index===0?'button':'audience-text-link'}" ${attrs(link)}>${esc(link.label)} ${icon('arrow')}</a>`).join('')}</nav>
