@@ -4,7 +4,7 @@ export default page=>`<main id="main" class="subpage-main contact-page">
   <section class="page-hero contact-page-hero" aria-labelledby="contact-page-heading"><div><span class="page-eyebrow">${esc(page.eyebrow)}</span><h1 id="contact-page-heading">${esc(page.heading)}</h1><p>${esc(page.lead)}</p></div></section>
   <section class="contact-layout" aria-label="Contact options">
     <div class="contact-form-panel"><span class="option-number">01</span><h2>${esc(page.form.title)}</h2>
-      <form class="contact-form" action="https://formsubmit.co/${esc(page.email)}" method="POST" accept-charset="UTF-8">
+      <form class="contact-form" data-contact-email="${esc(page.email)}" action="https://formsubmit.co/${esc(page.email)}" method="POST" accept-charset="UTF-8">
         <input type="hidden" name="_subject" value="New BHOC Veterinary website enquiry">
         <input type="hidden" name="_next" value="https://bhocvet.com/contact.html?sent=1">
         <input type="hidden" name="_captcha" value="false">
