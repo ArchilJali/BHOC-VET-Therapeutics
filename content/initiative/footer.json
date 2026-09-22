@@ -17,34 +17,79 @@
     {
       "title": "Initiative",
       "links": [
-        {"label": "Our Mission", "href": "#mission"},
-        {"label": "Focus Areas", "href": "#focus"},
-        {"label": "Science Bridge", "href": "#science"}
+        {
+          "label": "Our Mission",
+          "href": "#mission"
+        },
+        {
+          "label": "Focus Areas",
+          "href": "#focus"
+        },
+        {
+          "label": "Science Bridge",
+          "href": "#science"
+        }
       ]
     },
     {
       "title": "Conservation",
       "links": [
-        {"label": "IUCN Red List", "href": "https://www.iucnredlist.org/"},
-        {"label": "Catalogue of Life", "href": "https://www.catalogueoflife.org/"},
-        {"label": "Species+", "href": "https://speciesplus.net/"}
+        {
+          "label": "IUCN Red List",
+          "href": "https://www.iucnredlist.org/"
+        },
+        {
+          "label": "Catalogue of Life",
+          "href": "https://www.catalogueoflife.org/"
+        },
+        {
+          "label": "Species+",
+          "href": "https://speciesplus.net/"
+        }
       ]
     },
     {
       "title": "BHOC Network",
       "links": [
-        {"label": "BHOC Veterinary", "href": "../index.html"},
-        {"label": "BHOC Therapeutics", "href": "https://bhoctherapeutics.com/"},
-        {"label": "Vet Real-World Evidence & Cases", "href": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-index.html"}
+        {
+          "label": "BHOC Veterinary",
+          "href": "../index.html"
+        },
+        {
+          "label": "BHOC Therapeutics",
+          "href": "https://bhoctherapeutics.com/"
+        },
+        {
+          "label": "Vet Real-World Evidence & Cases",
+          "href": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-index.html"
+        }
       ]
     },
     {
       "title": "Connect",
       "links": [
-        {"label": "News & Intelligence", "href": "../news.html"},
-        {"label": "Search veterinary publications", "href": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-search.html"},
-        {"label": "Contact", "href": "mailto:info@bhoctherapeutics.com"},
-        {"label": "LinkedIn", "href": "https://www.linkedin.com/company/bhoc-therapeutics/"}
+        {
+          "label": "News & Intelligence",
+          "href": "../news.html"
+        },
+        {
+          "label": "Search veterinary publications",
+          "href": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-search.html"
+        },
+        {
+          "label": "Contact",
+          "href": "mailto:info@bhoctherapeutics.com"
+        },
+        {
+          "label": "LinkedIn",
+          "href": "https://www.linkedin.com/company/bhoc-therapeutics/",
+          "icon": "linkedin"
+        },
+        {
+          "label": "YouTube @BHOCTherapeutics",
+          "href": "https://www.youtube.com/@BHOCTherapeutics",
+          "icon": "youtube"
+        }
       ]
     }
   ],
