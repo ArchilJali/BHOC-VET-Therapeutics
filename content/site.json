@@ -121,7 +121,8 @@
       },
       {
         "label": "YouTube @BHOCTherapeutics",
-        "href": "https://www.youtube.com/@BHOCTherapeutics"
+        "href": "https://www.youtube.com/@BHOCTherapeutics",
+        "icon": "youtube"
       },
       {
         "label": "Vet Real-World Evidence & Cases",
