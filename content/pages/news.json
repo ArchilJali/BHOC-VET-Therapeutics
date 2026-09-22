@@ -77,13 +77,18 @@
       "Bolivian Yungas",
       "nondomestic felid blood type",
       "wild felid transfusion",
-      "wildlife oxygen delivery"
+      "wildlife oxygen delivery",
+      "Oxyglobin case reports",
+      "Oxyglobin dogs",
+      "canine anemia",
+      "hemoglobin glutamer-200 bovine",
+      "veterinary oxygen therapeutic"
     ]
   },
   "eyebrow": "BHOC Initiative · Global Intelligence",
   "heading": "Wildlife & Species Conservation Intelligence.",
   "lead": "Tracking the people, science, funding and programs working to protect wildlife, restore endangered species and strengthen conservation medicine worldwide.",
-  "updated": "20 Sep 2026",
+  "updated": "22 Sep 2026",
   "seoContext": {
     "eyebrow": "BHOC Veterinary context",
     "heading": "Animal-health intelligence, separate from product claims.",
@@ -97,6 +102,42 @@
   },
   "feedNote": "BHOC Initiative Scout applies a high publication threshold and screens every candidate for duplication. New items are added only for exceptional rescue or recovery outcomes, globally significant conservation initiatives, substantive veterinary evidence milestones or other material developments; routine news is excluded.",
   "stories": [
+    {
+      "id": "oxyglobin-885-case-reports-canine-anemia-archive",
+      "date": "2026-09-22",
+      "dateLabel": "22 Sep 2026 · Historical evidence review",
+      "region": "Canine · Historical veterinary evidence",
+      "category": "Source archive · Real-world evidence · Evidence limits",
+      "title": "What 885 historical Oxyglobin case reports show about canine anemia — and what they do not.",
+      "text": "Between December 1998 and August 1999, Biopure collected 885 veterinary reports through a Free Replacement Bag Offer. The 2000 booklet prints 146 selected canine case vignettes spanning blood loss, hemolysis and ineffective erythropoiesis. Across those clinical settings, the recurring pattern was oxygen-carrying support used as a bridge while the underlying cause was treated, surgery was performed, bleeding was controlled, compatible blood was prepared or endogenous erythropoiesis recovered. This is a manufacturer-collected descriptive archive, not a controlled efficacy trial.",
+      "why": "The archive maps clinical situations and operational needs; the official FDA field trial answers a different controlled question. Blood is a system. Oxygen delivery is a function. Dog evidence remains dog evidence.",
+      "sourceName": "Biopure Corporation · Oxyglobin Solution - Case Listing Book II · October 2000",
+      "link": {
+        "label": "Read the critical evidence review",
+        "href": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-archive-Oxyglobin-Case-Listing-Book-II.html"
+      },
+      "contextLink": {
+        "label": "Separate controlled FDA record",
+        "href": "https://animaldrugsatfda.fda.gov/adafda/app/search/public/document/downloadFoi/3700"
+      },
+      "keywords": [
+        "Oxyglobin case reports",
+        "Oxyglobin dogs",
+        "canine anemia",
+        "canine anaemia",
+        "hemoglobin glutamer-200 bovine",
+        "veterinary real-world evidence",
+        "veterinary hemoglobin-based oxygen carrier",
+        "HBOC",
+        "oxygen therapeutic",
+        "blood loss",
+        "hemolysis",
+        "ineffective erythropoiesis",
+        "bridge to treatment",
+        "functional oxygen delivery",
+        "BHOC Veterinary"
+      ]
+    },
     {
       "id": "bhoc-kunming-montreal-global-biodiversity-framework-2026",
       "date": "2026-09-20",
