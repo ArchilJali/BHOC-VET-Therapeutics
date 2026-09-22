@@ -1,6 +1,7 @@
 import {esc,initiativeImage,linkAttrs,lines} from './lib.mjs';
 
 const safeJSON=value=>JSON.stringify(value).replace(/</g,'\\u003c');
+const socialIcon=name=>name==='linkedin'?'<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M5.3 7.9H1.8V19h3.5V7.9ZM3.55 2.5A2.04 2.04 0 1 0 3.55 6.58 2.04 2.04 0 0 0 3.55 2.5ZM19 12.65c0-3.35-1.79-4.91-4.18-4.91-1.93 0-2.79 1.06-3.27 1.8V7.9H8.06V19h3.49v-5.5c0-1.45.27-2.86 2.08-2.86 1.78 0 1.8 1.67 1.8 2.96V19H19v-6.35Z"/></svg>':name==='youtube'?'<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="5.5" width="19" height="13" rx="4" fill="currentColor"/><path d="m10 9 5.5 3-5.5 3Z" fill="white"/></svg>':'';
 
 export function renderHead(site,stylesVersion){
   const image=site.openGraph.image;
@@ -92,7 +93,7 @@ export function renderHeader(header){
 }
 
 export function renderFooter(footer){
-  const groups=footer.groups.map(group=>'<div class="footer-group"><h2>'+esc(group.title)+'</h2>'+group.links.map(item=>'<a '+linkAttrs(item)+'>'+esc(item.label)+'</a>').join('')+'</div>').join('');
+  const groups=footer.groups.map(group=>'<div class="footer-group"><h2>'+esc(group.title)+'</h2>'+group.links.map(item=>'<a class="'+(item.icon?'footer-social-link footer-social-'+esc(item.icon):'')+'" '+linkAttrs(item)+'>'+(item.icon?socialIcon(item.icon):'')+'<span>'+esc(item.label)+'</span></a>').join('')+'</div>').join('');
   const formatDate=iso=>{const [year,month,day]=iso.split('-');return day+' '+['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'][Number(month)-1]+' '+year};
   return [
     '<footer class="site-footer">',
