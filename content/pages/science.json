@@ -38,6 +38,33 @@
       "Hemoglobin-based oxygen carriers, or HBOCs, investigate a cell-free approach to oxygen transport. BHOC builds on this field as a Biological Hemoglobin Oxygen Carrier development platform. The objective is complementary oxygen-delivery support, not replacement of the wider functions of blood."
     ]
   },
+  "functionalDelivery": {
+    "eyebrow": "Functional oxygen delivery",
+    "title": "PCV is important. Functional oxygen delivery requires more.",
+    "paragraphs": [
+      "Packed cell volume (PCV) measures the fraction of blood occupied by red cells. Cell-free plasma hemoglobin can add oxygen-carrying capacity without increasing red-cell volume, so PCV alone does not describe the whole oxygen-delivery system after an HBOC infusion.",
+      "Total hemoglobin, circulation, oxygen affinity and unloading, blood flow, tissue demand and clinical physiology all matter. P50 and the full oxygen dissociation curve also change with pH, carbon dioxide, temperature and the cell-free environment."
+    ],
+    "points": [
+      {
+        "title": "Measure the right compartment",
+        "text": "PCV describes red-cell volume; it does not count plasma hemoglobin as red cells."
+      },
+      {
+        "title": "Connect carriage to delivery",
+        "text": "Oxygen content, circulation, affinity, unloading and tissue extraction determine functional delivery together."
+      },
+      {
+        "title": "Keep evidence product-specific",
+        "text": "Historical canine observations generate research questions; safety and tissue benefit require controlled product-specific evidence."
+      }
+    ],
+    "boundary": "This interpretation comes from historical canine Oxyglobin material and general oxygen physiology. It is not a claim of BHOC efficacy or a reason to disregard PCV.",
+    "link": {
+      "label": "Open the historical canine archive review",
+      "href": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-archive-Oxyglobin-Case-Listing-Book-II.html"
+    }
+  },
   "nature": {
     "title": "Nature's bioengineering",
     "text": "Most vertebrates use hemoglobin, with important exceptions such as Antarctic icefish. Conserved chemistry is a scientific starting point; species-specific physiology, dosing, safety and efficacy still require their own evidence."
@@ -64,6 +91,11 @@
     }
   },
   "references": [
+    {
+      "label": "Oxyglobin Case Listing Book II: critical historical canine archive review",
+      "detail": "Manufacturer-collected descriptive evidence, source limitations, treatment-sequence analysis and the separate FDA controlled record.",
+      "href": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-archive-Oxyglobin-Case-Listing-Book-II.html"
+    },
     {
       "label": "BHOC research concept: hemoglobin size, RBC compartmentalization and vascular control",
       "detail": "Author hypothesis connecting molecular scale, nitric oxide biology, vascular response and tissue oxygen delivery.",
