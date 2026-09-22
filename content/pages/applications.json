@@ -59,6 +59,34 @@
       "href": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-FDA-registry.html"
     }
   },
+  "historicalMap": {
+    "eyebrow": "Historical canine use map",
+    "title": "What historical canine use mapped out.",
+    "text": "Biopure's historical booklet reports 885 manufacturer-collected veterinary submissions from 1998-1999 and prints 146 selected canine case vignettes. It is a descriptive dog-only archive, separate from the controlled FDA trial.",
+    "cards": [
+      {
+        "title": "Emergency blood loss and trauma",
+        "text": "Historically reported as immediate oxygen-carrying support while bleeding control, diagnostics or surgery addressed the cause."
+      },
+      {
+        "title": "Perioperative anemia and hemorrhage",
+        "text": "Historically reported before, during or after surgery when rapid oxygen-delivery support was clinically important."
+      },
+      {
+        "title": "Hemolysis and regenerative anemia",
+        "text": "Historically reported as a bridge while disease-specific treatment acted; the archive also records deaths and later complications."
+      },
+      {
+        "title": "Ineffective erythropoiesis",
+        "text": "Historically reported in renal, marrow and neoplastic disease, with mixed and often short follow-up."
+      }
+    ],
+    "boundary": "Historical manufacturer-collected reports. Canine, product-specific and descriptive. They do not establish BHOC efficacy, approval in another species or current Oxyglobin availability.",
+    "link": {
+      "label": "Read the critical archive review",
+      "href": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-archive-Oxyglobin-Case-Listing-Book-II.html"
+    }
+  },
   "evidence": {
     "eyebrow": "Evidence navigation",
     "title": "Continue into the veterinary evidence.",
