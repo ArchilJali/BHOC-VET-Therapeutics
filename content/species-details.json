@@ -3,9 +3,9 @@
     "name": "Dog",
     "sub": "Companion animals. Comparative biology",
     "text": "Dogs have multiple blood group antigens. DEA 1 is a key blood group in canine transfusion medicine, alongside other antigen systems. Blood typing and compatibility testing support donor selection.",
-    "context": "Oxyglobin has an FDA approval history for anemia in dogs. This product-specific precedent helps frame veterinary oxygen carrier research.",
-    "source": "https://eclinpath.com/hemostasis/transfusion-medicine/blood-types/",
-    "sourceLabel": "Cornell eClinPath: blood types"
+    "context": "Oxyglobin provides a dog-specific historical precedent: 885 manufacturer-collected veterinary reports from 1998-1999 and 146 printed case vignettes. This descriptive archive is separate from the controlled FDA trial and does not establish BHOC efficacy or use in other species.",
+    "source": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-archive-Oxyglobin-Case-Listing-Book-II.html",
+    "sourceLabel": "Oxyglobin historical canine evidence archive"
   },
   "cat": {
     "name": "Cat",
