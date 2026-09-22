@@ -108,10 +108,20 @@
       "dateLabel": "22 Sep 2026 · Historical evidence review",
       "region": "Canine · Historical veterinary evidence",
       "category": "Source archive · Real-world evidence · Evidence limits",
-      "title": "What 885 historical Oxyglobin case reports show about canine anemia — and what they do not.",
-      "text": "Between December 1998 and August 1999, Biopure collected 885 veterinary reports through a Free Replacement Bag Offer. The 2000 booklet prints 146 selected canine case vignettes spanning blood loss, hemolysis and ineffective erythropoiesis. Across those clinical settings, the recurring pattern was oxygen-carrying support used as a bridge while the underlying cause was treated, surgery was performed, bleeding was controlled, compatible blood was prepared or endogenous erythropoiesis recovered. This is a manufacturer-collected descriptive archive, not a controlled efficacy trial.",
-      "why": "The archive maps clinical situations and operational needs; the official FDA field trial answers a different controlled question. Blood is a system. Oxygen delivery is a function. Dog evidence remains dog evidence.",
-      "sourceName": "Biopure Corporation · Oxyglobin Solution - Case Listing Book II · October 2000",
+    "title": "What 885 historical Oxyglobin case reports show about canine anemia — and what they do not.",
+    "text": "Between December 1998 and August 1999, Biopure collected 885 veterinary reports through a Free Replacement Bag Offer. The 2000 booklet prints 146 selected canine case vignettes spanning blood loss, hemolysis and ineffective erythropoiesis. Across those clinical settings, the recurring pattern was oxygen-carrying support used as a bridge while the underlying cause was treated, surgery was performed, bleeding was controlled, compatible blood was prepared or endogenous erythropoiesis recovered. This is a manufacturer-collected descriptive archive, not a controlled efficacy trial.",
+    "why": "The archive maps clinical situations and operational needs; the official FDA field trial answers a different controlled question. Blood is a system. Oxygen delivery is a function. Dog evidence remains dog evidence.",
+    "image": {
+      "url": "assets/news/oxyglobin-case-listing-book-ii-885-canine-reports-historical-evidence.png",
+      "alt": "Cover of Biopure's 2000 Oxyglobin Solution Case Listing Book II beside a BHOC Veterinary summary of 885 historical reports and 146 selected canine case vignettes",
+      "width": 1200,
+      "height": 630
+    },
+    "credit": {
+      "label": "Historical source cover: Biopure Corporation · Oxyglobin Solution - Case Listing Book II · October 2000",
+      "href": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-archive-Oxyglobin-Case-Listing-Book-II.html"
+    },
+    "sourceName": "Biopure Corporation · Oxyglobin Solution - Case Listing Book II · October 2000",
       "link": {
         "label": "Read the critical evidence review",
         "href": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-archive-Oxyglobin-Case-Listing-Book-II.html"
