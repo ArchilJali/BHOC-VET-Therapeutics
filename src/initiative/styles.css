@@ -2506,3 +2506,5 @@ h2 {
 @media(max-width:720px){
   .hero-audience{font-size:.8rem}
 }
+
+.footer-social-link{display:flex!important;align-items:center;gap:7px}.footer-social-link svg{width:17px;height:17px;flex:0 0 17px}.footer-social-link.footer-social-linkedin{color:#0a66c2}.footer-social-link.footer-social-youtube{color:#ff0000}
