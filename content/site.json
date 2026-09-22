@@ -100,7 +100,8 @@
     "version": "26.09.22"
   },
   "sameAs": [
-    "https://www.linkedin.com/company/bhoc-therapeutics/"
+    "https://www.linkedin.com/company/bhoc-therapeutics/",
+    "https://www.youtube.com/@BHOCTherapeutics"
   ],
   "socialImage": {
     "src": "assets/bhoc-initiative-land-social.jpg",
@@ -117,6 +118,10 @@
         "label": "LinkedIn",
         "href": "https://www.linkedin.com/company/bhoc-therapeutics/",
         "icon": "linkedin"
+      },
+      {
+        "label": "YouTube @BHOCTherapeutics",
+        "href": "https://www.youtube.com/@BHOCTherapeutics"
       },
       {
         "label": "Vet Real-World Evidence & Cases",
