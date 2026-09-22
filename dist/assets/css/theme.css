@@ -294,7 +294,13 @@ section { scroll-margin-top: 24px; }
 
 .footer-links a:hover { color: var(--accent-soft); text-decoration: none; }
 .footer-links svg { width: 18px; height: 18px; }
-.footer-publication { line-height: 1.5; }
+.footer-publication { display:flex; align-items:center; flex-wrap:wrap; gap:6px; line-height:1.5; }
+.footer-inline-socials { display:inline-flex; align-items:center; gap:7px; margin-left:4px; vertical-align:middle; }
+.footer-inline-social { display:inline-flex; align-items:center; justify-content:center; width:29px; height:29px; border:1px solid currentColor; border-radius:8px; text-decoration:none; }
+.footer-inline-social:hover { opacity:.82; transform:translateY(-1px); text-decoration:none; }
+.footer-inline-social svg { width:17px; height:17px; }
+.footer-inline-linkedin { color:#0a66c2; }
+.footer-inline-youtube { color:#ff0000; }
 .footer-copyright { justify-self: end; text-align: right; }
 
 @media (max-width: 1100px) {
