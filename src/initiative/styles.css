@@ -2507,4 +2507,4 @@ h2 {
   .hero-audience{font-size:.8rem}
 }
 
-.footer-social-link{display:flex!important;align-items:center;gap:7px}.footer-social-link svg{width:17px;height:17px;flex:0 0 17px}.footer-social-link.footer-social-linkedin{color:#0a66c2}.footer-social-link.footer-social-youtube{color:#ff0000}
+.footer-bottom-meta{display:flex;align-items:center;justify-content:flex-end;flex-wrap:wrap;gap:6px}.footer-inline-socials{display:inline-flex;align-items:center;gap:7px;margin-left:4px}.footer-inline-social{display:inline-flex;align-items:center;justify-content:center;width:29px;height:29px;border:1px solid currentColor;border-radius:8px;text-decoration:none}.footer-inline-social:hover{opacity:.82;transform:translateY(-1px)}.footer-inline-social svg{width:17px;height:17px}.footer-inline-linkedin{color:#0a66c2}.footer-inline-youtube{color:#ff0000}@media(max-width:760px){.footer-bottom-meta{justify-content:flex-start}}
