@@ -93,7 +93,9 @@ export function renderHeader(header){
 }
 
 export function renderFooter(footer){
-  const groups=footer.groups.map(group=>'<div class="footer-group"><h2>'+esc(group.title)+'</h2>'+group.links.map(item=>'<a class="'+(item.icon?'footer-social-link footer-social-'+esc(item.icon):'')+'" '+linkAttrs(item)+'>'+(item.icon?socialIcon(item.icon):'')+'<span>'+esc(item.label)+'</span></a>').join('')+'</div>').join('');
+  const socialLinks=footer.groups.flatMap(group=>group.links.filter(item=>item.icon));
+  const groups=footer.groups.map(group=>'<div class="footer-group"><h2>'+esc(group.title)+'</h2>'+group.links.filter(item=>!item.icon).map(item=>'<a '+linkAttrs(item)+'>'+esc(item.label)+'</a>').join('')+'</div>').join('');
+  const inlineSocials=socialLinks.length?'<span class="footer-inline-socials" role="group" aria-label="BHOC social media">'+socialLinks.map(item=>'<a class="footer-inline-social footer-inline-'+esc(item.icon)+'" '+linkAttrs(item)+' aria-label="'+esc(item.label)+'" title="'+esc(item.label)+'">'+socialIcon(item.icon)+'</a>').join('')+'</span>':'';
   const formatDate=iso=>{const [year,month,day]=iso.split('-');return day+' '+['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'][Number(month)-1]+' '+year};
   return [
     '<footer class="site-footer">',
@@ -120,7 +122,7 @@ export function renderFooter(footer){
     '  </aside>',
     '  <div class="shell footer-bottom">',
     '    <span>'+esc(footer.projectLead)+'</span>',
-    '    <span>First published <time datetime="'+esc(footer.publication.firstPublished)+'">'+formatDate(footer.publication.firstPublished)+'</time> · Last updated <time datetime="'+esc(footer.publication.lastUpdated)+'">'+formatDate(footer.publication.lastUpdated)+'</time> · Version '+esc(footer.publication.version)+'</span>',
+    '    <span class="footer-bottom-meta">First published <time datetime="'+esc(footer.publication.firstPublished)+'">'+formatDate(footer.publication.firstPublished)+'</time> · Last updated <time datetime="'+esc(footer.publication.lastUpdated)+'">'+formatDate(footer.publication.lastUpdated)+'</time> · Version '+esc(footer.publication.version)+inlineSocials+'</span>',
     '  </div>',
     '</footer>',
     '<dialog class="rights-dialog" id="rights-dialog" data-rights-dialog aria-labelledby="rights-dialog-title">',
