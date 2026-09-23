@@ -2543,9 +2543,13 @@ h2 {
 
 .stories-matter-heading > p {
   max-width: 520px;
-  margin: 0 0 3px;
-  color: var(--muted);
-  font-size: 0.8rem;
+  margin: 0 0 3px auto;
+  padding-right: clamp(4px, 1.2vw, 18px);
+  color: var(--forest-800);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 0.92rem;
+  font-style: italic;
+  font-weight: 600;
   line-height: 1.45;
   text-align: right;
 }
@@ -2805,7 +2809,8 @@ h2 {
 
   .stories-matter-heading > p {
     max-width: 100%;
-    margin-top: 7px;
+    margin: 7px 0 0;
+    padding-right: 0;
     text-align: left;
   }
 
