@@ -66,7 +66,7 @@ for(const entry of manifest.blocks){
   blocks.push({type:entry.type,data:d,html:render(d)});
 }
 
-const initiativeAllowed=['hero','stats','mission-panel','focus','science-bridge'];
+const initiativeAllowed=['hero','stats','mission-panel','focus','stories','science-bridge'];
 const initiativeRequired=['hero','stats','mission-panel','focus','science-bridge'];
 const initiativeIds=new Set();
 const initiativeBlocks=[];

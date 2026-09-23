@@ -21,6 +21,11 @@
       "enabled": true
     },
     {
+      "type": "stories",
+      "file": "initiative/blocks/stories.json",
+      "enabled": true
+    },
+    {
       "type": "science-bridge",
       "file": "initiative/blocks/science-bridge.json",
       "enabled": true

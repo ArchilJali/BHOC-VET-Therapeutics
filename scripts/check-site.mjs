@@ -153,7 +153,7 @@ const initiativePage=initiativeStructured['@graph'].find(item=>item['@type']==='
 assert.equal(initiativePage.author.url,'https://bhoctherapeutics.com/archil-jaliashvili/','Initiative author canonical profile');
 assert.deepEqual(initiativePage.author.sameAs,['https://www.linkedin.com/in/archil-jaliashvili-bhoc/'],'Initiative author LinkedIn identity');
 const initiativeBlockNames=[...initiativeHome.matchAll(/<!-- BLOCK ([a-z-]+): content\/initiative\/blocks\/[a-z-]+\.json -->/g)].map(match=>match[1]);
-assert.deepEqual(initiativeBlockNames,['hero','stats','mission-panel','focus','science-bridge'],'Initiative modular block order');
+assert.deepEqual(initiativeBlockNames,['hero','stats','mission-panel','focus','stories','science-bridge'],'Initiative modular block order');
 assert.match(initiativeHome,/rel="canonical" href="https:\/\/bhocvet\.com\/initiative\/"/,'Initiative canonical');
 assert.equal((initiativeHome.match(/class="hero-photo hero-photo-/g)||[]).length,6,'Initiative hero keeps six photographs');
 assert.equal((initiativeHome.match(/class="focus-card"/g)||[]).length,7,'Initiative keeps seven focus cards');

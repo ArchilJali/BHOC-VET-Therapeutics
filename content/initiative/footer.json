@@ -26,6 +26,10 @@
           "href": "#focus"
         },
         {
+          "label": "Stories That Matter",
+          "href": "#stories"
+        },
+        {
           "label": "Science Bridge",
           "href": "#science"
         }
@@ -101,8 +105,8 @@
   "projectLead": "Project lead: BHOC Team",
   "publication": {
     "firstPublished": "2026-09-09",
-    "lastUpdated": "2026-09-20",
-    "version": "26.09.20"
+    "lastUpdated": "2026-09-23",
+    "version": "26.09.23"
   },
   "legal": {
     "title": "Protected content notice",
