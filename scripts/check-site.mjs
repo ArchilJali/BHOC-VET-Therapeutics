@@ -155,6 +155,9 @@ assert.deepEqual(initiativePage.author.sameAs,['https://www.linkedin.com/in/arch
 const initiativeBlockNames=[...initiativeHome.matchAll(/<!-- BLOCK ([a-z-]+): content\/initiative\/blocks\/[a-z-]+\.json -->/g)].map(match=>match[1]);
 assert.deepEqual(initiativeBlockNames,['hero','stats','mission-panel','focus','stories','science-bridge'],'Initiative modular block order');
 assert.match(initiativeHome,/rel="canonical" href="https:\/\/bhocvet\.com\/initiative\/"/,'Initiative canonical');
+assert.match(initiativeHome,/href="#stories">Stories<\/a>/,'Initiative top navigation includes Stories');
+assert.match(initiativeHome,/class="story-card"/,'Initiative has compact Stories That Matter card');
+assert.match(initiativeHome,/Hachikō: Loyalty, Dignity and Respect/,'Initiative shows Hachiko story');
 assert.equal((initiativeHome.match(/class="hero-photo hero-photo-/g)||[]).length,6,'Initiative hero keeps six photographs');
 assert.equal((initiativeHome.match(/class="focus-card"/g)||[]).length,7,'Initiative keeps seven focus cards');
 assert.match(initiativeHome,new RegExp(`href="${re(vetRWE)}"[\\s\\S]*Vet Real-World Evidence &amp; Cases`),'Initiative links to Vet RWE & Cases');
@@ -169,6 +172,12 @@ assert.doesNotMatch(initiativeHome,/hbo2therapeutics\.com\/our-product/i,'Initia
 
 const initiativeRights=await fs.readFile(path.join(out,'initiative','image-rights.html'),'utf8');
 assert.match(initiativeRights,/<meta name="robots" content="noindex,follow">/,'Image-rights register remains noindex');
+const hachikoStory=await fs.readFile(path.join(out,'initiative','hachiko.html'),'utf8');
+assert.equal((hachikoStory.match(/<h1\b/g)||[]).length,1,'Hachiko story has exactly one H1');
+assert.match(hachikoStory,/Hachikō: Loyalty, Dignity and Respect/,'Hachiko story title');
+assert.match(hachikoStory,/Hachiko_on_watch\.webp/,'Hachiko story includes waiting photo');
+assert.match(hachikoStory,/Death_of_Hachiko_-_Last_Photo\.jpg/,'Hachiko story includes final historical photo');
+assert.match(hachikoStory,/rel="canonical" href="https:\/\/bhocvet\.com\/initiative\/hachiko\.html"/,'Hachiko story canonical');
 assert.doesNotMatch(initiativeRights,/href="\.\.\/evidence\.html"/,'Image-rights page has no retired Evidence link');
 
 for(const redirectName of ['evidence.html','publications.html']){
@@ -185,6 +194,7 @@ const sitemapParse=spawnSync('python3',['-c','import sys, xml.etree.ElementTree 
 assert.equal(sitemapParse.status,0,`Sitemap is well-formed XML: ${sitemapParse.stderr.trim()}`);
 for(const page of ['product.html','applications.html','science.html','initiative.html','related-information.html','news.html','contact.html'])assert.match(sitemap,new RegExp(`https:\/\/bhocvet\\.com\/${page.replace('.','\\.')}`),`Sitemap includes ${page}`);
 assert.match(sitemap,/https:\/\/bhocvet\.com\/initiative\//,'Sitemap includes full Initiative');
+assert.match(sitemap,/https:\/\/bhocvet\.com\/initiative\/hachiko\.html/,'Sitemap includes Hachiko story');
 assert.doesNotMatch(sitemap,/https:\/\/bhocvet\.com\/evidence\.html/,'Sitemap excludes retired Evidence page');
 assert.doesNotMatch(sitemap,/publications\.html/,'Sitemap excludes legacy publications redirect');
 

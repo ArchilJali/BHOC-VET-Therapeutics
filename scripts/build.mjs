@@ -8,9 +8,11 @@ import {
   renderFooter as renderInitiativeFooter,
   renderHead as renderInitiativeHead,
   renderHeader as renderInitiativeHeader,
-  renderRightsHead as renderInitiativeRightsHead
+  renderRightsHead as renderInitiativeRightsHead,
+  renderStoryHead as renderInitiativeStoryHead
 } from '../src/initiative/chrome.mjs';
 import renderInitiativeImageRights from '../src/initiative/image-rights.mjs';
+import renderInitiativeStory from '../src/initiative/story.mjs';
 
 const root=path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 const args=process.argv.slice(2);
@@ -31,6 +33,8 @@ const initiativeSite=await json('content/initiative/site.json');
 const initiativeHeader=await json('content/initiative/header.json');
 const initiativeFooter=await json('content/initiative/footer.json');
 const initiativeImageProvenance=await json('content/initiative/image-provenance.json');
+const initiativeStoryFiles=(await fs.readdir(path.join(root,'content/initiative/stories'))).filter(name=>name.endsWith('.json')).sort();
+const initiativeStories=await Promise.all(initiativeStoryFiles.map(name=>json('content/initiative/stories/'+name)));
 const pageFiles=(await fs.readdir(path.join(root,'content/pages'))).filter(name=>name.endsWith('.json')).sort();
 const pages=await Promise.all(pageFiles.map(name=>json('content/pages/'+name)));
 
@@ -94,6 +98,12 @@ checkData(initiativeSite,'initiative site');
 checkData(initiativeHeader,'initiative header');
 checkData(initiativeFooter,'initiative footer');
 checkData(initiativeImageProvenance,'initiative image provenance');
+for(const [i,story] of initiativeStories.entries()){
+  checkData(story,`initiative stories[${i}]`);
+  if(!/^[a-z][a-z0-9-]*$/.test(story.slug))throw new Error('Invalid Initiative story slug '+story.slug);
+  if(initiativeStoryFiles[i]!==story.slug+'.json')throw new Error('Initiative story filename must match slug: '+story.slug);
+  if(story.canonical!=='https://bhocvet.com/initiative/'+story.slug+'.html')throw new Error('Initiative story canonical mismatch: '+story.slug);
+}
 const provenanceRecords=[...initiativeImageProvenance.records,...initiativeImageProvenance.projectAssets];
 for(const record of provenanceRecords){
   if(!/^[a-z][a-z0-9-]*$/.test(record.id))throw new Error('Invalid Initiative provenance record ID '+record.id);
@@ -174,6 +184,23 @@ if(/\{\{[A-Z_]+\}\}/.test(imageRightsDocument))throw new Error('Unresolved Initi
 if((imageRightsDocument.match(/<h1\b/g)||[]).length!==1)throw new Error('initiative/image-rights.html: exactly one H1 required');
 await write('initiative/image-rights.html',imageRightsDocument);
 
+const storyTemplate=await read('src/initiative/story.html');
+for(const story of initiativeStories){
+  const storySlots={
+    '{{LANGUAGE}}':initiativeSite.language,
+    '{{HEAD}}':renderInitiativeStoryHead(initiativeSite,story,digest(initiativeStyles)),
+    '{{HEADER}}':renderInitiativeHeader(imageRightsHeader),
+    '{{BODY}}':renderInitiativeStory(story),
+    '{{FOOTER}}':renderInitiativeFooter(imageRightsFooter),
+    '{{APP_VERSION}}':digest(initiativeClient)
+  };
+  let storyDocument=storyTemplate;
+  for(const [slot,value] of Object.entries(storySlots))storyDocument=storyDocument.replaceAll(slot,value);
+  if(/\{\{[A-Z_]+\}\}/.test(storyDocument))throw new Error('Unresolved Initiative story template slot');
+  if((storyDocument.match(/<h1\b/g)||[]).length!==1)throw new Error('initiative/'+story.slug+'.html: exactly one H1 required');
+  await write('initiative/'+story.slug+'.html',storyDocument);
+}
+
 const absolute=p=>new URL(p,site.canonical).href;
 const imageMime=src=>src.endsWith('.png')?'image/png':src.endsWith('.webp')?'image/webp':'image/jpeg';
 const personId=site.canonical+'#archil-jaliashvili';
@@ -220,6 +247,12 @@ const search=[
     category:'Initiative',
     text:visibleSearchText(block.data),
     href:'./initiative/#'+block.data.id
+  })),
+  ...initiativeStories.map(story=>({
+    title:story.title,
+    category:'Initiative story',
+    text:visibleSearchText(story),
+    href:'./initiative/'+story.slug+'.html'
   })),
   ...pages.map(page=>({title:page.navLabel,category:'Page',text:visibleSearchText(page),href:page.slug+'.html'})),
   ...dialogHTML.map((html,i)=>({title:html.match(/<h2[^>]*>([\s\S]*?)<\/h2>/)?.[1].replace(/<[^>]*>/g,' ')||dialogNames[i],category:'Information',text:html.replace(/<[^>]*>/g,' '),dialog:dialogNames[i].replace('.html','')}))
@@ -311,11 +344,13 @@ const initiativeHero=initiativeBlocks.find(block=>block.type==='hero').data;
 const initiativeMission=initiativeBlocks.find(block=>block.type==='mission-panel').data;
 const initiativeFocus=initiativeBlocks.find(block=>block.type==='focus').data;
 const initiativeScience=initiativeBlocks.find(block=>block.type==='science-bridge').data;
+const initiativeStoriesBlock=initiativeBlocks.find(block=>block.type==='stories')?.data;
 const initiativeImages=[...new Map([
   initiativeHeader.brand.image,
   ...initiativeHero.slides.flatMap(slide=>slide.images),
   initiativeMission.image,
   ...initiativeFocus.cards.map(card=>card.image),
+  ...(initiativeStoriesBlock?.cards||[]).map(card=>card.image),
   ...(initiativeScience.images||[initiativeScience.image]).filter(Boolean),
   initiativeScience.comparisonGraphic
 ].map(image=>[image.src,image])).values()];
@@ -324,10 +359,15 @@ for(const image of initiativeImages){
   if(!String(image.src).startsWith('assets/'))continue;
   if(!registeredInitiativeAssets.has(image.src))throw new Error('Displayed Initiative image is missing from the provenance register: '+image.src);
 }
-const sitemapUrls=[{path:'',images:imageEntries},...pages.map(page=>({path:page.slug+'.html',images:[]})),{path:'initiative/',images:initiativeImages}];
+const sitemapUrls=[
+  {path:'',images:imageEntries},
+  ...pages.map(page=>({path:page.slug+'.html',images:[]})),
+  {path:'initiative/',images:initiativeImages},
+  ...initiativeStories.map(story=>({path:'initiative/'+story.slug+'.html',images:story.images}))
+];
 await write('sitemap.xml',`<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">${sitemapUrls.map(entry=>`<url><loc>${absolute(entry.path)}</loc><lastmod>${site.updated}</lastmod>${entry.images.map(image=>`<image:image><image:loc>${absolute(image.src)}</image:loc></image:image>`).join('')}</url>`).join('')}</urlset>\n`);
 await write('robots.txt',`User-agent: *\nAllow: /\nSitemap: ${absolute('sitemap.xml')}\n`);
 await write('CNAME',new URL(site.canonical).hostname+'\n');
 await write('.nojekyll','');
 await write('404.html',await read('404.html'));
-console.log(`Built ${blocks.length} homepage blocks and ${pages.length} inner pages to ${path.relative(root,out)||'.'}.`);
+console.log(`Built ${blocks.length} homepage blocks, ${pages.length} inner pages and ${initiativeStories.length} Initiative stories to ${path.relative(root,out)||'.'}.`);

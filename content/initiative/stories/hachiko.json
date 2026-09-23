@@ -1,0 +1,59 @@
+{
+  "slug": "hachiko",
+  "section": "Stories That Matter",
+  "title": "Hachikō: Loyalty, Dignity and Respect",
+  "description": "A values story about Hachikō, extraordinary loyalty, and the people who learned to recognize and respect it.",
+  "canonical": "https://bhocvet.com/initiative/hachiko.html",
+  "datePublished": "2026-09-23",
+  "dateModified": "2026-09-23",
+  "deck": "This is not simply the story of a dog waiting at a railway station. It is a story of loyalty, patience, acceptance, steadfastness and memory. It is also a story about people who learned to recognize and respect a remarkable life.",
+  "images": [
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Hachiko_on_watch.webp",
+      "alt": "Hachikō waiting at Shibuya Station around 1933",
+      "width": 800,
+      "height": 567,
+      "caption": "Hachikō waiting at Shibuya Station, circa 1933.",
+      "credit": "Unknown photographer",
+      "license": "Public domain",
+      "href": "https://commons.wikimedia.org/wiki/File:Hachiko_on_watch.webp"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/6/65/Death_of_Hachiko_-_Last_Photo.jpg",
+      "alt": "People paying respect to Hachikō at Shibuya Station on 8 March 1935",
+      "width": 700,
+      "height": 544,
+      "caption": "People paying respect to Hachikō at Shibuya Station on 8 March 1935.",
+      "credit": "Shibuya Folk and Literary Shirane Memorial Museum / Yamato Shimbun",
+      "license": "Public domain",
+      "href": "https://commons.wikimedia.org/wiki/File:Death_of_Hachiko_-_Last_Photo.jpg"
+    }
+  ],
+  "values": [
+    "Loyalty",
+    "Patience",
+    "Acceptance",
+    "Steadfastness",
+    "Memory",
+    "Respect"
+  ],
+  "paragraphs": [
+    "After Professor Hidesaburō Ueno died in 1925, Hachikō continued returning to Shibuya Station, where he had once met him after work.",
+    "He kept returning for years. His constancy became a symbol of loyalty, but the story is also about something else: the ability of people to recognize meaning in the life of another species.",
+    "Hachikō could not explain his attachment in human language. People had to observe, understand and accept it on its own terms.",
+    "Eventually they did. He became known and cared for around the station, and in 1934 a bronze statue honoring him was unveiled while he was still alive.",
+    "That combination is what makes the story exceptional: extraordinary loyalty from one living being, and respect from others who learned to see it."
+  ],
+  "principle": "Respect does not begin when another living being can speak our language. It begins when we are willing to understand theirs.",
+  "closing": "A remarkable animal. A great soul. A lasting example of loyalty, dignity and respect across species.",
+  "sources": [
+    {
+      "label": "Shibuya City Library — Hachikō",
+      "href": "https://www.lib.city.shibuya.tokyo.jp/shibuya/about-shibuya/hachiko/"
+    },
+    {
+      "label": "The University of Tokyo — Hachikō and Professor Ueno",
+      "href": "https://www.en.a.u-tokyo.ac.jp/hachi_ueno_hp/hp/prospectus.htm"
+    }
+  ]
+}

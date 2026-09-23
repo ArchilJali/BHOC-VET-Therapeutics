@@ -44,6 +44,69 @@ export function renderHead(site,stylesVersion){
   ].join('\n');
 }
 
+
+export function renderStoryHead(site,story,stylesVersion){
+  const image=story.images[0];
+  const imageUrl=image.src;
+  const mime=imageUrl.endsWith('.webp')?'image/webp':imageUrl.endsWith('.png')?'image/png':'image/jpeg';
+  const structuredData={
+    '@context':'https://schema.org',
+    '@type':'Article',
+    headline:story.title,
+    description:story.description,
+    url:story.canonical,
+    datePublished:story.datePublished,
+    dateModified:story.dateModified,
+    inLanguage:site.language,
+    author:{'@type':'Person',name:site.author,url:'https://bhoctherapeutics.com/archil-jaliashvili/'},
+    publisher:{
+      '@type':'Organization',
+      name:site.openGraph.siteName,
+      url:site.canonical,
+      logo:{'@type':'ImageObject',url:'https://bhocvet.com/assets/reference-initiative-mark.webp'}
+    },
+    image:story.images.map(item=>item.src),
+    about:story.values.map(name=>({'@type':'Thing',name}))
+  };
+  return [
+    '<head>',
+    '  <meta charset="utf-8">',
+    '  <meta name="viewport" content="width=device-width, initial-scale=1">',
+    '  <title>'+esc(story.title)+' | '+esc(story.section)+' | BHOC Initiative</title>',
+    '  <meta name="description" content="'+esc(story.description)+'">',
+    '  <meta name="author" content="'+esc(site.author)+'">',
+    '  <meta name="creator" content="'+esc(site.creator)+'">',
+    '  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">',
+    '  <meta name="yandex" content="noindex">',
+    '  <meta name="theme-color" content="'+esc(site.themeColor)+'">',
+    '  <meta property="og:locale" content="en_US">',
+    '  <meta property="og:type" content="article">',
+    '  <meta property="og:site_name" content="'+esc(site.openGraph.siteName)+'">',
+    '  <meta property="og:title" content="'+esc(story.title)+'">',
+    '  <meta property="og:description" content="'+esc(story.description)+'">',
+    '  <meta property="og:url" content="'+esc(story.canonical)+'">',
+    '  <meta property="og:image" content="'+esc(imageUrl)+'">',
+    '  <meta property="og:image:secure_url" content="'+esc(imageUrl)+'">',
+    '  <meta property="og:image:type" content="'+mime+'">',
+    '  <meta property="og:image:width" content="'+Number(image.width)+'">',
+    '  <meta property="og:image:height" content="'+Number(image.height)+'">',
+    '  <meta property="og:image:alt" content="'+esc(image.alt)+'">',
+    '  <meta property="article:published_time" content="'+esc(story.datePublished)+'">',
+    '  <meta property="article:modified_time" content="'+esc(story.dateModified)+'">',
+    '  <meta name="twitter:card" content="summary_large_image">',
+    '  <meta name="twitter:title" content="'+esc(story.title)+'">',
+    '  <meta name="twitter:description" content="'+esc(story.description)+'">',
+    '  <meta name="twitter:image" content="'+esc(imageUrl)+'">',
+    '  <meta name="twitter:image:alt" content="'+esc(image.alt)+'">',
+    '  <link rel="canonical" href="'+esc(story.canonical)+'">',
+    '  <link rel="sitemap" type="application/xml" href="../sitemap.xml">',
+    '  <link rel="icon" href="../assets/reference-initiative-mark.webp" type="image/webp">',
+    '  <link rel="stylesheet" href="styles.css?v='+esc(stylesVersion)+'">',
+    '  <script type="application/ld+json">'+safeJSON(structuredData)+'</script>',
+    '</head>'
+  ].join('\n');
+}
+
 export function renderRightsHead(site,rights,stylesVersion){
   return [
     '<head>',

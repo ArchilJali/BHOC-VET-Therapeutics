@@ -1,22 +1,22 @@
 {
   "id": "stories",
   "eyebrow": "Stories That Matter",
-  "title": "Hachikō: Loyalty, Dignity and Respect",
-  "intro": "This is not simply the story of a dog waiting at a railway station. It is a story of loyalty, patience and steadfastness, and of people learning to recognize and respect them.",
-  "values": [
-    "Loyalty",
-    "Patience",
-    "Acceptance",
-    "Steadfastness",
-    "Memory",
-    "Respect"
-  ],
-  "paragraphs": [
-    "After Professor Hidesaburō Ueno died in 1925, Hachikō continued returning to Shibuya Station, where he had once met him after work.",
-    "His constancy became a symbol of loyalty. But the story is also about the people around him. They began to understand that they were witnessing something that deserved recognition and respect.",
-    "Hachikō could not explain his attachment in human language. He simply returned, again and again. People learned to understand."
-  ],
-  "closing": "A remarkable animal. A great soul. And a lasting example of what respect can look like across species.",
-  "principle": "Respect does not begin when another living being can speak our language. It begins when we are willing to understand theirs.",
-  "historicalNote": "Hachikō (1923–1935) is remembered in Japan as an enduring symbol of loyalty."
+  "title": "Stories That Matter",
+  "intro": "Lives that remind us why respect across species matters.",
+  "cards": [
+    {
+      "slug": "hachiko",
+      "href": "hachiko.html",
+      "image": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Hachiko_on_watch.webp",
+        "alt": "Hachikō waiting at Shibuya Station around 1933",
+        "width": 800,
+        "height": 567
+      },
+      "overline": "Loyalty · Respect",
+      "title": "Hachikō: Loyalty, Dignity and Respect",
+      "text": "An extraordinary example of loyalty, and of people who learned to recognize and respect it.",
+      "actionLabel": "Read story"
+    }
+  ]
 }
