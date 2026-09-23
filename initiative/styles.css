@@ -1859,7 +1859,7 @@ h2 {
   }
 }
 
-@media (max-width: 1120px) {
+@media (max-width: 1000px) {
   .header-inner {
     grid-template-columns: 1fr auto auto;
   }
