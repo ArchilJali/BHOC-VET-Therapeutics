@@ -1,7 +1,6 @@
 {
   "id": "stories",
   "title": "Stories That Matter",
-  "intro": "Lives that remind us why respect across species matters.",
   "cards": [
     {
       "slug": "hachiko",
@@ -15,6 +14,7 @@
       "overline": "Loyalty · Respect",
       "title": "Hachikō: Loyalty, Dignity and Respect",
       "text": "An extraordinary example of loyalty, and of people who learned to recognize and respect it.",
+      "phrase": "Lives that remind us why respect across species matters.",
       "actionLabel": "Read story"
     }
   ]

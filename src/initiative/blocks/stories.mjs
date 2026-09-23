@@ -6,10 +6,13 @@ export default function renderStories(data){
       '<a class="story-card-link" '+linkAttrs(card)+'>'+
         '<figure class="story-card-image">'+initiativeImage(card.image)+'</figure>'+
         '<div class="story-card-copy">'+
-          '<span class="story-card-overline">'+esc(card.overline)+'</span>'+
-          '<h3>'+esc(card.title)+'</h3>'+
-          '<p>'+esc(card.text)+'</p>'+
-          '<span class="story-card-action">'+esc(card.actionLabel)+' <span aria-hidden="true">→</span></span>'+
+          '<div class="story-card-main">'+
+            '<span class="story-card-overline">'+esc(card.overline)+'</span>'+
+            '<h3>'+esc(card.title)+'</h3>'+
+            '<p class="story-card-summary">'+esc(card.text)+'</p>'+
+            '<span class="story-card-action">'+esc(card.actionLabel)+' <span aria-hidden="true">→</span></span>'+
+          '</div>'+
+          '<p class="story-card-phrase">'+esc(card.phrase)+'</p>'+
         '</div>'+
       '</a>'+
     '</article>'
@@ -17,8 +20,7 @@ export default function renderStories(data){
   return '<section class="stories-matter" id="'+esc(data.id)+'" data-block="stories" aria-labelledby="stories-title">'+
     '<div class="shell stories-matter-inner">'+
       '<header class="stories-matter-heading">'+
-        '<div><h2 id="stories-title">'+esc(data.title)+'</h2></div>'+
-        '<p>'+esc(data.intro)+'</p>'+
+        '<h2 id="stories-title">'+esc(data.title)+'</h2>'+
       '</header>'+
       '<div class="stories-track" role="list">'+cards+'</div>'+
     '</div>'+
