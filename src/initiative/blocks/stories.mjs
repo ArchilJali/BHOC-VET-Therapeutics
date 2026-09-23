@@ -17,7 +17,7 @@ export default function renderStories(data){
   return '<section class="stories-matter" id="'+esc(data.id)+'" data-block="stories" aria-labelledby="stories-title">'+
     '<div class="shell stories-matter-inner">'+
       '<header class="stories-matter-heading">'+
-        '<div><p class="eyebrow">'+esc(data.eyebrow)+'</p><h2 id="stories-title">'+esc(data.title)+'</h2></div>'+
+        '<div><h2 id="stories-title">'+esc(data.title)+'</h2></div>'+
         '<p>'+esc(data.intro)+'</p>'+
       '</header>'+
       '<div class="stories-track" role="list">'+cards+'</div>'+
