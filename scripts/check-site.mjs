@@ -158,7 +158,7 @@ assert.match(initiativeHome,/rel="canonical" href="https:\/\/bhocvet\.com\/initi
 assert.match(initiativeHome,/href="#stories">Stories<\/a>/,'Initiative top navigation includes Stories');
 assert.match(initiativeHome,/class="story-card"/,'Initiative has compact Stories That Matter card');
 assert.match(initiativeHome,/Hachikō: Loyalty, Dignity and Respect/,'Initiative shows Hachiko story');
-assert.match(initiativeHome,/class="story-card-phrase">Lives that remind us why respect across species matters\.<\/p>/,'Hachiko card keeps its own story phrase');
+assert.match(initiativeHome,/class="story-card-phrase">An example of understanding and respect between species — without words, through actions\.<\/p>/,'Hachiko card keeps its own story phrase');
 assert.equal((initiativeHome.match(/class="hero-photo hero-photo-/g)||[]).length,6,'Initiative hero keeps six photographs');
 assert.equal((initiativeHome.match(/class="focus-card"/g)||[]).length,7,'Initiative keeps seven focus cards');
 assert.match(initiativeHome,new RegExp(`href="${re(vetRWE)}"[\\s\\S]*Vet Real-World Evidence &amp; Cases`),'Initiative links to Vet RWE & Cases');
