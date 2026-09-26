@@ -6,8 +6,8 @@ const safeJSON=value=>JSON.stringify(value).replace(/</g,'\\u003c');
 const saxonVisual={
   url:'assets/news/k9-saxon-oxyglobin-biopure-annual-report-2002.webp',
   alt:'Historical panel from the 2002 Biopure Annual Report showing Fresno Police K-9 Saxon and the Oxyglobin treatment account after catastrophic line-of-duty injuries.',
-  width:2048,
-  height:682,
+  width:850,
+  height:283,
   variant:'document'
 };
 const saxonFeature={
@@ -108,7 +108,12 @@ const itemListSchema=page=>safeJSON({
 });
 
 const contextLinkHTML=item=>`<a class="seo-context-link" ${attrs(item)}>${esc(item.label)} ${icon('arrow')}</a>`;
-const storyMedia=story=>story.image?`<figure class="story-media${story.image.variant==='logo'?' story-media-logo':story.image.variant==='portrait'?' story-media-portrait':story.image.variant==='document'?' story-media-document':''}"><img src="${esc(story.image.url)}" alt="${esc(story.image.alt)}" width="${story.image.width||900}" height="${story.image.height||600}" loading="lazy" decoding="async">${story.credit?`<a class="story-credit" ${attrs(story.credit)}>${esc(story.credit.label)}</a>`:''}</figure>`:'';
+const storyMedia=story=>{
+  if(!story.image)return '';
+  const image=`<img src="${esc(story.image.url)}" alt="${esc(story.image.alt)}" width="${story.image.width||900}" height="${story.image.height||600}" loading="lazy" decoding="async">`;
+  const saxonPanel=story.id==='k9-saxon-oxyglobin-2002';
+  return `<figure class="story-media${story.image.variant==='logo'?' story-media-logo':story.image.variant==='portrait'?' story-media-portrait':story.image.variant==='document'?' story-media-document':''}">${saxonPanel?`<a class="story-document-panel" href="https://media.corporate-ir.net/media_files/nsd/bpur/reports/ar02/05_bo.html" target="_blank" rel="noopener noreferrer">${image}<span class="story-document-open">Read the original 2002 Annual Report ↗</span></a>`:image}${story.credit?`<a class="story-credit" ${attrs(story.credit)}>${esc(story.credit.label)}</a>`:''}</figure>`;
+};
 
 const storyHTML=(story,index)=>`<article class="conservation-story${index===0?' conservation-story-featured':''}${story.image?'':' conservation-story-no-media'}${story.image?.variant==='document'?' conservation-story-document':''}" id="${esc(story.id)}">
   ${storyMedia(story)}
@@ -161,6 +166,13 @@ export default rawPage=>{const page=enrichPage(rawPage);return `<style>
 #istanbul-university-oxyglobin-fluid-therapy-textbook .story-media{align-self:center;min-height:0;aspect-ratio:auto;background:#fff}
 #istanbul-university-oxyglobin-fluid-therapy-textbook .story-media img{display:block;width:100%;height:auto;min-height:0;aspect-ratio:auto}
 @media(max-width:920px){#istanbul-university-oxyglobin-fluid-therapy-textbook{grid-template-columns:1fr}#istanbul-university-oxyglobin-fluid-therapy-textbook .story-media{align-self:stretch}}
+#k9-saxon-oxyglobin-2002{grid-template-columns:minmax(0,1fr)}
+#k9-saxon-oxyglobin-2002 .story-media-document{align-self:start;width:100%;min-height:0;background:#fff;border-bottom:1px solid var(--line)}
+#k9-saxon-oxyglobin-2002 .story-document-panel{display:block;text-decoration:none}
+#k9-saxon-oxyglobin-2002 .story-media-document img{display:block;width:100%;height:auto;min-height:0;aspect-ratio:auto;background:#f5a915}
+#k9-saxon-oxyglobin-2002 .story-document-open{display:block;padding:10px 22px;background:#fff8f3;color:var(--accent-strong);font-size:13px;font-weight:700;text-align:right}
+#k9-saxon-oxyglobin-2002 .story-document-panel:hover .story-document-open,#k9-saxon-oxyglobin-2002 .story-document-panel:focus-visible .story-document-open{text-decoration:underline}
+#k9-saxon-oxyglobin-2002 .story-copy{max-width:960px;padding:24px clamp(20px,3vw,36px) 34px}
 </style>
 <main id="main" class="subpage-main news-page">
   <section class="page-hero" aria-labelledby="news-page-heading"><div><span class="page-eyebrow">${esc(page.eyebrow)}</span><h1 id="news-page-heading">${esc(page.heading)}</h1><p>${esc(page.lead)}</p></div></section>
