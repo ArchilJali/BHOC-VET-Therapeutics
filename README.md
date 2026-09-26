@@ -25,7 +25,7 @@ Editable website pages and independent homepage blocks for [bhocvet.com](https:/
 | Layout for one block | `src/blocks/<type>.mjs`, `src/styles/<type>.css` |
 | Layout for one inner page | `src/pages/<page>.mjs`, `src/styles/pages.css` |
 
-Veterinary evidence is intentionally not duplicated on BHOC Veterinary. The canonical source-linked veterinary library is **Vet Real-World Evidence & Cases** at [BHOC Platform Veterinary](https://archiljali.github.io/BHOC-platform/veterinary/Vet-index.html). Historical `evidence.html` and `publications.html` URLs are retained only as `noindex,follow` migration redirects to that canonical library.
+Veterinary evidence is intentionally not duplicated on BHOC Veterinary. The [BHOC VET-platform](https://archiljali.github.io/BHOC-VET-platform/) is the veterinary research knowledge base for new reviewed direction-specific records. The historical source-linked veterinary publications and regulatory records remain in **Vet Real-World Evidence & Cases** at [BHOC Platform Veterinary](https://archiljali.github.io/BHOC-platform/veterinary/Vet-index.html). Historical `evidence.html` and `publications.html` URLs are retained only as `noindex,follow` migration redirects to that historical library.
 
 ## Initiative block architecture
 
