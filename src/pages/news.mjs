@@ -62,9 +62,9 @@ const istanbulOxyglobinStory={
   why:'Volume replacement ≠ oxygen transport. Restoring circulating volume and restoring oxygen-carrying capacity are different therapeutic functions. The textbook also reports strong quantitative comparisons with blood; BHOC Veterinary has flagged those statements for primary-source verification before treating them as efficacy evidence.',
   image:{
     url:'assets/news/istanbul-university-oxyglobin-hboc-veterinary-fluid-therapy.webp',
-    alt:'Main gate of Istanbul University, illustrating historical veterinary education on Oxyglobin and hemoglobin-based oxygen carriers in fluid therapy.',
-    width:900,
-    height:600
+    alt:'Veterinary news graphic showing the Istanbul University main gate and summarizing Oxyglobin, HBOCs and oxygen transport in veterinary fluid therapy.',
+    width:1350,
+    height:900
   },
   credit:{label:'Photo: Istanbul University · official university source',href:'https://kalite.istanbul.edu.tr/tr/haber/universitemiz-2021-yili-qs-alan-bazli-dunya-universiteleri-siralamasinda-basaris-2D006F00690059004D002D005200580069007700500039007900700046006200610041004F003200370077003200'},
   sourceName:'Istanbul University · Sıvı Sağaltımı [Fluid Therapy] · Prof. Dr. Tarık Bilal',
