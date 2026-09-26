@@ -31,8 +31,9 @@
       "enabled": true
     },
     {
-      "label": "BHOC Transplant · coming soon",
-      "enabled": false
+      "label": "BHOC Transplant ↗",
+      "href": "https://archiljali.github.io/bhoc-transplant/",
+      "enabled": true
     }
   ],
   "navigation": [
