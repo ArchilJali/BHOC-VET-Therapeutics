@@ -86,11 +86,11 @@ for(const [name,html] of htmlByPage){
   assert.doesNotMatch(html,/hbo2therapeutics\.com\/our-product/i,`${name}: forbidden corporate link absent`);
 
   const network=html.match(/<nav class="site-network-bar"[\s\S]*?<\/nav>/)?.[0]||'';
-  assert.equal((network.match(/class="network-link network-link-enabled"/g)||[]).length,2,`${name}: two active network links`);
-  assert.equal((network.match(/class="network-link network-link-disabled"/g)||[]).length,1,`${name}: one future sister-site label`);
+  assert.equal((network.match(/class="network-link network-link-enabled"/g)||[]).length,3,`${name}: three active network links`);
+  assert.equal((network.match(/class="network-link network-link-disabled"/g)||[]).length,0,`${name}: no inactive sister-site label`);
   assert.match(network,new RegExp(`href="${re(vetRWE)}"[^>]*>[\\s\\S]*Vet Real-World Evidence &amp; Cases ↗`),`${name}: Vet RWE is primary network evidence route`);
   assert.match(network,/href="https:\/\/bhoctherapeutics\.com\/"[^>]*>[\s\S]*BHOC Therapeutics ↗/,`${name}: corporate link`);
-  assert.match(network,/aria-disabled="true"[^>]*>[\s\S]*BHOC Transplant · coming soon/,`${name}: transplant remains inactive`);
+  assert.match(network,/href="https:\/\/archiljali\.github\.io\/bhoc-transplant\/"[^>]*>[\s\S]*BHOC Transplant ↗/,`${name}: transplant site linked`);
 
   const footer=html.match(/<footer class="site-footer">[\s\S]*?<\/footer>/)?.[0]||'';
   assert.equal((footer.match(/class="footer-column"/g)||[]).length,5,`${name}: five footer groups`);
