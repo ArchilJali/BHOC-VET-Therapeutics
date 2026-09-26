@@ -61,8 +61,8 @@ const istanbulOxyglobinStory={
   text:'Sıvı Sağaltımı [Fluid Therapy] by Prof. Dr. Tarık Bilal includes a dedicated section on hemoglobin-based oxygen carriers (HBOCs), discussing Oxyglobin in veterinary fluid therapy, including anemia, acute intravascular volume loss and hemorrhagic shock. Its inclusion in a university veterinary textbook is a useful historical marker: oxygen-carrier technology had moved beyond experimental literature into formal veterinary education.',
   why:'Volume replacement ≠ oxygen transport. Restoring circulating volume and restoring oxygen-carrying capacity are different therapeutic functions. The textbook also reports strong quantitative comparisons with blood; BHOC Veterinary has flagged those statements for primary-source verification before treating them as efficacy evidence.',
   image:{
-    url:'https://cdn.istanbul.edu.tr/FileHandler.ashx?f=H86o2Mvl9EW02iCBPQYB-Q',
-    alt:'Historic main gate of Istanbul University in Beyazıt, Istanbul, associated with university veterinary education and historical HBOC Oxyglobin fluid-therapy evidence',
+    url:'assets/news/istanbul-university-oxyglobin-hboc-veterinary-fluid-therapy.webp',
+    alt:'Main gate of Istanbul University, illustrating historical veterinary education on Oxyglobin and hemoglobin-based oxygen carriers in fluid therapy.',
     width:900,
     height:600
   },
