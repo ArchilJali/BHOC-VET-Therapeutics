@@ -4,10 +4,10 @@ const canonicalNewsURL='https://bhocvet.com/news.html';
 const absoluteURL=value=>/^https:\/\//.test(value)?value:new URL(value,'https://bhocvet.com/').href;
 const safeJSON=value=>JSON.stringify(value).replace(/</g,'\\u003c');
 const saxonVisual={
-  url:'assets/news/k9-saxon-oxyglobin-biopure-annual-report-2002.webp',
-  alt:'Historical panel from the 2002 Biopure Annual Report showing Fresno Police K-9 Saxon and the Oxyglobin treatment account after catastrophic line-of-duty injuries.',
-  width:850,
-  height:283,
+  url:'assets/news/k9-saxon-oxyglobin-biopure-report-2002-hires.webp',
+  alt:'Original panel from the 2002 Biopure Annual Report with Fresno Police K-9 Saxon’s photograph and Police Chief Jerry Dyer’s account of his Oxyglobin treatment.',
+  width:3628,
+  height:1084,
   variant:'document'
 };
 const saxonFeature={
@@ -112,7 +112,7 @@ const storyMedia=story=>{
   if(!story.image)return '';
   const image=`<img src="${esc(story.image.url)}" alt="${esc(story.image.alt)}" width="${story.image.width||900}" height="${story.image.height||600}" loading="lazy" decoding="async">`;
   const saxonPanel=story.id==='k9-saxon-oxyglobin-2002';
-  return `<figure class="story-media${story.image.variant==='logo'?' story-media-logo':story.image.variant==='portrait'?' story-media-portrait':story.image.variant==='document'?' story-media-document':''}">${saxonPanel?`<a class="story-document-panel" href="https://media.corporate-ir.net/media_files/nsd/bpur/reports/ar02/05_bo.html" target="_blank" rel="noopener noreferrer">${image}<span class="story-document-open">Read the original 2002 Annual Report ↗</span></a>`:image}${story.credit?`<a class="story-credit" ${attrs(story.credit)}>${esc(story.credit.label)}</a>`:''}</figure>`;
+  return `<figure class="story-media${story.image.variant==='logo'?' story-media-logo':story.image.variant==='portrait'?' story-media-portrait':story.image.variant==='document'?' story-media-document':''}">${saxonPanel?`<a class="story-document-panel" href="${esc(absoluteURL(story.image.url))}" target="_blank" rel="noopener noreferrer" aria-label="Open the original K-9 Saxon panel at full resolution">${image}</a><figcaption class="story-document-links"><a href="${esc(absoluteURL(story.image.url))}" target="_blank" rel="noopener noreferrer">Enlarge the original panel ↗</a><a href="https://media.corporate-ir.net/media_files/nsd/bpur/reports/ar02/biopure.pdf#page=15" target="_blank" rel="noopener noreferrer">Read the 2002 Annual Report ↗</a></figcaption>`:image}${story.credit?`<a class="story-credit" ${attrs(story.credit)}>${esc(story.credit.label)}</a>`:''}</figure>`;
 };
 
 const storyHTML=(story,index)=>`<article class="conservation-story${index===0?' conservation-story-featured':''}${story.image?'':' conservation-story-no-media'}${story.image?.variant==='document'?' conservation-story-document':''}" id="${esc(story.id)}">
@@ -170,8 +170,10 @@ export default rawPage=>{const page=enrichPage(rawPage);return `<style>
 #k9-saxon-oxyglobin-2002 .story-media-document{align-self:start;width:100%;min-height:0;background:#fff;border-bottom:1px solid var(--line)}
 #k9-saxon-oxyglobin-2002 .story-document-panel{display:block;text-decoration:none}
 #k9-saxon-oxyglobin-2002 .story-media-document img{display:block;width:100%;height:auto;min-height:0;aspect-ratio:auto;background:#f5a915}
-#k9-saxon-oxyglobin-2002 .story-document-open{display:block;padding:10px 22px;background:#fff8f3;color:var(--accent-strong);font-size:13px;font-weight:700;text-align:right}
-#k9-saxon-oxyglobin-2002 .story-document-panel:hover .story-document-open,#k9-saxon-oxyglobin-2002 .story-document-panel:focus-visible .story-document-open{text-decoration:underline}
+#k9-saxon-oxyglobin-2002 .story-document-links{display:flex;flex-wrap:wrap;justify-content:flex-end;gap:8px 24px;padding:12px 22px;background:#fff8f3;text-align:right}
+#k9-saxon-oxyglobin-2002 .story-document-links a{color:var(--accent-strong);font-size:13px;font-weight:700;text-decoration:none}
+#k9-saxon-oxyglobin-2002 .story-document-links a:hover,#k9-saxon-oxyglobin-2002 .story-document-links a:focus-visible{text-decoration:underline}
+@media(max-width:700px){#k9-saxon-oxyglobin-2002 .story-document-links{justify-content:flex-start;text-align:left;padding:12px 16px}}
 #k9-saxon-oxyglobin-2002 .story-copy{max-width:960px;padding:24px clamp(20px,3vw,36px) 34px}
 </style>
 <main id="main" class="subpage-main news-page">
