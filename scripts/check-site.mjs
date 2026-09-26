@@ -90,7 +90,7 @@ for(const [name,html] of htmlByPage){
   assert.equal((network.match(/class="network-link network-link-disabled"/g)||[]).length,0,`${name}: no inactive sister-site label`);
   assert.match(network,new RegExp(`href="${re(vetRWE)}"[^>]*>[\\s\\S]*Vet Real-World Evidence &amp; Cases ↗`),`${name}: Vet RWE is primary network evidence route`);
   assert.match(network,/href="https:\/\/bhoctherapeutics\.com\/"[^>]*>[\s\S]*BHOC Therapeutics ↗/,`${name}: corporate link`);
-  assert.match(network,/href="https:\/\/archiljali\.github\.io\/bhoc-transplant\/"[^>]*>[\s\S]*BHOC Transplant ↗/,`${name}: transplant site linked`);
+  assert.match(network,/href="https:\/\/bhoctransplant\.com\/"[^>]*>[\s\S]*BHOC Transplant ↗/,`${name}: transplant site linked`);
 
   const footer=html.match(/<footer class="site-footer">[\s\S]*?<\/footer>/)?.[0]||'';
   assert.equal((footer.match(/class="footer-column"/g)||[]).length,5,`${name}: five footer groups`);
