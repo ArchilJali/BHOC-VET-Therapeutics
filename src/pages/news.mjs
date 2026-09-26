@@ -51,7 +51,28 @@ const kakarikiStory={
     'kākāriki karaka','orange-fronted parakeet','Cyanoramphus malherbi','critically endangered species','species recovery','reintroduction','Brook Waimārama Sanctuary','Kākāriki Karaka Recovery Programme','New Zealand Department of Conservation','Te Rūnanga o Ngāi Tahu','Nelson','New Zealand'
   ]
 };
-const enrichPage=page=>({...page,stories:[kakarikiStory,...page.stories.map(story=>story.id==='k9-saxon-oxyglobin-2002'?{...story,...saxonFeature,image:saxonVisual,credit:null}:story)].sort((a,b)=>b.date.localeCompare(a.date))});
+const istanbulOxyglobinStory={
+  id:'istanbul-university-oxyglobin-fluid-therapy-textbook',
+  date:'2026-09-26',
+  dateLabel:'26 Sep 2026',
+  region:'Türkiye · Istanbul',
+  category:'Historical veterinary education · HBOC · Oxyglobin',
+  title:'From research to the veterinary textbook: Oxyglobin and HBOCs in fluid therapy.',
+  text:'Sıvı Sağaltımı [Fluid Therapy] by Prof. Dr. Tarık Bilal includes a dedicated section on hemoglobin-based oxygen carriers (HBOCs), discussing Oxyglobin in veterinary fluid therapy, including anemia, acute intravascular volume loss and hemorrhagic shock. Its inclusion in a university veterinary textbook is a useful historical marker: oxygen-carrier technology had moved beyond experimental literature into formal veterinary education.',
+  why:'Volume replacement ≠ oxygen transport. Restoring circulating volume and restoring oxygen-carrying capacity are different therapeutic functions. The textbook also reports strong quantitative comparisons with blood; BHOC Veterinary has flagged those statements for primary-source verification before treating them as efficacy evidence.',
+  image:{
+    url:'https://cdn.istanbul.edu.tr/FileHandler.ashx?f=H86o2Mvl9EW02iCBPQYB-Q',
+    alt:'Historic main gate of Istanbul University in Beyazıt, Istanbul, associated with university veterinary education and historical HBOC Oxyglobin fluid-therapy evidence',
+    width:900,
+    height:600
+  },
+  credit:{label:'Photo: Istanbul University · official university source',href:'https://kalite.istanbul.edu.tr/tr/haber/universitemiz-2021-yili-qs-alan-bazli-dunya-universiteleri-siralamasinda-basaris-2D006F00690059004D002D005200580069007700500039007900700046006200610041004F003200370077003200'},
+  sourceName:'Istanbul University · Sıvı Sağaltımı [Fluid Therapy] · Prof. Dr. Tarık Bilal',
+  link:{label:'Read the BHOC VET evidence note',href:'https://archiljali.github.io/BHOC-VET-platform/related-evidence.html#bilal-fluid-therapy-oxyglobin'},
+  contextLink:{label:'University digital copy',href:'https://nek.istanbul.edu.tr/ekos/KITAP/2011-19495.pdf'},
+  keywords:['Oxyglobin','HBOC','hemoglobin-based oxygen carrier','veterinary fluid therapy','veterinary oxygen transport','hemorrhagic shock','veterinary anemia','Istanbul University','Tarık Bilal','oxygen-carrying capacity','BHOC Veterinary','Precision Oxygen Therapeutics']
+};
+const enrichPage=page=>({...page,stories:[istanbulOxyglobinStory,kakarikiStory,...page.stories.map(story=>story.id==='k9-saxon-oxyglobin-2002'?{...story,...saxonFeature,image:saxonVisual,credit:null}:story)].sort((a,b)=>b.date.localeCompare(a.date))});
 
 const itemListSchema=page=>safeJSON({
   '@context':'https://schema.org',
