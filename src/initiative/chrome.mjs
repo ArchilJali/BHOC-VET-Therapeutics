@@ -41,6 +41,7 @@ export function renderHead(site,stylesVersion){
     '  <link rel="stylesheet" href="styles.css?v='+esc(stylesVersion)+'">',
     '  <script type="application/ld+json">'+safeJSON(site.structuredData)+'</script>',
     '  <script src="https://analytics.ahrefs.com/analytics.js" data-key="E4lNjXqYmHxKeKcqEkSgyg" async></script>',
+    '  <script src="../assets/ga4.js?v=20260927" defer></script>',
     '</head>'
   ].join('\n');
 }
@@ -105,6 +106,7 @@ export function renderStoryHead(site,story,stylesVersion){
     '  <link rel="stylesheet" href="styles.css?v='+esc(stylesVersion)+'">',
     '  <script type="application/ld+json">'+safeJSON(structuredData)+'</script>',
     '  <script src="https://analytics.ahrefs.com/analytics.js" data-key="E4lNjXqYmHxKeKcqEkSgyg" async></script>',
+    '  <script src="../assets/ga4.js?v=20260927" defer></script>',
     '</head>'
   ].join('\n');
 }
