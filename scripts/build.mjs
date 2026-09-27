@@ -289,7 +289,7 @@ const renderHead=(meta,pagePath,isHome=false)=>`<head>
 <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="${esc(meta.title)}"><meta name="twitter:description" content="${esc(meta.description)}"><meta name="twitter:image" content="${absolute(site.socialImage.src)}"><meta name="twitter:image:alt" content="${esc(site.socialImage.alt)}">
 <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml"><link rel="sitemap" type="application/xml" href="${esc(absolute('sitemap.xml'))}">${isHome?`<link rel="preload" as="image" href="./${esc(hero.image.src)}" type="${imageMime(hero.image.src)}" fetchpriority="high">`:''}
 ${cssLinks.join('\n')}
-<script type="application/ld+json">${safeJSON(graphFor(meta,pagePath,isHome))}</script><script src="https://analytics.ahrefs.com/analytics.js" data-key="E4lNjXqYmHxKeKcqEkSgyg" async></script><script id="site-data" type="application/json">${siteData}</script><script src="./app.js?v=${digest(client)}" defer></script>
+<script type="application/ld+json">${safeJSON(graphFor(meta,pagePath,isHome))}</script><script src="https://analytics.ahrefs.com/analytics.js" data-key="E4lNjXqYmHxKeKcqEkSgyg" async></script><script src="./assets/ga4.js?v=20260927" defer></script><script id="site-data" type="application/json">${siteData}</script><script src="./app.js?v=${digest(client)}" defer></script>
 </head>`;
 
 const documents=new Map();
