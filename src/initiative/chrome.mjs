@@ -72,7 +72,7 @@ export function renderStoryHead(site,story,stylesVersion){
     '<head>',
     '  <meta charset="utf-8">',
     '  <meta name="viewport" content="width=device-width, initial-scale=1">',
-    '  <title>'+esc(story.title)+' | '+esc(story.section)+' | BHOC Initiative</title>',
+    '  <title>'+esc(story.title)+' | BHOC Initiative</title>',
     '  <meta name="description" content="'+esc(story.description)+'">',
     '  <meta name="author" content="'+esc(site.author)+'">',
     '  <meta name="creator" content="'+esc(site.creator)+'">',
