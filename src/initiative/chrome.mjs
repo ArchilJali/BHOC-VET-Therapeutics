@@ -40,6 +40,7 @@ export function renderHead(site,stylesVersion){
     '  <link rel="preload" as="image" href="../'+esc(image.src)+'" type="image/webp" fetchpriority="high">',
     '  <link rel="stylesheet" href="styles.css?v='+esc(stylesVersion)+'">',
     '  <script type="application/ld+json">'+safeJSON(site.structuredData)+'</script>',
+    '  <script src="https://analytics.ahrefs.com/analytics.js" data-key="E4lNjXqYmHxKeKcqEkSgyg" async></script>',
     '</head>'
   ].join('\n');
 }
@@ -103,6 +104,7 @@ export function renderStoryHead(site,story,stylesVersion){
     '  <link rel="icon" href="../assets/reference-initiative-mark.webp" type="image/webp">',
     '  <link rel="stylesheet" href="styles.css?v='+esc(stylesVersion)+'">',
     '  <script type="application/ld+json">'+safeJSON(structuredData)+'</script>',
+    '  <script src="https://analytics.ahrefs.com/analytics.js" data-key="E4lNjXqYmHxKeKcqEkSgyg" async></script>',
     '</head>'
   ].join('\n');
 }
