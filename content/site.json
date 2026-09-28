@@ -53,7 +53,8 @@
     "url": "https://orcid.org/0009-0006-4712-4942",
     "sameAs": [
       "https://www.linkedin.com/in/archil-jaliashvili-bhoc/",
-      "https://orcid.org/0009-0006-4712-4942"
+      "https://orcid.org/0009-0006-4712-4942",
+      "https://scholar.google.com/citations?user=8jFUmFYAAAAJ"
     ],
     "description": "Biotechnology and healthcare executive with more than 20 years of experience; BHOC project lead."
   },
@@ -97,7 +98,7 @@
   },
   "publication": {
     "firstPublished": "2026-09-07",
-    "updates": 33,
+    "updates": 34,
     "lastUpdated": "2026-09-28",
     "version": "26.09.28"
   },

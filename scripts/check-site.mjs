@@ -64,7 +64,7 @@ for(const [name,html] of htmlByPage){
   assert.equal(person.name,'Archil Jaliashvili',`${name}: author identity`);
   assert.equal(person.jobTitle,'Project Lead, BHOC Veterinary',`${name}: author role`);
   assert.equal(person.url,'https://orcid.org/0009-0006-4712-4942',`${name}: author verified ORCID profile`);
-  assert.deepEqual(person.sameAs,['https://www.linkedin.com/in/archil-jaliashvili-bhoc/','https://orcid.org/0009-0006-4712-4942'],`${name}: author identity links`);
+  assert.deepEqual(person.sameAs,['https://www.linkedin.com/in/archil-jaliashvili-bhoc/','https://orcid.org/0009-0006-4712-4942','https://scholar.google.com/citations?user=8jFUmFYAAAAJ'],`${name}: author identity links`);
   assert.equal(organization.email,'info@bhoctherapeutics.com',`${name}: organization contact`);
   assert.equal(organization['@id'],'https://bhoctherapeutics.com/#organization',`${name}: parent organization identity`);
   assert.ok(webPage,`${name}: expected page schema`);
@@ -170,7 +170,7 @@ assert.equal((initiativeHome.match(/<h1\b/g)||[]).length,1,'initiative/index.htm
 const initiativeStructured=JSON.parse(initiativeHome.match(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/)[1]);
 const initiativePage=initiativeStructured['@graph'].find(item=>item['@type']==='WebPage');
 assert.equal(initiativePage.author.url,'https://orcid.org/0009-0006-4712-4942','Initiative author verified ORCID profile');
-assert.deepEqual(initiativePage.author.sameAs,['https://www.linkedin.com/in/archil-jaliashvili-bhoc/','https://orcid.org/0009-0006-4712-4942'],'Initiative author identity links');
+assert.deepEqual(initiativePage.author.sameAs,['https://www.linkedin.com/in/archil-jaliashvili-bhoc/','https://orcid.org/0009-0006-4712-4942','https://scholar.google.com/citations?user=8jFUmFYAAAAJ'],'Initiative author identity links');
 const initiativeBlockNames=[...initiativeHome.matchAll(/<!-- BLOCK ([a-z-]+): content\/initiative\/blocks\/[a-z-]+\.json -->/g)].map(match=>match[1]);
 assert.deepEqual(initiativeBlockNames,['hero','stats','mission-panel','focus','stories','science-bridge'],'Initiative modular block order');
 assert.match(initiativeHome,/rel="canonical" href="https:\/\/bhocvet\.com\/initiative\/"/,'Initiative canonical');
