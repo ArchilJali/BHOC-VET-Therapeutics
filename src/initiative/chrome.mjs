@@ -60,7 +60,7 @@ export function renderStoryHead(site,story,stylesVersion){
     datePublished:story.datePublished,
     dateModified:story.dateModified,
     inLanguage:site.language,
-    author:{'@type':'Person','@id':'https://bhoctherapeutics.com/#archil-jaliashvili',name:site.author,url:'https://orcid.org/0009-0006-4712-4942',sameAs:['https://orcid.org/0009-0006-4712-4942']},
+    author:{'@type':'Person','@id':'https://bhoctherapeutics.com/#archil-jaliashvili',name:site.author,url:'https://orcid.org/0009-0006-4712-4942',sameAs:['https://orcid.org/0009-0006-4712-4942','https://scholar.google.com/citations?user=8jFUmFYAAAAJ']},
     publisher:{
       '@type':'Organization',
       '@id':'https://bhoctherapeutics.com/#organization',
