@@ -391,11 +391,11 @@
       "providedOn": "2026-09-20",
       "rightsStatus": "Project-supplied original artwork and project-approved derivatives; all rights reserved; not offered under an open third-party licence.",
       "reason": "Provides the Companion Animals banner, explicitly including Rem and Evchika, and the veterinary stethoscope/paw signature.",
-      "modifications": "The approved master is preserved in the private project source. The public v6 derivative corrects the horse in a bounded AI-assisted edit of the project-supplied composition: it faces left, while its hindquarters and tail are partly occluded behind the retriever and donkey. Residual tail and leg fragments from the earlier position were removed. The other animal group and graphite treatment remain in place. Typography remains native HTML, with the Kipling quotation above the desktop artwork. The stethoscope/paw signature was mechanically isolated from the project-supplied reference screenshot.",
+      "modifications": "The approved master is preserved in the private project source. The public v7 derivative replaces the side-view horse in a bounded AI-assisted edit of the project-supplied composition. The horse looks forward like the donkey while its torso is gently angled, with a mane on one side of the neck, one visible tail attached to the rump, and lower legs partly hidden behind the foreground animals. The prior horse silhouette and stray tail and leg fragments were removed. The other animals and graphite treatment remain in place. Typography remains native HTML, with the Kipling quotation above the desktop artwork. The stethoscope/paw signature was mechanically isolated from the project-supplied reference screenshot.",
       "localFiles": [
         {
-          "path": "assets/companion-animals-wide-v6.webp",
-          "sha256": "d445252c8fd09ead5b439f7f7239fd614450ef0ffa332c20fd934f470bd8b661",
+          "path": "assets/companion-animals-wide-v7.webp",
+          "sha256": "317702d69e0975ce904eb34651e5328bd5250842043fc320814838629f6a6dd7",
           "introducedOn": "2026-09-28"
         },
         {
