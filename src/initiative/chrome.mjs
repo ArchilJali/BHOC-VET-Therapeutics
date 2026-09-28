@@ -60,12 +60,13 @@ export function renderStoryHead(site,story,stylesVersion){
     datePublished:story.datePublished,
     dateModified:story.dateModified,
     inLanguage:site.language,
-    author:{'@type':'Person',name:site.author,url:'https://bhoctherapeutics.com/archil-jaliashvili/'},
+    author:{'@type':'Person','@id':'https://bhoctherapeutics.com/archil-jaliashvili/#person',name:site.author,url:'https://bhoctherapeutics.com/archil-jaliashvili/',sameAs:['https://orcid.org/0009-0006-4712-4942']},
     publisher:{
       '@type':'Organization',
-      name:site.openGraph.siteName,
-      url:site.canonical,
-      logo:{'@type':'ImageObject',url:'https://bhocvet.com/assets/reference-initiative-mark.webp'}
+      '@id':'https://bhoctherapeutics.com/#organization',
+      name:'BHOC Therapeutics',
+      url:'https://bhoctherapeutics.com/',
+      logo:{'@type':'ImageObject',url:'https://bhoctherapeutics.com/assets/bhoc-biodiversity-logo.png'}
     },
     image:story.images.map(item=>item.src),
     about:story.values.map(name=>({'@type':'Thing',name}))
@@ -105,6 +106,7 @@ export function renderStoryHead(site,story,stylesVersion){
     '  <link rel="icon" href="../assets/reference-initiative-mark.webp" type="image/webp">',
     '  <link rel="stylesheet" href="styles.css?v='+esc(stylesVersion)+'">',
     '  <script type="application/ld+json">'+safeJSON(structuredData)+'</script>',
+    '  <script type="application/ld+json">'+safeJSON({'@context':'https://schema.org','@type':'BreadcrumbList','@id':story.canonical+'#breadcrumb',itemListElement:[{'@type':'ListItem',position:1,name:'BHOC Therapeutics',item:'https://bhocvet.com/'},{'@type':'ListItem',position:2,name:'BHOC Initiative',item:site.canonical},{'@type':'ListItem',position:3,name:story.title,item:story.canonical}]})+'</script>',
     '  <script src="https://analytics.ahrefs.com/analytics.js" data-key="E4lNjXqYmHxKeKcqEkSgyg" async></script>',
     '  <script src="../assets/ga4.js?v=20260927" defer></script>',
     '</head>'

@@ -7,8 +7,8 @@ import {fileURLToPath} from 'node:url';
 const root=path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 const out=path.resolve(root,process.argv[2]||'dist');
 const site=JSON.parse(await fs.readFile(path.join(root,'content/site.json'),'utf8'));
-const vetRWE='https://archiljali.github.io/BHOC-platform/veterinary/Vet-index.html';
-const vetSearch='https://archiljali.github.io/BHOC-platform/veterinary/Vet-search.html';
+const vetRWE='https://bhoctherapeutics.com/evidence/library/veterinary/Vet-index.html';
+const vetSearch='https://bhoctherapeutics.com/evidence/library/veterinary/Vet-search.html';
 const re=s=>String(s).replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
 const htmlText=s=>String(s).replaceAll('&','&amp;');
 
@@ -55,16 +55,16 @@ for(const [name,html] of htmlByPage){
   const person=graph.find(x=>x['@type']==='Person');
   const organization=graph.find(x=>x['@type']==='Organization');
   const webPage=graph.find(x=>x['@type']===expectedSchemaTypes[name]);
-  assert.equal(website.name,'BHOC Veterinary',`${name}: website identity`);
-  assert.deepEqual(website.alternateName,['BHOC Vet','BHOC Veterinary Therapeutics'],`${name}: alternate names`);
+  assert.equal(website.name,'BHOC Therapeutics',`${name}: website identity`);
+  assert.deepEqual(website.alternateName,['BHOC Veterinary','BHOC Vet','BHOC Veterinary Therapeutics'],`${name}: alternate names`);
   assert.equal(person.name,'Archil Jaliashvili',`${name}: author identity`);
   assert.equal(person.jobTitle,'Project Lead, BHOC Veterinary',`${name}: author role`);
   assert.equal(person.url,'https://bhoctherapeutics.com/archil-jaliashvili/',`${name}: author canonical profile`);
-  assert.deepEqual(person.sameAs,['https://www.linkedin.com/in/archil-jaliashvili-bhoc/'],`${name}: author LinkedIn identity`);
+  assert.deepEqual(person.sameAs,['https://www.linkedin.com/in/archil-jaliashvili-bhoc/','https://orcid.org/0009-0006-4712-4942'],`${name}: author identity links`);
   assert.equal(organization.email,'info@bhoctherapeutics.com',`${name}: organization contact`);
-  assert.equal(organization.logo['@type'],'ImageObject',`${name}: organization logo object`);
+  assert.equal(organization['@id'],'https://bhoctherapeutics.com/#organization',`${name}: parent organization identity`);
   assert.ok(webPage,`${name}: expected page schema`);
-  assert.equal(webPage.author['@id'],'https://bhocvet.com/#archil-jaliashvili',`${name}: page author`);
+  assert.equal(webPage.author['@id'],'https://bhoctherapeutics.com/archil-jaliashvili/#person',`${name}: page author`);
   assert.ok(webPage.about.length>=8,`${name}: semantic topic coverage`);
 
   const canonical=name==='index.html'?'https://bhocvet.com/':`https://bhocvet.com/${name}`;
@@ -155,7 +155,7 @@ assert.equal((initiativeHome.match(/<h1\b/g)||[]).length,1,'initiative/index.htm
 const initiativeStructured=JSON.parse(initiativeHome.match(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/)[1]);
 const initiativePage=initiativeStructured['@graph'].find(item=>item['@type']==='WebPage');
 assert.equal(initiativePage.author.url,'https://bhoctherapeutics.com/archil-jaliashvili/','Initiative author canonical profile');
-assert.deepEqual(initiativePage.author.sameAs,['https://www.linkedin.com/in/archil-jaliashvili-bhoc/'],'Initiative author LinkedIn identity');
+assert.deepEqual(initiativePage.author.sameAs,['https://www.linkedin.com/in/archil-jaliashvili-bhoc/','https://orcid.org/0009-0006-4712-4942'],'Initiative author identity links');
 const initiativeBlockNames=[...initiativeHome.matchAll(/<!-- BLOCK ([a-z-]+): content\/initiative\/blocks\/[a-z-]+\.json -->/g)].map(match=>match[1]);
 assert.deepEqual(initiativeBlockNames,['hero','stats','mission-panel','focus','stories','science-bridge'],'Initiative modular block order');
 assert.match(initiativeHome,/rel="canonical" href="https:\/\/bhocvet\.com\/initiative\/"/,'Initiative canonical');

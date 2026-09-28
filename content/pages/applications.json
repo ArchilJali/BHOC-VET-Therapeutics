@@ -56,7 +56,7 @@
     },
     "evidenceLink": {
       "label": "Open FDA veterinary record",
-      "href": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-FDA-registry.html"
+      "href": "https://bhoctherapeutics.com/evidence/library/veterinary/Vet-FDA-registry.html"
     }
   },
   "historicalMap": {
@@ -84,7 +84,7 @@
     "boundary": "Historical manufacturer-collected reports. Canine, product-specific and descriptive. They do not establish BHOC efficacy, approval in another species or current Oxyglobin availability.",
     "link": {
       "label": "Read the critical archive review",
-      "href": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-archive-Oxyglobin-Case-Listing-Book-II.html"
+      "href": "https://bhoctherapeutics.com/evidence/library/veterinary/Vet-archive-Oxyglobin-Case-Listing-Book-II.html"
     }
   },
   "evidence": {
@@ -93,11 +93,11 @@
     "text": "Use the BHOC VET-platform for guided veterinary context, or search the full source-linked veterinary bibliography by topic, species, author, institution and year.",
     "map": {
       "label": "Open BHOC VET-platform",
-      "href": "https://archiljali.github.io/BHOC-VET-platform/"
+      "href": "https://bhoctherapeutics.com/evidence/library/veterinary/direct-studies/"
     },
     "search": {
       "label": "Search veterinary publications",
-      "href": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-search.html"
+      "href": "https://bhoctherapeutics.com/evidence/library/veterinary/Vet-search.html"
     }
   },
   "contact": {

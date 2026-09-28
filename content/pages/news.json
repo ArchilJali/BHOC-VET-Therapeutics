@@ -96,7 +96,7 @@
     "links": [
       {
         "label": "Open Vet Real-World Evidence & Cases",
-        "href": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-index.html"
+        "href": "https://bhoctherapeutics.com/evidence/library/veterinary/Vet-index.html"
       }
     ]
   },
@@ -125,7 +125,7 @@
       "sourceName": "Bellwether No. 49 · Penn Vet / University of Pennsylvania · p. 23",
       "link": {
         "label": "Open Evidence K19",
-        "href": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-case-K19-Wodan-Oxyglobin.html"
+        "href": "https://bhoctherapeutics.com/evidence/library/veterinary/Vet-case-K19-Wodan-Oxyglobin.html"
       },
       "contextLink": {
         "label": "Original Bellwether source · Penn Vet",
@@ -164,12 +164,12 @@
       },
       "credit": {
         "label": "Historical source cover: Biopure Corporation · Oxyglobin Solution - Case Listing Book II · October 2000",
-        "href": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-archive-Oxyglobin-Case-Listing-Book-II.html"
+        "href": "https://bhoctherapeutics.com/evidence/library/veterinary/Vet-archive-Oxyglobin-Case-Listing-Book-II.html"
       },
       "sourceName": "Biopure Corporation · Oxyglobin Solution - Case Listing Book II · October 2000",
       "link": {
         "label": "Read the critical evidence review",
-        "href": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-archive-Oxyglobin-Case-Listing-Book-II.html"
+        "href": "https://bhoctherapeutics.com/evidence/library/veterinary/Vet-archive-Oxyglobin-Case-Listing-Book-II.html"
       },
       "contextLink": {
         "label": "Separate controlled FDA record",
@@ -344,7 +344,7 @@
       "sourceName": "BHOC VET-platform · Concepts & Questions",
       "link": {
         "label": "Read the research concept & sources",
-        "href": "https://archiljali.github.io/BHOC-VET-platform/concepts-questions/healthy-animal-donors.html"
+        "href": "https://bhoctherapeutics.com/evidence/library/veterinary/direct-studies/concepts-questions/healthy-animal-donors.html"
       },
       "keywords": [
         "healthy animal donors",
@@ -375,7 +375,7 @@
       "sourceName": "Vet Real-World Evidence & Cases",
       "link": {
         "label": "Read the documented case & sources",
-        "href": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-case-K9-Saxon-Oxyglobin.html"
+        "href": "https://bhoctherapeutics.com/evidence/library/veterinary/Vet-case-K9-Saxon-Oxyglobin.html"
       },
       "keywords": [
         "K-9 Saxon",
@@ -844,7 +844,7 @@
       "text": "Guided veterinary evidence map, oxygen biology and routes into the source library.",
       "link": {
         "label": "Open evidence platform",
-        "href": "https://archiljali.github.io/BHOC-VET-platform/"
+        "href": "https://bhoctherapeutics.com/evidence/library/veterinary/direct-studies/"
       }
     },
     {
@@ -853,7 +853,7 @@
       "text": "Source-linked veterinary evidence, regulatory records, publications and documented cases.",
       "link": {
         "label": "Open Vet Real-World Evidence & Cases",
-        "href": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-index.html"
+        "href": "https://bhoctherapeutics.com/evidence/library/veterinary/Vet-index.html"
       }
     }
   ]
