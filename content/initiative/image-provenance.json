@@ -391,11 +391,11 @@
       "providedOn": "2026-09-20",
       "rightsStatus": "Project-supplied original artwork and project-approved derivatives; all rights reserved; not offered under an open third-party licence.",
       "reason": "Provides the Companion Animals banner, explicitly including Rem and Evchika, and the veterinary stethoscope/paw signature.",
-      "modifications": "The approved master is preserved in the private project source. The public v7 derivative replaces the side-view horse in a bounded AI-assisted edit of the project-supplied composition. The horse looks forward like the donkey while its torso is gently angled, with a mane on one side of the neck, one visible tail attached to the rump, and lower legs partly hidden behind the foreground animals. The prior horse silhouette and stray tail and leg fragments were removed. The other animals and graphite treatment remain in place. Typography remains native HTML, with the Kipling quotation above the desktop artwork. The stethoscope/paw signature was mechanically isolated from the project-supplied reference screenshot.",
+      "modifications": "The approved master is preserved in the private project source. The public v8 derivative replaces the side-view horse in a bounded AI-assisted edit of the project-supplied composition. The horse looks forward like the donkey while its torso and rump recede to image right, with one mane on the left side of the neck, one visible tail attached to the right-side rump, and lower legs partly hidden behind the foreground animals. The prior horse silhouette and stray tail and leg fragments were removed. The other animals and graphite treatment remain in place. Typography remains native HTML, with the Kipling quotation above the desktop artwork. The stethoscope/paw signature was mechanically isolated from the project-supplied reference screenshot.",
       "localFiles": [
         {
-          "path": "assets/companion-animals-wide-v7.webp",
-          "sha256": "317702d69e0975ce904eb34651e5328bd5250842043fc320814838629f6a6dd7",
+          "path": "assets/companion-animals-wide-v8.webp",
+          "sha256": "a5ddec2c63cbb3a11f6dcb9fc35a81c3367fa2a230ef5c0fcacef7930c516bb0",
           "introducedOn": "2026-09-28"
         },
         {
