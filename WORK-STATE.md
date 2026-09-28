@@ -79,7 +79,7 @@ The full Initiative homepage uses five independent blocks: hero, evidence statis
 - Project-supplied Companion and Land/Winter/Ocean artwork is recorded with local file hashes and rights status in `content/initiative/image-provenance.json`; third-party Initiative imagery retains its creator, source and licence records.
 - The footer keeps LinkedIn and the full VET Evidence Platform as distinct destinations.
 
-Publication line: `First published 07 Sep 2026 · 31 updates · Last updated 28 Sep 2026 · Version 26.09.28`. Increment `publication.updates` only when the shared BHOC Veterinary pages are intentionally republished.
+Publication line: `First published 07 Sep 2026 · 32 updates · Last updated 28 Sep 2026 · Version 26.09.28`. Increment `publication.updates` only when the shared BHOC Veterinary pages are intentionally republished.
 
 ## Editing and verification
 

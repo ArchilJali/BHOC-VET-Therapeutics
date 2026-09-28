@@ -203,7 +203,7 @@ for(const story of initiativeStories){
 
 const absolute=p=>new URL(p,site.canonical).href;
 const imageMime=src=>src.endsWith('.png')?'image/png':src.endsWith('.webp')?'image/webp':'image/jpeg';
-const personId='https://bhoctherapeutics.com/archil-jaliashvili/#person';
+const personId='https://bhoctherapeutics.com/#archil-jaliashvili';
 const orgId='https://bhoctherapeutics.com/#organization';
 const webId=site.canonical+'#website';
 const hero=blocks.find(b=>b.type==='hero').data;
@@ -309,7 +309,9 @@ for(const [name,html] of documents){
   await write(name,html);
 }
 
-await write('publications.html',`<!doctype html><html lang="${esc(site.language)}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex,follow"><meta name="yandex" content="noindex"><meta http-equiv="refresh" content="0;url=evidence.html"><link rel="canonical" href="${absolute('evidence.html')}"><title>Evidence | BHOC Veterinary</title></head><body><p>Publications are now organised under <a href="evidence.html">BHOC Veterinary Evidence</a>.</p></body></html>\n`);
+for(const name of ['evidence.html','publications.html']){
+  await write(name,await read(`content/redirects/${name}`));
+}
 
 const specialHashes=new Set(['#about','#initiative','#all-species',...Object.keys(species).map(key=>'#species-'+key)]);
 for(const [name,html] of documents){

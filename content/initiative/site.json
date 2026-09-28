@@ -116,12 +116,12 @@
         "author": {
           "@type": "Person",
           "name": "Archil Jaliashvili",
-          "url": "https://bhoctherapeutics.com/archil-jaliashvili/",
+          "url": "https://orcid.org/0009-0006-4712-4942",
           "sameAs": [
             "https://www.linkedin.com/in/archil-jaliashvili-bhoc/",
             "https://orcid.org/0009-0006-4712-4942"
           ],
-          "@id": "https://bhoctherapeutics.com/archil-jaliashvili/#person"
+          "@id": "https://bhoctherapeutics.com/#archil-jaliashvili"
         },
         "dateModified": "2026-09-28",
         "breadcrumb": {
