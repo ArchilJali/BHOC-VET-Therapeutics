@@ -1,6 +1,6 @@
 .block-companion{padding:10px 0;background:#fff;border-bottom:1px solid var(--line)}
-.companion-stage{position:relative;width:100%;height:clamp(305px,23vw,340px);margin:0;overflow:hidden;background:#fff}
-.companion-banner{height:100%;margin:0}
+.companion-stage{position:relative;width:100%;height:calc(clamp(305px,23vw,340px) + 66px);margin:0;overflow:hidden;background:#fff}
+.companion-banner{position:absolute;inset:66px 0 0;height:calc(100% - 66px);margin:0}
 .companion-banner-art{display:block;width:100%;height:100%;object-fit:contain;object-position:right 2vw bottom 8px}
 .companion-fade{position:absolute;inset:0 auto 0 0;width:53%;background:linear-gradient(90deg,#fff 0%,#fff 62%,rgba(255,255,255,.97) 74%,rgba(255,255,255,.82) 85%,transparent 100%);pointer-events:none}
 .companion-copy{position:absolute;z-index:2;left:max(4%,var(--gutter));top:26px;width:min(43%,590px)}
@@ -13,22 +13,22 @@
 .companion-signature{position:absolute;z-index:2;left:max(4%,var(--gutter));bottom:22px;display:flex;align-items:center;gap:14px}
 .companion-signature-mark{width:72px;height:80px;object-fit:contain;mix-blend-mode:multiply}
 .companion-signature p{max-width:220px;margin:0;color:#5e6266;font:400 15px/1.25 var(--font-display);letter-spacing:.045em;text-transform:uppercase}
-.companion-quote{position:absolute;z-index:2;top:24px;right:max(3.2%,var(--gutter));width:min(32vw,430px);margin:0;color:#303436;text-align:right}
+.companion-quote{position:absolute;z-index:2;top:12px;right:clamp(16px,2vw,40px);width:min(32vw,430px);margin:0;color:#303436;text-align:right}
 .companion-quote p{margin:0;white-space:nowrap;font:italic 400 clamp(16px,1.35vw,21px)/1.12 var(--font-display)}
 .companion-quote cite{display:block;margin-top:7px;color:#666;font:italic 400 clamp(11px,.85vw,13px)/1.25 var(--font-display)}
 @media(max-width:900px) and (min-width:641px){
- .companion-stage{height:335px}
+ .companion-stage{height:401px}
  .companion-fade{width:65%}
  .companion-copy{width:52%}
  .companion-copy h2{font-size:40px}
  .companion-signature-mark{width:60px;height:67px}
  .companion-signature p{font-size:13px}
- .companion-quote{right:3%;width:min(46vw,420px)}
+ .companion-quote{right:2%;width:min(46vw,420px)}
 }
 @media(max-width:640px){
  .block-companion{padding:8px 0 10px}
  .companion-stage{height:520px}
- .companion-banner{position:absolute;right:0;bottom:0;left:0;overflow:hidden}
+ .companion-banner{position:absolute;top:auto;right:0;bottom:0;left:0;height:100%;overflow:hidden}
  .companion-banner-art{width:100%;max-width:none;object-position:center bottom;transform:none}
  .companion-fade{display:none}
  .companion-copy{left:0;top:0;width:100%;min-height:220px;padding:24px 6% 16px;background:#fff}
