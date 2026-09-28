@@ -37,6 +37,9 @@ const titles=new Set();
 const descriptions=new Set();
 
 for(const [name,html] of htmlByPage){
+  const svgDefinitions=html.match(/<svg class="icon-definitions"[\s\S]*?<\/svg>/)?.[0]||'';
+  assert.ok(svgDefinitions,`${name}: shared icon definitions present`);
+  assert.ok(!svgDefinitions.includes('\\n'),`${name}: no literal escaped newline in icons`);
   assert.equal((html.match(/<h1\b/g)||[]).length,1,`${name}: exactly one H1`);
   const ids=[...html.matchAll(/\bid="([^"]+)"/g)].map(m=>m[1]);
   assert.equal(new Set(ids).size,ids.length,`${name}: no duplicate IDs`);
@@ -93,6 +96,7 @@ for(const [name,html] of htmlByPage){
   assert.match(network,/href="https:\/\/bhoctransplant\.com\/"[^>]*>[\s\S]*BHOC Transplant ↗/,`${name}: transplant site linked`);
 
   const footer=html.match(/<footer class="site-footer">[\s\S]*?<\/footer>/)?.[0]||'';
+  assert.ok(footer.includes('Project lead: <strong>Archil Jaliashvili</strong>.'),`${name}: footer project lead`);
   assert.equal((footer.match(/class="footer-column"/g)||[]).length,5,`${name}: five footer groups`);
   for(const heading of ['Product','Application','Real-World Evidence &amp; Cases','Initiative','Information'])assert.ok(footer.includes(`<h2>${heading}</h2>`),`${name}: footer group ${heading}`);
   assert.match(footer,new RegExp(`href="${re(vetRWE)}"[^>]*>[\\s\\S]*Vet Real-World Evidence &amp; Cases`),`${name}: footer primary RWE route`);
