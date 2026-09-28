@@ -391,11 +391,11 @@
       "providedOn": "2026-09-20",
       "rightsStatus": "Project-supplied original artwork and project-approved derivatives; all rights reserved; not offered under an open third-party licence.",
       "reason": "Provides the Companion Animals banner, explicitly including Rem and Evchika, and the veterinary stethoscope/paw signature.",
-      "modifications": "The approved master is preserved in the private project source. The public optimized v5 derivative is a bounded AI-assisted edit of the project-supplied v4 composition: the horse now faces left, with its hindquarters and tail toward the donkey. The other animal group and graphite treatment remain in place. Typography remains native HTML, and the Kipling quotation sits in a clear strip above the desktop artwork. The stethoscope/paw signature was mechanically isolated from the project-supplied reference screenshot.",
+      "modifications": "The approved master is preserved in the private project source. The public v6 derivative corrects the horse in a bounded AI-assisted edit of the project-supplied composition: it faces left, while its hindquarters and tail are partly occluded behind the retriever and donkey. Residual tail and leg fragments from the earlier position were removed. The other animal group and graphite treatment remain in place. Typography remains native HTML, with the Kipling quotation above the desktop artwork. The stethoscope/paw signature was mechanically isolated from the project-supplied reference screenshot.",
       "localFiles": [
         {
-          "path": "assets/companion-animals-wide-v5.webp",
-          "sha256": "b72730cb8efaa0dae873954d6e3891084e153c2f7779bbb2f9945e2e0f43609a",
+          "path": "assets/companion-animals-wide-v6.webp",
+          "sha256": "d445252c8fd09ead5b439f7f7239fd614450ef0ffa332c20fd934f470bd8b661",
           "introducedOn": "2026-09-28"
         },
         {
