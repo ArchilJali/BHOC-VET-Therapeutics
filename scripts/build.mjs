@@ -203,8 +203,8 @@ for(const story of initiativeStories){
 
 const absolute=p=>new URL(p,site.canonical).href;
 const imageMime=src=>src.endsWith('.png')?'image/png':src.endsWith('.webp')?'image/webp':'image/jpeg';
-const personId=site.canonical+'#archil-jaliashvili';
-const orgId=site.canonical+'#organization';
+const personId='https://bhoctherapeutics.com/archil-jaliashvili/#person';
+const orgId='https://bhoctherapeutics.com/#organization';
 const webId=site.canonical+'#website';
 const hero=blocks.find(b=>b.type==='hero').data;
 const safeJSON=d=>JSON.stringify(d).replace(/</g,'\\u003c');
@@ -224,11 +224,12 @@ const organizationLogo={
   height:site.organizationLogo.height
 };
 const graphFor=(meta,pagePath,isHome=false)=>({'@context':'https://schema.org','@graph':[
-  {'@type':'Organization','@id':orgId,name:site.name,alternateName:site.alternateNames,url:site.canonical,description:site.description,email:site.contactEmail,logo:organizationLogo,contactPoint:{'@type':'ContactPoint',email:site.contactEmail,contactType:'research inquiries',availableLanguage:['English']},parentOrganization:{'@type':'Organization',...site.parent},sameAs:site.sameAs},
+  {'@type':'Organization','@id':orgId,name:'BHOC Therapeutics',url:'https://bhoctherapeutics.com/',description:'BHOC Therapeutics develops the Biological Hemoglobin Oxygen Carrier (BHOC) framework for Precision Oxygen Therapeutics and maintains source-linked research resources across human, veterinary and transplant applications.',email:site.contactEmail,logo:'https://bhoctherapeutics.com/assets/bhoc-biodiversity-logo.png',sameAs:['https://www.linkedin.com/company/bhoc-therapeutics/','https://www.youtube.com/@BHOCTherapeutics','https://bhocvet.com/','https://bhoctransplant.com/']},
   {'@type':'Person','@id':personId,...site.author,affiliation:{'@id':orgId},knowsAbout:site.topics},
-  {'@type':'WebSite','@id':webId,name:site.name,alternateName:site.alternateNames,url:site.canonical,description:site.description,inLanguage:site.language,datePublished:site.publication.firstPublished,dateModified:site.updated,keywords:seoTerms(site).join(', '),publisher:{'@id':orgId},creator:{'@id':personId}},
+  {'@type':'WebSite','@id':webId,name:'BHOC Therapeutics',alternateName:[site.name,...site.alternateNames],url:site.canonical,description:site.description,inLanguage:site.language,datePublished:site.publication.firstPublished,dateModified:site.updated,keywords:seoTerms(site).join(', '),publisher:{'@id':orgId},creator:{'@id':personId}},
   ...(isHome?[{'@type':'ImageObject','@id':site.canonical+'#hero-image',contentUrl:absolute(hero.image.src),caption:hero.image.alt,width:hero.image.width,height:hero.image.height,representativeOfPage:true}]:[]),
-  {'@type':meta.schemaType||'WebPage','@id':absolute(pagePath)+'#webpage',url:absolute(pagePath),name:meta.title,description:meta.description,isPartOf:{'@id':webId},inLanguage:site.language,datePublished:site.publication.firstPublished,dateModified:site.updated,author:{'@id':personId},creator:{'@id':personId},publisher:{'@id':orgId},about:pageTopics(meta).map(name=>({'@type':'Thing',name})),keywords:seoTerms(meta).join(', '),...(isHome?{primaryImageOfPage:{'@id':site.canonical+'#hero-image'}}:{})}
+  {'@type':meta.schemaType||'WebPage','@id':absolute(pagePath)+'#webpage',url:absolute(pagePath),name:meta.title,description:meta.description,isPartOf:{'@id':webId},inLanguage:site.language,datePublished:site.publication.firstPublished,dateModified:site.updated,author:{'@id':personId},creator:{'@id':personId},publisher:{'@id':orgId},about:pageTopics(meta).map(name=>({'@type':'Thing',name})),keywords:seoTerms(meta).join(', '),...(isHome?{primaryImageOfPage:{'@id':site.canonical+'#hero-image'}}:{breadcrumb:{'@id':absolute(pagePath)+'#breadcrumb'}})},
+  ...(!isHome?[{'@type':'BreadcrumbList','@id':absolute(pagePath)+'#breadcrumb',itemListElement:[{'@type':'ListItem',position:1,name:'BHOC Therapeutics',item:site.canonical},{'@type':'ListItem',position:2,name:meta.title,item:absolute(pagePath)}]}]:[])
 ]});
 
 const dialogNames=(await fs.readdir(path.join(root,'content/dialogs'))).filter(name=>name.endsWith('.html')).sort();

@@ -62,7 +62,7 @@
     "boundary": "This interpretation comes from historical canine Oxyglobin material and general oxygen physiology. It is not a claim of BHOC efficacy or a reason to disregard PCV.",
     "link": {
       "label": "Open the historical canine archive review",
-      "href": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-archive-Oxyglobin-Case-Listing-Book-II.html"
+      "href": "https://bhoctherapeutics.com/evidence/library/veterinary/Vet-archive-Oxyglobin-Case-Listing-Book-II.html"
     }
   },
   "nature": {
@@ -79,27 +79,27 @@
     "text": "BHOC VET-platform provides a guided overview of veterinary oxygen biology and evidence boundaries. The BHOC Platform Veterinary library holds the full source-linked bibliography and regulatory archive.",
     "link": {
       "label": "Open BHOC VET-platform",
-      "href": "https://archiljali.github.io/BHOC-VET-platform/"
+      "href": "https://bhoctherapeutics.com/evidence/library/veterinary/direct-studies/"
     },
     "library": {
       "label": "Open the full evidence library",
-      "href": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-index.html"
+      "href": "https://bhoctherapeutics.com/evidence/library/veterinary/Vet-index.html"
     },
     "search": {
       "label": "Search veterinary publications",
-      "href": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-search.html"
+      "href": "https://bhoctherapeutics.com/evidence/library/veterinary/Vet-search.html"
     }
   },
   "references": [
     {
       "label": "Oxyglobin Case Listing Book II: critical historical canine archive review",
       "detail": "Manufacturer-collected descriptive evidence, source limitations, treatment-sequence analysis and the separate FDA controlled record.",
-      "href": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-archive-Oxyglobin-Case-Listing-Book-II.html"
+      "href": "https://bhoctherapeutics.com/evidence/library/veterinary/Vet-archive-Oxyglobin-Case-Listing-Book-II.html"
     },
     {
       "label": "BHOC research concept: hemoglobin size, RBC compartmentalization and vascular control",
       "detail": "Author hypothesis connecting molecular scale, nitric oxide biology, vascular response and tissue oxygen delivery.",
-      "href": "https://archiljali.github.io/BHOC-platform/concepts-hypotheses/size-compartmentalization-vascular-control.html"
+      "href": "https://bhoctherapeutics.com/evidence/library/concepts-hypotheses/size-compartmentalization-vascular-control.html"
     },
     {
       "label": "ChEBI: Heme b",

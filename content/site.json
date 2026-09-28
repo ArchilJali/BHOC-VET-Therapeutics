@@ -52,8 +52,10 @@
     "jobTitle": "Project Lead, BHOC Veterinary",
     "url": "https://bhoctherapeutics.com/archil-jaliashvili/",
     "sameAs": [
-      "https://www.linkedin.com/in/archil-jaliashvili-bhoc/"
-    ]
+      "https://www.linkedin.com/in/archil-jaliashvili-bhoc/",
+      "https://orcid.org/0009-0006-4712-4942"
+    ],
+    "description": "Biotechnology and healthcare executive with more than 20 years of experience; BHOC project lead."
   },
   "parent": {
     "name": "BHOC Therapeutics",
@@ -85,7 +87,7 @@
     "Veterinary public health"
   ],
   "language": "en",
-  "updated": "2026-09-26",
+  "updated": "2026-09-28",
   "contactEmail": "info@bhoctherapeutics.com",
   "organizationLogo": {
     "src": "assets/bhoc-veterinary-organization-logo.svg",
@@ -95,9 +97,9 @@
   },
   "publication": {
     "firstPublished": "2026-09-07",
-    "updates": 30,
-    "lastUpdated": "2026-09-26",
-    "version": "26.09.26"
+    "updates": 31,
+    "lastUpdated": "2026-09-28",
+    "version": "26.09.28"
   },
   "sameAs": [
     "https://www.linkedin.com/company/bhoc-therapeutics/",
@@ -110,7 +112,7 @@
     "height": 463
   },
   "footer": {
-    "projectLead": "BHOC Team",
+    "projectLead": "Archil Jaliashvili",
     "copyright": "BHOC Veterinary. Precision Oxygen Therapeutics.",
     "note": "Research and development initiative. Species shown illustrate biodiversity and comparative biology; they do not indicate approved BHOC uses.",
     "links": [
@@ -126,7 +128,7 @@
       },
       {
         "label": "Vet Real-World Evidence & Cases",
-        "href": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-index.html",
+        "href": "https://bhoctherapeutics.com/evidence/library/veterinary/Vet-index.html",
         "icon": "book"
       }
     ],
@@ -162,11 +164,11 @@
         "links": [
           {
             "label": "Search veterinary publications",
-            "href": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-search.html"
+            "href": "https://bhoctherapeutics.com/evidence/library/veterinary/Vet-search.html"
           },
           {
             "label": "Regulatory records",
-            "href": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-fda-ema.html"
+            "href": "https://bhoctherapeutics.com/evidence/library/veterinary/Vet-fda-ema.html"
           }
         ]
       },

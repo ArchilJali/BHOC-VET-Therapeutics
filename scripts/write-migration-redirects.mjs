@@ -2,7 +2,7 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 
 const out=path.resolve(process.argv[2]||'dist');
-const vetRWE='https://archiljali.github.io/BHOC-platform/veterinary/Vet-index.html';
+const vetRWE='https://bhoctherapeutics.com/evidence/library/veterinary/Vet-index.html';
 const page=(title,description,body)=>`<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="${description}"><meta name="robots" content="noindex,follow"><meta name="yandex" content="noindex"><meta http-equiv="refresh" content="0;url=${vetRWE}"><link rel="canonical" href="${vetRWE}"><title>${title}</title></head><body><p>${body} <a href="${vetRWE}">Vet Real-World Evidence & Cases</a>.</p></body></html>\n`;
 
 await fs.mkdir(out,{recursive:true});

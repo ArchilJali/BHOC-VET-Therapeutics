@@ -22,7 +22,7 @@
   "networkLinks": [
     {
       "label": "VET Evidence Hub ↗",
-      "href": "https://archiljali.github.io/BHOC-VET-platform/",
+      "href": "https://bhoctherapeutics.com/evidence/library/veterinary/direct-studies/",
       "enabled": true
     },
     {
@@ -51,7 +51,7 @@
     },
     {
       "label": "Evidence & Cases",
-      "href": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-index.html"
+      "href": "https://bhoctherapeutics.com/evidence/library/veterinary/Vet-index.html"
     },
     {
       "label": "Partners",

@@ -65,7 +65,7 @@
         },
         {
           "label": "Vet Real-World Evidence & Cases",
-          "href": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-index.html"
+          "href": "https://bhoctherapeutics.com/evidence/library/veterinary/Vet-index.html"
         }
       ]
     },
@@ -78,7 +78,7 @@
         },
         {
           "label": "Search veterinary publications",
-          "href": "https://archiljali.github.io/BHOC-platform/veterinary/Vet-search.html"
+          "href": "https://bhoctherapeutics.com/evidence/library/veterinary/Vet-search.html"
         },
         {
           "label": "Contact",
@@ -102,11 +102,11 @@
     "href": "mailto:info@bhoctherapeutics.com?subject=BHOC%20Species%20and%20Biodiversity%20Protection%20Initiative"
   },
   "actionLead": "Science, veterinary medicine and conservation working in one direction.",
-  "projectLead": "Project lead: BHOC Team",
+  "projectLead": "Project lead: Archil Jaliashvili",
   "publication": {
     "firstPublished": "2026-09-09",
-    "lastUpdated": "2026-09-23",
-    "version": "26.09.23"
+    "lastUpdated": "2026-09-28",
+    "version": "26.09.28"
   },
   "legal": {
     "title": "Protected content notice",

@@ -3,7 +3,7 @@
   "title": "BHOC Species & Biodiversity Protection Initiative",
   "description": "BHOC Species & Biodiversity Protection Initiative links species protection, conservation medicine, veterinary capacity and oxygen-delivery science.",
   "author": "Archil Jaliashvili",
-  "creator": "BHOC Team",
+  "creator": "Archil Jaliashvili",
   "themeColor": "#071713",
   "canonical": "https://bhocvet.com/initiative/",
   "openGraph": {
@@ -25,7 +25,7 @@
     "@context": "https://schema.org",
     "@graph": [
       {
-        "@type": "Organization",
+        "@type": "Brand",
         "@id": "https://bhocvet.com/initiative/#initiative",
         "name": "BHOC Species & Biodiversity Protection Initiative",
         "alternateName": "BHOC Initiative",
@@ -40,17 +40,6 @@
           "width": 318,
           "height": 317
         },
-        "parentOrganization": {
-          "@type": "Organization",
-          "name": "BHOC Therapeutics",
-          "url": "https://bhoctherapeutics.com/"
-        },
-        "sameAs": [
-          "https://bhoctherapeutics.com/",
-          "https://bhocvet.com/",
-          "https://archiljali.github.io/BHOC-platform/",
-          "https://www.linkedin.com/company/bhoc-therapeutics/"
-        ],
         "knowsAbout": [
           "species conservation",
           "biodiversity protection",
@@ -70,14 +59,28 @@
         ]
       },
       {
+        "@type": "Organization",
+        "@id": "https://bhoctherapeutics.com/#organization",
+        "name": "BHOC Therapeutics",
+        "url": "https://bhoctherapeutics.com/",
+        "description": "BHOC Therapeutics develops the Biological Hemoglobin Oxygen Carrier (BHOC) framework for Precision Oxygen Therapeutics and maintains source-linked research resources across human, veterinary and transplant applications.",
+        "sameAs": [
+          "https://www.linkedin.com/company/bhoc-therapeutics/",
+          "https://www.youtube.com/@BHOCTherapeutics",
+          "https://bhocvet.com/",
+          "https://bhoctransplant.com/"
+        ]
+      },
+      {
         "@type": "WebSite",
         "@id": "https://bhocvet.com/initiative/#website",
         "url": "https://bhocvet.com/initiative/",
-        "name": "BHOC Species & Biodiversity Protection Initiative",
+        "name": "BHOC Therapeutics",
         "inLanguage": "en",
         "publisher": {
-          "@id": "https://bhocvet.com/initiative/#initiative"
-        }
+          "@id": "https://bhoctherapeutics.com/#organization"
+        },
+        "alternateName": "BHOC Species & Biodiversity Protection Initiative"
       },
       {
         "@type": "WebPage",
@@ -90,7 +93,7 @@
           "@id": "https://bhocvet.com/initiative/#website"
         },
         "publisher": {
-          "@id": "https://bhocvet.com/initiative/#initiative"
+          "@id": "https://bhoctherapeutics.com/#organization"
         },
         "about": {
           "@id": "https://bhocvet.com/initiative/#initiative"
@@ -98,7 +101,7 @@
         "significantLink": [
           "https://bhocvet.com/",
           "https://bhoctherapeutics.com/",
-          "https://archiljali.github.io/BHOC-platform/veterinary/Vet-index.html",
+          "https://bhoctherapeutics.com/evidence/library/veterinary/Vet-index.html",
           "https://www.cbd.int/gbf/goals"
         ],
         "primaryImageOfPage": {
@@ -115,9 +118,33 @@
           "name": "Archil Jaliashvili",
           "url": "https://bhoctherapeutics.com/archil-jaliashvili/",
           "sameAs": [
-            "https://www.linkedin.com/in/archil-jaliashvili-bhoc/"
-          ]
+            "https://www.linkedin.com/in/archil-jaliashvili-bhoc/",
+            "https://orcid.org/0009-0006-4712-4942"
+          ],
+          "@id": "https://bhoctherapeutics.com/archil-jaliashvili/#person"
+        },
+        "dateModified": "2026-09-28",
+        "breadcrumb": {
+          "@id": "https://bhocvet.com/initiative/#breadcrumb"
         }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://bhocvet.com/initiative/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "BHOC Therapeutics",
+            "item": "https://bhocvet.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "BHOC Initiative",
+            "item": "https://bhocvet.com/initiative/"
+          }
+        ]
       }
     ]
   }
