@@ -37,6 +37,7 @@ const titles=new Set();
 const descriptions=new Set();
 
 for(const [name,html] of htmlByPage){
+  assert.ok(!html.includes('https://bhoctherapeutics.com/archil-jaliashvili/'),`${name}: retired author profile referenced`);
   const svgDefinitions=html.match(/<svg class="icon-definitions"[\s\S]*?<\/svg>/)?.[0]||'';
   assert.ok(svgDefinitions,`${name}: shared icon definitions present`);
   assert.ok(!svgDefinitions.includes('\\n'),`${name}: no literal escaped newline in icons`);
@@ -62,12 +63,12 @@ for(const [name,html] of htmlByPage){
   assert.deepEqual(website.alternateName,['BHOC Veterinary','BHOC Vet','BHOC Veterinary Therapeutics'],`${name}: alternate names`);
   assert.equal(person.name,'Archil Jaliashvili',`${name}: author identity`);
   assert.equal(person.jobTitle,'Project Lead, BHOC Veterinary',`${name}: author role`);
-  assert.equal(person.url,'https://bhoctherapeutics.com/archil-jaliashvili/',`${name}: author canonical profile`);
+  assert.equal(person.url,'https://orcid.org/0009-0006-4712-4942',`${name}: author verified ORCID profile`);
   assert.deepEqual(person.sameAs,['https://www.linkedin.com/in/archil-jaliashvili-bhoc/','https://orcid.org/0009-0006-4712-4942'],`${name}: author identity links`);
   assert.equal(organization.email,'info@bhoctherapeutics.com',`${name}: organization contact`);
   assert.equal(organization['@id'],'https://bhoctherapeutics.com/#organization',`${name}: parent organization identity`);
   assert.ok(webPage,`${name}: expected page schema`);
-  assert.equal(webPage.author['@id'],'https://bhoctherapeutics.com/archil-jaliashvili/#person',`${name}: page author`);
+  assert.equal(webPage.author['@id'],'https://bhoctherapeutics.com/#archil-jaliashvili',`${name}: page author`);
   assert.ok(webPage.about.length>=8,`${name}: semantic topic coverage`);
 
   const canonical=name==='index.html'?'https://bhocvet.com/':`https://bhocvet.com/${name}`;
@@ -158,7 +159,7 @@ const initiativeHome=await fs.readFile(initiativeHomePath,'utf8');
 assert.equal((initiativeHome.match(/<h1\b/g)||[]).length,1,'initiative/index.html: exactly one H1');
 const initiativeStructured=JSON.parse(initiativeHome.match(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/)[1]);
 const initiativePage=initiativeStructured['@graph'].find(item=>item['@type']==='WebPage');
-assert.equal(initiativePage.author.url,'https://bhoctherapeutics.com/archil-jaliashvili/','Initiative author canonical profile');
+assert.equal(initiativePage.author.url,'https://orcid.org/0009-0006-4712-4942','Initiative author verified ORCID profile');
 assert.deepEqual(initiativePage.author.sameAs,['https://www.linkedin.com/in/archil-jaliashvili-bhoc/','https://orcid.org/0009-0006-4712-4942'],'Initiative author identity links');
 const initiativeBlockNames=[...initiativeHome.matchAll(/<!-- BLOCK ([a-z-]+): content\/initiative\/blocks\/[a-z-]+\.json -->/g)].map(match=>match[1]);
 assert.deepEqual(initiativeBlockNames,['hero','stats','mission-panel','focus','stories','science-bridge'],'Initiative modular block order');
