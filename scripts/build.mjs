@@ -130,14 +130,14 @@ await fs.access(sourceAssets);
 await fs.rm(out,{recursive:true,force:true});
 await fs.mkdir(out,{recursive:true});
 await fs.cp(sourceAssets,path.join(out,'assets'),{recursive:true});
+await fs.rm(path.join(out,'assets/css'),{recursive:true,force:true});
 
-const cssNames=[...new Set(['theme','header',...blocks.map(b=>b.type),'science','pages','dialogs'])];
-const cssLinks=[];
-for(const name of cssNames){
-  const css=await read(`src/styles/${name}.css`);
-  await write(`assets/css/${name}.css`,css);
-  cssLinks.push(`<link rel="stylesheet" href="./assets/css/${name}.css?v=${digest(css)}">`);
-}
+// The old hero is retained in content/ for reference, but is not displayed.
+const visibleBlocks=blocks.filter(block=>block.type!=='hero');
+const cssNames=[...new Set(['theme','header',...visibleBlocks.map(b=>b.type),'science','pages','dialogs'])];
+const siteStyles=(await Promise.all(cssNames.map(name=>read(`src/styles/${name}.css`)))).join('\n');
+await write('assets/css/site.css',siteStyles);
+const cssLinks=[`<link rel="stylesheet" href="./assets/css/site.css?v=${digest(siteStyles)}">`];
 const client=await read('src/client/app.js');
 await write('app.js',client);
 
@@ -207,6 +207,7 @@ const personId='https://bhoctherapeutics.com/#archil-jaliashvili';
 const orgId='https://bhoctherapeutics.com/#organization';
 const webId=site.canonical+'#website';
 const hero=blocks.find(b=>b.type==='hero').data;
+const openingImage=blocks.find(b=>b.type==='audience').data.slides[0].image;
 const safeJSON=d=>JSON.stringify(d).replace(/</g,'\\u003c');
 const seoTerms=meta=>[
   meta.seo?.primaryKeyword,
@@ -227,7 +228,7 @@ const graphFor=(meta,pagePath,isHome=false)=>({'@context':'https://schema.org','
   {'@type':'Organization','@id':orgId,name:'BHOC Therapeutics',url:'https://bhoctherapeutics.com/',description:'BHOC Therapeutics connects hemoglobin biology, oxygen delivery and source-linked research across human, veterinary and transplant applications within Precision Oxygen Therapeutics.',email:site.contactEmail,logo:'https://bhoctherapeutics.com/assets/bhoc-biodiversity-logo.png',sameAs:['https://www.linkedin.com/company/bhoc-therapeutics/','https://www.youtube.com/@BHOCTherapeutics','https://bhocvet.com/','https://bhoctransplant.com/']},
   {'@type':'Person','@id':personId,...site.author,affiliation:{'@id':orgId},knowsAbout:site.topics},
   {'@type':'WebSite','@id':webId,name:'BHOC Therapeutics',alternateName:[site.name,...site.alternateNames],url:site.canonical,description:site.description,inLanguage:site.language,datePublished:site.publication.firstPublished,dateModified:site.updated,keywords:seoTerms(site).join(', '),publisher:{'@id':orgId},creator:{'@id':personId}},
-  ...(isHome?[{'@type':'ImageObject','@id':site.canonical+'#hero-image',contentUrl:absolute(hero.image.src),caption:hero.image.alt,width:hero.image.width,height:hero.image.height,representativeOfPage:true}]:[]),
+  ...(isHome?[{'@type':'ImageObject','@id':site.canonical+'#hero-image',contentUrl:absolute(openingImage.src),caption:openingImage.alt,width:openingImage.width,height:openingImage.height,representativeOfPage:true}]:[]),
   {'@type':meta.schemaType||'WebPage','@id':absolute(pagePath)+'#webpage',url:absolute(pagePath),name:meta.title,description:meta.description,isPartOf:{'@id':webId},inLanguage:site.language,datePublished:site.publication.firstPublished,dateModified:site.updated,author:{'@id':personId},creator:{'@id':personId},publisher:{'@id':orgId},about:pageTopics(meta).map(name=>({'@type':'Thing',name})),keywords:seoTerms(meta).join(', '),...(isHome?{primaryImageOfPage:{'@id':site.canonical+'#hero-image'}}:{breadcrumb:{'@id':absolute(pagePath)+'#breadcrumb'}})},
   ...(!isHome?[{'@type':'BreadcrumbList','@id':absolute(pagePath)+'#breadcrumb',itemListElement:[{'@type':'ListItem',position:1,name:'BHOC Therapeutics',item:site.canonical},{'@type':'ListItem',position:2,name:meta.title,item:absolute(pagePath)}]}]:[])
 ]});
@@ -242,7 +243,7 @@ const visibleSearchText=value=>JSON.stringify(value,function(key,item){
 
 const search=[
   ...Object.entries(species).map(([key,s])=>({title:s.name,category:'Species',text:`${s.text} ${s.context}`,species:key})),
-  ...blocks.filter(b=>b.type!=='pillars').map(b=>({title:b.data.title||(Array.isArray(b.data.heading)?b.data.heading.join(' '):b.data.heading)||'Our initiative',category:'Homepage',text:visibleSearchText(b.data),href:'index.html#'+b.data.id})),
+  ...visibleBlocks.filter(b=>b.type!=='pillars').map(b=>({title:b.data.title||(Array.isArray(b.data.heading)?b.data.heading.join(' '):b.data.heading)||'Our initiative',category:'Homepage',text:visibleSearchText(b.data),href:'index.html#'+b.data.id})),
   ...initiativeBlocks.map(block=>({
     title:block.data.title||(Array.isArray(block.data.headingLines)?block.data.headingLines.join(' '):'BHOC Initiative'),
     category:'Initiative',
@@ -258,7 +259,9 @@ const search=[
   ...pages.map(page=>({title:page.navLabel,category:'Page',text:visibleSearchText(page),href:page.slug+'.html'})),
   ...dialogHTML.map((html,i)=>({title:html.match(/<h2[^>]*>([\s\S]*?)<\/h2>/)?.[1].replace(/<[^>]*>/g,' ')||dialogNames[i],category:'Information',text:html.replace(/<[^>]*>/g,' '),dialog:dialogNames[i].replace('.html','')}))
 ];
-const siteData=safeJSON({species,search,labels});
+const searchData=safeJSON(search);
+await write('search-data.json',searchData);
+const siteData=safeJSON({species,labels});
 
 const networkHTML=`<nav class="site-network-bar" aria-label="BHOC websites"><span class="network-title">BHOC network</span><div class="network-links">${header.networkLinks.map(item=>item.enabled?`<a class="network-link network-link-enabled" ${attrs(item)} aria-label="Open ${esc(item.label)}">${icon('globe')}<span class="network-label-wide">${esc(item.label)}</span><span class="network-label-compact">${esc(item.compactLabel||item.label)}</span></a>`:`<span class="network-link network-link-disabled" aria-disabled="true" title="Coming soon">${icon('globe')}<span class="network-label-wide">${esc(item.label)}</span><span class="network-label-compact">${esc(item.compactLabel||item.label)}</span></span>`).join('')}</div></nav>`;
 const navigationLogo=item=>`<svg class="nav-initiative-logo" viewBox="145 35 965 805" aria-hidden="true" focusable="false" preserveAspectRatio="xMidYMid meet"><image href="./${esc(item.logo.src)}" width="1254" height="1254" /></svg>`;
@@ -288,14 +291,14 @@ const renderHead=(meta,pagePath,isHome=false)=>`<head>
 <title>${esc(meta.title)}</title><meta name="description" content="${esc(meta.description)}"><meta name="author" content="${esc(site.author.name)}"><meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1"><meta name="yandex" content="noindex"><link rel="canonical" href="${esc(absolute(pagePath))}">
 <meta property="og:type" content="website"><meta property="og:locale" content="en_US"><meta property="og:site_name" content="BHOC Therapeutics"><meta property="og:title" content="${esc(meta.title)}"><meta property="og:description" content="${esc(meta.description)}"><meta property="og:url" content="${esc(absolute(pagePath))}"><meta property="og:image" content="${absolute(site.socialImage.src)}"><meta property="og:image:secure_url" content="${absolute(site.socialImage.src)}"><meta property="og:image:type" content="${imageMime(site.socialImage.src)}"><meta property="og:image:width" content="${site.socialImage.width}"><meta property="og:image:height" content="${site.socialImage.height}"><meta property="og:image:alt" content="${esc(site.socialImage.alt)}">
 <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="${esc(meta.title)}"><meta name="twitter:description" content="${esc(meta.description)}"><meta name="twitter:image" content="${absolute(site.socialImage.src)}"><meta name="twitter:image:alt" content="${esc(site.socialImage.alt)}">
-<link rel="icon" href="./assets/favicon.svg" type="image/svg+xml"><link rel="sitemap" type="application/xml" href="${esc(absolute('sitemap.xml'))}">${isHome?`<link rel="preload" as="image" href="./${esc(hero.image.src)}" type="${imageMime(hero.image.src)}" fetchpriority="high">`:''}
+<link rel="icon" href="./assets/favicon.svg" type="image/svg+xml"><link rel="sitemap" type="application/xml" href="${esc(absolute('sitemap.xml'))}">${isHome?`<link rel="preload" as="image" href="./${esc(openingImage.src)}" type="${imageMime(openingImage.src)}" fetchpriority="high">`:''}
 ${cssLinks.join('\n')}
-<script type="application/ld+json">${safeJSON(graphFor(meta,pagePath,isHome))}</script><script src="https://analytics.ahrefs.com/analytics.js" data-key="E4lNjXqYmHxKeKcqEkSgyg" async></script><script src="./assets/ga4.js?v=20260927" defer></script><script id="site-data" type="application/json">${siteData}</script><script src="./app.js?v=${digest(client)}" defer></script>
+<script type="application/ld+json">${safeJSON(graphFor(meta,pagePath,isHome))}</script><script src="https://analytics.ahrefs.com/analytics.js" data-key="E4lNjXqYmHxKeKcqEkSgyg" async></script><script src="./assets/ga4.js?v=20260927" defer></script><script id="site-data" type="application/json" data-search-src="./search-data.json?v=${digest(searchData)}">${siteData}</script><script src="./app.js?v=${digest(client)}" defer></script>
 </head>`;
 
 const documents=new Map();
 const homeMeta={title:site.title,description:site.description,schemaType:'WebPage',seo:site.seo};
-documents.set('index.html',`<!doctype html><html lang="${esc(site.language)}">${renderHead(homeMeta,'',true)}<body data-page="home"><a class="skip-link" href="#main">Skip to content</a>${await read('src/icons.html')}<div class="site-shell">${renderHeader('index.html#home')}${renderPageRoute('Home',true)}<main id="main">\n${blocks.map(b=>`<!-- BLOCK ${b.type}: content/blocks/${b.type}.json -->\n${b.html}`).join('\n')}\n</main>${renderFooter()}</div>${commonEnd}</body></html>\n`);
+documents.set('index.html',`<!doctype html><html lang="${esc(site.language)}">${renderHead(homeMeta,'',true)}<body data-page="home"><a class="skip-link" href="#main">Skip to content</a>${await read('src/icons.html')}<div class="site-shell" id="home">${renderHeader('index.html#home')}${renderPageRoute('Home',true)}<main id="main">\n${visibleBlocks.map(b=>`<!-- BLOCK ${b.type}: content/blocks/${b.type}.json -->\n${b.html}`).join('\n')}\n</main>${renderFooter()}</div>${commonEnd}</body></html>\n`);
 
 for(const page of pages){
   const {default:renderPage}=await import('../src/pages/'+page.slug+'.mjs');

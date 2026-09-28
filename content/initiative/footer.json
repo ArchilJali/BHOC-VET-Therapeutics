@@ -66,6 +66,10 @@
         {
           "label": "Vet Real-World Evidence & Cases",
           "href": "https://bhoctherapeutics.com/evidence/library/veterinary/Vet-index.html"
+        },
+        {
+          "label": "VET Evidence Hub",
+          "href": "https://archiljali.github.io/BHOC-VET-platform/"
         }
       ]
     },

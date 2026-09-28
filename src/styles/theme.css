@@ -1,9 +1,9 @@
 :root {
   color-scheme: light;
-  --ink: #585858;
-  --body: #585858;
-  --muted: #777777;
-  --bhoc-blue: #585858;
+  --ink: #303a40;
+  --body: #49525a;
+  --muted: #68717a;
+  --bhoc-blue: #344047;
   --bhoc-red: #f65c00;
   --accent: #f65c00;
   --accent-strong: #cf4d00;
@@ -12,7 +12,7 @@
   --accent-wash: #fff7f2;
   --line: #e6e0dc;
   --paper: #fff;
-  --charcoal: #585858;
+  --charcoal: #394247;
   --font-body: Arial, Helvetica, sans-serif;
   --font-display: Georgia, 'Times New Roman', serif;
   --gutter: clamp(20px, 2.4vw, 42px);
