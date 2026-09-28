@@ -1,10 +1,7 @@
-import {action,esc,initiativeIcon,initiativeImage,lines} from '../lib.mjs';
+import {action,esc,initiativeImage,lines} from '../lib.mjs';
 
 export default function renderHero(data){
   const actions=data.actions.map(action).join('\n            ');
-  const principles=data.principles.map(item=>
-    '<div class="hero-principle">'+initiativeIcon(item.icon)+'<span>'+lines(item.labelLines)+'</span></div>'
-  ).join('');
   const slides=data.slides.filter(slide=>slide.enabled).map((slide,index)=>{
     const images=slide.images.map((image,imageIndex)=>
       '<figure class="hero-photo hero-photo-'+esc(image.role)+'">'+
@@ -32,13 +29,10 @@ export default function renderHero(data){
     '      <div class="hero-actions">',
     '        '+actions,
     '      </div>',
-    '      <div class="hero-principles" aria-label="Initiative priorities">'+principles+'</div>',
     '    </div>',
     '',
     '    <div class="hero-art" aria-live="polite">',
-    '      <p class="hero-promise">'+lines(data.promiseLines)+'</p>',
     '      '+slides,
-    '      <p class="hero-closing">'+lines(data.closingLines)+'</p>',
     '    </div>',
     '    <div class="hero-pagination" aria-label="Hero slides">'+controls+'</div>',
     '  </div>',

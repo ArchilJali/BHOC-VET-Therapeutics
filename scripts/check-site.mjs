@@ -111,6 +111,15 @@ for(const [name,html] of htmlByPage){
 }
 
 const home=htmlByPage.get('index.html');
+const sharedStyles=await fs.readdir(path.join(out,'assets/css'));
+assert.deepEqual(sharedStyles,['site.css'],'Shared pages use one stylesheet');
+const searchEntries=JSON.parse(await fs.readFile(path.join(out,'search-data.json'),'utf8'));
+assert.ok(searchEntries.some(entry=>entry.href==='initiative/hachiko.html'||entry.href==='./initiative/hachiko.html'),'Search retains the Initiative story');
+assert.ok(searchEntries.some(entry=>entry.href==='news.html'),'Search retains the News page');
+for(const [name,html] of htmlByPage){
+  assert.equal((html.match(/<link rel="stylesheet"/g)||[]).length,1,`${name}: one shared stylesheet`);
+  assert.match(html,/data-search-src="\.\/search-data\.json\?v=[a-f0-9]{10}"/,`${name}: search data loads when needed`);
+}
 const primaryNav=home.match(/<nav id="primary-nav"[\s\S]*?<\/nav>/)?.[0]||'';
 assert.match(primaryNav,/class="nav-initiative-entry" href="\.\/initiative\/"/,'Initiative remains first navigation entry');
 for(const [href,label] of [
@@ -122,8 +131,9 @@ for(const [href,label] of [
   ['news.html','News']
 ])assert.match(primaryNav,new RegExp(`href="${re(href)}"[^>]*>${htmlText(label)}<\\/a>`),`Primary navigation keeps ${label}`);
 assert.match(home,new RegExp(`href="${re(vetRWE)}"[^>]*>Vet Real-World Evidence &amp; Cases`),'Homepage biodiversity CTA opens Vet RWE & Cases');
-assert.match(home,/<h1 id="home-heading">Precision Oxygen Therapeutics<\/h1>/,'Homepage H1 preserved');
-assert.equal((home.match(/data-hero-slide/g)||[]).length,3,'Three hero slides preserved');
+assert.match(home,/<h1 id="veterinary-teams-heading"><span class="audience-heading-line">Precision Oxygen<\/span><span class="audience-heading-line">Therapeutics\.<\/span><\/h1>/,'Homepage H1 is visible in the opening section');
+assert.doesNotMatch(home,/data-hero-slide|bhoc-initiative-land\.webp/,'Hidden legacy hero is not rendered or preloaded');
+assert.match(home,/rel="preload" as="image" href="\.\/assets\/veterinary-team-approved\.webp"/,'Opening veterinary illustration is preloaded');
 assert.match(home,/We be of one blood, ye and I\./,'Kipling quotation preserved');
 
 const product=htmlByPage.get('product.html');
@@ -132,7 +142,7 @@ assert.ok(product.includes(`href="${vetRWE}"`),'Product routes to Vet RWE & Case
 assert.match(product,/Open Vet Real-World Evidence (?:&amp;|&) Cases/,'Product keeps the Vet RWE & Cases label');
 
 const news=htmlByPage.get('news.html');
-assert.match(news,/Vet Real-World Evidence & Cases/,'News identifies the canonical veterinary RWE library');
+assert.match(news,/Vet Real-World Evidence &amp; Cases/,'News identifies the canonical veterinary RWE library');
 assert.match(news,new RegExp(`href="${re(vetRWE)}"`),'News routes directly to Vet RWE & Cases');
 assert.doesNotMatch(news,/evidence directory/i,'News no longer describes a duplicate evidence directory');
 assert.match(news,/id="wodan-penn-vet-oxyglobin-k19"/,'News preserves Wodan Evidence K19 story');

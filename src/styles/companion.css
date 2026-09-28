@@ -1,9 +1,9 @@
 .block-companion{padding:10px 0;background:#fff;border-bottom:1px solid var(--line)}
-.companion-stage{position:relative;width:100%;height:clamp(315px,25vw,360px);margin:0;overflow:hidden;background:#fff}
-.companion-banner{height:100%;margin:0;background:url("../companion-animals-wide-v4.webp") right 2vw bottom 8px/auto 94% no-repeat}
-.companion-banner-art{display:block;width:100%;height:100%;object-fit:contain;object-position:center;opacity:0}
+.companion-stage{position:relative;width:100%;height:clamp(305px,23vw,340px);margin:0;overflow:hidden;background:#fff}
+.companion-banner{height:100%;margin:0}
+.companion-banner-art{display:block;width:100%;height:100%;object-fit:contain;object-position:right 2vw bottom 8px}
 .companion-fade{position:absolute;inset:0 auto 0 0;width:53%;background:linear-gradient(90deg,#fff 0%,#fff 62%,rgba(255,255,255,.97) 74%,rgba(255,255,255,.82) 85%,transparent 100%);pointer-events:none}
-.companion-copy{position:absolute;z-index:2;left:max(4%,var(--gutter));top:34px;width:min(43%,590px)}
+.companion-copy{position:absolute;z-index:2;left:max(4%,var(--gutter));top:26px;width:min(43%,590px)}
 .companion-copy h2{margin:0;color:var(--ink);font:400 clamp(36px,3.4vw,54px)/.98 var(--font-display);letter-spacing:-.045em}
 .companion-subtitle{max-width:520px;margin-top:10px;color:var(--ink);font-size:clamp(13px,.95vw,16px);line-height:1.35}
 .companion-supporting{max-width:520px;margin-top:6px;color:var(--accent-strong);font:italic 400 clamp(14px,1.05vw,18px)/1.25 var(--font-display)}
@@ -28,8 +28,8 @@
 @media(max-width:640px){
  .block-companion{padding:8px 0 10px}
  .companion-stage{height:520px}
- .companion-banner{position:absolute;right:0;bottom:0;left:0;overflow:hidden;background-image:none}
- .companion-banner-art{width:100%;max-width:none;object-position:center bottom;opacity:1;transform:none}
+ .companion-banner{position:absolute;right:0;bottom:0;left:0;overflow:hidden}
+ .companion-banner-art{width:100%;max-width:none;object-position:center bottom;transform:none}
  .companion-fade{display:none}
  .companion-copy{left:0;top:0;width:100%;min-height:220px;padding:24px 6% 16px;background:#fff}
  .companion-copy h2{font-size:clamp(32px,8.5vw,43px)}

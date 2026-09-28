@@ -312,8 +312,8 @@ h2 {
   overflow: hidden;
   color: #fff;
   background:
-    radial-gradient(circle at 78% 12%, rgba(239, 213, 159, 0.18), transparent 22%),
-    linear-gradient(112deg, var(--forest-950) 0%, var(--forest-900) 52%, var(--forest-800) 100%);
+    radial-gradient(circle at 78% 12%, rgba(239, 213, 159, 0.22), transparent 22%),
+    linear-gradient(112deg, var(--forest-950) 0%, var(--forest-900) 50%, #164b36 100%);
 }
 
 .hero::before {
@@ -330,7 +330,7 @@ h2 {
   position: relative;
   display: grid;
   grid-template-columns: minmax(390px, 0.9fr) minmax(610px, 1.3fr);
-  grid-template-rows: minmax(590px, auto) 52px;
+  grid-template-rows: minmax(530px, auto) 42px;
   gap: 0 clamp(24px, 3.4vw, 58px);
 }
 
@@ -339,7 +339,7 @@ h2 {
   z-index: 5;
   align-self: center;
   max-width: 590px;
-  padding: 60px 0 26px;
+  padding: 40px 0 20px;
 }
 
 .hero h1 {
@@ -462,7 +462,7 @@ h2 {
 .hero-art {
   position: relative;
   z-index: 2;
-  min-height: 590px;
+  min-height: 530px;
   margin: 0;
 }
 
@@ -590,7 +590,7 @@ h2 {
   align-items: center;
   justify-content: center;
   gap: 10px;
-  padding-bottom: 20px;
+  padding-bottom: 12px;
 }
 
 .hero-dot {
@@ -1915,11 +1915,11 @@ h2 {
 
   .hero-grid {
     grid-template-columns: minmax(340px, 0.82fr) minmax(480px, 1.18fr);
-    grid-template-rows: minmax(555px, auto) 50px;
+    grid-template-rows: minmax(520px, auto) 42px;
   }
 
   .hero-art {
-    min-height: 555px;
+    min-height: 520px;
   }
 
   .hero h1 {
@@ -1981,7 +1981,7 @@ h2 {
 
   .hero-grid {
     grid-template-columns: 1fr;
-    grid-template-rows: auto 570px 50px;
+    grid-template-rows: auto 500px 42px;
   }
 
   .hero-copy {
@@ -1999,7 +1999,7 @@ h2 {
   }
 
   .hero-art {
-    min-height: 570px;
+    min-height: 500px;
   }
 
   .hero-slide {
@@ -2146,7 +2146,7 @@ h2 {
   }
 
   .hero-grid {
-    grid-template-rows: auto 460px 48px;
+    grid-template-rows: auto 440px 42px;
   }
 
   .hero-copy {
@@ -2189,7 +2189,7 @@ h2 {
   }
 
   .hero-art {
-    min-height: 460px;
+    min-height: 440px;
   }
 
   .hero-slide {

@@ -1,4 +1,4 @@
-name: Sync BHOC Veterinary navigation context
+name: Keep BHOC Veterinary navigation compact
 
 on:
   push:
@@ -31,7 +31,7 @@ jobs:
         with:
           node-version: 22
 
-      - name: Integrate shared navigation context at source level
+      - name: Remove redundant injected navigation context
         run: node scripts/ensure-navigation-context.mjs
 
       - name: Validate source JavaScript
@@ -40,15 +40,15 @@ jobs:
           node --check src/initiative/app.js
           node --check assets/navigation-context.js
 
-      - name: Commit source integration
+      - name: Commit source cleanup
         run: |
           git add src/client/app.js src/initiative/app.js
           if git diff --cached --quiet; then
-            echo "Navigation context source integration is already synchronized."
+            echo "Navigation context is already compact."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git commit -m "Integrate shared navigation context across BHOC Veterinary"
+          git commit -m "Remove duplicate BHOC Veterinary navigation context"
           git pull --rebase origin main
           git push

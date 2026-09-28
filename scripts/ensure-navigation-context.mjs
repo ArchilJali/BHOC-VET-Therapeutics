@@ -7,13 +7,11 @@ const loader = `;(() => {\n  if (window.__bhocContextLoader) return;\n  window._
 let changed = 0;
 for (const file of files) {
   const current = await fs.readFile(file, 'utf8');
-  if (current.includes(marker)) {
-    console.log(`${file}: navigation context already present`);
-    continue;
-  }
-  await fs.writeFile(file, `${current.trimEnd()}\n\n${loader}\n`);
-  changed += 1;
-  console.log(`${file}: navigation context loader added`);
+  if (!current.includes(marker)) continue;
+  if (!current.includes(loader)) throw new Error(`${file}: unrecognized navigation context loader; review before removal`);
+  await fs.writeFile(file, `${current.replace(loader, '').trimEnd()}\n`);
+  changed++;
+  console.log(`${file}: redundant navigation context loader removed`);
 }
 
-console.log(`Navigation context source sync complete: ${changed} file(s) changed.`);
+console.log(`Navigation context cleanup complete: ${changed} file(s) changed.`);
