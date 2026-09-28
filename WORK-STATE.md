@@ -72,14 +72,14 @@ The full Initiative homepage uses five independent blocks: hero, evidence statis
 - Product expansion: `BHOC - Biological Hemoglobin Oxygen Carrier`, with B, H, O and C emphasised and O in red.
 - Initiative priority line: `Many species. Blood group systems, known and unknown. One BHOC system. One core design engineered by nature.`
 - Science block heading: `Nature kept the core. Bioengineers build on that foundation.`
-- Public attribution: `Project lead: BHOC Team`.
+- Public attribution: `Project lead: Archil Jaliashvili`.
 - Author and structured-data creator: `Archil Jaliashvili`.
 - Canonical URL, Open Graph, X/Twitter metadata, schema, descriptive ALT text and sitemap entries must remain intact.
 - The Initiative and News pages use the visible terms `Kunming-Montreal Global Biodiversity Framework`, `global biodiversity goals`, `species recovery`, `veterinary capacity` and `conservation technology` in context. Structured data points to the official framework goals without declaring an organizational relationship.
 - Project-supplied Companion and Land/Winter/Ocean artwork is recorded with local file hashes and rights status in `content/initiative/image-provenance.json`; third-party Initiative imagery retains its creator, source and licence records.
 - The footer keeps LinkedIn and the full VET Evidence Platform as distinct destinations.
 
-Publication line: `First published 07 Sep 2026 · 21 updates · Last updated 20 Sep 2026 · Version 26.09.20`. Increment `publication.updates` only when the shared BHOC Veterinary pages are intentionally republished.
+Publication line: `First published 07 Sep 2026 · 31 updates · Last updated 28 Sep 2026 · Version 26.09.28`. Increment `publication.updates` only when the shared BHOC Veterinary pages are intentionally republished.
 
 ## Editing and verification
 
