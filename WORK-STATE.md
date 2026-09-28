@@ -14,7 +14,7 @@
 ## Current visual authority
 
 - The production homepage uses a veterinary-first opening. Block 1 has one approved static image, `assets/veterinary-team-approved.webp`, showing a veterinarian with a dog and cat. No alternate slides, indicators or automatic rotation are displayed.
-- Block 3 uses `assets/companion-animals-wide-v9.webp`, a full-width graphite composition that keeps Rem and Evchika visible. The horse looks forward like the donkey, with its torso and rump receding to image right, one mane on the left of its neck, a visible attached tail on the right, two visible front legs and rear legs hidden behind the foreground retriever. The prior side-view horse and stray fragments are removed. The exact Kipling quotation and attribution sit at the right in a clear white strip above the artwork on desktop. The title, navigation, quotation and reference stethoscope/paw signature are accessible HTML layers; no duplicate baked copy is visible.
+- Block 3 uses `assets/companion-animals-wide-v10.webp`, a full-width graphite composition that keeps Rem and Evchika visible. The old malformed horse is fully replaced by a single Arabian horse standing on the hillside, with a smooth coat, four continuous legs and a complete attached tail. The exact Kipling quotation and attribution sit at the right in a clear white strip above the artwork on desktop. The title, navigation, quotation and reference stethoscope/paw signature are accessible HTML layers; no duplicate baked copy is visible.
 - Homepage review numbering is fixed as: 1 Veterinary Teams, 2 Initiative Introduction, 3 Companion Animals, 4 Explore Species, 5 Science Bridge, 6 Oxygen Delivery Science, 7 Initiative Wildlife Banner, 8 Initiative Pathways.
 
 - Current desktop/mobile hero carousel: `assets/bhoc-initiative-land-hero-v2.webp`, `assets/bhoc-initiative-winter-hero.webp` and `assets/bhoc-initiative-ocean-hero-v2.webp`, in Land, Winter, Ocean order. The Land artwork has no baked-in carousel indicators; all three slides use only the live accessible controls.
@@ -79,7 +79,7 @@ The full Initiative homepage uses five independent blocks: hero, evidence statis
 - Project-supplied Companion and Land/Winter/Ocean artwork is recorded with local file hashes and rights status in `content/initiative/image-provenance.json`; third-party Initiative imagery retains its creator, source and licence records.
 - The footer keeps LinkedIn and the full VET Evidence Platform as distinct destinations.
 
-Publication line: `First published 07 Sep 2026 · 39 updates · Last updated 28 Sep 2026 · Version 26.09.28`. Increment `publication.updates` only when the shared BHOC Veterinary pages are intentionally republished.
+Publication line: `First published 07 Sep 2026 · 40 updates · Last updated 28 Sep 2026 · Version 26.09.28`. Increment `publication.updates` only when the shared BHOC Veterinary pages are intentionally republished.
 
 2026-09-28 presentation and speed pass: the public homepage begins with the existing veterinary team carousel, while the former hidden Land hero remains in `content/blocks/hero.json` and is no longer rendered or preloaded. Shared pages load one combined stylesheet and fetch the full search index only when search opens. The Initiative uses its own header and footer without an injected second navigation layer. All Initiative photos, story pages and source records remain intact.
 
