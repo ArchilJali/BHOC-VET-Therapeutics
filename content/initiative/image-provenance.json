@@ -391,11 +391,11 @@
       "providedOn": "2026-09-20",
       "rightsStatus": "Project-supplied original artwork and project-approved derivatives; all rights reserved; not offered under an open third-party licence.",
       "reason": "Provides the Companion Animals banner, explicitly including Rem and Evchika, and the veterinary stethoscope/paw signature.",
-      "modifications": "The approved master is preserved in the private project source. The public v10 derivative replaces the prior horse completely with a single Arabian horse illustration on the hillside. Its smooth graphite coat, four continuous legs and full attached tail are visible. The former horse and all stray limb fragments were removed within a bounded local edit. The foreground animals and the rest of the panorama remain in place. Typography remains native HTML, with the Kipling quotation above the desktop artwork. The stethoscope/paw signature was mechanically isolated from the project-supplied reference screenshot.",
+      "modifications": "The approved master is preserved in the private project source. The public v11 derivative moves the Arabian horse down beside the veterinary retriever and donkey, behind the foreground dogs. The earlier hillside horse was removed; one continuous horse and attached tail remain. The other animals and the rest of the panorama remain in place. Typography remains native HTML, with the Kipling quotation above the desktop artwork. The stethoscope/paw signature was mechanically isolated from the project-supplied reference screenshot.",
       "localFiles": [
         {
-          "path": "assets/companion-animals-wide-v10.webp",
-          "sha256": "41a89c16d3130486cf1f2b792d45157ccb0271472788e0401a4c671d092133ae",
+          "path": "assets/companion-animals-wide-v11.webp",
+          "sha256": "43263439b5ef2ece11ad89cbfa5ebddb7476382d490b9184d49e0b0c4c3ccc5f",
           "introducedOn": "2026-09-28"
         },
         {
