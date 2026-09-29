@@ -40,5 +40,64 @@
       "label": "Explore Species",
       "href": "#species"
     }
-  ]
+  ],
+  "compatibility": {
+    "eyebrow": "RBC Compatibility Across Species",
+    "title": "Different Species. Different RBC Compatibility Systems.",
+    "intro": "Human, equine, feline and other red cells carry species-specific antigen systems and transfusion compatibility rules. They are not interchangeable. What unites life is one fundamental biological need: oxygen must reach tissues and cells.",
+    "rbcLabel": "RBC",
+    "rbcNote": "Blood-group diversity belongs to the red-cell system.",
+    "facts": [
+      {
+        "label": "HUMAN",
+        "value": "49",
+        "title": "blood-group systems",
+        "note": "400 recognised antigens, including ABO and Rh."
+      },
+      {
+        "label": "HORSE",
+        "value": "7",
+        "title": "red-cell group systems",
+        "note": ">30 identified RBC factors · >400,000 possible blood-type combinations."
+      },
+      {
+        "label": "CAT",
+        "value": "3",
+        "title": "primary AB blood types",
+        "note": "Compatibility remains species-specific."
+      },
+      {
+        "label": "VERTEBRATE LIFE",
+        "value": "70,000+",
+        "title": "described species",
+        "note": "Different antigen systems across animal life."
+      }
+    ],
+    "bhoc": {
+      "title": "Designed beyond red-cell blood-group barriers, intact-cell constraints and donor-blood system limitations.",
+      "claim": [
+        "Compatible with all blood types by design.",
+        "Built for every species."
+      ],
+      "body": "Cell-free hemoglobin oxygen carrier. Oxygen loading and release are governed by an engineered oxygen-affinity profile and local oxygen partial-pressure gradients. The platform direction is a complementary oxygen-delivery bridge, not a replacement for blood. Administration, delivery speed and treatment volume remain species-specific and require their own evidence.",
+      "facts": [
+        {
+          "title": "Cell-free",
+          "note": "No red-cell membrane or cell antigens."
+        },
+        {
+          "title": "Engineered oxygen affinity",
+          "note": "Controlled loading and release."
+        },
+        {
+          "title": "Long shelf life",
+          "note": "Development target for room-temperature handling."
+        },
+        {
+          "title": "Robust and portable",
+          "note": "Designed for practical transport and handling."
+        }
+      ]
+    }
+  }
 }
