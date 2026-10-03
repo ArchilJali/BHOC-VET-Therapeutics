@@ -5,5 +5,5 @@ export const icon=name=>`<svg aria-hidden="true" focusable="false"><use href="#$
 export function attrs(link){return `href="${url(link.href)}"${link.dialog?` data-open="${esc(link.dialog)}"`:''}${link.href.startsWith('https://')?' target="_blank" rel="noopener noreferrer"':''}`;}
 export const link=(data,classes='text-link',label=data.label)=>`<a class="${esc(classes)}" ${attrs(data)}>${esc(label)}</a>`;
 export const button=data=>`<a class="button${data.style==='outline'?' button-outline':''}" ${attrs(data)}><span>${esc(data.label)}</span>${icon('arrow')}</a>`;
-export function img(image,extra=''){return `<img src="./${url(image.src)}" alt="${esc(image.alt)}" width="${Number(image.width)}" height="${Number(image.height)}" decoding="async" ${extra}>`;}
+export function img(image,extra=''){const responsive=image.srcset?` srcset="${image.srcset.map(item=>`./${url(item.path)} ${Number(item.width)}w`).join(', ')}" sizes="${esc(image.sizes)}"`:'';return `<img src="./${url(image.src)}"${responsive} alt="${esc(image.alt)}" width="${Number(image.width)}" height="${Number(image.height)}" decoding="async" ${extra}>`;}
 export const section=(data,type,body)=>`<section id="${esc(data.id)}" class="block-${type}" data-block="${type}"${data.number?` data-block-number="${esc(data.number)}"`:''} aria-labelledby="${esc(data.id)}-heading">${body}</section>`;

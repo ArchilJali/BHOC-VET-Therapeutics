@@ -20,13 +20,43 @@
     }
   ],
   "principles": [
-    {"icon": "leaf", "labelLines": ["Wildlife", "Medicine"]},
-    {"icon": "paw", "labelLines": ["Conservation", "Action"]},
-    {"icon": "science", "labelLines": ["Science &", "Innovation"]},
-    {"icon": "globe", "labelLines": ["A Healthier", "Planet"]}
+    {
+      "icon": "leaf",
+      "labelLines": [
+        "Wildlife",
+        "Medicine"
+      ]
+    },
+    {
+      "icon": "paw",
+      "labelLines": [
+        "Conservation",
+        "Action"
+      ]
+    },
+    {
+      "icon": "science",
+      "labelLines": [
+        "Science &",
+        "Innovation"
+      ]
+    },
+    {
+      "icon": "globe",
+      "labelLines": [
+        "A Healthier",
+        "Planet"
+      ]
+    }
   ],
-  "promiseLines": ["A healthier tomorrow", "For Every Species"],
-  "closingLines": ["Different species.", "A shared tomorrow."],
+  "promiseLines": [
+    "A healthier tomorrow",
+    "For Every Species"
+  ],
+  "closingLines": [
+    "Different species.",
+    "A shared tomorrow."
+  ],
   "slides": [
     {
       "id": "species-gallery",
@@ -41,7 +71,18 @@
           "height": 960,
           "credit": "Daphne Carlson Bremer / USFWS",
           "license": "Public domain / CC BY 2.0",
-          "source": "https://commons.wikimedia.org/wiki/File:African_elephant,_Dzanga_Sangha,_Central_African_Republic_(18945940511).jpg"
+          "source": "https://commons.wikimedia.org/wiki/File:African_elephant,_Dzanga_Sangha,_Central_African_Republic_(18945940511).jpg",
+          "srcset": [
+            {
+              "path": "assets/initiative/challenge-african-elephant-usfws-480w.webp",
+              "width": 480
+            },
+            {
+              "path": "assets/initiative/challenge-african-elephant-usfws.webp",
+              "width": 960
+            }
+          ],
+          "sizes": "(max-width: 640px) 80vw, 480px"
         },
         {
           "role": "snow-leopard",
@@ -97,8 +138,18 @@
     }
   ],
   "controls": [
-    {"slideId": "species-gallery", "label": "Show species gallery", "enabled": true},
-    {"label": "Reserved for future slide 2", "enabled": false},
-    {"label": "Reserved for future slide 3", "enabled": false}
+    {
+      "slideId": "species-gallery",
+      "label": "Show species gallery",
+      "enabled": true
+    },
+    {
+      "label": "Reserved for future slide 2",
+      "enabled": false
+    },
+    {
+      "label": "Reserved for future slide 3",
+      "enabled": false
+    }
   ]
 }

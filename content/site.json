@@ -98,7 +98,7 @@
   },
   "publication": {
     "firstPublished": "2026-09-07",
-    "updates": 44,
+    "updates": 45,
     "lastUpdated": "2026-10-03",
     "version": "26.10.03"
   },
@@ -208,5 +208,8 @@
         ]
       }
     ]
+  },
+  "indexNow": {
+    "key": "02139069f2ec2d55bdc23a9a6fda00ab"
   }
 }

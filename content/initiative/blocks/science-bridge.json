@@ -1,7 +1,10 @@
 {
   "id": "science",
   "eyebrow": "The science bridge",
-  "titleLines": ["Every species is different.", "The need for oxygen is universal."],
+  "titleLines": [
+    "Every species is different.",
+    "The need for oxygen is universal."
+  ],
   "text": "BHOC Therapeutics is developing a next-generation oxygen carrier designed to support veterinary medicine, including wildlife, exotic and endangered species. By improving oxygen delivery at the microcirculatory level, we aim to help more animals survive when every second counts.",
   "action": {
     "label": "Discover the Science",
@@ -53,7 +56,18 @@
       "height": 960,
       "credit": "Daphne Carlson Bremer / U.S. Fish and Wildlife Service",
       "license": "Public domain / CC BY 2.0",
-      "source": "https://commons.wikimedia.org/wiki/File:African_elephant,_Dzanga_Sangha,_Central_African_Republic_(18945940511).jpg"
+      "source": "https://commons.wikimedia.org/wiki/File:African_elephant,_Dzanga_Sangha,_Central_African_Republic_(18945940511).jpg",
+      "srcset": [
+        {
+          "path": "assets/initiative/challenge-african-elephant-usfws-480w.webp",
+          "width": 480
+        },
+        {
+          "path": "assets/initiative/challenge-african-elephant-usfws.webp",
+          "width": 960
+        }
+      ],
+      "sizes": "(max-width: 640px) 80vw, 480px"
     }
   ],
   "comparisonGraphic": {

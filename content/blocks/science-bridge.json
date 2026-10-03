@@ -114,7 +114,18 @@
         "src": "assets/initiative/challenge-african-elephant-usfws.webp",
         "alt": "African elephant representing large-animal and wildlife medicine",
         "width": 960,
-        "height": 960
+        "height": 960,
+        "srcset": [
+          {
+            "path": "assets/initiative/challenge-african-elephant-usfws-480w.webp",
+            "width": 480
+          },
+          {
+            "path": "assets/initiative/challenge-african-elephant-usfws.webp",
+            "width": 960
+          }
+        ],
+        "sizes": "(max-width: 640px) 80vw, 480px"
       },
       "comparison": {
         "src": "assets/initiative/bhoc-vs-rbc-400x-comparison.webp",

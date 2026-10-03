@@ -14,7 +14,18 @@
       "src": "assets/initiative/challenge-african-elephant-usfws.webp",
       "alt": "African forest elephant family representing wildlife protection and biodiversity",
       "width": 960,
-      "height": 960
+      "height": 960,
+      "srcset": [
+        {
+          "path": "assets/initiative/challenge-african-elephant-usfws-480w.webp",
+          "width": 480
+        },
+        {
+          "path": "assets/initiative/challenge-african-elephant-usfws.webp",
+          "width": 960
+        }
+      ],
+      "sizes": "(max-width: 640px) 80vw, 480px"
     }
   },
   "twitter": {
@@ -39,24 +50,7 @@
           "caption": "BHOC Species & Biodiversity Protection Initiative emblem",
           "width": 318,
           "height": 317
-        },
-        "knowsAbout": [
-          "species conservation",
-          "biodiversity protection",
-          "Kunming-Montreal Global Biodiversity Framework",
-          "global biodiversity goals",
-          "species recovery",
-          "conservation technology",
-          "veterinary capacity",
-          "wildlife medicine",
-          "zoological medicine",
-          "veterinary science",
-          "comparative biology",
-          "oxygen delivery",
-          "microcirculation",
-          "Biological Hemoglobin Oxygen Carrier",
-          "hemoglobin-based oxygen carrier"
-        ]
+        }
       },
       {
         "@type": "Organization",
@@ -95,9 +89,71 @@
         "publisher": {
           "@id": "https://bhoctherapeutics.com/#organization"
         },
-        "about": {
-          "@id": "https://bhocvet.com/initiative/#initiative"
-        },
+        "about": [
+          {
+            "@id": "https://bhocvet.com/initiative/#initiative"
+          },
+          {
+            "@type": "Thing",
+            "name": "species conservation"
+          },
+          {
+            "@type": "Thing",
+            "name": "biodiversity protection"
+          },
+          {
+            "@type": "Thing",
+            "name": "Kunming-Montreal Global Biodiversity Framework"
+          },
+          {
+            "@type": "Thing",
+            "name": "global biodiversity goals"
+          },
+          {
+            "@type": "Thing",
+            "name": "species recovery"
+          },
+          {
+            "@type": "Thing",
+            "name": "conservation technology"
+          },
+          {
+            "@type": "Thing",
+            "name": "veterinary capacity"
+          },
+          {
+            "@type": "Thing",
+            "name": "wildlife medicine"
+          },
+          {
+            "@type": "Thing",
+            "name": "zoological medicine"
+          },
+          {
+            "@type": "Thing",
+            "name": "veterinary science"
+          },
+          {
+            "@type": "Thing",
+            "name": "comparative biology"
+          },
+          {
+            "@type": "Thing",
+            "name": "oxygen delivery"
+          },
+          {
+            "@type": "Thing",
+            "name": "microcirculation"
+          },
+          {
+            "@type": "Thing",
+            "name": "Biological Hemoglobin Oxygen Carrier"
+          },
+          {
+            "@type": "Thing",
+            "name": "hemoglobin-based oxygen carrier"
+          }
+        ],
         "significantLink": [
           "https://bhocvet.com/",
           "https://bhoctherapeutics.com/",

@@ -32,7 +32,7 @@ const renderCompatibility=(d,c)=>`
 export default d=>section(d,'companion',`
   <div class="companion-stage">
     <figure class="companion-banner">
-      <picture><source media="(max-width: 640px)" srcset="./${esc(d.mobileImage.src)}">${img(d.image,'loading="lazy" decoding="async" class="companion-banner-art"')}</picture>
+      <picture><source media="(max-width: 640px)" srcset="${d.mobileImage.srcset?d.mobileImage.srcset.map(item=>`./${esc(item.path)} ${Number(item.width)}w`).join(', '):'./'+esc(d.mobileImage.src)}"${d.mobileImage.sizes?` sizes="${esc(d.mobileImage.sizes)}"`:''}>${img(d.image,'loading="lazy" decoding="async" class="companion-banner-art"')}</picture>
     </figure>
     <div class="companion-fade" aria-hidden="true"></div>
     <div class="companion-copy">

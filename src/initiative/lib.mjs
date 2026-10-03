@@ -23,7 +23,8 @@ export function linkAttrs(item){
 export function initiativeImage(image,{priority=false,lazy=true}={}){
   const remote=String(image.src).startsWith('https://');
   const src=remote?safeHref(image.src):'../'+safeHref(image.src);
-  return '<img src="'+src+'" width="'+Number(image.width)+'" height="'+Number(image.height)+'" alt="'+esc(image.alt)+'" decoding="async"'+(remote?' referrerpolicy="no-referrer"':'')+(priority?' fetchpriority="high"':lazy?' loading="lazy"':'')+'>';
+  const responsive=image.srcset?' srcset="'+image.srcset.map(item=>'../'+safeHref(item.path)+' '+Number(item.width)+'w').join(', ')+'" sizes="'+esc(image.sizes)+'"':'';
+  return '<img src="'+src+'"'+responsive+' width="'+Number(image.width)+'" height="'+Number(image.height)+'" alt="'+esc(image.alt)+'" decoding="async"'+(remote?' referrerpolicy="no-referrer"':'')+(priority?' fetchpriority="high"':lazy?' loading="lazy"':'')+'>';
 }
 
 export function initiativePairedImage(image,mark,{priority=false}={}){

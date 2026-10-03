@@ -4,7 +4,22 @@
     "src": "assets/bhoc-initiative-land-hero-v2.webp",
     "alt": "BHOC Species and Biodiversity Protection Initiative land hero with diverse wildlife in a mountain landscape.",
     "width": 2019,
-    "height": 779
+    "height": 779,
+    "srcset": [
+      {
+        "path": "assets/bhoc-initiative-land-hero-v2-640w.webp",
+        "width": 640
+      },
+      {
+        "path": "assets/bhoc-initiative-land-hero-v2-1280w.webp",
+        "width": 1280
+      },
+      {
+        "path": "assets/bhoc-initiative-land-hero-v2.webp",
+        "width": 2019
+      }
+    ],
+    "sizes": "(max-width: 1280px) 100vw, 1280px"
   },
   "rotationMs": 300000,
   "slides": [
@@ -15,7 +30,22 @@
         "src": "assets/bhoc-initiative-land-hero-v2.webp",
         "alt": "BHOC land wildlife scene with lion, elephant, giraffe, camel, rhinoceros, panda, orangutan, snow leopard, tortoise, cat and wire-haired dachshunds.",
         "width": 2019,
-        "height": 779
+        "height": 779,
+        "srcset": [
+          {
+            "path": "assets/bhoc-initiative-land-hero-v2-640w.webp",
+            "width": 640
+          },
+          {
+            "path": "assets/bhoc-initiative-land-hero-v2-1280w.webp",
+            "width": 1280
+          },
+          {
+            "path": "assets/bhoc-initiative-land-hero-v2.webp",
+            "width": 2019
+          }
+        ],
+        "sizes": "(max-width: 1280px) 100vw, 1280px"
       },
       "accessibleText": "Precision Oxygen Therapeutics. BHOC - Biological Hemoglobin Oxygen Carrier. For immediate, controlled microvascular and tissue-level oxygenation while endogenous erythropoiesis recovers.",
       "hotspots": [
@@ -44,7 +74,22 @@
         "src": "assets/bhoc-initiative-winter-hero.webp",
         "alt": "BHOC winter wildlife scene with polar bear, snow leopard, reindeer, wolf, Arctic fox, snowy owl, seal and penguin in a mountain and sea-ice landscape.",
         "width": 2019,
-        "height": 779
+        "height": 779,
+        "srcset": [
+          {
+            "path": "assets/bhoc-initiative-winter-hero-640w.webp",
+            "width": 640
+          },
+          {
+            "path": "assets/bhoc-initiative-winter-hero-1280w.webp",
+            "width": 1280
+          },
+          {
+            "path": "assets/bhoc-initiative-winter-hero.webp",
+            "width": 2019
+          }
+        ],
+        "sizes": "(max-width: 1280px) 100vw, 1280px"
       },
       "accessibleText": "BHOC Species and Biodiversity Protection Initiative. One Oxygen. Every Species. One Living Planet. Protect Life. Preserve Species.",
       "hotspots": [
@@ -74,7 +119,22 @@
         "src": "assets/bhoc-initiative-ocean-hero-v2.webp",
         "alt": "BHOC ocean wildlife scene with humpback whale, dolphins, sea turtle, natural manta ray, seal, walrus, dugong, whale shark, fish and coral reef.",
         "width": 2019,
-        "height": 779
+        "height": 779,
+        "srcset": [
+          {
+            "path": "assets/bhoc-initiative-ocean-hero-v2-640w.webp",
+            "width": 640
+          },
+          {
+            "path": "assets/bhoc-initiative-ocean-hero-v2-1280w.webp",
+            "width": 1280
+          },
+          {
+            "path": "assets/bhoc-initiative-ocean-hero-v2.webp",
+            "width": 2019
+          }
+        ],
+        "sizes": "(max-width: 1280px) 100vw, 1280px"
       },
       "accessibleText": "BHOC Species and Biodiversity Protection Initiative. One Oxygen. Every Species. One Living Planet. Protect Life. Preserve Species.",
       "hotspots": [

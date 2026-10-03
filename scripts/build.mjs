@@ -136,6 +136,10 @@ await fs.rm(out,{recursive:true,force:true});
 await fs.mkdir(out,{recursive:true});
 await fs.cp(sourceAssets,path.join(out,'assets'),{recursive:true});
 await fs.rm(path.join(out,'assets/css'),{recursive:true,force:true});
+if(site.indexNow){
+  if(!/^[a-f0-9]{32}$/.test(site.indexNow.key))throw new Error('Invalid IndexNow ownership key');
+  await write(site.indexNow.key+'.txt',site.indexNow.key+'\n');
+}
 
 // The old hero is retained in content/ for reference, but is not displayed.
 const visibleBlocks=blocks.filter(block=>block.type!=='hero');

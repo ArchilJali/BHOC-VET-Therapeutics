@@ -24,13 +24,18 @@
         "BHOC Veterinary homepage Science Bridge"
       ],
       "reason": "Primary wildlife image representing threatened-species protection and the Initiative's global scope.",
-      "modifications": "Resized, square-cropped and converted from JPEG to WebP for responsive web delivery; no generative or subject-altering edit is documented.",
+      "modifications": "Resized, square-cropped and converted from JPEG to WebP for responsive web delivery; no generative or subject-altering edit is documented. Responsive WebP derivatives were added on 03 October 2026 without cropping or changing the composition; the full-size original is preserved.",
       "reuse": "The underlying photograph remains subject to its source terms. Appropriate credit, licence link and the modification notice are supplied in this register.",
       "localFiles": [
         {
           "path": "assets/initiative/challenge-african-elephant-usfws.webp",
           "sha256": "11320d77f7b04c46878fa554667ab1dc15f13c803da0571d31405efce757c6bf",
           "introducedOn": "2026-09-09"
+        },
+        {
+          "path": "assets/initiative/challenge-african-elephant-usfws-480w.webp",
+          "sha256": "423270bc172aa986aa266ccd43ed4b053a48b2a72764a750c51da32a7ae34035",
+          "introducedOn": "2026-10-03"
         }
       ]
     },
@@ -425,7 +430,7 @@
       "providedOn": "2026-09-20",
       "rightsStatus": "Project-supplied original artwork and project-approved derivatives; all rights reserved; not offered under an open third-party licence.",
       "reason": "Provides the Companion Animals banner, explicitly including Rem and Evchika, and the veterinary stethoscope/paw signature.",
-      "modifications": "The approved master is preserved in the private project source. The public v12 derivative keeps the Arabian horse beside the veterinary retriever and donkey, behind the foreground dogs. A tightly bounded edit restores the horse's near hind leg to the same graphite tone as its body until the leg passes behind the retriever's ear and fur. The other animals and the rest of the panorama remain in place. Typography remains native HTML, with the Kipling quotation above the desktop artwork. The stethoscope/paw signature was mechanically isolated from the project-supplied reference screenshot.",
+      "modifications": "The approved master is preserved in the private project source. The public v12 derivative keeps the Arabian horse beside the veterinary retriever and donkey, behind the foreground dogs. A tightly bounded edit restores the horse's near hind leg to the same graphite tone as its body until the leg passes behind the retriever's ear and fur. The other animals and the rest of the panorama remain in place. Typography remains native HTML, with the Kipling quotation above the desktop artwork. The stethoscope/paw signature was mechanically isolated from the project-supplied reference screenshot. Responsive WebP derivatives were added on 03 October 2026 without cropping or changing the composition; the full-size original is preserved.",
       "localFiles": [
         {
           "path": "assets/companion-animals-wide-v12.webp",
@@ -436,6 +441,16 @@
           "path": "assets/companion-stethoscope-paw.webp",
           "sha256": "7bc8ba7d9150055eb0ac1c02ef6920a586e0e0452e6e70c5cb6e77a85cda8e9e",
           "introducedOn": "2026-09-20"
+        },
+        {
+          "path": "assets/companion-animals-wide-v12-640w.webp",
+          "sha256": "3351f34ff90f286f1561c9fda2d6e6a8ef2774b95be601dc45e084650d9dbf52",
+          "introducedOn": "2026-10-03"
+        },
+        {
+          "path": "assets/companion-animals-wide-v12-1280w.webp",
+          "sha256": "c8155e02bd171bb693f192edabfc294b5935ab927d45a60b5adabb6da0399e25",
+          "introducedOn": "2026-10-03"
         }
       ]
     },
@@ -446,7 +461,7 @@
       "providedOn": "2026-09-20",
       "rightsStatus": "Project-supplied branded composite artworks; all rights reserved; not offered under an open third-party licence.",
       "reason": "Provides the three-scene BHOC Species & Biodiversity Protection carousel across land, winter and ocean ecosystems.",
-      "modifications": "Stored as the approved project-supplied WebP compositions. Navigation hotspots and accessible text remain separate native HTML and do not alter the image pixels.",
+      "modifications": "Stored as the approved project-supplied WebP compositions. Navigation hotspots and accessible text remain separate native HTML and do not alter the image pixels. Responsive WebP derivatives were added on 03 October 2026 without cropping or changing the composition; the full-size original is preserved. Responsive WebP derivatives were added on 03 October 2026 without cropping or changing the composition; the full-size original is preserved. Responsive WebP derivatives were added on 03 October 2026 without cropping or changing the composition; the full-size original is preserved.",
       "localFiles": [
         {
           "path": "assets/bhoc-initiative-land-hero-v2.webp",
@@ -462,6 +477,36 @@
           "path": "assets/bhoc-initiative-ocean-hero-v2.webp",
           "sha256": "c43db7234a31f53a82eca20dd523c33ab58fe1c19518f212b84aecf463843d50",
           "introducedOn": "2026-09-20"
+        },
+        {
+          "path": "assets/bhoc-initiative-land-hero-v2-640w.webp",
+          "sha256": "652bbcf0121d34a519e50fc0e10befee32c7d4448175f30cabda84bf1cd74abf",
+          "introducedOn": "2026-10-03"
+        },
+        {
+          "path": "assets/bhoc-initiative-land-hero-v2-1280w.webp",
+          "sha256": "47a57ae54f07e9dbcc7c157327c8b64eeb1c2cc618872ba88a4de10368883b76",
+          "introducedOn": "2026-10-03"
+        },
+        {
+          "path": "assets/bhoc-initiative-ocean-hero-v2-640w.webp",
+          "sha256": "fbf77fcf416d156fe38ff631be417a68e1847bed9e07771cb45d860358f5ef45",
+          "introducedOn": "2026-10-03"
+        },
+        {
+          "path": "assets/bhoc-initiative-ocean-hero-v2-1280w.webp",
+          "sha256": "3e15e01dbc7a6943d59605214dedf87169cb31d601fab7e87e369de875346419",
+          "introducedOn": "2026-10-03"
+        },
+        {
+          "path": "assets/bhoc-initiative-winter-hero-640w.webp",
+          "sha256": "37384187e808585600c1b9ff7f3c50c5e8de9ec47f3a90bf6a56b246d101e07e",
+          "introducedOn": "2026-10-03"
+        },
+        {
+          "path": "assets/bhoc-initiative-winter-hero-1280w.webp",
+          "sha256": "ed928172be7ffd6ce4d9be550156df0320bb61d2b695dd0c2f1df2ba939505de",
+          "introducedOn": "2026-10-03"
         }
       ]
     },

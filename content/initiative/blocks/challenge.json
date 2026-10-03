@@ -24,7 +24,18 @@
         "height": 960,
         "credit": "Daphne Carlson Bremer, U.S. Fish and Wildlife Service",
         "license": "Public domain",
-        "source": "https://commons.wikimedia.org/wiki/File:African_elephant,_Dzanga_Sangha,_Central_African_Republic_(18945940511).jpg"
+        "source": "https://commons.wikimedia.org/wiki/File:African_elephant,_Dzanga_Sangha,_Central_African_Republic_(18945940511).jpg",
+        "srcset": [
+          {
+            "path": "assets/initiative/challenge-african-elephant-usfws-480w.webp",
+            "width": 480
+          },
+          {
+            "path": "assets/initiative/challenge-african-elephant-usfws.webp",
+            "width": 960
+          }
+        ],
+        "sizes": "(max-width: 640px) 80vw, 480px"
       },
       "title": "Operational reality",
       "text": "In remote areas, donor supply, storage, and logistics can be limited or unavailable."
