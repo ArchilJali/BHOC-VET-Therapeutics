@@ -14,15 +14,15 @@ export default page=>`<main id="main" class="subpage-main feline-article-page">
         ${section.paragraphs.map(text=>`<p>${esc(text)}</p>`).join('')}
         <p class="feline-article-sources">${section.sourceLinks.map(item=>`<a ${attrs(item)}>${esc(item.label)} ${icon('arrow')}</a>`).join('')}</p>
       </section>`).join('')}
-      <figure class="feline-article-document">
+      <div class="feline-article-evidence"><figure class="feline-article-document">
         <a href="./${esc(page.image.src)}" target="_blank" rel="noopener noreferrer" aria-label="Open the original EveryCat source screenshot">${img(page.image,'loading="lazy"')}</a>
         <figcaption><a ${attrs(page.credit)}>${esc(page.credit.label)}</a></figcaption>
       </figure>
-      <aside class="feline-article-context" aria-labelledby="feline-context-heading"><h2 id="feline-context-heading">Why this matters</h2><p>${esc(page.why)}</p></aside>
+      <aside class="feline-article-context" aria-labelledby="feline-context-heading"><h2 id="feline-context-heading">Why this matters</h2><p>${esc(page.why)}</p></aside></div>
       <section class="feline-article-references" aria-labelledby="feline-references-heading">
         <h2 id="feline-references-heading">Sources and publications</h2>
         <p><a ${attrs(page.sourceLink)}>${esc(page.sourceLink.label)} ${icon('arrow')}</a></p>
-        ${page.referenceGroups.map(group=>`<h3>${esc(group.heading)}</h3><ul>${group.links.map(item=>`<li><a ${attrs(item)}>${esc(item.label)}</a></li>`).join('')}</ul>`).join('')}
+        <div class="feline-reference-groups">${page.referenceGroups.map(group=>`<div><h3>${esc(group.heading)}</h3><ul>${group.links.map(item=>`<li><a ${attrs(item)}>${esc(item.label)}</a></li>`).join('')}</ul></div>`).join('')}</div>
       </section>
       <nav class="feline-article-return" aria-label="Article navigation"><a class="text-link" href="news.html#cats-blood-compatibility-oxyglobin">Back to News ${icon('arrow')}</a><a class="text-link" ${attrs(page.contextLink)}>${esc(page.contextLink.label)} ${icon('arrow')}</a></nav>
     </div>
