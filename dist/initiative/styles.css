@@ -2808,6 +2808,7 @@ h2 {
 
 .story-page-sources {
   display: grid;
+  grid-template-columns: minmax(0, 1fr);
   gap: 7px;
   margin-top: 34px;
   padding-top: 20px;
@@ -2822,6 +2823,8 @@ h2 {
 .story-page-sources a {
   width: max-content;
   max-width: 100%;
+  min-width: 0;
+  overflow-wrap: anywhere;
   color: var(--emerald-deep);
   text-underline-offset: 3px;
 }
