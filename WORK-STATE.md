@@ -79,7 +79,7 @@ The full Initiative homepage uses five independent blocks: hero, evidence statis
 - Project-supplied Companion and Land/Winter/Ocean artwork is recorded with local file hashes and rights status in `content/initiative/image-provenance.json`; third-party Initiative imagery retains its creator, source and licence records.
 - The footer keeps LinkedIn and the full VET Evidence Platform as distinct destinations.
 
-Publication line: `First published 07 Sep 2026 · 42 updates · Last updated 28 Sep 2026 · Version 26.09.28`. Increment `publication.updates` only when the shared BHOC Veterinary pages are intentionally republished.
+Publication line: `First published 07 Sep 2026 · 44 updates · Last updated 03 Oct 2026 · Version 26.10.03`. Increment `publication.updates` only when the shared BHOC Veterinary pages are intentionally republished.
 
 2026-09-28 presentation and speed pass: the public homepage begins with the existing veterinary team carousel, while the former hidden Land hero remains in `content/blocks/hero.json` and is no longer rendered or preloaded. Shared pages load one combined stylesheet and fetch the full search index only when search opens. The Initiative uses its own header and footer without an injected second navigation layer. All Initiative photos, story pages and source records remain intact.
 
@@ -95,3 +95,6 @@ node scripts/check-site.mjs dist
 The public repository retains both `dist/` for the Sites project and compiled root files for the existing GitHub Pages configuration. Do not edit generated HTML directly. Do not commit private photos, temporary image-generation output or a new `design/` archive.
 
 2026-10-03 author reflection: Added /initiative/we-be-of-one-blood.html, linked from News and Initiative Stories That Matter. Archil Jaliashvili is visibly named as author of the interpretation. Personal statements use 'I believe'. Dirac's scientific history and Soon's theological interpretation remain attributed separately. Original concept artwork is paired natively with the unchanged assets/reference-initiative-mark.webp. Source links, image provenance, ALT, article metadata, hierarchy and sitemap are preserved.
+
+
+2026-10-03 feline evidence news: Added news.html#cats-blood-compatibility-oxyglobin with the user-supplied, unchanged EveryCat source screenshot at assets/news/everycat-oxyglobin-use-in-cats.png. The article focuses on feline blood compatibility, sedation and protection of healthy donors, with a brief historical EveryCat summary. It does not characterize every donation as high risk or attribute recipient outcomes to donor stress. It links all three EveryCat publications, the 2021 ISFM guidelines and the 2024 29,201-donation study. Optional paragraphs and source lists are rendered from News content; existing story composition and source links remain intact.

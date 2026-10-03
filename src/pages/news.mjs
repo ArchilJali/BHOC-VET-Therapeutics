@@ -100,7 +100,7 @@ const itemListSchema=page=>safeJSON({
         ...(story.image.width?{width:story.image.width}:{}),
         ...(story.image.height?{height:story.image.height}:{})
       }}:{}),
-      citation:story.contextLink?[story.link.href,story.contextLink.href]:story.link.href,
+      citation:[story.link.href,...(story.contextLink?[story.contextLink.href]:[]),...(story.references||[]).map(item=>item.href),...(story.supportingSources||[]).map(item=>item.href)],
       keywords:(story.keywords||[]).join(', '),
       about:(story.keywords||[]).map(name=>({'@type':'Thing',name}))
     }
@@ -125,6 +125,9 @@ const storyHTML=(story,index)=>`<article class="conservation-story${index===0?' 
     <div class="story-meta">${index===0?'<span class="story-latest">Latest</span>':''}<time datetime="${esc(story.date)}">${esc(story.dateLabel)}</time><span>${esc(story.region)}</span><span>${esc(story.category)}</span></div>
     <h3>${esc(story.title)}</h3>
     <p>${esc(story.text)}</p>
+    ${(story.paragraphs||[]).map(text=>`<p>${esc(text)}</p>`).join('')}
+    ${story.references?.length?`<div class="story-references"><h4>Three publications cited by EveryCat</h4><ol>${story.references.map(item=>`<li><a ${attrs(item)}>${esc(item.label)}</a></li>`).join('')}</ol></div>`:''}
+    ${story.supportingSources?.length?`<div class="story-references"><h4>Blood compatibility and donor welfare sources</h4><ul>${story.supportingSources.map(item=>`<li><a ${attrs(item)}>${esc(item.label)}</a></li>`).join('')}</ul></div>`:''}
     <div class="story-why"><strong>Why it matters</strong><span>${esc(story.why)}</span></div>
     <div class="story-footer"><a class="story-link" ${attrs(story.link)}>${esc(story.link.label)} <span aria-hidden="true">${story.link.href.startsWith('https://')?'↗':'→'}</span></a>${story.contextLink?`<a class="story-source-link" ${attrs(story.contextLink)}>${esc(story.contextLink.label)} <span aria-hidden="true">${story.contextLink.href.startsWith('https://')?'↗':'→'}</span></a>`:''}</div>
   </div>
@@ -160,6 +163,8 @@ export default rawPage=>{const page=enrichPage(rawPage);return `<style>
 .story-meta{display:flex;flex-wrap:wrap;align-items:center;gap:6px 13px;margin-bottom:12px;color:#617173;font-size:12px;font-weight:750;line-height:1.35;letter-spacing:.055em;text-transform:uppercase}.story-meta time{color:#a9470d}.story-latest{padding:4px 8px;border-radius:999px;background:var(--accent);color:#fff;font-size:12px;letter-spacing:.07em}
 .story-copy h3{margin:0 0 12px;font-size:clamp(23px,2vw,29px);line-height:1.16;letter-spacing:-.35px;color:var(--ink)}.conservation-story-featured .story-copy h3{font-size:clamp(28px,2.7vw,38px);line-height:1.09}
 .story-copy>p{margin:0;color:var(--muted);font-size:16px;line-height:1.6}
+.story-copy>p+p{margin-top:14px}.story-references{margin-top:18px;font-size:13px;line-height:1.5;color:var(--muted)}.story-references h4{margin:0 0 7px;font-size:13px;color:var(--ink)}.story-references ol,.story-references ul{margin:0;padding-left:20px}.story-references li+li{margin-top:7px}.story-references a{color:var(--teal)}
+#cats-blood-compatibility-oxyglobin .story-media-document{background:#fff;align-self:start}#cats-blood-compatibility-oxyglobin .story-credit{position:static;display:block;max-width:none;border-radius:0;padding:10px 12px}
 .story-why{display:grid;gap:2px;width:100%;margin-top:18px;padding:12px 14px;border-left:3px solid #4e8b70;background:#f5f8f5;color:#596966;font-size:13px;line-height:1.45}.story-why strong{color:#315d4b;font-size:12px;letter-spacing:.07em;text-transform:uppercase}.story-why span{display:block}
 .story-footer{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-top:20px}.story-link{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;padding:11px 18px;border:1px solid var(--accent);border-radius:999px;background:var(--accent);color:#fff;font-size:14px;font-weight:800;line-height:1.25;text-decoration:none}.story-link:hover{border-color:var(--accent-strong);background:var(--accent-strong);text-decoration:none}.story-source-link{display:inline-flex;align-items:center;gap:6px;color:var(--teal);font-size:12px;font-weight:800;text-decoration:none}.story-source-link:hover{text-decoration:underline}
 .intelligence-note{margin:20px 0 0;padding:13px 15px;border-left:3px solid #4e8b70;background:#f5f8f5;color:var(--muted);font-size:12px;line-height:1.55}
