@@ -105,17 +105,16 @@
     {
       "id": "cats-blood-compatibility-oxyglobin",
       "date": "2026-10-03",
-      "dateLabel": "3 Oct 2026 · Historical evidence revisited",
-      "region": "Feline medicine · Donor welfare · Critical care",
-      "category": "EveryCat Health Foundation · Oxyglobin",
-      "title": "Cats are different: blood compatibility and the demands of feline donation.",
-      "text": "Cats have particular transfusion needs. Their A, B and AB blood types, naturally occurring alloantibodies and additional red-cell antigens make compatibility a clinical concern even before a first transfusion. A mismatched transfusion can be life-threatening. Blood typing and crossmatching matter.",
+      "dateLabel": "3 Oct 2026",
+      "region": "Feline medicine",
+      "category": "Donor welfare",
+      "title": "Cats are different: blood compatibility and donor welfare.",
+      "text": "Cats have A, B and AB blood types and naturally occurring alloantibodies. Blood typing and crossmatching matter even before a first transfusion.",
       "paragraphs": [
-        "Donor welfare matters too. Blood donation places demands on a healthy cat: handling, restraint or sedation, venous access and blood removal. Individual temperament and health therefore matter. Sedation and blood collection each require a clinical risk assessment. Feline donors need careful selection, stress reduction and monitoring before, during and after collection.",
-        "Feline donation is usually performed under sedation. A 2024 study of 29,201 donation events reported that 95.6% were performed under sedation. Finding a suitable donor and compatible blood takes preparation, time and veterinary resources, especially when a critically ill cat needs urgent support.",
-        "EveryCat's Oxyglobin Use in Cats report, published on 17 November 2008, brings together historical experience with a hemoglobin-based oxygen carrier in feline anemia care. It cites a retrospective study of 48 cats, a clinical review and an earlier 72-cat case series. These are historical Oxyglobin publications, rather than new BHOC clinical results."
+        "Donation usually requires sedation, careful donor selection and monitoring. Handling, blood collection and recovery all need attention to the healthy donor's welfare.",
+        "EveryCat's 2008 report reviews historical Oxyglobin use in cats. These product-specific findings do not establish BHOC safety or efficacy."
       ],
-      "why": "The recipient needs compatible blood. The healthy donor also needs protection. These two responsibilities motivate investigation of additional oxygen-delivery approaches that may reduce dependence on donor animals. Historical Oxyglobin evidence is product-specific and does not establish safety or efficacy for BHOC.",
+      "why": "The patient needs compatible blood. The healthy donor also needs protection.",
       "image": {
         "url": "assets/news/everycat-oxyglobin-use-in-cats.png",
         "alt": "Screenshot of EveryCat Health Foundation's Oxyglobin Use in Cats article, dated 17 November 2008.",
@@ -138,25 +137,25 @@
       },
       "references": [
         {
-          "label": "Weingart & Kohn (2008). Clinical use of a haemoglobin-based oxygen carrying solution (Oxyglobin) in 48 cats (2002-2006). J Feline Med Surg 10:431-438.",
+          "label": "Weingart & Kohn (2008): 48 cats",
           "href": "https://pubmed.ncbi.nlm.nih.gov/18455461/"
         },
         {
-          "label": "Callan & Rentko (2003). Clinical application of a hemoglobin-based oxygen-carrying solution. Vet Clin North Am Small Anim Pract 33:1277-1293.",
+          "label": "Callan & Rentko (2003): clinical review",
           "href": "https://pubmed.ncbi.nlm.nih.gov/14664199/"
         },
         {
-          "label": "Gibson et al. (2002). Use of a hemoglobin-based oxygen-carrying solution in cats: 72 cases (1998-2000). JAVMA 221:96-102.",
+          "label": "Gibson et al. (2002): 72 cats",
           "href": "https://pubmed.ncbi.nlm.nih.gov/12420832/"
         }
       ],
       "supportingSources": [
         {
-          "label": "2021 ISFM Consensus Guidelines on the Collection and Administration of Blood and Blood Products in Cats",
+          "label": "ISFM feline transfusion guidelines (2021)",
           "href": "https://doi.org/10.1177/1098612X211007071"
         },
         {
-          "label": "Taylor et al. (2024). Feline blood donation: description and adverse reactions from 29,201 donation events between 2019 and 2023.",
+          "label": "Feline blood donation study (2024)",
           "href": "https://doi.org/10.1111/jvim.17215"
         }
       ],
