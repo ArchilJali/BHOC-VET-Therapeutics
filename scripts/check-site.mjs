@@ -174,7 +174,8 @@ assert.deepEqual(initiativePage.author.sameAs,['https://www.linkedin.com/in/arch
 const initiativeBlockNames=[...initiativeHome.matchAll(/<!-- BLOCK ([a-z-]+): content\/initiative\/blocks\/[a-z-]+\.json -->/g)].map(match=>match[1]);
 assert.deepEqual(initiativeBlockNames,['hero','stats','mission-panel','focus','stories','science-bridge'],'Initiative modular block order');
 assert.match(initiativeHome,/rel="canonical" href="https:\/\/bhocvet\.com\/initiative\/"/,'Initiative canonical');
-assert.match(initiativeHome,/href="#stories">Stories<\/a>/,'Initiative top navigation includes Stories');
+assert.match(initiativeHome,/href="stories\.html">Stories<\/a>/,'Initiative top navigation opens the Stories index');
+assert.match(initiativeHome,/href="stories\.html">View all stories<\/a>/,'Initiative keeps its compact cards and a full Stories index link');
 assert.match(initiativeHome,/class="story-card"/,'Initiative has compact Stories That Matter card');
 assert.match(initiativeHome,/Hachikō: Loyalty, Dignity and Respect/,'Initiative shows Hachiko story');
 assert.match(initiativeHome,/class="story-card-phrase">An example of understanding and respect between species — without words, through actions\.<\/p>/,'Hachiko card keeps its own story phrase');
@@ -198,6 +199,25 @@ assert.match(hachikoStory,/Hachikō: Loyalty, Dignity and Respect/,'Hachiko stor
 assert.match(hachikoStory,/Hachiko_on_watch\.webp/,'Hachiko story includes waiting photo');
 assert.match(hachikoStory,/Death_of_Hachiko_-_Last_Photo\.jpg/,'Hachiko story includes final historical photo');
 assert.match(hachikoStory,/rel="canonical" href="https:\/\/bhocvet\.com\/initiative\/hachiko\.html"/,'Hachiko story canonical');
+const storiesIndex=await fs.readFile(path.join(out,'initiative','stories.html'),'utf8');
+assert.equal((storiesIndex.match(/<h1\b/g)||[]).length,1,'Stories index has one H1');
+assert.match(storiesIndex,/rel="canonical" href="https:\/\/bhocvet\.com\/initiative\/stories\.html"/,'Stories index canonical');
+const storiesGraph=JSON.parse(storiesIndex.match(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/)[1])['@graph'];
+const collection=storiesGraph.find(item=>item['@type']==='CollectionPage');
+assert.ok(collection,'Stories index uses CollectionPage schema');
+const storyFiles=(await fs.readdir(path.join(root,'content/initiative/stories'))).filter(name=>name.endsWith('.json'));
+for(const storyFile of storyFiles){
+  const story=JSON.parse(await fs.readFile(path.join(root,'content/initiative/stories',storyFile),'utf8'));
+  const storyHtml=await fs.readFile(path.join(out,'initiative',story.slug+'.html'),'utf8');
+  assert.ok(collection.mainEntity.itemListElement.some(item=>item.url===story.canonical),`${story.slug}: appears in Stories index schema`);
+  assert.ok(storiesIndex.includes(`href="${story.slug}.html"`),`${story.slug}: visible index link`);
+  assert.match(storyHtml,/aria-label="Breadcrumb"/,'Story has visible breadcrumb navigation');
+  assert.match(storyHtml,/href="stories\.html">Stories<\/a>/,'Story breadcrumb links to the Stories index');
+  const schema=[...storyHtml.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)].map(match=>JSON.parse(match[1])).find(item=>item['@type']==='BreadcrumbList');
+  assert.equal(schema.itemListElement[0].name,'BHOC Veterinary','Story breadcrumb names the correct site');
+  assert.equal(schema.itemListElement[2].item,collection.url,'Story breadcrumb schema matches its visible Stories parent');
+  assert.equal(schema.itemListElement.at(-1).item,story.canonical,'Story breadcrumb ends at the current article');
+}
 assert.doesNotMatch(initiativeRights,/href="\.\.\/evidence\.html"/,'Image-rights page has no retired Evidence link');
 
 for(const redirectName of ['evidence.html','publications.html']){
@@ -215,6 +235,7 @@ assert.equal(sitemapParse.status,0,`Sitemap is well-formed XML: ${sitemapParse.s
 for(const page of ['product.html','applications.html','science.html','initiative.html','related-information.html','news.html','contact.html'])assert.match(sitemap,new RegExp(`https:\/\/bhocvet\\.com\/${page.replace('.','\\.')}`),`Sitemap includes ${page}`);
 assert.match(sitemap,/https:\/\/bhocvet\.com\/initiative\//,'Sitemap includes full Initiative');
 assert.match(sitemap,/https:\/\/bhocvet\.com\/initiative\/hachiko\.html/,'Sitemap includes Hachiko story');
+assert.match(sitemap,/https:\/\/bhocvet\.com\/initiative\/stories\.html/,'Sitemap includes Stories index');
 assert.doesNotMatch(sitemap,/https:\/\/bhocvet\.com\/evidence\.html/,'Sitemap excludes retired Evidence page');
 assert.doesNotMatch(sitemap,/publications\.html/,'Sitemap excludes legacy publications redirect');
 

@@ -1,6 +1,44 @@
 import {esc,initiativeImage,linkAttrs,lines} from './lib.mjs';
 
 const safeJSON=value=>JSON.stringify(value).replace(/</g,'\\u003c');
+const storiesBreadcrumbItems=site=>[
+  {name:'BHOC Veterinary',item:'https://bhocvet.com/'},
+  {name:'Initiative',item:site.canonical},
+  {name:'Stories',item:new URL('stories.html',site.canonical).href}
+];
+const storyBreadcrumbItems=(site,story)=>[
+  ...storiesBreadcrumbItems(site),
+  {name:story.title,item:story.canonical}
+];
+
+function renderBreadcrumb(items,hrefs){
+  return '<nav class="initiative-location story-location" aria-label="Breadcrumb"><ol>'+items.map((item,index)=>
+    '<li>'+(index?'<span aria-hidden="true">›</span>':'')+
+    (index===items.length-1?'<span aria-current="page">'+esc(item.name)+'</span>':'<a href="'+hrefs[index]+'">'+esc(item.name)+'</a>')+'</li>'
+  ).join('')+'</ol></nav>';
+}
+
+export const renderStoryLocation=(site,story)=>renderBreadcrumb(storyBreadcrumbItems(site,story),['../index.html','./','stories.html']);
+export const renderStoriesLocation=site=>renderBreadcrumb(storiesBreadcrumbItems(site),['../index.html','./']);
+
+export function renderStoriesHead(site,page,cards,stylesVersion){
+  const canonical=page.canonical;
+  const breadcrumbs={'@type':'BreadcrumbList','@id':canonical+'#breadcrumb',itemListElement:storiesBreadcrumbItems(site).map((item,index)=>({'@type':'ListItem',position:index+1,...item}))};
+  const graph=site.structuredData['@graph'].filter(item=>!['WebPage','BreadcrumbList'].includes(item['@type']));
+  const listingSite={...site,canonical,title:page.title+' | BHOC Initiative',description:page.description,
+    openGraph:{...site.openGraph,title:page.title,description:page.description},
+    twitter:{...site.twitter,title:page.title,description:page.description},
+    structuredData:{'@context':'https://schema.org','@graph':[
+      ...graph,
+      {'@type':'CollectionPage','@id':canonical+'#webpage',url:canonical,name:page.title,description:page.description,inLanguage:site.language,
+        isPartOf:{'@id':site.canonical+'#website'},publisher:{'@id':'https://bhoctherapeutics.com/#organization'},
+        breadcrumb:{'@id':canonical+'#breadcrumb'},
+        mainEntity:{'@type':'ItemList',numberOfItems:cards.length,itemListElement:cards.map((card,index)=>({'@type':'ListItem',position:index+1,name:card.title,url:new URL(card.href,site.canonical).href}))}},
+      breadcrumbs
+    ]}
+  };
+  return renderHead(listingSite,stylesVersion);
+}
 const socialIcon=name=>name==='linkedin'?'<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M5.3 7.9H1.8V19h3.5V7.9ZM3.55 2.5A2.04 2.04 0 1 0 3.55 6.58 2.04 2.04 0 0 0 3.55 2.5ZM19 12.65c0-3.35-1.79-4.91-4.18-4.91-1.93 0-2.79 1.06-3.27 1.8V7.9H8.06V19h3.49v-5.5c0-1.45.27-2.86 2.08-2.86 1.78 0 1.8 1.67 1.8 2.96V19H19v-6.35Z"/></svg>':name==='youtube'?'<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="5.5" width="19" height="13" rx="4" fill="currentColor"/><path d="m10 9 5.5 3-5.5 3Z" fill="white"/></svg>':'';
 
 export function renderHead(site,stylesVersion){
@@ -107,7 +145,7 @@ export function renderStoryHead(site,story,stylesVersion){
     '  <link rel="icon" href="../assets/reference-initiative-mark.webp" type="image/webp">',
     '  <link rel="stylesheet" href="styles.css?v='+esc(stylesVersion)+'">',
     '  <script type="application/ld+json">'+safeJSON(structuredData)+'</script>',
-    '  <script type="application/ld+json">'+safeJSON({'@context':'https://schema.org','@type':'BreadcrumbList','@id':story.canonical+'#breadcrumb',itemListElement:[{'@type':'ListItem',position:1,name:'BHOC Therapeutics',item:'https://bhocvet.com/'},{'@type':'ListItem',position:2,name:'BHOC Initiative',item:site.canonical},{'@type':'ListItem',position:3,name:story.title,item:story.canonical}]})+'</script>',
+    '  <script type="application/ld+json">'+safeJSON({'@context':'https://schema.org','@type':'BreadcrumbList','@id':story.canonical+'#breadcrumb',itemListElement:storyBreadcrumbItems(site,story).map((item,index)=>({'@type':'ListItem',position:index+1,...item}))})+'</script>',
     '  <script src="https://analytics.ahrefs.com/analytics.js" data-key="E4lNjXqYmHxKeKcqEkSgyg" async></script>',
     '  <script src="../assets/ga4.js?v=20260927" defer></script>',
     '</head>'

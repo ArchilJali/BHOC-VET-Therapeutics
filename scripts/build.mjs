@@ -9,10 +9,14 @@ import {
   renderHead as renderInitiativeHead,
   renderHeader as renderInitiativeHeader,
   renderRightsHead as renderInitiativeRightsHead,
-  renderStoryHead as renderInitiativeStoryHead
+  renderStoryHead as renderInitiativeStoryHead,
+  renderStoryLocation as renderInitiativeStoryLocation,
+  renderStoriesHead as renderInitiativeStoriesHead,
+  renderStoriesLocation as renderInitiativeStoriesLocation
 } from '../src/initiative/chrome.mjs';
 import renderInitiativeImageRights from '../src/initiative/image-rights.mjs';
 import renderInitiativeStory from '../src/initiative/story.mjs';
+import renderInitiativeStoriesIndex from '../src/initiative/stories-index.mjs';
 
 const root=path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 const args=process.argv.slice(2);
@@ -32,6 +36,7 @@ const initiativeManifest=await json('content/initiative/homepage.json');
 const initiativeSite=await json('content/initiative/site.json');
 const initiativeHeader=await json('content/initiative/header.json');
 const initiativeFooter=await json('content/initiative/footer.json');
+const initiativeStoriesIndex=await json('content/initiative/stories-index.json');
 const initiativeImageProvenance=await json('content/initiative/image-provenance.json');
 const initiativeStoryFiles=(await fs.readdir(path.join(root,'content/initiative/stories'))).filter(name=>name.endsWith('.json')).sort();
 const initiativeStories=await Promise.all(initiativeStoryFiles.map(name=>json('content/initiative/stories/'+name)));
@@ -185,9 +190,24 @@ if((imageRightsDocument.match(/<h1\b/g)||[]).length!==1)throw new Error('initiat
 await write('initiative/image-rights.html',imageRightsDocument);
 
 const storyTemplate=await read('src/initiative/story.html');
+const storiesData=initiativeBlocks.find(block=>block.type==='stories').data;
+const storiesIndexSlots={
+  '{{STORY_LOCATION}}':renderInitiativeStoriesLocation(initiativeSite),
+  '{{LANGUAGE}}':initiativeSite.language,
+  '{{HEAD}}':renderInitiativeStoriesHead(initiativeSite,initiativeStoriesIndex,storiesData.cards,digest(initiativeStyles)),
+  '{{HEADER}}':renderInitiativeHeader(imageRightsHeader),
+  '{{BODY}}':renderInitiativeStoriesIndex(initiativeStoriesIndex,storiesData),
+  '{{FOOTER}}':renderInitiativeFooter(imageRightsFooter),
+  '{{APP_VERSION}}':digest(initiativeClient)
+};
+let storiesIndexDocument=storyTemplate;
+for(const [slot,value] of Object.entries(storiesIndexSlots))storiesIndexDocument=storiesIndexDocument.replaceAll(slot,value);
+if(/\{\{[A-Z_]+\}\}/.test(storiesIndexDocument))throw new Error('Unresolved Initiative stories index slot');
+if((storiesIndexDocument.match(/<h1\b/g)||[]).length!==1)throw new Error('initiative/stories.html: exactly one H1 required');
+await write('initiative/stories.html',storiesIndexDocument);
 for(const story of initiativeStories){
   const storySlots={
-    '{{STORY_LOCATION}}':esc(story.locationLabel||'Stories That Matter'),
+    '{{STORY_LOCATION}}':renderInitiativeStoryLocation(initiativeSite,story),
     '{{LANGUAGE}}':initiativeSite.language,
     '{{HEAD}}':renderInitiativeStoryHead(initiativeSite,story,digest(initiativeStyles)),
     '{{HEADER}}':renderInitiativeHeader(imageRightsHeader),
@@ -257,6 +277,7 @@ const search=[
     text:visibleSearchText(story),
     href:'./initiative/'+story.slug+'.html'
   })),
+  {title:initiativeStoriesIndex.title,category:'Initiative',text:initiativeStoriesIndex.description,href:'./initiative/stories.html'},
   ...pages.map(page=>({title:page.navLabel,category:'Page',text:visibleSearchText(page),href:page.slug+'.html'})),
   ...dialogHTML.map((html,i)=>({title:html.match(/<h2[^>]*>([\s\S]*?)<\/h2>/)?.[1].replace(/<[^>]*>/g,' ')||dialogNames[i],category:'Information',text:html.replace(/<[^>]*>/g,' '),dialog:dialogNames[i].replace('.html','')}))
 ];
@@ -370,6 +391,7 @@ const sitemapUrls=[
   {path:'',images:imageEntries},
   ...pages.map(page=>({path:page.slug+'.html',images:[]})),
   {path:'initiative/',images:initiativeImages},
+  {path:'initiative/stories.html',images:storiesData.cards.map(card=>card.image)},
   ...initiativeStories.map(story=>({path:'initiative/'+story.slug+'.html',images:story.images}))
 ];
 await write('sitemap.xml',`<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">${sitemapUrls.map(entry=>`<url><loc>${absolute(entry.path)}</loc><lastmod>${site.updated}</lastmod>${entry.images.map(image=>`<image:image><image:loc>${absolute(image.src)}</image:loc></image:image>`).join('')}</url>`).join('')}</urlset>\n`);

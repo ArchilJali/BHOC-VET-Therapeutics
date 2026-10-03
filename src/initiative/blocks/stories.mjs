@@ -1,8 +1,8 @@
 import {esc,initiativeImage,linkAttrs} from '../lib.mjs';
 
-export default function renderStories(data){
-  const cards=data.cards.map(card=>
-    '<article class="story-card">'+
+export function renderStoryCards(cards,headingTag='h3'){
+  return cards.map(card=>
+    '<article class="story-card" role="listitem">'+
       '<a class="story-card-link" '+linkAttrs(card)+'>'+
         '<figure class="story-card-image'+(card.image.mark?' story-card-image-paired':'')+'">'+
           (card.image.mark?'<div class="initiative-image-pair"><div class="initiative-image-pair-scene">'+initiativeImage(card.image)+'</div><div class="initiative-image-pair-mark">'+initiativeImage(card.image.mark)+'</div></div>':initiativeImage(card.image))+
@@ -10,7 +10,7 @@ export default function renderStories(data){
         '<div class="story-card-copy">'+
           '<div class="story-card-main">'+
             '<span class="story-card-overline">'+esc(card.overline)+'</span>'+
-            '<h3>'+esc(card.title)+'</h3>'+
+            '<'+headingTag+'>'+esc(card.title)+'</'+headingTag+'>'+
             '<p class="story-card-summary">'+esc(card.text)+'</p>'+
             '<span class="story-card-action">'+esc(card.actionLabel)+' <span aria-hidden="true">→</span></span>'+
           '</div>'+
@@ -19,12 +19,16 @@ export default function renderStories(data){
       '</a>'+
     '</article>'
   ).join('');
+}
+
+export default function renderStories(data){
   return '<section class="stories-matter" id="'+esc(data.id)+'" data-block="stories" aria-labelledby="stories-title">'+
     '<div class="shell stories-matter-inner">'+
       '<header class="stories-matter-heading">'+
         '<h2 id="stories-title">'+esc(data.title)+'</h2>'+
+        '<a class="stories-all-link" '+linkAttrs(data.indexLink)+'>'+esc(data.indexLink.label)+'</a>'+
       '</header>'+
-      '<div class="stories-track" role="list">'+cards+'</div>'+
+      '<div class="stories-track" role="list">'+renderStoryCards(data.cards)+'</div>'+
     '</div>'+
   '</section>';
 }

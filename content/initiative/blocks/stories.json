@@ -1,6 +1,10 @@
 {
   "id": "stories",
   "title": "Stories That Matter",
+  "indexLink": {
+    "label": "View all stories",
+    "href": "stories.html"
+  },
   "cards": [
     {
       "slug": "we-be-of-one-blood",

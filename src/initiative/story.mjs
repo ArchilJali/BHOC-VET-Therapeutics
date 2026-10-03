@@ -36,7 +36,7 @@ export default function renderStory(data){
         (data.principleAttribution?'<p class="story-page-principle-attribution">'+esc(data.principleAttribution)+'</p>':'')+
         '<p class="story-page-closing">'+esc(data.closing)+'</p>'+
         '<div class="story-page-sources"><strong>'+esc(data.sourcesLabel||'Historical sources')+'</strong>'+sources+'</div>'+
-        '<a class="story-page-back" href="./#stories"><span aria-hidden="true">←</span> Back to Stories That Matter</a>'+
+        '<a class="story-page-back" href="stories.html"><span aria-hidden="true">←</span> Back to Stories That Matter</a>'+
       '</div>'+
     '</section>'+
   '</article>';
