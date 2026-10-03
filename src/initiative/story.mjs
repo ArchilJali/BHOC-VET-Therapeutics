@@ -11,7 +11,7 @@ export default function renderStory(data){
   const paragraphs=data.paragraphs.map(paragraph=>'<p>'+esc(paragraph)+'</p>').join('');
   const sections=(data.sections||[]).map(section=>
     '<section class="story-page-section"><h2>'+esc(section.heading)+'</h2>'+
-    (section.quote?'<figure class="story-page-authored-quote"><blockquote><p>'+esc(section.quote.text)+'</p></blockquote><figcaption>'+esc(section.quote.attribution)+'</figcaption></figure>':'')+
+    (section.quote?'<figure class="story-page-authored-quote"><blockquote><p>&ldquo;'+esc(section.quote.text)+'&rdquo;</p></blockquote><figcaption>'+esc(section.quote.attribution)+'</figcaption></figure>':'')+
     (section.paragraphs||[]).map(paragraph=>'<p>'+esc(paragraph)+'</p>').join('')+
     (section.links?'<div class="story-page-related">'+section.links.map(item=>'<a '+linkAttrs(item)+'>'+esc(item.label)+'</a>').join('')+'</div>':'')+
     '</section>'
