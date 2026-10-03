@@ -88,7 +88,7 @@
   "eyebrow": "BHOC Initiative · Global Intelligence",
   "heading": "Wildlife & Species Conservation Intelligence.",
   "lead": "Tracking the people, science, funding and programs working to protect wildlife, restore endangered species and strengthen conservation medicine worldwide.",
-  "updated": "26 Sep 2026",
+  "updated": "3 Oct 2026",
   "seoContext": {
     "eyebrow": "BHOC Veterinary context",
     "heading": "Animal-health intelligence, separate from product claims.",
@@ -102,6 +102,49 @@
   },
   "feedNote": "BHOC Initiative Scout applies a high publication threshold and screens every candidate for duplication. New items are added only for exceptional rescue or recovery outcomes, globally significant conservation initiatives, substantive veterinary evidence milestones or other material developments; routine news is excluded.",
   "stories": [
+    {
+      "id": "we-be-of-one-blood",
+      "date": "2026-10-03",
+      "dateLabel": "3 Oct 2026 · Archil Jaliashvili",
+      "region": "Personal reflection · Shared biology",
+      "category": "BHOC Initiative · Author's interpretation",
+      "title": "God's Design and the Biology We Share",
+      "text": "Astrophysicist Willie Soon's reflection on Dirac's work inspires a personal interpretation by Archil Jaliashvili: 'I believe that God's design can also be seen in the biology shared by humans and many other species.' The article connects hemoglobin, oxygen delivery and the responsibility to protect life.",
+      "why": "Different species. The same biological need: oxygen. A personal reflection connected with the BHOC Species & Biodiversity Protection Initiative.",
+      "image": {
+        "url": "assets/news/we-be-of-one-blood-earth-universe.webp",
+        "alt": "Concept illustration of Earth at dawn beneath a star-filled universe",
+        "width": 1400,
+        "height": 788,
+        "variant": "initiative-pair",
+        "mark": {
+          "src": "assets/reference-initiative-mark.webp",
+          "alt": "BHOC Species and Biodiversity Protection Initiative emblem",
+          "width": 318,
+          "height": 317
+        }
+      },
+      "sourceName": "Archil Jaliashvili · Author's interpretation",
+      "link": {
+        "label": "Read the author's reflection",
+        "href": "./initiative/we-be-of-one-blood.html"
+      },
+      "contextLink": {
+        "label": "Explore the Initiative",
+        "href": "./initiative/"
+      },
+      "keywords": [
+        "Archil Jaliashvili",
+        "Willie Soon",
+        "Paul Dirac",
+        "hemoglobin",
+        "oxygen delivery",
+        "BHOC Veterinary",
+        "BHOC Initiative",
+        "species protection",
+        "Precision Oxygen Therapeutics"
+      ]
+    },
     {
       "id": "wodan-penn-vet-oxyglobin-k19",
       "date": "2026-09-23",

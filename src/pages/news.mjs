@@ -111,6 +111,10 @@ const contextLinkHTML=item=>`<a class="seo-context-link" ${attrs(item)}>${esc(it
 const storyMedia=story=>{
   if(!story.image)return '';
   const image=`<img src="${esc(story.image.url)}" alt="${esc(story.image.alt)}" width="${story.image.width||900}" height="${story.image.height||600}" loading="lazy" decoding="async">`;
+  if(story.image.variant==='initiative-pair'){
+    const mark=story.image.mark;
+    return `<figure class="story-media story-media-initiative-pair"><div class="story-media-scene">${image}</div><a class="story-media-mark" href="./initiative/" aria-label="BHOC Species and Biodiversity Protection Initiative"><img src="${esc(mark.src)}" alt="${esc(mark.alt)}" width="${mark.width}" height="${mark.height}" loading="lazy" decoding="async"></a></figure>`;
+  }
   const saxonPanel=story.id==='k9-saxon-oxyglobin-2002';
   return `<figure class="story-media${story.image.variant==='logo'?' story-media-logo':story.image.variant==='portrait'?' story-media-portrait':story.image.variant==='document'?' story-media-document':''}">${saxonPanel?`<a class="story-document-panel" href="${esc(absoluteURL(story.image.url))}" target="_blank" rel="noopener noreferrer" aria-label="Open the original K-9 Saxon panel at full resolution">${image}</a><figcaption class="story-document-links"><a href="${esc(absoluteURL(story.image.url))}" target="_blank" rel="noopener noreferrer">Enlarge the original panel ↗</a><a href="https://media.corporate-ir.net/media_files/nsd/bpur/reports/ar02/biopure.pdf#page=15" target="_blank" rel="noopener noreferrer">Read the 2002 Annual Report ↗</a></figcaption>`:image}${story.credit?`<a class="story-credit" ${attrs(story.credit)}>${esc(story.credit.label)}</a>`:''}</figure>`;
 };

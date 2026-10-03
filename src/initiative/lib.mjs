@@ -26,6 +26,14 @@ export function initiativeImage(image,{priority=false,lazy=true}={}){
   return '<img src="'+src+'" width="'+Number(image.width)+'" height="'+Number(image.height)+'" alt="'+esc(image.alt)+'" decoding="async"'+(remote?' referrerpolicy="no-referrer"':'')+(priority?' fetchpriority="high"':lazy?' loading="lazy"':'')+'>';
 }
 
+export function initiativePairedImage(image,mark,{priority=false}={}){
+  if(!mark)return initiativeImage(image,{priority});
+  return '<div class="initiative-image-pair">'+
+    '<div class="initiative-image-pair-scene">'+initiativeImage(image,{priority})+'</div>'+
+    '<a class="initiative-image-pair-mark" href="./" aria-label="BHOC Species and Biodiversity Protection Initiative">'+initiativeImage(mark)+'</a>'+
+  '</div>';
+}
+
 export function action(item){
   const style=item.style==='secondary'?' button-secondary':' button-primary';
   return '<a class="button'+style+'" '+linkAttrs(item)+'>'+esc(item.label)+(item.arrow?' <span aria-hidden="true">→</span>':'')+'</a>';

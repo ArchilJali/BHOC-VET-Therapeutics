@@ -1,0 +1,131 @@
+{
+  "slug": "we-be-of-one-blood",
+  "section": "Author's interpretation · Science, belief and shared biology",
+  "title": "God's Design and the Biology We Share",
+  "description": "Archil Jaliashvili reflects on Willie Soon, Dirac, shared hemoglobin biology and the purpose of the BHOC Species & Biodiversity Protection Initiative.",
+  "canonical": "https://bhocvet.com/initiative/we-be-of-one-blood.html",
+  "datePublished": "2026-10-03",
+  "dateModified": "2026-10-03",
+  "articleSection": "Author's interpretation",
+  "genre": "Personal reflection",
+  "keywords": [
+    "Archil Jaliashvili",
+    "Willie Soon",
+    "Paul Dirac",
+    "hemoglobin",
+    "oxygen delivery",
+    "BHOC Veterinary",
+    "BHOC Initiative",
+    "species protection",
+    "Precision Oxygen Therapeutics"
+  ],
+  "byline": {
+    "name": "Archil Jaliashvili",
+    "role": "Author of this interpretation",
+    "href": "https://orcid.org/0009-0006-4712-4942",
+    "dateLabel": "3 October 2026"
+  },
+  "locationLabel": "God's Design and the Biology We Share",
+  "deck": "A personal reflection by Archil Jaliashvili on the order of the universe, the biology shared by species, and our responsibility to protect life.",
+  "images": [
+    {
+      "src": "assets/news/we-be-of-one-blood-earth-universe.webp",
+      "alt": "Concept illustration of Earth at dawn beneath a star-filled universe",
+      "width": 1400,
+      "height": 788,
+      "caption": "The universe and the life within it. Concept artwork paired with the original BHOC Initiative emblem.",
+      "credit": "BHOC Veterinary",
+      "license": "Project-created editorial illustration",
+      "href": "https://bhocvet.com/initiative/image-rights.html"
+    }
+  ],
+  "coverMark": {
+    "src": "assets/reference-initiative-mark.webp",
+    "alt": "BHOC Species and Biodiversity Protection Initiative emblem",
+    "width": 318,
+    "height": 317
+  },
+  "galleryLabel": "Universe illustration and BHOC Initiative emblem",
+  "values": [
+    "Shared biology",
+    "Oxygen delivery",
+    "Respect for life"
+  ],
+  "paragraphs": [],
+  "sections": [
+    {
+      "heading": "Willie Soon's reflection on Dirac's work",
+      "paragraphs": [
+        "In a 2024 interview with Tucker Carlson, astrophysicist Willie Soon discussed why the relationship between mathematics and physical reality strengthens his belief in God. He pointed to Paul Dirac's work, which led to the prediction of antimatter before its experimental discovery.",
+        "Dirac published The Quantum Theory of the Electron in 1928. Carl Anderson discovered the positron in 1932. Soon interprets the mathematical order behind this history as evidence of divine intelligence. That is his philosophical and theological interpretation of a scientific achievement."
+      ]
+    },
+    {
+      "heading": "My interpretation: the biology we share",
+      "quote": {
+        "text": "I believe that God's design can also be seen in the biology shared by humans and many other species. Different bodies, different environments, different ways of living. Yet hemoglobin carries oxygen in so many of us. For me, that shared biology gives the words 'We be of one blood, ye and I' a meaning that reaches beyond literature.",
+        "attribution": "Archil Jaliashvili"
+      },
+      "paragraphs": [
+        "Hemoglobin is an oxygen-binding core around which protective and regulatory systems operate. Red blood cells, circulation, vascular control, microcirculation and tissue exchange contribute to how oxygen reaches living tissue.",
+        "The details differ between species. Hemoglobin properties and physiological regulation are adapted to different conditions. A shared biological function connects these differences without making the systems identical."
+      ]
+    },
+    {
+      "heading": "How this connects with BHOC",
+      "paragraphs": [
+        "BHOC, Biological Hemoglobin Oxygen Carrier, is being developed within Precision Oxygen Therapeutics. It builds on hemoglobin's oxygen-binding function, with the aim of supporting oxygen delivery when that function is compromised.",
+        "This is how I think about our work: understand the biological function, learn how nature supports it, and investigate how that knowledge can help a patient. The practical research questions concern the specific product, the species, the clinical setting and the evidence."
+      ],
+      "links": [
+        {
+          "label": "Hemoglobin evolution and biological adaptation",
+          "href": "https://bhoctherapeutics.com/bhoc/evolution-adaptation/"
+        },
+        {
+          "label": "BHOC Veterinary science",
+          "href": "../science.html"
+        }
+      ]
+    },
+    {
+      "heading": "From shared biology to species protection",
+      "paragraphs": [
+        "The BHOC Species & Biodiversity Protection Initiative connects veterinary oxygen-delivery research with wildlife health, emergency care and species conservation. It brings the same biological question into the care of companion animals, domestic animals, wildlife and endangered species.",
+        "I believe that understanding what living beings share should change how we care for them. For me, shared biology carries a responsibility: to use what we learn to protect life."
+      ],
+      "links": [
+        {
+          "label": "Explore the Species & Biodiversity Protection Initiative",
+          "href": "./index.html"
+        },
+        {
+          "label": "Veterinary evidence and documented cases",
+          "href": "https://bhoctherapeutics.com/evidence/library/veterinary/Vet-index.html"
+        }
+      ]
+    }
+  ],
+  "principle": "We be of one blood, ye and I.",
+  "principleAttribution": "Rudyard Kipling, The Jungle Book",
+  "closing": "Different species. The same biological need: oxygen.",
+  "sourcesLabel": "Sources and related biology",
+  "sources": [
+    {
+      "label": "Willie Soon interview: Evidence of God, from 40:41",
+      "href": "https://tuckercarlson.com/the-tucker-carlson-encounter-fossil-fuels"
+    },
+    {
+      "label": "P. A. M. Dirac, The Quantum Theory of the Electron (1928), DOI 10.1098/rspa.1928.0023",
+      "href": "https://www.math.ucsd.edu/~nwallach/Dirac1928.pdf"
+    },
+    {
+      "label": "CERN: antimatter, Dirac and the discovery of the positron",
+      "href": "https://home.web.cern.ch/science/physics/antimatter/"
+    },
+    {
+      "label": "BHOC: hemoglobin evolution and biological adaptation",
+      "href": "https://bhoctherapeutics.com/bhoc/evolution-adaptation/"
+    }
+  ]
+}

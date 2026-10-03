@@ -49,7 +49,7 @@ export function renderHead(site,stylesVersion){
 
 export function renderStoryHead(site,story,stylesVersion){
   const image=story.images[0];
-  const imageUrl=image.src;
+  const imageUrl=new URL(image.src,'https://bhocvet.com/').href;
   const mime=imageUrl.endsWith('.webp')?'image/webp':imageUrl.endsWith('.png')?'image/png':'image/jpeg';
   const structuredData={
     '@context':'https://schema.org',
@@ -68,7 +68,8 @@ export function renderStoryHead(site,story,stylesVersion){
       url:'https://bhoctherapeutics.com/',
       logo:{'@type':'ImageObject',url:'https://bhoctherapeutics.com/assets/bhoc-biodiversity-logo.png'}
     },
-    image:story.images.map(item=>item.src),
+    image:story.images.map(item=>new URL(item.src,'https://bhocvet.com/').href),
+    ...(story.articleSection?{articleSection:story.articleSection,genre:story.genre,keywords:story.keywords.join(', '),citation:story.sources.map(source=>source.href),isAccessibleForFree:true}:{}),
     about:story.values.map(name=>({'@type':'Thing',name}))
   };
   return [

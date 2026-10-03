@@ -187,6 +187,7 @@ await write('initiative/image-rights.html',imageRightsDocument);
 const storyTemplate=await read('src/initiative/story.html');
 for(const story of initiativeStories){
   const storySlots={
+    '{{STORY_LOCATION}}':esc(story.locationLabel||'Stories That Matter'),
     '{{LANGUAGE}}':initiativeSite.language,
     '{{HEAD}}':renderInitiativeStoryHead(initiativeSite,story,digest(initiativeStyles)),
     '{{HEADER}}':renderInitiativeHeader(imageRightsHeader),

@@ -93,3 +93,5 @@ node scripts/check-site.mjs dist
 ```
 
 The public repository retains both `dist/` for the Sites project and compiled root files for the existing GitHub Pages configuration. Do not edit generated HTML directly. Do not commit private photos, temporary image-generation output or a new `design/` archive.
+
+2026-10-03 author reflection: Added /initiative/we-be-of-one-blood.html, linked from News and Initiative Stories That Matter. Archil Jaliashvili is visibly named as author of the interpretation. Personal statements use 'I believe'. Dirac's scientific history and Soon's theological interpretation remain attributed separately. Original concept artwork is paired natively with the unchanged assets/reference-initiative-mark.webp. Source links, image provenance, ALT, article metadata, hierarchy and sitemap are preserved.

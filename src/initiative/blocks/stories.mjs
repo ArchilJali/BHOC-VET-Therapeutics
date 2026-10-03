@@ -4,7 +4,9 @@ export default function renderStories(data){
   const cards=data.cards.map(card=>
     '<article class="story-card">'+
       '<a class="story-card-link" '+linkAttrs(card)+'>'+
-        '<figure class="story-card-image">'+initiativeImage(card.image)+'</figure>'+
+        '<figure class="story-card-image'+(card.image.mark?' story-card-image-paired':'')+'">'+
+          (card.image.mark?'<div class="initiative-image-pair"><div class="initiative-image-pair-scene">'+initiativeImage(card.image)+'</div><div class="initiative-image-pair-mark">'+initiativeImage(card.image.mark)+'</div></div>':initiativeImage(card.image))+
+        '</figure>'+
         '<div class="story-card-copy">'+
           '<div class="story-card-main">'+
             '<span class="story-card-overline">'+esc(card.overline)+'</span>'+

@@ -2,7 +2,7 @@
   "title": "Image rights & provenance",
   "description": "Source, authorship, licence and processing records for images used across the BHOC Veterinary and BHOC Species & Biodiversity Protection Initiative websites.",
   "canonical": "https://bhocvet.com/initiative/image-rights.html",
-  "verifiedOn": "2026-09-20",
+  "verifiedOn": "2026-10-03",
   "policy": "Individual photo credits are kept off the main BHOC Veterinary and Initiative compositions. This separate register preserves the source, creator, licence, verification date, processing history and reason for every displayed image.",
   "rightsBoundary": "Third-party terms apply only to the underlying photographs identified below. They do not license the surrounding BHOC text, branding, scientific materials, layout, design or code. No photographer, source platform or public agency is represented as endorsing BHOC or this Initiative.",
   "records": [
@@ -18,7 +18,11 @@
       "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
       "sourceStatus": "The Commons record identifies a CC BY 2.0 licence and separately notes U.S. federal-work public-domain status.",
       "verifiedOn": "2026-09-09",
-      "usedIn": ["Initiative hero", "Initiative Science Bridge", "BHOC Veterinary homepage Science Bridge"],
+      "usedIn": [
+        "Initiative hero",
+        "Initiative Science Bridge",
+        "BHOC Veterinary homepage Science Bridge"
+      ],
       "reason": "Primary wildlife image representing threatened-species protection and the Initiative's global scope.",
       "modifications": "Resized, square-cropped and converted from JPEG to WebP for responsive web delivery; no generative or subject-altering edit is documented.",
       "reuse": "The underlying photograph remains subject to its source terms. Appropriate credit, licence link and the modification notice are supplied in this register.",
@@ -42,7 +46,10 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
       "sourceStatus": "The Commons record identifies the creator and confirms the Attribution-ShareAlike 2.0 Generic licence.",
       "verifiedOn": "2026-09-09",
-      "usedIn": ["Initiative hero", "Endangered Species focus card"],
+      "usedIn": [
+        "Initiative hero",
+        "Endangered Species focus card"
+      ],
       "reason": "Represents threatened wildlife and endangered-species conservation.",
       "modifications": "Resized, cropped to the displayed aspect ratios and converted from JPEG to WebP for responsive web delivery; no generative or subject-altering edit is documented.",
       "reuse": "The processed photograph is redistributed under CC BY-SA 2.0. The licence does not extend to surrounding BHOC content or design.",
@@ -66,7 +73,9 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
       "sourceStatus": "The Commons record identifies AfricanConservation as author, records verified permission and states CC BY-SA 4.0.",
       "verifiedOn": "2026-09-09",
-      "usedIn": ["Initiative hero"],
+      "usedIn": [
+        "Initiative hero"
+      ],
       "reason": "Represents field conservation and veterinary collaboration for critically threatened megafauna.",
       "modifications": "Resized, cropped to a 4:3 display frame and converted from JPEG to WebP for responsive web delivery; no generative or subject-altering edit is documented.",
       "reuse": "The processed photograph is redistributed under CC BY-SA 4.0. The licence does not extend to surrounding BHOC content or design.",
@@ -90,7 +99,9 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/",
       "sourceStatus": "The Commons record identifies Fernando Revilla as author and states the Attribution-ShareAlike 2.5 Generic licence.",
       "verifiedOn": "2026-09-09",
-      "usedIn": ["Initiative hero"],
+      "usedIn": [
+        "Initiative hero"
+      ],
       "reason": "Represents ex-situ conservation and the role of zoological institutions.",
       "modifications": "Resized and converted from JPEG to WebP for responsive web delivery; the source itself records an earlier crop on Wikimedia Commons.",
       "reuse": "The processed photograph is redistributed under CC BY-SA 2.5. The licence does not extend to surrounding BHOC content or design.",
@@ -114,7 +125,12 @@
       "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
       "sourceStatus": "The Commons record identifies a U.S. federal government work and marks the file free of known copyright restrictions.",
       "verifiedOn": "2026-09-09",
-      "usedIn": ["Initiative hero", "Conservation mission", "Initiative Science Bridge", "BHOC Veterinary homepage Science Bridge"],
+      "usedIn": [
+        "Initiative hero",
+        "Conservation mission",
+        "Initiative Science Bridge",
+        "BHOC Veterinary homepage Science Bridge"
+      ],
       "reason": "Represents endangered-species conservation and anchors the mission panel.",
       "modifications": "Resized, square-cropped and converted from JPEG to WebP for responsive web delivery; no generative or subject-altering edit is documented.",
       "reuse": "Public-domain status applies to the underlying photograph, not to surrounding BHOC content or design.",
@@ -138,7 +154,12 @@
       "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
       "sourceStatus": "The Commons record identifies NOAA material created as part of official duties and confirms Public Domain Mark status.",
       "verifiedOn": "2026-09-09",
-      "usedIn": ["Initiative hero", "Field & Remote Medicine focus card", "Initiative Science Bridge", "BHOC Veterinary homepage Science Bridge"],
+      "usedIn": [
+        "Initiative hero",
+        "Field & Remote Medicine focus card",
+        "Initiative Science Bridge",
+        "BHOC Veterinary homepage Science Bridge"
+      ],
       "reason": "Represents marine biodiversity, threatened species and remote veterinary care.",
       "modifications": "Resized, cropped to the displayed aspect ratios and converted from JPEG to WebP for responsive web delivery; no generative or subject-altering edit is documented.",
       "reuse": "Public-domain status applies to the underlying photograph, not to surrounding BHOC content or design.",
@@ -167,7 +188,9 @@
       "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
       "sourceStatus": "The Commons record identifies an official White House photograph and confirms Public Domain Mark status.",
       "verifiedOn": "2026-09-09",
-      "usedIn": ["Wildlife Rescue focus card"],
+      "usedIn": [
+        "Wildlife Rescue focus card"
+      ],
       "reason": "Represents emergency rescue, rehabilitation and veterinary support for wildlife.",
       "modifications": "Resized, cropped to a 4:3 display frame and converted from JPEG to WebP for responsive web delivery; no generative or subject-altering edit is documented.",
       "reuse": "Public-domain status applies to the underlying photograph, not to surrounding BHOC content or design.",
@@ -191,7 +214,9 @@
       "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
       "sourceStatus": "Rawpixel labels the image Public Domain and free for personal and business use, with a CC0 licence link.",
       "verifiedOn": "2026-09-09",
-      "usedIn": ["Zoos & Conservation Centers focus card"],
+      "usedIn": [
+        "Zoos & Conservation Centers focus card"
+      ],
       "reason": "Represents conservation-centre and zoological-institution collaboration.",
       "modifications": "Resized, cropped to a 4:3 display frame and converted to WebP for responsive web delivery; no generative or subject-altering edit is documented.",
       "reuse": "The source identifies the underlying photograph as public domain / CC0. That status does not extend to surrounding BHOC content or design.",
@@ -215,7 +240,9 @@
       "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
       "sourceStatus": "Rawpixel labels the image Public Domain and free for personal and business use, with a CC0 licence link.",
       "verifiedOn": "2026-09-09",
-      "usedIn": ["Comparative Biology focus card"],
+      "usedIn": [
+        "Comparative Biology focus card"
+      ],
       "reason": "Represents cross-species comparative biology beyond mammalian examples.",
       "modifications": "Resized, cropped to a 4:3 display frame and converted to WebP for responsive web delivery; no generative or subject-altering edit is documented.",
       "reuse": "The source identifies the underlying photograph as public domain / CC0. That status does not extend to surrounding BHOC content or design.",
@@ -239,7 +266,9 @@
       "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
       "sourceStatus": "Rawpixel labels the image Public Domain and free for personal and business use, with a CC0 licence link.",
       "verifiedOn": "2026-09-09",
-      "usedIn": ["Evidence & Research focus card"],
+      "usedIn": [
+        "Evidence & Research focus card"
+      ],
       "reason": "Represents source-linked evidence, literature and veterinary research.",
       "modifications": "Resized, cropped to a 4:3 display frame and converted to WebP for responsive web delivery; no generative or subject-altering edit is documented.",
       "reuse": "The source identifies the underlying photograph as public domain / CC0. That status does not extend to surrounding BHOC content or design.",
@@ -263,7 +292,9 @@
       "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
       "sourceStatus": "Rawpixel labels the image Public Domain and free for personal and business use, with a CC0 licence link.",
       "verifiedOn": "2026-09-09",
-      "usedIn": ["Philanthropy & Partnerships focus card"],
+      "usedIn": [
+        "Philanthropy & Partnerships focus card"
+      ],
       "reason": "Represents protected habitats and the scale of conservation partnerships.",
       "modifications": "Resized, cropped to a 4:3 display frame and converted to WebP for responsive web delivery; no generative or subject-altering edit is documented.",
       "reuse": "The source identifies the underlying photograph as public domain / CC0. That status does not extend to surrounding BHOC content or design.",
@@ -297,7 +328,10 @@
       "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
       "sourceStatus": "The USFWS records and Wikimedia Commons identify Gary Kramer/USFWS and label the photograph Public Domain as a U.S. federal government work.",
       "verifiedOn": "2026-09-09",
-      "usedIn": ["Initiative Science Bridge", "BHOC Veterinary homepage Science Bridge"],
+      "usedIn": [
+        "Initiative Science Bridge",
+        "BHOC Veterinary homepage Science Bridge"
+      ],
       "reason": "Connects oxygen-delivery science with wildlife and cross-species veterinary care.",
       "modifications": "The Initiative copy was resized, cropped to a 4:3 frame and converted to WebP. On the homepage composite, the visible credit strip was moved off the artwork and into this legal register at the owner's request. A tightly bounded 691 × 52 pixel area at the lower edge was reconstructed; every pixel outside that area is unchanged, and the wolf itself was not altered.",
       "reuse": "Public-domain status applies to the underlying photograph, not to surrounding BHOC content or design.",
@@ -428,6 +462,32 @@
           "path": "assets/bhoc-initiative-ocean-hero-v2.webp",
           "sha256": "c43db7234a31f53a82eca20dd523c33ab58fe1c19518f212b84aecf463843d50",
           "introducedOn": "2026-09-20"
+        }
+      ]
+    },
+    {
+      "id": "we-be-of-one-blood-earth-universe",
+      "title": "Earth, the universe and the biology we share",
+      "subject": "Concept illustration of Earth at dawn beneath a star-filled universe",
+      "creator": "BHOC Veterinary editorial artwork generated with ImageGen at the request of Archil Jaliashvili",
+      "source": "https://bhocvet.com/initiative/we-be-of-one-blood.html",
+      "sourceLabel": "Original BHOC Veterinary editorial article",
+      "license": "Project-created editorial artwork; original BHOC Initiative mark remains a separate unchanged project asset",
+      "sourceStatus": "Generated conceptual illustration. No documentary astronomical observation, portrait, university logo or institutional endorsement is represented.",
+      "verifiedOn": "2026-10-03",
+      "usedIn": [
+        "BHOC Veterinary News",
+        "Initiative Stories That Matter",
+        "Author reflection: We be of one blood"
+      ],
+      "reason": "Connects the personal reflection on the universe with the Initiative, without inventing a photograph of a scientist.",
+      "modifications": "Generated original image resized and encoded as WebP for web delivery. The canonical Initiative emblem is paired as an independent native image; its original pixels and file are unchanged.",
+      "reuse": "BHOC editorial asset. The Initiative identity and surrounding article retain the project protected-content terms.",
+      "localFiles": [
+        {
+          "path": "assets/news/we-be-of-one-blood-earth-universe.webp",
+          "sha256": "81e7d7680e3ac02abe66c61828451189db30e2105c324aa463e9fa7be915f026",
+          "introducedOn": "2026-10-03"
         }
       ]
     }

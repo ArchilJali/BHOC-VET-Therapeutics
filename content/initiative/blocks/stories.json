@@ -3,6 +3,27 @@
   "title": "Stories That Matter",
   "cards": [
     {
+      "slug": "we-be-of-one-blood",
+      "href": "we-be-of-one-blood.html",
+      "image": {
+        "src": "assets/news/we-be-of-one-blood-earth-universe.webp",
+        "alt": "Concept illustration of Earth at dawn beneath a star-filled universe",
+        "width": 1400,
+        "height": 788,
+        "mark": {
+          "src": "assets/reference-initiative-mark.webp",
+          "alt": "BHOC Species and Biodiversity Protection Initiative emblem",
+          "width": 318,
+          "height": 317
+        }
+      },
+      "overline": "Archil Jaliashvili · Personal reflection",
+      "title": "God's Design and the Biology We Share",
+      "text": "A personal interpretation of shared hemoglobin biology and our responsibility to protect life.",
+      "phrase": "Different species. The same biological need: oxygen.",
+      "actionLabel": "Read reflection"
+    },
+    {
       "slug": "hachiko",
       "href": "hachiko.html",
       "image": {
