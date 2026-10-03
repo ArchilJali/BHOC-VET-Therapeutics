@@ -1,0 +1,155 @@
+{
+  "slug": "feline-blood-transfusion-compatibility",
+  "navLabel": "Feline blood transfusion",
+  "navActive": "news.html",
+  "breadcrumbs": [
+    {
+      "label": "News",
+      "href": "news.html"
+    }
+  ],
+  "title": "Feline Blood Transfusion & Donor Welfare | BHOC Veterinary",
+  "description": "Feline blood transfusion compatibility, donor sedation and cat blood donation, with ISFM guidance and historical EveryCat and Oxyglobin sources.",
+  "schemaType": "Article",
+  "datePublished": "2026-10-03",
+  "dateModified": "2026-10-03",
+  "dateLabel": "3 Oct 2026",
+  "articleSection": "Feline medicine",
+  "seo": {
+    "primaryKeyword": "feline blood transfusion compatibility",
+    "secondaryKeywords": [
+      "feline blood donor sedation",
+      "cat blood donation"
+    ],
+    "supportingTerms": [
+      "cat blood types",
+      "feline blood transfusion",
+      "feline blood donation",
+      "feline donor welfare",
+      "naturally occurring alloantibodies",
+      "crossmatching",
+      "Oxyglobin",
+      "hemoglobin-based oxygen carrier",
+      "HBOC",
+      "EveryCat Health Foundation",
+      "BHOC Veterinary",
+      "Precision Oxygen Therapeutics"
+    ]
+  },
+  "eyebrow": "Feline medicine · Donor welfare",
+  "heading": "Cats are different: blood compatibility and donor welfare.",
+  "lead": "Blood compatibility for the patient and protection for the healthy donor.",
+  "socialImage": {
+    "alt": "Screenshot of EveryCat Health Foundation's Oxyglobin Use in Cats article, dated 17 November 2008.",
+    "width": 2048,
+    "height": 1005,
+    "variant": "document",
+    "src": "assets/news/everycat-oxyglobin-use-in-cats.webp"
+  },
+  "image": {
+    "alt": "Screenshot of EveryCat Health Foundation's Oxyglobin Use in Cats article, dated 17 November 2008.",
+    "width": 2048,
+    "height": 1005,
+    "variant": "document",
+    "src": "assets/news/everycat-oxyglobin-use-in-cats.webp"
+  },
+  "credit": {
+    "label": "Source screenshot: EveryCat Health Foundation · 17 Nov 2008",
+    "href": "https://everycat.org/cat-health/oxyglobin-use-in-cats/"
+  },
+  "sections": [
+    {
+      "id": "blood-compatibility",
+      "heading": "Feline blood transfusion compatibility",
+      "paragraphs": [
+        "Cats have particular transfusion needs. Their A, B and AB blood types, naturally occurring alloantibodies and additional red-cell antigens make compatibility a clinical concern even before a first transfusion. A mismatched transfusion can be life-threatening. Blood typing and crossmatching matter."
+      ],
+      "sourceLinks": [
+        {
+          "label": "ISFM feline transfusion guidelines (2021)",
+          "href": "https://doi.org/10.1177/1098612X211007071"
+        }
+      ]
+    },
+    {
+      "id": "cat-blood-donation",
+      "heading": "Cat blood donation and donor welfare",
+      "paragraphs": [
+        "Donor welfare matters too. Blood donation places demands on a healthy cat: handling, restraint or sedation, venous access and blood removal. Individual temperament and health therefore matter. Sedation and blood collection each require a clinical risk assessment. Feline donors need careful selection, stress reduction and monitoring before, during and after collection."
+      ],
+      "sourceLinks": [
+        {
+          "label": "ISFM feline transfusion guidelines (2021)",
+          "href": "https://doi.org/10.1177/1098612X211007071"
+        }
+      ]
+    },
+    {
+      "id": "donor-sedation",
+      "heading": "Feline blood donor sedation",
+      "paragraphs": [
+        "Feline donation is usually performed under sedation. A 2024 study of 29,201 donation events reported that 95.6% were performed under sedation. Finding a suitable donor and compatible blood takes preparation, time and veterinary resources, especially when a critically ill cat needs urgent support."
+      ],
+      "sourceLinks": [
+        {
+          "label": "Feline blood donation study (2024)",
+          "href": "https://doi.org/10.1111/jvim.17215"
+        }
+      ]
+    },
+    {
+      "id": "historical-oxyglobin",
+      "heading": "Historical Oxyglobin use in cats",
+      "paragraphs": [
+        "EveryCat's Oxyglobin Use in Cats report, published on 17 November 2008, brings together historical experience with a hemoglobin-based oxygen carrier in feline anemia care. It cites a retrospective study of 48 cats, a clinical review and an earlier 72-cat case series. These are historical Oxyglobin publications, rather than new BHOC clinical results."
+      ],
+      "sourceLinks": [
+        {
+          "label": "Read the EveryCat report",
+          "href": "https://everycat.org/cat-health/oxyglobin-use-in-cats/"
+        }
+      ]
+    }
+  ],
+  "why": "The recipient needs compatible blood. The healthy donor also needs protection. These two responsibilities motivate investigation of additional oxygen-delivery approaches that may reduce dependence on donor animals. Historical Oxyglobin evidence is product-specific and does not establish safety or efficacy for BHOC.",
+  "referenceGroups": [
+    {
+      "heading": "Blood compatibility and donor welfare",
+      "links": [
+        {
+          "label": "ISFM feline transfusion guidelines (2021)",
+          "href": "https://doi.org/10.1177/1098612X211007071"
+        },
+        {
+          "label": "Feline blood donation study (2024)",
+          "href": "https://doi.org/10.1111/jvim.17215"
+        }
+      ]
+    },
+    {
+      "heading": "Three publications cited by EveryCat",
+      "links": [
+        {
+          "label": "Weingart & Kohn (2008): 48 cats",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/18455461/"
+        },
+        {
+          "label": "Callan & Rentko (2003): clinical review",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/14664199/"
+        },
+        {
+          "label": "Gibson et al. (2002): 72 cats",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/12420832/"
+        }
+      ]
+    }
+  ],
+  "sourceLink": {
+    "label": "Read the EveryCat report",
+    "href": "https://everycat.org/cat-health/oxyglobin-use-in-cats/"
+  },
+  "contextLink": {
+    "label": "Vet Real-World Evidence & Cases",
+    "href": "https://bhoctherapeutics.com/evidence/library/veterinary/Vet-index.html"
+  }
+}

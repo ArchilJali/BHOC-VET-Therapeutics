@@ -109,12 +109,7 @@
       "region": "Feline medicine",
       "category": "Donor welfare",
       "title": "Cats are different: blood compatibility and donor welfare.",
-      "text": "Cats have A, B and AB blood types and naturally occurring alloantibodies. Blood typing and crossmatching matter even before a first transfusion.",
-      "paragraphs": [
-        "Donation usually requires sedation, careful donor selection and monitoring. Handling, blood collection and recovery all need attention to the healthy donor's welfare.",
-        "EveryCat's 2008 report reviews historical Oxyglobin use in cats. These product-specific findings do not establish BHOC safety or efficacy."
-      ],
-      "why": "The patient needs compatible blood. The healthy donor also needs protection.",
+      "text": "Cats need compatible blood, and healthy donors need careful selection, sedation assessment and monitoring. Read the source-linked article on feline transfusion compatibility and cat blood donation.",
       "image": {
         "url": "assets/news/everycat-oxyglobin-use-in-cats.webp",
         "alt": "Screenshot of EveryCat Health Foundation's Oxyglobin Use in Cats article, dated 17 November 2008.",
@@ -128,37 +123,13 @@
       },
       "sourceName": "EveryCat Health Foundation · Original feline Oxyglobin literature",
       "link": {
-        "label": "Read the EveryCat report",
-        "href": "https://everycat.org/cat-health/oxyglobin-use-in-cats/"
+        "label": "Read the article",
+        "href": "feline-blood-transfusion-compatibility.html"
       },
       "contextLink": {
         "label": "Vet Real-World Evidence & Cases",
         "href": "https://bhoctherapeutics.com/evidence/library/veterinary/Vet-index.html"
       },
-      "references": [
-        {
-          "label": "Weingart & Kohn (2008): 48 cats",
-          "href": "https://pubmed.ncbi.nlm.nih.gov/18455461/"
-        },
-        {
-          "label": "Callan & Rentko (2003): clinical review",
-          "href": "https://pubmed.ncbi.nlm.nih.gov/14664199/"
-        },
-        {
-          "label": "Gibson et al. (2002): 72 cats",
-          "href": "https://pubmed.ncbi.nlm.nih.gov/12420832/"
-        }
-      ],
-      "supportingSources": [
-        {
-          "label": "ISFM feline transfusion guidelines (2021)",
-          "href": "https://doi.org/10.1177/1098612X211007071"
-        },
-        {
-          "label": "Feline blood donation study (2024)",
-          "href": "https://doi.org/10.1111/jvim.17215"
-        }
-      ],
       "keywords": [
         "cat blood types",
         "feline blood transfusion",
@@ -172,7 +143,8 @@
         "EveryCat Health Foundation",
         "BHOC Veterinary",
         "Precision Oxygen Therapeutics"
-      ]
+      ],
+      "article": true
     },
     {
       "id": "we-be-of-one-blood",

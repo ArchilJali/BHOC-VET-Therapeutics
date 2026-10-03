@@ -20,6 +20,7 @@ const expectedPages=[
   'initiative.html',
   'related-information.html',
   'news.html',
+  'feline-blood-transfusion-compatibility.html',
   'contact.html'
 ];
 const expectedSchemaTypes={
@@ -30,6 +31,7 @@ const expectedSchemaTypes={
   'initiative.html':'WebPage',
   'related-information.html':'CollectionPage',
   'news.html':'CollectionPage',
+  'feline-blood-transfusion-compatibility.html':'Article',
   'contact.html':'ContactPage'
 };
 const htmlByPage=new Map(await Promise.all(expectedPages.map(async name=>[name,await fs.readFile(path.join(out,name),'utf8')])));
@@ -81,7 +83,8 @@ for(const [name,html] of htmlByPage){
   assert.ok(!titles.has(title),`${name}: unique title`); titles.add(title);
   assert.ok(!descriptions.has(description),`${name}: unique description`); descriptions.add(description);
   assert.match(html,/<meta name="author" content="Archil Jaliashvili">/,`${name}: author metadata`);
-  assert.match(html,/property="og:image" content="https:\/\/bhocvet\.com\/assets\/bhoc-initiative-land-social\.jpg"/,`${name}: social image`);
+  const socialImage=name==='feline-blood-transfusion-compatibility.html'?'assets/news/everycat-oxyglobin-use-in-cats.webp':site.socialImage.src;
+  assert.match(html,new RegExp(`property="og:image" content="${re('https://bhocvet.com/'+socialImage)}"`),`${name}: social image`);
   assert.match(html,/name="twitter:card" content="summary_large_image"/,`${name}: social card`);
   assert.doesNotMatch(html,/<meta name="keywords"/,`${name}: no obsolete keyword meta`);
   assert.doesNotMatch(html,/https?:\/\/localhost|http:\/\/[^"<\s]*(?:\.css|\.js|\.webp)/,`${name}: no development URLs`);
@@ -142,6 +145,13 @@ assert.ok(product.includes(`href="${vetRWE}"`),'Product routes to Vet RWE & Case
 assert.match(product,/Open Vet Real-World Evidence (?:&amp;|&) Cases/,'Product keeps the Vet RWE & Cases label');
 
 const news=htmlByPage.get('news.html');
+const felineArticle=htmlByPage.get('feline-blood-transfusion-compatibility.html');
+const felineTeaser=news.match(/<article class="[^"]*" id="cats-blood-compatibility-oxyglobin">[\s\S]*?<\/article>/)?.[0]||'';
+assert.match(felineTeaser,/href="feline-blood-transfusion-compatibility\.html"/,'Feline news teaser opens the permanent article');
+assert.doesNotMatch(felineTeaser,/29,201|story-references/,'The full article and reference list live outside the news feed');
+for(const source of ['1098612X211007071','jvim.17215','18455461','14664199','12420832'])assert.ok(felineArticle.includes(source),'Feline article preserves its scientific source: '+source);
+assert.match(felineArticle,/does not establish safety or efficacy for BHOC/,'Historical findings remain product-specific');
+assert.ok(searchEntries.some(entry=>entry.href==='feline-blood-transfusion-compatibility.html'),'Search includes the permanent feline article');
 assert.match(news,/Vet Real-World Evidence &amp; Cases/,'News identifies the canonical veterinary RWE library');
 assert.match(news,new RegExp(`href="${re(vetRWE)}"`),'News routes directly to Vet RWE & Cases');
 assert.doesNotMatch(news,/evidence directory/i,'News no longer describes a duplicate evidence directory');
@@ -234,6 +244,7 @@ const sitemapParse=spawnSync('python3',['-c','import sys, xml.etree.ElementTree 
 assert.equal(sitemapParse.status,0,`Sitemap is well-formed XML: ${sitemapParse.stderr.trim()}`);
 for(const page of ['product.html','applications.html','science.html','initiative.html','related-information.html','news.html','contact.html'])assert.match(sitemap,new RegExp(`https:\/\/bhocvet\\.com\/${page.replace('.','\\.')}`),`Sitemap includes ${page}`);
 assert.match(sitemap,/https:\/\/bhocvet\.com\/initiative\//,'Sitemap includes full Initiative');
+assert.match(sitemap,/https:\/\/bhocvet\.com\/feline-blood-transfusion-compatibility\.html/,'Sitemap includes the permanent feline article');
 assert.match(sitemap,/https:\/\/bhocvet\.com\/initiative\/hachiko\.html/,'Sitemap includes Hachiko story');
 assert.match(sitemap,/https:\/\/bhocvet\.com\/initiative\/stories\.html/,'Sitemap includes Stories index');
 assert.doesNotMatch(sitemap,/https:\/\/bhocvet\.com\/evidence\.html/,'Sitemap excludes retired Evidence page');

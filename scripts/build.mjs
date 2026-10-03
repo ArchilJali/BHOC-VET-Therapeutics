@@ -254,8 +254,8 @@ const graphFor=(meta,pagePath,isHome=false)=>({'@context':'https://schema.org','
   {'@type':'Person','@id':personId,...site.author,affiliation:{'@id':orgId},knowsAbout:site.topics},
   {'@type':'WebSite','@id':webId,name:'BHOC Therapeutics',alternateName:[site.name,...site.alternateNames],url:site.canonical,description:site.description,inLanguage:site.language,datePublished:site.publication.firstPublished,dateModified:site.updated,keywords:seoTerms(site).join(', '),publisher:{'@id':orgId},creator:{'@id':personId}},
   ...(isHome?[{'@type':'ImageObject','@id':site.canonical+'#hero-image',contentUrl:absolute(openingImage.src),caption:openingImage.alt,width:openingImage.width,height:openingImage.height,representativeOfPage:true}]:[]),
-  {'@type':meta.schemaType||'WebPage','@id':absolute(pagePath)+'#webpage',url:absolute(pagePath),name:meta.title,description:meta.description,isPartOf:{'@id':webId},inLanguage:site.language,datePublished:site.publication.firstPublished,dateModified:site.updated,author:{'@id':personId},creator:{'@id':personId},publisher:{'@id':orgId},about:pageTopics(meta).map(name=>({'@type':'Thing',name})),keywords:seoTerms(meta).join(', '),...(isHome?{primaryImageOfPage:{'@id':site.canonical+'#hero-image'}}:{breadcrumb:{'@id':absolute(pagePath)+'#breadcrumb'}})},
-  ...(!isHome?[{'@type':'BreadcrumbList','@id':absolute(pagePath)+'#breadcrumb',itemListElement:[{'@type':'ListItem',position:1,name:'BHOC Therapeutics',item:site.canonical},{'@type':'ListItem',position:2,name:meta.title,item:absolute(pagePath)}]}]:[])
+  {'@type':meta.schemaType||'WebPage','@id':absolute(pagePath)+'#webpage',url:absolute(pagePath),name:meta.title,description:meta.description,isPartOf:{'@id':webId},inLanguage:site.language,datePublished:meta.datePublished||site.publication.firstPublished,dateModified:meta.dateModified||site.updated,author:{'@id':personId},creator:{'@id':personId},publisher:{'@id':orgId},about:pageTopics(meta).map(name=>({'@type':'Thing',name})),keywords:seoTerms(meta).join(', '),...(meta.schemaType==='Article'?{headline:meta.heading,articleSection:meta.articleSection,mainEntityOfPage:{'@type':'WebPage','@id':absolute(pagePath)},image:absolute(meta.image.src),citation:[meta.sourceLink.href,...meta.referenceGroups.flatMap(group=>group.links.map(item=>item.href))]}:{}),...(isHome?{primaryImageOfPage:{'@id':site.canonical+'#hero-image'}}:{breadcrumb:{'@id':absolute(pagePath)+'#breadcrumb'}})},
+  ...(!isHome?[{'@type':'BreadcrumbList','@id':absolute(pagePath)+'#breadcrumb',itemListElement:[{name:meta.breadcrumbs?'BHOC Veterinary':'BHOC Therapeutics',item:site.canonical},...(meta.breadcrumbs||[]).map(item=>({name:item.label,item:absolute(item.href)})),{name:meta.breadcrumbs?meta.navLabel:meta.title,item:absolute(pagePath)}].map((item,index)=>({'@type':'ListItem',position:index+1,...item}))}]:[])
 ]});
 
 const dialogNames=(await fs.readdir(path.join(root,'content/dialogs'))).filter(name=>name.endsWith('.html')).sort();
@@ -298,7 +298,7 @@ const renderNavigationItem=(item,active)=>{
     :`<a class="${isActive?'active':'text-link'}" ${attrs(item)}${isActive?' aria-current="page"':''}>${esc(item.label)}</a>`;
 };
 const renderHeader=active=>`<header class="site-header"><a class="wordmark" href="index.html#home" aria-label="${esc(site.name)} home"><span class="wordmark-top">${[...header.wordmark.letters].map((c,i)=>i===header.wordmark.accentIndex?`<em>${esc(c)}</em>`:esc(c)).join('')}</span><span class="wordmark-meta"><span class="wordmark-division">${esc(header.wordmark.subtitle)}</span><span class="wordmark-expansion">${esc(header.wordmark.expansion)}</span></span></a><nav id="primary-nav" class="primary-nav" aria-label="Main navigation">${header.navigation.map(item=>renderNavigationItem(item,active)).join('')}</nav><button class="icon-button search-toggle" data-open="search-dialog" aria-label="Search this website">${icon('search')}</button><button class="menu-toggle icon-button" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-nav"><span></span><span></span><span></span></button></header>${networkHTML}`;
-const renderPageRoute=(label,isHome=false)=>`<nav class="page-route" aria-label="Current location">${isHome?'':`<a href="index.html">BHOC Veterinary</a><span aria-hidden="true">›</span>`}<span aria-current="page">${esc(label)}</span></nav>`;
+const renderPageRoute=(label,isHome=false,breadcrumbs=[])=>`<nav class="page-route" aria-label="Current location">${isHome?'':`<a href="index.html">BHOC Veterinary</a><span aria-hidden="true">›</span>`}${breadcrumbs.map(item=>`<a ${attrs(item)}>${esc(item.label)}</a><span aria-hidden="true">›</span>`).join('')}<span aria-current="page">${esc(label)}</span></nav>`;
 const formatDate=iso=>{const [year,month,day]=iso.split('-');return `${day} ${['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'][Number(month)-1]} ${year}`};
 const footerWordmark=[...header.wordmark.letters].map((letter,index)=>index===header.wordmark.accentIndex?`<span class="oxygen-initial">${esc(letter)}</span>`:esc(letter)).join('');
 const renderFooter=()=>{
@@ -312,15 +312,15 @@ const renderFooter=()=>{
 const commonEnd=`${dialogHTML.join('\n')}${extras}<noscript><p class="noscript-note">Interactive search requires JavaScript. The main pages and source links remain available.</p><style>dialog{display:block;position:relative;margin:2rem auto}dialog .dialog-close,#search-dialog,#species-dialog,#all-species-dialog{display:none}.menu-toggle,.search-toggle,.round-control,.carousel-dots,.species-dots,.hero-control,.hero-dots{display:none}.primary-nav{display:flex;position:static}.science-panel[hidden]{display:block!important}</style></noscript>`;
 const initiativeSlashRedirect='<script>if(location.pathname.endsWith("/initiative"))location.replace(location.pathname+"/"+location.search+location.hash)</script>';
 
-const renderHead=(meta,pagePath,isHome=false)=>`<head>
+const renderHead=(meta,pagePath,isHome=false)=>{const socialImage=meta.socialImage||site.socialImage;return `<head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#f65c00">
 <title>${esc(meta.title)}</title><meta name="description" content="${esc(meta.description)}"><meta name="author" content="${esc(site.author.name)}"><meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1"><meta name="yandex" content="noindex"><link rel="canonical" href="${esc(absolute(pagePath))}">
-<meta property="og:type" content="website"><meta property="og:locale" content="en_US"><meta property="og:site_name" content="BHOC Therapeutics"><meta property="og:title" content="${esc(meta.title)}"><meta property="og:description" content="${esc(meta.description)}"><meta property="og:url" content="${esc(absolute(pagePath))}"><meta property="og:image" content="${absolute(site.socialImage.src)}"><meta property="og:image:secure_url" content="${absolute(site.socialImage.src)}"><meta property="og:image:type" content="${imageMime(site.socialImage.src)}"><meta property="og:image:width" content="${site.socialImage.width}"><meta property="og:image:height" content="${site.socialImage.height}"><meta property="og:image:alt" content="${esc(site.socialImage.alt)}">
-<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="${esc(meta.title)}"><meta name="twitter:description" content="${esc(meta.description)}"><meta name="twitter:image" content="${absolute(site.socialImage.src)}"><meta name="twitter:image:alt" content="${esc(site.socialImage.alt)}">
+<meta property="og:type" content="${meta.schemaType==='Article'?'article':'website'}"><meta property="og:locale" content="en_US"><meta property="og:site_name" content="BHOC Therapeutics"><meta property="og:title" content="${esc(meta.title)}"><meta property="og:description" content="${esc(meta.description)}"><meta property="og:url" content="${esc(absolute(pagePath))}"><meta property="og:image" content="${absolute(socialImage.src)}"><meta property="og:image:secure_url" content="${absolute(socialImage.src)}"><meta property="og:image:type" content="${imageMime(socialImage.src)}"><meta property="og:image:width" content="${socialImage.width}"><meta property="og:image:height" content="${socialImage.height}"><meta property="og:image:alt" content="${esc(socialImage.alt)}">${meta.schemaType==='Article'?`<meta property="article:published_time" content="${esc(meta.datePublished)}"><meta property="article:modified_time" content="${esc(meta.dateModified)}">`:''}
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="${esc(meta.title)}"><meta name="twitter:description" content="${esc(meta.description)}"><meta name="twitter:image" content="${absolute(socialImage.src)}"><meta name="twitter:image:alt" content="${esc(socialImage.alt)}">
 <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml"><link rel="sitemap" type="application/xml" href="${esc(absolute('sitemap.xml'))}">${isHome?`<link rel="preload" as="image" href="./${esc(openingImage.src)}" type="${imageMime(openingImage.src)}" fetchpriority="high">`:''}
 ${cssLinks.join('\n')}
 <script type="application/ld+json">${safeJSON(graphFor(meta,pagePath,isHome))}</script><script src="https://analytics.ahrefs.com/analytics.js" data-key="E4lNjXqYmHxKeKcqEkSgyg" async></script><script src="./assets/ga4.js?v=20260927" defer></script><script id="site-data" type="application/json" data-search-src="./search-data.json?v=${digest(searchData)}">${siteData}</script><script src="./app.js?v=${digest(client)}" defer></script>
-</head>`;
+</head>`;};
 
 const documents=new Map();
 const homeMeta={title:site.title,description:site.description,schemaType:'WebPage',seo:site.seo};
@@ -330,7 +330,7 @@ for(const page of pages){
   const {default:renderPage}=await import('../src/pages/'+page.slug+'.mjs');
   const pageMain=page.slug==='science'?renderPage(page,renderScienceBlock(scienceData)):renderPage(page);
   const routeGuard=page.slug==='initiative'?initiativeSlashRedirect:'';
-  documents.set(page.slug+'.html',`<!doctype html><html lang="${esc(site.language)}">${renderHead(page,page.slug+'.html').replace('</head>',routeGuard+'</head>')}<body data-page="${esc(page.slug)}"><a class="skip-link" href="#main">Skip to content</a>${await read('src/icons.html')}<div class="site-shell">${renderHeader(page.slug+'.html')}${renderPageRoute(page.navLabel)}${pageMain}${renderFooter()}</div>${commonEnd}</body></html>\n`);
+  documents.set(page.slug+'.html',`<!doctype html><html lang="${esc(site.language)}">${renderHead(page,page.slug+'.html').replace('</head>',routeGuard+'</head>')}<body data-page="${esc(page.slug)}"><a class="skip-link" href="#main">Skip to content</a>${await read('src/icons.html')}<div class="site-shell">${renderHeader(page.navActive||page.slug+'.html')}${renderPageRoute(page.navLabel,false,page.breadcrumbs)}${pageMain}${renderFooter()}</div>${commonEnd}</body></html>\n`);
 }
 
 for(const [name,html] of documents){
@@ -393,7 +393,7 @@ for(const image of initiativeImages){
 }
 const sitemapUrls=[
   {path:'',images:imageEntries},
-  ...pages.map(page=>({path:page.slug+'.html',images:[]})),
+  ...pages.map(page=>({path:page.slug+'.html',images:page.image?[page.image]:[]})),
   {path:'initiative/',images:initiativeImages},
   {path:'initiative/stories.html',images:storiesData.cards.map(card=>card.image)},
   ...initiativeStories.map(story=>({path:'initiative/'+story.slug+'.html',images:story.images}))

@@ -86,9 +86,9 @@ const itemListSchema=page=>safeJSON({
     '@type':'ListItem',
     position:index+1,
     item:{
-      '@type':'WebPageElement',
-      '@id':canonicalNewsURL+'#'+story.id,
-      url:canonicalNewsURL+'#'+story.id,
+      '@type':story.article?'Article':'WebPageElement',
+      '@id':story.article?absoluteURL(story.link.href):canonicalNewsURL+'#'+story.id,
+      url:story.article?absoluteURL(story.link.href):canonicalNewsURL+'#'+story.id,
       name:story.title,
       description:story.text,
       datePublished:story.date,
@@ -128,7 +128,7 @@ const storyHTML=(story,index)=>`<article class="conservation-story${index===0?' 
     ${(story.paragraphs||[]).map(text=>`<p>${esc(text)}</p>`).join('')}
     ${story.references?.length?`<div class="story-references"><h4>Three publications cited by EveryCat</h4><ol>${story.references.map(item=>`<li><a ${attrs(item)}>${esc(item.label)}</a></li>`).join('')}</ol></div>`:''}
     ${story.supportingSources?.length?`<div class="story-references"><h4>Blood compatibility and donor welfare sources</h4><ul>${story.supportingSources.map(item=>`<li><a ${attrs(item)}>${esc(item.label)}</a></li>`).join('')}</ul></div>`:''}
-    <div class="story-why"><strong>Why it matters</strong><span>${esc(story.why)}</span></div>
+    ${story.why?`<div class="story-why"><strong>Why it matters</strong><span>${esc(story.why)}</span></div>`:''}
     <div class="story-footer"><a class="story-link" ${attrs(story.link)}>${esc(story.link.label)} <span aria-hidden="true">${story.link.href.startsWith('https://')?'↗':'→'}</span></a>${story.contextLink?`<a class="story-source-link" ${attrs(story.contextLink)}>${esc(story.contextLink.label)} <span aria-hidden="true">${story.contextLink.href.startsWith('https://')?'↗':'→'}</span></a>`:''}</div>
   </div>
 </article>`;
