@@ -3,6 +3,7 @@ import path from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {createHash} from 'node:crypto';
 import {esc,attrs,img,icon,link} from '../src/lib/html.mjs';
+import {applyPublicationMetadata} from './publication-metadata.mjs';
 import renderScienceBlock from '../src/blocks/science.mjs';
 import {
   renderFooter as renderInitiativeFooter,
@@ -27,6 +28,7 @@ const write=async(p,s)=>{const dest=path.join(out,p);await fs.mkdir(path.dirname
 const digest=s=>createHash('sha256').update(s).digest('hex').slice(0,10);
 
 const site=await json('content/site.json');
+applyPublicationMetadata(site,root);
 const header=await json('content/header.json');
 const manifest=await json('content/homepage.json');
 const species=await json('content/species-details.json');

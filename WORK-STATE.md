@@ -1,5 +1,7 @@
 # Current BHOC Veterinary work state
 
+2026-10-07 COP17 news: Added /bhoc-cop17-yerevan-2026.html and the newest card in Veterinary News. The article records Archil Jaliashvili's accreditation and NGO delegation, describes CBD COP17, cites Armenia's expected attendance of 10,000 to 15,000 and thanks Bridge That Gap Hope for Africa Initiative and Executive Director Gloria Bulus personally for their cooperation. No thanks for invitation or accreditation assistance appear in the copy. The public accreditation image is the user-approved compact copy, with both barcodes and registration code removed. Its optimized WebP derivative preserves the compact composition and text. The original unredacted PDF is not included in the public repository. Article metadata, canonical URL, breadcrumbs, descriptive ALT, Open Graph, Twitter metadata, source links, site search and sitemap are generated from content. The Yandex noindex policy is preserved. Publication update count is 48. The footer now derives its update count, last-updated date and version automatically from visitor-facing source commits after the established 47-update baseline, in Asia/Tbilisi. Generated mirror commits do not increment it; the first-publication date stays fixed. GitHub Pages checks out full history for this calculation.
+
 20 September 2026. This file records only the current implementation. Earlier experiments and authoring archives are intentionally excluded from the public repository.
 
 ## Identity and navigation

@@ -8,6 +8,7 @@ on:
       - 'src/**'
       - 'assets/**'
       - 'scripts/build.mjs'
+      - 'scripts/publication-metadata.mjs'
       - 'scripts/write-migration-redirects.mjs'
       - 'scripts/check-site.mjs'
       - 'scripts/check-forbidden-links.mjs'
@@ -50,7 +51,7 @@ jobs:
           mkdir -p dist
           cp -a _site/. dist/
 
-          for f in index.html product.html applications.html evidence.html science.html initiative.html related-information.html news.html contact.html feline-blood-transfusion-compatibility.html publications.html robots.txt sitemap.xml CNAME app.js search-data.json .nojekyll; do
+          for f in index.html product.html applications.html evidence.html science.html initiative.html related-information.html news.html contact.html feline-blood-transfusion-compatibility.html bhoc-cop17-yerevan-2026.html publications.html robots.txt sitemap.xml CNAME app.js search-data.json .nojekyll; do
             cp "_site/$f" "$f"
           done
 
@@ -66,7 +67,7 @@ jobs:
 
       - name: Commit synchronized generated files
         run: |
-          git add index.html product.html applications.html evidence.html science.html initiative.html initiative related-information.html news.html contact.html feline-blood-transfusion-compatibility.html publications.html robots.txt sitemap.xml CNAME app.js search-data.json .nojekyll assets/css assets/favicon.svg assets/bhoc-veterinary-organization-logo.svg dist
+          git add index.html product.html applications.html evidence.html science.html initiative.html initiative related-information.html news.html contact.html feline-blood-transfusion-compatibility.html bhoc-cop17-yerevan-2026.html publications.html robots.txt sitemap.xml CNAME app.js search-data.json .nojekyll assets/css assets/favicon.svg assets/bhoc-veterinary-organization-logo.svg dist
           if git diff --cached --quiet; then
             echo "Generated root and dist are already synchronized."
             exit 0

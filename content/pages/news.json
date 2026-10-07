@@ -88,7 +88,7 @@
   "eyebrow": "BHOC Initiative · Global Intelligence",
   "heading": "Wildlife & Species Conservation Intelligence.",
   "lead": "Tracking the people, science, funding and programs working to protect wildlife, restore endangered species and strengthen conservation medicine worldwide.",
-  "updated": "3 Oct 2026",
+  "updated": "7 Oct 2026",
   "seoContext": {
     "eyebrow": "BHOC Veterinary context",
     "heading": "Animal-health intelligence, separate from product claims.",
@@ -102,6 +102,49 @@
   },
   "feedNote": "BHOC Initiative Scout applies a high publication threshold and screens every candidate for duplication. New items are added only for exceptional rescue or recovery outcomes, globally significant conservation initiatives, substantive veterinary evidence milestones or other material developments; routine news is excluded.",
   "stories": [
+    {
+      "id": "bhoc-cop17-yerevan-2026",
+      "date": "2026-10-07",
+      "dateLabel": "7 Oct 2026",
+      "region": "Armenia · Yerevan",
+      "category": "COP17 · Biodiversity and animal health",
+      "title": "BHOC at COP17 Yerevan 2026: Animal Health and Biodiversity",
+      "text": "Archil Jaliashvili has received COP17 accreditation and will join the delegation of Bridge That Gap Hope for Africa Initiative at the UN Biodiversity Conference in Yerevan, 19 to 30 October 2026.",
+      "paragraphs": [
+        "We warmly thank Bridge That Gap Hope for Africa Initiative and personally its Executive Director, Gloria Bulus, for their cooperation. Meet us at COP17 to explore cooperation in animal health and species protection."
+      ],
+      "image": {
+        "url": "assets/news/archil-jaliashvili-cop17-accreditation-compact.webp",
+        "alt": "COP17 Priority Pass for Archil Jaliashvili, BHOC Species & Biodiversity Protection Initiative, in the Bridge That Gap Hope for Africa Initiative NGO delegation.",
+        "width": 1448,
+        "height": 1086,
+        "variant": "document"
+      },
+      "sourceName": "BHOC Species & Biodiversity Protection Initiative · COP17 accreditation",
+      "article": true,
+      "link": {
+        "label": "Read the news and meet us",
+        "href": "bhoc-cop17-yerevan-2026.html"
+      },
+      "contextLink": {
+        "label": "Bridge That Gap Hope for Africa Initiative",
+        "href": "https://bridgethatgapinitiative.org/"
+      },
+      "keywords": [
+        "COP17 Yerevan 2026",
+        "UN Biodiversity Conference 2026",
+        "BHOC Species & Biodiversity Protection Initiative",
+        "CBD COP17",
+        "Convention on Biological Diversity",
+        "Archil Jaliashvili",
+        "animal health",
+        "species protection",
+        "biodiversity conservation",
+        "Bridge That Gap Hope for Africa Initiative",
+        "Gloria Bulus",
+        "BHOC Veterinary"
+      ]
+    },
     {
       "id": "cats-blood-compatibility-oxyglobin",
       "date": "2026-10-03",

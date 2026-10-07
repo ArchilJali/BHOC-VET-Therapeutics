@@ -1,0 +1,115 @@
+{
+  "slug": "bhoc-cop17-yerevan-2026",
+  "navLabel": "COP17 Yerevan 2026",
+  "navActive": "news.html",
+  "breadcrumbs": [
+    {
+      "label": "News",
+      "href": "news.html"
+    }
+  ],
+  "title": "BHOC at COP17 Yerevan 2026 | Animal Health & Biodiversity",
+  "description": "Meet BHOC at the UN Biodiversity Conference COP17 in Yerevan, 19-30 October 2026. Explore cooperation in animal health and species protection.",
+  "schemaType": "Article",
+  "datePublished": "2026-10-07",
+  "dateModified": "2026-10-07",
+  "dateLabel": "7 Oct 2026",
+  "articleSection": "Biodiversity and animal health",
+  "seo": {
+    "primaryKeyword": "COP17 Yerevan 2026",
+    "secondaryKeywords": [
+      "UN Biodiversity Conference 2026",
+      "BHOC Species & Biodiversity Protection Initiative"
+    ],
+    "supportingTerms": [
+      "CBD COP17",
+      "Convention on Biological Diversity",
+      "Archil Jaliashvili",
+      "animal health",
+      "species protection",
+      "biodiversity conservation",
+      "Bridge That Gap Hope for Africa Initiative",
+      "Gloria Bulus",
+      "BHOC Veterinary"
+    ]
+  },
+  "eyebrow": "UN Biodiversity Conference · Yerevan, Armenia",
+  "heading": "BHOC at COP17: Animal Health and Biodiversity",
+  "lead": "Archil Jaliashvili has received COP17 accreditation and will attend the UN Biodiversity Conference in Yerevan, Armenia, taking place from 19 to 30 October 2026.",
+  "image": {
+    "src": "assets/news/archil-jaliashvili-cop17-accreditation-compact.webp",
+    "alt": "COP17 Priority Pass for Archil Jaliashvili, BHOC Species & Biodiversity Protection Initiative, in the Bridge That Gap Hope for Africa Initiative NGO delegation.",
+    "width": 1448,
+    "height": 1086
+  },
+  "socialImage": {
+    "src": "assets/news/archil-jaliashvili-cop17-accreditation-compact.webp",
+    "alt": "COP17 Priority Pass for Archil Jaliashvili, BHOC Species & Biodiversity Protection Initiative, in the Bridge That Gap Hope for Africa Initiative NGO delegation.",
+    "width": 1448,
+    "height": 1086
+  },
+  "role": "As Lead of the BHOC Species & Biodiversity Protection Initiative, he will join the delegation of Bridge That Gap Hope for Africa Initiative to explore cooperation in animal health and species protection.",
+  "sections": [
+    {
+      "id": "what-is-cop17",
+      "heading": "What is CBD COP17?",
+      "paragraphs": [
+        "COP17 is the seventeenth meeting of the Conference of the Parties to the Convention on Biological Diversity. It brings together government delegations, international organizations, scientists, conservation groups, Indigenous Peoples and businesses.",
+        "Armenia expects 10,000 to 15,000 participants, including representatives of the Convention's 196 Parties. With intergovernmental negotiations and ministerial discussions, COP17 will conduct the first global review of progress toward the biodiversity targets for 2030."
+      ],
+      "sourceLinks": [
+        {
+          "label": "Official COP17 overview",
+          "href": "https://cop17yerevan.am/en/about-cop17"
+        }
+      ]
+    },
+    {
+      "id": "bridge-that-gap",
+      "heading": "About Bridge That Gap Hope for Africa Initiative",
+      "paragraphs": [
+        "Bridge That Gap Hope for Africa Initiative is a Nigerian nonprofit founded in 2016. It connects community action with environmental policy through biodiversity conservation, climate adaptation, education and the empowerment of women and vulnerable communities."
+      ],
+      "sourceLinks": [
+        {
+          "label": "About Bridge That Gap Hope for Africa Initiative",
+          "href": "https://bridgethatgapinitiative.org/"
+        }
+      ]
+    }
+  ],
+  "thanks": "We warmly thank Bridge That Gap Hope for Africa Initiative and personally its Executive Director, Gloria Bulus, for their cooperation.",
+  "meetingHeading": "Meet us at COP17",
+  "meetingText": "Will you be in Yerevan? We would be glad to meet researchers, veterinary teams and conservation organizations to explore practical cooperation in animal health and species protection.",
+  "meetingLink": {
+    "label": "Arrange a meeting: aj@bhoctherapeutics.com",
+    "href": "mailto:aj@bhoctherapeutics.com"
+  },
+  "sourceLink": {
+    "label": "Official COP17 overview",
+    "href": "https://cop17yerevan.am/en/about-cop17"
+  },
+  "referenceGroups": [
+    {
+      "heading": "Official sources",
+      "links": [
+        {
+          "label": "COP17 scale and expected participation: Armenia Ministry of Environment",
+          "href": "https://environment.gov.am/en/articles/նորություններ/another-draft-for-organizing-cop17-approved"
+        },
+        {
+          "label": "COP17 high-level segment: Convention on Biological Diversity",
+          "href": "https://www.cbd.int/notifications/2026-041"
+        },
+        {
+          "label": "Bridge That Gap: mission and activities",
+          "href": "https://bridgethatgapinitiative.org/about/"
+        },
+        {
+          "label": "Gloria Bulus, Executive Director: UNDRR speaker listing",
+          "href": "https://globalplatform.undrr.org/2025/conference-event/ts6-solutions-scaling-and-sustaining-investments-multi-hazard-early-warning"
+        }
+      ]
+    }
+  ]
+}
