@@ -3,10 +3,12 @@ import path from 'node:path';
 import assert from 'node:assert/strict';
 import {spawnSync} from 'node:child_process';
 import {fileURLToPath} from 'node:url';
+import {applyPublicationMetadata} from './publication-metadata.mjs';
 
 const root=path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 const out=path.resolve(root,process.argv[2]||'dist');
 const site=JSON.parse(await fs.readFile(path.join(root,'content/site.json'),'utf8'));
+applyPublicationMetadata(site,root);
 const vetRWE='https://bhoctherapeutics.com/evidence/library/veterinary/Vet-index.html';
 const vetSearch='https://bhoctherapeutics.com/evidence/library/veterinary/Vet-search.html';
 const re=s=>String(s).replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
