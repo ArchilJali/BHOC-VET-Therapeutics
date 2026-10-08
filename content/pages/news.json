@@ -82,7 +82,12 @@
       "Oxyglobin dogs",
       "canine anemia",
       "hemoglobin glutamer-200 bovine",
-      "veterinary oxygen therapeutic"
+      "veterinary oxygen therapeutic",
+      "Living Planet Report 2026",
+      "WWF",
+      "Living Planet Index",
+      "tiger recovery",
+      "freshwater biodiversity"
     ]
   },
   "eyebrow": "BHOC Initiative · Global Intelligence",
@@ -102,6 +107,49 @@
   },
   "feedNote": "BHOC Initiative Scout applies a high publication threshold and screens every candidate for duplication. New items are added only for exceptional rescue or recovery outcomes, globally significant conservation initiatives, substantive veterinary evidence milestones or other material developments; routine news is excluded.",
   "stories": [
+    {
+      "id": "living-planet-report-2026",
+      "date": "2026-10-08",
+      "dateLabel": "8 Oct 2026",
+      "region": "Global",
+      "category": "Global biodiversity · Species recovery",
+      "title": "Living Planet Report 2026: wildlife decline remains severe, but recovery is measurable.",
+      "text": "WWF's Living Planet Report 2026 reports an average 73% decline in the size of monitored vertebrate wildlife populations from 1970 to 2022, based on 35,803 population trends across 5,790 species. Freshwater populations show the steepest average decline at 85%. The same report also documents a crucial counterpoint: targeted, sustained conservation can deliver measurable recovery, including global wild tiger numbers rising from about 3,200 in 2010 to around 5,700 in 2025.",
+      "why": "For the BHOC Species & Biodiversity Protection Initiative, this is global context for why species protection must connect monitoring, veterinary and conservation capacity, long-term investment and measurable outcomes. It is not evidence of BHOC or HBOC efficacy in wildlife.",
+      "image": {
+        "url": "assets/bhoc-initiative-land-social.jpg",
+        "alt": "BHOC Species & Biodiversity Protection Initiative wildlife landscape accompanying the Living Planet Report 2026 conservation intelligence update",
+        "width": 1200,
+        "height": 463
+      },
+      "credit": {
+        "label": "BHOC Veterinary visual · Report source: WWF / ZSL",
+        "href": "https://www.worldwildlife.org/publications/2026-living-planet-report/"
+      },
+      "sourceName": "WWF Living Planet Report 2026 · Living Planet Index produced by ZSL",
+      "link": {
+        "label": "Read the WWF Living Planet Report 2026",
+        "href": "https://www.worldwildlife.org/publications/2026-living-planet-report/"
+      },
+      "contextLink": {
+        "label": "WWF press release · recovery examples and methodology",
+        "href": "https://www.worldwildlife.org/news/press-releases/wildlife-population-sizes-decline-73-on-average-but-tiger-elephant-turtle-and-tuna-recoveries-offer-hope/"
+      },
+      "keywords": [
+        "Living Planet Report 2026",
+        "WWF",
+        "Zoological Society of London",
+        "Living Planet Index",
+        "wildlife population decline",
+        "freshwater biodiversity",
+        "tiger recovery",
+        "species recovery",
+        "biodiversity conservation",
+        "conservation medicine",
+        "BHOC Species and Biodiversity Protection Initiative",
+        "BHOC Veterinary"
+      ]
+    },
     {
       "id": "bhoc-cop17-yerevan-2026",
       "date": "2026-10-07",
