@@ -93,5 +93,20 @@
   "sourceLink": {
     "label": "Source: WWF Free Ecards",
     "href": "https://www.worldwildlife.org/support/ecards/"
-  }
+  },
+  "referenceGroups": [
+    {
+      "heading": "BHOC Initiative",
+      "links": [
+        {
+          "label": "BHOC Species & Biodiversity Protection Initiative",
+          "href": "https://bhocvet.com/initiative/"
+        },
+        {
+          "label": "We be of one blood",
+          "href": "https://bhocvet.com/initiative/we-be-of-one-blood.html"
+        }
+      ]
+    }
+  ]
 }
