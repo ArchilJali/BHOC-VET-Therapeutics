@@ -1,3 +1,5 @@
+2026-10-10 WWF ecards withdrawal: At Archil's request, removed the 9 October ecards news card, standalone article and the WWF/BHOC elephant composite assets. Removed its search and sitemap entries through the content build. The separate Living Planet Report story remains.
+
 # Current BHOC Veterinary work state
 
 2026-10-09 WWF ecards: Added /wwf-free-wildlife-ecards-bhoc-initiative.html and news.html#wwf-free-wildlife-ecards-2026 using Archil's selected WWF BHOC card elephant (1).png. The full original composition is retained; a pixel-identical lossless WebP is used on the website and the original PNG is retained for social sharing and full-size viewing. The independent message of support includes the official WWF Free Ecards link, the Initiative and Kipling story. Metadata, ALT, breadcrumbs, search and sitemap are generated from source. This record does not establish third-party image or trademark permission. A rights clarification enquiry is planned from info@bhoctherapeutics.com.
