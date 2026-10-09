@@ -87,13 +87,16 @@
       "WWF",
       "Living Planet Index",
       "tiger recovery",
-      "freshwater biodiversity"
+      "freshwater biodiversity",
+      "WWF free ecards",
+      "wildlife greeting cards",
+      "wildlife awareness"
     ]
   },
   "eyebrow": "BHOC Initiative · Global Intelligence",
   "heading": "Wildlife & Species Conservation Intelligence.",
   "lead": "Tracking the people, science, funding and programs working to protect wildlife, restore endangered species and strengthen conservation medicine worldwide.",
-  "updated": "8 Oct 2026",
+  "updated": "9 Oct 2026",
   "seoContext": {
     "eyebrow": "BHOC Veterinary context",
     "heading": "Animal-health intelligence, separate from product claims.",
@@ -107,6 +110,40 @@
   },
   "feedNote": "BHOC Initiative Scout applies a high publication threshold and screens every candidate for duplication. New items are added only for exceptional rescue or recovery outcomes, globally significant conservation initiatives, substantive veterinary evidence milestones or other material developments; routine news is excluded.",
   "stories": [
+    {
+      "id": "wwf-free-wildlife-ecards-2026",
+      "date": "2026-10-09",
+      "dateLabel": "9 Oct 2026",
+      "region": "Global",
+      "category": "Wildlife awareness · WWF Free Ecards",
+      "title": "A Small Gesture of Love for Wildlife: WWF Free Ecards",
+      "text": "Send a free WWF ecard to friends and family and share a small gesture of care for wildlife and the planet. BHOC Initiative supports this invitation, guided by “We be of one blood, ye and I.”",
+      "image": {
+        "url": "assets/news/wwf-bhoc-elephant-card-2026-10-09.webp",
+        "alt": "Baby elephant resting its trunk in a person's hands on a card inviting readers to send a free WWF ecard, with WWF and BHOC branding.",
+        "width": 1536,
+        "height": 1024,
+        "variant": "document"
+      },
+      "sourceName": "WWF Free Ecards",
+      "article": true,
+      "link": {
+        "label": "Read the story",
+        "href": "wwf-free-wildlife-ecards-bhoc-initiative.html"
+      },
+      "contextLink": {
+        "label": "Send a free WWF ecard",
+        "href": "https://www.worldwildlife.org/support/ecards/"
+      },
+      "keywords": [
+        "wildlife greeting cards",
+        "free wildlife ecards",
+        "WWF free ecards",
+        "BHOC Initiative",
+        "wildlife awareness",
+        "biodiversity"
+      ]
+    },
     {
       "id": "living-planet-report-2026",
       "date": "2026-10-08",

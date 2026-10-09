@@ -197,6 +197,10 @@ export default rawPage=>{const page=enrichPage(rawPage);return `<style>
 .news-feed-page button:disabled{opacity:.4;cursor:default}.conservation-story[hidden]{display:none!important}
 .news-feed-empty{padding:28px;border:1px dashed #cbd8d1;border-radius:14px;text-align:center;color:var(--muted);font-size:13px}
 @media(max-width:700px){.news-feed-tools{align-items:stretch}.news-feed-summary{width:100%;order:3}.news-feed-viewall{margin-left:auto}}
+#wwf-free-wildlife-ecards-2026{grid-template-columns:1fr}
+#wwf-free-wildlife-ecards-2026 .story-media-document{align-self:start;background:#fff;min-height:0}
+#wwf-free-wildlife-ecards-2026 .story-media-document img{display:block;width:100%;height:auto;min-height:0;max-height:none;aspect-ratio:auto;object-fit:contain}
+#wwf-free-wildlife-ecards-2026 .story-copy{padding:24px clamp(20px,3vw,36px)}
 </style>
 <main id="main" class="subpage-main news-page">
   <section class="page-hero" aria-labelledby="news-page-heading"><div><span class="page-eyebrow">${esc(page.eyebrow)}</span><h1 id="news-page-heading">${esc(page.heading)}</h1><p>${esc(page.lead)}</p></div></section>
