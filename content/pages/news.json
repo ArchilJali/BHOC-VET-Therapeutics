@@ -93,7 +93,7 @@
   "eyebrow": "BHOC Initiative · Global Intelligence",
   "heading": "Wildlife & Species Conservation Intelligence.",
   "lead": "Tracking the people, science, funding and programs working to protect wildlife, restore endangered species and strengthen conservation medicine worldwide.",
-  "updated": "9 Oct 2026",
+  "updated": "10 Oct 2026",
   "seoContext": {
     "eyebrow": "BHOC Veterinary context",
     "heading": "Animal-health intelligence, separate from product claims.",
@@ -107,6 +107,49 @@
   },
   "feedNote": "BHOC Initiative Scout applies a high publication threshold and screens every candidate for duplication. New items are added only for exceptional rescue or recovery outcomes, globally significant conservation initiatives, substantive veterinary evidence milestones or other material developments; routine news is excluded.",
   "stories": [
+    {
+      "id": "planigale-petrophila-kakadu-2026",
+      "date": "2026-10-10",
+      "dateLabel": "10 Oct 2026 · QUT source: 25 Jun 2026",
+      "region": "Australia · Northern Territory",
+      "category": "Species discovery · Conservation",
+      "title": "Planigale petrophila: a newly described marsupial from Kakadu",
+      "text": "A study led by Dr Linette Umbrello, with QUT Associate Professor Andrew Baker and colleagues, has identified Planigale petrophila as a distinct marsupial species. Genetic and anatomical comparisons of museum specimens separated it from animals previously classified as Planigale ingrami.",
+      "paragraphs": [
+        "The species is known from three specimens collected within a 12 km area of Kakadu National Park in western Arnhem Land. None has been recorded since 2004. The researchers call for an urgent conservation assessment; the limited records do not establish its present population size.",
+        "Published in the Zoological Journal of the Linnean Society, the study shows how museum collections can reveal overlooked biodiversity and help define conservation priorities."
+      ],
+      "why": "Recognising a species is a starting point for understanding its needs. Through the BHOC Species & Biodiversity Protection Initiative, we seek dialogue with conservation scientists and wildlife veterinarians about practical gaps in animal care. Different species. The same biological need: oxygen. Any potential BHOC application in wildlife requires species-specific evidence; this taxonomy study does not evaluate oxygen therapeutics.",
+      "image": {
+        "url": "assets/news/qut-planigale-petrophila-pat-woolley.jpg",
+        "alt": "Planigale petrophila with a long tail on a rocky surface beside dry leaves.",
+        "width": 800,
+        "height": 451,
+        "variant": "document"
+      },
+      "credit": {
+        "label": "Photo: Pat Woolley · Source: QUT",
+        "href": "https://www.qut.edu.au/news?id=204770"
+      },
+      "sourceName": "QUT · 25 June 2026 · Zoological Journal of the Linnean Society",
+      "link": {
+        "label": "Read the original QUT report",
+        "href": "https://www.qut.edu.au/news?id=204770"
+      },
+      "contextLink": {
+        "label": "Original study · DOI 10.1093/zoolinnean/zlag082",
+        "href": "https://doi.org/10.1093/zoolinnean/zlag082"
+      },
+      "keywords": [
+        "Planigale petrophila",
+        "Kakadu National Park",
+        "marsupial discovery",
+        "wildlife conservation",
+        "Linette Umbrello",
+        "Andrew Baker",
+        "BHOC Species & Biodiversity Protection Initiative"
+      ]
+    },
     {
       "id": "living-planet-report-2026",
       "date": "2026-10-08",

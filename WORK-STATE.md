@@ -1,3 +1,5 @@
+2026-10-10 QUT planigale news: Added news.html#planigale-petrophila-kakadu-2026 from the user-selected QUT report of 25 June 2026. Uses the unchanged QUT main photograph of Planigale petrophila credited to Pat Woolley, with full proportions and caption below the image. Original QUT report and study DOI are linked. The species record and conservation assessment are distinguished from BHOC development aims. Third-party permission is not asserted; a media enquiry will show the exact placement and ask for confirmation or corrections.
+
 2026-10-10 WWF ecards withdrawal: At Archil's request, removed the 9 October ecards news card, standalone article and the WWF/BHOC elephant composite assets. Removed its search and sitemap entries through the content build. The separate Living Planet Report story remains.
 
 # Current BHOC Veterinary work state

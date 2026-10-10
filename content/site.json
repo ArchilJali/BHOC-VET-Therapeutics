@@ -88,7 +88,7 @@
     "Veterinary public health"
   ],
   "language": "en",
-  "updated": "2026-10-08",
+  "updated": "2026-10-10",
   "contactEmail": "info@bhoctherapeutics.com",
   "organizationLogo": {
     "src": "assets/bhoc-veterinary-organization-logo.svg",
@@ -99,7 +99,7 @@
   "publication": {
     "firstPublished": "2026-09-07",
     "updates": 53,
-    "lastUpdated": "2026-10-08",
+    "lastUpdated": "2026-10-10",
     "version": "26.10.08",
     "automatic": {
       "baseCommit": "9dae4de5eab63b52ca8e9d7654c0b34ff2ec23ce",
