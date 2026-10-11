@@ -1,7 +1,7 @@
 import {esc,attrs} from '../lib/html.mjs';
 
 export default page=>`<main id="main" class="subpage-main vatican-editorial">
-  <section class="page-hero"><div><span class="page-eyebrow">${esc(page.eyebrow)}</span><h1>${esc(page.heading)}</h1><p>${esc(page.lead)}</p></div></section>
+  <section class="page-hero" style="display:block;width:100%;padding:30px clamp(20px,4vw,64px) 24px"><div style="display:block;max-width:none;width:100%"><span class="page-eyebrow">${esc(page.eyebrow)}</span><h1 style="display:block;max-width:none;width:100%;white-space:normal;line-height:1.12">${esc(page.heading)}</h1><p>${esc(page.lead)}</p></div></section>
   <section class="page-section" style="display:block;max-width:980px;margin:0 auto;padding:26px 24px 60px">
     <figure style="margin:0 auto 28px;max-width:640px">
       <img src="${esc(page.image.src)}" width="${page.image.width}" height="${page.image.height}" alt="${esc(page.image.alt)}" style="display:block;width:100%;height:auto;border-radius:12px" loading="eager">
