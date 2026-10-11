@@ -114,39 +114,26 @@
       "region": "Vatican City · Global",
       "category": "Ethics · Biodiversity · Animal welfare",
       "title": "Vatican guidance links care for nature with responsibility for living beings",
-      "text": "In September 2026, the International Theological Commission published theological guidance on care for our common home. It considers severe harm to the natural world in moral and spiritual terms, including the concept of a sin against Creation and against the Creator. The guidance builds on the Catholic Church's longstanding discussion of environmental stewardship.",
-      "paragraphs": [
-        "The document addresses biodiversity loss, pollution, ecosystem destruction and the disproportionate effects of environmental degradation on vulnerable communities. It argues that humanity’s responsibility for the living world extends beyond ownership or short-term economic benefit.",
-        "For wildlife veterinarians, conservation scientists and animal welfare organizations, this discussion raises a practical question: how can responsibility for nature be translated into effective care for animals, habitats and threatened species?",
-        "BHOC Species & Biodiversity Protection Initiative approaches that question through One Health, veterinary medicine and scientific collaboration. Protecting ecosystems and improving care for individual animals are complementary priorities. Different species. The same biological need: oxygen.",
-        "This is an independent BHOC Veterinary editorial perspective. The International Theological Commission’s document is not an endorsement of BHOC Veterinary, its technology or the Initiative. The photograph of Pope Leo XIV is illustrative; it does not depict the Commission’s publication or imply papal endorsement."
-      ],
+      "text": "The Vatican’s International Theological Commission has connected care for nature, biodiversity and vulnerable communities with moral responsibility. What does this mean for animal welfare, conservation medicine and One Health?",
       "image": {
-        "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Pope_Leo_XIV_1.png?width=960",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/Pope_Leo_XIV_1.png/960px-Pope_Leo_XIV_1.png",
         "alt": "Pope Leo XIV speaking during an audience with members of the media on 12 May 2025",
         "width": 960,
-        "height": 640
+        "height": 640,
+        "variant": "compact-vatican"
       },
       "credit": {
-        "label": "Photo: Edgar Beltrán / The Pillar · CC BY-SA 4.0 · Wikimedia Commons",
+        "label": "Photo: Edgar Beltrán / The Pillar · CC BY-SA 4.0",
         "href": "https://commons.wikimedia.org/wiki/File:Pope_Leo_XIV_1.png"
       },
       "sourceName": "International Theological Commission · Vatican · September 2026",
       "link": {
-        "label": "Read Vatican theological document",
-        "href": "https://www.vatican.va/roman_curia/congregations/cfaith/cti_documents/rc_cti_doc_20260821_prendersi-cura-casa-comune_it.html"
+        "label": "Read the full article",
+        "href": "vatican-biodiversity-animal-welfare-2026.html"
       },
       "contextLink": {
         "label": "Vatican News coverage",
         "href": "https://www.vaticannews.va/en/vatican-city/news/2026-09/ict-document-care-for-creation-ecology-theology-church-pope.html"
-      },
-      "photoRights": {
-        "author": "Edgar Beltrán / The Pillar",
-        "source": "https://commons.wikimedia.org/wiki/File:Pope_Leo_XIV_1.png",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-        "changes": "Image displayed at reduced resolution; no editorial alteration intended.",
-        "note": "Photo taken 12 May 2025. Used as an editorial illustration; no Vatican or papal endorsement is implied."
       },
       "keywords": [
         "Pope Leo XIV",
@@ -159,7 +146,8 @@
         "One Health",
         "BHOC Veterinary",
         "BHOC Species and Biodiversity Protection Initiative"
-      ]
+      ],
+      "article": true
     },
     {
       "id": "planigale-petrophila-kakadu-2026",
