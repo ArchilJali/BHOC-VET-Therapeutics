@@ -129,6 +129,7 @@ const storyHTML=(story,index)=>`<article class="conservation-story${index===0?' 
     ${story.references?.length?`<div class="story-references"><h4>Three publications cited by EveryCat</h4><ol>${story.references.map(item=>`<li><a ${attrs(item)}>${esc(item.label)}</a></li>`).join('')}</ol></div>`:''}
     ${story.supportingSources?.length?`<div class="story-references"><h4>Blood compatibility and donor welfare sources</h4><ul>${story.supportingSources.map(item=>`<li><a ${attrs(item)}>${esc(item.label)}</a></li>`).join('')}</ul></div>`:''}
     ${story.why?`<div class="story-why"><strong>Why it matters</strong><span>${esc(story.why)}</span></div>`:''}
+    ${story.photoRights?`<div class="story-photo-rights"><strong>Photo credit and reuse information</strong><p>Photo: ${esc(story.photoRights.author)}. <a href="${esc(story.photoRights.source)}" target="_blank" rel="noopener noreferrer">Original photograph · Wikimedia Commons</a>. License: <a href="${esc(story.photoRights.licenseUrl)}" target="_blank" rel="noopener noreferrer">${esc(story.photoRights.license)}</a>. ${esc(story.photoRights.changes)} ${esc(story.photoRights.note)}</p></div>`:""}
     <div class="story-footer"><a class="story-link" ${attrs(story.link)}>${esc(story.link.label)} <span aria-hidden="true">${story.link.href.startsWith('https://')?'↗':'→'}</span></a>${story.contextLink?`<a class="story-source-link" ${attrs(story.contextLink)}>${esc(story.contextLink.label)} <span aria-hidden="true">${story.contextLink.href.startsWith('https://')?'↗':'→'}</span></a>`:''}</div>
   </div>
 </article>`;
