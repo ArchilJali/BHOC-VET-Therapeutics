@@ -1,0 +1,98 @@
+{
+  "slug": "vatican-biodiversity-animal-welfare-2026",
+  "navLabel": "Vatican and biodiversity",
+  "navActive": "news.html",
+  "breadcrumbs": [
+    {
+      "label": "News",
+      "href": "news.html"
+    }
+  ],
+  "title": "Vatican on Biodiversity, Nature and Animal Welfare | BHOC Veterinary",
+  "description": "Explore the Vatican's 2026 theological guidance on protecting nature and its relevance to biodiversity, One Health, animal welfare and conservation medicine.",
+  "schemaType": "Article",
+  "datePublished": "2026-10-11",
+  "dateModified": "2026-10-11",
+  "articleSection": "Biodiversity · One Health · Ethics",
+  "seo": {
+    "primaryKeyword": "Vatican biodiversity 2026",
+    "secondaryKeywords": [
+      "Pope Leo XIV environmental stewardship",
+      "animal welfare and biodiversity",
+      "One Health conservation medicine"
+    ],
+    "supportingTerms": [
+      "International Theological Commission",
+      "care for creation",
+      "species protection",
+      "wildlife veterinary medicine",
+      "BHOC Species and Biodiversity Protection Initiative"
+    ]
+  },
+  "eyebrow": "Vatican · Biodiversity · One Health",
+  "heading": "Vatican guidance connects care for nature with responsibility for living beings",
+  "lead": "The Vatican’s theological guidance adds an ethical dimension to environmental stewardship, wildlife protection and biodiversity conservation.",
+  "image": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/Pope_Leo_XIV_1.png/960px-Pope_Leo_XIV_1.png",
+    "alt": "Pope Leo XIV seated during an audience with the media on 12 May 2025",
+    "width": 960,
+    "height": 640
+  },
+  "socialImage": {
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/Pope_Leo_XIV_1.png/960px-Pope_Leo_XIV_1.png",
+    "alt": "Pope Leo XIV during an audience with the media",
+    "width": 960,
+    "height": 640
+  },
+  "sections": [
+    {
+      "heading": "A responsibility beyond environmental policy",
+      "paragraphs": [
+        "In September 2026, the International Theological Commission published theological guidance on caring for our common home. It describes grave damage to nature as a matter of ethical and spiritual concern, using the concept of a sin against Creation and against the Creator.",
+        "The Commission addresses biodiversity loss, pollution, ecosystem degradation and the disproportionate consequences of environmental harm for vulnerable communities. Its position builds on a longer tradition of Catholic environmental teaching rather than establishing a new universal legal rule."
+      ]
+    },
+    {
+      "heading": "Why this matters for animal welfare and veterinary medicine",
+      "paragraphs": [
+        "The message invites a practical question: how can responsibility for the natural world translate into better protection for habitats, species and individual animals?",
+        "Wildlife veterinarians, conservation researchers and animal welfare teams work where these concerns intersect. Ecosystem protection and access to veterinary care are complementary, but their scientific goals and evidence requirements remain distinct."
+      ]
+    },
+    {
+      "heading": "The BHOC Species & Biodiversity Protection Initiative perspective",
+      "paragraphs": [
+        "The BHOC Species & Biodiversity Protection Initiative connects animal health, biodiversity and One Health through scientific dialogue and practical cooperation.",
+        "Different species. The same biological need: oxygen. This shared physiological need motivates research into species-appropriate approaches to emergency veterinary support, without implying that the Vatican document evaluates or endorses BHOC technologies.",
+        "The Vatican’s guidance contributes an ethical perspective to an international discussion that also requires scientific evidence, conservation capacity and practical action."
+      ]
+    }
+  ],
+  "sourceLink": {
+    "label": "International Theological Commission · Official text",
+    "href": "https://www.vatican.va/roman_curia/congregations/cfaith/cti_documents/rc_cti_doc_20260821_prendersi-cura-casa-comune_it.html"
+  },
+  "referenceGroups": [
+    {
+      "heading": "Sources and context",
+      "links": [
+        {
+          "label": "Vatican News · Care for Creation",
+          "href": "https://www.vaticannews.va/en/vatican-city/news/2026-09/ict-document-care-for-creation-ecology-theology-church-pope.html"
+        },
+        {
+          "label": "BHOC Species & Biodiversity Protection Initiative",
+          "href": "https://bhocvet.com/initiative/"
+        }
+      ]
+    }
+  ],
+  "photoRights": {
+    "author": "Edgar Beltrán / The Pillar",
+    "source": "https://commons.wikimedia.org/wiki/File:Pope_Leo_XIV_1.png",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "changes": "Displayed at reduced resolution, without cropping or editorial alteration.",
+    "note": "Photograph taken 12 May 2025. Used for editorial illustration only; no papal or Vatican endorsement of BHOC is implied."
+  }
+}
