@@ -90,9 +90,9 @@
   "evidence": {
     "eyebrow": "Evidence navigation",
     "title": "Continue into the veterinary evidence.",
-    "text": "Use the BHOC VET-platform for guided veterinary context, or search the full source-linked veterinary bibliography by topic, species, author, institution and year.",
+    "text": "Use Science & Research Questions for guided interpretation, or open the Evidence & Cases library for source-linked publications, cases and regulatory records.",
     "map": {
-      "label": "Open BHOC VET-platform",
+      "label": "Open Science & Research Questions",
       "href": "https://bhoctherapeutics.com/evidence/library/veterinary/direct-studies/"
     },
     "search": {
