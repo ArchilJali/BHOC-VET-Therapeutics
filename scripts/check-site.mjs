@@ -97,15 +97,15 @@ for(const [name,html] of htmlByPage){
   const network=html.match(/<nav class="site-network-bar"[\s\S]*?<\/nav>/)?.[0]||'';
   assert.equal((network.match(/class="network-link network-link-enabled"/g)||[]).length,3,`${name}: three active network links`);
   assert.equal((network.match(/class="network-link network-link-disabled"/g)||[]).length,0,`${name}: no inactive sister-site label`);
-  assert.match(network,new RegExp(`href="${re(vetRWE)}"[^>]*>[\\s\\S]*Vet Real-World Evidence &amp; Cases ↗`),`${name}: Vet RWE is primary network evidence route`);
+  assert.match(network,new RegExp(`href="${re(vetRWE)}"[^>]*>[\\s\\S]*Evidence &amp; Cases ↗`),`${name}: Vet RWE is primary network evidence route`);
   assert.match(network,/href="https:\/\/bhoctherapeutics\.com\/"[^>]*>[\s\S]*BHOC Therapeutics ↗/,`${name}: corporate link`);
   assert.match(network,/href="https:\/\/bhoctransplant\.com\/"[^>]*>[\s\S]*BHOC Transplant ↗/,`${name}: transplant site linked`);
 
   const footer=html.match(/<footer class="site-footer">[\s\S]*?<\/footer>/)?.[0]||'';
   assert.ok(footer.includes('Project lead: <strong>Archil Jaliashvili</strong>.'),`${name}: footer project lead`);
   assert.equal((footer.match(/class="footer-column"/g)||[]).length,5,`${name}: five footer groups`);
-  for(const heading of ['Product','Application','Real-World Evidence &amp; Cases','Initiative','Information'])assert.ok(footer.includes(`<h2>${heading}</h2>`),`${name}: footer group ${heading}`);
-  assert.match(footer,new RegExp(`href="${re(vetRWE)}"[^>]*>[\\s\\S]*Vet Real-World Evidence &amp; Cases`),`${name}: footer primary RWE route`);
+  for(const heading of ['Product','Application','Evidence &amp; Case Studies','Initiative','Information'])assert.ok(footer.includes(`<h2>${heading}</h2>`),`${name}: footer group ${heading}`);
+  assert.match(footer,new RegExp(`href="${re(vetRWE)}"[^>]*>[\\s\\S]*Evidence &amp; Case Studies`),`${name}: footer primary RWE route`);
   assert.match(footer,new RegExp(`href="${re(vetSearch)}"[^>]*>Search veterinary publications`),`${name}: footer publication-search route`);
   assert.match(footer,/href="https:\/\/www\.linkedin\.com\/company\/bhoc-therapeutics\/"/,`${name}: footer LinkedIn route`);
   const footerHrefs=[...footer.matchAll(/href="([^"]+)"/g)].map(match=>match[1]);
@@ -130,12 +130,12 @@ assert.match(primaryNav,/class="nav-initiative-entry" href="\.\/initiative\/"/,'
 for(const [href,label] of [
   ['product.html','Product'],
   ['applications.html','Application'],
-  [vetRWE,'Vet Real-World Evidence & Cases'],
+  [vetRWE,'Evidence & Cases ↗'],
   ['science.html','Science'],
   ['related-information.html','Related Information'],
   ['news.html','News']
 ])assert.match(primaryNav,new RegExp(`href="${re(href)}"[^>]*>${htmlText(label)}<\\/a>`),`Primary navigation keeps ${label}`);
-assert.match(home,new RegExp(`href="${re(vetRWE)}"[^>]*>Vet Real-World Evidence &amp; Cases`),'Homepage biodiversity CTA opens Vet RWE & Cases');
+assert.match(home,new RegExp(`href="${re(vetRWE)}"[^>]*>Evidence &amp; (?:Cases|Case Studies)`),'Homepage biodiversity CTA opens Vet RWE & Cases');
 assert.match(home,/<h1 id="veterinary-teams-heading"><span class="audience-heading-line">Precision Oxygen<\/span><span class="audience-heading-line">Therapeutics\.<\/span><\/h1>/,'Homepage H1 is visible in the opening section');
 assert.doesNotMatch(home,/data-hero-slide|bhoc-initiative-land\.webp/,'Hidden legacy hero is not rendered or preloaded');
 assert.match(home,/rel="preload" as="image" href="\.\/assets\/veterinary-team-approved\.webp"/,'Opening veterinary illustration is preloaded');
@@ -144,7 +144,7 @@ assert.match(home,/We be of one blood, ye and I\./,'Kipling quotation preserved'
 const product=htmlByPage.get('product.html');
 assert.match(product,/Product objectives are not regulatory approval\./,'Product boundary preserved');
 assert.ok(product.includes(`href="${vetRWE}"`),'Product routes to Vet RWE & Cases URL');
-assert.match(product,/Open Vet Real-World Evidence (?:&amp;|&) Cases/,'Product keeps the Vet RWE & Cases label');
+assert.match(product,/Open Evidence &amp; Case Studies/,'Product keeps the Vet RWE & Cases label');
 
 const news=htmlByPage.get('news.html');
 const felineArticle=htmlByPage.get('feline-blood-transfusion-compatibility.html');
@@ -193,7 +193,7 @@ assert.match(initiativeHome,/Hachikō: Loyalty, Dignity and Respect/,'Initiative
 assert.match(initiativeHome,/class="story-card-phrase">An example of understanding and respect between species — without words, through actions\.<\/p>/,'Hachiko card keeps its own story phrase');
 assert.equal((initiativeHome.match(/class="hero-photo hero-photo-/g)||[]).length,6,'Initiative hero keeps six photographs');
 assert.equal((initiativeHome.match(/class="focus-card"/g)||[]).length,7,'Initiative keeps seven focus cards');
-assert.match(initiativeHome,new RegExp(`href="${re(vetRWE)}"[\\s\\S]*Vet Real-World Evidence &amp; Cases`),'Initiative links to Vet RWE & Cases');
+assert.match(initiativeHome,new RegExp(`href="${re(vetRWE)}"[\\s\\S]*(?:Evidence &amp; Case Studies|Evidence &amp; Cases)`),'Initiative links to Vet RWE & Cases');
 assert.match(initiativeHome,new RegExp(`href="${re(vetSearch)}"[\\s\\S]*Search veterinary publications`),'Initiative has distinct publication search route');
 assert.match(initiativeHome,/id="global-biodiversity-framework"/,'Initiative contains the anchored global biodiversity framework statement');
 assert.match(initiativeHome,/Kunming-Montreal Global Biodiversity Framework/,'Initiative names the global framework in visible copy');
@@ -276,3 +276,26 @@ for(const absolute of generatedHtml){
 }
 
 console.log(`Passed: ${expectedPages.length} indexed BHOC Veterinary pages, Initiative, migration redirects, ${generatedHtml.length} Yandex-blocked HTML files, schema, links, sitemap and retired-Evidence cleanup.`);
+			90 container Symbols
+				91 heading Symbols, Value: 2, ID: symbols-pane-header
+					92 text Symbols
+				93 button Close symbols
+				94 text Find definitions and references for functions and other symbols in this file by clicking a symbol below or in the code.
+				95 combo box (expanded, settable) Description: Filter symbols, Secondary Actions: Collapse
+				96 outline Code navigation
+					97 row (selectable) func re, ID: 0re
+						98 container
+							99 text func
+							100 text re
+					101 row (selectable) func htmlText, ID: 1htmlText
+						102 container
+							103 text func
+							104 text htmlText
+					105 row (selectable) func displayDate, ID: 2displayDate
+						106 container
+							107 text func
+							108 text displayDate
+					109 row (selectable) func collectHtml, ID: 3collectHtml
+						110 container
+							111 text func
+							112 text collectHtml
