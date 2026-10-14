@@ -18,6 +18,23 @@
   "dateModified": "2026-10-14",
   "entries": [
     {
+      "id": "veterinary-navigation-20261014",
+      "date": "2026-10-14",
+      "displayDate": "14 October 2026",
+      "title": "Veterinary evidence navigation unified",
+      "text": "The central Vet Real-World Evidence & Cases index and BHOC Veterinary Science now use the same three primary routes: Vet Related Scientific Evidence, Vet Real-World Evidence & Cases and Vet Research Questions. Vet Concepts & Questions remains separate within the research layer.",
+      "links": [
+        {
+          "label": "Open BHOC Veterinary Science",
+          "href": "science.html"
+        },
+        {
+          "label": "Open Vet Evidence Index",
+          "href": "https://bhoctherapeutics.com/evidence/library/veterinary/Vet-index.html"
+        }
+      ]
+    },
+    {
       "id": "oxygen-transport-20261014",
       "date": "2026-10-14",
       "displayDate": "14 October 2026",
