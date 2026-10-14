@@ -34,14 +34,19 @@
   "lead": "Veterinary publications can clarify transfusion practice, oxygen delivery, storage, compatibility and species-specific physiology. They provide scientific context for BHOC development, not product-specific efficacy or safety evidence.",
   "routes": [
     {
-      "label": "Veterinary Transfusion, Blood Systems & Oxygen Delivery",
-      "detail": "Scientific context: blood systems, oxygen transport and species-specific physiology.",
+      "label": "Vet Related Scientific Evidence",
+      "detail": "Transfusion, blood systems, oxygen transport and species-specific physiology.",
       "href": "#relevant-evidence"
     },
     {
-      "label": "Vet Real-World Evidence & Case Studies",
+      "label": "Vet Real-World Evidence & Cases",
       "detail": "Documented cases, source-linked records and regulatory evidence.",
       "href": "#case-studies"
+    },
+    {
+      "label": "Vet Research Questions",
+      "detail": "Interpretation, concepts and developing research questions.",
+      "href": "https://bhoctherapeutics.com/evidence/library/veterinary/direct-studies/"
     }
   ],
   "foundation": {
@@ -114,11 +119,11 @@
     "title": "BHOC VET-platform: Scientific Context & Research Questions.",
     "text": "BHOC VET-platform is the interpretation and research-questions layer. The central Evidence Library holds source-linked records, documented cases and regulatory materials.",
     "link": {
-      "label": "Open Science & Research Questions",
+      "label": "Vet Research Questions",
       "href": "https://bhoctherapeutics.com/evidence/library/veterinary/direct-studies/"
     },
     "library": {
-      "label": "Open Evidence & Case Studies",
+      "label": "Vet Real-World Evidence & Cases",
       "href": "https://bhoctherapeutics.com/evidence/library/veterinary/Vet-index.html"
     },
     "search": {
@@ -154,11 +159,11 @@
     }
   ],
   "caseStudies": {
-    "eyebrow": "Vet Real-World Evidence & Case Studies",
+    "eyebrow": "Vet Real-World Evidence & Cases",
     "title": "Documented cases and source-linked veterinary evidence.",
     "text": "The central evidence library contains documented cases, historical Oxyglobin records, regulatory materials and species-linked publications. It is separate from general scientific context and from BHOC development hypotheses.",
     "link": {
-      "label": "Open Vet Real-World Evidence & Cases",
+      "label": "Vet Real-World Evidence & Cases",
       "href": "https://bhoctherapeutics.com/evidence/library/veterinary/Vet-index.html"
     }
   },
