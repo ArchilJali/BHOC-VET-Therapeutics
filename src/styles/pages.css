@@ -71,6 +71,13 @@
 .page-index a:hover { color: var(--accent-strong); text-decoration: none; }
 
 .page-section { padding: clamp(48px, 6vw, 82px) var(--gutter); }
+.science-page .page-section { padding-top: clamp(36px, 4vw, 58px); padding-bottom: clamp(36px, 4vw, 58px); }
+.science-route-rail { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; width: min(calc(100% - (2 * var(--gutter))), 1160px); margin: 0 auto; padding: 16px 0 0; }
+.science-route-card { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 5px 12px; align-content: start; padding: 16px 17px; border: 1px solid var(--line); border-radius: 12px; background: #fff; color: var(--ink); text-decoration: none; box-shadow: 0 7px 20px #7d42100a; }
+.science-route-card strong { line-height: 1.25; }
+.science-route-card small { grid-column: 1 / -1; color: var(--muted); font-size: 12px; line-height: 1.45; }
+.science-route-card svg { grid-column: 2; grid-row: 1; width: 17px; height: 17px; color: var(--accent); }
+.science-route-card:hover { border-color: var(--accent); box-shadow: 0 10px 24px #a9490d14; text-decoration: none; transform: translateY(-1px); }
 .section-heading { max-width: 760px; margin-bottom: 32px; }
 
 .section-heading h2,
@@ -206,7 +213,7 @@
 .source-card > svg,
 .publication-link > svg { width: 18px; height: 18px; margin-top: 2px; color: var(--accent); }
 
-.science-page .block-science { padding-top: 54px; padding-bottom: 58px; background: #fff; }
+.science-page .block-science { padding-top: 36px; padding-bottom: 42px; background: #fff; }
 .science-page .science-copy > .button { min-width: 0; }
 
 .application-grid,
@@ -508,6 +515,7 @@
 @media (max-width: 900px) {
   .page-hero { grid-template-columns: 1fr; gap: 30px; }
   .page-index { grid-template-columns: 1fr 1fr; }
+  .science-route-rail { grid-template-columns: 1fr 1fr; }
   .foundation-layout, .platform-band, .publication-group, .contact-layout, .product-definition, .initiative-purpose { grid-template-columns: 1fr; }
   .source-grid, .application-grid, .news-grid { grid-template-columns: 1fr 1fr; }
   .platform-actions { flex-flow: row wrap; align-items: center; }
@@ -523,6 +531,7 @@
   .page-hero h1 { font-size: 40px; }
   .page-hero p { font-size: 17px; }
   .page-index { grid-template-columns: 1fr; }
+  .science-route-rail { grid-template-columns: 1fr; padding-top: 12px; }
   .page-section { padding: 44px 22px; }
   .foundation-layout { gap: 30px; }
   .platform-band, .regulatory-feature, .page-cta, .product-boundary { grid-template-columns: 1fr; padding: 44px 22px; }
