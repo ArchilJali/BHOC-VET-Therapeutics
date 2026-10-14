@@ -2,7 +2,7 @@
   "slug": "news",
   "navLabel": "News",
   "title": "Veterinary & Wildlife Conservation News | BHOC Veterinary",
-  "description": "BHOC Veterinary news on animal blood, wildlife health, conservation medicine, One Health, species recovery and global biodiversity.",
+  "description": " ",
   "schemaType": "CollectionPage",
   "seo": {
     "primaryKeyword": "wildlife conservation news",
@@ -559,7 +559,7 @@
         "height": 960
       },
       "credit": {
-        "label": "BHOC Initiative image provenance",BHOC Veterinary news on animal blood, wildlife health, conservation medicine, O
+        "label": "BHOC Initiative image provenance",
         "href": "https://bhocvet.com/initiative/image-rights.html"
       },
       "sourceName": "Proceedings of the Royal Society B · Valenzuela-Sánchez et al. · ZSL / Royal Veterinary College",
