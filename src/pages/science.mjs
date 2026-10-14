@@ -8,10 +8,9 @@ const routeLink=item=>
 
 export default (page,scienceHTML)=>`<main id="main" class="subpage-main science-page">
   <section class="page-hero" aria-labelledby="science-page-heading">
-    <div><span class="page-eyebrow">${esc(page.eyebrow)}</span><h1 id="science-page-heading">${esc(page.heading)}</h1><p>${esc(page.lead)}</p></div>
+    <div><span class="page-eyebrow">${esc(page.eyebrow)}</span><h1 id="science-page-heading">${esc(page.heading)}</h1><p>${esc(page.lead)}</p><nav class="science-route-rail" aria-label="Veterinary knowledge routes">${page.routes.map(routeLink).join('')}</nav></div>
     <nav class="page-index" aria-label="Science page sections"><a href="#science">Discover</a><a href="#relevant-evidence">Transfusion &amp; oxygen delivery</a><a href="#case-studies">Real-world evidence &amp; cases</a><a href="#functional-delivery">PCV &amp; delivery</a><a href="#evidence-platform">Research questions</a><a href="#science-sources">Sources</a></nav>
   </section>
-  <nav class="science-route-rail" aria-label="Veterinary knowledge routes">${page.routes.map(routeLink).join('')}</nav>
   ${scienceHTML}
   <section id="foundation" class="page-section foundation-layout" aria-labelledby="foundation-heading">
     <div class="section-copy"><span class="page-eyebrow">${esc(page.foundation.eyebrow)}</span><h2 id="foundation-heading">${esc(page.foundation.title)}</h2>${page.foundation.paragraphs.map(p=>`<p>${esc(p)}</p>`).join('')}</div>
