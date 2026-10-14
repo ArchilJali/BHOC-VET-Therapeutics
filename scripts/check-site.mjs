@@ -276,26 +276,3 @@ for(const absolute of generatedHtml){
 }
 
 console.log(`Passed: ${expectedPages.length} indexed BHOC Veterinary pages, Initiative, migration redirects, ${generatedHtml.length} Yandex-blocked HTML files, schema, links, sitemap and retired-Evidence cleanup.`);
-			90 container Symbols
-				91 heading Symbols, Value: 2, ID: symbols-pane-header
-					92 text Symbols
-				93 button Close symbols
-				94 text Find definitions and references for functions and other symbols in this file by clicking a symbol below or in the code.
-				95 combo box (expanded, settable) Description: Filter symbols, Secondary Actions: Collapse
-				96 outline Code navigation
-					97 row (selectable) func re, ID: 0re
-						98 container
-							99 text func
-							100 text re
-					101 row (selectable) func htmlText, ID: 1htmlText
-						102 container
-							103 text func
-							104 text htmlText
-					105 row (selectable) func displayDate, ID: 2displayDate
-						106 container
-							107 text func
-							108 text displayDate
-					109 row (selectable) func collectHtml, ID: 3collectHtml
-						110 container
-							111 text func
-							112 text collectHtml
