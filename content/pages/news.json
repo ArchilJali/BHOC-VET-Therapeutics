@@ -112,40 +112,6 @@
       }
     ]
   },
-  "siteUpdates": {
-    "eyebrow": "Site Structure & Knowledge Updates",
-    "heading": "What we added and when.",
-    "text": "A short record of structural and knowledge updates across BHOC Veterinary. News reports remain separate from source-linked evidence and product claims.",
-    "items": [
-      {
-        "date": "14 Oct 2026",
-        "title": "Vet Scientific Evidence added",
-        "text": "Added a compact scientific-evidence route with three external veterinary publications, each marked EXTERNAL / PENDING REVIEW.",
-        "link": {
-          "label": "Open Science evidence",
-          "href": "science.html#relevant-evidence"
-        }
-      },
-      {
-        "date": "14 Oct 2026",
-        "title": "Science, News and Evidence routes connected",
-        "text": "Added direct transitions between the Science overview, News updates, BHOC VET-platform and Vet Real-World Evidence & Cases.",
-        "link": {
-          "label": "Open Science navigation",
-          "href": "science.html"
-        }
-      },
-      {
-        "date": "14 Oct 2026",
-        "title": "Knowledge updates placed on News",
-        "text": "This section is now the short changelog for what was added, where it was placed and when it changed.",
-        "link": {
-          "label": "Current News page",
-          "href": "news.html#site-updates"
-        }
-      }
-    ]
-  },
   "feedNote": "BHOC Initiative Scout applies a high publication threshold and screens every candidate for duplication. New items are added only for exceptional rescue or recovery outcomes, globally significant conservation initiatives, substantive veterinary evidence milestones or other material developments; routine news is excluded.",
   "stories": [
     {
@@ -1160,5 +1126,10 @@
         "href": "https://bhoctherapeutics.com/evidence/library/veterinary/Vet-index.html"
       }
     }
-  ]
+  ],
+  "siteUpdatesLink": {
+    "label": "Site Structure & Knowledge Updates",
+    "text": "A short dated record of BHOC Veterinary site and knowledge additions.",
+    "href": "https://bhocvet.com/site-updates.html"
+  }
 }
