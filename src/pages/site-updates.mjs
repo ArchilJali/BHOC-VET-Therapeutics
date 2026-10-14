@@ -1,0 +1,10 @@
+import {esc,attrs} from '../lib/html.mjs';
+
+export default page=>`<main id="main" class="subpage-main knowledge-updates">
+<style>.knowledge-updates{max-width:1120px;margin:auto;padding:22px var(--gutter) 38px}.knowledge-updates h1{font-size:clamp(25px,3.5vw,36px);line-height:1.15;margin:8px 0 10px}.knowledge-updates .lead{font-size:13px;max-width:760px}.knowledge-updates .update{padding:15px 0;border-top:1px solid var(--line)}.knowledge-updates time{font-size:11px;color:var(--muted)}.knowledge-updates h2{font-size:17px;margin:5px 0 7px}.knowledge-updates .update p{font-size:13px;line-height:1.6;max-width:880px}.knowledge-updates .month-links{display:flex;gap:15px;flex-wrap:wrap;font-size:12px;margin:18px 0}.knowledge-updates details{font-size:12px;margin:12px 0}.knowledge-updates summary{cursor:pointer}.knowledge-updates .links{display:flex;gap:16px;flex-wrap:wrap;font-size:12px}</style>
+<span class="page-eyebrow">${esc(page.eyebrow)}</span><h1>${esc(page.heading)}</h1><p class="lead">${esc(page.lead)}</p>
+<section id="october" aria-label="October 2026 updates">${page.entries.map(e=>`<article class="update" id="${esc(e.id)}"><time datetime="${esc(e.date)}">${esc(e.displayDate)}</time><h2>${esc(e.title)}</h2><p>${esc(e.text)}</p><div class="links">${e.links.map(l=>`<a ${attrs(l)}>${esc(l.label)} →</a>`).join('')}</div></article>`).join('')}</section>
+<nav class="month-links" aria-label="Updates by month"><a href="#october">October 2026</a><a href="#september">September 2026</a><a href="#august">August 2026</a></nav>
+<details id="september"><summary>September 2026 · Archive</summary><p>No entries have been verified for this month.</p></details><details id="august"><summary>August 2026 · Archive</summary><p>No entries have been verified for this month.</p></details>
+<script type="application/ld+json">${JSON.stringify({'@context':'https://schema.org','@type':'ItemList',numberOfItems:page.entries.length,itemListElement:page.entries.map((e,i)=>({'@type':'ListItem',position:i+1,name:e.title,url:'https://bhocvet.com/site-updates.html#'+e.id}))}).replaceAll('</','<\/')}</script>
+</main>`;

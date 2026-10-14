@@ -1,0 +1,63 @@
+{
+  "slug": "site-updates",
+  "navLabel": "Site Structure & Knowledge Updates",
+  "navActive": "news.html",
+  "title": "Site Structure & Knowledge Updates | BHOC Veterinary",
+  "description": "Dated BHOC Veterinary site and scientific catalogue updates, including comparative oxygen transport, microcirculation and animal-model research.",
+  "schemaType": "CollectionPage",
+  "eyebrow": "Site updates",
+  "heading": "Site Structure & Knowledge Updates",
+  "lead": "Significant changes to scientific resources and site content. Routine maintenance is not listed.",
+  "breadcrumbs": [
+    {
+      "label": "News",
+      "href": "news.html"
+    }
+  ],
+  "datePublished": "2026-10-13",
+  "dateModified": "2026-10-14",
+  "entries": [
+    {
+      "id": "oxygen-transport-20261014",
+      "date": "2026-10-14",
+      "displayDate": "14 October 2026",
+      "title": "Comparative oxygen transport and animal-model research added",
+      "text": "Seven animal-study publications added to the shared veterinary search, now 267 records. Science links these studies and Vadapalli, Goldman & Popel (2002). The 30-paper review added 27 new publications across six research directions: studies comparing red blood cells and extracellular hemoglobin carriers by actual oxygen transport, rather than hemoglobin concentration alone.",
+      "links": [
+        {
+          "label": "View comparative studies",
+          "href": "science.html#oxygen-transport-studies"
+        }
+      ]
+    },
+    {
+      "id": "dyson-singer-20261013",
+      "date": "2026-10-13",
+      "displayDate": "13 October 2026",
+      "title": "Five oxygenation and microcirculation research publications added",
+      "text": "Relevant shared research: five Dyson/Singer studies were added to the BHOC Oxygen Diffusion & Microcirculation catalogue, providing background on tissue oxygenation, shock and organ perfusion. The studies are not veterinary BHOC efficacy data. The Oxygen Diffusion & Microcirculation catalogue now lists 215 records; the five BHOC Evidence Library collections contain 923 placements in total.",
+      "links": [
+        {
+          "label": "This site update",
+          "href": "site-updates.html#dyson-singer-20261013"
+        }
+      ]
+    }
+  ],
+  "seo": {
+    "primaryKeyword": "BHOC Veterinary site and knowledge updates",
+    "secondaryKeywords": [
+      "scientific catalogue additions",
+      "comparative oxygen transport",
+      "veterinary oxygen delivery"
+    ],
+    "supportingTerms": [
+      "red blood cells",
+      "extracellular hemoglobin",
+      "microcirculation",
+      "oxygen affinity",
+      "hemoglobin vesicles",
+      "animal-model research"
+    ]
+  }
+}

@@ -161,5 +161,52 @@
       "label": "Open Vet Real-World Evidence & Cases",
       "href": "https://bhoctherapeutics.com/evidence/library/veterinary/Vet-index.html"
     }
-  }
+  },
+  "oxygenTransport": {
+    "title": "Oxygen transport: comparative studies and animal models",
+    "text": "Research comparing red blood cells and extracellular hemoglobin carriers by actual oxygen transport, rather than hemoglobin concentration alone. Animal experiments and computational models provide scientific context; they do not establish BHOC efficacy or clinical veterinary approval.",
+    "sources": [
+      {
+        "label": "Calculations of oxygen transport by red blood cells and hemoglobin solutions in capillaries",
+        "detail": "2002. Capillary transport model: RBC versus extracellular hemoglobin.",
+        "href": "https://bhoctherapeutics.com/evidence/library/catalogues/oxygen.html#pub-vadapalli-goldman-popel-2002"
+      },
+      {
+        "label": "Oxygen transport by low and normal oxygen affinity hemoglobin vesicles in extreme hemodilution",
+        "detail": "2005. Hamster model: P50 and oxygen transport in extreme hemodilution.",
+        "href": "https://bhoctherapeutics.com/evidence/library/catalogues/oxygen.html#pub-pmid-15563528"
+      },
+      {
+        "label": "High- and low-affinity PEGylated hemoglobin-based oxygen carriers: Differential oxidative stress in a Guinea pig transfusion model",
+        "detail": "2018. Guinea pig model: oxygen affinity and oxidative stress.",
+        "href": "https://bhoctherapeutics.com/evidence/library/catalogues/related.html#pub-pmid-29920341"
+      },
+      {
+        "label": "Polymerized human hemoglobin facilitated modulation of tumor oxygenation is dependent on tumor oxygenation status and oxygen affinity of the hemoglobin-based oxygen carrier",
+        "detail": "2020. Mouse xenograft model: oxygen affinity and tumor oxygenation.",
+        "href": "https://bhoctherapeutics.com/evidence/library/catalogues/oxygen.html#pub-pmid-32647211"
+      },
+      {
+        "label": "Evaluation of the capabilities of a hemoglobin vesicle as an artificial oxygen carrier in a rat exchange transfusion model",
+        "detail": "1997. Rat exchange-transfusion model: Hb vesicles and RBC comparison.",
+        "href": "https://bhoctherapeutics.com/evidence/library/catalogues/related.html#pub-pmid-9242942"
+      },
+      {
+        "label": "Fluid resuscitation of hemorrhagic shock with hemoglobin vesicles in Beagle dogs: pilot study",
+        "detail": "2012. Beagle dog model: Hb vesicles in hemorrhagic shock.",
+        "href": "https://bhoctherapeutics.com/evidence/library/catalogues/related.html#pub-pmid-22288842"
+      },
+      {
+        "label": "Impact of cell-free hemoglobin on contracting skeletal muscle microvascular oxygen pressure dynamics",
+        "detail": "2018. Rat model: cell-free hemoglobin, nitric oxide and muscle microvascular oxygen pressure.",
+        "href": "https://bhoctherapeutics.com/evidence/library/catalogues/oxygen.html#pub-pmid-29526566"
+      },
+      {
+        "label": "Using hemoglobin vesicles to treat operative hemorrhagic shock after pneumonectomy in dog models: an experimental study",
+        "detail": "2024. Dog lung-resection model: Hb vesicles in hemorrhagic shock.",
+        "href": "https://bhoctherapeutics.com/evidence/library/catalogues/related.html#pub-pmid-38556266"
+      }
+    ]
+  },
+  "dateModified": "2026-10-14"
 }

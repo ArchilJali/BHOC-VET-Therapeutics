@@ -22,6 +22,7 @@ const expectedPages=[
   'initiative.html',
   'related-information.html',
   'news.html',
+  'site-updates.html',
   'feline-blood-transfusion-compatibility.html',
   'contact.html'
 ];
@@ -33,6 +34,7 @@ const expectedSchemaTypes={
   'initiative.html':'WebPage',
   'related-information.html':'CollectionPage',
   'news.html':'CollectionPage',
+  'site-updates.html':'CollectionPage',
   'feline-blood-transfusion-compatibility.html':'Article',
   'contact.html':'ContactPage'
 };
