@@ -221,38 +221,3 @@ export default rawPage=>{const page=enrichPage(rawPage);return `<style>
 </main><script data-news-feed-pager>
 (()=>{const PAGE_SIZE=5;function init(){const feed=document.querySelector('.conservation-feed');if(!feed)return;const items=[...feed.children].filter(el=>el.matches('article.conservation-story'));if(items.length<=PAGE_SIZE)return;const tools=document.createElement('div');tools.className='news-feed-tools';tools.innerHTML='<label class="news-feed-search"><span class="sr-only">Search veterinary news</span><input type="search" placeholder="Search veterinary news…" aria-label="Search veterinary news"></label><span class="news-feed-summary" aria-live="polite"></span><button class="news-feed-viewall" type="button">View all</button>';const pager=document.createElement('nav');pager.className='news-feed-page';pager.setAttribute('aria-label','Veterinary news pages');pager.innerHTML='<button type="button" data-dir="-1">← Newer</button><span aria-live="polite"></span><button type="button" data-dir="1">Older →</button>';feed.before(tools);feed.after(pager);const input=tools.querySelector('input'),summary=tools.querySelector('.news-feed-summary'),allBtn=tools.querySelector('.news-feed-viewall'),pageLabel=pager.querySelector('span'),prev=pager.querySelector('[data-dir="-1"]'),next=pager.querySelector('[data-dir="1"]');let page=0,showAll=false;const params=new URLSearchParams(location.search);if(params.get('q'))input.value=params.get('q');if(params.get('view')==='all')showAll=true;const requested=Number(params.get('page'));if(Number.isFinite(requested)&&requested>0)page=requested-1;const hash=location.hash.slice(1);if(hash){const idx=items.findIndex(x=>x.id===hash);if(idx>=0){page=Math.floor(idx/PAGE_SIZE);showAll=false;}}const norm=s=>(s||'').toLowerCase().normalize('NFKD');function render(push=true){const q=norm(input.value.trim()),matches=items.filter(x=>!q||norm(x.textContent).includes(q)),pages=Math.max(1,Math.ceil(matches.length/PAGE_SIZE));page=Math.min(page,pages-1);if(page<0)page=0;const shown=showAll?matches:matches.slice(page*PAGE_SIZE,(page+1)*PAGE_SIZE),set=new Set(shown);items.forEach(x=>x.hidden=!set.has(x));let empty=feed.querySelector('.news-feed-empty');if(!matches.length){if(!empty){empty=document.createElement('div');empty.className='news-feed-empty';empty.textContent='No news matched your search.';feed.append(empty)}}else if(empty)empty.remove();const from=matches.length?(showAll?1:page*PAGE_SIZE+1):0,to=showAll?matches.length:Math.min(matches.length,(page+1)*PAGE_SIZE);summary.textContent=matches.length?from+'–'+to+' of '+matches.length:'0 results';pageLabel.textContent=showAll?'All news':'Page '+(page+1)+' of '+pages;prev.disabled=showAll||page===0;next.disabled=showAll||page>=pages-1;pager.hidden=matches.length<=PAGE_SIZE&&!showAll;allBtn.textContent=showAll?'Show 5 per page':'View all';if(push){const p=new URLSearchParams(location.search);if(input.value.trim())p.set('q',input.value.trim());else p.delete('q');if(showAll){p.set('view','all');p.delete('page')}else{p.delete('view');if(page>0)p.set('page',String(page+1));else p.delete('page')}history.replaceState(null,'',location.pathname+(p.toString()?'?'+p:'')+location.hash)}}input.addEventListener('input',()=>{page=0;showAll=false;render()});allBtn.addEventListener('click',()=>{showAll=!showAll;page=0;render();tools.scrollIntoView({behavior:'smooth',block:'start'})});prev.addEventListener('click',()=>{page--;render();tools.scrollIntoView({behavior:'smooth',block:'start'})});next.addEventListener('click',()=>{page++;render();tools.scrollIntoView({behavior:'smooth',block:'start'})});render(false)}if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init);else init()})();
 </script><script type="application/ld+json">${itemListSchema(page)}</script>`;};
-			90 container Symbols
-				91 heading Symbols, Value: 2, ID: symbols-pane-header
-					92 text Symbols
-				93 button Close symbols
-				94 text Find definitions and references for functions and other symbols in this file by clicking a symbol below or in the code.
-				95 combo box (expanded, settable) Description: Filter symbols, Secondary Actions: Collapse
-				96 outline Code navigation
-					97 row (selectable) func absoluteURL, ID: 0absoluteURL
-						98 container
-							99 text func
-							100 text absoluteURL
-					101 row (selectable) func safeJSON, ID: 1safeJSON
-						102 container
-							103 text func
-							104 text safeJSON
-					105 row (selectable) func enrichPage, ID: 2enrichPage
-						106 container
-							107 text func
-							108 text enrichPage
-					109 row (selectable) func itemListSchema, ID: 3itemListSchema
-						110 container
-							111 text func
-							112 text itemListSchema
-					113 row (selectable) func contextLinkHTML, ID: 4contextLinkHTML
-						114 container
-							115 text func
-							116 text contextLinkHTML
-					117 row (selectable) func storyMedia, ID: 5storyMedia
-						118 container
-							119 text func
-							120 text storyMedia
-					121 row (selectable) func storyHTML, ID: 6storyHTML
-						122 container
-							123 text func
-							124 text storyHTML
