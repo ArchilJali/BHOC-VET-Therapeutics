@@ -9,7 +9,7 @@ const routeLink=item=>
 export default (page,scienceHTML)=>`<main id="main" class="subpage-main science-page">
   <section class="page-hero" aria-labelledby="science-page-heading">
     <div><span class="page-eyebrow">${esc(page.eyebrow)}</span><h1 id="science-page-heading">${esc(page.heading)}</h1><p>${esc(page.lead)}</p></div>
-    <nav class="page-index" aria-label="Science page sections"><a href="#science">Discover</a><a href="#foundation">Foundation</a><a href="#functional-delivery">PCV &amp; delivery</a><a href="#relevant-evidence">Scientific evidence</a><a href="#evidence-platform">Evidence platform</a><a href="#science-sources">Sources</a></nav>
+    <nav class="page-index" aria-label="Science page sections"><a href="#science">Discover</a><a href="#relevant-evidence">Transfusion &amp; oxygen delivery</a><a href="#case-studies">Real-world evidence &amp; cases</a><a href="#functional-delivery">PCV &amp; delivery</a><a href="#evidence-platform">Research questions</a><a href="#science-sources">Sources</a></nav>
   </section>
   <nav class="science-route-rail" aria-label="Veterinary knowledge routes">${page.routes.map(routeLink).join('')}</nav>
   ${scienceHTML}
@@ -19,9 +19,25 @@ export default (page,scienceHTML)=>`<main id="main" class="subpage-main science-
   </section>
   <section id="functional-delivery" class="page-section" aria-labelledby="functional-delivery-heading"><div class="section-heading"><span class="page-eyebrow">${esc(page.functionalDelivery.eyebrow)}</span><h2 id="functional-delivery-heading">${esc(page.functionalDelivery.title)}</h2>${page.functionalDelivery.paragraphs.map(p=>`<p>${esc(p)}</p>`).join('')}</div><div class="application-grid">${page.functionalDelivery.points.map(point=>`<article class="application-card"><h3>${esc(point.title)}</h3><p>${esc(point.text)}</p></article>`).join('')}</div><p class="small-copy">${esc(page.functionalDelivery.boundary)}</p><div class="inline-actions"><a class="button" ${attrs(page.functionalDelivery.link)}><span>${esc(page.functionalDelivery.link.label)}</span>${icon('arrow')}</a></div></section>
   <section id="relevant-evidence" class="page-section source-section" aria-labelledby="relevant-evidence-heading"><div class="section-heading"><span class="page-eyebrow">${esc(page.relevantEvidence.eyebrow)}</span><h2 id="relevant-evidence-heading">${esc(page.relevantEvidence.title)}</h2><p>${esc(page.relevantEvidence.text)}</p></div><div class="source-grid">${page.relevantEvidence.sources.map(sourceLink).join('')}</div></section>
+  <section id="case-studies" class="page-section route-feature" aria-labelledby="case-studies-heading"><div class="section-copy"><span class="page-eyebrow">${esc(page.caseStudies.eyebrow)}</span><h2 id="case-studies-heading">${esc(page.caseStudies.title)}</h2><p>${esc(page.caseStudies.text)}</p><div class="inline-actions"><a class="text-link" ${attrs(page.caseStudies.link)}>${esc(page.caseStudies.link.label)} ${icon('arrow')}</a></div></div></section>
   <section id="evidence-platform" class="platform-band" aria-labelledby="evidence-platform-heading">
     <div><span class="page-eyebrow">${esc(page.platform.eyebrow)}</span><h2 id="evidence-platform-heading">${esc(page.platform.title)}</h2><p>${esc(page.platform.text)}</p></div>
     <div class="platform-actions"><a class="button" ${attrs(page.platform.link)}><span>${esc(page.platform.link.label)}</span>${icon('arrow')}</a><a class="platform-library-link" ${attrs(page.platform.library)}><span>${esc(page.platform.library.label)}</span>${icon('arrow')}</a><a class="text-link light-link" ${attrs(page.platform.search)}>${icon('search')}<span>${esc(page.platform.search.label)}</span></a></div>
   </section>
   <section id="science-sources" class="page-section source-section" aria-labelledby="science-sources-heading"><div class="section-heading"><span class="page-eyebrow">Source links</span><h2 id="science-sources-heading">Scientific context.</h2></div><div class="source-grid">${page.references.map(sourceLink).join('')}</div></section>
 </main>`;
+			79 container Symbols
+				80 heading Symbols, Value: 2, ID: symbols-pane-header
+					81 text Symbols
+				82 button Close symbols
+				83 text Find definitions and references for functions and other symbols in this file by clicking a symbol below or in the code.
+				84 combo box (expanded, settable) Description: Filter symbols, Secondary Actions: Collapse
+				85 outline Code navigation
+					86 row (selectable) func sourceLink, ID: 0sourceLink
+						87 container
+							88 text func
+							89 text sourceLink
+					90 row (selectable) func routeLink, ID: 1routeLink
+						91 container
+							92 text func
+							93 text routeLink
