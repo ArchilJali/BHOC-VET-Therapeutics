@@ -20,7 +20,7 @@
       "href": "applications.html"
     },
     {
-      "label": "Vet Real-World Evidence & Cases",
+      "label": "Evidence & Cases ↗",
       "href": "https://bhoctherapeutics.com/evidence/library/veterinary/Vet-index.html"
     },
     {
@@ -42,8 +42,8 @@
   ],
   "networkLinks": [
     {
-      "label": "Vet Real-World Evidence & Cases ↗",
-      "compactLabel": "Vet RWE & Cases ↗",
+      "label": "Evidence & Cases ↗",
+      "compactLabel": "Evidence ↗",
       "href": "https://bhoctherapeutics.com/evidence/library/veterinary/Vet-index.html",
       "enabled": true
     },
