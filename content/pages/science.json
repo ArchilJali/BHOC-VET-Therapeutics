@@ -34,24 +34,14 @@
   "lead": "Veterinary publications can clarify transfusion practice, oxygen delivery, storage, compatibility and species-specific physiology. They provide scientific context for BHOC development, not product-specific efficacy or safety evidence.",
   "routes": [
     {
-      "label": "Science overview",
-      "detail": "Mechanism, oxygen delivery and functional context.",
-      "href": "#science"
+      "label": "Veterinary Transfusion, Blood Systems & Oxygen Delivery",
+      "detail": "Scientific context: blood systems, oxygen transport and species-specific physiology.",
+      "href": "#relevant-evidence"
     },
     {
-      "label": "Site Structure & Knowledge Updates",
-      "detail": "What was added and when.",
-      "href": "news.html#site-updates"
-    },
-    {
-      "label": "Vet Real-World Evidence & Cases",
-      "detail": "Source-linked cases, publications and regulatory records.",
-      "href": "https://bhoctherapeutics.com/evidence/library/veterinary/Vet-index.html"
-    },
-    {
-      "label": "BHOC VET-platform",
-      "detail": "Guided map of veterinary oxygen biology and evidence boundaries.",
-      "href": "https://bhoctherapeutics.com/evidence/library/veterinary/direct-studies/"
+      "label": "Vet Real-World Evidence & Case Studies",
+      "detail": "Documented cases, source-linked records and regulatory evidence.",
+      "href": "#case-studies"
     }
   ],
   "foundation": {
@@ -90,8 +80,8 @@
     }
   },
   "relevantEvidence": {
-    "eyebrow": "Vet scientific evidence",
-    "title": "Vet Scientific Evidence Relevant to BHOC and Oxygen Therapeutics.",
+    "eyebrow": "Veterinary Transfusion, Blood Systems & Oxygen Delivery",
+    "title": "Veterinary Transfusion, Blood Systems & Oxygen Delivery",
     "text": "Peer-reviewed veterinary publications relevant to transfusion, oxygen delivery, storage, compatibility and species-specific physiology. These sources provide scientific context for BHOC development; they are not evidence of BHOC efficacy or safety.",
     "sources": [
       {
@@ -120,15 +110,15 @@
     "text": "Both belong to related tetrapyrrole chemistry. Heme coordinates iron; chlorophyll coordinates magnesium. Their ring structures, side chains and biological roles differ. Hemoglobin transports oxygen; chlorophyll absorbs light in photosynthesis."
   },
   "platform": {
-    "eyebrow": "Evidence navigation",
-    "title": "Start with the map. Continue into the full library.",
-    "text": "BHOC VET-platform provides a guided overview of veterinary oxygen biology and evidence boundaries. The BHOC Platform Veterinary library holds the full source-linked bibliography and regulatory archive.",
+    "eyebrow": "Interpretation & research questions",
+    "title": "BHOC VET-platform: Scientific Context & Research Questions.",
+    "text": "BHOC VET-platform is the interpretation and research-questions layer. The central Evidence Library holds source-linked records, documented cases and regulatory materials.",
     "link": {
-      "label": "Open BHOC VET-platform",
+      "label": "Open Science & Research Questions",
       "href": "https://bhoctherapeutics.com/evidence/library/veterinary/direct-studies/"
     },
     "library": {
-      "label": "Open the full evidence library",
+      "label": "Open Evidence & Case Studies",
       "href": "https://bhoctherapeutics.com/evidence/library/veterinary/Vet-index.html"
     },
     "search": {
@@ -162,5 +152,14 @@
       "detail": "Biological context for vertebrates without circulating hemoglobin.",
       "href": "https://www.frontiersin.org/journals/physiology/articles/10.3389/fphys.2019.01389/full"
     }
-  ]
+  ],
+  "caseStudies": {
+    "eyebrow": "Vet Real-World Evidence & Case Studies",
+    "title": "Documented cases and source-linked veterinary evidence.",
+    "text": "The central evidence library contains documented cases, historical Oxyglobin records, regulatory materials and species-linked publications. It is separate from general scientific context and from BHOC development hypotheses.",
+    "link": {
+      "label": "Open Vet Real-World Evidence & Cases",
+      "href": "https://bhoctherapeutics.com/evidence/library/veterinary/Vet-index.html"
+    }
+  }
 }
