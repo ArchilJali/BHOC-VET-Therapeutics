@@ -26,18 +26,3 @@ export default (page,scienceHTML)=>`<main id="main" class="subpage-main science-
   </section>
   <section id="science-sources" class="page-section source-section" aria-labelledby="science-sources-heading"><div class="section-heading"><span class="page-eyebrow">Source links</span><h2 id="science-sources-heading">Scientific context.</h2></div><div class="source-grid">${page.references.map(sourceLink).join('')}</div></section>
 </main>`;
-			79 container Symbols
-				80 heading Symbols, Value: 2, ID: symbols-pane-header
-					81 text Symbols
-				82 button Close symbols
-				83 text Find definitions and references for functions and other symbols in this file by clicking a symbol below or in the code.
-				84 combo box (expanded, settable) Description: Filter symbols, Secondary Actions: Collapse
-				85 outline Code navigation
-					86 row (selectable) func sourceLink, ID: 0sourceLink
-						87 container
-							88 text func
-							89 text sourceLink
-					90 row (selectable) func routeLink, ID: 1routeLink
-						91 container
-							92 text func
-							93 text routeLink
