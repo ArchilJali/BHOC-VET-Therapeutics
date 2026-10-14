@@ -134,7 +134,7 @@
         "icon": "youtube"
       },
       {
-        "label": "Vet Real-World Evidence & Cases",
+        "label": "Evidence & Case Studies",
         "href": "https://bhoctherapeutics.com/evidence/library/veterinary/Vet-index.html",
         "icon": "book"
       }
@@ -167,7 +167,7 @@
         ]
       },
       {
-        "title": "Real-World Evidence & Cases",
+        "title": "Evidence & Case Studies",
         "links": [
           {
             "label": "Search veterinary publications",
