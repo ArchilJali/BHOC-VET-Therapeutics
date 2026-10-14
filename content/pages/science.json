@@ -1,26 +1,28 @@
 {
   "slug": "science",
   "navLabel": "Science",
-  "title": "Biological Hemoglobin Oxygen Carrier Science | BHOC Veterinary",
-  "description": "Explore Biological Hemoglobin Oxygen Carrier science for veterinary medicine, including HBOCs, oxygen delivery, heme, chlorophyll and comparative biology.",
+  "title": "Vet Scientific Evidence Relevant to BHOC and Oxygen Therapeutics | BHOC Veterinary",
+  "description": "Veterinary scientific evidence on transfusion, oxygen delivery, storage, compatibility and species-specific physiology relevant to BHOC and oxygen therapeutics.",
   "schemaType": "WebPage",
   "seo": {
-    "primaryKeyword": "Biological Hemoglobin Oxygen Carrier science",
+    "primaryKeyword": "Vet Scientific Evidence Relevant to BHOC and Oxygen Therapeutics",
     "secondaryKeywords": [
+      "veterinary scientific evidence",
       "veterinary oxygen delivery",
-      "hemoglobin-based oxygen carriers",
-      "HBOCs",
-      "heme and chlorophyll",
-      "comparative biology"
+      "oxygen therapeutics",
+      "veterinary transfusion evidence",
+      "species-specific physiology"
     ],
     "supportingTerms": [
       "cell-free hemoglobin",
       "oxygen transport",
       "oxygen affinity",
-      "species-specific physiology",
-      "tetrapyrrole chemistry",
-      "heme b",
-      "chlorophyll a",
+      "storage hemolysis",
+      "transfusion compatibility",
+      "camelid transfusion",
+      "cross-species transfusion",
+      "species-specific dosing",
+      "heme and chlorophyll",
       "red blood cell compartmentalization",
       "nitric oxide scavenging",
       "vascular control",
@@ -28,8 +30,8 @@
     ]
   },
   "eyebrow": "BHOC Veterinary Science",
-  "heading": "Biological Hemoglobin Oxygen Carrier science.",
-  "lead": "Different species have different physiology and transfusion requirements, but most vertebrates share hemoglobin-based oxygen transport.",
+  "heading": "Vet Scientific Evidence Relevant to BHOC and Oxygen Therapeutics.",
+  "lead": "Veterinary publications can clarify transfusion practice, oxygen delivery, storage, compatibility and species-specific physiology. They provide scientific context for BHOC development, not product-specific efficacy or safety evidence.",
   "foundation": {
     "eyebrow": "The science of oxygen delivery",
     "title": "From hemoglobin chemistry to effective oxygen delivery.",
@@ -64,6 +66,28 @@
       "label": "Open the historical canine archive review",
       "href": "https://bhoctherapeutics.com/evidence/library/veterinary/Vet-archive-Oxyglobin-Case-Listing-Book-II.html"
     }
+  },
+  "relevantEvidence": {
+    "eyebrow": "Vet scientific evidence",
+    "title": "Vet Scientific Evidence Relevant to BHOC and Oxygen Therapeutics.",
+    "text": "Peer-reviewed veterinary publications relevant to transfusion, oxygen delivery, storage, compatibility and species-specific physiology. These sources provide scientific context for BHOC development; they are not evidence of BHOC efficacy or safety.",
+    "sources": [
+      {
+        "label": "Donor- and unit-specific factors influencing hemolysis in stored canine and feline packed red blood cells",
+        "detail": "Storage and hemolysis context relevant to veterinary oxygen-delivery research. EXTERNAL / PENDING REVIEW.",
+        "href": "https://doi.org/10.3389/fvets.2026.1816048"
+      },
+      {
+        "label": "A dual-center retrospective evaluation of 204 blood or plasma transfusions in 169 camelids",
+        "detail": "Species-specific transfusion context relevant to oxygen delivery and clinical evidence boundaries. EXTERNAL / PENDING REVIEW.",
+        "href": "https://doi.org/10.1093/jvimsj/aalag008"
+      },
+      {
+        "label": "Bovine Blood Xenotransfusion as a Therapeutic Approach for the Treatment of Acute Blood Loss in Sheep",
+        "detail": "Cross-species oxygen-carrying and transfusion context for veterinary research. EXTERNAL / PENDING REVIEW.",
+        "href": "https://doi.org/10.3390/vetsci13040323"
+      }
+    ]
   },
   "nature": {
     "title": "Nature's bioengineering",
