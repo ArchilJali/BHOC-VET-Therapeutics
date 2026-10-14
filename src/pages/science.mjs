@@ -3,11 +3,15 @@ import {esc,attrs,icon} from '../lib/html.mjs';
 const sourceLink=item=>
   `<a class="source-card" ${attrs(item)}><span><strong>${esc(item.label)}</strong><small>${esc(item.detail)}</small></span>${icon('arrow')}</a>`;
 
+const routeLink=item=>
+  `<a class="science-route-card" ${attrs(item)}><strong>${esc(item.label)}</strong><small>${esc(item.detail)}</small>${icon('arrow')}</a>`;
+
 export default (page,scienceHTML)=>`<main id="main" class="subpage-main science-page">
   <section class="page-hero" aria-labelledby="science-page-heading">
     <div><span class="page-eyebrow">${esc(page.eyebrow)}</span><h1 id="science-page-heading">${esc(page.heading)}</h1><p>${esc(page.lead)}</p></div>
     <nav class="page-index" aria-label="Science page sections"><a href="#science">Discover</a><a href="#foundation">Foundation</a><a href="#functional-delivery">PCV &amp; delivery</a><a href="#relevant-evidence">Scientific evidence</a><a href="#evidence-platform">Evidence platform</a><a href="#science-sources">Sources</a></nav>
   </section>
+  <nav class="science-route-rail" aria-label="Veterinary knowledge routes">${page.routes.map(routeLink).join('')}</nav>
   ${scienceHTML}
   <section id="foundation" class="page-section foundation-layout" aria-labelledby="foundation-heading">
     <div class="section-copy"><span class="page-eyebrow">${esc(page.foundation.eyebrow)}</span><h2 id="foundation-heading">${esc(page.foundation.title)}</h2>${page.foundation.paragraphs.map(p=>`<p>${esc(p)}</p>`).join('')}</div>
