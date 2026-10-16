@@ -1,0 +1,62 @@
+{
+  "slug": "give-me-shelter",
+  "section": "Species & Biodiversity Protection · Animal welfare",
+  "title": "Give Me Shelter",
+  "description": "BHOC thanks Katie Cleary, Kristin Rizzo and the people featured in Give Me Shelter for their commitment to animal rescue, rehabilitation and care.",
+  "canonical": "https://bhocvet.com/initiative/give-me-shelter.html",
+  "datePublished": "2026-10-16",
+  "dateModified": "2026-10-16",
+  "articleSection": "Animal welfare · Species protection",
+  "genre": "Message of appreciation",
+  "keywords": [
+    "Give Me Shelter",
+    "Katie Cleary",
+    "Kristin Rizzo",
+    "animal welfare",
+    "animal rescue",
+    "BHOC Species & Biodiversity Protection Initiative",
+    "We be of one blood ye and I"
+  ],
+  "locationLabel": "Give Me Shelter",
+  "deck": "Created and produced by Katie Cleary and directed by Kristin Rizzo, Give Me Shelter draws attention to animal exploitation and to the people who dedicate their lives to rescue, rehabilitation and care.",
+  "layout": "poster",
+  "images": [
+    {
+      "src": "assets/news/give-me-shelter-user-image.webp",
+      "alt": "User-supplied Give Me Shelter film image showing a tiger above photographs of dolphins, a caged cat, elephants and a dog, with the film title and worldwide availability message.",
+      "width": 1720,
+      "height": 1148,
+      "srcset": [
+        {
+          "path": "assets/news/give-me-shelter-user-image-600.webp",
+          "width": 600
+        },
+        {
+          "path": "assets/news/give-me-shelter-user-image.webp",
+          "width": 1720
+        }
+      ],
+      "sizes": "(max-width: 760px) min(90vw, 400px), 360px",
+      "caption": "Give Me Shelter. Image supplied for this news article.",
+      "credit": "Give Me Shelter / Peace 4 Animals",
+      "license": "User-supplied editorial image",
+      "href": "https://give-me-shelter.com/"
+    }
+  ],
+  "galleryLabel": "Give Me Shelter film image",
+  "values": [],
+  "paragraphs": [
+    "We are deeply grateful to the filmmakers and everyone whose work this documentary brings into view. It is remarkable work. Thank you for helping more people understand what animals face and recognise the commitment of those who protect them.",
+    "For the BHOC Species & Biodiversity Protection Initiative, this message is close to our own understanding. Kipling’s words, “We be of one blood, ye and I,” express a connection that should influence how we treat other living beings.",
+    "We believe that understanding the biology we share should strengthen our responsibility to care for them."
+  ],
+  "principle": "Different species. The same biological need: oxygen.",
+  "closing": "",
+  "sourcesLabel": "Discover the film",
+  "sources": [
+    {
+      "label": "Discover Give Me Shelter",
+      "href": "https://give-me-shelter.com/"
+    }
+  ]
+}

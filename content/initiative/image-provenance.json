@@ -556,6 +556,27 @@
           "introducedOn": "2026-10-16"
         }
       ]
+    },
+    {
+      "id": "give-me-shelter-user-image",
+      "title": "Give Me Shelter film image",
+      "provider": "Archil Jaliashvili; film image credited to Give Me Shelter / Peace 4 Animals",
+      "providedOn": "2026-10-16",
+      "rightsStatus": "User-supplied film screenshot authorized for this editorial news article. Third-party rights remain with their respective holders.",
+      "reason": "The sole editorial image selected by the user for the approved Give Me Shelter news article and its cards.",
+      "modifications": "Full-size 1720 × 1148 lossless WebP is pixel-identical to the supplied PNG. A proportional 600-pixel-wide derivative is used for cards and responsive delivery. No cropping, overlays or changes to image content.",
+      "localFiles": [
+        {
+          "path": "assets/news/give-me-shelter-user-image.webp",
+          "sha256": "ab029fb5cbcda6d497d2d44dab034375dfc009fe5cb53c4dc8444f33db512af6",
+          "introducedOn": "2026-10-16"
+        },
+        {
+          "path": "assets/news/give-me-shelter-user-image-600.webp",
+          "sha256": "d8c75f7f6c5e38bc6c1554547be18c3aa8ebccd89bf3ff6b63ef6a15acf6a7af",
+          "introducedOn": "2026-10-16"
+        }
+      ]
     }
   ]
 }

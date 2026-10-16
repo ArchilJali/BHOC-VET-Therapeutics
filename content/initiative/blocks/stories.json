@@ -7,6 +7,22 @@
   },
   "cards": [
     {
+      "slug": "give-me-shelter",
+      "href": "give-me-shelter.html",
+      "image": {
+        "src": "assets/news/give-me-shelter-user-image-600.webp",
+        "alt": "User-supplied Give Me Shelter film image showing a tiger above photographs of dolphins, a caged cat, elephants and a dog, with the film title and worldwide availability message.",
+        "width": 600,
+        "height": 400,
+        "variant": "poster"
+      },
+      "overline": "Animal welfare · A message of thanks",
+      "title": "Give Me Shelter",
+      "text": "Our thanks to Katie Cleary, Kristin Rizzo and everyone dedicated to animal rescue, rehabilitation and care.",
+      "phrase": "We be of one blood, ye and I.",
+      "actionLabel": "Read the message"
+    },
+    {
       "slug": "why-on-earth",
       "href": "why-on-earth.html",
       "image": {

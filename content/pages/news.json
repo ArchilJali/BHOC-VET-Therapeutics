@@ -115,6 +115,42 @@
   "feedNote": "BHOC Initiative Scout applies a high publication threshold and screens every candidate for duplication. New items are added only for exceptional rescue or recovery outcomes, globally significant conservation initiatives, substantive veterinary evidence milestones or other material developments; routine news is excluded.",
   "stories": [
     {
+      "id": "give-me-shelter-2026",
+      "date": "2026-10-16",
+      "dateLabel": "16 Oct 2026",
+      "region": "Global",
+      "category": "Animal welfare · A message of thanks",
+      "title": "Give Me Shelter",
+      "text": "Created and produced by Katie Cleary and directed by Kristin Rizzo, Give Me Shelter draws attention to animal exploitation and to the people who dedicate their lives to rescue, rehabilitation and care.",
+      "why": "We are deeply grateful to the filmmakers and everyone whose work this documentary brings into view. It is remarkable work.",
+      "image": {
+        "url": "assets/news/give-me-shelter-user-image-600.webp",
+        "alt": "User-supplied Give Me Shelter film image showing a tiger above photographs of dolphins, a caged cat, elephants and a dog, with the film title and worldwide availability message.",
+        "width": 600,
+        "height": 400,
+        "variant": "portrait"
+      },
+      "sourceName": "Give Me Shelter · Katie Cleary · Kristin Rizzo",
+      "link": {
+        "label": "Read the message",
+        "href": "./initiative/give-me-shelter.html"
+      },
+      "contextLink": {
+        "label": "Discover Give Me Shelter",
+        "href": "https://give-me-shelter.com/"
+      },
+      "keywords": [
+        "Give Me Shelter",
+        "Katie Cleary",
+        "Kristin Rizzo",
+        "animal welfare",
+        "animal rescue",
+        "BHOC Species & Biodiversity Protection Initiative",
+        "We be of one blood ye and I"
+      ],
+      "article": true
+    },
+    {
       "id": "why-on-earth-shared-biology-2026",
       "date": "2026-10-16",
       "dateLabel": "16 Oct 2026",
