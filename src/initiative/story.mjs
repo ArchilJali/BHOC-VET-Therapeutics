@@ -1,6 +1,7 @@
 import {esc,initiativePairedImage,linkAttrs} from './lib.mjs';
 
 export default function renderStory(data){
+  const posterLayout=data.layout==='poster';
   const values=data.values.map(value=>'<li>'+esc(value)+'</li>').join('');
   const gallery=data.images.map((image,index)=>
     '<figure class="story-page-photo">'+
@@ -17,8 +18,8 @@ export default function renderStory(data){
     '</section>'
   ).join('');
   const sources=data.sources.map(source=>'<a '+linkAttrs(source)+'>'+esc(source.label)+' ↗</a>').join('');
-  const byline=data.byline?'<p class="story-page-byline"><a '+linkAttrs(data.byline)+'>'+esc(data.byline.name)+'</a><span>'+esc(data.byline.role)+'</span><time datetime="'+esc(data.datePublished)+'">'+esc(data.byline.dateLabel)+'</time></p>':'';
-  return '<article class="story-page'+(data.sections?' story-page-reflection':'')+'">'+
+  const byline=data.byline?'<p class="story-page-byline">'+(data.byline.href?'<a '+linkAttrs(data.byline)+'>'+esc(data.byline.name)+'</a>':'<span class="story-page-byline-name">'+esc(data.byline.name)+'</span>')+'<span>'+esc(data.byline.role)+'</span><time datetime="'+esc(data.datePublished)+'">'+esc(data.byline.dateLabel)+'</time></p>':'';
+  return '<article class="story-page'+(data.sections?' story-page-reflection':'')+(posterLayout?' story-page-poster':'')+'">'+
     '<header class="story-page-hero">'+
       '<div class="shell story-page-hero-inner">'+
         '<p class="eyebrow">'+esc(data.section)+'</p>'+
@@ -28,16 +29,18 @@ export default function renderStory(data){
         '<ul class="story-page-values" aria-label="Values reflected in this story">'+values+'</ul>'+
       '</div>'+
     '</header>'+
+    (posterLayout?'<div class="shell story-page-poster-content">':'')+
     '<section class="shell story-page-gallery" aria-label="'+esc(data.galleryLabel||'Historical photographs')+'">'+gallery+'</section>'+
     '<section class="shell story-page-body">'+
       '<div class="story-page-copy">'+
         paragraphs+sections+
         '<blockquote class="story-page-principle"><p>'+esc(data.principle)+'</p></blockquote>'+
         (data.principleAttribution?'<p class="story-page-principle-attribution">'+esc(data.principleAttribution)+'</p>':'')+
-        '<p class="story-page-closing">'+esc(data.closing)+'</p>'+
+        (data.closing?'<p class="story-page-closing">'+esc(data.closing)+'</p>':'')+
         '<div class="story-page-sources"><strong>'+esc(data.sourcesLabel||'Historical sources')+'</strong>'+sources+'</div>'+
         '<a class="story-page-back" href="stories.html"><span aria-hidden="true">←</span> Back to Stories That Matter</a>'+
       '</div>'+
     '</section>'+
+    (posterLayout?'</div>':'')+
   '</article>';
 }

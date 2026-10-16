@@ -115,6 +115,44 @@
   "feedNote": "BHOC Initiative Scout applies a high publication threshold and screens every candidate for duplication. New items are added only for exceptional rescue or recovery outcomes, globally significant conservation initiatives, substantive veterinary evidence milestones or other material developments; routine news is excluded.",
   "stories": [
     {
+      "id": "why-on-earth-shared-biology-2026",
+      "date": "2026-10-16",
+      "dateLabel": "16 Oct 2026",
+      "region": "Global",
+      "category": "Personal reflection · Wildlife protection",
+      "title": "Why On Earth: God’s Design and the Biology We Share",
+      "text": "Katie Cleary’s documentary Why On Earth, featuring Clint Eastwood, resonates with the BHOC Species & Biodiversity Protection Initiative. Archil Jaliashvili reflects on the biology we share and our responsibility to protect life.",
+      "why": "Different species. The same biological need: oxygen. One Oxygen. One Biology. One BHOC System.",
+      "image": {
+        "url": "assets/news/why-on-earth-poster-600.webp",
+        "alt": "Why On Earth documentary poster showing a rhinoceros above Earth, with the film title, festival awards and filmmaker credits.",
+        "width": 600,
+        "height": 771,
+        "variant": "portrait"
+      },
+      "sourceName": "Peace 4 Animals · Why On Earth (2022) · Author reflection",
+      "link": {
+        "label": "Read the reflection",
+        "href": "./initiative/why-on-earth.html"
+      },
+      "contextLink": {
+        "label": "About Peace 4 Animals",
+        "href": "https://peace4animals.net/about/"
+      },
+      "keywords": [
+        "Why On Earth",
+        "Katie Cleary",
+        "Peace 4 Animals",
+        "Clint Eastwood",
+        "Archil Jaliashvili",
+        "wildlife conservation",
+        "shared biology",
+        "BHOC Species & Biodiversity Protection Initiative",
+        "One Oxygen One Biology One BHOC System"
+      ],
+      "article": true
+    },
+    {
       "id": "vatican-creation-biodiversity-2026",
       "date": "2026-10-11",
       "dateLabel": "11 Oct 2026 · Vatican source: September 2026",

@@ -1,0 +1,99 @@
+{
+  "slug": "why-on-earth",
+  "section": "Personal reflection · Species & Biodiversity Protection",
+  "title": "Why On Earth: God’s Design and the Biology We Share",
+  "description": "Archil Jaliashvili reflects on Katie Cleary’s Why On Earth, the biology shared by species, and the BHOC Species & Biodiversity Protection Initiative.",
+  "canonical": "https://bhocvet.com/initiative/why-on-earth.html",
+  "datePublished": "2026-10-16",
+  "dateModified": "2026-10-16",
+  "articleSection": "Personal reflection · Wildlife protection",
+  "genre": "Personal reflection",
+  "keywords": [
+    "Why On Earth",
+    "Katie Cleary",
+    "Peace 4 Animals",
+    "Clint Eastwood",
+    "Archil Jaliashvili",
+    "wildlife conservation",
+    "shared biology",
+    "BHOC Species & Biodiversity Protection Initiative",
+    "One Oxygen One Biology One BHOC System"
+  ],
+  "byline": {
+    "name": "Archil Jaliashvili",
+    "role": "A personal reflection for the BHOC Species & Biodiversity Protection Initiative.",
+    "dateLabel": "16 October 2026"
+  },
+  "locationLabel": "Why On Earth",
+  "deck": "Different species. The same biological need: oxygen.",
+  "layout": "poster",
+  "images": [
+    {
+      "src": "assets/news/why-on-earth-poster.webp",
+      "alt": "Why On Earth documentary poster showing a rhinoceros above Earth, with the film title, festival awards and filmmaker credits.",
+      "width": 1195,
+      "height": 1536,
+      "srcset": [
+        {
+          "path": "assets/news/why-on-earth-poster-600.webp",
+          "width": 600
+        },
+        {
+          "path": "assets/news/why-on-earth-poster.webp",
+          "width": 1195
+        }
+      ],
+      "sizes": "(max-width: 760px) min(90vw, 400px), 360px",
+      "caption": "Why On Earth (2022). Original film poster.",
+      "credit": "Peace 4 Animals / Why On Earth",
+      "license": "Poster supplied for this reflection",
+      "href": "https://peace4animals.net/about/"
+    }
+  ],
+  "galleryLabel": "Why On Earth documentary poster",
+  "values": [
+    "Wildlife protection",
+    "Shared biology",
+    "Respect for life"
+  ],
+  "paragraphs": [
+    "Why On Earth was directed and produced by Katie Cleary, founder of Peace 4 Animals, written by Kristin Rizzo, with cinematography by Hunter Nolan. Featuring Clint Eastwood, the documentary uses wildlife footage and conservation stories to examine deforestation, the illegal trade in endangered species, and the relationship between people, animals and the environment.",
+    "The title resonates with me and with the thinking behind the BHOC Species & Biodiversity Protection Initiative. It brings my attention to the Earth we share and the responsibility we carry for the life around us."
+  ],
+  "sections": [
+    {
+      "heading": "God created biology.",
+      "paragraphs": [
+        "We believe that understanding what living beings share should change how we care for them.",
+        "For me, faith in God’s design carries a responsibility to understand life, respect its diversity and use our knowledge to help protect it."
+      ]
+    },
+    {
+      "heading": "Different species. The same biological need: oxygen.",
+      "paragraphs": [
+        "A domestic cat, a dog, a horse and a wild rhinoceros have different lives and different needs. Yet each depends on oxygen reaching living tissues. This shared biological need connects veterinary medicine, animal rescue, rehabilitation and wildlife protection.",
+        "For our initiative, that connection is expressed in a simple idea:"
+      ]
+    },
+    {
+      "heading": "One Oxygen. One Biology. One BHOC System.",
+      "paragraphs": [
+        "Our focus on shared biology begins with oxygen. It also calls for care that respects the physiology and needs of each species. We want this understanding to guide practical cooperation between scientists, veterinary teams, rescuers and conservation organisations.",
+        "We appreciate Katie Cleary and the filmmakers for bringing these animals, their vulnerability and the people working to protect them to wider public attention."
+      ]
+    }
+  ],
+  "principle": "Understanding the biology we share should strengthen our commitment to the lives we can help protect.",
+  "closing": "",
+  "sourcesLabel": "The film and its creators",
+  "sources": [
+    {
+      "label": "About Peace 4 Animals",
+      "href": "https://peace4animals.net/about/"
+    },
+    {
+      "label": "Watch Why On Earth on Vimeo",
+      "href": "https://vimeo.com/ondemand/whyonearth2/734510833"
+    }
+  ]
+}

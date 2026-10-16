@@ -535,6 +535,27 @@
           "introducedOn": "2026-10-03"
         }
       ]
+    },
+    {
+      "id": "why-on-earth-film-poster",
+      "title": "Why On Earth documentary poster",
+      "provider": "Archil Jaliashvili; film poster credited to Peace 4 Animals / Why On Earth",
+      "providedOn": "2026-10-16",
+      "rightsStatus": "User-supplied film poster authorized for this editorial reflection. Third-party rights remain with their respective holders.",
+      "reason": "The sole editorial image selected by the user for the Why On Earth reflection and its news and Initiative cards.",
+      "modifications": "Full-size 1195 × 1536 lossless WebP is pixel-identical to the supplied PNG. A proportional 600-pixel-wide WebP derivative is used for cards and responsive delivery. No cropping, overlaid branding or changes to the poster content.",
+      "localFiles": [
+        {
+          "path": "assets/news/why-on-earth-poster.webp",
+          "sha256": "0d68675287209966c387e4a3a44d4ef0a53b3691fa2dfeefb99f446192d039f3",
+          "introducedOn": "2026-10-16"
+        },
+        {
+          "path": "assets/news/why-on-earth-poster-600.webp",
+          "sha256": "170663f90ddd7886cabc2a6f7cb01eaafdab4e237b9512041f61ef10a862230f",
+          "introducedOn": "2026-10-16"
+        }
+      ]
     }
   ]
 }
