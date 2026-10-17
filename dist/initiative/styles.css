@@ -3065,3 +3065,23 @@ h2 {
   .story-page-poster .story-page-hero h1 {font-size:clamp(1.9rem,7vw,2.6rem)}
   .story-page-poster .story-page-principle {padding:20px;margin-top:24px}
 }
+
+/* Let mobile story cards grow with their complete title and quotation. */
+@media (max-width: 760px) {
+  .stories-track .story-card { height: auto; min-height: 160px; }
+  .stories-track .story-card-link { height: auto; min-height: 100%; }
+  .stories-track .story-card-copy { overflow-wrap: anywhere; }
+}
+
+/* The three desktop mission tracks require 1040px before padding. */
+@media (min-width: 901px) and (max-width: 1100px) {
+  .mission-panel { grid-template-columns: minmax(0, .8fr) minmax(0, 1fr); }
+  .mission-features {
+    grid-column: 1 / -1;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    border-top: 1px solid rgba(255, 255, 255, .16);
+    border-left: 0;
+  }
+  .framework-context { grid-template-columns: minmax(0, .7fr) minmax(0, 1.3fr); }
+  .framework-action { grid-column: 2; justify-content: flex-start; }
+}
