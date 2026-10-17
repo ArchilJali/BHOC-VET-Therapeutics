@@ -665,3 +665,11 @@
   .science-page .page-hero p { font-size: 16px; }
   .science-page .page-hero .science-route-rail { grid-template-columns: 1fr; }
 }
+
+/* Keep the specific Science hero responsive after the desktop overrides. */
+.page-hero > *, .science-route-card > * { min-width: 0; }
+.science-route-card strong, .science-route-card small { overflow-wrap: anywhere; }
+@media (max-width: 900px) {
+  .science-page .page-hero { grid-template-columns: minmax(0, 1fr); gap: 28px; }
+  .science-page .page-hero .page-index { width: 100%; }
+}
