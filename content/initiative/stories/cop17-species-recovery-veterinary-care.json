@@ -1,0 +1,98 @@
+{
+  "slug": "cop17-species-recovery-veterinary-care",
+  "section": "Conservation news · Species recovery",
+  "title": "COP17 Species Recovery Initiatives: The Role of Veterinary Care",
+  "description": "COP17 Armenia highlights CARES and the Species Recovery Alliance. BHOC Initiative reflects on veterinary care, wildlife rescue and research collaboration.",
+  "canonical": "https://bhocvet.com/initiative/cop17-species-recovery-veterinary-care.html",
+  "datePublished": "2026-10-18",
+  "dateModified": "2026-10-18",
+  "articleSection": "Species recovery · Veterinary care",
+  "genre": "News and Initiative perspective",
+  "keywords": [
+    "COP17",
+    "species recovery",
+    "CARES",
+    "Species Recovery Alliance",
+    "veterinary care",
+    "wildlife rescue",
+    "conservation medicine",
+    "BHOC Species & Biodiversity Protection Initiative",
+    "oxygen-delivery research"
+  ],
+  "byline": {
+    "name": "Archil Jaliashvili",
+    "role": "BHOC Species & Biodiversity Protection Initiative. News summary and Initiative perspective.",
+    "dateLabel": "18 October 2026"
+  },
+  "locationLabel": "COP17 species recovery",
+  "deck": "International species recovery commitments and the role of timely veterinary care.",
+  "layout": "poster",
+  "images": [
+    {
+      "src": "assets/news/cop17-species-recovery.webp",
+      "alt": "COP17 Armenia graphic showing a leopard and Leonardo DiCaprio, highlighting new commitments for endangered species recovery.",
+      "width": 900,
+      "height": 1125,
+      "srcset": [
+        {
+          "path": "assets/news/cop17-species-recovery-480.webp",
+          "width": 480
+        },
+        {
+          "path": "assets/news/cop17-species-recovery.webp",
+          "width": 900
+        }
+      ],
+      "sizes": "(max-width: 760px) min(90vw, 400px), 360px",
+      "caption": "COP17 Armenia’s original graphic on endangered species recovery.",
+      "credit": "Image source: COP17 Armenia via LinkedIn",
+      "license": "Original publication: 17 October 2026",
+      "href": "https://www.linkedin.com/posts/cop17-armenia_cop17armenia-biodiversityaction-foraction-activity-7517202970183323648-PmQx"
+    }
+  ],
+  "galleryLabel": "Original COP17 Armenia publication image",
+  "values": [
+    "Species recovery",
+    "Veterinary care",
+    "Research collaboration"
+  ],
+  "paragraphs": [
+    "In a LinkedIn publication dated 17 October 2026, COP17 Armenia highlighted two initiatives for threatened species recovery, drawing attention to their support from Leonardo DiCaprio.",
+    "According to the announcement, 17 countries, led by Armenia and Colombia, have joined the Coalition of Action to Recover Endangered Species (CARES) to accelerate efforts to prevent extinctions and achieve measurable species recovery.",
+    "Separately, nine philanthropic funders and organisations, including Re:wild, have formed the Species Recovery Alliance, committing and aligning more than US$500 million over five years to support threatened species recovery worldwide."
+  ],
+  "sections": [
+    {
+      "heading": "From the BHOC Species & Biodiversity Protection Initiative",
+      "paragraphs": [
+        "We welcome the international commitment to help threatened species recover.",
+        "We believe timely veterinary care should be part of practical conservation planning. Alongside protecting habitats and rebuilding populations, we must also strengthen the ability to help individual animals survive critical illness and injury.",
+        "Our initiative connects veterinary oxygen-delivery research with wildlife rescue, emergency care and rehabilitation. We want to explore how this science may contribute to the work of veterinary and conservation teams, with clearly defined research questions and measurable outcomes.",
+        "We invite wildlife veterinarians, rescue centres and conservation organisations to discuss research collaboration and potential pilot projects."
+      ],
+      "links": [
+        {
+          "label": "Explore the BHOC Initiative",
+          "href": "index.html"
+        },
+        {
+          "label": "Discuss research collaboration",
+          "href": "../contact.html"
+        }
+      ]
+    }
+  ],
+  "principle": "Different species. The same biological need: oxygen.",
+  "closing": "",
+  "sourcesLabel": "Original announcement and related BHOC information",
+  "sources": [
+    {
+      "label": "COP17 Armenia: original LinkedIn announcement",
+      "href": "https://lnkd.in/p/euecAkRp"
+    },
+    {
+      "label": "BHOC at COP17: animal health and biodiversity",
+      "href": "../bhoc-cop17-yerevan-2026.html"
+    }
+  ]
+}

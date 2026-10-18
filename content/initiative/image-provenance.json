@@ -352,6 +352,39 @@
           "introducedOn": "2026-09-09"
         }
       ]
+    },
+    {
+      "id": "cop17-species-recovery-linkedin",
+      "title": "COP17 in the global spotlight: endangered species recovery",
+      "subject": "A leopard and Leonardo DiCaprio in the COP17 Armenia editorial graphic.",
+      "creator": "Published by COP17 Armenia; underlying photographer and graphic creator not separately credited in the post.",
+      "source": "https://www.linkedin.com/posts/cop17-armenia_cop17armenia-biodiversityaction-foraction-activity-7517202970183323648-PmQx",
+      "sourceLabel": "COP17 Armenia original LinkedIn publication",
+      "originalDate": "2026-10-17",
+      "license": "Third-party editorial graphic; the source post does not state a reuse licence.",
+      "licenseUrl": "https://www.linkedin.com/posts/cop17-armenia_cop17armenia-biodiversityaction-foraction-activity-7517202970183323648-PmQx",
+      "sourceStatus": "Source and image checked against the LinkedIn publication selected by Archil Jaliashvili for attributed news coverage on 18 October 2026.",
+      "verifiedOn": "2026-10-18",
+      "usedIn": [
+        "COP17 species recovery article",
+        "Veterinary News card",
+        "Initiative Stories That Matter card"
+      ],
+      "reason": "Reproduces the specific source image requested by Archil with a visible linked source attribution.",
+      "modifications": "Complete composition preserved. Resized to 900 × 1125 and 480 × 600 pixels and encoded as lossy WebP for web delivery. No cropping, generative editing or additional branding.",
+      "reuse": "Attribution identifies the source publication and does not assert third-party permission or a Creative Commons licence.",
+      "localFiles": [
+        {
+          "path": "assets/news/cop17-species-recovery.webp",
+          "sha256": "e2415887f4ece444f769feb24b0bb8fae3f0c60800b3a5f43dba1b19dd131e32",
+          "introducedOn": "2026-10-18"
+        },
+        {
+          "path": "assets/news/cop17-species-recovery-480.webp",
+          "sha256": "2d9b1c295341ca3701c2bc5298300f3e329c7f21e935a4b13dcf4c95bda050ee",
+          "introducedOn": "2026-10-18"
+        }
+      ]
     }
   ],
   "projectAssets": [

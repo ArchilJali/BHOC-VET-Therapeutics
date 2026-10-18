@@ -96,7 +96,7 @@
   "eyebrow": "BHOC Initiative · Global Intelligence",
   "heading": "Wildlife & Species Conservation Intelligence.",
   "lead": "Tracking the people, science, funding and programs working to protect wildlife, restore endangered species and strengthen conservation medicine worldwide.",
-  "updated": "11 Oct 2026",
+  "updated": "18 Oct 2026",
   "seoContext": {
     "eyebrow": "BHOC Veterinary context",
     "heading": "Animal-health intelligence, separate from product claims.",
@@ -114,6 +114,48 @@
   },
   "feedNote": "BHOC Initiative Scout applies a high publication threshold and screens every candidate for duplication. New items are added only for exceptional rescue or recovery outcomes, globally significant conservation initiatives, substantive veterinary evidence milestones or other material developments; routine news is excluded.",
   "stories": [
+    {
+      "id": "cop17-species-recovery-veterinary-care",
+      "date": "2026-10-18",
+      "dateLabel": "18 Oct 2026",
+      "region": "Global · Yerevan, Armenia",
+      "category": "COP17 · Species recovery",
+      "title": "COP17 Species Recovery Initiatives: The Role of Veterinary Care",
+      "text": "COP17 Armenia highlights CARES, a coalition of 17 countries, and the separate Species Recovery Alliance, bringing together nine philanthropic funders and organisations with more than US$500 million committed and aligned over five years.",
+      "why": "The BHOC Initiative welcomes the focus on species recovery and invites research collaboration in wildlife rescue, veterinary care and rehabilitation.",
+      "image": {
+        "url": "assets/news/cop17-species-recovery-480.webp",
+        "alt": "COP17 Armenia graphic showing a leopard and Leonardo DiCaprio, highlighting new commitments for endangered species recovery.",
+        "width": 480,
+        "height": 600,
+        "variant": "portrait"
+      },
+      "credit": {
+        "label": "Image source: COP17 Armenia via LinkedIn",
+        "href": "https://www.linkedin.com/posts/cop17-armenia_cop17armenia-biodiversityaction-foraction-activity-7517202970183323648-PmQx"
+      },
+      "sourceName": "COP17 Armenia · LinkedIn, 17 October 2026",
+      "link": {
+        "label": "Read the news and Initiative perspective",
+        "href": "./initiative/cop17-species-recovery-veterinary-care.html"
+      },
+      "contextLink": {
+        "label": "COP17 Armenia: original LinkedIn announcement",
+        "href": "https://lnkd.in/p/euecAkRp"
+      },
+      "keywords": [
+        "COP17",
+        "species recovery",
+        "CARES",
+        "Species Recovery Alliance",
+        "veterinary care",
+        "wildlife rescue",
+        "conservation medicine",
+        "BHOC Species & Biodiversity Protection Initiative",
+        "oxygen-delivery research"
+      ],
+      "article": true
+    },
     {
       "id": "give-me-shelter-2026",
       "date": "2026-10-16",

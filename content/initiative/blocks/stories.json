@@ -7,6 +7,22 @@
   },
   "cards": [
     {
+      "slug": "cop17-species-recovery-veterinary-care",
+      "href": "cop17-species-recovery-veterinary-care.html",
+      "image": {
+        "src": "assets/news/cop17-species-recovery-480.webp",
+        "alt": "COP17 Armenia graphic showing a leopard and Leonardo DiCaprio, highlighting new commitments for endangered species recovery.",
+        "width": 480,
+        "height": 600,
+        "variant": "poster"
+      },
+      "overline": "COP17 Armenia · BHOC Initiative perspective",
+      "title": "COP17 Species Recovery Initiatives: The Role of Veterinary Care",
+      "text": "New commitments for threatened species recovery and the role of veterinary care, wildlife rescue and research collaboration.",
+      "phrase": "Different species. The same biological need: oxygen.",
+      "actionLabel": "Read the news"
+    },
+    {
       "slug": "give-me-shelter",
       "href": "give-me-shelter.html",
       "image": {

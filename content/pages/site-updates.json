@@ -15,8 +15,25 @@
     }
   ],
   "datePublished": "2026-10-13",
-  "dateModified": "2026-10-14",
+  "dateModified": "2026-10-18",
   "entries": [
+    {
+      "id": "cop17-species-recovery-20261018",
+      "date": "2026-10-18",
+      "displayDate": "18 October 2026",
+      "title": "COP17 species recovery news and Initiative perspective added",
+      "text": "A source-linked news article covers CARES and the Species Recovery Alliance, with a separate BHOC Initiative perspective on veterinary care and wildlife rescue. The original publication graphic has responsive WebP versions and visible source attribution.",
+      "links": [
+        {
+          "label": "Read the COP17 species recovery article",
+          "href": "./initiative/cop17-species-recovery-veterinary-care.html"
+        },
+        {
+          "label": "Explore Stories That Matter",
+          "href": "./initiative/stories.html"
+        }
+      ]
+    },
     {
       "id": "veterinary-navigation-20261014",
       "date": "2026-10-14",
