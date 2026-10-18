@@ -543,16 +543,16 @@
       "providedOn": "2026-10-16",
       "rightsStatus": "User-supplied film poster authorized for this editorial reflection. Third-party rights remain with their respective holders.",
       "reason": "The sole editorial image selected by the user for the Why On Earth reflection and its news and Initiative cards.",
-      "modifications": "Full-size 1195 × 1536 lossless WebP is pixel-identical to the supplied PNG. A proportional 600-pixel-wide WebP derivative is used for cards and responsive delivery. No cropping, overlaid branding or changes to the poster content.",
+      "modifications": "Full-size and proportional 600-pixel-wide derivatives were re-encoded on 2026-10-17 as quality-90 WebP for faster web delivery. Original dimensions, aspect ratio and complete composition are retained. Lossy compression changes pixel values; no cropping, overlays, branding or editorial alterations were introduced.",
       "localFiles": [
         {
           "path": "assets/news/why-on-earth-poster.webp",
-          "sha256": "0d68675287209966c387e4a3a44d4ef0a53b3691fa2dfeefb99f446192d039f3",
+          "sha256": "9e9cff359b5c4fb6131c5848b4e0725994bf60b0bd9049afd0d90f24ffabcac9",
           "introducedOn": "2026-10-16"
         },
         {
           "path": "assets/news/why-on-earth-poster-600.webp",
-          "sha256": "170663f90ddd7886cabc2a6f7cb01eaafdab4e237b9512041f61ef10a862230f",
+          "sha256": "2e9097098b23f4ee1ca5bd08cb4274d8547eff63577ba69492dd912a0effae45",
           "introducedOn": "2026-10-16"
         }
       ]
@@ -564,16 +564,16 @@
       "providedOn": "2026-10-16",
       "rightsStatus": "User-supplied film screenshot authorized for this editorial news article. Third-party rights remain with their respective holders.",
       "reason": "The sole editorial image selected by the user for the approved Give Me Shelter news article and its cards.",
-      "modifications": "Full-size 1720 × 1148 lossless WebP is pixel-identical to the supplied PNG. A proportional 600-pixel-wide derivative is used for cards and responsive delivery. No cropping, overlays or changes to image content.",
+      "modifications": "Full-size and proportional 600-pixel-wide derivatives were re-encoded on 2026-10-17 as quality-90 WebP for faster web delivery. Original dimensions, aspect ratio and complete composition are retained. Lossy compression changes pixel values; no cropping, overlays, branding or editorial alterations were introduced.",
       "localFiles": [
         {
           "path": "assets/news/give-me-shelter-user-image.webp",
-          "sha256": "ab029fb5cbcda6d497d2d44dab034375dfc009fe5cb53c4dc8444f33db512af6",
+          "sha256": "5ac937461e15eb4bb071e4dcde02185e8366e15050c43abec3b872f185a5f2b0",
           "introducedOn": "2026-10-16"
         },
         {
           "path": "assets/news/give-me-shelter-user-image-600.webp",
-          "sha256": "d8c75f7f6c5e38bc6c1554547be18c3aa8ebccd89bf3ff6b63ef6a15acf6a7af",
+          "sha256": "ec5067c132641a1271cfe9497e80373d519deb7054b8eee03f7b69543fcf8509",
           "introducedOn": "2026-10-16"
         }
       ]
