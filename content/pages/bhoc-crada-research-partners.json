@@ -1,0 +1,121 @@
+{
+  "slug": "bhoc-crada-research-partners",
+  "navLabel": "CRADA Research Partners",
+  "navActive": "news.html",
+  "breadcrumbs": [
+    {
+      "label": "News",
+      "href": "news.html"
+    }
+  ],
+  "title": "BHOC CRADA Research Partnership Call | BHOC Veterinary",
+  "description": "BHOC invites research partners in Precision Oxygen Therapeutics, veterinary medicine, wildlife rescue and other applications, drawing on the CRADA model.",
+  "schemaType": "Article",
+  "datePublished": "2026-10-19",
+  "dateModified": "2026-10-19",
+  "dateLabel": "19 October 2026",
+  "articleSection": "Research partnerships",
+  "authorName": "Archil Jaliashvili",
+  "seo": {
+    "primaryKeyword": "BHOC CRADA research collaboration",
+    "secondaryKeywords": [
+      "Cooperative Research and Development Agreement",
+      "Precision Oxygen Therapeutics",
+      "veterinary research partnerships"
+    ],
+    "supportingTerms": [
+      "BHOC Veterinary",
+      "Biological Hemoglobin Oxygen Carrier",
+      "wildlife care and rescue",
+      "tissue oxygen delivery",
+      "mitochondrial support",
+      "transplantation research"
+    ]
+  },
+  "eyebrow": "BHOC Veterinary · Research collaboration",
+  "heading": "Cooperative Research and Development Agreement (CRADA)",
+  "lead": "We are announcing an open call for partners interested in joint research and development with BHOC, based on the CRADA model.",
+  "image": {
+    "src": "assets/news/bhoc-crada-cooperative-research-veterinary-oxygen-therapeutics.webp",
+    "alt": "BHOC CRADA research-partner banner with a veterinarian, dog, cat, elephant, researcher, two dachshunds and mitochondria, inviting human, veterinary and wildlife oxygen-delivery research.",
+    "width": 1200,
+    "height": 630,
+    "srcset": [
+      {
+        "path": "assets/news/bhoc-crada-cooperative-research-veterinary-oxygen-therapeutics-600.webp",
+        "width": 600
+      },
+      {
+        "path": "assets/news/bhoc-crada-cooperative-research-veterinary-oxygen-therapeutics.webp",
+        "width": 1200
+      }
+    ],
+    "sizes": "(max-width: 1200px) 100vw, 1160px"
+  },
+  "socialImage": {
+    "src": "assets/news/bhoc-crada-cooperative-research-veterinary-oxygen-therapeutics.jpg",
+    "alt": "BHOC CRADA research-partner banner with a veterinarian, dog, cat, elephant, researcher, two dachshunds and mitochondria, inviting human, veterinary and wildlife oxygen-delivery research.",
+    "width": 1731,
+    "height": 909
+  },
+  "imageCaption": "Open call for research partners in Precision Oxygen Therapeutics. BHOC artwork with Rem and Eva.",
+  "introduction": "Our focus is Precision Oxygen Therapeutics. BHOC stands for Biological Hemoglobin Oxygen Carrier.",
+  "principle": "Oxygen is the same, and the basic biochemistry is shared.",
+  "areasHeading": "Areas for joint research",
+  "researchAreas": [
+    "Longevity & Lifespan & Healthspan",
+    "Veterinary medicine",
+    "Wildlife care and rescue",
+    "Human emergency and prehospital care…",
+    "Recovery & Healing",
+    "Diabetic foot ulcers",
+    "Sickle cell anemia",
+    "Transplantation"
+  ],
+  "otherAreas": "And many other areas where mitochondrial support is needed.",
+  "invitationHeading": "Work with BHOC",
+  "invitation": "We invite researchers, doctors, veterinarians and institutions to discuss what we can study together and what each partner can contribute.",
+  "contactText": "If you are interested in working with us, please get in touch.",
+  "contactLink": {
+    "label": "info@bhoctherapeutics.com",
+    "href": "mailto:info@bhoctherapeutics.com"
+  },
+  "researchNote": "These are proposed research areas. Product- and species-specific safety and efficacy require their own evidence.",
+  "relatedLinks": [
+    {
+      "label": "Veterinary Science",
+      "href": "science.html"
+    },
+    {
+      "label": "Species & Biodiversity Protection Initiative",
+      "href": "./initiative/"
+    },
+    {
+      "label": "Veterinary Applications",
+      "href": "applications.html"
+    },
+    {
+      "label": "Back to Veterinary News",
+      "href": "news.html"
+    }
+  ],
+  "sourceLink": {
+    "label": "BHOC Veterinary Science",
+    "href": "https://bhocvet.com/science.html"
+  },
+  "referenceGroups": [
+    {
+      "heading": "BHOC resources",
+      "links": [
+        {
+          "label": "BHOC platform and research direction",
+          "href": "https://bhoctherapeutics.com/"
+        },
+        {
+          "label": "Species & Biodiversity Protection Initiative",
+          "href": "https://bhocvet.com/initiative/"
+        }
+      ]
+    }
+  ]
+}

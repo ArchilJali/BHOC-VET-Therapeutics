@@ -96,7 +96,7 @@
   "eyebrow": "BHOC Initiative · Global Intelligence",
   "heading": "Wildlife & Species Conservation Intelligence.",
   "lead": "Tracking the people, science, funding and programs working to protect wildlife, restore endangered species and strengthen conservation medicine worldwide.",
-  "updated": "18 Oct 2026",
+  "updated": "19 Oct 2026",
   "seoContext": {
     "eyebrow": "BHOC Veterinary context",
     "heading": "Animal-health intelligence, separate from product claims.",
@@ -114,6 +114,40 @@
   },
   "feedNote": "BHOC Initiative Scout applies a high publication threshold and screens every candidate for duplication. New items are added only for exceptional rescue or recovery outcomes, globally significant conservation initiatives, substantive veterinary evidence milestones or other material developments; routine news is excluded.",
   "stories": [
+    {
+      "id": "bhoc-crada-research-partners",
+      "date": "2026-10-19",
+      "dateLabel": "19 Oct 2026",
+      "region": "International",
+      "category": "BHOC · Research partnerships",
+      "title": "CRADA: Open call for BHOC research partners",
+      "text": "We are announcing an open call for partners interested in joint research and development with BHOC, based on the CRADA model.",
+      "why": "Joint research in Precision Oxygen Therapeutics, veterinary medicine, wildlife care and other applications.",
+      "image": {
+        "url": "assets/news/bhoc-crada-cooperative-research-veterinary-oxygen-therapeutics-600.webp",
+        "alt": "BHOC CRADA research-partner banner with a veterinarian, dog, cat, elephant, researcher, two dachshunds and mitochondria, inviting human, veterinary and wildlife oxygen-delivery research.",
+        "width": 600,
+        "height": 315
+      },
+      "sourceName": "BHOC Veterinary · 19 October 2026",
+      "link": {
+        "label": "Read the research invitation",
+        "href": "./bhoc-crada-research-partners.html"
+      },
+      "contextLink": {
+        "label": "Discuss a research project",
+        "href": "mailto:info@bhoctherapeutics.com"
+      },
+      "keywords": [
+        "CRADA",
+        "Cooperative Research and Development Agreement",
+        "Precision Oxygen Therapeutics",
+        "veterinary research",
+        "wildlife rescue",
+        "mitochondrial support"
+      ],
+      "article": true
+    },
     {
       "id": "cop17-species-recovery-veterinary-care",
       "date": "2026-10-18",
