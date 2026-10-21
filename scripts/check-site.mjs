@@ -65,8 +65,8 @@ for(const [name,html] of htmlByPage){
   const person=graph.find(x=>x['@type']==='Person');
   const organization=graph.find(x=>x['@type']==='Organization');
   const webPage=graph.find(x=>x['@type']===expectedSchemaTypes[name]);
-  assert.equal(website.name,'BHOC Therapeutics',`${name}: website identity`);
-  assert.deepEqual(website.alternateName,['BHOC Veterinary','BHOC Vet','BHOC Veterinary Therapeutics'],`${name}: alternate names`);
+  assert.equal(website.name,site.name,`${name}: website identity`);
+  assert.deepEqual(website.alternateName,site.alternateNames,`${name}: alternate names`);
   assert.equal(person.name,'Archil Jaliashvili',`${name}: author identity`);
   assert.equal(person.jobTitle,'Project Lead, BHOC Veterinary',`${name}: author role`);
   assert.equal(person.url,'https://orcid.org/0009-0006-4712-4942',`${name}: author verified ORCID profile`);
