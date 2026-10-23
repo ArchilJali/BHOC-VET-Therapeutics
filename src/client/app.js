@@ -237,6 +237,7 @@
     const status=$('.form-status'),success=$('.contact-success'),submitButton=$('button[type="submit"]',contactForm);
     contactForm.addEventListener('submit',async e=>{
       e.preventDefault();
+      if(submitButton?.disabled)return;
       if(!contactForm.reportValidity())return;
       const honey=$('input[name="_honey"]',contactForm);
       if(honey&&honey.value)return;
@@ -251,7 +252,8 @@
           body:JSON.stringify(payload)
         });
         const result=await response.json().catch(()=>({}));
-        if(!response.ok||result.success===false)throw new Error(result.message||'Submission failed');
+        if(!response.ok||![true,'true'].includes(result.success))throw new Error(result.message||'Submission failed');
+        window.BHOCLeadContext?.submitted(contactForm);
         contactForm.reset();
         contactForm.hidden=true;
         if(success)success.hidden=false;
