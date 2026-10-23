@@ -151,5 +151,13 @@
   "contextLink": {
     "label": "Vet Real-World Evidence & Cases",
     "href": "https://bhoctherapeutics.com/evidence/library/veterinary/Vet-index.html"
+  },
+  "contact": {
+    "title": "Discuss a feline research question.",
+    "text": "Tell us the clinical or research setting, the evidence you need and what your team could contribute.",
+    "link": {
+      "label": "Discuss feline research",
+      "href": "contact.html?interest=research&topic=feline-transfusion"
+    }
   }
 }
