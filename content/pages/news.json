@@ -96,7 +96,7 @@
   "eyebrow": "BHOC Initiative · Global Intelligence",
   "heading": "Wildlife & Species Conservation Intelligence.",
   "lead": "Tracking the people, science, funding and programs working to protect wildlife, restore endangered species and strengthen conservation medicine worldwide.",
-  "updated": "19 Oct 2026",
+  "updated": "23 Oct 2026",
   "seoContext": {
     "eyebrow": "BHOC Veterinary context",
     "heading": "Animal-health intelligence, separate from product claims.",
@@ -114,6 +114,33 @@
   },
   "feedNote": "BHOC Initiative Scout applies a high publication threshold and screens every candidate for duplication. New items are added only for exceptional rescue or recovery outcomes, globally significant conservation initiatives, substantive veterinary evidence milestones or other material developments; routine news is excluded.",
   "stories": [
+    {
+      "id": "tracs-transfusion-safety-dogs-cats",
+      "date": "2026-10-23",
+      "dateLabel": "23 Oct 2026",
+      "region": "Veterinary medicine",
+      "category": "Evidence note",
+      "title": "Veterinary transfusion: a TRACS evidence note",
+      "text": "Compatibility, infection, storage, infusion-related injury and monitoring gaps in dogs and cats.",
+      "why": "Assess tissue oxygenation, time to treatment and safety alongside Hb/Hct.",
+      "sourceName": "TRACS Part 2 · 2021",
+      "link": {
+        "label": "Read the evidence note",
+        "href": "https://bhoctherapeutics.com/evidence/library/veterinary/direct-studies/tracs-transfusion-risks-dogs-cats.html"
+      },
+      "contextLink": {
+        "label": "Original paper",
+        "href": "https://pubmed.ncbi.nlm.nih.gov/33751789/"
+      },
+      "keywords": [
+        "veterinary transfusion",
+        "TRACS",
+        "dogs",
+        "cats",
+        "transfusion safety",
+        "Precision Oxygen Therapeutics"
+      ]
+    },
     {
       "id": "bhoc-crada-research-partners",
       "date": "2026-10-19",
