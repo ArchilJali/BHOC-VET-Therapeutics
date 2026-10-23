@@ -27,4 +27,5 @@ export default page=>`<main id="main" class="subpage-main feline-article-page">
       <nav class="feline-article-return" aria-label="Article navigation"><a class="text-link" href="news.html#cats-blood-compatibility-oxyglobin">Back to News ${icon('arrow')}</a><a class="text-link" ${attrs(page.contextLink)}>${esc(page.contextLink.label)} ${icon('arrow')}</a></nav>
     </div>
   </article>
+  <section class="page-cta" aria-labelledby="feline-collaboration-heading"><div><span class="page-eyebrow">Veterinary research</span><h2 id="feline-collaboration-heading">${esc(page.contact.title)}</h2><p>${esc(page.contact.text)}</p></div><a class="button" ${attrs(page.contact.link)}><span>${esc(page.contact.link.label)}</span>${icon('arrow')}</a></section>
 </main>`;

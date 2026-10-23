@@ -13,7 +13,7 @@ export default page=>`<main id="main" class="subpage-main contact-page">
         <div class="field-row"><label for="contact-email">Email <span aria-hidden="true">*</span></label><input id="contact-email" name="email" type="email" autocomplete="email" required></div>
         <div class="field-row"><label for="contact-organisation">Organisation</label><input id="contact-organisation" name="organisation" autocomplete="organization"></div>
         <div class="field-row"><label for="contact-area">Area of interest</label><select id="contact-area" name="area">${page.form.areas.map(area=>`<option>${esc(area)}</option>`).join('')}</select></div>
-        <div class="field-row contact-message-row"><label for="contact-message">Message <span aria-hidden="true">*</span></label><textarea id="contact-message" name="message" rows="5" required></textarea></div>
+        <div class="field-row contact-message-row"><label for="contact-message">Message <span aria-hidden="true">*</span></label><textarea id="contact-message" name="message" rows="5" placeholder="Tell us the species, setting, research question and what your team could contribute." required></textarea></div>
         <label class="contact-human-check" for="contact-human"><input id="contact-human" name="human_check" type="checkbox" value="confirmed" required><span>I am not a robot</span></label>
         <div class="contact-submit-row"><button class="button" type="submit"><span>${esc(page.form.button)}</span>${icon('arrow')}</button><p class="form-status" aria-live="polite"></p></div>
         <p class="form-note">${esc(page.form.note)}</p>
