@@ -15,8 +15,25 @@
     }
   ],
   "datePublished": "2026-10-13",
-  "dateModified": "2026-10-19",
+  "dateModified": "2026-10-23",
   "entries": [
+    {
+      "id": "tracs-transfusion-evidence-20261023",
+      "date": "2026-10-23",
+      "displayDate": "23 October 2026",
+      "title": "TRACS veterinary transfusion-safety evidence note added",
+      "text": "Added a 20-point source-linked note on TRACS Part 2, with a separate BHOC research question and a short Veterinary News announcement.",
+      "links": [
+        {
+          "label": "Read the evidence note",
+          "href": "https://bhoctherapeutics.com/evidence/library/veterinary/direct-studies/tracs-transfusion-risks-dogs-cats.html"
+        },
+        {
+          "label": "Read the Veterinary News announcement",
+          "href": "news.html#tracs-transfusion-safety-dogs-cats"
+        }
+      ]
+    },
     {
       "id": "crada-research-partners-20261019",
       "date": "2026-10-19",
