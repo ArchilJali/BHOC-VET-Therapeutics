@@ -355,7 +355,8 @@ for(const [name,html] of documents){
       continue;
     }
     if(/^(https:|mailto:)/.test(href)||href.startsWith('./'))continue;
-    const [file,hash]=href.split('#');
+    const [target,hash]=href.split('#');
+    const file=target.split('?')[0];
     if(file&&!documents.has(file))throw new Error(`${name}: missing page ${file}`);
     if(hash){
       const targetHTML=documents.get(file||name);
