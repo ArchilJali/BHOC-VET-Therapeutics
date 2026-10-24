@@ -32,6 +32,17 @@
   "deck": "Ten stories about animals that became part of a place, and the people who care for them.",
   "images": [
     {
+      "src": "assets/initiative/cat-stories/cat-cities-islands-hermitage-istanbul-bhoc-veterinary-collage.jpg",
+      "alt": "Collage of cats from the Hermitage, Istanbul, Rome, Kotor, Syros, Tashirojima and Houtong, with views of Iraklia harbour, the San Vero Milis coast and Tala monastery. Title: Cities and Islands Where Cats Belong.",
+      "width": 1122,
+      "height": 1402,
+      "caption": "Editorial collage for Cities and Islands Where Cats Belong, showing all ten places in the story.",
+      "credit": "BHOC Veterinary. Source photographers are credited in the image-rights register.",
+      "license": "CC BY-SA 4.0; source photograph licences retained",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "href": "https://bhocvet.com/initiative/image-rights.html#cat-cities-collage"
+    },
+    {
       "src": "assets/initiative/cat-stories/hermitage-1200.webp",
       "width": 1200,
       "height": 802,

@@ -705,6 +705,106 @@
           "introducedOn": "2026-10-24"
         }
       ]
+    },
+    {
+      "id": "cat-cities-collage",
+      "title": "Cities and Islands Where Cats Belong - ten-place editorial collage",
+      "subject": "Collage of cats from the Hermitage, Istanbul, Rome, Kotor, Syros, Tashirojima and Houtong, with views of Iraklia harbour, the San Vero Milis coast and Tala monastery. Title: Cities and Islands Where Cats Belong.",
+      "creator": "Compilation: BHOC Veterinary. Source photographers: ewwl; Pelle Sten; Wknight94; Wolfgang Sauber; Zde; Kokiniatsi27; trolvag; Fry72, Karel Frydrýšek; 暇・カキコ; 4300streetcar",
+      "source": "https://bhocvet.com/initiative/cat-cities-and-islands.html",
+      "sourceLabel": "Article with individual photograph sources and licences",
+      "originalDate": "2026-10-24",
+      "license": "CC BY-SA 4.0; individual source photograph licences retained",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "sourceStatus": "AI-assisted editorial collage assembled from the ten previously credited photograph references at Archil’s request. The output is a composed montage, not a new documentary photograph.",
+      "verifiedOn": "2026-10-24",
+      "usedIn": [
+        "Article social preview",
+        "Archil Jaliashvili LinkedIn post",
+        "BHOC LinkedIn post"
+      ],
+      "reason": "Shows all ten places together. The harbour, wider Sardinian coast and Tala monastery are labelled as settings. Individual source records are retained in this register.",
+      "modifications": "AI-assisted compositing and typesetting using the credited photographic references. The approved collage was encoded as JPEG with descriptive metadata; its complete layout was retained.",
+      "reuse": "The collage is distributed under CC BY-SA 4.0. Individual source photograph authorship and licence records remain in the linked article and this register.",
+      "sourcePhotographs": [
+        {
+          "id": "cat-story-hermitage",
+          "creator": "ewwl",
+          "source": "https://commons.wikimedia.org/wiki/File:Hermitage_cat.jpeg",
+          "license": "CC BY-SA 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+        },
+        {
+          "id": "cat-story-istanbul",
+          "creator": "Pelle Sten",
+          "source": "https://commons.wikimedia.org/wiki/File:The_Cats_of_Istanbul.jpg",
+          "license": "CC BY 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+        },
+        {
+          "id": "cat-story-rome",
+          "creator": "Wknight94",
+          "source": "https://commons.wikimedia.org/wiki/File:Largo_di_Torre_Argentina_cat_7.jpg",
+          "license": "CC BY-SA 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/"
+        },
+        {
+          "id": "cat-story-kotor",
+          "creator": "Wolfgang Sauber",
+          "source": "https://commons.wikimedia.org/wiki/File:Kotor_-_Katze.jpg",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+        },
+        {
+          "id": "cat-story-iraklia",
+          "creator": "Zde",
+          "source": "https://commons.wikimedia.org/wiki/File:Ag._Georgios,_Irakleia,_the_port,_190171.jpg",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+        },
+        {
+          "id": "cat-story-syros",
+          "creator": "Kokiniatsi27",
+          "source": "https://commons.wikimedia.org/wiki/File:Syros,_the_cats_on_the_stairs.jpg",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+        },
+        {
+          "id": "cat-story-su-pallosu",
+          "creator": "trolvag",
+          "source": "https://commons.wikimedia.org/wiki/File:Putzu_Idu_Spaggia_-_panoramio.jpg",
+          "license": "CC BY-SA 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/"
+        },
+        {
+          "id": "cat-story-tala",
+          "creator": "Fry72, Karel Frydrýšek",
+          "source": "https://commons.wikimedia.org/wiki/File:Agios_Neophytos_Monastery,_Tala,_Cyprus_02.jpg",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+        },
+        {
+          "id": "cat-story-tashirojima",
+          "creator": "暇・カキコ",
+          "source": "https://commons.wikimedia.org/wiki/File:Nekotarou(a_cat_of_Tashirojima_island).JPG",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+        },
+        {
+          "id": "cat-story-houtong",
+          "creator": "4300streetcar",
+          "source": "https://commons.wikimedia.org/wiki/File:Cats_at_Houtong_Cat_Village_February_2026.jpg",
+          "license": "CC BY 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "localFiles": [
+        {
+          "path": "assets/initiative/cat-stories/cat-cities-islands-hermitage-istanbul-bhoc-veterinary-collage.jpg",
+          "sha256": "f69c412f0a64c57e02c495c6ec18959b7636459f17fb23c31a60008ad3c961d0",
+          "introducedOn": "2026-10-24"
+        }
+      ]
     }
   ],
   "projectAssets": [
