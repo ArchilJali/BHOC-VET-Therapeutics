@@ -152,7 +152,7 @@ const cssLinks=[`<link rel="stylesheet" href="./assets/css/site.css?v=${digest(s
 const client=await read('src/client/app.js');
 await write('app.js',client);
 
-const initiativeStyles=await read('src/initiative/styles.css');
+const initiativeStyles=await read('src/initiative/styles.css')+'\n'+await read('src/initiative/cat-stories.css');
 const initiativeClient=await read('src/initiative/app.js');
 await write('initiative/styles.css',initiativeStyles);
 await write('initiative/app.js',initiativeClient);

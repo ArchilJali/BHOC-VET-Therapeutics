@@ -55,5 +55,11 @@
       "label": "The University of Tokyo — Hachikō and Professor Ueno",
       "href": "https://www.en.a.u-tokyo.ac.jp/hachi_ueno_hp/hp/prospectus.htm"
     }
+  ],
+  "relatedLinks": [
+    {
+      "label": "Cities and Islands Where Cats Belong",
+      "href": "cat-cities-and-islands.html"
+    }
   ]
 }

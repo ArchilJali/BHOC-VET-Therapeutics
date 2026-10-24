@@ -385,6 +385,326 @@
           "introducedOn": "2026-10-18"
         }
       ]
+    },
+    {
+      "id": "cat-story-hermitage",
+      "title": "Hermitage cat.jpeg",
+      "subject": "A tabby-and-white Hermitage cat sits on a stone ledge beside the museum's iron gate in Saint Petersburg.",
+      "creator": "ewwl",
+      "source": "https://commons.wikimedia.org/wiki/File:Hermitage_cat.jpeg",
+      "sourceLabel": "Wikimedia Commons original photograph and licence",
+      "originalDate": "2010-06-20",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourceStatus": "Author and free reuse licence verified on the original Commons file record.",
+      "verifiedOn": "2026-10-24",
+      "usedIn": [
+        "Cities and Islands Where Cats Belong"
+      ],
+      "reason": "A Hermitage cat beside the museum gate. Saint Petersburg, 2010.",
+      "modifications": "Full composition retained. Resized and encoded as responsive WebP photographs; social copies use JPEG. No generative or content-altering edit.",
+      "reuse": "The processed photograph retains the stated Creative Commons licence. That licence applies to the photograph, separately from the surrounding BHOC text and design.",
+      "localFiles": [
+        {
+          "path": "assets/initiative/cat-stories/hermitage-1200.webp",
+          "sha256": "be98703b1f52f8deb4216e71cd76e65a539e6cd4049bdd9835a967eb0dfaf48d",
+          "introducedOn": "2026-10-24"
+        },
+        {
+          "path": "assets/initiative/cat-stories/hermitage-480.webp",
+          "sha256": "678a594e2cecf1156239206362b1fe108196338268098e2bf4c621aa8333e6b3",
+          "introducedOn": "2026-10-24"
+        },
+        {
+          "path": "assets/initiative/cat-stories/hermitage-social.jpg",
+          "sha256": "d15edae4a978024dc2c3ef31afd4dbc9e923e40f548d9b34cafcb542f8397433",
+          "introducedOn": "2026-10-24"
+        }
+      ]
+    },
+    {
+      "id": "cat-story-istanbul",
+      "title": "The Cats of Istanbul.jpg",
+      "subject": "Cats rest around a painted green shelter beside a stone wall on a street in Istanbul.",
+      "creator": "Pelle Sten",
+      "source": "https://commons.wikimedia.org/wiki/File:The_Cats_of_Istanbul.jpg",
+      "sourceLabel": "Wikimedia Commons original photograph and licence",
+      "originalDate": "2011-12-29",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceStatus": "Author and free reuse licence verified on the original Commons file record.",
+      "verifiedOn": "2026-10-24",
+      "usedIn": [
+        "Cities and Islands Where Cats Belong"
+      ],
+      "reason": "Street cats and their shelter in Istanbul, 2011.",
+      "modifications": "Full composition retained. Resized and encoded as responsive WebP photographs; social copies use JPEG. No generative or content-altering edit.",
+      "reuse": "The processed photograph retains the stated Creative Commons licence. That licence applies to the photograph, separately from the surrounding BHOC text and design.",
+      "localFiles": [
+        {
+          "path": "assets/initiative/cat-stories/istanbul-1200.webp",
+          "sha256": "f31299bbc4a2990e17a630c14ee633df374e2eb2bf1550dbf2bbc889d61f320a",
+          "introducedOn": "2026-10-24"
+        },
+        {
+          "path": "assets/initiative/cat-stories/istanbul-480.webp",
+          "sha256": "8db38630b35f4bf608b39362cf07dec442b4f9ea0a602dda68de4f22d12d940a",
+          "introducedOn": "2026-10-24"
+        },
+        {
+          "path": "assets/initiative/cat-stories/istanbul-social.jpg",
+          "sha256": "5a1a282992f0498bccc53b01e5e3f696ba42051557c3e86e2cced404d5d4c9cf",
+          "introducedOn": "2026-10-24"
+        }
+      ]
+    },
+    {
+      "id": "cat-story-rome",
+      "title": "Largo di Torre Argentina cat 7.jpg",
+      "subject": "A cat walks between ancient brick and stone ruins at Largo di Torre Argentina in Rome.",
+      "creator": "Wknight94",
+      "source": "https://commons.wikimedia.org/wiki/File:Largo_di_Torre_Argentina_cat_7.jpg",
+      "sourceLabel": "Wikimedia Commons original photograph and licence",
+      "originalDate": "2008-04-21 (Commons description; embedded camera timestamp differs)",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "sourceStatus": "Author and free reuse licence verified on the original Commons file record.",
+      "verifiedOn": "2026-10-24",
+      "usedIn": [
+        "Cities and Islands Where Cats Belong"
+      ],
+      "reason": "A cat among the ruins of Largo di Torre Argentina, Rome.",
+      "modifications": "Full composition retained. Resized and encoded as responsive WebP photographs; social copies use JPEG. No generative or content-altering edit.",
+      "reuse": "The processed photograph retains the stated Creative Commons licence. That licence applies to the photograph, separately from the surrounding BHOC text and design.",
+      "localFiles": [
+        {
+          "path": "assets/initiative/cat-stories/rome-1200.webp",
+          "sha256": "1694a7fe86289244ec47103c904141260ad7ed4fd286029283e0953c86cc23ee",
+          "introducedOn": "2026-10-24"
+        },
+        {
+          "path": "assets/initiative/cat-stories/rome-480.webp",
+          "sha256": "9b468a27082d72cd318f39e18dadf44b5ce5b6956bf9f90c79c70d85351e0dd5",
+          "introducedOn": "2026-10-24"
+        }
+      ]
+    },
+    {
+      "id": "cat-story-kotor",
+      "title": "Kotor - Katze.jpg",
+      "subject": "A tabby-and-white cat sits against a stone wall beside a paved lane in Kotor's Old Town.",
+      "creator": "Wolfgang Sauber",
+      "source": "https://commons.wikimedia.org/wiki/File:Kotor_-_Katze.jpg",
+      "sourceLabel": "Wikimedia Commons original photograph and licence",
+      "originalDate": "2018-05-08",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceStatus": "Author and free reuse licence verified on the original Commons file record.",
+      "verifiedOn": "2026-10-24",
+      "usedIn": [
+        "Cities and Islands Where Cats Belong"
+      ],
+      "reason": "A cat in the Old Town of Kotor, 2018.",
+      "modifications": "Full composition retained. Resized and encoded as responsive WebP photographs; social copies use JPEG. No generative or content-altering edit.",
+      "reuse": "The processed photograph retains the stated Creative Commons licence. That licence applies to the photograph, separately from the surrounding BHOC text and design.",
+      "localFiles": [
+        {
+          "path": "assets/initiative/cat-stories/kotor-1200.webp",
+          "sha256": "b82de51c19c7adc9768fd9ae40340c62f1381f73cd1640e0bf627662779b60a3",
+          "introducedOn": "2026-10-24"
+        },
+        {
+          "path": "assets/initiative/cat-stories/kotor-480.webp",
+          "sha256": "b1ea3b1557bd321f10645ea000d5877f442d2de9e70ad042ccd34d5d4d151675",
+          "introducedOn": "2026-10-24"
+        }
+      ]
+    },
+    {
+      "id": "cat-story-iraklia",
+      "title": "Ag. Georgios, Irakleia, the port, 190171.jpg",
+      "subject": "Fishing boats lie beside the waterfront path at Agios Georgios harbour on Iraklia, Greece; no cats are visible.",
+      "creator": "Zde",
+      "source": "https://commons.wikimedia.org/wiki/File:Ag._Georgios,_Irakleia,_the_port,_190171.jpg",
+      "sourceLabel": "Wikimedia Commons original photograph and licence",
+      "originalDate": "2019-08-29",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceStatus": "Author and free reuse licence verified on the original Commons file record.",
+      "verifiedOn": "2026-10-24",
+      "usedIn": [
+        "Cities and Islands Where Cats Belong"
+      ],
+      "reason": "Agios Georgios harbour, Iraklia, 2019. A photograph of the setting; no cats are visible.",
+      "modifications": "Full composition retained. Resized and encoded as responsive WebP photographs; social copies use JPEG. No generative or content-altering edit.",
+      "reuse": "The processed photograph retains the stated Creative Commons licence. That licence applies to the photograph, separately from the surrounding BHOC text and design.",
+      "localFiles": [
+        {
+          "path": "assets/initiative/cat-stories/iraklia-1200.webp",
+          "sha256": "cd7a1e2335206eee5d30514681f4cf79163d62d75c51ce831c4dd60d3267b23c",
+          "introducedOn": "2026-10-24"
+        },
+        {
+          "path": "assets/initiative/cat-stories/iraklia-480.webp",
+          "sha256": "8932b86b57082d4ecabba554e84c2b622ba3007e2f66213b3de568ec50a5ad51",
+          "introducedOn": "2026-10-24"
+        }
+      ]
+    },
+    {
+      "id": "cat-story-syros",
+      "title": "Syros, the cats on the stairs.jpg",
+      "subject": "A black-and-white cat and a ginger cat walk over shallow stone steps in an alley on Syros.",
+      "creator": "Kokiniatsi27",
+      "source": "https://commons.wikimedia.org/wiki/File:Syros,_the_cats_on_the_stairs.jpg",
+      "sourceLabel": "Wikimedia Commons original photograph and licence",
+      "originalDate": "2021-08-26",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceStatus": "Author and free reuse licence verified on the original Commons file record.",
+      "verifiedOn": "2026-10-24",
+      "usedIn": [
+        "Cities and Islands Where Cats Belong"
+      ],
+      "reason": "Cats on the stone steps of Syros, 2021.",
+      "modifications": "Full composition retained. Resized and encoded as responsive WebP photographs; social copies use JPEG. No generative or content-altering edit.",
+      "reuse": "The processed photograph retains the stated Creative Commons licence. That licence applies to the photograph, separately from the surrounding BHOC text and design.",
+      "localFiles": [
+        {
+          "path": "assets/initiative/cat-stories/syros-1200.webp",
+          "sha256": "019f4e20c306d5f6830f93b312f1561014ddbde45f159d22a443d3331c4054fe",
+          "introducedOn": "2026-10-24"
+        },
+        {
+          "path": "assets/initiative/cat-stories/syros-480.webp",
+          "sha256": "e9bbfee17fabc226fb937a2d1f75f74b7654adfd7d6ce0af0c522d0a2a1fe8c3",
+          "introducedOn": "2026-10-24"
+        }
+      ]
+    },
+    {
+      "id": "cat-story-su-pallosu",
+      "title": "Putzu Idu Spaggia - panoramio.jpg",
+      "subject": "Sandy shoreline at Putzu Idu on Sardinia's San Vero Milis coast, with shallow waves, small yellow boats, coastal houses and distant cliffs.",
+      "creator": "trolvag",
+      "source": "https://commons.wikimedia.org/wiki/File:Putzu_Idu_Spaggia_-_panoramio.jpg",
+      "sourceLabel": "Wikimedia Commons original photograph and licence",
+      "originalDate": "2012-07-23",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "sourceStatus": "Author and free reuse licence verified on the original Commons file record.",
+      "verifiedOn": "2026-10-24",
+      "usedIn": [
+        "Cities and Islands Where Cats Belong"
+      ],
+      "reason": "Nearby Putzu Idu on the wider San Vero Milis coast, Sardinia, 2012. Coastal setting; the Su Pallosu cat colony is not shown.",
+      "modifications": "Full composition retained. Resized and encoded as responsive WebP photographs; social copies use JPEG. No generative or content-altering edit.",
+      "reuse": "The processed photograph retains the stated Creative Commons licence. That licence applies to the photograph, separately from the surrounding BHOC text and design.",
+      "localFiles": [
+        {
+          "path": "assets/initiative/cat-stories/su-pallosu-1200.webp",
+          "sha256": "f08063c2d912fade62bcb3e2ae0178bd73df70947edfaaa85d2adc880fa3bee1",
+          "introducedOn": "2026-10-24"
+        },
+        {
+          "path": "assets/initiative/cat-stories/su-pallosu-480.webp",
+          "sha256": "fece374021db9f8317c2ca165b9c18f11be5c3fb68300fbbfec24c5fdb86b479",
+          "introducedOn": "2026-10-24"
+        }
+      ]
+    },
+    {
+      "id": "cat-story-tala",
+      "title": "Agios Neophytos Monastery, Tala, Cyprus 02.jpg",
+      "subject": "A garden courtyard with stone paths, architectural fragments and an arcaded building at Agios Neophytos Monastery in Tala, Cyprus; no cats are visible.",
+      "creator": "Fry72, Karel Frydrýšek",
+      "source": "https://commons.wikimedia.org/wiki/File:Agios_Neophytos_Monastery,_Tala,_Cyprus_02.jpg",
+      "sourceLabel": "Wikimedia Commons original photograph and licence",
+      "originalDate": "2023-03-06",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceStatus": "Author and free reuse licence verified on the original Commons file record.",
+      "verifiedOn": "2026-10-24",
+      "usedIn": [
+        "Cities and Islands Where Cats Belong"
+      ],
+      "reason": "Agios Neophytos Monastery courtyard in Tala, 2023. The neighbouring monastery, rather than the cat sanctuary itself.",
+      "modifications": "Full composition retained. Resized and encoded as responsive WebP photographs; social copies use JPEG. No generative or content-altering edit.",
+      "reuse": "The processed photograph retains the stated Creative Commons licence. That licence applies to the photograph, separately from the surrounding BHOC text and design.",
+      "localFiles": [
+        {
+          "path": "assets/initiative/cat-stories/tala-1200.webp",
+          "sha256": "448a461a5eb3163f64ca00605265b23124c21960aae4eac710a2e7c71a8e70cb",
+          "introducedOn": "2026-10-24"
+        },
+        {
+          "path": "assets/initiative/cat-stories/tala-480.webp",
+          "sha256": "f0e01087c757e5465c20247f7058d85bf274515d06ae50a612a554cf0f4825e6",
+          "introducedOn": "2026-10-24"
+        }
+      ]
+    },
+    {
+      "id": "cat-story-tashirojima",
+      "title": "Nekotarou(a cat of Tashirojima island).JPG",
+      "subject": "Nekotarou, a tabby-and-white cat on Tashirojima, rests with its paws tucked under its body on an outdoor paved surface.",
+      "creator": "暇・カキコ",
+      "source": "https://commons.wikimedia.org/wiki/File:Nekotarou(a_cat_of_Tashirojima_island).JPG",
+      "sourceLabel": "Wikimedia Commons original photograph and licence",
+      "originalDate": "2014-08-17",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceStatus": "Author and free reuse licence verified on the original Commons file record.",
+      "verifiedOn": "2026-10-24",
+      "usedIn": [
+        "Cities and Islands Where Cats Belong"
+      ],
+      "reason": "Nekotarou, a cat on Tashirojima, 2014.",
+      "modifications": "Full composition retained. Resized and encoded as responsive WebP photographs; social copies use JPEG. No generative or content-altering edit.",
+      "reuse": "The processed photograph retains the stated Creative Commons licence. That licence applies to the photograph, separately from the surrounding BHOC text and design.",
+      "localFiles": [
+        {
+          "path": "assets/initiative/cat-stories/tashirojima-1200.webp",
+          "sha256": "934adc884707f86c232bee2b0b5d0af442e141b5679f947d4ce515c16fd73315",
+          "introducedOn": "2026-10-24"
+        },
+        {
+          "path": "assets/initiative/cat-stories/tashirojima-480.webp",
+          "sha256": "030f119aaac9266292caab9114b18a83ea4a5317bd95063b6ce9c43019cbb0db",
+          "introducedOn": "2026-10-24"
+        }
+      ]
+    },
+    {
+      "id": "cat-story-houtong",
+      "title": "Cats at Houtong Cat Village February 2026.jpg",
+      "subject": "Three cats rest on a lane beside potted plants at Houtong Cat Village in Taiwan.",
+      "creator": "4300streetcar",
+      "source": "https://commons.wikimedia.org/wiki/File:Cats_at_Houtong_Cat_Village_February_2026.jpg",
+      "sourceLabel": "Wikimedia Commons original photograph and licence",
+      "originalDate": "2026-02-23",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "sourceStatus": "Author and free reuse licence verified on the original Commons file record.",
+      "verifiedOn": "2026-10-24",
+      "usedIn": [
+        "Cities and Islands Where Cats Belong"
+      ],
+      "reason": "Three cats at Houtong Cat Village, Taiwan, February 2026.",
+      "modifications": "Full composition retained. Resized and encoded as responsive WebP photographs; social copies use JPEG. No generative or content-altering edit.",
+      "reuse": "The processed photograph retains the stated Creative Commons licence. That licence applies to the photograph, separately from the surrounding BHOC text and design.",
+      "localFiles": [
+        {
+          "path": "assets/initiative/cat-stories/houtong-1200.webp",
+          "sha256": "b9e6367f1dc76645a566b6de6038da27e8dbbc01a9e295ef65dcfd57a8667346",
+          "introducedOn": "2026-10-24"
+        },
+        {
+          "path": "assets/initiative/cat-stories/houtong-480.webp",
+          "sha256": "50c9583b835e1c145e45053585ce53de107d93dde958f4b81b39460f67a25889",
+          "introducedOn": "2026-10-24"
+        }
+      ]
     }
   ],
   "projectAssets": [

@@ -1,6 +1,8 @@
 import {esc,initiativePairedImage,linkAttrs} from './lib.mjs';
+import renderPlacesStory from './places-story.mjs';
 
 export default function renderStory(data){
+  if(data.layout==='places')return renderPlacesStory(data);
   const posterLayout=data.layout==='poster';
   const values=data.values.map(value=>'<li>'+esc(value)+'</li>').join('');
   const gallery=data.images.map((image,index)=>
@@ -37,6 +39,7 @@ export default function renderStory(data){
         '<blockquote class="story-page-principle"><p>'+esc(data.principle)+'</p></blockquote>'+
         (data.principleAttribution?'<p class="story-page-principle-attribution">'+esc(data.principleAttribution)+'</p>':'')+
         (data.closing?'<p class="story-page-closing">'+esc(data.closing)+'</p>':'')+
+        (data.relatedLinks?'<div class="story-page-related">'+data.relatedLinks.map(item=>'<a '+linkAttrs(item)+'>'+esc(item.label)+'</a>').join('')+'</div>':'')+
         '<div class="story-page-sources"><strong>'+esc(data.sourcesLabel||'Historical sources')+'</strong>'+sources+'</div>'+
         '<a class="story-page-back" href="stories.html"><span aria-hidden="true">←</span> Back to Stories That Matter</a>'+
       '</div>'+

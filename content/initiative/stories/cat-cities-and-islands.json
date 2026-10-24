@@ -1,0 +1,845 @@
+{
+  "slug": "cat-cities-and-islands",
+  "layout": "places",
+  "section": "Stories That Matter · Animal welfare",
+  "title": "Cities and Islands Where Cats Belong",
+  "seoTitle": "Cat Cities and Islands: History & Care | BHOC Veterinary",
+  "description": "From the Hermitage to Tashirojima: ten stories of cats, local history and animal welfare, with photographs, dated figures and sources.",
+  "canonical": "https://bhocvet.com/initiative/cat-cities-and-islands.html",
+  "datePublished": "2026-10-24",
+  "dateModified": "2026-10-24",
+  "articleSection": "Animal welfare · Community cats",
+  "genre": "Illustrated feature",
+  "keywords": [
+    "cat cities",
+    "cat islands",
+    "Hermitage cats",
+    "Istanbul cats",
+    "Torre Argentina cats",
+    "Kotor cats",
+    "Cats of Iraklia",
+    "Syros cats",
+    "Tala Cats",
+    "Tashirojima cat island",
+    "Houtong Cat Village",
+    "community cat welfare"
+  ],
+  "byline": {
+    "name": "Archil Jaliashvili",
+    "role": "BHOC Veterinary · Stories That Matter",
+    "dateLabel": "24 October 2026"
+  },
+  "deck": "Ten stories about animals that became part of a place, and the people who care for them.",
+  "images": [
+    {
+      "src": "assets/initiative/cat-stories/hermitage-1200.webp",
+      "width": 1200,
+      "height": 802,
+      "alt": "A tabby-and-white Hermitage cat sits on a stone ledge beside the museum's iron gate in Saint Petersburg.",
+      "srcset": [
+        {
+          "path": "assets/initiative/cat-stories/hermitage-480.webp",
+          "width": 480
+        },
+        {
+          "path": "assets/initiative/cat-stories/hermitage-1200.webp",
+          "width": 1200
+        }
+      ],
+      "sizes": "(max-width: 760px) 92vw, (max-width: 1200px) 44vw, 510px",
+      "caption": "A Hermitage cat beside the museum gate. Saint Petersburg, 2010.",
+      "credit": "ewwl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "href": "https://commons.wikimedia.org/wiki/File:Hermitage_cat.jpeg"
+    },
+    {
+      "src": "assets/initiative/cat-stories/istanbul-1200.webp",
+      "width": 1200,
+      "height": 800,
+      "alt": "Cats rest around a painted green shelter beside a stone wall on a street in Istanbul.",
+      "srcset": [
+        {
+          "path": "assets/initiative/cat-stories/istanbul-480.webp",
+          "width": 480
+        },
+        {
+          "path": "assets/initiative/cat-stories/istanbul-1200.webp",
+          "width": 1200
+        }
+      ],
+      "sizes": "(max-width: 760px) 92vw, (max-width: 1200px) 44vw, 510px",
+      "caption": "Street cats and their shelter in Istanbul, 2011.",
+      "credit": "Pelle Sten",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "href": "https://commons.wikimedia.org/wiki/File:The_Cats_of_Istanbul.jpg"
+    },
+    {
+      "src": "assets/initiative/cat-stories/rome-1200.webp",
+      "width": 1200,
+      "height": 900,
+      "alt": "A cat walks between ancient brick and stone ruins at Largo di Torre Argentina in Rome.",
+      "srcset": [
+        {
+          "path": "assets/initiative/cat-stories/rome-480.webp",
+          "width": 480
+        },
+        {
+          "path": "assets/initiative/cat-stories/rome-1200.webp",
+          "width": 1200
+        }
+      ],
+      "sizes": "(max-width: 760px) 92vw, (max-width: 1200px) 44vw, 510px",
+      "caption": "A cat among the ruins of Largo di Torre Argentina, Rome.",
+      "credit": "Wknight94",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "href": "https://commons.wikimedia.org/wiki/File:Largo_di_Torre_Argentina_cat_7.jpg"
+    },
+    {
+      "src": "assets/initiative/cat-stories/kotor-1200.webp",
+      "width": 1200,
+      "height": 900,
+      "alt": "A tabby-and-white cat sits against a stone wall beside a paved lane in Kotor's Old Town.",
+      "srcset": [
+        {
+          "path": "assets/initiative/cat-stories/kotor-480.webp",
+          "width": 480
+        },
+        {
+          "path": "assets/initiative/cat-stories/kotor-1200.webp",
+          "width": 1200
+        }
+      ],
+      "sizes": "(max-width: 760px) 92vw, (max-width: 1200px) 44vw, 510px",
+      "caption": "A cat in the Old Town of Kotor, 2018.",
+      "credit": "Wolfgang Sauber",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "href": "https://commons.wikimedia.org/wiki/File:Kotor_-_Katze.jpg"
+    },
+    {
+      "src": "assets/initiative/cat-stories/iraklia-1200.webp",
+      "width": 1200,
+      "height": 800,
+      "alt": "Fishing boats lie beside the waterfront path at Agios Georgios harbour on Iraklia, Greece; no cats are visible.",
+      "srcset": [
+        {
+          "path": "assets/initiative/cat-stories/iraklia-480.webp",
+          "width": 480
+        },
+        {
+          "path": "assets/initiative/cat-stories/iraklia-1200.webp",
+          "width": 1200
+        }
+      ],
+      "sizes": "(max-width: 760px) 92vw, (max-width: 1200px) 44vw, 510px",
+      "caption": "Agios Georgios harbour, Iraklia, 2019. A photograph of the setting; no cats are visible.",
+      "credit": "Zde",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "href": "https://commons.wikimedia.org/wiki/File:Ag._Georgios,_Irakleia,_the_port,_190171.jpg"
+    },
+    {
+      "src": "assets/initiative/cat-stories/syros-1200.webp",
+      "width": 1200,
+      "height": 675,
+      "alt": "A black-and-white cat and a ginger cat walk over shallow stone steps in an alley on Syros.",
+      "srcset": [
+        {
+          "path": "assets/initiative/cat-stories/syros-480.webp",
+          "width": 480
+        },
+        {
+          "path": "assets/initiative/cat-stories/syros-1200.webp",
+          "width": 1200
+        }
+      ],
+      "sizes": "(max-width: 760px) 92vw, (max-width: 1200px) 44vw, 510px",
+      "caption": "Cats on the stone steps of Syros, 2021.",
+      "credit": "Kokiniatsi27",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "href": "https://commons.wikimedia.org/wiki/File:Syros,_the_cats_on_the_stairs.jpg"
+    },
+    {
+      "src": "assets/initiative/cat-stories/su-pallosu-1200.webp",
+      "width": 1200,
+      "height": 787,
+      "alt": "Sandy shoreline at Putzu Idu on Sardinia's San Vero Milis coast, with shallow waves, small yellow boats, coastal houses and distant cliffs.",
+      "srcset": [
+        {
+          "path": "assets/initiative/cat-stories/su-pallosu-480.webp",
+          "width": 480
+        },
+        {
+          "path": "assets/initiative/cat-stories/su-pallosu-1200.webp",
+          "width": 1200
+        }
+      ],
+      "sizes": "(max-width: 760px) 92vw, (max-width: 1200px) 44vw, 510px",
+      "caption": "Nearby Putzu Idu on the wider San Vero Milis coast, Sardinia, 2012. Coastal setting; the Su Pallosu cat colony is not shown.",
+      "credit": "trolvag",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "href": "https://commons.wikimedia.org/wiki/File:Putzu_Idu_Spaggia_-_panoramio.jpg"
+    },
+    {
+      "src": "assets/initiative/cat-stories/tala-1200.webp",
+      "width": 901,
+      "height": 1200,
+      "alt": "A garden courtyard with stone paths, architectural fragments and an arcaded building at Agios Neophytos Monastery in Tala, Cyprus; no cats are visible.",
+      "srcset": [
+        {
+          "path": "assets/initiative/cat-stories/tala-480.webp",
+          "width": 360
+        },
+        {
+          "path": "assets/initiative/cat-stories/tala-1200.webp",
+          "width": 901
+        }
+      ],
+      "sizes": "(max-width: 760px) 92vw, (max-width: 1200px) 44vw, 510px",
+      "caption": "Agios Neophytos Monastery courtyard in Tala, 2023. The neighbouring monastery, rather than the cat sanctuary itself.",
+      "credit": "Fry72, Karel Frydrýšek",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "href": "https://commons.wikimedia.org/wiki/File:Agios_Neophytos_Monastery,_Tala,_Cyprus_02.jpg"
+    },
+    {
+      "src": "assets/initiative/cat-stories/tashirojima-1200.webp",
+      "width": 1200,
+      "height": 900,
+      "alt": "Nekotarou, a tabby-and-white cat on Tashirojima, rests with its paws tucked under its body on an outdoor paved surface.",
+      "srcset": [
+        {
+          "path": "assets/initiative/cat-stories/tashirojima-480.webp",
+          "width": 480
+        },
+        {
+          "path": "assets/initiative/cat-stories/tashirojima-1200.webp",
+          "width": 1200
+        }
+      ],
+      "sizes": "(max-width: 760px) 92vw, (max-width: 1200px) 44vw, 510px",
+      "caption": "Nekotarou, a cat on Tashirojima, 2014.",
+      "credit": "暇・カキコ",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "href": "https://commons.wikimedia.org/wiki/File:Nekotarou(a_cat_of_Tashirojima_island).JPG"
+    },
+    {
+      "src": "assets/initiative/cat-stories/houtong-1200.webp",
+      "width": 1200,
+      "height": 800,
+      "alt": "Three cats rest on a lane beside potted plants at Houtong Cat Village in Taiwan.",
+      "srcset": [
+        {
+          "path": "assets/initiative/cat-stories/houtong-480.webp",
+          "width": 480
+        },
+        {
+          "path": "assets/initiative/cat-stories/houtong-1200.webp",
+          "width": 1200
+        }
+      ],
+      "sizes": "(max-width: 760px) 92vw, (max-width: 1200px) 44vw, 510px",
+      "caption": "Three cats at Houtong Cat Village, Taiwan, February 2026.",
+      "credit": "4300streetcar",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "href": "https://commons.wikimedia.org/wiki/File:Cats_at_Houtong_Cat_Village_February_2026.jpg"
+    }
+  ],
+  "values": [
+    "Animal welfare",
+    "Daily care",
+    "Community cats"
+  ],
+  "paragraphs": [
+    "At the Hermitage gates, on the stone steps of Syros and among Rome's ancient ruins, cats live alongside human history. Sometimes they become part of it. People know their names, put them on postcards and dedicate museums and celebrations to them. Behind that affection are people who fill bowls, notice illness and help an animal find a home. Their daily care gives these places their meaning."
+  ],
+  "places": [
+    {
+      "id": "hermitage",
+      "name": "The Hermitage, Saint Petersburg",
+      "region": "Russia",
+      "heading": "Hermitage Cats: Saint Petersburg",
+      "subtitle": "A Tradition Older Than the Museum",
+      "image": {
+        "src": "assets/initiative/cat-stories/hermitage-1200.webp",
+        "width": 1200,
+        "height": 802,
+        "alt": "A tabby-and-white Hermitage cat sits on a stone ledge beside the museum's iron gate in Saint Petersburg.",
+        "srcset": [
+          {
+            "path": "assets/initiative/cat-stories/hermitage-480.webp",
+            "width": 480
+          },
+          {
+            "path": "assets/initiative/cat-stories/hermitage-1200.webp",
+            "width": 1200
+          }
+        ],
+        "sizes": "(max-width: 760px) 92vw, (max-width: 1200px) 44vw, 510px",
+        "caption": "A Hermitage cat beside the museum gate. Saint Petersburg, 2010.",
+        "credit": "ewwl",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "href": "https://commons.wikimedia.org/wiki/File:Hermitage_cat.jpeg"
+      },
+      "count": "Around 50",
+      "countScope": "Museum cats. A figure in 2023 exhibition materials; no verified 2026 census was located.",
+      "paragraphs": [
+        "In 1745, Empress Elizabeth ordered cats to be brought from Kazan to protect palace rooms from rodents. The tradition continued into the life of the Hermitage Museum.",
+        "The cats became a museum symbol, with people responsible for their care, veterinary support and their own celebration, the Day of the Hermitage Cat. Alongside great works of art, there is an enduring place for living animals and their needs."
+      ],
+      "care": "Museum staff and volunteers supporting the Hermitage cats.",
+      "sources": [
+        {
+          "label": "State Hermitage Museum: the historical tradition",
+          "href": "https://media.hermitagemuseum.org/newyear2026/2812"
+        },
+        {
+          "label": "Cultural Primorye: Hermitage cat exhibition, 2023",
+          "href": "https://primcult.ru/events/18648/vystavka-znakomtes-ermiki-ermitazhnye-koty"
+        }
+      ]
+    },
+    {
+      "id": "istanbul",
+      "name": "Istanbul",
+      "region": "Türkiye",
+      "heading": "Istanbul Cats",
+      "subtitle": "Neighbours Known Around the World",
+      "image": {
+        "src": "assets/initiative/cat-stories/istanbul-1200.webp",
+        "width": 1200,
+        "height": 800,
+        "alt": "Cats rest around a painted green shelter beside a stone wall on a street in Istanbul.",
+        "srcset": [
+          {
+            "path": "assets/initiative/cat-stories/istanbul-480.webp",
+            "width": 480
+          },
+          {
+            "path": "assets/initiative/cat-stories/istanbul-1200.webp",
+            "width": 1200
+          }
+        ],
+        "sizes": "(max-width: 760px) 92vw, (max-width: 1200px) 44vw, 510px",
+        "caption": "Street cats and their shelter in Istanbul, 2011.",
+        "credit": "Pelle Sten",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+        "href": "https://commons.wikimedia.org/wiki/File:The_Cats_of_Istanbul.jpg"
+      },
+      "count": "Around 150,000",
+      "countScope": "Street cats across the city. An undated GoTürkiye estimate, checked 24 October 2026; not a census.",
+      "paragraphs": [
+        "In Istanbul, cats are part of everyday neighbourhood life. There is a tangible record of this care: a 1714 engraving depicts a man taking food for cats to the city's market.",
+        "Today, residents leave water and food and provide shelters. A cat can have a place in the life of an entire courtyard through the attention of people who see it at their door every day. That relationship has become one of Istanbul's most recognisable images."
+      ],
+      "care": "Neighbourhood residents, local volunteers and municipal veterinary services.",
+      "sources": [
+        {
+          "label": "GoTürkiye: Istanbul's Friendly Cats",
+          "href": "https://goturkiye.com/blog/all-you-need-to-know-about-istanbuls-friendly-cats"
+        },
+        {
+          "label": "Detroit Institute of Arts: the 1714 engraving",
+          "href": "https://dia.org/collection/dgi-guerdgi-albanian-who-feeds-cats-sheep-liver/60773"
+        }
+      ]
+    },
+    {
+      "id": "rome",
+      "name": "Torre Argentina, Rome",
+      "region": "Italy",
+      "heading": "Torre Argentina Cats in Rome",
+      "subtitle": "A Home Among Ancient Temples",
+      "image": {
+        "src": "assets/initiative/cat-stories/rome-1200.webp",
+        "width": 1200,
+        "height": 900,
+        "alt": "A cat walks between ancient brick and stone ruins at Largo di Torre Argentina in Rome.",
+        "srcset": [
+          {
+            "path": "assets/initiative/cat-stories/rome-480.webp",
+            "width": 480
+          },
+          {
+            "path": "assets/initiative/cat-stories/rome-1200.webp",
+            "width": 1200
+          }
+        ],
+        "sizes": "(max-width: 760px) 92vw, (max-width: 1200px) 44vw, 510px",
+        "caption": "A cat among the ruins of Largo di Torre Argentina, Rome.",
+        "credit": "Wknight94",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "href": "https://commons.wikimedia.org/wiki/File:Largo_di_Torre_Argentina_cat_7.jpg"
+      },
+      "count": "Over 150 in a 2024 account",
+      "countScope": "Sanctuary cats described in a published visitor account. A secondary-source indication, not a verified 2026 total.",
+      "paragraphs": [
+        "After excavations in 1929, stray cats found shelter among the ruins of Largo di Torre Argentina. Local women, known in Italy as gattare, brought them food. In 1993, Lia Dequel and Silvia Viviani began the work that grew into the well-known sanctuary.",
+        "Its story now includes care for sick and older cats, sterilisation and adoption. Among stones that preserve ancient Rome, an everyday story of human commitment continues."
+      ],
+      "care": "Torre Argentina Cat Sanctuary and its volunteers.",
+      "sources": [
+        {
+          "label": "Torre Argentina Cat Sanctuary: Who We Are",
+          "href": "https://www.gattidiroma.net/web/en/who-we-are/"
+        },
+        {
+          "label": "Our Little Lifestyle: sanctuary visit, updated 14 July 2024",
+          "href": "https://ourlittlelifestyle.com/cats-in-rome/"
+        }
+      ]
+    },
+    {
+      "id": "kotor",
+      "name": "Kotor",
+      "region": "Montenegro",
+      "heading": "Kotor: The City of Cats",
+      "subtitle": "A Feline Presence in an Old Port",
+      "image": {
+        "src": "assets/initiative/cat-stories/kotor-1200.webp",
+        "width": 1200,
+        "height": 900,
+        "alt": "A tabby-and-white cat sits against a stone wall beside a paved lane in Kotor's Old Town.",
+        "srcset": [
+          {
+            "path": "assets/initiative/cat-stories/kotor-480.webp",
+            "width": 480
+          },
+          {
+            "path": "assets/initiative/cat-stories/kotor-1200.webp",
+            "width": 1200
+          }
+        ],
+        "sizes": "(max-width: 760px) 92vw, (max-width: 1200px) 44vw, 510px",
+        "caption": "A cat in the Old Town of Kotor, 2018.",
+        "credit": "Wolfgang Sauber",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "href": "https://commons.wikimedia.org/wiki/File:Kotor_-_Katze.jpg"
+      },
+      "count": "Hundreds in a 2023 description",
+      "countScope": "Old Town cats in a travel feature. No reliable current census was located; Kotor Kitties' sterilisation totals are not a city population count.",
+      "paragraphs": [
+        "Cats on its stone lanes have become an unofficial symbol of Kotor. Local tradition connects their arrival with visiting ships; this is a story passed down, rather than a documented origin. The Cats Museum opened in the Old Town in 2013.",
+        "Kotor Kitties began in 2018 as a small effort to sterilise cats. Behind the familiar feline shapes beside the city walls is the shared work of residents, volunteers and veterinarians."
+      ],
+      "care": "Residents, Kotor Kitties / Kotorske Mačke and local veterinarians.",
+      "sources": [
+        {
+          "label": "Kotor Kitties: Our Story",
+          "href": "https://kotorkitties.org/en/our-story/"
+        },
+        {
+          "label": "Cats Museum: official guide",
+          "href": "https://www.catsmuseum.org/wp-content/uploads/02-NOTES-INGLESE.pdf"
+        },
+        {
+          "label": "Montenegro Travel: feature dated 21 April 2023",
+          "href": "https://www.montenegro.travel/en/plan-your-stay-in-montenegro/useful-tips-and-facts/news/welcome-to-kotor-montenegro-s-medieval-town-that-s-a-cat-lover-s-dream-2023-04-21"
+        }
+      ]
+    },
+    {
+      "id": "iraklia",
+      "name": "Iraklia",
+      "region": "Greece",
+      "heading": "Cats of Iraklia",
+      "subtitle": "Care After the Summer Ends",
+      "image": {
+        "src": "assets/initiative/cat-stories/iraklia-1200.webp",
+        "width": 1200,
+        "height": 800,
+        "alt": "Fishing boats lie beside the waterfront path at Agios Georgios harbour on Iraklia, Greece; no cats are visible.",
+        "srcset": [
+          {
+            "path": "assets/initiative/cat-stories/iraklia-480.webp",
+            "width": 480
+          },
+          {
+            "path": "assets/initiative/cat-stories/iraklia-1200.webp",
+            "width": 1200
+          }
+        ],
+        "sizes": "(max-width: 760px) 92vw, (max-width: 1200px) 44vw, 510px",
+        "caption": "Agios Georgios harbour, Iraklia, 2019. A photograph of the setting; no cats are visible.",
+        "credit": "Zde",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "href": "https://commons.wikimedia.org/wiki/File:Ag._Georgios,_Irakleia,_the_port,_190171.jpg"
+      },
+      "count": "More than 200 supported cats",
+      "countScope": "Sterilised cats supported by Cats of Iraklia, as reported by partner GCWS; checked 24 October 2026. A project figure, not an island census.",
+      "paragraphs": [
+        "On this small Cycladic island, cats live around the port, villages and beaches. For Cats of Iraklia, the defining question was who would feed and treat them after the visitors left. Local nurse Kyriaki-Kia founded the project in 2017.",
+        "Behind the beautiful island setting is year-round work: winter feeding, sterilisation and journeys to a veterinarian on neighbouring Naxos. A few committed people can make a lasting difference to animals' lives."
+      ],
+      "care": "Cats of Iraklia, island volunteers and the Greek Cat Welfare Society.",
+      "sources": [
+        {
+          "label": "Greek Cat Welfare Society: Cats of Iraklia",
+          "href": "https://greekcats.org.uk/cats-of-iraklia/"
+        },
+        {
+          "label": "Traveling Cats: project interview, 15 September 2026",
+          "href": "https://traveling-cats.com/2026/09/cats-of-iraklia/"
+        }
+      ]
+    },
+    {
+      "id": "syros",
+      "name": "Syros",
+      "region": "Greece",
+      "heading": "The Cats of Syros",
+      "subtitle": "One Kitten Changes a Home",
+      "image": {
+        "src": "assets/initiative/cat-stories/syros-1200.webp",
+        "width": 1200,
+        "height": 675,
+        "alt": "A black-and-white cat and a ginger cat walk over shallow stone steps in an alley on Syros.",
+        "srcset": [
+          {
+            "path": "assets/initiative/cat-stories/syros-480.webp",
+            "width": 480
+          },
+          {
+            "path": "assets/initiative/cat-stories/syros-1200.webp",
+            "width": 1200
+          }
+        ],
+        "sizes": "(max-width: 760px) 92vw, (max-width: 1200px) 44vw, 510px",
+        "caption": "Cats on the stone steps of Syros, 2021.",
+        "credit": "Kokiniatsi27",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "href": "https://commons.wikimedia.org/wiki/File:Syros,_the_cats_on_the_stairs.jpg"
+      },
+      "count": "70 Syros Cats residents",
+      "countScope": "The site's population in its 2024 year-end review. The project separately fed 70 street cats in Kini, rising to 100 in winter. No island-wide total is established.",
+      "paragraphs": [
+        "In 2010, Joan Bowell and her husband Richard had just settled into their home on Syros when a sick kitten appeared in the garden. Helping that kitten became the beginning of God's Little People Cat Rescue. Joan rescued 30 cats in the first year.",
+        "Syros Cats also works on the island, caring for resident animals, feeding street cats and arranging sterilisation. Behind the familiar pictures of cats on island steps are people who have made care part of their daily lives."
+      ],
+      "care": "Syros Cats, God's Little People Cat Rescue and local caretakers.",
+      "sources": [
+        {
+          "label": "God's Little People Cat Rescue: About Us",
+          "href": "https://godslittlepeoplecatrescue.org/pages/about-us"
+        },
+        {
+          "label": "Syros Cats: Looking Back and Looking Forward",
+          "href": "https://syroscats.com/looking-back-and-looking-forward/"
+        }
+      ]
+    },
+    {
+      "id": "su-pallosu",
+      "name": "Su Pallosu, Sardinia",
+      "region": "Italy",
+      "heading": "Su Pallosu Cats: Sardinia",
+      "subtitle": "A Shoreline Story That Continues Through Care",
+      "image": {
+        "src": "assets/initiative/cat-stories/su-pallosu-1200.webp",
+        "width": 1200,
+        "height": 787,
+        "alt": "Sandy shoreline at Putzu Idu on Sardinia's San Vero Milis coast, with shallow waves, small yellow boats, coastal houses and distant cliffs.",
+        "srcset": [
+          {
+            "path": "assets/initiative/cat-stories/su-pallosu-480.webp",
+            "width": 480
+          },
+          {
+            "path": "assets/initiative/cat-stories/su-pallosu-1200.webp",
+            "width": 1200
+          }
+        ],
+        "sizes": "(max-width: 760px) 92vw, (max-width: 1200px) 44vw, 510px",
+        "caption": "Nearby Putzu Idu on the wider San Vero Milis coast, Sardinia, 2012. Coastal setting; the Su Pallosu cat colony is not shown.",
+        "credit": "trolvag",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "href": "https://commons.wikimedia.org/wiki/File:Putzu_Idu_Spaggia_-_panoramio.jpg"
+      },
+      "count": "17 rescued cats",
+      "countScope": "Caretaker's statement of 5 February 2026. All had been abandoned here; this is not the former native colony's population.",
+      "paragraphs": [
+        "Su Pallosu became known through photographs of cats beside the sea. Behind those images are the Atzori family's home and years of care. In early 2026, the caretaker reported that the original locally born colony had come to an end after its last native cat died.",
+        "Rescued cats, abandoned here in earlier years, remain in daily care with Andrea Atzori. That care continues for the cats living here today."
+      ],
+      "care": "Andrea Atzori; the I Gatti di Su Pallosu project history.",
+      "sources": [
+        {
+          "label": "I Gatti di Su Pallosu: statement of 5 February 2026",
+          "href": "https://www.gattisupallosu.org/fine-della-colonia-di-fatto-mai-riconosciuta/"
+        },
+        {
+          "label": "I Gatti di Su Pallosu: current care arrangements",
+          "href": "https://www.gattisupallosu.org/comevisitareoasi/"
+        }
+      ]
+    },
+    {
+      "id": "tala",
+      "name": "Tala, Paphos District",
+      "region": "Cyprus",
+      "heading": "Tala Cats: Paphos, Cyprus",
+      "subtitle": "From Feeding Near a Monastery to a Sanctuary",
+      "image": {
+        "src": "assets/initiative/cat-stories/tala-1200.webp",
+        "width": 901,
+        "height": 1200,
+        "alt": "A garden courtyard with stone paths, architectural fragments and an arcaded building at Agios Neophytos Monastery in Tala, Cyprus; no cats are visible.",
+        "srcset": [
+          {
+            "path": "assets/initiative/cat-stories/tala-480.webp",
+            "width": 360
+          },
+          {
+            "path": "assets/initiative/cat-stories/tala-1200.webp",
+            "width": 901
+          }
+        ],
+        "sizes": "(max-width: 760px) 92vw, (max-width: 1200px) 44vw, 510px",
+        "caption": "Agios Neophytos Monastery courtyard in Tala, 2023. The neighbouring monastery, rather than the cat sanctuary itself.",
+        "credit": "Fry72, Karel Frydrýšek",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "href": "https://commons.wikimedia.org/wiki/File:Agios_Neophytos_Monastery,_Tala,_Cyprus_02.jpg"
+      },
+      "count": "More than 500 in care",
+      "countScope": "According to the Tala Cats website, checked 24 October 2026. It uses both 'approximately 500' and '500+'; no census date is given.",
+      "paragraphs": [
+        "Stray cats had long lived near Agios Neophytos Monastery. In 2011, Dawn and Mark Foote began visiting once a week to feed them. Care soon became a daily commitment, and dozens of cats needing treatment were staying in their home.",
+        "Donations made fencing possible in 2013. Tala Cats gradually developed into a sanctuary with shelters and separate spaces for vulnerable animals. A large care project grew from a simple commitment to return and help again."
+      ],
+      "care": "Tala Cats, Dawn and Mark Foote, staff and volunteers.",
+      "sources": [
+        {
+          "label": "Tala Cats: history, care and population",
+          "href": "https://www.talacats.com/"
+        }
+      ]
+    },
+    {
+      "id": "tashirojima",
+      "name": "Tashirojima",
+      "region": "Japan",
+      "heading": "Tashirojima Cat Island",
+      "subtitle": "An Island with a Cat Shrine",
+      "image": {
+        "src": "assets/initiative/cat-stories/tashirojima-1200.webp",
+        "width": 1200,
+        "height": 900,
+        "alt": "Nekotarou, a tabby-and-white cat on Tashirojima, rests with its paws tucked under its body on an outdoor paved surface.",
+        "srcset": [
+          {
+            "path": "assets/initiative/cat-stories/tashirojima-480.webp",
+            "width": 480
+          },
+          {
+            "path": "assets/initiative/cat-stories/tashirojima-1200.webp",
+            "width": 1200
+          }
+        ],
+        "sizes": "(max-width: 760px) 92vw, (max-width: 1200px) 44vw, 510px",
+        "caption": "Nekotarou, a cat on Tashirojima, 2014.",
+        "credit": "暇・カキコ",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "href": "https://commons.wikimedia.org/wiki/File:Nekotarou(a_cat_of_Tashirojima_island).JPG"
+      },
+      "count": "More than 100",
+      "countScope": "Island-wide figure in a Japanese transport bureau report dated 17 March 2026. A rounded description, not a published individual register.",
+      "paragraphs": [
+        "Neko Jinja, a cat shrine, stands near the centre of Tashirojima. Local tradition describes cats as guardians of a good catch, a story preserved by Ishinomaki City as part of island culture.",
+        "Island residents feed and look after the cats. A 2026 government visitor project explains that tourists must not add their own feeding, so the residents can maintain managed care. Respect for this place includes listening to the people who live with its animals throughout the year."
+      ],
+      "care": "Island residents and local partners in care and visitor education.",
+      "sources": [
+        {
+          "label": "Ishinomaki City: Tashirojima",
+          "href": "https://www.city.ishinomaki.lg.jp/cont/10053500/0050/3639/3639.html"
+        },
+        {
+          "label": "Tohoku Transport Bureau: 17 March 2026 report, page 4",
+          "href": "https://wwwtb.mlit.go.jp/tohoku/content/000371166.pdf"
+        }
+      ]
+    },
+    {
+      "id": "houtong",
+      "name": "Houtong, New Taipei",
+      "region": "Taiwan",
+      "heading": "Houtong Cat Village",
+      "subtitle": "A New Chapter for a Mining Village",
+      "image": {
+        "src": "assets/initiative/cat-stories/houtong-1200.webp",
+        "width": 1200,
+        "height": 800,
+        "alt": "Three cats rest on a lane beside potted plants at Houtong Cat Village in Taiwan.",
+        "srcset": [
+          {
+            "path": "assets/initiative/cat-stories/houtong-480.webp",
+            "width": 480
+          },
+          {
+            "path": "assets/initiative/cat-stories/houtong-1200.webp",
+            "width": 1200
+          }
+        ],
+        "sizes": "(max-width: 760px) 92vw, (max-width: 1200px) 44vw, 510px",
+        "caption": "Three cats at Houtong Cat Village, Taiwan, February 2026.",
+        "credit": "4300streetcar",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+        "href": "https://commons.wikimedia.org/wiki/File:Cats_at_Houtong_Cat_Village_February_2026.jpg"
+      },
+      "count": "172 street cats in 2024",
+      "countScope": "Official statement of 8 April 2024. A new count was announced in February 2026; no verified replacement total was located.",
+      "paragraphs": [
+        "As the coal industry declined, Houtong lost residents. Its cats, photographs shared by enthusiasts and the work of volunteers helped the village gain a new identity. The district's account links the cat village's emergence with improvements to the surroundings and care for the animals.",
+        "Houtong now has a Cat Office. In February 2026, Taiwan SPCA resumed operating it with local volunteers and the city's animal protection service. Each day begins with feeding and a roll-call of cats known by name."
+      ],
+      "care": "Houtong Cat Lovers' Society, Taiwan SPCA and New Taipei's animal protection office.",
+      "sources": [
+        {
+          "label": "Ruifang District: history of the cat village",
+          "href": "https://www.ruifang.ntpc.gov.tw/home.jsp?id=4bb46f3916aa92d4"
+        },
+        {
+          "label": "New Taipei City: population, 8 April 2024",
+          "href": "https://www.ntpc.gov.tw/ch/home.jsp?dataserno=0cbc3d4119935e065659cd75518394e1&id=e8ca970cde5c00e1"
+        },
+        {
+          "label": "New Taipei City: care and recount, 22 February 2026",
+          "href": "https://www.ntpc.gov.tw/ch/home.jsp?dataserno=202602140001&id=28"
+        }
+      ]
+    }
+  ],
+  "countNote": "Every figure has a date and a defined scope. City estimates, sanctuary residents and cats supported by a project are different populations. Where no recent census was found, this is stated explicitly.",
+  "closingHeading": "The Care That Continues After the Photograph",
+  "closing": "Each story continues through ordinary acts: clean water, a safe place to sleep, sterilisation, vaccination, relief from pain and the search for a home. Respect for animals becomes real through these decisions. For BHOC Veterinary, this is where a story that matters begins: with attention to an individual life and responsibility for its welfare.",
+  "principle": "Respect for animals becomes real through daily care.",
+  "sourcesLabel": "Sources and local care organisations",
+  "sources": [
+    {
+      "label": "State Hermitage Museum: the historical tradition",
+      "href": "https://media.hermitagemuseum.org/newyear2026/2812"
+    },
+    {
+      "label": "Cultural Primorye: Hermitage cat exhibition, 2023",
+      "href": "https://primcult.ru/events/18648/vystavka-znakomtes-ermiki-ermitazhnye-koty"
+    },
+    {
+      "label": "GoTürkiye: Istanbul's Friendly Cats",
+      "href": "https://goturkiye.com/blog/all-you-need-to-know-about-istanbuls-friendly-cats"
+    },
+    {
+      "label": "Detroit Institute of Arts: the 1714 engraving",
+      "href": "https://dia.org/collection/dgi-guerdgi-albanian-who-feeds-cats-sheep-liver/60773"
+    },
+    {
+      "label": "Torre Argentina Cat Sanctuary: Who We Are",
+      "href": "https://www.gattidiroma.net/web/en/who-we-are/"
+    },
+    {
+      "label": "Our Little Lifestyle: sanctuary visit, updated 14 July 2024",
+      "href": "https://ourlittlelifestyle.com/cats-in-rome/"
+    },
+    {
+      "label": "Kotor Kitties: Our Story",
+      "href": "https://kotorkitties.org/en/our-story/"
+    },
+    {
+      "label": "Cats Museum: official guide",
+      "href": "https://www.catsmuseum.org/wp-content/uploads/02-NOTES-INGLESE.pdf"
+    },
+    {
+      "label": "Montenegro Travel: feature dated 21 April 2023",
+      "href": "https://www.montenegro.travel/en/plan-your-stay-in-montenegro/useful-tips-and-facts/news/welcome-to-kotor-montenegro-s-medieval-town-that-s-a-cat-lover-s-dream-2023-04-21"
+    },
+    {
+      "label": "Greek Cat Welfare Society: Cats of Iraklia",
+      "href": "https://greekcats.org.uk/cats-of-iraklia/"
+    },
+    {
+      "label": "Traveling Cats: project interview, 15 September 2026",
+      "href": "https://traveling-cats.com/2026/09/cats-of-iraklia/"
+    },
+    {
+      "label": "God's Little People Cat Rescue: About Us",
+      "href": "https://godslittlepeoplecatrescue.org/pages/about-us"
+    },
+    {
+      "label": "Syros Cats: Looking Back and Looking Forward",
+      "href": "https://syroscats.com/looking-back-and-looking-forward/"
+    },
+    {
+      "label": "I Gatti di Su Pallosu: statement of 5 February 2026",
+      "href": "https://www.gattisupallosu.org/fine-della-colonia-di-fatto-mai-riconosciuta/"
+    },
+    {
+      "label": "I Gatti di Su Pallosu: current care arrangements",
+      "href": "https://www.gattisupallosu.org/comevisitareoasi/"
+    },
+    {
+      "label": "Tala Cats: history, care and population",
+      "href": "https://www.talacats.com/"
+    },
+    {
+      "label": "Ishinomaki City: Tashirojima",
+      "href": "https://www.city.ishinomaki.lg.jp/cont/10053500/0050/3639/3639.html"
+    },
+    {
+      "label": "Tohoku Transport Bureau: 17 March 2026 report, page 4",
+      "href": "https://wwwtb.mlit.go.jp/tohoku/content/000371166.pdf"
+    },
+    {
+      "label": "Ruifang District: history of the cat village",
+      "href": "https://www.ruifang.ntpc.gov.tw/home.jsp?id=4bb46f3916aa92d4"
+    },
+    {
+      "label": "New Taipei City: population, 8 April 2024",
+      "href": "https://www.ntpc.gov.tw/ch/home.jsp?dataserno=0cbc3d4119935e065659cd75518394e1&id=e8ca970cde5c00e1"
+    },
+    {
+      "label": "New Taipei City: care and recount, 22 February 2026",
+      "href": "https://www.ntpc.gov.tw/ch/home.jsp?dataserno=202602140001&id=28"
+    }
+  ],
+  "supportAdvice": [
+    "Read local visiting and feeding guidance. On Tashirojima, residents provide managed feeding and visitors are asked not to add food.",
+    "Support recognised local groups through their official channels, including sterilisation, vaccination and veterinary-care programmes.",
+    "Give cats space to rest and move away, and follow each site’s rules for photography and interaction.",
+    "Contact the local rescue organisation about adoption or volunteering, so help matches the animals’ needs."
+  ],
+  "relatedLinks": [
+    {
+      "label": "Hachikō: loyalty, dignity and respect",
+      "href": "hachiko.html"
+    },
+    {
+      "label": "Feline blood compatibility and donor welfare",
+      "href": "../feline-blood-transfusion-compatibility.html"
+    },
+    {
+      "label": "Explore the BHOC Initiative",
+      "href": "index.html"
+    },
+    {
+      "label": "Contact BHOC Veterinary",
+      "href": "../contact.html"
+    }
+  ],
+  "photographyNote": "The photographs document different years. Iraklia is shown through Agios Georgios harbour, and Tala through its neighbouring monastery. The Sardinian setting photograph shows nearby Putzu Idu on the wider San Vero Milis coast, rather than Su Pallosu or its cats. Each photograph retains its credited Creative Commons licence."
+}

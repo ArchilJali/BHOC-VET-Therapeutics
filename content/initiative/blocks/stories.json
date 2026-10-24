@@ -7,6 +7,26 @@
   },
   "cards": [
     {
+      "slug": "cat-cities-and-islands",
+      "href": "cat-cities-and-islands.html",
+      "image": {
+        "src": "assets/initiative/cat-stories/hermitage-1200.webp",
+        "width": 1200,
+        "height": 802,
+        "alt": "A tabby-and-white Hermitage cat sits on a stone ledge beside the museum's iron gate in Saint Petersburg.",
+        "caption": "A Hermitage cat beside the museum gate. Saint Petersburg, 2010.",
+        "credit": "ewwl",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "href": "https://commons.wikimedia.org/wiki/File:Hermitage_cat.jpeg"
+      },
+      "overline": "Animal welfare · 24 October 2026",
+      "title": "Cities and Islands Where Cats Belong",
+      "text": "Ten places where cats became part of local history, and the people whose daily care gives those stories meaning.",
+      "phrase": "Respect for animals becomes real through daily care.",
+      "actionLabel": "Read the illustrated story"
+    },
+    {
       "slug": "cop17-species-recovery-veterinary-care",
       "href": "cop17-species-recovery-veterinary-care.html",
       "image": {

@@ -15,8 +15,25 @@
     }
   ],
   "datePublished": "2026-10-13",
-  "dateModified": "2026-10-23",
+  "dateModified": "2026-10-24",
   "entries": [
+    {
+      "id": "cat-cities-and-islands-20261024",
+      "date": "2026-10-24",
+      "displayDate": "24 October 2026",
+      "title": "Cat cities and islands: illustrated animal-welfare story added",
+      "text": "Added ten place-specific stories, including the Hermitage cats, with real photographs, dated population figures, local care organisations and source links. The article is linked from Stories That Matter, Initiative and Veterinary News.",
+      "links": [
+        {
+          "label": "Read the illustrated story",
+          "href": "./initiative/cat-cities-and-islands.html"
+        },
+        {
+          "label": "Browse Stories That Matter",
+          "href": "./initiative/stories.html"
+        }
+      ]
+    },
     {
       "id": "tracs-transfusion-evidence-20261023",
       "date": "2026-10-23",
