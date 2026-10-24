@@ -275,6 +275,18 @@ for(const absolute of generatedHtml){
   const html=await fs.readFile(absolute,'utf8');
   const directives=[...html.matchAll(/<meta\b(?=[^>]*\bname=["']yandex["'])(?=[^>]*\bcontent=["']noindex["'])[^>]*>/gi)];
   assert.equal(directives.length,1,`${relative}: exactly one Yandex-only noindex directive required`);
+  for(const block of html.matchAll(/<script type="application\/ld\+json"[^>]*>([\s\S]*?)<\/script>/g)){
+    const structured=JSON.parse(block[1]);
+    const nodes=structured['@graph']||[structured];
+    for(const article of nodes.filter(node=>node['@type']==='Article')){
+      assert.ok(!Object.hasOwn(article,'breadcrumb'),`${relative}: breadcrumb belongs on WebPage, not Article`);
+      if(!nodes.some(node=>node['@type']==='WebSite'&&node['@id']==='https://bhocvet.com/#website'))continue;
+      const page=nodes.find(node=>node['@id']===article.mainEntityOfPage?.['@id']);
+      assert.equal(page?.['@type'],'WebPage',`${relative}: article references its WebPage`);
+      assert.equal(page.mainEntity?.['@id'],article['@id'],`${relative}: WebPage references its article`);
+      assert.ok(nodes.some(node=>node['@type']==='BreadcrumbList'&&node['@id']===page.breadcrumb?.['@id']),`${relative}: WebPage references its breadcrumb`);
+    }
+  }
 }
 
 console.log(`Passed: ${expectedPages.length} indexed BHOC Veterinary pages, Initiative, migration redirects, ${generatedHtml.length} Yandex-blocked HTML files, schema, links, sitemap and retired-Evidence cleanup.`);
