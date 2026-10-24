@@ -68,7 +68,7 @@ const istanbulOxyglobinStory={
   },
   credit:{label:'Photo: Istanbul University · official university source',href:'https://kalite.istanbul.edu.tr/tr/haber/universitemiz-2021-yili-qs-alan-bazli-dunya-universiteleri-siralamasinda-basaris-2D006F00690059004D002D005200580069007700500039007900700046006200610041004F003200370077003200'},
   sourceName:'Istanbul University · Sıvı Sağaltımı [Fluid Therapy] · Prof. Dr. Tarık Bilal',
-  link:{label:'Read the BHOC VET evidence note',href:'https://archiljali.github.io/BHOC-VET-platform/related-evidence.html#bilal-fluid-therapy-oxyglobin'},
+  link:{label:'Read the BHOC VET evidence note',href:'https://bhoctherapeutics.com/evidence/library/veterinary/direct-studies/related-evidence.html#bilal-fluid-therapy-oxyglobin'},
   contextLink:{label:'University digital copy',href:'https://nek.istanbul.edu.tr/ekos/KITAP/2011-19495.pdf'},
   keywords:['Oxyglobin','HBOC','hemoglobin-based oxygen carrier','veterinary fluid therapy','veterinary oxygen transport','hemorrhagic shock','veterinary anemia','Istanbul University','Tarık Bilal','oxygen-carrying capacity','BHOC Veterinary','Precision Oxygen Therapeutics']
 };
