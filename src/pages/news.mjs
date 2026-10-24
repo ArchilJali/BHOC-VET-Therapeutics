@@ -196,6 +196,11 @@ export default rawPage=>{const page=enrichPage(rawPage);return `<style>
 @media(max-width:700px){#k9-saxon-oxyglobin-2002 .story-document-links{justify-content:flex-start;text-align:left;padding:12px 16px}}
 #k9-saxon-oxyglobin-2002 .story-copy{max-width:960px;padding:24px clamp(20px,3vw,36px) 34px}
 
+#cat-cities-and-islands .story-media{align-self:start;min-height:0;aspect-ratio:auto;background:#fff}
+#cat-cities-and-islands .story-media img{height:auto;min-height:0;aspect-ratio:auto}
+#cat-cities-and-islands .story-copy{align-self:center}
+#cat-cities-and-islands .story-credit{position:static;display:block;max-width:none;border-radius:0;padding:9px 12px}
+
 .news-feed-tools{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin:0 0 18px;padding:13px 15px;border:1px solid var(--line);border-radius:14px;background:#fff}
 .news-feed-search{flex:1 1 280px}.news-feed-search input{width:100%;min-height:42px;padding:9px 12px;border:1px solid #cbd8d1;border-radius:10px;background:#fff;color:var(--ink);font:inherit;font-size:13px}
 .news-feed-search input:focus{outline:2px solid rgba(78,139,112,.18);outline-offset:2px;border-color:var(--accent)}

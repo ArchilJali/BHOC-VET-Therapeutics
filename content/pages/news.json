@@ -121,32 +121,15 @@
       "region": "Global",
       "category": "Animal welfare · Stories That Matter",
       "title": "Cities and Islands Where Cats Belong",
-      "text": "From the Hermitage to Tashirojima, ten illustrated stories explore how cats became part of local history, with dated population figures and links to the people caring for them.",
-      "why": "Recognising the daily work of residents, volunteers and veterinary teams caring for community cats.",
+      "text": "From the Hermitage to Istanbul and Tashirojima, discover ten cat cities and islands, their histories and the people who care for their cats.",
       "image": {
-        "src": "assets/initiative/cat-stories/hermitage-1200.webp",
-        "width": 1200,
-        "height": 802,
-        "alt": "A tabby-and-white Hermitage cat sits on a stone ledge beside the museum's iron gate in Saint Petersburg.",
-        "srcset": [
-          {
-            "path": "assets/initiative/cat-stories/hermitage-480.webp",
-            "width": 480
-          },
-          {
-            "path": "assets/initiative/cat-stories/hermitage-1200.webp",
-            "width": 1200
-          }
-        ],
-        "sizes": "(max-width: 760px) 92vw, (max-width: 1200px) 44vw, 510px",
-        "caption": "A Hermitage cat beside the museum gate. Saint Petersburg, 2010.",
-        "credit": "ewwl",
-        "license": "CC BY-SA 3.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-        "href": "https://commons.wikimedia.org/wiki/File:Hermitage_cat.jpeg"
+        "url": "assets/initiative/cat-stories/cat-cities-islands-hermitage-istanbul-bhoc-veterinary-collage.jpg",
+        "alt": "Collage of cats from the Hermitage, Istanbul, Rome, Kotor, Syros, Tashirojima and Houtong, with views of Iraklia harbour, the San Vero Milis coast and Tala monastery. Title: Cities and Islands Where Cats Belong.",
+        "width": 1122,
+        "height": 1402
       },
       "link": {
-        "label": "Read the illustrated story",
+        "label": "Read the full illustrated story",
         "href": "./initiative/cat-cities-and-islands.html"
       },
       "keywords": [
@@ -162,7 +145,12 @@
         "Tashirojima cat island",
         "Houtong Cat Village",
         "community cat welfare"
-      ]
+      ],
+      "article": true,
+      "credit": {
+        "label": "Collage: BHOC Veterinary · CC BY-SA 4.0 · Photo credits",
+        "href": "./initiative/image-rights.html#cat-cities-collage"
+      }
     },
     {
       "id": "tracs-transfusion-safety-dogs-cats",
