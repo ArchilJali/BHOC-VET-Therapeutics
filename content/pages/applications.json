@@ -107,5 +107,48 @@
       "label": "Contact our team",
       "href": "contact.html?interest=research&topic=veterinary-research"
     }
-  }
+  },
+  "topicSections": [
+    {
+      "id": "care-research-routes",
+      "title": "Species, donor access and research routes",
+      "paragraphs": [
+        "Follow the care question to its evidence: donor access and compatibility, historical product findings, or a defined veterinary research proposal."
+      ],
+      "links": [
+        {
+          "label": "Dog blood donors and transfusion",
+          "href": "./canine-blood-transfusion.html",
+          "detail": ""
+        },
+        {
+          "label": "Cat blood compatibility and donor welfare",
+          "href": "./feline-blood-transfusion-compatibility.html",
+          "detail": ""
+        },
+        {
+          "label": "Horse blood access and transfusion",
+          "href": "./equine-blood-transfusion.html",
+          "detail": ""
+        },
+        {
+          "label": "Oxyglobin evidence and canine anemia",
+          "href": "./oxyglobin.html",
+          "detail": ""
+        },
+        {
+          "label": "Veterinary oncology research questions",
+          "href": "./veterinary-oncology-hypoxia.html",
+          "detail": ""
+        },
+        {
+          "label": "All veterinary research topics",
+          "href": "./topics.html",
+          "detail": ""
+        }
+      ],
+      "bullets": []
+    }
+  ],
+  "dateModified": "2026-10-25"
 }

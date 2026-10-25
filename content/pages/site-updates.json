@@ -15,8 +15,25 @@
     }
   ],
   "datePublished": "2026-10-13",
-  "dateModified": "2026-10-24",
+  "dateModified": "2026-10-25",
   "entries": [
+    {
+      "id": "research-topic-routes-20261025",
+      "date": "2026-10-25",
+      "displayDate": "25 October 2026",
+      "title": "Species and oxygen-delivery research routes connected",
+      "text": "Added source-linked guides to Oxyglobin, canine and equine blood access, and veterinary oncology research. Existing feline, transfusion-safety, donor-welfare and CRADA resources are connected through a topic guide. Dog, Cat and Camel links now open substantive care or research destinations.",
+      "links": [
+        {
+          "label": "Explore veterinary research topics",
+          "href": "topics.html"
+        },
+        {
+          "label": "Oxyglobin evidence and history",
+          "href": "oxyglobin.html"
+        }
+      ]
+    },
     {
       "id": "cat-cities-and-islands-20261024",
       "date": "2026-10-24",

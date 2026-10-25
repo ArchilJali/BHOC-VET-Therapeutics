@@ -12,7 +12,7 @@
       "id": "dog",
       "name": "Dog",
       "description": "Multiple blood group systems",
-      "href": "#species-dog",
+      "href": "./canine-blood-transfusion.html",
       "image": {
         "src": "assets/rem-wirehaired-dachshund-sketch.webp",
         "alt": "Loose pencil sketch of Rem, a wirehaired dachshund",
@@ -24,7 +24,7 @@
       "id": "cat",
       "name": "Cat",
       "description": "Three major blood types and additional antigens",
-      "href": "#species-cat",
+      "href": "./feline-blood-transfusion-compatibility.html",
       "image": {
         "src": "assets/cat-loose-pencil-sketch.webp",
         "alt": "Loose pencil sketch of a tabby cat",
@@ -36,7 +36,7 @@
       "id": "camel",
       "name": "Camel",
       "description": "Adaptations for arid environments",
-      "href": "#species-camel",
+      "href": "./science.html#camelid-research",
       "image": {
         "src": "assets/camel-loose-pencil-sketch.webp",
         "alt": "Loose pencil sketch of a camel",

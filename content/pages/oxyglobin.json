@@ -1,0 +1,141 @@
+{
+  "slug": "oxyglobin",
+  "navLabel": "Oxyglobin: veterinary evidence and history",
+  "navActive": "science.html",
+  "breadcrumbs": [
+    {
+      "label": "Research topics",
+      "href": "topics.html"
+    }
+  ],
+  "title": "Oxyglobin: Veterinary Evidence and History | BHOC Vet",
+  "description": "Explore historical Oxyglobin evidence in canine anemia, the controlled FDA record, feline case reports and the limits of translating those findings to BHOC.",
+  "schemaType": "WebPage",
+  "datePublished": "2026-10-25",
+  "dateModified": "2026-10-25",
+  "eyebrow": "Veterinary evidence and research",
+  "heading": "Oxyglobin: veterinary evidence and history",
+  "lead": "Oxyglobin, hemoglobin glutamer-200 (bovine), is a historical veterinary hemoglobin-based oxygen carrier. This guide connects its controlled canine record, clinical publications and descriptive case archive.",
+  "topicSections": [
+    {
+      "id": "product-history",
+      "title": "A product-specific veterinary precedent",
+      "paragraphs": [
+        "The veterinary regulatory material records the 1998 FDA approval of Oxyglobin for anemia in dogs under NADA 141-067. This is a historical product- and species-specific precedent. It does not establish current supply or approval of the BHOC platform.",
+        "Oxyglobin, Hemopure/HBOC-201 and BHOC should remain distinguishable in a publication or research proposal. Their names, formulations, study populations and regulatory histories cannot be substituted for one another."
+      ],
+      "links": [
+        {
+          "label": "Original FDA record and controlled evidence",
+          "href": "https://bhoctherapeutics.com/evidence/library/veterinary/Vet-FDA-registry.html",
+          "detail": ""
+        },
+        {
+          "label": "Hemopure and HBOC-201: separate human-use history",
+          "href": "https://bhoctherapeutics.com/science/hemopure-hboc-201/",
+          "detail": ""
+        }
+      ],
+      "bullets": []
+    },
+    {
+      "id": "canine-anemia",
+      "title": "Canine anemia: controlled evidence and clinical context",
+      "paragraphs": [
+        "The FDA evidence page distinguishes its controlled 24-hour support endpoint from survival. That distinction matters when interpreting an oxygen-carrying intervention alongside treatment of the underlying condition.",
+        "The catalogue also includes a prospective randomized comparison of Oxyglobin and packed red cells in 12 dogs with babesiosis, and a separate canine hypovolemia study of intestinal perfusion and oxygenation. Their disease and model settings should be retained. They are not universal demonstrations for every cause of canine anemia."
+      ],
+      "links": [
+        {
+          "label": "Canine babesiosis comparison: PMID 19691591",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/19691591/",
+          "detail": "Disease-specific randomized clinical comparison, 2009."
+        },
+        {
+          "label": "Canine intestinal perfusion study: PMID 11575346",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/11575346/",
+          "detail": "Experimental canine hypovolemia model, 2001."
+        },
+        {
+          "label": "Blood access and transfusion in dogs",
+          "href": "./canine-blood-transfusion.html",
+          "detail": ""
+        }
+      ],
+      "bullets": []
+    },
+    {
+      "id": "case-archive",
+      "title": "Read the canine case archive as descriptive evidence",
+      "paragraphs": [
+        "Biopure’s historical Case Listing Book II distinguishes 885 manufacturer-received canine reports from 146 selected printed case vignettes. The archive is useful for understanding clinical settings, treatment sequences and the questions practitioners were asking.",
+        "Selection, incomplete fields and concurrent treatments limit interpretation. The printed cases should not be converted into a treatment efficacy or survival rate. The critical archive review keeps these limitations separate from the controlled FDA evidence."
+      ],
+      "links": [
+        {
+          "label": "Critical review of Oxyglobin Case Listing Book II",
+          "href": "https://bhoctherapeutics.com/evidence/library/veterinary/Vet-archive-Oxyglobin-Case-Listing-Book-II.html",
+          "detail": "The complete historical archive route and its evidence limitations."
+        }
+      ],
+      "bullets": []
+    },
+    {
+      "id": "cats-and-horses",
+      "title": "Cats and horses require their own evidence",
+      "paragraphs": [
+        "The feline page links retrospective Oxyglobin experience, including a 48-cat report and a 72-cat series cited by EveryCat. These are historical reports in cats, not a feline approval statement or new BHOC outcomes.",
+        "The equine literature includes a pharmacokinetic study of hemoglobin glutamer-200 bovine. A pharmacokinetic report does not establish clinical benefit, an equine indication or an appropriate dose for another formulation."
+      ],
+      "links": [
+        {
+          "label": "Historical Oxyglobin use in cats",
+          "href": "./feline-blood-transfusion-compatibility.html#historical-oxyglobin",
+          "detail": ""
+        },
+        {
+          "label": "Equine transfusion and oxygen-carrier research",
+          "href": "./equine-blood-transfusion.html",
+          "detail": ""
+        }
+      ],
+      "bullets": []
+    },
+    {
+      "id": "functional-delivery",
+      "title": "Connect the blood measurement to oxygen function",
+      "paragraphs": [
+        "The existing veterinary science page explains the distinction between packed cell volume and cell-free plasma hemoglobin. Oxygen content, circulation, affinity, unloading and tissue demand need to be interpreted together.",
+        "BHOC, Biological Hemoglobin Oxygen Carrier, is being developed within Precision Oxygen Therapeutics. Historical Oxyglobin findings can inform study design, while BHOC-specific characterization, species-specific safety and functional outcomes require separate evidence."
+      ],
+      "links": [
+        {
+          "label": "PCV and functional oxygen delivery",
+          "href": "./science.html#functional-delivery",
+          "detail": ""
+        },
+        {
+          "label": "Discuss a veterinary research collaboration",
+          "href": "./bhoc-crada-research-partners.html",
+          "detail": ""
+        }
+      ],
+      "bullets": []
+    }
+  ],
+  "topicCards": [],
+  "seo": {
+    "primaryKeyword": "Oxyglobin",
+    "secondaryKeywords": [
+      "what is Oxyglobin",
+      "Oxyglobin oxygen carrier",
+      "Oxyglobin mechanism of action"
+    ],
+    "supportingTerms": [
+      "BHOC Veterinary",
+      "Precision Oxygen Therapeutics",
+      "product-specific evidence",
+      "species-specific research"
+    ]
+  }
+}

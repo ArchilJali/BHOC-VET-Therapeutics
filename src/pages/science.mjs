@@ -1,3 +1,4 @@
+import {topicSection} from './topic-page.mjs';
 import {esc,attrs,icon} from '../lib/html.mjs';
 
 const sourceLink=item=>
@@ -25,4 +26,5 @@ export default (page,scienceHTML)=>`<main id="main" class="subpage-main science-
     <div class="platform-actions"><a class="button" ${attrs(page.platform.link)}><span>${esc(page.platform.link.label)}</span>${icon('arrow')}</a><a class="platform-library-link" ${attrs(page.platform.library)}><span>${esc(page.platform.library.label)}</span>${icon('arrow')}</a><a class="text-link light-link" ${attrs(page.platform.search)}>${icon('search')}<span>${esc(page.platform.search.label)}</span></a></div>
   </section>
   <section id="science-sources" class="page-section source-section" aria-labelledby="science-sources-heading"><div class="section-heading"><span class="page-eyebrow">Source links</span><h2 id="science-sources-heading">Scientific context.</h2></div><div class="source-grid">${page.references.map(sourceLink).join('')}</div></section>
+${(page.topicSections||[]).map(topicSection).join('')}
 </main>`;

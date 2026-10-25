@@ -1,0 +1,130 @@
+{
+  "slug": "equine-blood-transfusion",
+  "navLabel": "Equine blood transfusion and oxygen-delivery research",
+  "navActive": "science.html",
+  "breadcrumbs": [
+    {
+      "label": "Research topics",
+      "href": "topics.html"
+    }
+  ],
+  "title": "Equine Blood Transfusion and Donor Access | BHOC Vet",
+  "description": "Connect horse blood-donor access and transfusion literature with equine oxygen-delivery, anesthesia and pharmacokinetic research, keeping each model distinct.",
+  "schemaType": "WebPage",
+  "datePublished": "2026-10-25",
+  "dateModified": "2026-10-25",
+  "eyebrow": "Veterinary evidence and research",
+  "heading": "Equine blood transfusion and oxygen-delivery research",
+  "lead": "Horse and equine transfusion belong to one species-specific evidence route. Donor access, blood testing, oxygen transport and anesthesia should be connected without assuming that findings in another species apply unchanged.",
+  "topicSections": [
+    {
+      "id": "transfusion-review",
+      "title": "Start with the equine transfusion review",
+      "paragraphs": [
+        "The donor-welfare concept cites Radcliffe and colleagues’ 2022 review of blood-product collection and administration in horses. It covers indications, donor selection, testing, materials, methods and complications.",
+        "This is a useful starting point for an equine clinical or research discussion. It is not evidence of BHOC use, and a review’s clinical guidance should not be replaced by a general claim that all species have the same transfusion requirements."
+      ],
+      "links": [
+        {
+          "label": "Equine transfusion review: PMID 35044065",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/35044065/",
+          "detail": ""
+        },
+        {
+          "label": "cross-species donor-welfare concept",
+          "href": "https://bhoctherapeutics.com/evidence/library/veterinary/direct-studies/concepts-questions/healthy-animal-donors.html",
+          "detail": ""
+        }
+      ],
+      "bullets": []
+    },
+    {
+      "id": "donor-logistics",
+      "title": "Define the donor and delivery constraints",
+      "paragraphs": [
+        "The BHOC donor-welfare concept places recipient need beside the practical and welfare requirements of healthy donor animals. For horses, a project should document the actual setting, access to suitable donor blood and the clinical work needed to deliver it.",
+        "The donor problem and the oxygen-delivery problem should be described separately. An oxygen carrier is not a substitute for every function of a donor component, hemorrhage control or definitive treatment."
+      ],
+      "links": [
+        {
+          "label": "Veterinary emergency research applications",
+          "href": "./applications.html",
+          "detail": ""
+        },
+        {
+          "label": "Transfusion-safety evidence and interpretation",
+          "href": "https://bhoctherapeutics.com/evidence/library/veterinary/direct-studies/tracs-transfusion-risks-dogs-cats.html",
+          "detail": ""
+        }
+      ],
+      "bullets": []
+    },
+    {
+      "id": "equine-oxygen",
+      "title": "Oxygen delivery during equine anesthesia",
+      "paragraphs": [
+        "Hubbell and Muir’s review addresses oxygenation, oxygen delivery and anesthesia in the horse. The existing catalogue also includes Swanson and Muir’s study in which increasing cardiac output with dobutamine did not enhance respiratory gas exchange in anesthetized healthy horses.",
+        "These sources help keep circulation, gas exchange and tissue oxygen support from being treated as the same measurement. Their models and endpoints remain important when planning an equine intervention."
+      ],
+      "links": [
+        {
+          "label": "Equine oxygenation and anesthesia review: PMID 24612155",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/24612155/",
+          "detail": ""
+        },
+        {
+          "label": "Cardiac output and gas-exchange study: PMID 3740627",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/3740627/",
+          "detail": ""
+        },
+        {
+          "label": "Equine science route",
+          "href": "./science.html#equine-oxygenation",
+          "detail": ""
+        }
+      ],
+      "bullets": []
+    },
+    {
+      "id": "carrier-evidence",
+      "title": "A pharmacokinetic study is one stage of development",
+      "paragraphs": [
+        "The equine catalogue includes Soma and colleagues’ 2005 pharmacokinetic study of hemoglobin glutamer-200 bovine in horses. It provides a distinct equine source route for oxygen-carrier research.",
+        "Pharmacokinetics, physiological effect, clinical safety and an indication are different questions. Product identity and species must stay attached to every conclusion. In particular, the HBOC-301 ventricular-function paper in the catalogue studied anesthetized dogs, not horses."
+      ],
+      "links": [
+        {
+          "label": "Equine pharmacokinetic study: PMID 15920176",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/15920176/",
+          "detail": ""
+        },
+        {
+          "label": "Search the species-labelled veterinary literature",
+          "href": "https://bhoctherapeutics.com/evidence/library/veterinary/Vet-search.html",
+          "detail": ""
+        },
+        {
+          "label": "Discuss an equine research protocol",
+          "href": "./bhoc-crada-research-partners.html",
+          "detail": ""
+        }
+      ],
+      "bullets": []
+    }
+  ],
+  "topicCards": [],
+  "seo": {
+    "primaryKeyword": "equine blood transfusion",
+    "secondaryKeywords": [
+      "horse blood transfusion",
+      "equine donor blood",
+      "horse donor blood"
+    ],
+    "supportingTerms": [
+      "BHOC Veterinary",
+      "Precision Oxygen Therapeutics",
+      "product-specific evidence",
+      "species-specific research"
+    ]
+  }
+}

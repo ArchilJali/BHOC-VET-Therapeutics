@@ -1,3 +1,4 @@
+import {topicSection} from './topic-page.mjs';
 import {esc,attrs,icon} from '../lib/html.mjs';
 
 export default page=>`<main id="main" class="subpage-main applications-page">
@@ -7,4 +8,5 @@ export default page=>`<main id="main" class="subpage-main applications-page">
   <section id="historical-use-map" class="page-section" aria-labelledby="historical-use-map-heading"><div class="section-heading"><span class="page-eyebrow">${esc(page.historicalMap.eyebrow)}</span><h2 id="historical-use-map-heading">${esc(page.historicalMap.title)}</h2><p>${esc(page.historicalMap.text)}</p></div><div class="application-grid">${page.historicalMap.cards.map(card=>`<article class="application-card"><h3>${esc(card.title)}</h3><p>${esc(card.text)}</p></article>`).join('')}</div><p class="small-copy">${esc(page.historicalMap.boundary)}</p><div class="inline-actions"><a class="button" ${attrs(page.historicalMap.link)}><span>${esc(page.historicalMap.link.label)}</span>${icon('arrow')}</a></div></section>
   <section id="applications-evidence" class="platform-band" aria-labelledby="applications-evidence-heading"><div><span class="page-eyebrow">${esc(page.evidence.eyebrow)}</span><h2 id="applications-evidence-heading">${esc(page.evidence.title)}</h2><p>${esc(page.evidence.text)}</p></div><div class="platform-actions"><a class="button" ${attrs(page.evidence.map)}><span>${esc(page.evidence.map.label)}</span>${icon('arrow')}</a><a class="platform-library-link" ${attrs(page.evidence.search)}><span>${esc(page.evidence.search.label)}</span>${icon('search')}</a></div></section>
   <section id="applications-contact" class="page-cta" aria-labelledby="applications-contact-heading"><div><span class="page-eyebrow">Research and partnerships</span><h2 id="applications-contact-heading">${esc(page.contact.title)}</h2><p>${esc(page.contact.text)}</p></div><a class="button" ${attrs(page.contact.link)}><span>${esc(page.contact.link.label)}</span>${icon('arrow')}</a></section>
+${(page.topicSections||[]).map(topicSection).join('')}
 </main>`;
