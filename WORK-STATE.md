@@ -1,3 +1,5 @@
+2026-10-25 Image search discovery: The sitemap build now adds the local images rendered on each canonical page, including the current veterinary-team opening, Companion Animals and News cards. Existing sitemap image entries, ALT, artwork, page copy, routes and LinkedIn identity links remain intact. No author profile page is created.
+
 2026-10-24 Cat story News collage: At Archil’s request, updated the existing News teaser with the approved ten-place collage, one English sentence and an internal link to the full illustrated story. The image retains its full proportions on desktop and mobile, descriptive ALT, dimensions, source credits and Article image metadata. No duplicate News item was created.
 
 2026-10-24 Cat story social collage: At Archil’s explicit request, added the approved ten-place collage for both scheduled LinkedIn posts and the article social preview. Descriptive filename, image ALT, JPEG metadata, social dimensions and full source-photograph attribution are included. Original article text, ten place photographs, publication schedules and tracked article links are preserved.

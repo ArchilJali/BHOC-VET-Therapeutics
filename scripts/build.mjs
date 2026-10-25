@@ -402,6 +402,23 @@ const sitemapUrls=[
   {path:'initiative/stories.html',images:storiesData.cards.map(card=>card.image)},
   ...initiativeStories.map(story=>({path:'initiative/'+story.slug+'.html',images:story.images}))
 ];
+// Include the local images actually rendered on each page, including News cards
+// and the current veterinary opening image, alongside the retained image lists.
+for(const entry of sitemapUrls){
+  const file=entry.path===''?'index.html':entry.path.endsWith('/')?entry.path+'index.html':entry.path;
+  const html=documents.get(file)||await fs.readFile(path.join(out,file),'utf8');
+  const images=new Map(entry.images.map(image=>[absolute(image.src),image]));
+  for(const [tag] of html.matchAll(/<img\b[^>]*>/gi)){
+    const attributes=Object.fromEntries([...tag.matchAll(/([\w-]+)\s*=\s*(["'])(.*?)\2/g)].map(match=>[match[1].toLowerCase(),match[3]]));
+    if(!attributes.src||!attributes.alt?.trim()||attributes['aria-hidden']==='true')continue;
+    const url=new URL(attributes.src,absolute(entry.path));
+    if(url.origin!==new URL(site.canonical).origin||!url.pathname.startsWith('/assets/'))continue;
+    url.search='';
+    url.hash='';
+    if(!images.has(url.href))images.set(url.href,{src:url.href});
+  }
+  entry.images=[...images.values()];
+}
 await write('sitemap.xml',`<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">${sitemapUrls.map(entry=>`<url><loc>${absolute(entry.path)}</loc><lastmod>${site.updated}</lastmod>${entry.images.map(image=>`<image:image><image:loc>${absolute(image.src)}</image:loc></image:image>`).join('')}</url>`).join('')}</urlset>\n`);
 await write('robots.txt',`User-agent: *\nAllow: /\nSitemap: ${absolute('sitemap.xml')}\n`);
 await write('CNAME',new URL(site.canonical).hostname+'\n');
