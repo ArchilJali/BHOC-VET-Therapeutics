@@ -1,0 +1,157 @@
+{
+  "slug": "topics",
+  "navLabel": "Research topics",
+  "navActive": "science.html",
+  "breadcrumbs": [],
+  "title": "Veterinary Oxygen Research Topics | BHOC Veterinary",
+  "description": "Find veterinary research by species and question: dog, cat and horse blood access, Oxyglobin, donor welfare, oncology and comparative oxygen physiology.",
+  "schemaType": "CollectionPage",
+  "datePublished": "2026-10-25",
+  "dateModified": "2026-10-25",
+  "eyebrow": "Veterinary research routes",
+  "heading": "Veterinary care and oxygen-delivery research",
+  "lead": "Choose a species, clinical question or evidence route. Historical product findings, transfusion guidance and BHOC development questions remain separately identified.",
+  "topicSections": [],
+  "topicCards": [
+    {
+      "id": "V01",
+      "title": "BHOC Veterinary: Oxygen Therapeutics Research",
+      "text": "The veterinary development programme, species routes and source-linked research.",
+      "href": "index.html"
+    },
+    {
+      "id": "V02",
+      "title": "Oxyglobin: Veterinary Evidence and History",
+      "text": "Oxyglobin product history, controlled canine evidence and the selected case archive.",
+      "href": "./oxyglobin.html"
+    },
+    {
+      "id": "V03",
+      "title": "Canine Blood Transfusion and Donor Access",
+      "text": "Dog blood donors, compatibility, recipient safety and emergency-access research.",
+      "href": "./canine-blood-transfusion.html"
+    },
+    {
+      "id": "V04",
+      "title": "Canine Anemia and Oxygen-Delivery Evidence",
+      "text": "Canine anemia studies and the distinction between controlled evidence and selected cases.",
+      "href": "./oxyglobin.html#canine-anemia"
+    },
+    {
+      "id": "V05",
+      "title": "Feline Blood Transfusion and Donor Welfare",
+      "text": "Cat blood compatibility, feline donor selection, sedation and donor welfare.",
+      "href": "./feline-blood-transfusion-compatibility.html"
+    },
+    {
+      "id": "V06",
+      "title": "Oxyglobin in Cats: Historical Evidence and Limits",
+      "text": "Historical feline Oxyglobin reports with their retrospective and product-specific limits.",
+      "href": "./feline-blood-transfusion-compatibility.html#historical-oxyglobin"
+    },
+    {
+      "id": "V07",
+      "title": "Feline Anemia and Oxygen-Delivery Research",
+      "text": "The feline oxygen-delivery question alongside blood compatibility and historical anemia evidence.",
+      "href": "./feline-blood-transfusion-compatibility.html#feline-anemia"
+    },
+    {
+      "id": "V08",
+      "title": "Equine Blood Transfusion and Donor Access",
+      "text": "Horse blood donors, equine transfusion literature and species-specific oxygen research.",
+      "href": "./equine-blood-transfusion.html"
+    },
+    {
+      "id": "V09",
+      "title": "Equine Anesthesia and Tissue Oxygenation",
+      "text": "Equine oxygenation, cardiac output, respiratory gas exchange and anesthesia literature.",
+      "href": "./science.html#equine-oxygenation"
+    },
+    {
+      "id": "V10",
+      "title": "Camel Surgery and Oxygen-Delivery Research",
+      "text": "Camel and camelid compatibility questions, clinical context and a proposed research pathway.",
+      "href": "./science.html#camelid-research"
+    },
+    {
+      "id": "V11",
+      "title": "Veterinary Emergency Oxygen-Delivery Research",
+      "text": "Emergency, hemorrhage and oxygen-delivery questions across veterinary settings.",
+      "href": "./applications.html"
+    },
+    {
+      "id": "V12",
+      "title": "Veterinary Cancer, Hypoxia and Oxygen-Delivery Research",
+      "text": "Evaluate preclinical tumor-oxygenation work before proposing canine, feline or equine studies.",
+      "href": "./veterinary-oncology-hypoxia.html"
+    },
+    {
+      "id": "V13",
+      "title": "Veterinary Transfusion Reactions and Oxygen-Carrier Questions",
+      "text": "The TRACS source note on reactions, monitoring and the limits of its interpretation.",
+      "href": "https://bhoctherapeutics.com/evidence/library/veterinary/direct-studies/tracs-transfusion-risks-dogs-cats.html"
+    },
+    {
+      "id": "V14",
+      "title": "Veterinary Blood Donor Welfare and Supply",
+      "text": "Healthy-animal donors and the practical, welfare and compatibility questions across species.",
+      "href": "https://bhoctherapeutics.com/evidence/library/veterinary/direct-studies/concepts-questions/healthy-animal-donors.html"
+    },
+    {
+      "id": "V15",
+      "title": "Veterinary Oxygen Delivery and Comparative Physiology",
+      "text": "Comparative physiology, PCV, affinity and functional oxygen delivery.",
+      "href": "./science.html"
+    },
+    {
+      "id": "V16",
+      "title": "Species Protection and Oxygen-Therapeutics Research",
+      "text": "The BHOC Species & Biodiversity Protection Initiative and its research purpose.",
+      "href": "./initiative/"
+    },
+    {
+      "id": "V17",
+      "title": "Wildlife Emergency Care and Donor-Blood Constraints",
+      "text": "Wildlife rescue, endangered species and the need for species-specific veterinary capacity.",
+      "href": "./initiative/#focus"
+    },
+    {
+      "id": "V18",
+      "title": "Veterinary Oxygen-Carrier Research Collaboration",
+      "text": "The existing BHOC invitation to universities, clinicians and research partners.",
+      "href": "./bhoc-crada-research-partners.html"
+    },
+    {
+      "id": "V19",
+      "title": "Veterinary Sepsis and Oxygen-Delivery Research",
+      "text": "Veterinary sepsis and comparative oxygen-delivery research questions, with species-specific testing required.",
+      "href": "./science.html#sepsis-metabolism-research"
+    },
+    {
+      "id": "V21",
+      "title": "Comparative Veterinary Metabolism and Oxygen Use",
+      "text": "Comparative animal metabolism and the measurements needed for a veterinary protocol.",
+      "href": "./science.html#sepsis-metabolism-research"
+    },
+    {
+      "id": "V22",
+      "title": "Veterinary Perfusion and Functional Oxygen Monitoring",
+      "text": "PCV, plasma hemoglobin, circulation and functional veterinary oxygen measurements.",
+      "href": "./science.html#functional-delivery"
+    }
+  ],
+  "seo": {
+    "primaryKeyword": "veterinary oxygen delivery research",
+    "secondaryKeywords": [
+      "canine transfusion",
+      "feline transfusion",
+      "equine transfusion"
+    ],
+    "supportingTerms": [
+      "BHOC Veterinary",
+      "Precision Oxygen Therapeutics",
+      "product-specific evidence",
+      "species-specific research"
+    ]
+  }
+}

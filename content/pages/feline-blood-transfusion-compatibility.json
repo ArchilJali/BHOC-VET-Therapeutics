@@ -12,7 +12,7 @@
   "description": "Feline blood transfusion compatibility, donor sedation and cat blood donation, with ISFM guidance and historical EveryCat and Oxyglobin sources.",
   "schemaType": "Article",
   "datePublished": "2026-10-03",
-  "dateModified": "2026-10-03",
+  "dateModified": "2026-10-25",
   "dateLabel": "3 Oct 2026",
   "articleSection": "Feline medicine",
   "seo": {
@@ -107,6 +107,24 @@
         {
           "label": "Read the EveryCat report",
           "href": "https://everycat.org/cat-health/oxyglobin-use-in-cats/"
+        }
+      ]
+    },
+    {
+      "id": "feline-anemia",
+      "heading": "Feline anemia and the oxygen-delivery question",
+      "paragraphs": [
+        "The historical Oxyglobin reports above concern cats with anemia in their own clinical settings. Retrospective series can describe observations and concurrent care, while product identity and study design limit what can be concluded.",
+        "For a new feline oxygen-carrier programme, the question should connect oxygen-carrying capacity, circulation and tissue response with species-specific safety measurements. The existing BHOC Veterinary Science page explains why packed cell volume and plasma hemoglobin describe different compartments. These sources do not establish a feline BHOC treatment."
+      ],
+      "sourceLinks": [
+        {
+          "label": "PCV and functional oxygen delivery",
+          "href": "science.html#functional-delivery"
+        },
+        {
+          "label": "Oxyglobin product history and evidence",
+          "href": "oxyglobin.html"
         }
       ]
     }

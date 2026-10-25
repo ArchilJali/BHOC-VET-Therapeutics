@@ -1,0 +1,130 @@
+{
+  "slug": "veterinary-oncology-hypoxia",
+  "navLabel": "Veterinary oncology: hypoxia and oxygen-delivery questions",
+  "navActive": "science.html",
+  "breadcrumbs": [
+    {
+      "label": "Research topics",
+      "href": "topics.html"
+    }
+  ],
+  "title": "Veterinary Tumor Hypoxia and Oxygen Research | BHOC Vet",
+  "description": "Explore how preclinical tumor-oxygenation findings could inform veterinary research, with clear separation of rat, mouse, canine, feline and equine evidence.",
+  "schemaType": "WebPage",
+  "datePublished": "2026-10-25",
+  "dateModified": "2026-10-25",
+  "eyebrow": "Veterinary evidence and research",
+  "heading": "Veterinary oncology: hypoxia and oxygen-delivery questions",
+  "lead": "Veterinary oncology needs species- and tumor-specific evidence. This research overview asks how existing oxygen-transport and tumor-oxygenation studies could inform a carefully defined veterinary programme.",
+  "topicSections": [
+    {
+      "id": "models",
+      "title": "Identify the model before interpreting the finding",
+      "paragraphs": [
+        "The library includes rat HBOC-201 tumor studies and mouse work on polymerized human hemoglobin. These records offer preclinical context. They are not clinical tumor-treatment trials in dogs, cats or horses, and they do not establish BHOC efficacy.",
+        "One retained rat study reported no effect on fractionated-irradiation response. Such results belong beside oxygenation measurements when a potential combination with radiotherapy is considered. An oxygen signal alone is not a tumor-response endpoint."
+      ],
+      "links": [
+        {
+          "label": "Rat irradiation result: PMID 16254709",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/16254709/",
+          "detail": "Negative treatment-response finding retained in the evidence."
+        },
+        {
+          "label": "Mouse oxygen-affinity and tumor-oxygenation study",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/32647211/",
+          "detail": "Polymerized human hemoglobin in a mouse model."
+        },
+        {
+          "label": "Broader tumor-hypoxia evidence route",
+          "href": "https://bhoctherapeutics.com/applications/oncology-tumor-oxygenation/",
+          "detail": ""
+        }
+      ],
+      "bullets": []
+    },
+    {
+      "id": "species",
+      "title": "Dogs, cats and horses need separate study questions",
+      "paragraphs": [
+        "A canine or feline oncology proposal should name the tumor type, treatment context, starting oxygenation and measurable outcome. An equine question requires its own rationale and source base. The biological theme does not remove differences in disease, physiology or clinical practice.",
+        "The historical Oxyglobin material on canine anemia and feline case experience should remain identifiable as such. It does not become evidence of anticancer activity merely because an anemic animal also has cancer."
+      ],
+      "links": [
+        {
+          "label": "Oxyglobin and canine anemia evidence",
+          "href": "./oxyglobin.html#canine-anemia",
+          "detail": ""
+        },
+        {
+          "label": "Feline anemia and historical oxygen-carrier evidence",
+          "href": "./feline-blood-transfusion-compatibility.html#feline-anemia",
+          "detail": ""
+        },
+        {
+          "label": "Equine physiological research",
+          "href": "./science.html#equine-oxygenation",
+          "detail": ""
+        }
+      ],
+      "bullets": []
+    },
+    {
+      "id": "transport",
+      "title": "Transport models answer a narrower question",
+      "paragraphs": [
+        "The hepatic hollow-fiber bioreactor paper indexed as PMID 19816963 is a mathematical oxygen-transport model involving hemoglobin-based carriers and perfluorocarbons. It is not a veterinary tumor-treatment experiment.",
+        "It can help define a transport question, while animal tumor studies, clinical safety and therapeutic efficacy remain separate steps. The human research overview explains this distinction and the separate oxygen-sensing foundations."
+      ],
+      "links": [
+        {
+          "label": "Transport-model scope and HIF/VHL context",
+          "href": "https://bhoctherapeutics.com/applications/oncology-tumor-oxygenation/#transport-model",
+          "detail": ""
+        }
+      ],
+      "bullets": []
+    },
+    {
+      "id": "programme",
+      "title": "A proposed BHOC veterinary oncology programme",
+      "paragraphs": [
+        "We propose beginning with a defined experimental or veterinary setting and measuring oxygen availability over time. A study would need a characterized formulation, an appropriate comparison, safety measurements and a prespecified tissue or treatment-response endpoint.",
+        "Our hypothesis concerns controlled tissue oxygen delivery, including its duration and consistency. Whether it changes tumor biology or treatment response is a question to test. The current sources do not establish a BHOC cancer treatment."
+      ],
+      "links": [
+        {
+          "label": "Research questions on oxygen exposure and tissue response",
+          "href": "https://bhoctherapeutics.com/evidence/library/concepts-hypotheses/oxygen-exposure-transport-delivery-tissue-response.html",
+          "detail": ""
+        },
+        {
+          "label": "BHOC joint-research invitation",
+          "href": "./bhoc-crada-research-partners.html",
+          "detail": ""
+        }
+      ],
+      "bullets": [
+        "Identify the species, tumor type and model rather than pooling them.",
+        "Separate anemia support from the proposed tumor-directed endpoint.",
+        "Measure the oxygen time course and the relevant biological response.",
+        "Retain negative results and product-specific limitations in the final interpretation."
+      ]
+    }
+  ],
+  "topicCards": [],
+  "seo": {
+    "primaryKeyword": "veterinary tumor hypoxia",
+    "secondaryKeywords": [
+      "veterinary tumour hypoxia",
+      "veterinary oncology oxygen delivery",
+      "canine tumor oxygenation"
+    ],
+    "supportingTerms": [
+      "BHOC Veterinary",
+      "Precision Oxygen Therapeutics",
+      "product-specific evidence",
+      "species-specific research"
+    ]
+  }
+}

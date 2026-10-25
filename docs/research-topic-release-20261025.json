@@ -1,0 +1,168 @@
+{
+  "date": "2026-10-25",
+  "keywordCount": 1076,
+  "topics": [
+    {
+      "id": "V01",
+      "topic": "BHOC Veterinary: Oxygen Therapeutics Research",
+      "destination": "https://bhocvet.com/",
+      "keywordCount": 10,
+      "status": "Integrated topic route"
+    },
+    {
+      "id": "V02",
+      "topic": "Oxyglobin: Veterinary Evidence and History",
+      "destination": "https://bhocvet.com/oxyglobin.html",
+      "keywordCount": 12,
+      "status": "Integrated topic route"
+    },
+    {
+      "id": "V03",
+      "topic": "Canine Blood Transfusion and Donor Access",
+      "destination": "https://bhocvet.com/canine-blood-transfusion.html",
+      "keywordCount": 12,
+      "status": "Integrated topic route"
+    },
+    {
+      "id": "V04",
+      "topic": "Canine Anemia and Oxygen-Delivery Evidence",
+      "destination": "https://bhocvet.com/oxyglobin.html#canine-anemia",
+      "keywordCount": 10,
+      "status": "Integrated topic route"
+    },
+    {
+      "id": "V05",
+      "topic": "Feline Blood Transfusion and Donor Welfare",
+      "destination": "https://bhocvet.com/feline-blood-transfusion-compatibility.html",
+      "keywordCount": 14,
+      "status": "Integrated topic route"
+    },
+    {
+      "id": "V06",
+      "topic": "Oxyglobin in Cats: Historical Evidence and Limits",
+      "destination": "https://bhocvet.com/feline-blood-transfusion-compatibility.html#historical-oxyglobin",
+      "keywordCount": 10,
+      "status": "Integrated topic route"
+    },
+    {
+      "id": "V07",
+      "topic": "Feline Anemia and Oxygen-Delivery Research",
+      "destination": "https://bhocvet.com/feline-blood-transfusion-compatibility.html#feline-anemia",
+      "keywordCount": 10,
+      "status": "Integrated topic route"
+    },
+    {
+      "id": "V08",
+      "topic": "Equine Blood Transfusion and Donor Access",
+      "destination": "https://bhocvet.com/equine-blood-transfusion.html",
+      "keywordCount": 12,
+      "status": "Integrated topic route"
+    },
+    {
+      "id": "V09",
+      "topic": "Equine Anesthesia and Tissue Oxygenation",
+      "destination": "https://bhocvet.com/science.html#equine-oxygenation",
+      "keywordCount": 12,
+      "status": "Integrated topic route"
+    },
+    {
+      "id": "V10",
+      "topic": "Camel Surgery and Oxygen-Delivery Research",
+      "destination": "https://bhocvet.com/science.html#camelid-research",
+      "keywordCount": 8,
+      "status": "Integrated topic route"
+    },
+    {
+      "id": "V11",
+      "topic": "Veterinary Emergency Oxygen-Delivery Research",
+      "destination": "https://bhocvet.com/applications.html",
+      "keywordCount": 10,
+      "status": "Integrated topic route"
+    },
+    {
+      "id": "V12",
+      "topic": "Veterinary Cancer, Hypoxia and Oxygen-Delivery Research",
+      "destination": "https://bhocvet.com/veterinary-oncology-hypoxia.html",
+      "keywordCount": 16,
+      "status": "Integrated topic route"
+    },
+    {
+      "id": "V13",
+      "topic": "Veterinary Transfusion Reactions and Oxygen-Carrier Questions",
+      "destination": "https://bhoctherapeutics.com/evidence/library/veterinary/direct-studies/tracs-transfusion-risks-dogs-cats.html",
+      "keywordCount": 10,
+      "status": "Integrated topic route"
+    },
+    {
+      "id": "V14",
+      "topic": "Veterinary Blood Donor Welfare and Supply",
+      "destination": "https://bhoctherapeutics.com/evidence/library/veterinary/direct-studies/concepts-questions/healthy-animal-donors.html",
+      "keywordCount": 10,
+      "status": "Integrated topic route"
+    },
+    {
+      "id": "V15",
+      "topic": "Veterinary Oxygen Delivery and Comparative Physiology",
+      "destination": "https://bhocvet.com/science.html",
+      "keywordCount": 10,
+      "status": "Integrated topic route"
+    },
+    {
+      "id": "V16",
+      "topic": "Species Protection and Oxygen-Therapeutics Research",
+      "destination": "https://bhocvet.com/initiative/",
+      "keywordCount": 10,
+      "status": "Integrated topic route"
+    },
+    {
+      "id": "V17",
+      "topic": "Wildlife Emergency Care and Donor-Blood Constraints",
+      "destination": "https://bhocvet.com/initiative/#focus",
+      "keywordCount": 10,
+      "status": "Integrated topic route"
+    },
+    {
+      "id": "V18",
+      "topic": "Veterinary Oxygen-Carrier Research Collaboration",
+      "destination": "https://bhocvet.com/bhoc-crada-research-partners.html",
+      "keywordCount": 10,
+      "status": "Integrated topic route"
+    },
+    {
+      "id": "V19",
+      "topic": "Veterinary Sepsis and Oxygen-Delivery Research",
+      "destination": "https://bhocvet.com/science.html#sepsis-metabolism-research",
+      "keywordCount": 16,
+      "status": "Integrated topic route"
+    },
+    {
+      "id": "V20",
+      "topic": "Equine Endotoxemia and Microvascular Research Questions",
+      "destination": "https://bhocvet.com/science.html#equine-oxygenation",
+      "keywordCount": 15,
+      "status": "Planning only. Additional approved direct evidence needed."
+    },
+    {
+      "id": "V21",
+      "topic": "Comparative Veterinary Metabolism and Oxygen Use",
+      "destination": "https://bhocvet.com/science.html#sepsis-metabolism-research",
+      "keywordCount": 13,
+      "status": "Integrated topic route"
+    },
+    {
+      "id": "V22",
+      "topic": "Veterinary Perfusion and Functional Oxygen Monitoring",
+      "destination": "https://bhocvet.com/science.html#functional-delivery",
+      "keywordCount": 14,
+      "status": "Integrated topic route"
+    }
+  ],
+  "newPages": [
+    "/oxyglobin.html",
+    "/canine-blood-transfusion.html",
+    "/equine-blood-transfusion.html",
+    "/veterinary-oncology-hypoxia.html"
+  ],
+  "topicGuide": "/topics.html",
+  "startingCommit": "6c02a82d25d3bb06cda65d24f06b571a44d1ab4a"
+}

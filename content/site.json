@@ -200,6 +200,10 @@
         "title": "Information",
         "links": [
           {
+            "label": "Research topics",
+            "href": "topics.html"
+          },
+          {
             "label": "Related information",
             "href": "related-information.html"
           },

@@ -1,0 +1,125 @@
+{
+  "slug": "canine-blood-transfusion",
+  "navLabel": "Canine blood transfusion and donor access",
+  "navActive": "science.html",
+  "breadcrumbs": [
+    {
+      "label": "Research topics",
+      "href": "topics.html"
+    }
+  ],
+  "title": "Canine Blood Transfusion and Donor Access | BHOC Vet",
+  "description": "Explore dog blood donors, compatibility, transfusion safety and historical Oxyglobin evidence, with source-linked routes for veterinary teams and researchers.",
+  "schemaType": "WebPage",
+  "datePublished": "2026-10-25",
+  "dateModified": "2026-10-25",
+  "eyebrow": "Veterinary evidence and research",
+  "heading": "Canine blood transfusion and donor access",
+  "lead": "A dog needing transfusion and a healthy canine blood donor have different clinical needs. This guide connects donor access, compatibility, transfusion-safety evidence and the historical oxygen-carrier literature.",
+  "topicSections": [
+    {
+      "id": "donor-access",
+      "title": "A blood donor is part of a clinical system",
+      "paragraphs": [
+        "Finding donor blood involves more than identifying another dog. The cross-species donor-welfare concept asks teams to consider donor selection, handling, collection, recipient compatibility and monitoring as a connected process.",
+        "A research proposal about reducing donor dependence should describe which part of that process it addresses. The purpose is to investigate an additional oxygen-delivery reserve while recognizing the wider biological functions and clinical role of donor blood."
+      ],
+      "links": [
+        {
+          "label": "Healthy-animal donors: the cross-species research concept",
+          "href": "https://bhoctherapeutics.com/evidence/library/veterinary/direct-studies/concepts-questions/healthy-animal-donors.html",
+          "detail": ""
+        },
+        {
+          "label": "Veterinary emergency applications",
+          "href": "./applications.html",
+          "detail": ""
+        }
+      ],
+      "bullets": []
+    },
+    {
+      "id": "compatibility",
+      "title": "Compatibility and recipient safety",
+      "paragraphs": [
+        "Canine transfusion decisions belong to the veterinary team managing the patient. This resource provides scientific and source navigation; it is not a local blood-bank directory or a patient-specific compatibility protocol.",
+        "The TRACS evidence note provides a structured route into transfusion reactions, monitoring and prevention. Its 20 concerns are an organized reading guide, not incidence estimates, and the underlying guidance did not evaluate BHOC."
+      ],
+      "links": [
+        {
+          "label": "TRACS Part 2: the source-linked safety note",
+          "href": "https://bhoctherapeutics.com/evidence/library/veterinary/direct-studies/tracs-transfusion-risks-dogs-cats.html",
+          "detail": ""
+        },
+        {
+          "label": "Veterinary blood-donor welfare and constraints",
+          "href": "https://bhoctherapeutics.com/evidence/library/veterinary/direct-studies/concepts-questions/healthy-animal-donors.html",
+          "detail": ""
+        }
+      ],
+      "bullets": []
+    },
+    {
+      "id": "oxygen-support",
+      "title": "Historical oxygen-carrying support in dogs",
+      "paragraphs": [
+        "The controlled FDA record for Oxyglobin and the descriptive canine archive answer different questions. The FDA record is product-specific evidence with a defined endpoint. The selected archive documents varied clinical settings and treatment sequences.",
+        "For canine anemia, the catalogue also includes a disease-specific randomized Oxyglobin versus packed-red-cell comparison in babesiosis. It should be read within that patient group rather than treated as evidence for all transfusion situations."
+      ],
+      "links": [
+        {
+          "label": "Oxyglobin: evidence, history and canine anemia",
+          "href": "./oxyglobin.html",
+          "detail": ""
+        },
+        {
+          "label": "Original controlled veterinary regulatory record",
+          "href": "https://bhoctherapeutics.com/evidence/library/veterinary/Vet-FDA-registry.html",
+          "detail": ""
+        },
+        {
+          "label": "Selected canine case archive and limitations",
+          "href": "https://bhoctherapeutics.com/evidence/library/veterinary/Vet-archive-Oxyglobin-Case-Listing-Book-II.html",
+          "detail": ""
+        }
+      ],
+      "bullets": []
+    },
+    {
+      "id": "research",
+      "title": "Define the gap before designing the intervention",
+      "paragraphs": [
+        "A useful emergency-care study states whether the limitation is time to a donor, availability of a suitable component, distribution or a measured oxygen-delivery problem after care has started. Those are related but distinct questions.",
+        "BHOC development explores complementary tissue oxygen support. A canine protocol would need its own product characterization, dose rationale, controls, monitoring and functional endpoints. Donor-blood delay is a reason to investigate; it is not itself proof that an investigational carrier improves outcomes."
+      ],
+      "links": [
+        {
+          "label": "Canine and comparative oxygen-delivery physiology",
+          "href": "./science.html",
+          "detail": ""
+        },
+        {
+          "label": "Discuss a defined canine research question",
+          "href": "./bhoc-crada-research-partners.html",
+          "detail": ""
+        }
+      ],
+      "bullets": []
+    }
+  ],
+  "topicCards": [],
+  "seo": {
+    "primaryKeyword": "dog blood transfusion",
+    "secondaryKeywords": [
+      "canine blood transfusion",
+      "dog donor blood",
+      "dog blood donor"
+    ],
+    "supportingTerms": [
+      "BHOC Veterinary",
+      "Precision Oxygen Therapeutics",
+      "product-specific evidence",
+      "species-specific research"
+    ]
+  }
+}

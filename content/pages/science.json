@@ -213,5 +213,108 @@
       }
     ]
   },
-  "dateModified": "2026-10-14"
+  "dateModified": "2026-10-25",
+  "topicSections": [
+    {
+      "id": "sepsis-metabolism-research",
+      "title": "Veterinary sepsis, metabolism and cellular oxygen use",
+      "paragraphs": [
+        "Sepsis, inflammatory disease and metabolic dysfunction raise questions about oxygen transport at several levels. A human critical-illness review can provide physiological context, while a veterinary study still needs a defined species, model and endpoint.",
+        "For canine, feline or equine research, perfusion, oxygen extraction and cellular response should remain distinguishable. The reviewed materials do not establish a veterinary BHOC sepsis treatment or mitochondrial-restoration effect. A proposal can begin with a measurable question and the species-specific evidence needed to test it."
+      ],
+      "links": [
+        {
+          "label": "Sepsis and microcirculatory oxygenation: shared context",
+          "href": "https://bhoctherapeutics.com/evidence/library/science/sepsis-microcirculation-tissue-oxygenation-bhoc.html",
+          "detail": ""
+        },
+        {
+          "label": "Cellular metabolism and mitochondrial questions",
+          "href": "https://bhoctherapeutics.com/science/oxygen-metabolism-mitochondria/",
+          "detail": ""
+        },
+        {
+          "label": "Define a species-specific research collaboration",
+          "href": "./bhoc-crada-research-partners.html",
+          "detail": ""
+        }
+      ],
+      "bullets": []
+    },
+    {
+      "id": "equine-oxygenation",
+      "title": "Equine oxygenation, circulation and anesthesia",
+      "paragraphs": [
+        "Equine research should distinguish oxygenation, cardiac output, respiratory gas exchange and tissue oxygen delivery. Hubbell and Muir’s review addresses the relationship among these measurements in anesthesia.",
+        "The historical catalogue includes Swanson and Muir’s study of dobutamine-induced cardiac-output augmentation in anesthetized healthy horses, and Soma and colleagues’ pharmacokinetic study of hemoglobin glutamer-200 bovine in horses. Their models and endpoints remain distinct."
+      ],
+      "links": [
+        {
+          "label": "Equine oxygenation and anesthesia review",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/24612155/",
+          "detail": ""
+        },
+        {
+          "label": "Cardiac output and respiratory gas exchange in horses",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/3740627/",
+          "detail": ""
+        },
+        {
+          "label": "Equine oxygen-carrier pharmacokinetics",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/15920176/",
+          "detail": ""
+        },
+        {
+          "label": "Horse blood access and transfusion evidence",
+          "href": "./equine-blood-transfusion.html",
+          "detail": ""
+        }
+      ],
+      "bullets": []
+    },
+    {
+      "id": "camelid-research",
+      "title": "Camel and camelid research questions",
+      "paragraphs": [
+        "The donor-welfare concept includes camels within its cross-species discussion of donor access and compatibility. That is a starting point for a species-specific question, not evidence of BHOC benefit during camel surgery.",
+        "A proposed camel study should identify the species, clinical or experimental setting, donor-blood constraint and intended oxygen-delivery measurement. Formulation, dosing, safety and efficacy require their own evidence. Current sources labelled pending review remain separate from established product findings."
+      ],
+      "links": [
+        {
+          "label": "Healthy-animal donor and compatibility concept",
+          "href": "https://bhoctherapeutics.com/evidence/library/veterinary/direct-studies/concepts-questions/healthy-animal-donors.html",
+          "detail": ""
+        },
+        {
+          "label": "Discuss a camelid research protocol",
+          "href": "./bhoc-crada-research-partners.html",
+          "detail": ""
+        }
+      ],
+      "bullets": []
+    },
+    {
+      "id": "research-topics",
+      "title": "Choose the species or research question",
+      "paragraphs": [],
+      "links": [
+        {
+          "label": "All veterinary research topics",
+          "href": "./topics.html",
+          "detail": ""
+        },
+        {
+          "label": "Oxyglobin evidence and canine anemia",
+          "href": "./oxyglobin.html",
+          "detail": ""
+        },
+        {
+          "label": "Veterinary tumor-hypoxia research",
+          "href": "./veterinary-oncology-hypoxia.html",
+          "detail": ""
+        }
+      ],
+      "bullets": []
+    }
+  ]
 }
