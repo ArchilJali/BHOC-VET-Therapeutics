@@ -15,8 +15,25 @@
     }
   ],
   "datePublished": "2026-10-13",
-  "dateModified": "2026-10-25",
+  "dateModified": "2026-10-26",
   "entries": [
+    {
+      "id": "blt-friendship-20261026",
+      "date": "2026-10-26",
+      "displayDate": "26 October 2026",
+      "title": "BLT: friendship beyond species and time",
+      "text": "Added the source-linked story of Leo, Shere Khan and Baloo at Noah's Ark Animal Sanctuary, with the Initiative perspective on shared hemoglobin biology and respect for life. Linked from Stories That Matter, Initiative and Veterinary News.",
+      "links": [
+        {
+          "label": "Read the BLT story",
+          "href": "./initiative/blt-friendship-beyond-species.html"
+        },
+        {
+          "label": "Browse Stories That Matter",
+          "href": "./initiative/stories.html"
+        }
+      ]
+    },
     {
       "id": "research-topic-routes-20261025",
       "date": "2026-10-25",

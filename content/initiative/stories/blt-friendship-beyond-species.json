@@ -1,0 +1,138 @@
+{
+  "slug": "blt-friendship-beyond-species",
+  "section": "Stories That Matter · Wildlife rescue",
+  "title": "A Lion, a Tiger and a Bear: Friendship Beyond Species and Time",
+  "seoTitle": "BLT: A Lion, Tiger and Bear's Friendship | BHOC Veterinary",
+  "description": "Leo, Shere Khan and Baloo's friendship at Noah's Ark Animal Sanctuary: a story of rescue, shared biology and the responsibility to protect every species.",
+  "canonical": "https://bhocvet.com/initiative/blt-friendship-beyond-species.html",
+  "datePublished": "2026-10-26",
+  "dateModified": "2026-10-26",
+  "articleSection": "Stories That Matter · Wildlife rescue",
+  "genre": "Animal welfare story and Initiative perspective",
+  "keywords": [
+    "Noah's Ark Animal Sanctuary",
+    "BLT bear lion tiger",
+    "Leo lion",
+    "Shere Khan tiger",
+    "Baloo bear",
+    "interspecies friendship",
+    "wildlife rescue",
+    "shared hemoglobin biology",
+    "Precision Oxygen Therapeutics",
+    "BHOC Veterinary"
+  ],
+  "byline": {
+    "name": "Archil Jaliashvili",
+    "role": "BHOC Species & Biodiversity Protection Initiative",
+    "dateLabel": "26 October 2026"
+  },
+  "locationLabel": "BLT: Friendship Beyond Species",
+  "deck": "Leo the lion, Shere Khan the tiger and Baloo the bear grew up together at Noah's Ark Animal Sanctuary. Their friendship left a lesson that outlives them.",
+  "layout": "poster",
+  "images": [
+    {
+      "src": "assets/reference-initiative-mark.webp",
+      "alt": "BHOC Species and Biodiversity Protection Initiative emblem",
+      "width": 318,
+      "height": 317,
+      "caption": "Different species. The same biological need: oxygen.",
+      "credit": "BHOC Species & Biodiversity Protection Initiative",
+      "license": "BHOC project emblem",
+      "href": "https://bhocvet.com/initiative/"
+    }
+  ],
+  "galleryLabel": "BHOC Species and Biodiversity Protection Initiative",
+  "values": [
+    "Friendship",
+    "Wildlife rescue",
+    "Shared biology",
+    "Respect for life"
+  ],
+  "paragraphs": [],
+  "sections": [
+    {
+      "heading": "Three rescued cubs. One family.",
+      "paragraphs": [
+        "In 2001, Leo, an African lion, Shere Khan, a Bengal tiger, and Baloo, an American black bear, were rescued from an Atlanta basement during a police raid. The neglected cubs were taken to Noah's Ark Animal Sanctuary in Locust Grove, Georgia, United States.",
+        "They became known as BLT: Bear, Lion, Tiger. They grew up in the same habitat, playing, resting and seeking affection from one another. Their bond continued into adulthood.",
+        "Baloo needed surgery to remove a harness that had grown into his skin. Sanctuary curator Allison Hedgecoth told ABC that Leo and Shere Khan became agitated while he was away. After the operation, Baloo returned to his companions.",
+        "Leo died in 2016 and Shere Khan in 2018. Baloo, the last surviving member of the trio, died on 6 May 2025 after veterinarians made the decision to euthanize him following declining health. The three had shared around 15 years together. Their story continues to bring people together."
+      ],
+      "links": [
+        {
+          "label": "Watch BLT on the sanctuary's official Facebook page",
+          "href": "https://www.facebook.com/NoahsArkAnimalSanctuary/videos/the-blt/10156312224030088/"
+        },
+        {
+          "label": "View the sanctuary's original BLT photograph",
+          "href": "https://www.flickr.com/photos/noahsarkclub/12804642974/"
+        }
+      ]
+    },
+    {
+      "heading": "Friendship knows no species. Its legacy has no time limit.",
+      "paragraphs": [
+        "Three rescued wild animals gave people a lesson in acceptance, trust and care. A lion, a tiger and a bear found companionship in one another. Their differences became part of the family they formed.",
+        "For us, their story carries a clear message: respect for life reaches across species. The care we give and the bonds we build can leave a meaning that lasts beyond a lifetime."
+      ]
+    },
+    {
+      "heading": "Nature gave us a shared architecture.",
+      "paragraphs": [
+        "Lions, tigers, bears and humans are mammals. Hemoglobin shares a conserved oxygen-binding architecture across mammals, built around iron-containing heme groups. Each species adapts oxygen transport to its own physiology. The oxygen molecule is the same.",
+        "This shared biological foundation guides our work with BHOC, Biological Hemoglobin Oxygen Carrier, within Precision Oxygen Therapeutics. We are developing approaches to support oxygen delivery in veterinary care, including companion animals, wildlife and endangered species.",
+        "Understanding the biology we share gives us a responsibility: use science to protect life, with care for the needs of every species."
+      ],
+      "links": [
+        {
+          "label": "Hemoglobin evolution and biological adaptation",
+          "href": "https://bhoctherapeutics.com/bhoc/evolution-adaptation/"
+        },
+        {
+          "label": "BHOC Veterinary oxygen-delivery science",
+          "href": "../science.html"
+        }
+      ]
+    }
+  ],
+  "principle": "We be of one blood, ye and I.",
+  "principleAttribution": "Rudyard Kipling, The Jungle Book",
+  "closing": "Different species. The same biological need: oxygen. One Oxygen. One Biology. One BHOC System.",
+  "sourcesLabel": "The BLT story and shared biology",
+  "sources": [
+    {
+      "label": "Noah's Ark Animal Sanctuary: official BLT video",
+      "href": "https://www.facebook.com/NoahsArkAnimalSanctuary/videos/the-blt/10156312224030088/"
+    },
+    {
+      "label": "ABC, 4 March 2016: interview with sanctuary curator Allison Hedgecoth",
+      "href": "https://www.abc.net.au/news/2016-03-04/bear-lion-and-tiger-make-an-affectionate%2C-gentle-family/7222462"
+    },
+    {
+      "label": "Atlanta News First, 6 May 2025: Baloo and the BLT trio",
+      "href": "https://www.atlantanewsfirst.com/2025/05/07/beloved-black-bear-noahs-ark-animal-sanctuary-dies-sanctuary-says/"
+    },
+    {
+      "label": "FOX 5 Atlanta, 7 May 2025: Noah's Ark says goodbye to Baloo",
+      "href": "https://www.fox5atlanta.com/news/noahs-ark-animal-sanctuary-baloo-bear-death-blt-trio"
+    },
+    {
+      "label": "BHOC: hemoglobin evolution and biological adaptation",
+      "href": "https://bhoctherapeutics.com/bhoc/evolution-adaptation/"
+    },
+    {
+      "label": "BHOC Veterinary: oxygen-delivery science",
+      "href": "https://bhocvet.com/science.html"
+    }
+  ],
+  "relatedLinks": [
+    {
+      "label": "Hachikō: Loyalty, Dignity and Respect",
+      "href": "hachiko.html"
+    },
+    {
+      "label": "Explore the Species & Biodiversity Protection Initiative",
+      "href": "./index.html"
+    }
+  ]
+}

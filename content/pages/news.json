@@ -115,6 +115,30 @@
   "feedNote": "BHOC Initiative Scout applies a high publication threshold and screens every candidate for duplication. New items are added only for exceptional rescue or recovery outcomes, globally significant conservation initiatives, substantive veterinary evidence milestones or other material developments; routine news is excluded.",
   "stories": [
     {
+      "id": "blt-friendship-beyond-species",
+      "date": "2026-10-26",
+      "dateLabel": "26 Oct 2026 · A historical story revisited",
+      "region": "Georgia, United States",
+      "category": "Wildlife rescue · Stories That Matter",
+      "title": "A Lion, a Tiger and a Bear: Friendship Beyond Species and Time",
+      "text": "The story of Leo, Shere Khan and Baloo at Noah's Ark Animal Sanctuary, followed by the BHOC Initiative perspective on friendship, shared hemoglobin biology and our responsibility to protect life. Different species. The same biological need: oxygen.",
+      "link": {
+        "label": "Read the story and Initiative perspective",
+        "href": "./initiative/blt-friendship-beyond-species.html"
+      },
+      "keywords": [
+        "Noah's Ark Animal Sanctuary",
+        "BLT",
+        "Baloo",
+        "Leo",
+        "Shere Khan",
+        "interspecies friendship",
+        "wildlife rescue",
+        "shared hemoglobin biology"
+      ],
+      "article": true
+    },
+    {
       "id": "cat-cities-and-islands",
       "date": "2026-10-24",
       "dateLabel": "24 Oct 2026",

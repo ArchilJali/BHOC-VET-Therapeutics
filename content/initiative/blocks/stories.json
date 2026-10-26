@@ -7,6 +7,22 @@
   },
   "cards": [
     {
+      "slug": "blt-friendship-beyond-species",
+      "href": "blt-friendship-beyond-species.html",
+      "image": {
+        "src": "assets/reference-initiative-mark.webp",
+        "alt": "BHOC Species and Biodiversity Protection Initiative emblem",
+        "width": 318,
+        "height": 317,
+        "variant": "poster"
+      },
+      "overline": "Wildlife rescue · 26 October 2026",
+      "title": "BLT: Friendship Beyond Species and Time",
+      "text": "Leo the lion, Shere Khan the tiger and Baloo the bear: a rescued family and a lasting lesson in respect for life.",
+      "phrase": "Friendship knows no species. Its legacy has no time limit.",
+      "actionLabel": "Read the story"
+    },
+    {
       "slug": "cat-cities-and-islands",
       "href": "cat-cities-and-islands.html",
       "image": {
