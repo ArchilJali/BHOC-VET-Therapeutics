@@ -7,6 +7,42 @@
   "rightsBoundary": "Third-party terms apply only to the underlying photographs identified below. They do not license the surrounding BHOC text, branding, scientific materials, layout, design or code. No photographer, source platform or public agency is represented as endorsing BHOC or this Initiative.",
   "records": [
     {
+      "id": "noahs-ark-blt-trio",
+      "title": "Leo, Baloo and Shere Khan together at Noah's Ark Animal Sanctuary",
+      "subject": "The BLT trio: a lion, an American black bear and a Bengal tiger huddled together",
+      "creator": "The BLT / Noah's Ark Animal Sanctuary (source credit), via ABC News",
+      "source": "https://www.abc.net.au/news/2016-03-04/bear-lion-and-tiger-make-an-affectionate,-gentle-family/7222462",
+      "sourceLabel": "ABC News source publication and photographic credit",
+      "originalDate": "Published 4 March 2016; capture date not stated",
+      "license": "Rights retained by the original source; no open licence stated",
+      "licenseUrl": "https://www.abc.net.au/news/2016-03-04/bear-lion-and-tiger-make-an-affectionate,-gentle-family/7222462",
+      "sourceStatus": "ABC News credits the photograph to Facebook / The BLT. The accompanying report identifies Leo, Baloo and Shere Khan at Noah's Ark Animal Sanctuary. No open reuse licence or source endorsement is asserted.",
+      "sourceReferences": [
+        {
+          "label": "Exact source JPEG displayed by ABC News",
+          "href": "https://live-production.wcms.abc-cdn.net.au/746269593e5e92130c0b8add973407c3?cropH=360&cropW=640&height=485&impolicy=wcms_crop_resize&width=862&xPos=0&yPos=0"
+        }
+      ],
+      "verifiedOn": "2026-10-26",
+      "usedIn": [
+        "BLT friendship story",
+        "Initiative Stories That Matter card",
+        "Stories That Matter index",
+        "Veterinary News teaser",
+        "BLT article social previews"
+      ],
+      "reason": "Archil explicitly requested the real photograph showing all three animals together in place of the Initiative emblem.",
+      "modifications": "The original 640 by 360 JPEG is preserved byte for byte, without cropping, resizing or alteration. Article and card layouts retain the complete frame.",
+      "reuse": "Third-party rights remain with the original source. This record does not grant others a reuse licence or imply endorsement of BHOC.",
+      "localFiles": [
+        {
+          "path": "assets/initiative/noahs-ark-blt-leo-lion-baloo-bear-shere-khan-tiger-together.jpg",
+          "sha256": "657b6590afdaefaedd068698be6b22115d8816db970b231d9714ab61dcfc13f1",
+          "introducedOn": "2026-10-26"
+        }
+      ]
+    },
+    {
       "id": "african-forest-elephant",
       "title": "African elephant, Dzanga Sangha, Central African Republic",
       "subject": "African forest elephant family at a forest water source",

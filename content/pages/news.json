@@ -136,7 +136,17 @@
         "wildlife rescue",
         "shared hemoglobin biology"
       ],
-      "article": true
+      "article": true,
+      "image": {
+        "url": "assets/initiative/noahs-ark-blt-leo-lion-baloo-bear-shere-khan-tiger-together.jpg",
+        "alt": "Leo the lion on the left, Baloo the bear in the centre and Shere Khan the tiger on the right, huddled together at Noah's Ark Animal Sanctuary.",
+        "width": 640,
+        "height": 360
+      },
+      "credit": {
+        "label": "Photo: The BLT / Noah's Ark Animal Sanctuary, via ABC News",
+        "href": "https://www.abc.net.au/news/2016-03-04/bear-lion-and-tiger-make-an-affectionate,-gentle-family/7222462"
+      }
     },
     {
       "id": "cat-cities-and-islands",

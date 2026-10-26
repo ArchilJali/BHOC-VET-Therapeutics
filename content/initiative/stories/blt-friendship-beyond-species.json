@@ -31,17 +31,17 @@
   "layout": "poster",
   "images": [
     {
-      "src": "assets/reference-initiative-mark.webp",
-      "alt": "BHOC Species and Biodiversity Protection Initiative emblem",
-      "width": 318,
-      "height": 317,
-      "caption": "Different species. The same biological need: oxygen.",
-      "credit": "BHOC Species & Biodiversity Protection Initiative",
-      "license": "BHOC project emblem",
-      "href": "https://bhocvet.com/initiative/"
+      "src": "assets/initiative/noahs-ark-blt-leo-lion-baloo-bear-shere-khan-tiger-together.jpg",
+      "alt": "Leo the lion on the left, Baloo the bear in the centre and Shere Khan the tiger on the right, huddled together at Noah's Ark Animal Sanctuary.",
+      "width": 640,
+      "height": 360,
+      "caption": "Leo, Baloo and Shere Khan together at Noah's Ark Animal Sanctuary, Georgia, United States.",
+      "credit": "The BLT / Noah's Ark Animal Sanctuary, via ABC News",
+      "license": "Original source photograph",
+      "href": "https://www.abc.net.au/news/2016-03-04/bear-lion-and-tiger-make-an-affectionate,-gentle-family/7222462"
     }
   ],
-  "galleryLabel": "BHOC Species and Biodiversity Protection Initiative",
+  "galleryLabel": "Leo, Baloo and Shere Khan together at Noah's Ark Animal Sanctuary",
   "values": [
     "Friendship",
     "Wildlife rescue",
