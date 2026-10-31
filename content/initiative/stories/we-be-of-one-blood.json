@@ -36,7 +36,22 @@
       "caption": "The universe and the life within it. Concept artwork paired with the original BHOC Initiative emblem.",
       "credit": "BHOC Veterinary",
       "license": "Project-created editorial illustration",
-      "href": "https://bhocvet.com/initiative/image-rights.html"
+      "href": "https://bhocvet.com/initiative/image-rights.html",
+      "srcset": [
+        {
+          "path": "assets/news/we-be-of-one-blood-earth-universe-480w.webp",
+          "width": 480
+        },
+        {
+          "path": "assets/news/we-be-of-one-blood-earth-universe-900w.webp",
+          "width": 900
+        },
+        {
+          "path": "assets/news/we-be-of-one-blood-earth-universe.webp",
+          "width": 1400
+        }
+      ],
+      "sizes": "(max-width:640px) 80vw, 480px"
     }
   ],
   "coverMark": {

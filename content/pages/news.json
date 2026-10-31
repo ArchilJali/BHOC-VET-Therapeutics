@@ -250,7 +250,23 @@
         "url": "assets/initiative/cat-stories/cat-cities-islands-hermitage-istanbul-bhoc-veterinary-collage.jpg",
         "alt": "Collage of cats from the Hermitage, Istanbul, Rome, Kotor, Syros, Tashirojima and Houtong, with views of Iraklia harbour, the San Vero Milis coast and Tala monastery. Title: Cities and Islands Where Cats Belong.",
         "width": 1122,
-        "height": 1402
+        "height": 1402,
+        "displayUrl": "assets/initiative/cat-stories/cat-cities-islands-hermitage-istanbul-bhoc-veterinary-collage.webp",
+        "srcset": [
+          {
+            "path": "assets/initiative/cat-stories/cat-cities-islands-hermitage-istanbul-bhoc-veterinary-collage-480w.webp",
+            "width": 480
+          },
+          {
+            "path": "assets/initiative/cat-stories/cat-cities-islands-hermitage-istanbul-bhoc-veterinary-collage-768w.webp",
+            "width": 768
+          },
+          {
+            "path": "assets/initiative/cat-stories/cat-cities-islands-hermitage-istanbul-bhoc-veterinary-collage.webp",
+            "width": 1122
+          }
+        ],
+        "sizes": "(max-width:700px) calc(100vw - 32px), 520px"
       },
       "link": {
         "label": "Read the full illustrated story",
@@ -429,7 +445,23 @@
         "alt": "Why On Earth documentary poster showing a rhinoceros above Earth, with the film title, festival awards and filmmaker credits.",
         "width": 600,
         "height": 771,
-        "variant": "portrait"
+        "variant": "portrait",
+        "displayUrl": "assets/news/why-on-earth-poster-600.webp",
+        "srcset": [
+          {
+            "path": "assets/news/why-on-earth-poster-600-320w.webp",
+            "width": 320
+          },
+          {
+            "path": "assets/news/why-on-earth-poster-600-480w.webp",
+            "width": 480
+          },
+          {
+            "path": "assets/news/why-on-earth-poster-600.webp",
+            "width": 600
+          }
+        ],
+        "sizes": "250px"
       },
       "sourceName": "Peace 4 Animals · Why On Earth (2022) · Author reflection",
       "link": {
@@ -551,7 +583,23 @@
         "url": "assets/bhoc-initiative-land-social.jpg",
         "alt": "BHOC Species & Biodiversity Protection Initiative wildlife landscape accompanying the Living Planet Report 2026 conservation intelligence update",
         "width": 1200,
-        "height": 463
+        "height": 463,
+        "displayUrl": "assets/bhoc-initiative-land-social.webp",
+        "srcset": [
+          {
+            "path": "assets/bhoc-initiative-land-social-480w.webp",
+            "width": 480
+          },
+          {
+            "path": "assets/bhoc-initiative-land-social-768w.webp",
+            "width": 768
+          },
+          {
+            "path": "assets/bhoc-initiative-land-social.webp",
+            "width": 1200
+          }
+        ],
+        "sizes": "(max-width:700px) calc(100vw - 32px), 520px"
       },
       "credit": {
         "label": "BHOC Veterinary visual · Report source: WWF / ZSL",
@@ -597,7 +645,23 @@
         "alt": "COP17 Priority Pass for Archil Jaliashvili, BHOC Species & Biodiversity Protection Initiative, in the Bridge That Gap Hope for Africa Initiative NGO delegation.",
         "width": 1448,
         "height": 1086,
-        "variant": "document"
+        "variant": "document",
+        "displayUrl": "assets/news/archil-jaliashvili-cop17-accreditation-compact.webp",
+        "srcset": [
+          {
+            "path": "assets/news/archil-jaliashvili-cop17-accreditation-compact-640w.webp",
+            "width": 640
+          },
+          {
+            "path": "assets/news/archil-jaliashvili-cop17-accreditation-compact-960w.webp",
+            "width": 960
+          },
+          {
+            "path": "assets/news/archil-jaliashvili-cop17-accreditation-compact.webp",
+            "width": 1448
+          }
+        ],
+        "sizes": "(max-width:700px) calc(100vw - 32px), 520px"
       },
       "sourceName": "BHOC Species & Biodiversity Protection Initiative · COP17 accreditation",
       "article": true,
@@ -688,7 +752,23 @@
           "alt": "BHOC Species and Biodiversity Protection Initiative emblem",
           "width": 318,
           "height": 317
-        }
+        },
+        "displayUrl": "assets/news/we-be-of-one-blood-earth-universe.webp",
+        "srcset": [
+          {
+            "path": "assets/news/we-be-of-one-blood-earth-universe-480w.webp",
+            "width": 480
+          },
+          {
+            "path": "assets/news/we-be-of-one-blood-earth-universe-900w.webp",
+            "width": 900
+          },
+          {
+            "path": "assets/news/we-be-of-one-blood-earth-universe.webp",
+            "width": 1400
+          }
+        ],
+        "sizes": "(max-width:700px) calc(100vw - 32px), 520px"
       },
       "sourceName": "Archil Jaliashvili · Author's interpretation",
       "link": {
@@ -769,7 +849,23 @@
         "url": "assets/news/oxyglobin-case-listing-book-ii-885-canine-reports-historical-evidence.webp",
         "alt": "Cover of Biopure's 2000 Oxyglobin Solution Case Listing Book II beside a BHOC Veterinary summary of 885 historical reports and 146 selected canine case vignettes",
         "width": 1200,
-        "height": 630
+        "height": 630,
+        "displayUrl": "assets/news/oxyglobin-case-listing-book-ii-885-canine-reports-historical-evidence.webp",
+        "srcset": [
+          {
+            "path": "assets/news/oxyglobin-case-listing-book-ii-885-canine-reports-historical-evidence-640w.webp",
+            "width": 640
+          },
+          {
+            "path": "assets/news/oxyglobin-case-listing-book-ii-885-canine-reports-historical-evidence-960w.webp",
+            "width": 960
+          },
+          {
+            "path": "assets/news/oxyglobin-case-listing-book-ii-885-canine-reports-historical-evidence.webp",
+            "width": 1200
+          }
+        ],
+        "sizes": "(max-width:700px) calc(100vw - 32px), 520px"
       },
       "credit": {
         "label": "Historical source cover: Biopure Corporation · Oxyglobin Solution - Case Listing Book II · October 2000",
@@ -902,7 +998,19 @@
         "url": "assets/initiative/focus-veterinary-photo.webp",
         "alt": "Wildlife veterinary care representing the connection between animal health, welfare, conservation medicine and One Health",
         "width": 960,
-        "height": 960
+        "height": 960,
+        "displayUrl": "assets/initiative/focus-veterinary-photo.webp",
+        "srcset": [
+          {
+            "path": "assets/initiative/focus-veterinary-photo-480w.webp",
+            "width": 480
+          },
+          {
+            "path": "assets/initiative/focus-veterinary-photo.webp",
+            "width": 640
+          }
+        ],
+        "sizes": "(max-width:700px) calc(100vw - 32px), 520px"
       },
       "credit": {
         "label": "BHOC Initiative image provenance",
@@ -1088,7 +1196,23 @@
         "url": "assets/bhoc-initiative-land-social.jpg",
         "alt": "BHOC Veterinary wildlife and animal-health landscape representing the One Health connection between animals, people and the environment",
         "width": 1200,
-        "height": 463
+        "height": 463,
+        "displayUrl": "assets/bhoc-initiative-land-social.webp",
+        "srcset": [
+          {
+            "path": "assets/bhoc-initiative-land-social-480w.webp",
+            "width": 480
+          },
+          {
+            "path": "assets/bhoc-initiative-land-social-768w.webp",
+            "width": 768
+          },
+          {
+            "path": "assets/bhoc-initiative-land-social.webp",
+            "width": 1200
+          }
+        ],
+        "sizes": "(max-width:700px) calc(100vw - 32px), 520px"
       },
       "credit": {
         "label": "BHOC Veterinary visual",
@@ -1132,7 +1256,23 @@
         "url": "assets/initiative/challenge-sumatran-tiger-usfws.webp",
         "alt": "Sumatran tiger walking through a green habitat, representing conservation of the critically endangered species",
         "width": 960,
-        "height": 960
+        "height": 960,
+        "displayUrl": "assets/initiative/challenge-sumatran-tiger-usfws.webp",
+        "srcset": [
+          {
+            "path": "assets/initiative/challenge-sumatran-tiger-usfws-480w.webp",
+            "width": 480
+          },
+          {
+            "path": "assets/initiative/challenge-sumatran-tiger-usfws-720w.webp",
+            "width": 720
+          },
+          {
+            "path": "assets/initiative/challenge-sumatran-tiger-usfws.webp",
+            "width": 960
+          }
+        ],
+        "sizes": "(max-width:700px) calc(100vw - 32px), 520px"
       },
       "credit": {
         "label": "Image provenance",
@@ -1259,7 +1399,23 @@
         "url": "assets/bhoc-initiative-land-social.jpg",
         "alt": "BHOC Veterinary land wildlife scene representing wildlife welfare and responsible tourism",
         "width": 1200,
-        "height": 463
+        "height": 463,
+        "displayUrl": "assets/bhoc-initiative-land-social.webp",
+        "srcset": [
+          {
+            "path": "assets/bhoc-initiative-land-social-480w.webp",
+            "width": 480
+          },
+          {
+            "path": "assets/bhoc-initiative-land-social-768w.webp",
+            "width": 768
+          },
+          {
+            "path": "assets/bhoc-initiative-land-social.webp",
+            "width": 1200
+          }
+        ],
+        "sizes": "(max-width:700px) calc(100vw - 32px), 520px"
       },
       "credit": {
         "label": "BHOC Veterinary visual",
@@ -1386,7 +1542,23 @@
         "url": "assets/bhoc-initiative-land-social.jpg",
         "alt": "BHOC Veterinary land wildlife scene representing habitat, conservation law and species protection",
         "width": 1200,
-        "height": 463
+        "height": 463,
+        "displayUrl": "assets/bhoc-initiative-land-social.webp",
+        "srcset": [
+          {
+            "path": "assets/bhoc-initiative-land-social-480w.webp",
+            "width": 480
+          },
+          {
+            "path": "assets/bhoc-initiative-land-social-768w.webp",
+            "width": 768
+          },
+          {
+            "path": "assets/bhoc-initiative-land-social.webp",
+            "width": 1200
+          }
+        ],
+        "sizes": "(max-width:700px) calc(100vw - 32px), 520px"
       },
       "credit": {
         "label": "BHOC Veterinary visual",

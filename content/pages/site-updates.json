@@ -18,6 +18,23 @@
   "dateModified": "2026-10-31",
   "entries": [
     {
+      "id": "responsive-image-delivery-20261031",
+      "date": "2026-10-31",
+      "displayDate": "31 October 2026",
+      "title": "Responsive image delivery improved",
+      "text": "Veterinary News now serves smaller WebP image variants for screen size, including the cat cities collage and historical documentary panels. Science Bridge wildlife photographs also have responsive variants. Full-size source images and provenance records remain available.",
+      "links": [
+        {
+          "label": "Veterinary News",
+          "href": "news.html"
+        },
+        {
+          "label": "Explore veterinary science",
+          "href": "science.html"
+        }
+      ]
+    },
+    {
       "id": "veterinary-video-library-20261031",
       "date": "2026-10-31",
       "displayDate": "31 October 2026",

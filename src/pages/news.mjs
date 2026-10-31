@@ -5,6 +5,9 @@ const absoluteURL=value=>/^https:\/\//.test(value)?value:new URL(value,'https://
 const safeJSON=value=>JSON.stringify(value).replace(/</g,'\\u003c');
 const saxonVisual={
   url:'assets/news/k9-saxon-oxyglobin-biopure-report-2002-hires.webp',
+    displayUrl:"assets/news/k9-saxon-oxyglobin-biopure-report-2002-hires-1600w.webp",
+    srcset:[{"path": "assets/news/k9-saxon-oxyglobin-biopure-report-2002-hires-900w.webp", "width": 900}, {"path": "assets/news/k9-saxon-oxyglobin-biopure-report-2002-hires-1600w.webp", "width": 1600}, {"path": "assets/news/k9-saxon-oxyglobin-biopure-report-2002-hires-2400w.webp", "width": 2400}, {"path": "assets/news/k9-saxon-oxyglobin-biopure-report-2002-hires.webp", "width": 3628}],
+    sizes:"(max-width:700px) calc(100vw - 32px), 1160px",
   alt:'Original panel from the 2002 Biopure Annual Report with Fresno Police K-9 Saxon’s photograph and Police Chief Jerry Dyer’s account of his Oxyglobin treatment.',
   width:3628,
   height:1084,
@@ -62,6 +65,9 @@ const istanbulOxyglobinStory={
   why:'Volume replacement ≠ oxygen transport. Restoring circulating volume and restoring oxygen-carrying capacity are different therapeutic functions. The textbook also reports strong quantitative comparisons with blood; BHOC Veterinary has flagged those statements for primary-source verification before treating them as efficacy evidence.',
   image:{
     url:'assets/news/istanbul-university-oxyglobin-hboc-veterinary-fluid-therapy.webp',
+    displayUrl:"assets/news/istanbul-university-oxyglobin-hboc-veterinary-fluid-therapy.webp",
+    srcset:[{"path": "assets/news/istanbul-university-oxyglobin-hboc-veterinary-fluid-therapy-640w.webp", "width": 640}, {"path": "assets/news/istanbul-university-oxyglobin-hboc-veterinary-fluid-therapy-960w.webp", "width": 960}, {"path": "assets/news/istanbul-university-oxyglobin-hboc-veterinary-fluid-therapy.webp", "width": 1350}],
+    sizes:"(max-width:920px) calc(100vw - 32px), 640px",
     alt:'Veterinary news graphic showing the Istanbul University main gate and summarizing Oxyglobin, HBOCs and oxygen transport in veterinary fluid therapy.',
     width:1350,
     height:900
@@ -110,7 +116,8 @@ const itemListSchema=page=>safeJSON({
 const contextLinkHTML=item=>`<a class="seo-context-link" ${attrs(item)}>${esc(item.label)} ${icon('arrow')}</a>`;
 const storyMedia=story=>{
   if(!story.image)return '';
-  const image=`<img src="${esc(story.image.url)}" alt="${esc(story.image.alt)}" width="${story.image.width||900}" height="${story.image.height||600}" loading="lazy" decoding="async">`;
+  const responsive=story.image.srcset?` srcset="${story.image.srcset.map(item=>`${esc(item.path)} ${Number(item.width)}w`).join(', ')}" sizes="${esc(story.image.sizes)}"`:"";
+  const image=`<img src="${esc(story.image.displayUrl||story.image.url)}"${responsive} alt="${esc(story.image.alt)}" width="${story.image.width||900}" height="${story.image.height||600}" loading="lazy" decoding="async">`;
   if(story.image.variant==='initiative-pair'){
     const mark=story.image.mark;
     return `<figure class="story-media story-media-initiative-pair"><div class="story-media-scene">${image}</div><a class="story-media-mark" href="./initiative/" aria-label="BHOC Species and Biodiversity Protection Initiative"><img src="${esc(mark.src)}" alt="${esc(mark.alt)}" width="${mark.width}" height="${mark.height}" loading="lazy" decoding="async"></a></figure>`;

@@ -22,13 +22,43 @@
     "src": "assets/bhoc-initiative-land-social.jpg",
     "alt": "BHOC Veterinary land wildlife scene for Precision Oxygen Therapeutics and species protection",
     "width": 1200,
-    "height": 463
+    "height": 463,
+    "srcset": [
+      {
+        "path": "assets/bhoc-initiative-land-social-480w.webp",
+        "width": 480
+      },
+      {
+        "path": "assets/bhoc-initiative-land-social-768w.webp",
+        "width": 768
+      },
+      {
+        "path": "assets/bhoc-initiative-land-social.webp",
+        "width": 1200
+      }
+    ],
+    "sizes": "(max-width:640px) 80vw, 480px"
   },
   "socialImage": {
     "src": "assets/bhoc-initiative-land-social.jpg",
     "alt": "BHOC Veterinary land wildlife scene for Precision Oxygen Therapeutics and species protection",
     "width": 1200,
-    "height": 463
+    "height": 463,
+    "srcset": [
+      {
+        "path": "assets/bhoc-initiative-land-social-480w.webp",
+        "width": 480
+      },
+      {
+        "path": "assets/bhoc-initiative-land-social-768w.webp",
+        "width": 768
+      },
+      {
+        "path": "assets/bhoc-initiative-land-social.webp",
+        "width": 1200
+      }
+    ],
+    "sizes": "(max-width:640px) 80vw, 480px"
   },
   "sourceLink": {
     "label": "Original publication",

@@ -52,7 +52,22 @@
         "src": "assets/initiative/challenge-sumatran-tiger-usfws.webp",
         "alt": "Sumatran tiger representing veterinary and conservation medicine",
         "width": 960,
-        "height": 960
+        "height": 960,
+        "srcset": [
+          {
+            "path": "assets/initiative/challenge-sumatran-tiger-usfws-480w.webp",
+            "width": 480
+          },
+          {
+            "path": "assets/initiative/challenge-sumatran-tiger-usfws-720w.webp",
+            "width": 720
+          },
+          {
+            "path": "assets/initiative/challenge-sumatran-tiger-usfws.webp",
+            "width": 960
+          }
+        ],
+        "sizes": "(max-width:640px) 80vw, 480px"
       },
       "comparison": {
         "src": "assets/initiative/bhoc-vs-rbc-400x-comparison.webp",
@@ -83,7 +98,22 @@
         "src": "assets/initiative/challenge-hawksbill-turtle-noaa.webp",
         "alt": "Hawksbill sea turtle representing marine veterinary and conservation medicine",
         "width": 960,
-        "height": 960
+        "height": 960,
+        "srcset": [
+          {
+            "path": "assets/initiative/challenge-hawksbill-turtle-noaa-480w.webp",
+            "width": 480
+          },
+          {
+            "path": "assets/initiative/challenge-hawksbill-turtle-noaa-720w.webp",
+            "width": 720
+          },
+          {
+            "path": "assets/initiative/challenge-hawksbill-turtle-noaa.webp",
+            "width": 960
+          }
+        ],
+        "sizes": "(max-width:640px) 80vw, 480px"
       },
       "comparison": {
         "src": "assets/initiative/bhoc-vs-rbc-400x-comparison.webp",

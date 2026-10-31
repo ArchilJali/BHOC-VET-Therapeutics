@@ -34,7 +34,22 @@
       "height": 960,
       "credit": "Joe Milmoe / U.S. Fish and Wildlife Service",
       "license": "Public domain",
-      "source": "https://commons.wikimedia.org/wiki/File:Sumatran_Tiger_USFWS.jpg"
+      "source": "https://commons.wikimedia.org/wiki/File:Sumatran_Tiger_USFWS.jpg",
+      "srcset": [
+        {
+          "path": "assets/initiative/challenge-sumatran-tiger-usfws-480w.webp",
+          "width": 480
+        },
+        {
+          "path": "assets/initiative/challenge-sumatran-tiger-usfws-720w.webp",
+          "width": 720
+        },
+        {
+          "path": "assets/initiative/challenge-sumatran-tiger-usfws.webp",
+          "width": 960
+        }
+      ],
+      "sizes": "(max-width:640px) 80vw, 480px"
     },
     {
       "id": "hawksbill-turtle",
@@ -45,7 +60,22 @@
       "height": 960,
       "credit": "GP Schmahl / NOAA",
       "license": "Public domain",
-      "source": "https://commons.wikimedia.org/wiki/File:FGBNMS_-_Hawksbill_Turtle_(27618418831).jpg"
+      "source": "https://commons.wikimedia.org/wiki/File:FGBNMS_-_Hawksbill_Turtle_(27618418831).jpg",
+      "srcset": [
+        {
+          "path": "assets/initiative/challenge-hawksbill-turtle-noaa-480w.webp",
+          "width": 480
+        },
+        {
+          "path": "assets/initiative/challenge-hawksbill-turtle-noaa-720w.webp",
+          "width": 720
+        },
+        {
+          "path": "assets/initiative/challenge-hawksbill-turtle-noaa.webp",
+          "width": 960
+        }
+      ],
+      "sizes": "(max-width:640px) 80vw, 480px"
     },
     {
       "id": "african-elephant",

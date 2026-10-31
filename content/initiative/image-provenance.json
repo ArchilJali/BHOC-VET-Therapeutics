@@ -118,13 +118,18 @@
         "Initiative hero"
       ],
       "reason": "Represents field conservation and veterinary collaboration for critically threatened megafauna.",
-      "modifications": "Resized, cropped to a 4:3 display frame and converted from JPEG to WebP for responsive web delivery; no generative or subject-altering edit is documented.",
+      "modifications": "Resized, cropped to a 4:3 display frame and converted from JPEG to WebP for responsive web delivery; no generative or subject-altering edit is documented. Added uncropped responsive WebP derivatives on 31 October 2026 for screen-size selection; original files and their existing verification hashes are retained.",
       "reuse": "The processed photograph is redistributed under CC BY-SA 4.0. The licence does not extend to surrounding BHOC content or design.",
       "localFiles": [
         {
           "path": "assets/initiative/focus-veterinary-photo.webp",
           "sha256": "791c7770b2ba127c6b21cca06865c083c092f63364c807f6cdd3651df08bd111",
           "introducedOn": "2026-09-08"
+        },
+        {
+          "path": "assets/initiative/focus-veterinary-photo-480w.webp",
+          "introducedOn": "2026-10-31",
+          "sha256": "166d62937ad80121d840eb17ea3f91de206ea2dbfe44f6dbb2419e676978bdc5"
         }
       ]
     },
@@ -173,13 +178,23 @@
         "BHOC Veterinary homepage Science Bridge"
       ],
       "reason": "Represents endangered-species conservation and anchors the mission panel.",
-      "modifications": "Resized, square-cropped and converted from JPEG to WebP for responsive web delivery; no generative or subject-altering edit is documented.",
+      "modifications": "Resized, square-cropped and converted from JPEG to WebP for responsive web delivery; no generative or subject-altering edit is documented. Added uncropped responsive WebP derivatives on 31 October 2026 for screen-size selection; original files and their existing verification hashes are retained.",
       "reuse": "Public-domain status applies to the underlying photograph, not to surrounding BHOC content or design.",
       "localFiles": [
         {
           "path": "assets/initiative/challenge-sumatran-tiger-usfws.webp",
           "sha256": "082899f5dc0741b0645917b4f86f12c7cba76035001101d13fe235a2899b1199",
           "introducedOn": "2026-09-09"
+        },
+        {
+          "path": "assets/initiative/challenge-sumatran-tiger-usfws-480w.webp",
+          "introducedOn": "2026-10-31",
+          "sha256": "3367d0946526f8cc5292247638b43b2fead4875561172a4c01960762041c0630"
+        },
+        {
+          "path": "assets/initiative/challenge-sumatran-tiger-usfws-720w.webp",
+          "introducedOn": "2026-10-31",
+          "sha256": "02c7c791f4b5c0d70f8fc608c0b21da02c30fad951418bfdf4f8f586438e8ada"
         }
       ]
     },
@@ -202,7 +217,7 @@
         "BHOC Veterinary homepage Science Bridge"
       ],
       "reason": "Represents marine biodiversity, threatened species and remote veterinary care.",
-      "modifications": "Resized, cropped to the displayed aspect ratios and converted from JPEG to WebP for responsive web delivery; no generative or subject-altering edit is documented.",
+      "modifications": "Resized, cropped to the displayed aspect ratios and converted from JPEG to WebP for responsive web delivery; no generative or subject-altering edit is documented. Added uncropped responsive WebP derivatives on 31 October 2026 for screen-size selection; original files and their existing verification hashes are retained.",
       "reuse": "Public-domain status applies to the underlying photograph, not to surrounding BHOC content or design.",
       "localFiles": [
         {
@@ -214,6 +229,16 @@
           "path": "assets/initiative/focus-science-photo.webp",
           "sha256": "2099ceeca81ae1eac6448a7c843d0be4fbbac18690e1abd73e48b1f8cef23147",
           "introducedOn": "2026-09-08"
+        },
+        {
+          "path": "assets/initiative/challenge-hawksbill-turtle-noaa-480w.webp",
+          "introducedOn": "2026-10-31",
+          "sha256": "ebde53c4399fbdd89de94feae207291f3928bbe2cd7e9b69d4df5e044f7bdd4b"
+        },
+        {
+          "path": "assets/initiative/challenge-hawksbill-turtle-noaa-720w.webp",
+          "introducedOn": "2026-10-31",
+          "sha256": "1c3d467898190d61d929f651cfeecadb4e770ea18eea083a1bfea08e4da7aea8"
         }
       ]
     },
@@ -760,7 +785,7 @@
         "BHOC LinkedIn post"
       ],
       "reason": "Shows all ten places together. The harbour, wider Sardinian coast and Tala monastery are labelled as settings. Individual source records are retained in this register.",
-      "modifications": "AI-assisted compositing and typesetting using the credited photographic references. The approved collage was encoded as JPEG with descriptive metadata; its complete layout was retained.",
+      "modifications": "AI-assisted compositing and typesetting using the credited photographic references. The approved collage was encoded as JPEG with descriptive metadata; its complete layout was retained. Added uncropped responsive WebP derivatives on 31 October 2026 for screen-size selection; original files and their existing verification hashes are retained.",
       "reuse": "The collage is distributed under CC BY-SA 4.0. Individual source photograph authorship and licence records remain in the linked article and this register.",
       "sourcePhotographs": [
         {
@@ -839,6 +864,21 @@
           "path": "assets/initiative/cat-stories/cat-cities-islands-hermitage-istanbul-bhoc-veterinary-collage.jpg",
           "sha256": "f69c412f0a64c57e02c495c6ec18959b7636459f17fb23c31a60008ad3c961d0",
           "introducedOn": "2026-10-24"
+        },
+        {
+          "path": "assets/initiative/cat-stories/cat-cities-islands-hermitage-istanbul-bhoc-veterinary-collage-480w.webp",
+          "introducedOn": "2026-10-31",
+          "sha256": "4c7f0bbee295e3cb4defe8f846153ea638f181cf407d5f76f91c881e40163f5a"
+        },
+        {
+          "path": "assets/initiative/cat-stories/cat-cities-islands-hermitage-istanbul-bhoc-veterinary-collage-768w.webp",
+          "introducedOn": "2026-10-31",
+          "sha256": "cd20197099d485bd0b2681ab6bd4db0ebcfe93a6bfc37098ff4d7aa0e6dd9328"
+        },
+        {
+          "path": "assets/initiative/cat-stories/cat-cities-islands-hermitage-istanbul-bhoc-veterinary-collage.webp",
+          "introducedOn": "2026-10-31",
+          "sha256": "a4caf4e4d17ef20a304145987d5fb29997794fbdb9b743ad72c5f5bdc595b085"
         }
       ]
     }
@@ -1015,13 +1055,23 @@
         "Author reflection: We be of one blood"
       ],
       "reason": "Connects the personal reflection on the universe with the Initiative, without inventing a photograph of a scientist.",
-      "modifications": "Generated original image resized and encoded as WebP for web delivery. The canonical Initiative emblem is paired as an independent native image; its original pixels and file are unchanged.",
+      "modifications": "Generated original image resized and encoded as WebP for web delivery. The canonical Initiative emblem is paired as an independent native image; its original pixels and file are unchanged. Added uncropped responsive WebP derivatives on 31 October 2026 for screen-size selection; original files and their existing verification hashes are retained.",
       "reuse": "BHOC editorial asset. The Initiative identity and surrounding article retain the project protected-content terms.",
       "localFiles": [
         {
           "path": "assets/news/we-be-of-one-blood-earth-universe.webp",
           "sha256": "81e7d7680e3ac02abe66c61828451189db30e2105c324aa463e9fa7be915f026",
           "introducedOn": "2026-10-03"
+        },
+        {
+          "path": "assets/news/we-be-of-one-blood-earth-universe-480w.webp",
+          "introducedOn": "2026-10-31",
+          "sha256": "94d143d173190948df065189f3e5b8f8f2c502b419ac7b1c5ddd5c4f3c4a737d"
+        },
+        {
+          "path": "assets/news/we-be-of-one-blood-earth-universe-900w.webp",
+          "introducedOn": "2026-10-31",
+          "sha256": "bea222f7c256f4a28d6e8c1c0b6f9bc08d5a179659082dde05903af4529ca713"
         }
       ]
     },
@@ -1032,7 +1082,7 @@
       "providedOn": "2026-10-16",
       "rightsStatus": "User-supplied film poster authorized for this editorial reflection. Third-party rights remain with their respective holders.",
       "reason": "The sole editorial image selected by the user for the Why On Earth reflection and its news and Initiative cards.",
-      "modifications": "Full-size and proportional 600-pixel-wide derivatives were re-encoded on 2026-10-17 as quality-90 WebP for faster web delivery. Original dimensions, aspect ratio and complete composition are retained. Lossy compression changes pixel values; no cropping, overlays, branding or editorial alterations were introduced.",
+      "modifications": "Full-size and proportional 600-pixel-wide derivatives were re-encoded on 2026-10-17 as quality-90 WebP for faster web delivery. Original dimensions, aspect ratio and complete composition are retained. Lossy compression changes pixel values; no cropping, overlays, branding or editorial alterations were introduced. Added uncropped responsive WebP derivatives on 31 October 2026 for screen-size selection; original files and their existing verification hashes are retained.",
       "localFiles": [
         {
           "path": "assets/news/why-on-earth-poster.webp",
@@ -1043,6 +1093,16 @@
           "path": "assets/news/why-on-earth-poster-600.webp",
           "sha256": "2e9097098b23f4ee1ca5bd08cb4274d8547eff63577ba69492dd912a0effae45",
           "introducedOn": "2026-10-16"
+        },
+        {
+          "path": "assets/news/why-on-earth-poster-600-320w.webp",
+          "introducedOn": "2026-10-31",
+          "sha256": "e3679312d439b46545a2bcc346ea464117cbe1dbb3402bc3a803404a903bf175"
+        },
+        {
+          "path": "assets/news/why-on-earth-poster-600-480w.webp",
+          "introducedOn": "2026-10-31",
+          "sha256": "0db297f42c8c642d3c6838cc5cd875e76831c4e9a5a809c2f6dce9b345d84e4f"
         }
       ]
     },

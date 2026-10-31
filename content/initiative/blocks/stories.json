@@ -82,7 +82,22 @@
         "alt": "Why On Earth documentary poster showing a rhinoceros above Earth, with the film title, festival awards and filmmaker credits.",
         "width": 600,
         "height": 771,
-        "variant": "poster"
+        "variant": "poster",
+        "srcset": [
+          {
+            "path": "assets/news/why-on-earth-poster-600-320w.webp",
+            "width": 320
+          },
+          {
+            "path": "assets/news/why-on-earth-poster-600-480w.webp",
+            "width": 480
+          },
+          {
+            "path": "assets/news/why-on-earth-poster-600.webp",
+            "width": 600
+          }
+        ],
+        "sizes": "(max-width:640px) 80vw, 480px"
       },
       "overline": "Archil Jaliashvili · 16 October 2026",
       "title": "Why On Earth: God’s Design and the Biology We Share",
@@ -103,7 +118,22 @@
           "alt": "BHOC Species and Biodiversity Protection Initiative emblem",
           "width": 318,
           "height": 317
-        }
+        },
+        "srcset": [
+          {
+            "path": "assets/news/we-be-of-one-blood-earth-universe-480w.webp",
+            "width": 480
+          },
+          {
+            "path": "assets/news/we-be-of-one-blood-earth-universe-900w.webp",
+            "width": 900
+          },
+          {
+            "path": "assets/news/we-be-of-one-blood-earth-universe.webp",
+            "width": 1400
+          }
+        ],
+        "sizes": "(max-width:640px) 80vw, 480px"
       },
       "overline": "Archil Jaliashvili",
       "title": "God's Design and the Biology We Share",

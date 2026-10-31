@@ -40,13 +40,43 @@
     "src": "assets/news/archil-jaliashvili-cop17-accreditation-compact.webp",
     "alt": "COP17 Priority Pass for Archil Jaliashvili, BHOC Species & Biodiversity Protection Initiative, in the Bridge That Gap Hope for Africa Initiative NGO delegation.",
     "width": 1448,
-    "height": 1086
+    "height": 1086,
+    "srcset": [
+      {
+        "path": "assets/news/archil-jaliashvili-cop17-accreditation-compact-640w.webp",
+        "width": 640
+      },
+      {
+        "path": "assets/news/archil-jaliashvili-cop17-accreditation-compact-960w.webp",
+        "width": 960
+      },
+      {
+        "path": "assets/news/archil-jaliashvili-cop17-accreditation-compact.webp",
+        "width": 1448
+      }
+    ],
+    "sizes": "(max-width:640px) 80vw, 480px"
   },
   "socialImage": {
     "src": "assets/news/archil-jaliashvili-cop17-accreditation-compact.webp",
     "alt": "COP17 Priority Pass for Archil Jaliashvili, BHOC Species & Biodiversity Protection Initiative, in the Bridge That Gap Hope for Africa Initiative NGO delegation.",
     "width": 1448,
-    "height": 1086
+    "height": 1086,
+    "srcset": [
+      {
+        "path": "assets/news/archil-jaliashvili-cop17-accreditation-compact-640w.webp",
+        "width": 640
+      },
+      {
+        "path": "assets/news/archil-jaliashvili-cop17-accreditation-compact-960w.webp",
+        "width": 960
+      },
+      {
+        "path": "assets/news/archil-jaliashvili-cop17-accreditation-compact.webp",
+        "width": 1448
+      }
+    ],
+    "sizes": "(max-width:640px) 80vw, 480px"
   },
   "role": "As Lead of the BHOC Species & Biodiversity Protection Initiative, he will join the delegation of Bridge That Gap Hope for Africa Initiative to explore cooperation in animal health and species protection.",
   "sections": [
