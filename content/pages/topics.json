@@ -7,7 +7,7 @@
   "description": "Find veterinary research by species and question: dog, cat and horse blood access, Oxyglobin, donor welfare, oncology and comparative oxygen physiology.",
   "schemaType": "CollectionPage",
   "datePublished": "2026-10-25",
-  "dateModified": "2026-10-25",
+  "dateModified": "2026-10-31",
   "eyebrow": "Veterinary research routes",
   "heading": "Veterinary care and oxygen-delivery research",
   "lead": "Choose a species, clinical question or evidence route. Historical product findings, transfusion guidance and BHOC development questions remain separately identified.",
@@ -45,9 +45,9 @@
     },
     {
       "id": "V06",
-      "title": "Oxyglobin in Cats: Historical Evidence and Limits",
-      "text": "Historical feline Oxyglobin reports with their retrospective and product-specific limits.",
-      "href": "./feline-blood-transfusion-compatibility.html#historical-oxyglobin"
+      "title": "Oxyglobin in Feline Anemia: Evidence from 48 Cases",
+      "text": "Clinical findings from the 48-cat Oxyglobin study, with the earlier 72-cat series and the oxygen-transport questions they establish.",
+      "href": "./oxyglobin-cats-anemia-study.html"
     },
     {
       "id": "V07",
@@ -63,9 +63,9 @@
     },
     {
       "id": "V09",
-      "title": "Equine Anesthesia and Tissue Oxygenation",
-      "text": "Equine oxygenation, cardiac output, respiratory gas exchange and anesthesia literature.",
-      "href": "./science.html#equine-oxygenation"
+      "title": "Equine Anesthesia: Oxygenation and Tissue Oxygen Delivery",
+      "text": "Oxygenation, circulation and tissue oxygen delivery in equine anesthesia, drawing on Hubbell and Muir and the equine experimental record.",
+      "href": "./equine-anesthesia-and-oxygenation.html"
     },
     {
       "id": "V10",

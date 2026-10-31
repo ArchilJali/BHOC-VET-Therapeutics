@@ -213,7 +213,7 @@
       }
     ]
   },
-  "dateModified": "2026-10-25",
+  "dateModified": "2026-10-31",
   "topicSections": [
     {
       "id": "sepsis-metabolism-research",
@@ -268,6 +268,11 @@
           "label": "Horse blood access and transfusion evidence",
           "href": "./equine-blood-transfusion.html",
           "detail": ""
+        },
+        {
+          "label": "Equine anesthesia and tissue oxygen delivery",
+          "href": "./equine-anesthesia-and-oxygenation.html",
+          "detail": ""
         }
       ],
       "bullets": []
@@ -311,6 +316,11 @@
         {
           "label": "Veterinary tumor-hypoxia research",
           "href": "./veterinary-oncology-hypoxia.html",
+          "detail": ""
+        },
+        {
+          "label": "Oxyglobin in feline anemia: evidence from 48 cases",
+          "href": "./oxyglobin-cats-anemia-study.html",
           "detail": ""
         }
       ],

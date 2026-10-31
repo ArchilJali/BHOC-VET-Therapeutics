@@ -1,0 +1,189 @@
+{
+  "slug": "equine-anesthesia-and-oxygenation",
+  "navLabel": "Equine anesthesia and oxygen delivery",
+  "navActive": "science.html",
+  "breadcrumbs": [
+    {
+      "label": "Research topics",
+      "href": "topics.html"
+    }
+  ],
+  "title": "Equine Anesthesia: Oxygenation and Tissue Oxygen Delivery",
+  "description": "Explore oxygenation and tissue oxygen delivery during equine anesthesia, with Hubbell and Muir's review and source-linked equine studies.",
+  "schemaType": "Article",
+  "datePublished": "2026-10-31",
+  "dateModified": "2026-10-31",
+  "dateLabel": "31 Oct 2026",
+  "articleSection": "Equine anesthesia",
+  "eyebrow": "Equine anesthesia · Oxygen transport",
+  "heading": "Equine Anesthesia: Oxygenation and Tissue Oxygen Delivery",
+  "lead": "Oxygenation, circulation and tissue oxygen delivery in equine anesthesia, drawing on Hubbell and Muir and the equine experimental record.",
+  "image": {
+    "src": "assets/bhoc-initiative-land-social.jpg",
+    "alt": "BHOC Veterinary land wildlife scene for Precision Oxygen Therapeutics and species protection",
+    "width": 1200,
+    "height": 463
+  },
+  "socialImage": {
+    "src": "assets/bhoc-initiative-land-social.jpg",
+    "alt": "BHOC Veterinary land wildlife scene for Precision Oxygen Therapeutics and species protection",
+    "width": 1200,
+    "height": 463
+  },
+  "sourceLink": {
+    "label": "Original publication",
+    "href": "https://pubmed.ncbi.nlm.nih.gov/24612155/"
+  },
+  "referenceGroups": [
+    {
+      "heading": "Source publications and scientific context",
+      "links": [
+        {
+          "label": "[1] Hubbell JAE, Muir WW. Equine Vet J. 2015;47(1):25-35. DOI: 10.1111/evj.12258",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/24612155/"
+        },
+        {
+          "label": "[2] BHOC Veterinary science: functional oxygen delivery",
+          "href": "https://bhocvet.com/science.html"
+        },
+        {
+          "label": "[3] Swanson CR, Muir WW 3rd. Am J Vet Res. 1986;47(7):1573-1576. PMID: 3740627",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/3740627/"
+        },
+        {
+          "label": "[4] Soma LR et al. Anesth Analg. 2005;100(6):1570-1575. DOI: 10.1213/01.ANE.0000154081.38466.09",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/15920176/"
+        },
+        {
+          "label": "[5] BHOC equine transfusion and oxygen-delivery research",
+          "href": "https://bhocvet.com/equine-blood-transfusion.html"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "[1] Hubbell JAE, Muir WW. Equine Vet J. 2015;47(1):25-35. DOI: 10.1111/evj.12258",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/24612155/",
+      "doi": "10.1111/evj.12258",
+      "verified": true,
+      "evidenceRole": "equine_physiological_review"
+    },
+    {
+      "title": "[2] BHOC Veterinary science: functional oxygen delivery",
+      "url": "https://bhocvet.com/science.html",
+      "verified": true,
+      "evidenceRole": "project_scientific_context"
+    },
+    {
+      "title": "[3] Swanson CR, Muir WW 3rd. Am J Vet Res. 1986;47(7):1573-1576. PMID: 3740627",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/3740627/",
+      "verified": true,
+      "evidenceRole": "healthy_anesthetized_equine_experiment"
+    },
+    {
+      "title": "[4] Soma LR et al. Anesth Analg. 2005;100(6):1570-1575. DOI: 10.1213/01.ANE.0000154081.38466.09",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/15920176/",
+      "doi": "10.1213/01.ANE.0000154081.38466.09",
+      "verified": true,
+      "evidenceRole": "product_specific_equine_pharmacokinetics"
+    },
+    {
+      "title": "[5] BHOC equine transfusion and oxygen-delivery research",
+      "url": "https://bhocvet.com/equine-blood-transfusion.html",
+      "verified": true,
+      "evidenceRole": "project_context"
+    }
+  ],
+  "sections": [
+    {
+      "id": "section-1",
+      "title": "Oxygen delivery during equine anesthesia",
+      "paragraphs": [
+        "Equine anesthesia requires attention to pulmonary oxygenation, oxygen-carrying capacity and circulation. These are connected physiological functions with distinct measurements. Their interpretation determines how an equine oxygen-delivery study is designed. [1,2]",
+        "Hubbell and Muir examined oxygenation, oxygen delivery and methods of improving each in their Equine Veterinary Journal review. The article appeared online in 2014 and in the January 2015 issue. It is part of the BHOC scientific catalogue. [1]"
+      ]
+    },
+    {
+      "id": "section-2",
+      "title": "The Hubbell and Muir framework",
+      "paragraphs": [
+        "The review brings pulmonary oxygenation and peripheral oxygen delivery into the same assessment. It examines the published approaches to improving each and records their variable results and clinical applicability. [1]",
+        "For equine research, this provides a practical starting point: identify the physiological limitation, select the relevant measurement and evaluate the outcome. A change in arterial oxygenation and a change in oxygen delivery answer different questions. [1,2]"
+      ]
+    },
+    {
+      "id": "section-3",
+      "title": "Read blood measurements with circulation",
+      "paragraphs": [
+        "Packed cell volume describes red-cell volume. Hemoglobin contributes oxygen-carrying capacity. Blood flow, oxygen affinity, unloading and tissue demand determine how that capacity translates into functional oxygen delivery. [2]",
+        "An equine study needs a measurement plan that connects these functions. Record the blood compartment, the circulatory measurement and the clinical outcome. This gives each result a physiological meaning. [2]"
+      ]
+    },
+    {
+      "id": "section-4",
+      "title": "Cardiac output and gas exchange: the equine experiment",
+      "paragraphs": [
+        "Swanson and Muir studied dobutamine in healthy horses anesthetized with halothane in lateral or dorsal recumbency. Higher tested infusion rates increased cardiac output. The reported gas-exchange measures did not significantly improve. [3]",
+        "Dorsal recumbency produced a larger alveolar-to-arterial oxygen difference and shunt fraction than lateral positioning. The study demonstrates the distinction between a circulatory response and a pulmonary gas-exchange response in that anesthetic model. [3]"
+      ]
+    },
+    {
+      "id": "section-5",
+      "title": "The pharmacokinetic record in horses",
+      "paragraphs": [
+        "Soma and colleagues studied hemoglobin glutamer-200 bovine in horses in 2005. Median elimination half-lives were 1.3 hours for smaller polymer aggregates and 12.0 hours for larger aggregates. Polymer size was associated with different elimination profiles in the tested preparation. [4]",
+        "This establishes a specific equine pharmacokinetic record for that carrier. It also makes molecular composition an essential part of interpreting exposure and planning further equine studies. [4]"
+      ]
+    },
+    {
+      "id": "section-6",
+      "title": "The equine development priorities for BHOC",
+      "paragraphs": [
+        "BHOC, Biological Hemoglobin Oxygen Carrier, focuses on tissue oxygen support within Precision Oxygen Therapeutics. Equine development requires a characterized formulation, a specified anesthetic setting, an appropriate comparison and species-specific monitoring. [5]",
+        "The study plan should connect oxygen-related measurements with a clinical endpoint, including recovery where relevant. The population, timing of observations and outcome measures need to be specified before the study begins.",
+        "The equine transfusion guide addresses donor access and compatibility. This article addresses anesthesia and functional oxygen delivery. Together, they connect the available blood supply with the physiological task of delivering oxygen to tissues."
+      ]
+    }
+  ],
+  "internalLinks": [
+    {
+      "label": "Equine blood transfusion and donor access",
+      "href": "equine-blood-transfusion.html"
+    },
+    {
+      "label": "Veterinary oxygen-delivery science",
+      "href": "science.html"
+    },
+    {
+      "label": "Veterinary research topics",
+      "href": "topics.html"
+    },
+    {
+      "label": "Search veterinary publications",
+      "href": "https://bhoctherapeutics.com/evidence/library/veterinary/Vet-search.html"
+    },
+    {
+      "label": "Discuss an equine research collaboration",
+      "href": "bhoc-crada-research-partners.html"
+    }
+  ],
+  "seo": {
+    "primaryKeyword": "equine anesthesia oxygen delivery",
+    "secondaryKeywords": [
+      "oxygenation during horse anesthesia",
+      "equine anesthesia hypoxemia",
+      "equine tissue oxygen delivery"
+    ],
+    "supportingTerms": [
+      "BHOC Veterinary",
+      "Precision Oxygen Therapeutics",
+      "Biological Hemoglobin Oxygen Carrier",
+      "Oxyglobin",
+      "hemoglobin",
+      "oxygen delivery",
+      "equine anesthesia",
+      "equine physiology"
+    ]
+  }
+}

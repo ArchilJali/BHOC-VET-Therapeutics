@@ -12,7 +12,7 @@
   "description": "Explore historical Oxyglobin evidence in canine anemia, the controlled FDA record, feline case reports and the limits of translating those findings to BHOC.",
   "schemaType": "WebPage",
   "datePublished": "2026-10-25",
-  "dateModified": "2026-10-25",
+  "dateModified": "2026-10-31",
   "eyebrow": "Veterinary evidence and research",
   "heading": "Oxyglobin: veterinary evidence and history",
   "lead": "Oxyglobin, hemoglobin glutamer-200 (bovine), is a historical veterinary hemoglobin-based oxygen carrier. This guide connects its controlled canine record, clinical publications and descriptive case archive.",
@@ -96,6 +96,11 @@
         {
           "label": "Equine transfusion and oxygen-carrier research",
           "href": "./equine-blood-transfusion.html",
+          "detail": ""
+        },
+        {
+          "label": "Feline Oxyglobin evidence and cardiac complications",
+          "href": "./oxyglobin-cats-anemia-study.html",
           "detail": ""
         }
       ],

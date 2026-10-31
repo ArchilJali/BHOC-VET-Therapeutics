@@ -12,7 +12,7 @@
   "description": "Connect horse blood-donor access and transfusion literature with equine oxygen-delivery, anesthesia and pharmacokinetic research, keeping each model distinct.",
   "schemaType": "WebPage",
   "datePublished": "2026-10-25",
-  "dateModified": "2026-10-25",
+  "dateModified": "2026-10-31",
   "eyebrow": "Veterinary evidence and research",
   "heading": "Equine blood transfusion and oxygen-delivery research",
   "lead": "Horse and equine transfusion belong to one species-specific evidence route. Donor access, blood testing, oxygen transport and anesthesia should be connected without assuming that findings in another species apply unchanged.",
@@ -80,6 +80,11 @@
         {
           "label": "Equine science route",
           "href": "./science.html#equine-oxygenation",
+          "detail": ""
+        },
+        {
+          "label": "Equine anesthesia: oxygenation and tissue oxygen delivery",
+          "href": "./equine-anesthesia-and-oxygenation.html",
           "detail": ""
         }
       ],

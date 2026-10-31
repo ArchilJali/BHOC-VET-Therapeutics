@@ -12,7 +12,7 @@
   "description": "Feline blood transfusion compatibility, donor sedation and cat blood donation, with ISFM guidance and historical EveryCat and Oxyglobin sources.",
   "schemaType": "Article",
   "datePublished": "2026-10-03",
-  "dateModified": "2026-10-25",
+  "dateModified": "2026-10-31",
   "dateLabel": "3 Oct 2026",
   "articleSection": "Feline medicine",
   "seo": {
@@ -107,6 +107,10 @@
         {
           "label": "Read the EveryCat report",
           "href": "https://everycat.org/cat-health/oxyglobin-use-in-cats/"
+        },
+        {
+          "label": "Oxyglobin in feline anemia: the 48-case study",
+          "href": "oxyglobin-cats-anemia-study.html"
         }
       ]
     },

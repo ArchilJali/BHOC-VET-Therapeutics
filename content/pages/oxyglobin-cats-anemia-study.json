@@ -1,0 +1,178 @@
+{
+  "slug": "oxyglobin-cats-anemia-study",
+  "navLabel": "Oxyglobin in feline anemia",
+  "navActive": "science.html",
+  "breadcrumbs": [
+    {
+      "label": "Research topics",
+      "href": "topics.html"
+    }
+  ],
+  "title": "Oxyglobin in Feline Anemia: Evidence from 48 Cases",
+  "description": "Oxyglobin in feline anemia: findings from 48 cats, the earlier 72-cat series, hemoglobin response and cardiac complications.",
+  "schemaType": "Article",
+  "datePublished": "2026-10-31",
+  "dateModified": "2026-10-31",
+  "dateLabel": "31 Oct 2026",
+  "articleSection": "Feline medicine",
+  "eyebrow": "Feline anemia · Historical clinical evidence",
+  "heading": "Oxyglobin in Feline Anemia: Evidence from 48 Cases",
+  "lead": "Clinical findings from the 48-cat Oxyglobin study, with the earlier 72-cat series and the oxygen-transport questions they establish.",
+  "image": {
+    "src": "assets/bhoc-initiative-land-social.jpg",
+    "alt": "BHOC Veterinary land wildlife scene for Precision Oxygen Therapeutics and species protection",
+    "width": 1200,
+    "height": 463
+  },
+  "socialImage": {
+    "src": "assets/bhoc-initiative-land-social.jpg",
+    "alt": "BHOC Veterinary land wildlife scene for Precision Oxygen Therapeutics and species protection",
+    "width": 1200,
+    "height": 463
+  },
+  "sourceLink": {
+    "label": "Original publication",
+    "href": "https://pubmed.ncbi.nlm.nih.gov/18455461/"
+  },
+  "referenceGroups": [
+    {
+      "heading": "Source publications and scientific context",
+      "links": [
+        {
+          "label": "[1] Weingart C, Kohn B. J Feline Med Surg. 2008;10(5):431-438. DOI: 10.1016/j.jfms.2007.10.012",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/18455461/"
+        },
+        {
+          "label": "[2] Gibson GR, Callan MB, Hoffman V, Giger U. JAVMA. 2002;221(1):96-102. DOI: 10.2460/javma.2002.221.96",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/12420832/"
+        },
+        {
+          "label": "[3] BHOC Veterinary science: PCV and functional oxygen delivery",
+          "href": "https://bhocvet.com/science.html"
+        },
+        {
+          "label": "[4] Feline blood compatibility, donor welfare and research context",
+          "href": "https://bhocvet.com/feline-blood-transfusion-compatibility.html"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "[1] Weingart C, Kohn B. J Feline Med Surg. 2008;10(5):431-438. DOI: 10.1016/j.jfms.2007.10.012",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/18455461/",
+      "doi": "10.1016/j.jfms.2007.10.012",
+      "verified": true,
+      "evidenceRole": "historical_product_specific_feline_retrospective_series"
+    },
+    {
+      "title": "[2] Gibson GR, Callan MB, Hoffman V, Giger U. JAVMA. 2002;221(1):96-102. DOI: 10.2460/javma.2002.221.96",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/12420832/",
+      "doi": "10.2460/javma.2002.221.96",
+      "verified": true,
+      "evidenceRole": "historical_product_specific_feline_retrospective_series"
+    },
+    {
+      "title": "[3] BHOC Veterinary science: PCV and functional oxygen delivery",
+      "url": "https://bhocvet.com/science.html",
+      "verified": true,
+      "evidenceRole": "project_scientific_context"
+    },
+    {
+      "title": "[4] Feline blood compatibility, donor welfare and research context",
+      "url": "https://bhocvet.com/feline-blood-transfusion-compatibility.html",
+      "verified": true,
+      "evidenceRole": "project_context"
+    }
+  ],
+  "sections": [
+    {
+      "id": "section-1",
+      "title": "Feline anemia and oxygen transport",
+      "paragraphs": [
+        "Feline anemia reduces the blood's oxygen-carrying capacity. The clinical task is to restore effective oxygen transport while treating the cause of the anemia and managing circulation. Compatible donor blood remains central to feline transfusion care. [3,4]",
+        "Oxyglobin introduced a cell-free hemoglobin approach to this problem. The published feline record includes clinical series of 48 and 72 cats. These studies document hemoglobin responses, clinical observations and complications in patients receiving the historical carrier. [1,2]"
+      ]
+    },
+    {
+      "id": "section-2",
+      "title": "The 48-cat study",
+      "paragraphs": [
+        "Weingart and Kohn reviewed 48 anemic cats treated between 2002 and 2006. The cats received 65 Oxyglobin infusions. Hemoglobin increased after 41 of the 49 infusion events with before-and-after measurements. The denominator is infusion events, not individual cats. [1]",
+        "Seven cats with cardiac disease developed serious adverse effects. Pulmonary edema occurred in five, pleural effusion in three and respiratory distress in one. The categories overlap. Four of these cats also received whole blood on the same day. Five died and one was euthanized. The authors identified circulatory overload as a major risk in cats with heart disease at the doses studied. [1]",
+        "Overall 24-hour survival was 77%. This was a retrospective clinical series without a randomized comparison group. The survival figure describes the treated population and its concurrent care. [1]"
+      ]
+    },
+    {
+      "id": "section-3",
+      "title": "The earlier 72-cat series",
+      "paragraphs": [
+        "Gibson and colleagues reported 72 cats in 2002. Seventy received the carrier for anemia, commonly because compatible blood was unavailable. Improvements were recorded in 37 of the 43 more closely monitored cats. Adverse events were recorded in 44 of the full 72-cat cohort, and 23 cats were discharged. [2]",
+        "Pulmonary edema and pleural effusion were prominent complications. The authors identified infusion volume and rate as priorities for further investigation. Each clinical series has its own population and outcomes; the figures belong to those original groups. [2]"
+      ]
+    },
+    {
+      "id": "section-4",
+      "title": "PCV and hemoglobin measure different compartments",
+      "paragraphs": [
+        "Packed cell volume measures the proportion of blood occupied by red cells. Cell-free hemoglobin circulates in plasma. An oxygen carrier can therefore change total hemoglobin without increasing red-cell volume. PCV remains a measure of the red-cell compartment. [3]",
+        "Effective oxygen delivery combines oxygen-carrying capacity with blood flow, oxygen binding and unloading, and tissue demand. Assessment needs to connect the blood measurement with the patient's physiology. [3]"
+      ]
+    },
+    {
+      "id": "section-5",
+      "title": "The feline development priorities for BHOC",
+      "paragraphs": [
+        "BHOC, Biological Hemoglobin Oxygen Carrier, focuses on oxygen transport within Precision Oxygen Therapeutics. The feline development priorities are clear: characterize the formulation, assess cardiac status and circulating volume, measure oxygen-related responses, and track clinical outcomes. [4]",
+        "The Oxyglobin studies provide the historical clinical record. BHOC development takes these observations into a separate formulation-specific research program. The objective is effective tissue oxygen support with a defined safety profile. [4]"
+      ]
+    },
+    {
+      "id": "section-6",
+      "title": "Follow the feline evidence",
+      "paragraphs": [
+        "Use the feline blood-transfusion guide for compatibility and donor welfare, the Oxyglobin overview for product history, and the veterinary science page for PCV and functional oxygen delivery. The catalogue connects these topics with the original publications."
+      ]
+    }
+  ],
+  "internalLinks": [
+    {
+      "label": "Feline blood transfusion compatibility and donor welfare",
+      "href": "feline-blood-transfusion-compatibility.html"
+    },
+    {
+      "label": "Oxyglobin evidence and history",
+      "href": "oxyglobin.html"
+    },
+    {
+      "label": "PCV and functional oxygen delivery",
+      "href": "science.html"
+    },
+    {
+      "label": "Search veterinary publications",
+      "href": "https://bhoctherapeutics.com/evidence/library/veterinary/Vet-search.html"
+    },
+    {
+      "label": "Discuss a feline research collaboration",
+      "href": "bhoc-crada-research-partners.html"
+    }
+  ],
+  "seo": {
+    "primaryKeyword": "oxyglobin cats anemia",
+    "secondaryKeywords": [
+      "oxyglobin use in cats",
+      "oxyglobin feline study",
+      "feline anemia oxygen carrier"
+    ],
+    "supportingTerms": [
+      "BHOC Veterinary",
+      "Precision Oxygen Therapeutics",
+      "Biological Hemoglobin Oxygen Carrier",
+      "Oxyglobin",
+      "hemoglobin",
+      "oxygen delivery",
+      "feline anemia",
+      "historical clinical evidence"
+    ]
+  }
+}

@@ -96,7 +96,7 @@
   "eyebrow": "BHOC Initiative · Global Intelligence",
   "heading": "Wildlife & Species Conservation Intelligence.",
   "lead": "Tracking the people, science, funding and programs working to protect wildlife, restore endangered species and strengthen conservation medicine worldwide.",
-  "updated": "2026-10-24",
+  "updated": "2026-10-31",
   "seoContext": {
     "eyebrow": "BHOC Veterinary context",
     "heading": "Animal-health intelligence, separate from product claims.",
@@ -114,6 +114,54 @@
   },
   "feedNote": "BHOC Initiative Scout applies a high publication threshold and screens every candidate for duplication. New items are added only for exceptional rescue or recovery outcomes, globally significant conservation initiatives, substantive veterinary evidence milestones or other material developments; routine news is excluded.",
   "stories": [
+    {
+      "id": "oxyglobin-feline-anemia-48-cats",
+      "date": "2026-10-31",
+      "dateLabel": "31 Oct 2026 · Evidence review",
+      "region": "Veterinary research",
+      "category": "Feline anemia",
+      "title": "Oxyglobin in Feline Anemia: Evidence from 48 Cases",
+      "text": "The new BHOC Veterinary article examines hemoglobin responses and cardiac complications in the 48-cat Oxyglobin series, with the earlier 72-cat study for clinical context. It connects the published feline record with oxygen transport and the priorities for feline development.",
+      "link": {
+        "label": "Read the full article",
+        "href": "./oxyglobin-cats-anemia-study.html"
+      },
+      "keywords": [
+        "oxyglobin use in cats",
+        "oxyglobin feline study",
+        "feline anemia oxygen carrier",
+        "oxyglobin cats anemia"
+      ],
+      "article": true,
+      "contextLink": {
+        "label": "Original study",
+        "href": "https://pubmed.ncbi.nlm.nih.gov/18455461/"
+      }
+    },
+    {
+      "id": "equine-anesthesia-oxygen-delivery",
+      "date": "2026-10-31",
+      "dateLabel": "31 Oct 2026 · Evidence review",
+      "region": "Veterinary research",
+      "category": "Equine anesthesia",
+      "title": "Equine Anesthesia: Oxygenation and Tissue Oxygen Delivery",
+      "text": "The new BHOC Veterinary article connects Hubbell and Muir's review with studies of cardiac output, gas exchange and oxygen-carrier pharmacokinetics in horses. It sets out the physiological measurements behind equine anesthesia and tissue oxygen delivery.",
+      "link": {
+        "label": "Read the full article",
+        "href": "./equine-anesthesia-and-oxygenation.html"
+      },
+      "keywords": [
+        "oxygenation during horse anesthesia",
+        "equine anesthesia hypoxemia",
+        "equine tissue oxygen delivery",
+        "equine anesthesia oxygen delivery"
+      ],
+      "article": true,
+      "contextLink": {
+        "label": "Hubbell and Muir review",
+        "href": "https://pubmed.ncbi.nlm.nih.gov/24612155/"
+      }
+    },
     {
       "id": "blt-friendship-beyond-species",
       "date": "2026-10-26",
@@ -1380,5 +1428,6 @@
     "label": "Site Structure & Knowledge Updates",
     "text": "A short dated record of BHOC Veterinary site and knowledge additions.",
     "href": "https://bhocvet.com/site-updates.html"
-  }
+  },
+  "dateModified": "2026-10-31"
 }

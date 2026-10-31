@@ -15,8 +15,25 @@
     }
   ],
   "datePublished": "2026-10-13",
-  "dateModified": "2026-10-26",
+  "dateModified": "2026-10-31",
   "entries": [
+    {
+      "id": "feline-equine-evidence-20261031",
+      "date": "2026-10-31",
+      "displayDate": "31 October 2026",
+      "title": "Feline anemia and equine anesthesia articles published",
+      "text": "Added two source-linked articles from the BHOC catalogue, with Veterinary News announcements and links from the species guides, Oxyglobin, Science and Research Topics.",
+      "links": [
+        {
+          "label": "Oxyglobin in feline anemia",
+          "href": "oxyglobin-cats-anemia-study.html"
+        },
+        {
+          "label": "Equine anesthesia and oxygen delivery",
+          "href": "equine-anesthesia-and-oxygenation.html"
+        }
+      ]
+    },
     {
       "id": "blt-friendship-20261026",
       "date": "2026-10-26",
