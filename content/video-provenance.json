@@ -1,0 +1,12 @@
+{
+  "source": "Owner-supplied BHOC Veterinary video, received 31 October 2026",
+  "originalFileName": "BHOC veterinary .mp4",
+  "originalSha256": "cbfc16d7561e3e8d4ce2d9e89cf70c420b26f14ed0951e63935f8c5a7943a35f",
+  "originalDurationSeconds": 33.92,
+  "webEncoding": "1280x720 H.264/AAC, faststart; original composition preserved",
+  "poster": "Frame at 2 seconds, full 16:9 composition, WebP",
+  "publishedAssets": [
+    "assets/videos/bhoc-veterinary-oxygen-delivery.mp4",
+    "assets/videos/bhoc-veterinary-oxygen-delivery-poster.webp"
+  ]
+}

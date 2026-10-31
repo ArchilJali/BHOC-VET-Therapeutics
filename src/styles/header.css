@@ -150,6 +150,11 @@ body[data-page="home"] .page-route { display: none; }
   font-weight: 800;
 }
 
+@media (max-width: 600px) {
+  .page-route { flex-wrap: wrap; white-space: normal; overflow: visible; padding: 7px 0; line-height: 1.5; }
+  .page-route a, .page-route [aria-current="page"] { overflow-wrap: anywhere; }
+}
+
 .search-toggle {
   flex: none;
   width: 38px;

@@ -18,6 +18,23 @@
   "dateModified": "2026-10-31",
   "entries": [
     {
+      "id": "veterinary-video-library-20261031",
+      "date": "2026-10-31",
+      "displayDate": "31 October 2026",
+      "title": "BHOC Veterinary video library launched",
+      "text": "Published the first 34-second BHOC Veterinary film with a dedicated watch page and News announcement. Research articles now highlight their principal numerical finding; clinical research sections use a shared, responsive format.",
+      "links": [
+        {
+          "label": "BHOC Veterinary videos",
+          "href": "videos.html"
+        },
+        {
+          "label": "Watch Oxygen Delivery Across Species",
+          "href": "veterinary-oxygen-delivery-video.html"
+        }
+      ]
+    },
+    {
       "id": "feline-equine-evidence-20261031",
       "date": "2026-10-31",
       "displayDate": "31 October 2026",

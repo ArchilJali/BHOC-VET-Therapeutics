@@ -212,6 +212,10 @@
             "href": "news.html"
           },
           {
+            "label": "Videos",
+            "href": "videos.html"
+          },
+          {
             "label": "Contact BHOC Veterinary",
             "href": "contact.html"
           }

@@ -1,0 +1,46 @@
+{
+  "slug": "videos",
+  "navLabel": "Videos",
+  "navActive": "videos.html",
+  "breadcrumbs": [],
+  "title": "BHOC Veterinary Videos | Oxygen Delivery & Animal Health",
+  "description": "Watch BHOC Veterinary videos on Biological Hemoglobin Oxygen Carriers, oxygen delivery, species physiology and animal-health research.",
+  "schemaType": "CollectionPage",
+  "datePublished": "2026-10-31",
+  "dateModified": "2026-10-31",
+  "eyebrow": "BHOC Veterinary · Video library",
+  "heading": "Oxygen. Biology. In motion.",
+  "lead": "Films on oxygen transport, species physiology and the BHOC Veterinary program.",
+  "videos": [
+    {
+      "title": "BHOC Veterinary: Oxygen Delivery Across Species",
+      "description": "Watch a 34-second introduction to BHOC Veterinary, cell-free hemoglobin, oxygen affinity and oxygen delivery across cats, dogs, horses and wildlife.",
+      "eyebrow": "Film 01 · Introduction",
+      "durationLabel": "00:34",
+      "href": "veterinary-oxygen-delivery-video.html",
+      "poster": {
+        "src": "assets/videos/bhoc-veterinary-oxygen-delivery-poster.webp",
+        "alt": "Veterinary team with a dog and cat beside the words When an animal needs oxygen in the BHOC Veterinary introductory video.",
+        "width": 1280,
+        "height": 720
+      }
+    }
+  ],
+  "seo": {
+    "primaryKeyword": "BHOC Veterinary videos",
+    "secondaryKeywords": [
+      "veterinary oxygen delivery videos",
+      "hemoglobin oxygen carrier video"
+    ],
+    "supportingTerms": [
+      "BHOC Veterinary",
+      "Precision Oxygen Therapeutics",
+      "animal health",
+      "cell-free hemoglobin",
+      "oxygen transport",
+      "species physiology",
+      "veterinary research",
+      "Biological Hemoglobin Oxygen Carrier"
+    ]
+  }
+}

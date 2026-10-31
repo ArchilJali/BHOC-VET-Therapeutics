@@ -10,7 +10,7 @@ const routeLink=item=>
 export default (page,scienceHTML)=>`<main id="main" class="subpage-main science-page">
   <section class="page-hero" aria-labelledby="science-page-heading">
     <div><span class="page-eyebrow">${esc(page.eyebrow)}</span><h1 id="science-page-heading">${esc(page.heading)}</h1><p>${esc(page.lead)}</p><nav class="science-route-rail" aria-label="Veterinary knowledge routes">${page.routes.map(routeLink).join('')}</nav></div>
-    <nav class="page-index" aria-label="Science page sections"><a href="#science">Discover</a><a href="#relevant-evidence">Transfusion &amp; oxygen delivery</a><a href="#case-studies">Real-world evidence &amp; cases</a><a href="#functional-delivery">PCV &amp; delivery</a><a href="#evidence-platform">Research questions</a><a href="#science-sources">Sources</a></nav>
+    <nav class="page-index" aria-label="Science page sections"><a href="#science">Discover</a><a href="#relevant-evidence">Transfusion &amp; oxygen delivery</a><a href="#case-studies">Real-world evidence &amp; cases</a><a href="#functional-delivery">PCV &amp; delivery</a><a href="#evidence-platform">Research questions</a><a href="#science-sources">Sources</a><a href="#sepsis-metabolism-research">Clinical research topics</a></nav>
   </section>
   ${scienceHTML}
   <section id="foundation" class="page-section foundation-layout" aria-labelledby="foundation-heading">
@@ -26,5 +26,5 @@ export default (page,scienceHTML)=>`<main id="main" class="subpage-main science-
     <div class="platform-actions"><a class="button" ${attrs(page.platform.link)}><span>${esc(page.platform.link.label)}</span>${icon('arrow')}</a><a class="platform-library-link" ${attrs(page.platform.library)}><span>${esc(page.platform.library.label)}</span>${icon('arrow')}</a><a class="text-link light-link" ${attrs(page.platform.search)}>${icon('search')}<span>${esc(page.platform.search.label)}</span></a></div>
   </section>
   <section id="science-sources" class="page-section source-section" aria-labelledby="science-sources-heading"><div class="section-heading"><span class="page-eyebrow">Source links</span><h2 id="science-sources-heading">Scientific context.</h2></div><div class="source-grid">${page.references.map(sourceLink).join('')}</div></section>
-${(page.topicSections||[]).map(topicSection).join('')}
+  <section class="page-section science-research" aria-labelledby="science-research-heading"><div class="section-heading"><span class="page-eyebrow">Research by clinical question</span><h2 id="science-research-heading">Species, physiology and oxygen delivery.</h2></div><div class="science-research-grid">${(page.topicSections||[]).map(topicSection).join('')}</div></section>
 </main>`;

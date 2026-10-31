@@ -119,8 +119,8 @@ const storyMedia=story=>{
   return `<figure class="story-media${story.image.variant==='logo'?' story-media-logo':story.image.variant==='portrait'?' story-media-portrait':story.image.variant==='document'?' story-media-document':story.image.variant==='compact-vatican'?' story-media-compact-vatican':''}">${saxonPanel?`<a class="story-document-panel" href="${esc(absoluteURL(story.image.url))}" target="_blank" rel="noopener noreferrer" aria-label="Open the original K-9 Saxon panel at full resolution">${image}</a><figcaption class="story-document-links"><a href="${esc(absoluteURL(story.image.url))}" target="_blank" rel="noopener noreferrer">Enlarge the original panel ↗</a><a href="https://media.corporate-ir.net/media_files/nsd/bpur/reports/ar02/biopure.pdf#page=15" target="_blank" rel="noopener noreferrer">Read the 2002 Annual Report ↗</a></figcaption>`:image}${story.credit?`<a class="story-credit" ${attrs(story.credit)}>${esc(story.credit.label)}</a>`:''}</figure>`;
 };
 
-const storyHTML=(story,index)=>`<article class="conservation-story${index===0?' conservation-story-featured':''}${story.image?'':' conservation-story-no-media'}${story.image?.variant==='document'?' conservation-story-document':''}" id="${esc(story.id)}">
-  ${storyMedia(story)}
+const storyHTML=(story,index)=>`<article class="conservation-story${index===0?' conservation-story-featured':''}${story.image?'':' conservation-story-no-media'}${story.image?.variant==='document'?' conservation-story-document':''}${story.keyFinding?' conservation-story-result':''}" id="${esc(story.id)}">
+  ${story.keyFinding?`<div class="news-result"><span>${esc(story.keyFinding.label)}</span><strong>${esc(story.keyFinding.value)}</strong><small>${esc(story.keyFinding.sourceLabel)}</small></div>`:storyMedia(story)}
   <div class="story-copy">
     <div class="story-meta">${index===0?'<span class="story-latest">Latest</span>':''}<time datetime="${esc(story.date)}">${esc(story.dateLabel)}</time><span>${esc(story.region)}</span><span>${esc(story.category)}</span></div>
     <h3>${esc(story.title)}</h3>

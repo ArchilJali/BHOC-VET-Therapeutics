@@ -36,6 +36,10 @@
       "href": "news.html"
     },
     {
+      "label": "Videos",
+      "href": "videos.html"
+    },
+    {
       "label": "Contact",
       "href": "contact.html"
     }

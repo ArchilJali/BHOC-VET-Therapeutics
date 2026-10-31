@@ -17,7 +17,7 @@
   "articleSection": "Equine anesthesia",
   "eyebrow": "Equine anesthesia · Oxygen transport",
   "heading": "Equine Anesthesia: Oxygenation and Tissue Oxygen Delivery",
-  "lead": "Oxygenation, circulation and tissue oxygen delivery in equine anesthesia, drawing on Hubbell and Muir and the equine experimental record.",
+  "lead": "Pulmonary oxygenation, circulation and tissue oxygen delivery in horses.",
   "image": {
     "src": "assets/bhoc-initiative-land-social.jpg",
     "alt": "BHOC Veterinary land wildlife scene for Precision Oxygen Therapeutics and species protection",
@@ -185,5 +185,12 @@
       "equine anesthesia",
       "equine physiology"
     ]
+  },
+  "keyFinding": {
+    "label": "Median elimination half-life",
+    "value": "12 h",
+    "sentence": "Larger hemoglobin-polymer aggregates had a median elimination half-life of 12 hours in horses.",
+    "sourceLabel": "Soma et al., 2005",
+    "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/15920176/"
   }
 }

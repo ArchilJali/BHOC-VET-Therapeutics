@@ -17,7 +17,7 @@
   "articleSection": "Feline medicine",
   "eyebrow": "Feline anemia · Historical clinical evidence",
   "heading": "Oxyglobin in Feline Anemia: Evidence from 48 Cases",
-  "lead": "Clinical findings from the 48-cat Oxyglobin study, with the earlier 72-cat series and the oxygen-transport questions they establish.",
+  "lead": "Feline oxygen transport, hemoglobin response and the clinical record.",
   "image": {
     "src": "assets/bhoc-initiative-land-social.jpg",
     "alt": "BHOC Veterinary land wildlife scene for Precision Oxygen Therapeutics and species protection",
@@ -174,5 +174,12 @@
       "feline anemia",
       "historical clinical evidence"
     ]
+  },
+  "keyFinding": {
+    "label": "Recorded hemoglobin increase",
+    "value": "41 / 49",
+    "sentence": "Hemoglobin rose after 41 of 49 evaluated Oxyglobin infusions in the 48-cat series.",
+    "sourceLabel": "Weingart & Kohn, 2008",
+    "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/18455461/"
   }
 }

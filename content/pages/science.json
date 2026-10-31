@@ -239,7 +239,8 @@
           "detail": ""
         }
       ],
-      "bullets": []
+      "bullets": [],
+      "takeaway": "Oxygen delivery, tissue extraction and cellular use are distinct measurements."
     },
     {
       "id": "equine-oxygenation",
@@ -275,7 +276,8 @@
           "detail": ""
         }
       ],
-      "bullets": []
+      "bullets": [],
+      "takeaway": "Gas exchange, cardiac output and tissue oxygen delivery describe different steps in oxygen transport."
     },
     {
       "id": "camelid-research",
@@ -296,7 +298,8 @@
           "detail": ""
         }
       ],
-      "bullets": []
+      "bullets": [],
+      "takeaway": "Camel research starts with species-specific physiology and donor-blood constraints."
     },
     {
       "id": "research-topics",
@@ -324,7 +327,8 @@
           "detail": ""
         }
       ],
-      "bullets": []
+      "bullets": [],
+      "takeaway": "Follow the species, study or physiological question directly to its sources."
     }
   ]
 }

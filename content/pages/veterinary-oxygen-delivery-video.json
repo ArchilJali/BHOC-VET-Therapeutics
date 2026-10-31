@@ -1,0 +1,85 @@
+{
+  "slug": "veterinary-oxygen-delivery-video",
+  "navLabel": "Oxygen delivery across species",
+  "navActive": "videos.html",
+  "breadcrumbs": [
+    {
+      "label": "Videos",
+      "href": "videos.html"
+    }
+  ],
+  "title": "BHOC Veterinary: Oxygen Delivery Across Species",
+  "description": "Watch a 34-second introduction to BHOC Veterinary, cell-free hemoglobin, oxygen affinity and oxygen delivery across cats, dogs, horses and wildlife.",
+  "schemaType": "WebPage",
+  "datePublished": "2026-10-31",
+  "dateModified": "2026-10-31",
+  "eyebrow": "BHOC Veterinary · Film 01",
+  "heading": "BHOC Veterinary: Oxygen Delivery Across Species",
+  "image": {
+    "src": "assets/videos/bhoc-veterinary-oxygen-delivery-poster.webp",
+    "alt": "Veterinary team with a dog and cat beside the words When an animal needs oxygen in the BHOC Veterinary introductory video.",
+    "width": 1280,
+    "height": 720
+  },
+  "socialImage": {
+    "src": "assets/videos/bhoc-veterinary-oxygen-delivery-poster.webp",
+    "alt": "Veterinary team with a dog and cat beside the words When an animal needs oxygen in the BHOC Veterinary introductory video.",
+    "width": 1280,
+    "height": 720
+  },
+  "video": {
+    "name": "BHOC Veterinary: Oxygen Delivery Across Species",
+    "description": "Watch a 34-second introduction to BHOC Veterinary, cell-free hemoglobin, oxygen affinity and oxygen delivery across cats, dogs, horses and wildlife.",
+    "poster": "assets/videos/bhoc-veterinary-oxygen-delivery-poster.webp",
+    "duration": "PT33.92S",
+    "durationLabel": "00:34",
+    "durationSeconds": 34,
+    "uploadDate": "2026-10-31T15:13:36+00:00",
+    "width": 1280,
+    "height": 720,
+    "contentUrl": "https://bhocvet.com/assets/videos/bhoc-veterinary-oxygen-delivery.mp4",
+    "file": "assets/videos/bhoc-veterinary-oxygen-delivery.mp4"
+  },
+  "overview": [
+    "Oxygen needs and access to donor blood in veterinary care.",
+    "Species differences, cell-free hemoglobin and oxygen transport.",
+    "Oxygen affinity, loading and release across animal-health research."
+  ],
+  "relatedLinks": [
+    {
+      "label": "Biological Hemoglobin Oxygen Carrier",
+      "href": "product.html"
+    },
+    {
+      "label": "Oxygen delivery and veterinary science",
+      "href": "science.html"
+    },
+    {
+      "label": "Feline blood compatibility",
+      "href": "feline-blood-transfusion-compatibility.html"
+    },
+    {
+      "label": "Equine oxygen-delivery research",
+      "href": "equine-blood-transfusion.html"
+    }
+  ],
+  "seo": {
+    "primaryKeyword": "BHOC Veterinary video",
+    "secondaryKeywords": [
+      "veterinary oxygen delivery",
+      "biological hemoglobin oxygen carrier video",
+      "cell-free hemoglobin",
+      "oxygen affinity"
+    ],
+    "supportingTerms": [
+      "BHOC Veterinary",
+      "Precision Oxygen Therapeutics",
+      "cats",
+      "dogs",
+      "horses",
+      "wildlife",
+      "animal health",
+      "oxygen transport"
+    ]
+  }
+}

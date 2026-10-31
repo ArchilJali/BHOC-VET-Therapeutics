@@ -115,13 +115,41 @@
   "feedNote": "BHOC Initiative Scout applies a high publication threshold and screens every candidate for duplication. New items are added only for exceptional rescue or recovery outcomes, globally significant conservation initiatives, substantive veterinary evidence milestones or other material developments; routine news is excluded.",
   "stories": [
     {
+      "id": "bhoc-veterinary-oxygen-delivery-video",
+      "date": "2026-10-31",
+      "dateLabel": "31 Oct 2026 · Video · 00:34",
+      "region": "BHOC Veterinary",
+      "category": "Oxygen transport",
+      "title": "BHOC Veterinary: Oxygen Delivery Across Species",
+      "text": "A 34-second introduction to cell-free hemoglobin, oxygen affinity and oxygen delivery across species.",
+      "image": {
+        "url": "assets/videos/bhoc-veterinary-oxygen-delivery-poster.webp",
+        "alt": "Veterinary team with a dog and cat beside the words When an animal needs oxygen in the BHOC Veterinary introductory video.",
+        "width": 1280,
+        "height": 720
+      },
+      "link": {
+        "label": "Watch the video",
+        "href": "./veterinary-oxygen-delivery-video.html"
+      },
+      "keywords": [
+        "BHOC Veterinary video",
+        "oxygen delivery",
+        "Biological Hemoglobin Oxygen Carrier",
+        "cats",
+        "dogs",
+        "horses",
+        "wildlife"
+      ]
+    },
+    {
       "id": "oxyglobin-feline-anemia-48-cats",
       "date": "2026-10-31",
       "dateLabel": "31 Oct 2026 · Evidence review",
       "region": "Veterinary research",
       "category": "Feline anemia",
-      "title": "Oxyglobin in Feline Anemia: Evidence from 48 Cases",
-      "text": "The new BHOC Veterinary article examines hemoglobin responses and cardiac complications in the 48-cat Oxyglobin series, with the earlier 72-cat study for clinical context. It connects the published feline record with oxygen transport and the priorities for feline development.",
+      "title": "Oxyglobin in Feline Anemia",
+      "text": "Hemoglobin rose after 41 of 49 evaluated Oxyglobin infusions in the 48-cat series.",
       "link": {
         "label": "Read the full article",
         "href": "./oxyglobin-cats-anemia-study.html"
@@ -134,8 +162,15 @@
       ],
       "article": true,
       "contextLink": {
-        "label": "Original study",
+        "label": "Weingart & Kohn, 2008",
         "href": "https://pubmed.ncbi.nlm.nih.gov/18455461/"
+      },
+      "keyFinding": {
+        "label": "Recorded hemoglobin increase",
+        "value": "41 / 49",
+        "sentence": "Hemoglobin rose after 41 of 49 evaluated Oxyglobin infusions in the 48-cat series.",
+        "sourceLabel": "Weingart & Kohn, 2008",
+        "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/18455461/"
       }
     },
     {
@@ -144,8 +179,8 @@
       "dateLabel": "31 Oct 2026 · Evidence review",
       "region": "Veterinary research",
       "category": "Equine anesthesia",
-      "title": "Equine Anesthesia: Oxygenation and Tissue Oxygen Delivery",
-      "text": "The new BHOC Veterinary article connects Hubbell and Muir's review with studies of cardiac output, gas exchange and oxygen-carrier pharmacokinetics in horses. It sets out the physiological measurements behind equine anesthesia and tissue oxygen delivery.",
+      "title": "Equine Anesthesia and Oxygen Delivery",
+      "text": "Larger hemoglobin-polymer aggregates had a median elimination half-life of 12 hours in horses.",
       "link": {
         "label": "Read the full article",
         "href": "./equine-anesthesia-and-oxygenation.html"
@@ -158,8 +193,15 @@
       ],
       "article": true,
       "contextLink": {
-        "label": "Hubbell and Muir review",
-        "href": "https://pubmed.ncbi.nlm.nih.gov/24612155/"
+        "label": "Soma et al., 2005",
+        "href": "https://pubmed.ncbi.nlm.nih.gov/15920176/"
+      },
+      "keyFinding": {
+        "label": "Median elimination half-life",
+        "value": "12 h",
+        "sentence": "Larger hemoglobin-polymer aggregates had a median elimination half-life of 12 hours in horses.",
+        "sourceLabel": "Soma et al., 2005",
+        "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/15920176/"
       }
     },
     {
