@@ -15,8 +15,29 @@
     }
   ],
   "datePublished": "2026-10-13",
-  "dateModified": "2026-10-31",
+  "dateModified": "2026-11-01",
   "entries": [
+    {
+      "id": "donor-blood-costs-access-20261101",
+      "date": "2026-11-01",
+      "displayDate": "1 November 2026",
+      "title": "Veterinary donor blood costs and access: BHOC LinkedIn publication",
+      "text": "Added the BHOC corporate LinkedIn post as a permanent article with published feline donor-blood prices, source links and the complete campaign artwork featuring Rem and Evchika. Veterinary News links to both the article and the original LinkedIn post. Responsive WebP images and native article metadata are included.",
+      "links": [
+        {
+          "label": "Donor blood costs and access",
+          "href": "veterinary-donor-blood-costs-and-access.html"
+        },
+        {
+          "label": "Original LinkedIn post",
+          "href": "https://www.linkedin.com/feed/update/urn:li:share:7522646701741072385"
+        },
+        {
+          "label": "Veterinary News",
+          "href": "news.html#veterinary-donor-blood-costs-access-20261101"
+        }
+      ]
+    },
     {
       "id": "responsive-image-delivery-20261031",
       "date": "2026-10-31",

@@ -1,0 +1,223 @@
+{
+  "slug": "veterinary-donor-blood-costs-and-access",
+  "navLabel": "Donor blood costs and access",
+  "navActive": "news.html",
+  "breadcrumbs": [
+    {
+      "label": "News",
+      "href": "news.html"
+    }
+  ],
+  "title": "Cat Donor Blood Prices & Veterinary Access | BHOC",
+  "description": "Published cat donor-blood prices in the U.S. and Dubai, veterinary blood availability and BHOC's work in Precision Oxygen Therapeutics.",
+  "schemaType": "Article",
+  "datePublished": "2026-11-01",
+  "dateModified": "2026-11-01",
+  "dateLabel": "1 November 2026",
+  "articleSection": "Veterinary blood availability",
+  "authorName": "Archil Jaliashvili",
+  "seo": {
+    "primaryKeyword": "cat donor blood prices",
+    "secondaryKeywords": [
+      "veterinary blood transfusion cost",
+      "feline packed red blood cells",
+      "animal blood availability",
+      "veterinary oxygen delivery"
+    ],
+    "supportingTerms": [
+      "BHOC Veterinary",
+      "Biological Hemoglobin Oxygen Carrier",
+      "Precision Oxygen Therapeutics",
+      "equine critical care",
+      "falcon veterinary care",
+      "wildlife rescue"
+    ]
+  },
+  "eyebrow": "BHOC Veterinary · Donor blood and timely care",
+  "heading": "Another chance to save a life.",
+  "lead": "Donor blood for a cat can cost hundreds of dollars for a single small unit. Severe shortages are reported in the U.S. What about horses, falcons and wildlife?",
+  "image": {
+    "src": "assets/news/bhoc-veterinary-donor-blood-access-20261101-1200.webp",
+    "alt": "BHOC veterinary campaign illustration with Earth, Rem and Evchika, a cat, horse, elephant, dolphin, falcon, eagle, tiger, lion, orangutan and panda. The Initiative logo appears above the message A chance to save a life.",
+    "width": 1200,
+    "height": 800,
+    "srcset": [
+      {
+        "path": "assets/news/bhoc-veterinary-donor-blood-access-20261101-600.webp",
+        "width": 600
+      },
+      {
+        "path": "assets/news/bhoc-veterinary-donor-blood-access-20261101-1200.webp",
+        "width": 1200
+      },
+      {
+        "path": "assets/news/bhoc-veterinary-donor-blood-access-20261101.webp",
+        "width": 1536
+      }
+    ],
+    "sizes": "(max-width: 800px) 100vw, 640px"
+  },
+  "socialImage": {
+    "src": "assets/news/bhoc-veterinary-donor-blood-access-20261101.webp",
+    "alt": "BHOC veterinary campaign illustration with Earth, Rem and Evchika, a cat, horse, elephant, dolphin, falcon, eagle, tiger, lion, orangutan and panda. The Initiative logo appears above the message A chance to save a life.",
+    "width": 1536,
+    "height": 1024
+  },
+  "imageCaption": "BHOC Veterinary campaign artwork with Rem and Evchika and the Species & Biodiversity Protection Initiative.",
+  "pricesHeading": "Published feline donor-blood prices",
+  "priceRows": [
+    {
+      "supplier": "Nine Lives, USA",
+      "product": "Whole blood",
+      "unit": "50 mL",
+      "usd": "310"
+    },
+    {
+      "supplier": "Nine Lives, USA",
+      "product": "Packed red cells",
+      "unit": "20–25 mL",
+      "usd": "270"
+    },
+    {
+      "supplier": "ABRI, USA",
+      "product": "Whole blood, A/B",
+      "unit": "45 mL",
+      "usd": "334"
+    },
+    {
+      "supplier": "ABRI, USA",
+      "product": "Packed red cells, A/B",
+      "unit": "20 mL",
+      "usd": "273"
+    },
+    {
+      "supplier": "SaBB, Dubai",
+      "product": "Whole blood",
+      "unit": "Per unit",
+      "usd": "≈681"
+    },
+    {
+      "supplier": "SaBB, Dubai",
+      "product": "Packed red cells",
+      "unit": "Per unit",
+      "usd": "≈599"
+    }
+  ],
+  "priceNote": "Supplier listings checked on 1 November 2026. Product prices exclude delivery, clinical care and applicable taxes. Dubai amounts are rounded conversions at AED 3.6725 per US$1. The SaBB price list does not state unit volumes or a revision date.",
+  "paragraphs": [
+    {
+      "text": "But the greatest cost is the life you might lose while waiting.",
+      "emphasis": true
+    },
+    {
+      "text": "Veterinary professionals know the many limitations surrounding donor blood. Availability and time can leave even the most experienced specialist with very few options.",
+      "emphasis": false
+    },
+    {
+      "text": "You stand beside a critically ill horse after a race. You assess the situation, think through the options and face a decision you never wanted to make.",
+      "emphasis": false
+    },
+    {
+      "text": "An owner brings you their closest friend, a member of their family. You look into their eyes and see hope. They trust your knowledge. They are asking you to save someone they love.",
+      "emphasis": false
+    },
+    {
+      "text": "Or you are rescuing a wild animal, far from a hospital, with limited supplies and very little time.",
+      "emphasis": false
+    },
+    {
+      "text": "You know what you would like to do. But the treatment you need is not at hand.",
+      "emphasis": true
+    },
+    {
+      "text": "That helplessness stays with you. You wanted to do more. You had the knowledge and the willingness, but you could not use every option that might have helped.",
+      "emphasis": false
+    },
+    {
+      "text": "At BHOC, this is the helplessness we want to help remove from veterinary care.",
+      "emphasis": true
+    },
+    {
+      "text": "We are developing BHOC, Biological Hemoglobin Oxygen Carrier, within Precision Oxygen Therapeutics, with a clear goal: an off-the-shelf option to support tissue oxygen delivery, ready when it is needed.",
+      "emphasis": false
+    },
+    {
+      "text": "We believe veterinarians should have another way to act, support an animal and gain time for treatment.",
+      "emphasis": false
+    },
+    {
+      "text": "Another option within reach. Another chance to save a life.",
+      "emphasis": true
+    },
+    {
+      "text": "Veterinary clinics, animal blood banks, equine and camel specialists, and wildlife rescue teams: contact us to discuss cooperation and joint research.",
+      "emphasis": false
+    },
+    {
+      "text": "“We be of one blood, ye and I.”",
+      "emphasis": false
+    }
+  ],
+  "sourceLink": {
+    "label": "Read the original BHOC LinkedIn post",
+    "href": "https://www.linkedin.com/feed/update/urn:li:share:7522646701741072385"
+  },
+  "referenceGroups": [
+    {
+      "heading": "Published price sources",
+      "links": [
+        {
+          "label": "Nine Lives Blood Services",
+          "href": "https://www.catbloodbank.com/"
+        },
+        {
+          "label": "Animal Blood Resources International",
+          "href": "https://www.abrint.net/products/feline-blood-blood-components/"
+        },
+        {
+          "label": "Small Animal Blood Bank, Dubai: price list",
+          "href": "https://www.smallanimalbloodbank.com/_files/ugd/81f447_45f14361da704155a1699d409998299e.pdf"
+        }
+      ]
+    },
+    {
+      "heading": "Availability and currency reference",
+      "links": [
+        {
+          "label": "BluePearl: U.S. veterinary blood-product shortage statement",
+          "href": "https://bluepearlvet.com/press-releases-announcements/statement-regarding-community-blood-banking/"
+        },
+        {
+          "label": "Central Bank of the UAE: AED/USD reference rate",
+          "href": "https://www.centralbank.ae/media/5xmpymzi/fx-swaps-facility-t-c_06-04-2023.pdf"
+        }
+      ]
+    }
+  ],
+  "relatedLinks": [
+    {
+      "label": "Contact BHOC Veterinary",
+      "href": "contact.html"
+    },
+    {
+      "label": "Research cooperation",
+      "href": "bhoc-crada-research-partners.html"
+    },
+    {
+      "label": "Feline blood transfusion and compatibility",
+      "href": "feline-blood-transfusion-compatibility.html"
+    },
+    {
+      "label": "Equine blood transfusion",
+      "href": "equine-blood-transfusion.html"
+    },
+    {
+      "label": "Species & Biodiversity Protection Initiative",
+      "href": "./initiative/"
+    },
+    {
+      "label": "Back to Veterinary News",
+      "href": "news.html"
+    }
+  ]
+}

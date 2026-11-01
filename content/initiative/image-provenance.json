@@ -885,6 +885,32 @@
   ],
   "projectAssets": [
     {
+      "id": "bhoc-donor-blood-access-campaign-20261101",
+      "title": "A chance to save a life: veterinary donor blood access campaign",
+      "provider": "Archil Jaliashvili, BHOC project lead",
+      "providedOn": "2026-11-01",
+      "rightsStatus": "BHOC project-approved generated campaign artwork. No third-party photographic licence is claimed.",
+      "reason": "Illustrates the BHOC donor-blood access article, Veterinary News announcement and corporate LinkedIn publication. It is campaign artwork, not a clinical case photograph.",
+      "modifications": "Generated from the project-supplied biodiversity panorama using the approved Rem and Evchika identity artwork and Initiative logo. Uncropped WebP copies at quality 88 retain the complete composition at 1536, 1200 and 600 pixels wide. The full-resolution source is retained privately.",
+      "localFiles": [
+        {
+          "path": "assets/news/bhoc-veterinary-donor-blood-access-20261101.webp",
+          "sha256": "1ec54c6ac275f10c4fb7006af4bbd5ab2f8249a24ca506f1b2130c0517818fd7",
+          "introducedOn": "2026-11-01"
+        },
+        {
+          "path": "assets/news/bhoc-veterinary-donor-blood-access-20261101-1200.webp",
+          "sha256": "3c98103e60791da910bed1d88de34dd908f5788f338e2fadbc41963c2cdcf438",
+          "introducedOn": "2026-11-01"
+        },
+        {
+          "path": "assets/news/bhoc-veterinary-donor-blood-access-20261101-600.webp",
+          "sha256": "79a7689e2fcc685fd7bae903528cfc1075a381dbbe921ecdb3fb04b682939140",
+          "introducedOn": "2026-11-01"
+        }
+      ]
+    },
+    {
       "id": "bhoc-rbc-comparison",
       "title": "BHOC versus RBC size comparison",
       "provider": "Archil Jaliashvili, BHOC project lead",

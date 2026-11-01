@@ -96,7 +96,7 @@
   "eyebrow": "BHOC Initiative · Global Intelligence",
   "heading": "Wildlife & Species Conservation Intelligence.",
   "lead": "Tracking the people, science, funding and programs working to protect wildlife, restore endangered species and strengthen conservation medicine worldwide.",
-  "updated": "2026-10-31",
+  "updated": "2026-11-01",
   "seoContext": {
     "eyebrow": "BHOC Veterinary context",
     "heading": "Animal-health intelligence, separate from product claims.",
@@ -114,6 +114,54 @@
   },
   "feedNote": "BHOC Initiative Scout applies a high publication threshold and screens every candidate for duplication. New items are added only for exceptional rescue or recovery outcomes, globally significant conservation initiatives, substantive veterinary evidence milestones or other material developments; routine news is excluded.",
   "stories": [
+    {
+      "id": "veterinary-donor-blood-costs-access-20261101",
+      "date": "2026-11-01",
+      "dateLabel": "1 Nov 2026 · BHOC LinkedIn",
+      "region": "U.S. · Dubai · Veterinary care",
+      "category": "Donor blood access",
+      "title": "Another chance to save a life: veterinary donor blood costs and access",
+      "text": "Published feline donor-blood prices and BHOC’s call for timely tissue oxygen support, from companion animals to horses, falcons and wildlife.",
+      "image": {
+        "url": "assets/news/bhoc-veterinary-donor-blood-access-20261101.webp",
+        "displayUrl": "assets/news/bhoc-veterinary-donor-blood-access-20261101-1200.webp",
+        "alt": "BHOC veterinary campaign illustration with Earth, Rem and Evchika, a cat, horse, elephant, dolphin, falcon, eagle, tiger, lion, orangutan and panda. The Initiative logo appears above the message A chance to save a life.",
+        "width": 1536,
+        "height": 1024,
+        "variant": "document",
+        "srcset": [
+          {
+            "path": "assets/news/bhoc-veterinary-donor-blood-access-20261101-600.webp",
+            "width": 600
+          },
+          {
+            "path": "assets/news/bhoc-veterinary-donor-blood-access-20261101-1200.webp",
+            "width": 1200
+          },
+          {
+            "path": "assets/news/bhoc-veterinary-donor-blood-access-20261101.webp",
+            "width": 1536
+          }
+        ],
+        "sizes": "(max-width: 700px) 100vw, 560px"
+      },
+      "article": true,
+      "link": {
+        "label": "Read the full post and price sources",
+        "href": "./veterinary-donor-blood-costs-and-access.html"
+      },
+      "contextLink": {
+        "label": "Original BHOC LinkedIn post",
+        "href": "https://www.linkedin.com/feed/update/urn:li:share:7522646701741072385"
+      },
+      "keywords": [
+        "cat donor blood prices",
+        "veterinary blood availability",
+        "feline packed red blood cells",
+        "Precision Oxygen Therapeutics",
+        "wildlife rescue"
+      ]
+    },
     {
       "id": "bhoc-veterinary-oxygen-delivery-video",
       "date": "2026-10-31",
@@ -1643,5 +1691,5 @@
     "text": "A short dated record of BHOC Veterinary site and knowledge additions.",
     "href": "https://bhocvet.com/site-updates.html"
   },
-  "dateModified": "2026-10-31"
+  "dateModified": "2026-11-01"
 }
