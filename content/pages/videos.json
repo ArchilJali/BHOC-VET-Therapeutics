@@ -7,11 +7,24 @@
   "description": "Watch BHOC Veterinary videos on Biological Hemoglobin Oxygen Carriers, oxygen delivery, species physiology and animal-health research.",
   "schemaType": "CollectionPage",
   "datePublished": "2026-10-31",
-  "dateModified": "2026-10-31",
+  "dateModified": "2026-11-01",
   "eyebrow": "BHOC Veterinary · Video library",
   "heading": "Oxygen. Biology. In motion.",
   "lead": "Films on oxygen transport, species physiology and the BHOC Veterinary program.",
   "videos": [
+    {
+      "title": "BHOC: We Be of One Blood",
+      "description": "Precision Oxygen Therapeutics, shared oxygen biology, companion animals and wildlife. A film connecting veterinary science with species conservation.",
+      "eyebrow": "Film 02 · Shared biology",
+      "durationLabel": "02:16",
+      "href": "we-be-of-one-blood-video.html",
+      "poster": {
+        "src": "assets/videos/bhoc-we-be-of-one-blood-poster.webp",
+        "alt": "A frame from the BHOC We Be of One Blood film, connecting oxygen-delivery science with animal health and biodiversity.",
+        "width": 1280,
+        "height": 720
+      }
+    },
     {
       "title": "BHOC Veterinary: Oxygen Delivery Across Species",
       "description": "Watch a 34-second introduction to BHOC Veterinary, cell-free hemoglobin, oxygen affinity and oxygen delivery across cats, dogs, horses and wildlife.",

@@ -1,0 +1,93 @@
+{
+  "slug": "we-be-of-one-blood-video",
+  "navLabel": "We be of one blood",
+  "navActive": "videos.html",
+  "breadcrumbs": [
+    {
+      "label": "Videos",
+      "href": "videos.html"
+    }
+  ],
+  "title": "We Be of One Blood | BHOC Precision Oxygen Therapeutics",
+  "description": "Watch BHOC's We Be of One Blood film on Precision Oxygen Therapeutics, shared oxygen biology, companion animals, wildlife and species conservation.",
+  "schemaType": "WebPage",
+  "datePublished": "2026-11-01",
+  "dateModified": "2026-11-01",
+  "eyebrow": "BHOC Veterinary · Film 02",
+  "heading": "BHOC: We Be of One Blood",
+  "image": {
+    "src": "assets/videos/bhoc-we-be-of-one-blood-poster.webp",
+    "alt": "A frame from the BHOC We Be of One Blood film, connecting oxygen-delivery science with animal health and biodiversity.",
+    "width": 1280,
+    "height": 720
+  },
+  "socialImage": {
+    "src": "assets/videos/bhoc-we-be-of-one-blood-poster.webp",
+    "alt": "A frame from the BHOC We Be of One Blood film, connecting oxygen-delivery science with animal health and biodiversity.",
+    "width": 1280,
+    "height": 720
+  },
+  "video": {
+    "name": "BHOC: We Be of One Blood",
+    "description": "A BHOC film connecting Precision Oxygen Therapeutics, shared oxygen biology, companion animals, wildlife and species conservation.",
+    "poster": "assets/videos/bhoc-we-be-of-one-blood-poster.webp",
+    "duration": "PT135.73S",
+    "durationLabel": "02:16",
+    "durationSeconds": 136,
+    "uploadDate": "2026-11-01T17:26:33+04:00",
+    "width": 1280,
+    "height": 720,
+    "contentUrl": "https://bhocvet.com/assets/videos/bhoc-we-be-of-one-blood.mp4",
+    "file": "assets/videos/bhoc-we-be-of-one-blood.mp4"
+  },
+  "copy": {
+    "expansion": "Biological Hemoglobin Oxygen Carrier",
+    "intro": "A new perspective in Precision Oxygen Therapeutics, focused on microvascular and tissue-level oxygen delivery.",
+    "profileHeading": "Target product profile",
+    "profile": "Donor-independent oxygenation, stability for 3+ years at room temperature, an endotoxin-free and red-cell-antigen-free formulation, and compatibility across blood types.",
+    "species": "For companion animals and wildlife.",
+    "quotation": "We be of one blood, ye and I.",
+    "book": "The Jungle Book",
+    "author": "Rudyard Kipling",
+    "linkedin": "https://www.linkedin.com/company/biological-hemoglobin-oxygen-carrier/",
+    "bareNecessities": "The Bare Necessities",
+    "closing": "For BHOC, these words carry scientific, ethical and human meaning."
+  },
+  "relatedLinks": [
+    {
+      "label": "Biological Hemoglobin Oxygen Carrier",
+      "href": "product.html"
+    },
+    {
+      "label": "Oxygen delivery and veterinary science",
+      "href": "science.html"
+    },
+    {
+      "label": "Species & Biodiversity Protection",
+      "href": "./initiative/"
+    },
+    {
+      "label": "Kipling and our shared biology",
+      "href": "./initiative/we-be-of-one-blood.html"
+    }
+  ],
+  "seo": {
+    "primaryKeyword": "BHOC We Be of One Blood video",
+    "secondaryKeywords": [
+      "Precision Oxygen Therapeutics",
+      "Biological Hemoglobin Oxygen Carrier",
+      "veterinary oxygen delivery",
+      "animal biodiversity video"
+    ],
+    "supportingTerms": [
+      "BHOC Veterinary",
+      "microvascular oxygen delivery",
+      "tissue oxygenation",
+      "companion animals",
+      "wildlife",
+      "species conservation",
+      "shared biology",
+      "Rudyard Kipling"
+    ]
+  }
+}

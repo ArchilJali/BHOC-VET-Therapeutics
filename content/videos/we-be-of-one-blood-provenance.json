@@ -1,0 +1,23 @@
+{
+  "source": "Owner-supplied BHOC video, received 1 November 2026",
+  "originalFileName": "BHOC - we are one blood.mp4",
+  "originalLibraryFileId": "libfile_86e51f09daf481918aa362d8773b786f",
+  "originalSha256": "db7f71c72215fe31aa285d376cec5d522759d4be8c35aca247f6e20a1cfc540b",
+  "originalDurationSeconds": 135.721029,
+  "webEncoding": "1280x720 H.264/AAC, CRF 23, 96 kbps AAC and faststart; complete composition, audio and original branding preserved",
+  "poster": "Original frame at 39 seconds, complete 16:9 composition, WebP quality 88",
+  "publishedAssets": [
+    {
+      "path": "assets/videos/bhoc-we-be-of-one-blood.mp4",
+      "sha256": "e570978e0b3a44f27b974039be4e3f290ab1fd47a282b6c96220ee421d5fefe6",
+      "sizeBytes": 5460560
+    },
+    {
+      "path": "assets/videos/bhoc-we-be-of-one-blood-poster.webp",
+      "sha256": "35a18a68a340f8d8271fe9b9b31d41ea093d73f9889e261b33aec4756b23d1d1",
+      "sizeBytes": 60976
+    }
+  ],
+  "copyNote": "Owner-provided caption, corrected English and semantic emphasis. Storage, endotoxin purity and compatibility are labelled target product profile, consistent with the current product page. Companion animals and wildlife describe the development scope, not proof of approval for all species.",
+  "destination": "https://bhocvet.com/we-be-of-one-blood-video.html"
+}
