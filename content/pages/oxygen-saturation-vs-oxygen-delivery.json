@@ -1,0 +1,107 @@
+{
+  "slug": "oxygen-saturation-vs-oxygen-delivery",
+  "navLabel": "Oxygen Saturation vs Oxygen Delivery in Animals",
+  "navActive": "science.html",
+  "breadcrumbs": [
+    {
+      "label": "Research topics",
+      "href": "topics.html"
+    }
+  ],
+  "title": "Oxygen Saturation vs Oxygen Delivery in Animals | BHOC Vet",
+  "description": "Understand the difference between oxygen saturation, hemoglobin concentration and tissue oxygen delivery in veterinary research and clinical monitoring.",
+  "schemaType": "WebPage",
+  "datePublished": "2026-11-02",
+  "dateModified": "2026-11-02",
+  "eyebrow": "Veterinary oxygen-delivery science",
+  "heading": "Oxygen Saturation vs Oxygen Delivery in Animals",
+  "lead": "Oxygen saturation describes the proportion of available hemoglobin binding sites occupied by oxygen. Oxygen delivery asks how much oxygen reaches the tissues over time. These measurements are related, but they describe different parts of the oxygen-transport system.",
+  "topicSections": [
+    {
+      "id": "section-1",
+      "title": "Different measurements answer different questions",
+      "paragraphs": [
+        "A saturation value must be interpreted alongside hemoglobin concentration and circulation. A smaller amount of hemoglobin can have a high saturation while carrying less oxygen overall. Pulse oximetry therefore provides one part of the assessment rather than a complete measure of oxygen transport.",
+        "The 2025 ACVAA monitoring guideline treats oxygenation, ventilation and circulation as separate monitoring domains. This distinction helps explain why a pulse-oximeter reading should be interpreted with other physiological observations."
+      ],
+      "bullets": [],
+      "links": []
+    },
+    {
+      "id": "section-2",
+      "title": "Circulation, affinity and tissue demand",
+      "paragraphs": [
+        "Oxygen delivery depends on oxygen-carrying capacity and blood flow. Packed cell volume describes the fraction of blood occupied by red cells. It does not by itself describe all oxygen-carrying compartments or the movement of oxygen through the circulation.",
+        "Oxygen affinity describes the relationship between oxygen partial pressure and hemoglobin saturation. The full dissociation curve and its response to local conditions help frame questions about loading and unloading. Canine and feline physiology should be evaluated in the relevant species and experimental setting."
+      ],
+      "bullets": [],
+      "links": []
+    },
+    {
+      "id": "section-3",
+      "title": "A useful framework for veterinary research",
+      "paragraphs": [
+        "A study can state which limitation it is investigating: reduced oxygen-carrying capacity, impaired blood flow, altered oxygen unloading or a tissue-level problem. Recording the compartment and measurement method makes results easier to interpret and compare.",
+        "Research endpoints should follow the question being tested. Saturation, hemoglobin concentration, circulation and tissue measurements can contribute different information. A change in one measurement should be assessed alongside the other observations and the study design.",
+        "Pavlisko and colleagues studied eight anesthetized Beagles, measuring muscle tissue oxygen saturation and calculating oxygen delivery index under different inspired oxygen conditions. Their findings relate to that experimental model and measurement site."
+      ],
+      "bullets": [],
+      "links": []
+    },
+    {
+      "id": "section-4",
+      "title": "The BHOC development question",
+      "paragraphs": [
+        "BHOC, Biological Hemoglobin Oxygen Carrier, is being developed within Precision Oxygen Therapeutics to investigate complementary tissue oxygen support. Its research direction concerns oxygen transport when native function is insufficient.",
+        "Historical oxygen-carrier reports provide context for selecting questions and measurements. A proposed BHOC programme still requires product-specific and species-specific characterization, safety evaluation and functional outcomes. This page connects the physiological question with existing source-linked BHOC Veterinary material."
+      ],
+      "bullets": [],
+      "links": [
+        {
+          "label": "Lee et al. 1991: anemia and oximetry in anesthetized dogs",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/2064035/",
+          "detail": "Source"
+        },
+        {
+          "label": "ACVAA Small Animal Anesthesia and Sedation Monitoring Guidelines 2025",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/40447502/",
+          "detail": "Source"
+        },
+        {
+          "label": "Cambier et al. 2004: canine and feline hemoglobin oxygen affinity",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/15120957/",
+          "detail": "Source"
+        },
+        {
+          "label": "Pavlisko et al. 2016: tissue oxygen saturation and oxygen delivery in eight Beagles",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/25818866/",
+          "detail": "Source"
+        },
+        {
+          "label": "Veterinary oxygen-delivery science",
+          "href": "science.html",
+          "detail": "Related BHOC Veterinary information"
+        },
+        {
+          "label": "Canine transfusion and donor access",
+          "href": "canine-blood-transfusion.html",
+          "detail": "Related BHOC Veterinary information"
+        },
+        {
+          "label": "Define a veterinary research collaboration",
+          "href": "bhoc-crada-research-partners.html",
+          "detail": "Related BHOC Veterinary information"
+        }
+      ]
+    }
+  ],
+  "topicCards": [],
+  "seo": {
+    "primaryKeyword": "oxygen saturation vs oxygen delivery",
+    "secondaryKeywords": [],
+    "supportingTerms": [
+      "BHOC Veterinary",
+      "Precision Oxygen Therapeutics"
+    ]
+  }
+}

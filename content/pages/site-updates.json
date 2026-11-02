@@ -15,8 +15,21 @@
     }
   ],
   "datePublished": "2026-10-13",
-  "dateModified": "2026-11-01",
+  "dateModified": "2026-11-02",
   "entries": [
+    {
+      "id": "oxygen-saturation-delivery-20261102",
+      "date": "2026-11-02",
+      "displayDate": "2 November 2026",
+      "title": "Oxygen saturation and tissue oxygen delivery explained",
+      "text": "Added a source-linked guide distinguishing saturation, hemoglobin concentration, circulation and oxygen affinity, with a direct route from Research Topics.",
+      "links": [
+        {
+          "label": "Read the oxygen-delivery guide",
+          "href": "oxygen-saturation-vs-oxygen-delivery.html"
+        }
+      ]
+    },
     {
       "id": "donor-blood-costs-access-20261101",
       "date": "2026-11-01",

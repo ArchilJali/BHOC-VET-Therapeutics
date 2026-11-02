@@ -7,7 +7,7 @@
   "description": "Find veterinary research by species and question: dog, cat and horse blood access, Oxyglobin, donor welfare, oncology and comparative oxygen physiology.",
   "schemaType": "CollectionPage",
   "datePublished": "2026-10-25",
-  "dateModified": "2026-10-31",
+  "dateModified": "2026-11-02",
   "eyebrow": "Veterinary research routes",
   "heading": "Veterinary care and oxygen-delivery research",
   "lead": "Choose a species, clinical question or evidence route. Historical product findings, transfusion guidance and BHOC development questions remain separately identified.",
@@ -138,6 +138,12 @@
       "title": "Veterinary Perfusion and Functional Oxygen Monitoring",
       "text": "PCV, plasma hemoglobin, circulation and functional veterinary oxygen measurements.",
       "href": "./science.html#functional-delivery"
+    },
+    {
+      "id": "V23",
+      "title": "Oxygen Saturation vs Oxygen Delivery in Animals",
+      "text": "How saturation, hemoglobin concentration, circulation and oxygen affinity answer different veterinary monitoring questions.",
+      "href": "./oxygen-saturation-vs-oxygen-delivery.html"
     }
   ],
   "seo": {
