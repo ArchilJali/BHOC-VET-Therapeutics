@@ -128,6 +128,11 @@
           "label": "Discuss a veterinary research collaboration",
           "href": "./bhoc-crada-research-partners.html",
           "detail": ""
+        },
+        {
+          "label": "Blood as an organ, oxygen delivery as a function",
+          "href": "blood-organ-oxygen-delivery-function.html",
+          "detail": "A separate BHOC perspective linking donor blood, transfusion and the oxygen-carrying task across species."
         }
       ],
       "bullets": []

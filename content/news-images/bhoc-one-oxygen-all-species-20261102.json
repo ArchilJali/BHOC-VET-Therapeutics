@@ -1,0 +1,47 @@
+{
+  "id": "bhoc-one-oxygen-all-species-20261102",
+  "kind": "owner-requested AI-generated editorial concept image",
+  "createdAt": "2026-11-02",
+  "tool": "OpenAI ImageGen built-in",
+  "purpose": "BHOC Veterinary article on blood as a living organ and oxygen delivery as a therapeutic function. Campaign research vision across species.",
+  "subjects": [
+    "dog",
+    "cat",
+    "horse",
+    "camel",
+    "falcon",
+    "elephant"
+  ],
+  "originalSha256": "a0249582b61b7a9b1d2176dd53cc82b9c0629b2c4fdd2bbedd24deffdad6ade3",
+  "processing": "Full frame and aspect ratio preserved; 1536, 1200 and 600 px WebP and JPEG social copy. No scene edits, added claims, typography or diagrams.",
+  "localFiles": [
+    {
+      "path": "assets/news/bhoc-one-oxygen-all-species-20261102.webp",
+      "sha256": "f5be93c6e094f8be0b61a35c583b6219482125a33ef05212ea5bdc164283fdcb",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 271258
+    },
+    {
+      "path": "assets/news/bhoc-one-oxygen-all-species-20261102-1200.webp",
+      "sha256": "93d083e36bf65d7617cf8655f8889d016dba769b1715f9f4638b254e240bc197",
+      "width": 1200,
+      "height": 800,
+      "bytes": 187562
+    },
+    {
+      "path": "assets/news/bhoc-one-oxygen-all-species-20261102-600.webp",
+      "sha256": "734342b3c1d62885a19b4be440252ef560051a6dc1b424856ee22f809484783b",
+      "width": 600,
+      "height": 400,
+      "bytes": 68158
+    },
+    {
+      "path": "assets/news/bhoc-one-oxygen-all-species-20261102-social.jpg",
+      "sha256": "0e94e74b996b35104618cfe889e8c029779e5c43959992c11a6bf7bb7752cd3e",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 403043
+    }
+  ]
+}

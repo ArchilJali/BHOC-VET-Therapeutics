@@ -18,6 +18,19 @@
   "dateModified": "2026-11-02",
   "entries": [
     {
+      "id": "blood-organ-oxygen-function-20261102",
+      "date": "2026-11-02",
+      "displayDate": "2 November 2026",
+      "title": "Blood, oxygen function and the BHOC cross-species research vision",
+      "text": "Added a separate source-linked perspective on blood as a living tissue and circulating organ, animal transfusion, donor blood and the Oxyglobin precedent. Includes a new cross-species concept image, native campaign text, descriptive ALT, article/social metadata, topic links, search and sitemap.",
+      "links": [
+        {
+          "label": "Read the new perspective",
+          "href": "blood-organ-oxygen-delivery-function.html"
+        }
+      ]
+    },
+    {
       "id": "blood-bank-oxygen-bridge-20261102",
       "date": "2026-11-02",
       "displayDate": "2 November 2026",

@@ -1,0 +1,247 @@
+{
+  "slug": "blood-organ-oxygen-delivery-function",
+  "navLabel": "Blood, oxygen delivery and BHOC",
+  "navActive": "news.html",
+  "breadcrumbs": [
+    {
+      "label": "News",
+      "href": "news.html"
+    }
+  ],
+  "title": "Animal Blood Transfusion & Oxygen Delivery | BHOC Veterinary",
+  "description": "Animal blood transfusion, donor blood and Oxyglobin: how BHOC separates the many roles of blood from tissue oxygen delivery within Precision Oxygen Therapeutics.",
+  "schemaType": "Article",
+  "datePublished": "2026-11-02",
+  "dateModified": "2026-11-02",
+  "dateLabel": "2 November 2026",
+  "articleSection": "Veterinary oxygen delivery and blood transfusion",
+  "authorName": "Archil Jaliashvili",
+  "eyebrow": "BHOC Veterinary · Oxygen delivery as a therapeutic function",
+  "heading": "Blood Is a Living Organ. Oxygen Delivery Is a Function.",
+  "lead": "Different species. The same biological need: oxygen. BHOC focuses on supporting oxygen delivery at the tissue level within Precision Oxygen Therapeutics.",
+  "image": {
+    "src": "assets/news/bhoc-one-oxygen-all-species-20261102-1200.webp",
+    "alt": "BHOC Veterinary illustration for an article on Oxyglobin and oxygen delivery: a dog, cat, horse, camel, falcon and elephant connecting veterinary care and wildlife.",
+    "width": 1200,
+    "height": 800,
+    "srcset": [
+      {
+        "path": "assets/news/bhoc-one-oxygen-all-species-20261102-600.webp",
+        "width": 600
+      },
+      {
+        "path": "assets/news/bhoc-one-oxygen-all-species-20261102-1200.webp",
+        "width": 1200
+      },
+      {
+        "path": "assets/news/bhoc-one-oxygen-all-species-20261102.webp",
+        "width": 1536
+      }
+    ],
+    "sizes": "(max-width: 800px) 100vw, 760px"
+  },
+  "socialImage": {
+    "src": "assets/news/bhoc-one-oxygen-all-species-20261102-social.jpg",
+    "alt": "BHOC Veterinary illustration for an article on Oxyglobin and oxygen delivery: a dog, cat, horse, camel, falcon and elephant connecting veterinary care and wildlife.",
+    "width": 1536,
+    "height": 1024
+  },
+  "imageCaption": "BHOC Veterinary concept illustration connecting companion animals, large veterinary species and wildlife through a shared need for oxygen.",
+  "vision": {
+    "label": "Our research vision",
+    "lines": [
+      "One Oxygen.",
+      "One Biology.",
+      "One BHOC System."
+    ],
+    "scope": "For Every Species.",
+    "purpose": "Wherever Life Is at Risk or Needs Support to Heal."
+  },
+  "sections": [
+    {
+      "id": "blood-as-a-living-organ",
+      "title": "Blood is a living system with many functions",
+      "paragraphs": [
+        "Blood is a living connective tissue. We view it as a circulating organ because its cells and plasma work together in transport, regulation and protection. Oxygen delivery is one vital function within that larger system.",
+        "Red cells, platelets, plasma proteins and immune cells have different roles. Supporting oxygen transport is therefore a defined therapeutic task within veterinary care. This functional distinction shapes our approach to BHOC."
+      ],
+      "references": [
+        1
+      ]
+    },
+    {
+      "id": "animal-blood-transfusion",
+      "title": "Animal blood transfusion: identify the function needed",
+      "paragraphs": [
+        "A 2009 Veterinary Practice News report described the move towards blood components selected for the patient's needs. Its practical lesson provides a useful starting point: identify the required function and choose the corresponding support.",
+        "For dogs, cats and horses, donor blood, compatibility testing and blood-bank cooperation remain central parts of transfusion care. Our research question is how oxygen-carrying support can be added and evaluated alongside that care."
+      ],
+      "references": [
+        2
+      ]
+    },
+    {
+      "id": "oxyglobin-oxygen-support",
+      "title": "Oxyglobin: a veterinary oxygen-carrying precedent",
+      "paragraphs": [
+        "Oxyglobin, hemoglobin glutamer-200 (bovine), is a dog-specific veterinary precedent for hemoglobin-based oxygen-carrying support. The European regulatory record identifies the product and its target species as dogs. Its history helps distinguish oxygen-carrying support from the wider functions of donor blood.",
+        "This experience informs research design. BHOC is a separate development programme with its own formulation, characterization and validation."
+      ],
+      "references": [
+        3,
+        4
+      ]
+    },
+    {
+      "id": "different-species-shared-need",
+      "title": "Different species. The same biological need: oxygen.",
+      "paragraphs": [
+        "In mammals and birds, a shared core pathway connects oxygen uptake at the lungs, hemoglobin transport, the microcirculation, oxygen unloading and diffusion towards tissue cells. This is the common biological foundation behind our cross-species research vision.",
+        "Species differ in oxygen affinity, circulation and metabolic demand. Precision begins with understanding those differences and assessing the intended function in each species."
+      ],
+      "references": [
+        5
+      ]
+    },
+    {
+      "id": "bhoc-function-throughout-care",
+      "title": "BHOC: supporting the function throughout care",
+      "paragraphs": [
+        "BHOC, Biological Hemoglobin Oxygen Carrier, is being developed within Precision Oxygen Therapeutics to support sustained, controlled oxygen delivery adapted to local tissue demand, whether donor blood is available or a transfusion is underway.",
+        "Our aim is physiologically responsive oxygen unloading: greater release where local oxygen tension is low, and less where oxygen is sufficient. Research priorities also include oxygen-dependent immune function, iron recovery and endogenous erythropoiesis, wound healing and rehabilitation.",
+        "For Every Species expresses our research vision. Each proposed veterinary application will be assessed through product- and species-specific studies."
+      ],
+      "references": [
+        5,
+        6
+      ]
+    }
+  ],
+  "closing": "We invite veterinary blood banks, clinicians and research teams to help define the functional measurements and studies that can advance this work. The question is what function the patient needs, and how we can verify that it is being supported.",
+  "actions": [
+    {
+      "label": "Discuss a veterinary research collaboration",
+      "href": "bhoc-crada-research-partners.html"
+    },
+    {
+      "label": "Explore the Species & Biodiversity Protection Initiative",
+      "href": "./initiative/"
+    }
+  ],
+  "relatedLinks": [
+    {
+      "label": "Dog blood transfusion and donor access",
+      "href": "canine-blood-transfusion.html"
+    },
+    {
+      "label": "Cat transfusion and blood compatibility",
+      "href": "feline-blood-transfusion-compatibility.html"
+    },
+    {
+      "label": "Horse blood transfusion",
+      "href": "equine-blood-transfusion.html"
+    },
+    {
+      "label": "Oxyglobin: evidence and history",
+      "href": "oxyglobin.html"
+    },
+    {
+      "label": "Oxygen saturation and tissue delivery",
+      "href": "oxygen-saturation-vs-oxygen-delivery.html"
+    },
+    {
+      "label": "Donor blood costs and access",
+      "href": "veterinary-donor-blood-costs-and-access.html"
+    }
+  ],
+  "references": [
+    {
+      "label": "National Cancer Institute: Introduction to Blood",
+      "href": "https://www.training.seer.cancer.gov/hematopoietic1/intro-to-blood.html",
+      "detail": "Institutional physiology reference: circulating connective tissue and the transport, regulatory and protective roles of blood."
+    },
+    {
+      "label": "Veterinary Practice News: Veterinary Blood Banks Keep Supplies Flowing",
+      "href": "https://www.veterinarypracticenews.com/veterinary-blood-banks-keep-supplies-flowing/",
+      "detail": "Lori Luechtefeld, 17 April 2009. Historical professional reporting on blood banks and component therapy."
+    },
+    {
+      "label": "European Union Veterinary Medicines Information: Oxyglobin",
+      "href": "https://medicines.health.europa.eu/veterinary/en/600000003388",
+      "detail": "Official regulatory product identification. Hemoglobin glutamer-200, bovine. Target species: dog."
+    },
+    {
+      "label": "BHOC evidence library: veterinary FDA registry",
+      "href": "https://bhoctherapeutics.com/evidence/library/veterinary/Vet-FDA-registry.html",
+      "detail": "Route to the original controlled canine regulatory record and its endpoints."
+    },
+    {
+      "label": "BHOC Veterinary: oxygen-delivery science",
+      "href": "science.html",
+      "detail": "Hemoglobin transport, microcirculation, oxygen unloading and species-specific physiology."
+    },
+    {
+      "label": "BHOC Veterinary: blood banks and Precision Oxygen Therapeutics",
+      "href": "veterinary-blood-banks-oxygen-bridge.html",
+      "detail": "Current owner-stated BHOC development aims and source-linked research priorities."
+    }
+  ],
+  "seo": {
+    "primaryKeyword": "oxygen delivery as a therapeutic function",
+    "secondaryKeywords": [
+      "animal blood transfusion",
+      "animal donor blood",
+      "Oxyglobin oxygen carrier",
+      "veterinary tissue oxygen delivery",
+      "hemoglobin oxygen carrier for animals"
+    ],
+    "supportingTerms": [
+      "BHOC Veterinary",
+      "Biological Hemoglobin Oxygen Carrier",
+      "Precision Oxygen Therapeutics",
+      "blood as a living organ",
+      "canine blood transfusion",
+      "feline blood transfusion",
+      "equine blood transfusion",
+      "One Oxygen One Biology One BHOC System",
+      "species-specific research"
+    ]
+  },
+  "sourceReview": {
+    "checkedAt": "2026-11-02",
+    "sourceGuard": "Live mandatory stop-list read. Institutional identities and the named VPN byline reviewed against publisher pages. Automated DOI/PMID resolver cannot resolve non-DOI institutional or news authorship; no automated clean result is claimed. No stopped authors or scientific-paper findings are introduced.",
+    "newExternalSources": "EXTERNAL / CONTEXT. NCI general physiology and EU institutional product identification are separate from product-specific BHOC evidence. The 2009 owner-selected report is historical journalism.",
+    "claimBoundary": "Blood as an organ is explicitly presented as the author's functional view of living connective tissue. For Every Species is labelled research vision; BHOC-specific and species-specific outcomes remain development aims."
+  },
+  "sourceLink": {
+    "label": "Veterinary Practice News: Veterinary Blood Banks Keep Supplies Flowing",
+    "href": "https://www.veterinarypracticenews.com/veterinary-blood-banks-keep-supplies-flowing/"
+  },
+  "referenceGroups": [
+    {
+      "heading": "Sources and context",
+      "links": [
+        {
+          "label": "National Cancer Institute: Introduction to Blood",
+          "href": "https://www.training.seer.cancer.gov/hematopoietic1/intro-to-blood.html"
+        },
+        {
+          "label": "European Union Veterinary Medicines Information: Oxyglobin",
+          "href": "https://medicines.health.europa.eu/veterinary/en/600000003388"
+        },
+        {
+          "label": "BHOC evidence library: veterinary FDA registry",
+          "href": "https://bhoctherapeutics.com/evidence/library/veterinary/Vet-FDA-registry.html"
+        },
+        {
+          "label": "BHOC Veterinary: oxygen-delivery science",
+          "href": "science.html"
+        },
+        {
+          "label": "BHOC Veterinary: blood banks and Precision Oxygen Therapeutics",
+          "href": "veterinary-blood-banks-oxygen-bridge.html"
+        }
+      ]
+    }
+  ]
+}
