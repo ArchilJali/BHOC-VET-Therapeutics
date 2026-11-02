@@ -1,0 +1,34 @@
+{
+  "date": "2026-11-02",
+  "canonical": "https://bhocvet.com/veterinary-blood-banks-oxygen-bridge.html",
+  "primaryKeyword": "veterinary blood bank collaboration",
+  "secondaryKeywords": [
+    "veterinary blood transfusion",
+    "veterinary emergency medicine",
+    "hemoglobin oxygen carrier",
+    "oxygen bridge",
+    "Oxyglobin blood banks"
+  ],
+  "existingTargetsPreserved": {
+    "dog blood transfusion": "canine-blood-transfusion.html",
+    "oxyglobin": "oxyglobin.html",
+    "veterinary emergency medicine": "applications.html",
+    "oxygen saturation vs oxygen delivery": "oxygen-saturation-vs-oxygen-delivery.html"
+  },
+  "newLongTailCandidates": [
+    "veterinary blood bank collaboration",
+    "oxygen bridge veterinary",
+    "oxyglobin blood banks",
+    "hemoglobin oxygen carrier emergency veterinary care",
+    "veterinary transfusion oxygen support",
+    "blood bank research cooperation"
+  ],
+  "keywordMetrics": null,
+  "metricsLimitation": "Ahrefs keywords-explorer-overview returned Insufficient plan on 2 November 2026. Search volume and difficulty remain unknown. No paid upgrade requested.",
+  "contentClaimBoundaries": [
+    "Historical Oxyglobin reporting is attributed to the 2009 article.",
+    "Longevity trend is scoped to the 2013-2018 clinical-record population.",
+    "Pet ownership and blood demand do not quantify a causal increase in transfusion need.",
+    "BHOC tissue/metabolic support remains a development and research aim."
+  ]
+}

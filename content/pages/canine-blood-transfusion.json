@@ -12,7 +12,7 @@
   "description": "Explore dog blood donors, compatibility, transfusion safety and historical Oxyglobin evidence, with source-linked routes for veterinary teams and researchers.",
   "schemaType": "WebPage",
   "datePublished": "2026-10-25",
-  "dateModified": "2026-10-25",
+  "dateModified": "2026-11-02",
   "eyebrow": "Veterinary evidence and research",
   "heading": "Canine blood transfusion and donor access",
   "lead": "A dog needing transfusion and a healthy canine blood donor have different clinical needs. This guide connects donor access, compatibility, transfusion-safety evidence and the historical oxygen-carrier literature.",
@@ -34,6 +34,11 @@
           "label": "Veterinary emergency applications",
           "href": "./applications.html",
           "detail": ""
+        },
+        {
+          "label": "Blood banks and the oxygen bridge: experience and future cooperation",
+          "href": "veterinary-blood-banks-oxygen-bridge.html",
+          "detail": "Historical Oxyglobin reporting, current blood demand and the BHOC research invitation."
         }
       ],
       "bullets": []

@@ -1,0 +1,231 @@
+{
+  "slug": "veterinary-blood-banks-oxygen-bridge",
+  "navLabel": "Blood banks and the oxygen bridge",
+  "navActive": "news.html",
+  "breadcrumbs": [
+    {
+      "label": "News",
+      "href": "news.html"
+    }
+  ],
+  "title": "Veterinary Blood Banks & Oxygen Support | BHOC Vet",
+  "description": "Veterinary blood banks, emergency transfusion and hemoglobin oxygen carriers: the Oxyglobin bridge experience and future BHOC research cooperation.",
+  "schemaType": "Article",
+  "datePublished": "2026-11-02",
+  "dateModified": "2026-11-02",
+  "dateLabel": "2 November 2026",
+  "articleSection": "Veterinary blood banks and oxygen therapeutics",
+  "authorName": "Archil Jaliashvili",
+  "seo": {
+    "primaryKeyword": "veterinary blood bank collaboration",
+    "secondaryKeywords": [
+      "veterinary blood transfusion",
+      "veterinary emergency medicine",
+      "hemoglobin oxygen carrier",
+      "oxygen bridge",
+      "Oxyglobin blood banks"
+    ],
+    "supportingTerms": [
+      "BHOC Veterinary",
+      "Biological Hemoglobin Oxygen Carrier",
+      "Precision Oxygen Therapeutics",
+      "tissue oxygen delivery",
+      "oxygen-dependent metabolism",
+      "research cooperation"
+    ]
+  },
+  "eyebrow": "BHOC Veterinary · Blood banks and oxygen therapeutics",
+  "heading": "Working with Veterinary Blood Banks: Experience and the Future",
+  "lead": "Veterinary blood banks and oxygen therapeutics share a practical goal: support the patient when timely oxygen delivery is at risk.",
+  "image": {
+    "src": "assets/news/veterinary-blood-bank-oxygen-bridge-20261102-1200.webp",
+    "alt": "Illustrative veterinary oxygen-support scene: a calm golden retriever with a small peripheral catheter, a compact pump and a red-fluid pouch lying horizontally beside the dog.",
+    "width": 1200,
+    "height": 800,
+    "srcset": [
+      {
+        "path": "assets/news/veterinary-blood-bank-oxygen-bridge-20261102-600.webp",
+        "width": 600
+      },
+      {
+        "path": "assets/news/veterinary-blood-bank-oxygen-bridge-20261102-1200.webp",
+        "width": 1200
+      },
+      {
+        "path": "assets/news/veterinary-blood-bank-oxygen-bridge-20261102.webp",
+        "width": 1536
+      }
+    ],
+    "sizes": "(max-width: 800px) 100vw, 540px"
+  },
+  "socialImage": {
+    "src": "assets/news/veterinary-blood-bank-oxygen-bridge-20261102-social.jpg",
+    "alt": "Illustrative veterinary oxygen-support scene: a calm golden retriever with a small peripheral catheter, a compact pump and a red-fluid pouch lying horizontally beside the dog.",
+    "width": 1536,
+    "height": 1024
+  },
+  "imageCaption": "Illustrative development concept: a compact pump beside the patient, a horizontal fluid pouch and a small peripheral catheter.",
+  "paragraphs": [
+    {
+      "text": "In 2009, Veterinary Practice News described how blood-bank professionals viewed Oxyglobin as an oxygen bridge: a way to support patients while donor blood was being arranged. Cooperation with the donor-blood system was already central to its practical role.",
+      "references": [
+        1
+      ]
+    },
+    {
+      "text": "That need remains relevant today. U.S. dog and cat ownership expanded in 2025, and a large veterinary-record study documented increasing life expectancy in dogs and cats between 2013 and 2018. Pet Blood Bank UK currently reports growing demand for blood and the need for more donors. We see these trends as further reasons to strengthen cooperation between blood banks, veterinary hospitals and oxygen-therapeutics developers.",
+      "references": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "text": "As oxygen-delivery science advances, the therapeutic focus extends beyond the historical \"blood substitute\" label. Precision Oxygen Therapeutics centres on oxygen reaching tissues and cells, where it supports oxygen-dependent metabolism. This broader perspective connects transfusion care and veterinary emergency medicine with microvascular oxygen delivery and tissue function.",
+      "references": [
+        5
+      ]
+    },
+    {
+      "text": "The oxygen bridge was the historical starting point. Today, our BHOC, Biological Hemoglobin Oxygen Carrier, development programme has a broader aim: sustained, controlled and physiologically responsive oxygen delivery during treatment, whether donor blood is available, delayed or already being transfused.",
+      "emphasis": true
+    },
+    {
+      "text": "We aim to match oxygen unloading to local tissue conditions and metabolic demand: greater release where oxygen tension is low, and less where oxygen is sufficient. This extends the research focus to the interaction between oxygen transport, microvascular blood flow and cellular metabolism.",
+      "references": [
+        5,
+        6
+      ]
+    },
+    {
+      "text": "Our research priorities include supporting oxygen-dependent immune function; investigating whether iron recovered from carrier hemoglobin can contribute to endogenous erythropoiesis; and testing improvements in wound healing and the quality and speed of rehabilitation. These are product- and species-specific research aims.",
+      "references": [
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "text": "We welcome collaboration with veterinary blood banks and clinical teams to define research priorities and evaluate how this approach could strengthen care. The shared objective is timely oxygen support for the patient, with donor blood and oxygen therapeutics contributing through their respective functions.",
+      "emphasis": true
+    }
+  ],
+  "actions": [
+    {
+      "label": "Discuss research cooperation",
+      "href": "bhoc-crada-research-partners.html"
+    },
+    {
+      "label": "Contact BHOC Veterinary",
+      "href": "mailto:info@bhoctherapeutics.com"
+    }
+  ],
+  "references": [
+    {
+      "label": "Veterinary Practice News: Oxyglobin Buys Time While Awaiting Blood",
+      "href": "https://www.veterinarypracticenews.com/oxyglobin-buys-time-while-awaiting-blood/",
+      "detail": "Lori Luechtefeld, 17 April 2009. Historical professional reporting and attributed blood-bank comments."
+    },
+    {
+      "label": "APPA: 2026 State of the Industry release",
+      "href": "https://americanpetproducts.org/news/u.s.-pet-industry-reaches-158-billion-in-2025-poised-for-continued-growth-in-2026",
+      "detail": "26 March 2026. U.S. dog and cat ownership trends for 2025."
+    },
+    {
+      "label": "Montoya and colleagues: Life expectancy tables for dogs and cats",
+      "href": "https://doi.org/10.3389/fvets.2023.1082102",
+      "detail": "Frontiers in Veterinary Science, 2023. U.S. clinical-record population; the reported time trend covers 2013 to 2018."
+    },
+    {
+      "label": "Pet Blood Bank UK: Dog blood donation",
+      "href": "https://www.petbloodbankuk.org/pet-owners/dog-blood-donation/",
+      "detail": "Current service statement reporting rising demand and recruiting additional donors; checked 2 November 2026."
+    },
+    {
+      "label": "BHOC Veterinary: Oxygen transport and development framework",
+      "href": "science.html",
+      "detail": "Tissue oxygen delivery, hemoglobin transport and product-specific research objectives."
+    },
+    {
+      "label": "Muir and Wellman: Hemoglobin solutions and tissue oxygenation",
+      "href": "https://doi.org/10.1111/j.1939-1676.2003.tb02423.x",
+      "detail": "Physiological review, 2003. Oxygen transport and microcirculatory autoregulation; contextual rather than BHOC efficacy evidence."
+    },
+    {
+      "label": "McGovern and colleagues: Hypoxia and neutrophil antimicrobial function",
+      "href": "https://doi.org/10.4049/jimmunol.1002213",
+      "detail": "Human-cell study, 2011. Oxygen-dependent bacterial killing; provides biological context, not BHOC immune-efficacy evidence."
+    },
+    {
+      "label": "Jonsson and colleagues: Tissue oxygenation and wound healing",
+      "href": "https://doi.org/10.1097/00000658-199111000-00011",
+      "detail": "Human surgical-patient study, 1991. Tissue oxygen tension, perfusion and collagen deposition; not a BHOC or veterinary rehabilitation trial."
+    },
+    {
+      "label": "Hughes and colleagues: Hematologic effects of HBOC-201",
+      "href": "https://pubmed.ncbi.nlm.nih.gov/7595029/",
+      "detail": "Randomized single-dose study in 24 healthy adults after phlebotomy, 1995. Serum iron, ferritin and erythropoietin findings provide a research rationale; they do not establish BHOC-mediated erythropoiesis or veterinary benefit."
+    }
+  ],
+  "relatedLinks": [
+    {
+      "label": "Canine blood transfusion and donor access",
+      "href": "canine-blood-transfusion.html"
+    },
+    {
+      "label": "Oxyglobin: historical veterinary evidence",
+      "href": "oxyglobin.html"
+    },
+    {
+      "label": "Oxygen saturation and tissue delivery",
+      "href": "oxygen-saturation-vs-oxygen-delivery.html"
+    },
+    {
+      "label": "Donor blood costs and access",
+      "href": "veterinary-donor-blood-costs-and-access.html"
+    }
+  ],
+  "sourceLink": {
+    "label": "Read the original 2009 report",
+    "href": "https://www.veterinarypracticenews.com/oxyglobin-buys-time-while-awaiting-blood/"
+  },
+  "referenceGroups": [
+    {
+      "heading": "Sources and context",
+      "links": [
+        {
+          "label": "APPA: 2026 State of the Industry release",
+          "href": "https://americanpetproducts.org/news/u.s.-pet-industry-reaches-158-billion-in-2025-poised-for-continued-growth-in-2026"
+        },
+        {
+          "label": "Montoya and colleagues: Life expectancy tables for dogs and cats",
+          "href": "https://doi.org/10.3389/fvets.2023.1082102"
+        },
+        {
+          "label": "Pet Blood Bank UK: Dog blood donation",
+          "href": "https://www.petbloodbankuk.org/pet-owners/dog-blood-donation/"
+        },
+        {
+          "label": "BHOC Veterinary: Oxygen transport and development framework",
+          "href": "https://bhocvet.com/science.html"
+        },
+        {
+          "label": "Muir and Wellman: Hemoglobin solutions and tissue oxygenation",
+          "href": "https://doi.org/10.1111/j.1939-1676.2003.tb02423.x"
+        },
+        {
+          "label": "McGovern and colleagues: Hypoxia and neutrophil antimicrobial function",
+          "href": "https://doi.org/10.4049/jimmunol.1002213"
+        },
+        {
+          "label": "Jonsson and colleagues: Tissue oxygenation and wound healing",
+          "href": "https://doi.org/10.1097/00000658-199111000-00011"
+        },
+        {
+          "label": "Hughes and colleagues: Hematologic effects of HBOC-201",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/7595029/"
+        }
+      ]
+    }
+  ]
+}

@@ -18,6 +18,23 @@
   "dateModified": "2026-11-02",
   "entries": [
     {
+      "id": "blood-bank-oxygen-bridge-20261102",
+      "date": "2026-11-02",
+      "displayDate": "2 November 2026",
+      "title": "Veterinary blood banks and oxygen therapeutics: cooperation news",
+      "text": "Added a short article connecting the 2009 Oxyglobin bridge discussion with current pet ownership, documented longevity trends and blood-bank demand. Linked the article from News, canine transfusion, Oxyglobin, tissue oxygen delivery, Applications and Research Topics. Added a dedicated illustrative image, source links, canonical and social metadata.",
+      "links": [
+        {
+          "label": "Blood banks and the oxygen bridge",
+          "href": "veterinary-blood-banks-oxygen-bridge.html"
+        },
+        {
+          "label": "Veterinary News",
+          "href": "news.html#veterinary-blood-banks-oxygen-bridge-20261102"
+        }
+      ]
+    },
+    {
       "id": "oxygen-saturation-delivery-20261102",
       "date": "2026-11-02",
       "displayDate": "2 November 2026",

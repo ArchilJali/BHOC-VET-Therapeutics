@@ -91,6 +91,11 @@
           "label": "Define a veterinary research collaboration",
           "href": "bhoc-crada-research-partners.html",
           "detail": "Related BHOC Veterinary information"
+        },
+        {
+          "label": "Blood banks and the oxygen bridge: experience and future cooperation",
+          "href": "veterinary-blood-banks-oxygen-bridge.html",
+          "detail": "Historical Oxyglobin reporting, current blood demand and the BHOC research invitation."
         }
       ]
     }

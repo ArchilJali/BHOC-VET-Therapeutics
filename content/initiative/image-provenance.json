@@ -1152,6 +1152,37 @@
           "introducedOn": "2026-10-16"
         }
       ]
+    },
+    {
+      "id": "veterinary-blood-bank-oxygen-bridge-20261102",
+      "title": "Veterinary oxygen-support development concept",
+      "provider": "BHOC project artwork generated for Archil Jaliashvili with ImageGen",
+      "providedOn": "2026-11-02",
+      "rightsStatus": "Project-generated illustrative image; not a photograph of an actual patient or clinical BHOC administration.",
+      "reason": "Illustrates cooperative veterinary oxygen-support research with a compact pump beside the patient, horizontal pouch and peripheral catheter.",
+      "modifications": "Generated from an original project image; edited to add a horizontal pouch and adjacent compact pump. No infusion rate, dosing units or product branding. Uncropped resizing and format conversion for web and social delivery.",
+      "localFiles": [
+        {
+          "path": "assets/news/veterinary-blood-bank-oxygen-bridge-20261102.webp",
+          "sha256": "774eed6d6226790e39119d7f47ab95950c032dabe99e23958dae2421a2d3f097",
+          "introducedOn": "2026-11-02"
+        },
+        {
+          "path": "assets/news/veterinary-blood-bank-oxygen-bridge-20261102-1200.webp",
+          "sha256": "831652017ad6ca0bfd97bdcfca86f2ea358e99726e0513d936d9c32e24427ab4",
+          "introducedOn": "2026-11-02"
+        },
+        {
+          "path": "assets/news/veterinary-blood-bank-oxygen-bridge-20261102-600.webp",
+          "sha256": "1f477bbfa0d3778c4b20f81a369c13d2b37e92f78e70c594f74885f136dbeb37",
+          "introducedOn": "2026-11-02"
+        },
+        {
+          "path": "assets/news/veterinary-blood-bank-oxygen-bridge-20261102-social.jpg",
+          "sha256": "2ffb7f8ff43920373746aba6a0f41c4136e2b04667f010fb6fa7905c82bd1b1a",
+          "introducedOn": "2026-11-02"
+        }
+      ]
     }
   ]
 }

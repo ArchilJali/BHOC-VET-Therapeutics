@@ -96,7 +96,7 @@
   "eyebrow": "BHOC Initiative · Global Intelligence",
   "heading": "Wildlife & Species Conservation Intelligence.",
   "lead": "Tracking the people, science, funding and programs working to protect wildlife, restore endangered species and strengthen conservation medicine worldwide.",
-  "updated": "2026-11-01",
+  "updated": "2026-11-02",
   "seoContext": {
     "eyebrow": "BHOC Veterinary context",
     "heading": "Animal-health intelligence, separate from product claims.",
@@ -114,6 +114,62 @@
   },
   "feedNote": "BHOC Initiative Scout applies a high publication threshold and screens every candidate for duplication. New items are added only for exceptional rescue or recovery outcomes, globally significant conservation initiatives, substantive veterinary evidence milestones or other material developments; routine news is excluded.",
   "stories": [
+    {
+      "id": "veterinary-blood-banks-oxygen-bridge-20261102",
+      "date": "2026-11-02",
+      "dateLabel": "2 Nov 2026",
+      "region": "Veterinary blood banks · Research cooperation",
+      "category": "Transfusion · Emergency care · Oxygen therapeutics",
+      "article": true,
+      "title": "Working with Veterinary Blood Banks: Experience and the Future",
+      "text": "The oxygen bridge was a historical starting point. Today, BHOC research focuses on sustained, physiologically responsive tissue oxygen delivery, whether donor blood is available, delayed or already being transfused. Blood-bank cooperation remains part of that wider programme.",
+      "image": {
+        "url": "assets/news/veterinary-blood-bank-oxygen-bridge-20261102-social.jpg",
+        "displayUrl": "assets/news/veterinary-blood-bank-oxygen-bridge-20261102-1200.webp",
+        "srcset": [
+          {
+            "path": "assets/news/veterinary-blood-bank-oxygen-bridge-20261102-600.webp",
+            "width": 600
+          },
+          {
+            "path": "assets/news/veterinary-blood-bank-oxygen-bridge-20261102-1200.webp",
+            "width": 1200
+          },
+          {
+            "path": "assets/news/veterinary-blood-bank-oxygen-bridge-20261102.webp",
+            "width": 1536
+          }
+        ],
+        "sizes": "(max-width:700px) calc(100vw - 32px), 520px",
+        "width": 1200,
+        "height": 800,
+        "alt": "Illustrative veterinary oxygen-support scene: a calm golden retriever with a small peripheral catheter, a compact pump and a red-fluid pouch lying horizontally beside the dog."
+      },
+      "credit": {
+        "label": "BHOC Veterinary · illustrative image",
+        "href": "veterinary-blood-banks-oxygen-bridge.html"
+      },
+      "sourceName": "BHOC Veterinary · Historical reporting and current primary sources",
+      "link": {
+        "label": "Read the article",
+        "href": "veterinary-blood-banks-oxygen-bridge.html"
+      },
+      "contextLink": {
+        "label": "2009 source article",
+        "href": "https://www.veterinarypracticenews.com/oxyglobin-buys-time-while-awaiting-blood/"
+      },
+      "keywords": [
+        "veterinary blood transfusion",
+        "veterinary emergency medicine",
+        "hemoglobin oxygen carrier",
+        "oxygen bridge",
+        "Oxyglobin blood banks",
+        "veterinary blood bank collaboration",
+        "hemoglobin",
+        "transfusion",
+        "veterinary emergency medicine"
+      ]
+    },
     {
       "id": "veterinary-donor-blood-costs-access-20261101",
       "date": "2026-11-01",
@@ -1691,5 +1747,5 @@
     "text": "A short dated record of BHOC Veterinary site and knowledge additions.",
     "href": "https://bhocvet.com/site-updates.html"
   },
-  "dateModified": "2026-11-01"
+  "dateModified": "2026-11-02"
 }

@@ -145,10 +145,15 @@
           "label": "All veterinary research topics",
           "href": "./topics.html",
           "detail": ""
+        },
+        {
+          "label": "Blood banks and the oxygen bridge: experience and future cooperation",
+          "href": "veterinary-blood-banks-oxygen-bridge.html",
+          "detail": "Historical Oxyglobin reporting, current blood demand and the BHOC research invitation."
         }
       ],
       "bullets": []
     }
   ],
-  "dateModified": "2026-10-25"
+  "dateModified": "2026-11-02"
 }
