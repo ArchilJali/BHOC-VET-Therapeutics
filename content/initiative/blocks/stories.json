@@ -7,6 +7,22 @@
   },
   "cards": [
     {
+      "slug": "lilica-dog-who-shared-her-dinner",
+      "href": "lilica-dog-who-shared-her-dinner.html",
+      "image": {
+        "src": "assets/initiative/lilica-sao-carlos-food-bag-globo-2012.jpg",
+        "alt": "Lilica beside a caregiver and a tied bag of food at night, in the original 2012 TV Globo report from São Carlos, Brazil.",
+        "width": 602,
+        "height": 500,
+        "variant": "poster"
+      },
+      "overline": "Friendship and care · 2 November 2026",
+      "title": "Lilica: A Small Bag. A Big Heart.",
+      "text": "The true story of a Brazilian dog who brought dinner home for animals of different species. A personal reflection on instinct, friendship and care.",
+      "phrase": "Friends who think, share and care.",
+      "actionLabel": "Read the story"
+    },
+    {
       "slug": "blt-friendship-beyond-species",
       "href": "blt-friendship-beyond-species.html",
       "image": {

@@ -1,0 +1,76 @@
+{
+  "slug": "lilica-dog-who-shared-her-dinner",
+  "section": "Stories That Matter · Friendship and care",
+  "title": "Lilica: A Small Bag. A Big Heart.",
+  "seoTitle": "Lilica: The Dog Who Shared Her Dinner | BHOC Initiative",
+  "description": "The true story of Lilica, a dog in Brazil who brought food home for other animals. A short BHOC Initiative reflection on friendship, instinct and care.",
+  "canonical": "https://bhocvet.com/initiative/lilica-dog-who-shared-her-dinner.html",
+  "datePublished": "2026-11-02",
+  "dateModified": "2026-11-02",
+  "articleSection": "Stories That Matter · Animal welfare",
+  "genre": "Historical animal-welfare story and personal reflection",
+  "keywords": [
+    "Lilica dog",
+    "Lilica Brazil",
+    "dog shares food with other animals",
+    "animal compassion",
+    "interspecies friendship",
+    "animal welfare",
+    "BHOC Initiative"
+  ],
+  "byline": {
+    "name": "Archil Jaliashvili",
+    "role": "BHOC Species & Biodiversity Protection Initiative",
+    "dateLabel": "2 November 2026"
+  },
+  "locationLabel": "Lilica: Friendship and Care",
+  "deck": "A true story from São Carlos, Brazil, reported in 2012. One dog and a daily act of care across species.",
+  "layout": "poster",
+  "images": [
+    {
+      "src": "assets/initiative/lilica-sao-carlos-food-bag-globo-2012.jpg",
+      "alt": "Lilica beside a caregiver and a tied bag of food at night, in the original 2012 TV Globo report from São Carlos, Brazil.",
+      "width": 602,
+      "height": 500,
+      "caption": "Lilica and a bag of food in the original Brazilian television report, 2012.",
+      "credit": "Mais Você / TV Globo",
+      "license": "Original television frame",
+      "href": "https://gshow.globo.com/programas/mais-voce/O-programa/noticia/2012/09/vira-lata-solidaria-percorre-2km-diarios-para-trazer-alimentos-aos-outros-bichos.html"
+    }
+  ],
+  "galleryLabel": "Lilica in the original Brazilian television report",
+  "values": [
+    "Friendship",
+    "Sharing",
+    "Care"
+  ],
+  "paragraphs": [
+    "In São Carlos, Brazil, Lilica carried food home each evening for the animals who shared her scrapyard home: another dog, a cat, chickens and a mule.",
+    "Teacher Lúcia Helena de Souza fed her and tied up the food bag. Neile Vânia Antônio, who had taken Lilica in after she was abandoned, opened it for the others. Care passed from one life to another.",
+    "For me, these are friends who think, share and care."
+  ],
+  "principle": "Some will call it instinct. I say: may we all have an instinct like hers, and a soul like hers.",
+  "principleAttribution": "Archil Jaliashvili · BHOC Initiative",
+  "closing": "Their lives deserve our respect and protection.",
+  "sourcesLabel": "The real story, reported in Brazil in 2012",
+  "sources": [
+    {
+      "label": "TV Globo / Mais Você, 27 September 2012: Lilica brings food to other animals",
+      "href": "https://gshow.globo.com/programas/mais-voce/O-programa/noticia/2012/09/vira-lata-solidaria-percorre-2km-diarios-para-trazer-alimentos-aos-outros-bichos.html"
+    },
+    {
+      "label": "Watch the original EPTV / Globo video report",
+      "href": "https://globoplay.globo.com/v/2157257/"
+    }
+  ],
+  "relatedLinks": [
+    {
+      "label": "BLT: Friendship Beyond Species and Time",
+      "href": "blt-friendship-beyond-species.html"
+    },
+    {
+      "label": "Explore the Species & Biodiversity Protection Initiative",
+      "href": "./index.html"
+    }
+  ]
+}

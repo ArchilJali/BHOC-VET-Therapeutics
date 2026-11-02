@@ -7,6 +7,46 @@
   "rightsBoundary": "Third-party terms apply only to the underlying photographs identified below. They do not license the surrounding BHOC text, branding, scientific materials, layout, design or code. No photographer, source platform or public agency is represented as endorsing BHOC or this Initiative.",
   "records": [
     {
+      "id": "lilica-globo-2012",
+      "title": "Lilica and a bag of food in the original Brazilian television report",
+      "subject": "Lilica beside a caregiver and a tied bag of food in São Carlos, Brazil",
+      "creator": "Mais Você / TV Globo (source credit)",
+      "source": "https://gshow.globo.com/programas/mais-voce/O-programa/noticia/2012/09/vira-lata-solidaria-percorre-2km-diarios-para-trazer-alimentos-aos-outros-bichos.html",
+      "sourceLabel": "Original TV Globo / Mais Você report, 27 September 2012",
+      "originalDate": "Published 27 September 2012; capture date not stated",
+      "license": "Rights retained by TV Globo; no open reuse licence stated",
+      "licenseUrl": "https://gshow.globo.com/programas/mais-voce/O-programa/noticia/2012/09/vira-lata-solidaria-percorre-2km-diarios-para-trazer-alimentos-aos-outros-bichos.html",
+      "sourceStatus": "The source page identifies Lilica and credits Mais Você / TV Globo. This is an original documentary television frame, not the unrelated light-coloured dog in the viral card. No open reuse licence or endorsement is asserted.",
+      "sourceReferences": [
+        {
+          "label": "Exact source JPEG displayed by TV Globo",
+          "href": "https://s2.glbimg.com/hONWx33D0DeyzwJljtKUSyc1BEqHZlGSwHE3T4PJzYNIoz-HdGixxa_8qOZvMp3w/s.glbimg.com/et/pr/f/original/2012/09/27/lilica1.jpg"
+        },
+        {
+          "label": "EPTV original video report",
+          "href": "https://globoplay.globo.com/v/2157257/"
+        }
+      ],
+      "verifiedOn": "2026-11-02",
+      "usedIn": [
+        "Lilica story",
+        "Initiative Stories That Matter card",
+        "Stories That Matter index",
+        "Veterinary News teaser",
+        "Lilica article social preview"
+      ],
+      "reason": "Archil requested the true Lilica story with a photograph, source links and an emotional short Initiative reflection.",
+      "modifications": "The 602 by 500 pixel source JPEG is preserved byte for byte. No cropping, resizing, retouching or generative editing. The complete frame and TV Globo watermark remain visible.",
+      "reuse": "Third-party rights remain with the original source. This record does not grant a reuse licence or imply endorsement of BHOC.",
+      "localFiles": [
+        {
+          "path": "assets/initiative/lilica-sao-carlos-food-bag-globo-2012.jpg",
+          "sha256": "866bd57e11a901aaabab3cea3a2fe4f61bbdeeb2991d4d5bfa3aba5bcc12407b",
+          "introducedOn": "2026-11-02"
+        }
+      ]
+    },
+    {
       "id": "noahs-ark-blt-trio",
       "title": "Leo, Baloo and Shere Khan together at Noah's Ark Animal Sanctuary",
       "subject": "The BLT trio: a lion, an American black bear and a Bengal tiger huddled together",

@@ -115,6 +115,45 @@
   "feedNote": "BHOC Initiative Scout applies a high publication threshold and screens every candidate for duplication. New items are added only for exceptional rescue or recovery outcomes, globally significant conservation initiatives, substantive veterinary evidence milestones or other material developments; routine news is excluded.",
   "stories": [
     {
+      "id": "lilica-friendship-care-20261102",
+      "date": "2026-11-02",
+      "dateLabel": "2 Nov 2026 · A historical story revisited",
+      "region": "São Carlos, Brazil",
+      "category": "Animal welfare · Stories That Matter",
+      "article": true,
+      "title": "Lilica: A Small Bag. A Big Heart.",
+      "text": "Lilica brought food home for another dog, a cat, chickens and a mule. A short Initiative reflection on friends who think, share and care.",
+      "image": {
+        "url": "assets/initiative/lilica-sao-carlos-food-bag-globo-2012.jpg",
+        "displayUrl": "assets/initiative/lilica-sao-carlos-food-bag-globo-2012.jpg",
+        "width": 602,
+        "height": 500,
+        "alt": "Lilica beside a caregiver and a tied bag of food at night, in the original 2012 TV Globo report from São Carlos, Brazil."
+      },
+      "credit": {
+        "label": "Photo: Mais Você / TV Globo, 2012",
+        "href": "https://gshow.globo.com/programas/mais-voce/O-programa/noticia/2012/09/vira-lata-solidaria-percorre-2km-diarios-para-trazer-alimentos-aos-outros-bichos.html"
+      },
+      "sourceName": "TV Globo / EPTV · Historical reporting, 2012",
+      "link": {
+        "label": "Read the story and reflection",
+        "href": "./initiative/lilica-dog-who-shared-her-dinner.html"
+      },
+      "contextLink": {
+        "label": "Watch the original video",
+        "href": "https://globoplay.globo.com/v/2157257/"
+      },
+      "keywords": [
+        "Lilica dog",
+        "Lilica Brazil",
+        "dog shares food with other animals",
+        "animal compassion",
+        "interspecies friendship",
+        "animal welfare",
+        "BHOC Initiative"
+      ]
+    },
+    {
       "id": "blood-organ-oxygen-function-20261102",
       "date": "2026-11-02",
       "dateLabel": "2 Nov 2026",
