@@ -1,6 +1,6 @@
 {
   "slug": "veterinary-blood-banks-oxygen-bridge",
-  "navLabel": "Blood banks and the oxygen bridge",
+  "navLabel": "Blood banks and precision oxygen therapeutics",
   "navActive": "news.html",
   "breadcrumbs": [
     {
@@ -8,8 +8,8 @@
       "href": "news.html"
     }
   ],
-  "title": "Veterinary Blood Banks & Oxygen Support | BHOC Vet",
-  "description": "Veterinary blood banks, emergency transfusion and hemoglobin oxygen carriers: the Oxyglobin bridge experience and future BHOC research cooperation.",
+  "title": "Veterinary Blood Banks & Precision Oxygen Therapeutics | BHOC",
+  "description": "BHOC, Oxyglobin and veterinary blood banks: transfusion cooperation and research into sustained tissue oxygen delivery adapted to local metabolic demand.",
   "schemaType": "Article",
   "datePublished": "2026-11-02",
   "dateModified": "2026-11-02",
@@ -35,11 +35,11 @@
     ]
   },
   "eyebrow": "BHOC Veterinary · Blood banks and oxygen therapeutics",
-  "heading": "Working with Veterinary Blood Banks: Experience and the Future",
-  "lead": "Veterinary blood banks and oxygen therapeutics share a practical goal: support the patient when timely oxygen delivery is at risk.",
+  "heading": "Veterinary Blood Banks and BHOC: Precision Oxygen Therapeutics",
+  "lead": "The current goal of BHOC is sustained, controlled and precise tissue oxygen delivery adapted to local metabolic demand, whether donor blood is available or a transfusion is being given.",
   "image": {
     "src": "assets/news/veterinary-blood-bank-oxygen-bridge-20261102-1200.webp",
-    "alt": "Illustrative veterinary oxygen-support scene: a calm golden retriever with a small peripheral catheter, a compact pump and a red-fluid pouch lying horizontally beside the dog.",
+    "alt": "BHOC Veterinary illustration for an article on Oxyglobin and tissue oxygen delivery: a golden retriever with a peripheral catheter, compact infusion pump and horizontal fluid pouch.",
     "width": 1200,
     "height": 800,
     "srcset": [
@@ -60,38 +60,18 @@
   },
   "socialImage": {
     "src": "assets/news/veterinary-blood-bank-oxygen-bridge-20261102-social.jpg",
-    "alt": "Illustrative veterinary oxygen-support scene: a calm golden retriever with a small peripheral catheter, a compact pump and a red-fluid pouch lying horizontally beside the dog.",
+    "alt": "BHOC Veterinary illustration for an article on Oxyglobin and tissue oxygen delivery: a golden retriever with a peripheral catheter, compact infusion pump and horizontal fluid pouch.",
     "width": 1536,
     "height": 1024
   },
-  "imageCaption": "Illustrative development concept: a compact pump beside the patient, a horizontal fluid pouch and a small peripheral catheter.",
+  "imageCaption": "BHOC Veterinary illustration accompanying the Oxyglobin history and Precision Oxygen Therapeutics research discussion: a compact pump beside the patient, a horizontal fluid pouch and a peripheral catheter.",
   "paragraphs": [
     {
-      "text": "In 2009, Veterinary Practice News described how blood-bank professionals viewed Oxyglobin as an oxygen bridge: a way to support patients while donor blood was being arranged. Cooperation with the donor-blood system was already central to its practical role.",
-      "references": [
-        1
-      ]
-    },
-    {
-      "text": "That need remains relevant today. U.S. dog and cat ownership expanded in 2025, and a large veterinary-record study documented increasing life expectancy in dogs and cats between 2013 and 2018. Pet Blood Bank UK currently reports growing demand for blood and the need for more donors. We see these trends as further reasons to strengthen cooperation between blood banks, veterinary hospitals and oxygen-therapeutics developers.",
-      "references": [
-        2,
-        3,
-        4
-      ]
-    },
-    {
-      "text": "As oxygen-delivery science advances, the therapeutic focus extends beyond the historical \"blood substitute\" label. Precision Oxygen Therapeutics centres on oxygen reaching tissues and cells, where it supports oxygen-dependent metabolism. This broader perspective connects transfusion care and veterinary emergency medicine with microvascular oxygen delivery and tissue function.",
-      "references": [
-        5
-      ]
-    },
-    {
-      "text": "The oxygen bridge was the historical starting point. Today, our BHOC, Biological Hemoglobin Oxygen Carrier, development programme has a broader aim: sustained, controlled and physiologically responsive oxygen delivery during treatment, whether donor blood is available, delayed or already being transfused.",
+      "text": "BHOC, Biological Hemoglobin Oxygen Carrier, is being developed within Precision Oxygen Therapeutics to support sustained, controlled and precise oxygen delivery throughout treatment, independently of donor-blood availability or the decision to transfuse.",
       "emphasis": true
     },
     {
-      "text": "We aim to match oxygen unloading to local tissue conditions and metabolic demand: greater release where oxygen tension is low, and less where oxygen is sufficient. This extends the research focus to the interaction between oxygen transport, microvascular blood flow and cellular metabolism.",
+      "text": "Our aim is oxygen unloading that responds to local tissue conditions and metabolic demand: greater release where oxygen tension is low, and less where oxygen is sufficient. We are investigating how this approach can work with the body's regulation of microvascular flow and cellular metabolism.",
       "references": [
         5,
         6
@@ -103,6 +83,26 @@
         7,
         8,
         9
+      ]
+    },
+    {
+      "text": "The oxygen bridge was the historical starting point. In 2009, Veterinary Practice News described how blood-bank professionals viewed Oxyglobin as an oxygen bridge: a way to support patients while donor blood was being arranged. Cooperation with the donor-blood system was already central to its practical role.",
+      "references": [
+        1
+      ]
+    },
+    {
+      "text": "The need for cooperation with veterinary blood banks remains relevant today. U.S. dog and cat ownership expanded in 2025, and a large veterinary-record study documented increasing life expectancy in dogs and cats between 2013 and 2018. Pet Blood Bank UK currently reports growing demand for blood and the need for more donors. We see these trends as further reasons to strengthen cooperation between blood banks, veterinary hospitals and oxygen-therapeutics developers.",
+      "references": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "text": "As oxygen-delivery science advances, the therapeutic focus extends beyond the historical \"blood substitute\" label. Precision Oxygen Therapeutics centres on oxygen reaching tissues and cells, where it supports oxygen-dependent metabolism. This broader perspective connects transfusion care and veterinary emergency medicine with microvascular oxygen delivery and tissue function.",
+      "references": [
+        5
       ]
     },
     {
