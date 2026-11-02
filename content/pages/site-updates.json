@@ -18,6 +18,19 @@
   "dateModified": "2026-11-02",
   "entries": [
     {
+      "id": "veterinary-clinics-donor-blood-cooperation-20261102",
+      "date": "2026-11-02",
+      "displayDate": "2 November 2026",
+      "title": "Clinics, donor blood banks and BHOC: cooperation news",
+      "text": "Added a concise invitation to cooperate with veterinary clinics and donor blood banks, linked to the specific Veterinary Practice News report of 17 April 2009. Includes a new AI-created clinical teamwork illustration, responsive WebP, social preview, descriptive ALT, article metadata, related links, search and sitemap.",
+      "links": [
+        {
+          "label": "Read the cooperation news",
+          "href": "veterinary-clinics-donor-blood-cooperation.html"
+        }
+      ]
+    },
+    {
       "id": "lilica-story-20261102",
       "date": "2026-11-02",
       "displayDate": "2 November 2026",

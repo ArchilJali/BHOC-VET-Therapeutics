@@ -1,0 +1,121 @@
+{
+  "slug": "veterinary-clinics-donor-blood-cooperation",
+  "navLabel": "Clinics and donor blood banks",
+  "navActive": "news.html",
+  "breadcrumbs": [
+    {
+      "label": "News",
+      "href": "news.html"
+    }
+  ],
+  "title": "Veterinary Clinics & Donor Blood Banks: Cooperation | BHOC",
+  "description": "BHOC Veterinary invites donor blood banks and clinics to collaborate on transfusion care and research into complementary tissue oxygen support.",
+  "schemaType": "Article",
+  "datePublished": "2026-11-02",
+  "dateModified": "2026-11-02",
+  "dateLabel": "2 November 2026",
+  "articleSection": "Veterinary clinic and donor blood bank cooperation",
+  "authorName": "Archil Jaliashvili",
+  "seo": {
+    "primaryKeyword": "veterinary blood bank clinic cooperation",
+    "secondaryKeywords": [
+      "veterinary donor blood",
+      "veterinary blood transfusion",
+      "veterinary clinic partnership",
+      "animal blood donation"
+    ],
+    "supportingTerms": [
+      "BHOC Veterinary",
+      "Biological Hemoglobin Oxygen Carrier",
+      "Precision Oxygen Therapeutics",
+      "tissue oxygen delivery",
+      "veterinary transfusion care"
+    ]
+  },
+  "eyebrow": "BHOC Veterinary · Cooperation with clinics and blood banks",
+  "heading": "Blood Banks, Veterinary Clinics and BHOC: One Team Around the Patient",
+  "lead": "Donor programmes, clinical expertise and oxygen science can move forward together.",
+  "image": {
+    "src": "assets/news/bhoc-veterinary-clinic-blood-bank-cooperation-20261102-1200.webp",
+    "alt": "BHOC Veterinary editorial illustration of three veterinary professionals reviewing a tablet beside a golden retriever and a grey cat in a clinic, with a medical transport cooler behind them.",
+    "width": 1200,
+    "height": 800,
+    "srcset": [
+      {
+        "path": "assets/news/bhoc-veterinary-clinic-blood-bank-cooperation-20261102-600.webp",
+        "width": 600
+      },
+      {
+        "path": "assets/news/bhoc-veterinary-clinic-blood-bank-cooperation-20261102-1200.webp",
+        "width": 1200
+      },
+      {
+        "path": "assets/news/bhoc-veterinary-clinic-blood-bank-cooperation-20261102.webp",
+        "width": 1536
+      }
+    ],
+    "sizes": "(max-width: 800px) 100vw, 540px"
+  },
+  "socialImage": {
+    "src": "assets/news/bhoc-veterinary-clinic-blood-bank-cooperation-20261102-social.jpg",
+    "alt": "BHOC Veterinary editorial illustration of a veterinary team discussing patient care beside a dog and cat in a bright clinic.",
+    "width": 1200,
+    "height": 800
+  },
+  "imageCaption": "BHOC Veterinary · AI-created editorial illustration of clinical cooperation.",
+  "paragraphs": [
+    {
+      "text": "In its 2009 report, Veterinary Practice News described the growth of veterinary blood banks and a practical principle: provide the blood component each patient needs.",
+      "references": [
+        1
+      ]
+    },
+    {
+      "text": "BHOC Veterinary invites donor blood banks and veterinary clinics to collaborate in Precision Oxygen Therapeutics. Our Biological Hemoglobin Oxygen Carrier programme aims to develop complementary tissue oxygen support, with clinical teams helping define research priorities, monitoring and meaningful patient outcomes."
+    },
+    {
+      "text": "Donor blood. Clinical expertise. Oxygen science. One team around the patient.",
+      "emphasis": true
+    }
+  ],
+  "actions": [
+    {
+      "label": "Discuss clinic and blood-bank cooperation",
+      "href": "bhoc-crada-research-partners.html"
+    },
+    {
+      "label": "Contact BHOC Veterinary",
+      "href": "mailto:info@bhoctherapeutics.com"
+    }
+  ],
+  "references": [
+    {
+      "label": "Veterinary Practice News: Veterinary Blood Banks Keep Supplies Flowing",
+      "href": "https://www.veterinarypracticenews.com/veterinary-blood-banks-keep-supplies-flowing/",
+      "detail": "Lori Luechtefeld, 17 April 2009. Historical professional reporting on veterinary blood banks and component-based transfusion."
+    }
+  ],
+  "relatedLinks": [
+    {
+      "label": "Blood banks and Precision Oxygen Therapeutics",
+      "href": "veterinary-blood-banks-oxygen-bridge.html"
+    },
+    {
+      "label": "Veterinary donor blood costs and access",
+      "href": "veterinary-donor-blood-costs-and-access.html"
+    },
+    {
+      "label": "Canine blood transfusion and donor access",
+      "href": "canine-blood-transfusion.html"
+    },
+    {
+      "label": "Tissue oxygen delivery research",
+      "href": "science.html"
+    }
+  ],
+  "sourceLink": {
+    "label": "Read the original Veterinary Practice News article",
+    "href": "https://www.veterinarypracticenews.com/veterinary-blood-banks-keep-supplies-flowing/"
+  },
+  "referenceGroups": []
+}

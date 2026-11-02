@@ -1,0 +1,47 @@
+{
+  "id": "bhoc-veterinary-clinic-blood-bank-cooperation-20261102",
+  "kind": "owner-requested AI-generated editorial concept image",
+  "createdAt": "2026-11-02",
+  "tool": "OpenAI ImageGen built-in",
+  "purpose": "Illustrate cooperation between veterinary clinics, donor blood banks and BHOC oxygen-delivery research.",
+  "subjects": [
+    "three veterinary professionals",
+    "golden retriever",
+    "grey cat",
+    "tablet",
+    "medical transport cooler"
+  ],
+  "originalSha256": "4c448876ce9010e69993e58b2b321812ef3eca5c0cd05ad56b988113cec3d5e9",
+  "processing": "Full frame and aspect ratio preserved. WebP at 1536, 1200 and 600 px; 1200 by 800 JPEG social preview with descriptive metadata. No added typography or scene edits.",
+  "notDocumentary": true,
+  "localFiles": [
+    {
+      "path": "assets/news/bhoc-veterinary-clinic-blood-bank-cooperation-20261102.webp",
+      "sha256": "c0544fb9bbcbbca4098bd5dde87d3aacd19e5fa22b17f4d86bd5e9a25e9e4aa5",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 153448
+    },
+    {
+      "path": "assets/news/bhoc-veterinary-clinic-blood-bank-cooperation-20261102-1200.webp",
+      "sha256": "c667767a8141e82b0a0616243001ecdf92089f7b1efdd6e20c11027b0ac33399",
+      "width": 1200,
+      "height": 800,
+      "bytes": 112340
+    },
+    {
+      "path": "assets/news/bhoc-veterinary-clinic-blood-bank-cooperation-20261102-600.webp",
+      "sha256": "38c4420f34721021843fd9184ad08e8fe7da9744d45ad1f3685666063bcb94c0",
+      "width": 600,
+      "height": 400,
+      "bytes": 44412
+    },
+    {
+      "path": "assets/news/bhoc-veterinary-clinic-blood-bank-cooperation-20261102-social.jpg",
+      "sha256": "e3818fa7636d7793ab8b50f70ff3fdf03a87f8df60993ee88acefa0ac267e3f9",
+      "width": 1200,
+      "height": 800,
+      "bytes": 197773
+    }
+  ]
+}

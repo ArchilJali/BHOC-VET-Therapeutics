@@ -115,6 +115,63 @@
   "feedNote": "BHOC Initiative Scout applies a high publication threshold and screens every candidate for duplication. New items are added only for exceptional rescue or recovery outcomes, globally significant conservation initiatives, substantive veterinary evidence milestones or other material developments; routine news is excluded.",
   "stories": [
     {
+      "id": "veterinary-clinics-donor-blood-cooperation-20261102",
+      "date": "2026-11-02",
+      "dateLabel": "2 Nov 2026",
+      "region": "Veterinary clinics · Donor blood banks",
+      "category": "Cooperation · Veterinary transfusion care",
+      "article": true,
+      "title": "Blood Banks, Veterinary Clinics and BHOC: One Team Around the Patient",
+      "text": "BHOC Veterinary invites donor blood banks and veterinary clinics to collaborate on complementary tissue oxygen support. Donor blood. Clinical expertise. Oxygen science. One team around the patient.",
+      "image": {
+        "url": "assets/news/bhoc-veterinary-clinic-blood-bank-cooperation-20261102-1200.webp",
+        "displayUrl": "assets/news/bhoc-veterinary-clinic-blood-bank-cooperation-20261102-1200.webp",
+        "srcset": [
+          {
+            "path": "assets/news/bhoc-veterinary-clinic-blood-bank-cooperation-20261102-600.webp",
+            "width": 600
+          },
+          {
+            "path": "assets/news/bhoc-veterinary-clinic-blood-bank-cooperation-20261102-1200.webp",
+            "width": 1200
+          },
+          {
+            "path": "assets/news/bhoc-veterinary-clinic-blood-bank-cooperation-20261102.webp",
+            "width": 1536
+          }
+        ],
+        "sizes": "(max-width:700px) calc(100vw - 32px), 520px",
+        "alt": "BHOC Veterinary editorial illustration of three veterinary professionals reviewing a tablet beside a golden retriever and a grey cat in a clinic, with a medical transport cooler behind them.",
+        "width": 1200,
+        "height": 800
+      },
+      "credit": {
+        "label": "BHOC Veterinary · AI-created editorial illustration",
+        "href": "veterinary-clinics-donor-blood-cooperation.html"
+      },
+      "sourceName": "Veterinary Practice News · Lori Luechtefeld · 17 April 2009",
+      "link": {
+        "label": "Read the cooperation news",
+        "href": "veterinary-clinics-donor-blood-cooperation.html"
+      },
+      "contextLink": {
+        "label": "Original 2009 article",
+        "href": "https://www.veterinarypracticenews.com/veterinary-blood-banks-keep-supplies-flowing/"
+      },
+      "keywords": [
+        "veterinary blood bank clinic cooperation",
+        "veterinary donor blood",
+        "veterinary blood transfusion",
+        "veterinary clinic partnership",
+        "animal blood donation",
+        "BHOC Veterinary",
+        "Biological Hemoglobin Oxygen Carrier",
+        "Precision Oxygen Therapeutics",
+        "tissue oxygen delivery",
+        "veterinary transfusion care"
+      ]
+    },
+    {
       "id": "lilica-friendship-care-20261102",
       "date": "2026-11-02",
       "dateLabel": "2 Nov 2026 · A historical story revisited",
