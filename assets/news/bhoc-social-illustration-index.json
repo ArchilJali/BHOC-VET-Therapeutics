@@ -1,0 +1,48 @@
+{
+  "created": "2026-11-02",
+  "purpose": "User-authorized BHOC Veterinary social illustrations for news without source photographs",
+  "kind": "AI-generated editorial concept illustrations",
+  "rights": "BHOC project-created images; no third-party source photograph is asserted",
+  "images": [
+    {
+      "key": "cat",
+      "news_id": "oxyglobin-feline-anemia-48-cats",
+      "article_url": "https://bhocvet.com/oxyglobin-cats-anemia-study.html",
+      "alt_text": "BHOC Veterinary AI editorial illustration of a grey cat beside a veterinarian and an infusion pump in a bright clinic; the heading reads Feline Oxygenation. This is a concept illustration, not a photograph from the historical Oxyglobin study.",
+      "path": "assets/news/bhoc-feline-oxygenation-20261102.png",
+      "width": 1536,
+      "height": 1024,
+      "git_blob_sha": "bd147fcbd0178678072b8e51d0d92ed0e0546f5d"
+    },
+    {
+      "key": "horse",
+      "news_id": "equine-anesthesia-oxygen-delivery",
+      "article_url": "https://bhocvet.com/equine-anesthesia-and-oxygenation.html",
+      "alt_text": "BHOC Veterinary AI editorial illustration of a horse receiving veterinary monitoring on a padded table with an oxygen mask; the heading reads Equine Oxygenation. This is an illustrative clinical scene, not a study photograph.",
+      "path": "assets/news/bhoc-equine-oxygenation-20261102.png",
+      "width": 1536,
+      "height": 1024,
+      "git_blob_sha": "5fb6f5bc0d0e34d8a3205ae00a66c9d102242934"
+    },
+    {
+      "key": "tracs",
+      "news_id": "tracs-transfusion-safety-dogs-cats",
+      "article_url": "https://bhoctherapeutics.com/evidence/library/veterinary/direct-studies/tracs-transfusion-risks-dogs-cats.html",
+      "alt_text": "BHOC Veterinary AI editorial illustration of two clinicians monitoring a dog, with a cat nearby and an infusion device in a bright clinic; the heading reads Veterinary Transfusion.",
+      "path": "assets/news/bhoc-veterinary-transfusion-monitoring-20261102.png",
+      "width": 1536,
+      "height": 1024,
+      "git_blob_sha": "753a0c9612132807f2d4189d428efeba2af7dbf0"
+    },
+    {
+      "key": "wildcat",
+      "news_id": "leopardus-tilcayo-bolivia-2026",
+      "article_url": "https://bhocvet.com/news.html#leopardus-tilcayo-bolivia-2026",
+      "alt_text": "BHOC Veterinary AI editorial illustration of a generic spotted wild felid beside a field veterinary kit in a misty forest; the heading reads Wildlife Oxygen Care. It is not a photograph or a taxonomic depiction of Leopardus tilcayo.",
+      "path": "assets/news/bhoc-wild-felid-oxygen-care-20261102.png",
+      "width": 1536,
+      "height": 1024,
+      "git_blob_sha": "e23550914647d65cd983daba6cd42f7d53b1861f"
+    }
+  ]
+}
