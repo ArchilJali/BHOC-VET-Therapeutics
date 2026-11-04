@@ -1,0 +1,148 @@
+{
+  "navActive": "news.html",
+  "breadcrumbs": [
+    {
+      "label": "News",
+      "href": "news.html"
+    }
+  ],
+  "schemaType": "Article",
+  "datePublished": "2026-11-04",
+  "dateModified": "2026-11-04",
+  "dateLabel": "4 November 2026",
+  "authorName": "Archil Jaliashvili",
+  "eyebrow": "Geo BioPharm LLC · Veterinary R&D · Investigational oxygen carrier",
+  "articleSection": "Retrospective veterinary R&D case accounts",
+  "contextHeading": "Case source and interpretation",
+  "context": [
+    "Source: the case account, photographs and laboratory reports supplied by Archil Jaliashvili, Geo BioPharm LLC. The case dates are distinct from this news publication date.",
+    "This is an individual clinical observation involving an investigational product. It does not establish a causal relationship between administration and recovery or demonstrate product safety and efficacy. Further structured investigation is required."
+  ],
+  "actions": [
+    {
+      "label": "Discuss veterinary research cooperation",
+      "href": "bhoc-crada-research-partners.html"
+    },
+    {
+      "label": "Contact BHOC Veterinary",
+      "href": "contact.html"
+    }
+  ],
+  "referenceGroups": [],
+  "slug": "geo-biopharm-bengal-cat-anemia-rd",
+  "navLabel": "Bengal cat anemia R&D",
+  "title": "Bengal Cat Anemia: Investigational Oxygen Carrier R&D | BHOC",
+  "description": "Geo BioPharm LLC shares a 2025 investigational oxygen-carrier case in a Bengal cat with anemia, with documented HGB, HCT and RBC follow-up.",
+  "heading": "Bengal cat anemia: laboratory follow-up in veterinary R&D",
+  "lead": "A retrospective Geo BioPharm LLC case account follows a five-year-old Bengal cat with severe anemia during investigational oxygen-carrier research.",
+  "casePeriod": "Laboratory comparison: June 21 to July 10, 2025.",
+  "image": {
+    "src": "assets/news/geo-biopharm-bengal-cat-anemia-rd-2025.webp",
+    "width": 1042,
+    "height": 1040,
+    "srcset": [
+      {
+        "path": "assets/news/geo-biopharm-bengal-cat-anemia-rd-2025-600.webp",
+        "width": 600
+      },
+      {
+        "path": "assets/news/geo-biopharm-bengal-cat-anemia-rd-2025.webp",
+        "width": 1042
+      }
+    ],
+    "sizes": "(max-width:800px) calc(100vw - 32px), 520px",
+    "alt": "Geo BioPharm LLC supplied collage of a five-year-old Bengal cat on an examination table and laboratory reports dated June 21 and July 10, 2025."
+  },
+  "socialImage": {
+    "src": "assets/news/geo-biopharm-bengal-cat-anemia-rd-2025.webp",
+    "width": 1042,
+    "height": 1040,
+    "alt": "Geo BioPharm LLC supplied collage of a five-year-old Bengal cat on an examination table and laboratory reports dated June 21 and July 10, 2025."
+  },
+  "imageCaption": "The Bengal cat and two laboratory reports, supplied by Archil Jaliashvili, Geo BioPharm LLC. The complete collage is preserved.",
+  "paragraphs": [
+    {
+      "text": "This 2025 case involved a five-year-old Bengal cat with severe anemia and investigational use of a Biological Hemoglobin Oxygen Carrier (BHOC) within Geo BioPharm LLC’s veterinary R&D work."
+    },
+    {
+      "text": "The supplied laboratory reports record hemoglobin, hematocrit and red blood cell count on June 21 and July 10, 2025. All three values increased between these two time points."
+    },
+    {
+      "text": "The follow-up extends the case account beyond the initial clinical period. It provides observations over 19 days, while leaving the causes and mechanism of the changes open to investigation."
+    },
+    {
+      "text": "The possible contribution of hemoglobin-derived iron to subsequent erythropoiesis is a research question. This case alone cannot determine the mechanism behind the laboratory changes."
+    },
+    {
+      "text": "Further structured studies and a complete treatment record are needed to assess the investigational product’s contribution, safety and durability of response."
+    },
+    {
+      "text": "Geo BioPharm LLC welcomes discussion with veterinary clinicians and researchers interested in defining meaningful follow-up measurements for investigational oxygen carriers within Precision Oxygen Therapeutics."
+    }
+  ],
+  "table": {
+    "heading": "Laboratory observations",
+    "caption": "Two reported time points, 19 days apart",
+    "columns": [
+      "Parameter",
+      "21 Jun 2025",
+      "10 Jul 2025"
+    ],
+    "rows": [
+      [
+        "HGB (g/L)",
+        "66.0",
+        "134.0"
+      ],
+      [
+        "HCT (%)",
+        "18.2",
+        "36.9"
+      ],
+      [
+        "RBC (×10¹²/L)",
+        "3.78",
+        "6.02"
+      ]
+    ],
+    "note": "Values are transcribed from the supplied case records. This comparison describes observed changes and does not identify their cause."
+  },
+  "seo": {
+    "primaryKeyword": "Bengal cat anemia R&D",
+    "secondaryKeywords": [
+      "feline anemia laboratory follow-up",
+      "investigational oxygen carrier cat",
+      "hemoglobin hematocrit red blood cell count"
+    ],
+    "supportingTerms": [
+      "Geo BioPharm LLC",
+      "Biological Hemoglobin Oxygen Carrier",
+      "BHOC Veterinary",
+      "Precision Oxygen Therapeutics",
+      "veterinary oxygen carrier research",
+      "erythropoiesis research"
+    ]
+  },
+  "sourceLink": {
+    "label": "View the supplied Bengal cat photograph and laboratory reports",
+    "href": "https://bhocvet.com/assets/news/geo-biopharm-bengal-cat-anemia-rd-2025.webp"
+  },
+  "relatedLinks": [
+    {
+      "label": "0.5 kg kitten R&D case",
+      "href": "geo-biopharm-kitten-investigational-oxygen-carrier.html"
+    },
+    {
+      "label": "Historical Oxyglobin research in feline anemia",
+      "href": "oxyglobin-cats-anemia-study.html"
+    },
+    {
+      "label": "Feline blood compatibility and donor welfare",
+      "href": "feline-blood-transfusion-compatibility.html"
+    },
+    {
+      "label": "Back to Veterinary News",
+      "href": "news.html"
+    }
+  ]
+}

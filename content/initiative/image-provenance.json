@@ -7,6 +7,76 @@
   "rightsBoundary": "Third-party terms apply only to the underlying photographs identified below. They do not license the surrounding BHOC text, branding, scientific materials, layout, design or code. No photographer, source platform or public agency is represented as endorsing BHOC or this Initiative.",
   "records": [
     {
+      "id": "geo-biopharm-kitten-investigational-oxygen-carrier-2024",
+      "title": "A 0.5 kg kitten: observations from veterinary R&D",
+      "subject": "Geo BioPharm LLC supplied collage of a 0.5 kg kitten during veterinary care, sitting upright at follow-up, and hematology reports from October 19 and 23, 2024.",
+      "creator": "Photographer not separately identified; supplied by Archil Jaliashvili, Geo BioPharm LLC",
+      "source": "https://bhocvet.com/geo-biopharm-kitten-investigational-oxygen-carrier.html",
+      "sourceLabel": "Owner-supplied case collage published at the owner’s explicit request",
+      "originalDate": "October 2024",
+      "license": "Owner-authorized BHOC publication; no open reuse licence asserted",
+      "licenseUrl": "https://bhocvet.com/contact.html",
+      "sourceStatus": "Photographs and laboratory reports supplied by Archil Jaliashvili for this retrospective investigational veterinary case account. No independent trial validation or third-party endorsement is asserted.",
+      "verifiedOn": "2026-11-04",
+      "usedIn": [
+        "Veterinary R&D case article",
+        "Veterinary News card",
+        "Article social preview"
+      ],
+      "reason": "Archil explicitly requested website news, SEO and ALT for these two supplied cases on 4 November 2026.",
+      "modifications": "The full-resolution WebP is pixel-identical to the supplied PNG, verified by decoding to RGBA and comparing every pixel. A 600px WebP thumbnail preserves the complete frame with proportional resizing. No cropping, retouching or generative editing.",
+      "reuse": "This publication does not grant others a reuse licence.",
+      "originalFilename": "BHOC Cat donor blood .png",
+      "originalSha256": "e55b6ba53b4a5451b11507f7859cf56fcb921336e823e732fde2c9c6423c3217",
+      "localFiles": [
+        {
+          "path": "assets/news/geo-biopharm-kitten-investigational-oxygen-carrier-2024.webp",
+          "sha256": "34725bf343f06056817c3cedaf85b74985edaa3609308502e09317f283668183",
+          "introducedOn": "2026-11-04"
+        },
+        {
+          "path": "assets/news/geo-biopharm-kitten-investigational-oxygen-carrier-2024-600.webp",
+          "sha256": "b0af3e4915367ed0cf0ab4c79fbc0b0ba93eb680ff4894c7b33b3064cee27fa7",
+          "introducedOn": "2026-11-04"
+        }
+      ]
+    },
+    {
+      "id": "geo-biopharm-bengal-cat-anemia-rd-2025",
+      "title": "Bengal cat anemia: laboratory follow-up in veterinary R&D",
+      "subject": "Geo BioPharm LLC supplied collage of a five-year-old Bengal cat on an examination table and laboratory reports dated June 21 and July 10, 2025.",
+      "creator": "Photographer not separately identified; supplied by Archil Jaliashvili, Geo BioPharm LLC",
+      "source": "https://bhocvet.com/geo-biopharm-bengal-cat-anemia-rd.html",
+      "sourceLabel": "Owner-supplied case collage published at the owner’s explicit request",
+      "originalDate": "June to July 2025",
+      "license": "Owner-authorized BHOC publication; no open reuse licence asserted",
+      "licenseUrl": "https://bhocvet.com/contact.html",
+      "sourceStatus": "Photographs and laboratory reports supplied by Archil Jaliashvili for this retrospective investigational veterinary case account. No independent trial validation or third-party endorsement is asserted.",
+      "verifiedOn": "2026-11-04",
+      "usedIn": [
+        "Veterinary R&D case article",
+        "Veterinary News card",
+        "Article social preview"
+      ],
+      "reason": "Archil explicitly requested website news, SEO and ALT for these two supplied cases on 4 November 2026.",
+      "modifications": "The full-resolution WebP is pixel-identical to the supplied PNG, verified by decoding to RGBA and comparing every pixel. A 600px WebP thumbnail preserves the complete frame with proportional resizing. No cropping, retouching or generative editing.",
+      "reuse": "This publication does not grant others a reuse licence.",
+      "originalFilename": "BHOC Cats Bangal   13.15.41.png",
+      "originalSha256": "3191908325dcd06f58380eb524d943ca1457ea546e2efc5aea887f4f23f0a30f",
+      "localFiles": [
+        {
+          "path": "assets/news/geo-biopharm-bengal-cat-anemia-rd-2025.webp",
+          "sha256": "7f21639249b178be0a666754d3832e12d8c641c677954130aa70fd1835e87db7",
+          "introducedOn": "2026-11-04"
+        },
+        {
+          "path": "assets/news/geo-biopharm-bengal-cat-anemia-rd-2025-600.webp",
+          "sha256": "9bf2b2185c2095ce68c8f85042b6129c37f1d5b934ceae588fa11a163875518d",
+          "introducedOn": "2026-11-04"
+        }
+      ]
+    },
+    {
       "id": "lilica-globo-2012",
       "title": "Lilica and a bag of food in the original Brazilian television report",
       "subject": "Lilica beside a caregiver and a tied bag of food in São Carlos, Brazil",
