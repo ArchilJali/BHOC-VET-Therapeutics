@@ -6,7 +6,8 @@
   --bhoc-blue: #344047;
   --bhoc-red: #f65c00;
   --accent: #f65c00;
-  --accent-strong: #cf4d00;
+  --accent-strong: #b33e00;
+  --accent-hover: #913200;
   --accent-soft: #ffd4bd;
   --accent-pale: #fff2ea;
   --accent-wash: #fff7f2;
@@ -114,9 +115,9 @@ svg {
   gap: 12px;
   min-height: 46px;
   padding: 11px 25px;
-  border: 1px solid var(--accent);
+  border: 1px solid var(--accent-strong);
   border-radius: 999px;
-  background: var(--accent);
+  background: var(--accent-strong);
   box-shadow: 0 8px 20px #f65c0024;
   color: #fff;
   font-size: 13px;
@@ -131,8 +132,8 @@ svg {
 .button svg { width: 18px; height: 18px; }
 
 .button:hover {
-  border-color: var(--accent-strong);
-  background: var(--accent-strong);
+  border-color: var(--accent-hover);
+  background: var(--accent-hover);
   box-shadow: 0 10px 24px #d84f0030;
   text-decoration: none;
   transform: translateY(-1px);
