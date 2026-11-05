@@ -383,24 +383,7 @@
   pointer-events: none !important;
 }
 
-.contact-human-check {
-  grid-column: 1/-1;
-  display: inline-flex;
-  align-items: center;
-  gap: 9px;
-  width: fit-content;
-  min-height: 40px;
-  color: var(--ink);
-  font-size: 14px;
-  font-weight: 600;
-  cursor: pointer;
-}
-
-.contact-human-check input {
-  width: 18px;
-  height: 18px;
-  accent-color: var(--accent);
-}
+.form-note a { text-decoration: underline; }
 
 .contact-submit-row {
   grid-column: 1/-1;

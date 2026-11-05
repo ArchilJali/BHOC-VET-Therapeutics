@@ -244,8 +244,7 @@
       if(status)status.textContent='Sending...';
       if(submitButton)submitButton.disabled=true;
       try{
-        const form=new FormData(contactForm),payload={};
-        form.forEach((value,key)=>{if(key!=='_honey')payload[key]=value;});
+        const payload=Object.fromEntries(new FormData(contactForm));
         const response=await fetch(contactForm.dataset.formEndpoint,{
           method:'POST',
           headers:{'Content-Type':'application/json','Accept':'application/json'},
@@ -256,7 +255,10 @@
         window.BHOCLeadContext?.submitted(contactForm);
         contactForm.reset();
         contactForm.hidden=true;
-        if(success)success.hidden=false;
+        if(success){
+          success.hidden=false;
+          success.focus();
+        }
       }catch(error){
         if(status)status.textContent='Your message could not be sent. Please try again or use the direct email option.';
       }finally{
