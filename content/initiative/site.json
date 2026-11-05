@@ -1,7 +1,7 @@
 {
   "language": "en",
   "title": "BHOC Species & Biodiversity Protection Initiative",
-  "description": "BHOC Species & Biodiversity Protection Initiative links species protection, conservation medicine, veterinary capacity and Precision Oxygen Therapeutics research.",
+  "description": "BHOC Species & Biodiversity Protection Initiative links species protection, conservation medicine, veterinary capacity and oxygen-delivery science in Precision Oxygen Therapeutics.",
   "author": "Archil Jaliashvili",
   "creator": "Archil Jaliashvili",
   "themeColor": "#071713",
@@ -9,7 +9,7 @@
   "openGraph": {
     "siteName": "BHOC Therapeutics",
     "title": "Protect Life. Preserve Species. | BHOC Initiative",
-    "description": "A science-driven initiative connecting species protection, wildlife health, conservation medicine, veterinary capacity and Precision Oxygen Therapeutics research with global biodiversity goals.",
+    "description": "A science-driven initiative connecting species protection, wildlife health, conservation medicine, veterinary capacity and oxygen-delivery science in Precision Oxygen Therapeutics with global biodiversity goals.",
     "image": {
       "src": "assets/initiative/challenge-african-elephant-usfws.webp",
       "alt": "African forest elephant family representing wildlife protection and biodiversity",
@@ -30,7 +30,7 @@
   },
   "twitter": {
     "title": "Protect Life. Preserve Species. | BHOC Initiative",
-    "description": "Connecting species protection, wildlife health, veterinary capacity and Precision Oxygen Therapeutics research with global biodiversity goals."
+    "description": "Connecting species protection, wildlife health, veterinary capacity and oxygen-delivery science in Precision Oxygen Therapeutics with global biodiversity goals."
   },
   "structuredData": {
     "@context": "https://schema.org",
@@ -40,7 +40,7 @@
         "@id": "https://bhocvet.com/initiative/#initiative",
         "name": "BHOC Species & Biodiversity Protection Initiative",
         "alternateName": "BHOC Initiative",
-        "description": "A science-driven initiative connecting species protection, wildlife health, conservation medicine, veterinary capacity and Precision Oxygen Therapeutics research with global biodiversity goals.",
+        "description": "A science-driven initiative connecting species protection, wildlife health, conservation medicine, veterinary capacity and oxygen-delivery science in Precision Oxygen Therapeutics with global biodiversity goals.",
         "url": "https://bhocvet.com/initiative/",
         "logo": {
           "@type": "ImageObject",
