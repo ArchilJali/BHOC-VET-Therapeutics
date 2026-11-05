@@ -23,7 +23,7 @@ export default page=>`<main id="main" class="subpage-main contact-page">
         <span class="option-number">Sent</span>
         <h2>Thank you.</h2>
         <p>Your message has been sent to BHOC Veterinary.</p>
-        <a class="button" href="index.html"><span>Return to BHOC Veterinary</span>${icon('arrow')}</a>
+        <a class="button" href="./"><span>Return to BHOC Veterinary</span>${icon('arrow')}</a>
       </div>
     </div>
     <aside class="direct-contact"><span class="option-number">02</span><span class="direct-icon">${icon('mail')}</span><h2>${esc(page.direct.title)}</h2><p>${esc(page.direct.text)}</p><a class="button button-outline" href="mailto:${esc(page.email)}"><span>${esc(page.direct.button)}</span>${icon('arrow')}</a><a class="contact-email-link" href="mailto:${esc(page.email)}">${esc(page.email)}</a></aside>

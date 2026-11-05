@@ -87,7 +87,7 @@
     "text": "Open the BHOC Veterinary species carousel and comparative-biology notes.",
     "link": {
       "label": "Explore Species",
-      "href": "index.html#species"
+      "href": "./#species"
     }
   }
 }

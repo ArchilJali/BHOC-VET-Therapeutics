@@ -16,7 +16,7 @@
   },
   "returnLink": {
     "label": "Back to BHOC Veterinary",
-    "href": "../index.html",
+    "href": "../",
     "ariaLabel": "Return to the BHOC Veterinary website"
   },
   "networkLinks": [

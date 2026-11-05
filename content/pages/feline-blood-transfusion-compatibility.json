@@ -131,6 +131,23 @@
           "href": "oxyglobin.html"
         }
       ]
+    },
+    {
+      "id": "feline-rd-case-reports",
+      "heading": "Related veterinary R&D case reports",
+      "paragraphs": [
+        "These retrospective individual observations come from Geo BioPharm LLC's veterinary R&D work. The linked reports give the circumstances and follow-up for each case."
+      ],
+      "sourceLinks": [
+        {
+          "label": "Retrospective 0.5 kg kitten R&D case",
+          "href": "geo-biopharm-kitten-investigational-oxygen-carrier.html"
+        },
+        {
+          "label": "Retrospective Bengal cat R&D follow-up",
+          "href": "geo-biopharm-bengal-cat-anemia-rd.html"
+        }
+      ]
     }
   ],
   "why": "The recipient needs compatible blood. The healthy donor also needs protection. These two responsibilities motivate investigation of additional oxygen-delivery approaches that may reduce dependence on donor animals. Historical Oxyglobin evidence is product-specific and does not establish safety or efficacy for BHOC.",

@@ -18,8 +18,8 @@ function renderBreadcrumb(items,hrefs){
   ).join('')+'</ol></nav>';
 }
 
-export const renderStoryLocation=(site,story)=>renderBreadcrumb(storyBreadcrumbItems(site,story),['../index.html','./','stories.html']);
-export const renderStoriesLocation=site=>renderBreadcrumb(storiesBreadcrumbItems(site),['../index.html','./']);
+export const renderStoryLocation=(site,story)=>renderBreadcrumb(storyBreadcrumbItems(site,story),['../','./','stories.html']);
+export const renderStoriesLocation=site=>renderBreadcrumb(storiesBreadcrumbItems(site),['../','./']);
 
 export function renderStoriesHead(site,page,cards,stylesVersion){
   const canonical=page.canonical;
