@@ -213,6 +213,7 @@ export function renderFooter(footer){
     '        <strong>'+lines(footer.brand.titleLines)+'</strong>',
     '        <span>'+esc(footer.brand.tagline)+'</span>',
     '        <small>'+esc(footer.brand.promise)+'</small>',
+    '        <small>'+esc(footer.brand.researchCategory)+'</small>',
     '      </div>',
     '    </div>',
     '',
