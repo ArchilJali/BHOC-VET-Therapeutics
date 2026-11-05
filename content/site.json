@@ -233,7 +233,8 @@
           {
             "label": "Contact BHOC Veterinary",
             "href": "contact.html"
-          }
+          },
+        {"label": "Privacy Notice", "href": "https://bhoctherapeutics.com/privacy/"}
         ]
       }
     ]
