@@ -3087,6 +3087,8 @@ h2 {
   .framework-action { grid-column: 2; justify-content: flex-start; }
 }
 
+.footer-inline-facebook{color:#1877f2}
+
 /* Illustrated animal-welfare story. Scoped to this article. */
 .cat-cities-story .story-page-hero{padding:38px 0 34px}
 .cat-cities-story .story-page-hero h1{max-width:1000px;font-size:clamp(2.1rem,4.8vw,4.1rem);line-height:1.1}
