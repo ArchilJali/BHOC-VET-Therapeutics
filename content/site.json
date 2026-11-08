@@ -137,6 +137,11 @@
     "note": "Research and development initiative. Species shown illustrate biodiversity and comparative biology; they do not indicate approved BHOC uses.",
     "links": [
       {
+        "label": "BHOC Therapeutics on Facebook",
+        "href": "https://www.facebook.com/people/BHOC-Therapeutics/61596165279693/",
+        "icon": "facebook"
+      },
+      {
         "label": "LinkedIn",
         "href": "https://www.linkedin.com/company/bhoc-therapeutics/",
         "icon": "linkedin"
@@ -232,7 +237,10 @@
             "label": "Contact BHOC Veterinary",
             "href": "contact.html"
           },
-        {"label": "Privacy Notice", "href": "https://bhoctherapeutics.com/privacy/"}
+          {
+            "label": "Privacy Notice",
+            "href": "https://bhoctherapeutics.com/privacy/"
+          }
         ]
       }
     ]

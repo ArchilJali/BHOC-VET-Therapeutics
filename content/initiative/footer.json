@@ -78,6 +78,11 @@
       "title": "Connect",
       "links": [
         {
+          "label": "BHOC Therapeutics on Facebook",
+          "href": "https://www.facebook.com/people/BHOC-Therapeutics/61596165279693/",
+          "icon": "facebook"
+        },
+        {
           "label": "News & Intelligence",
           "href": "../news.html"
         },

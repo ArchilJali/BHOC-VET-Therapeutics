@@ -3086,3 +3086,5 @@ h2 {
   .framework-context { grid-template-columns: minmax(0, .7fr) minmax(0, 1.3fr); }
   .framework-action { grid-column: 2; justify-content: flex-start; }
 }
+
+.footer-inline-facebook{color:#1877f2}
