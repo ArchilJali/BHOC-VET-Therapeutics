@@ -634,7 +634,7 @@ body[data-page="home"] .page-route { display: none; }
   }
   .wordmark {
     width: auto;
-    max-width: calc(100% - 88px);
+    max-width: calc(100% - 108px);
     flex-direction: row;
     align-items: center;
     gap: 10px;
@@ -643,23 +643,23 @@ body[data-page="home"] .page-route { display: none; }
   .wordmark-meta { max-width: 138px; margin-top: 0; }
   .wordmark-division { font-size: 8px; letter-spacing: .25em; }
   .wordmark-expansion { margin-top: 3px; font-size: 9px; line-height: 1.15; }
-  .search-toggle, .menu-toggle { width: 34px; height: 34px; padding: 7px; }
+  .search-toggle, .menu-toggle { width: 44px; height: 44px; padding: 10px; }
   .site-network-bar { justify-content: center; padding: 4px 10px; }
-  .network-links { width: 100%; justify-content: center; gap: 6px; }
-  .network-link { min-width: 0; padding: 4px 7px; font-size: 10px; }
+  .network-links { width: 100%; justify-content: center; flex-wrap:wrap;gap: 6px; }
+  .network-link { min-width: 0; min-height:34px;padding: 6px 8px; font-size: 12px; }
   .network-label-wide { display: none; }
   .network-label-compact { display: inline; }
 }
 
 @media (max-width: 360px) {
   .site-header { padding-right: 11px; padding-left: 11px; gap: 7px; }
-  .wordmark { max-width: calc(100% - 76px); gap: 7px; }
+  .wordmark { max-width: calc(100% - 102px); gap: 7px; }
   .wordmark-top { font-size: 31px; }
   .wordmark-meta { max-width: 103px; }
   .wordmark-division { font-size: 7px; letter-spacing: .2em; }
   .wordmark-expansion { font-size: 8px; }
-  .search-toggle, .menu-toggle { width: 32px; height: 32px; padding: 6px; }
-  .network-link { gap: 4px; padding-right: 5px; padding-left: 5px; font-size: 9px; }
+  .search-toggle, .menu-toggle { width: 44px; height: 44px; padding: 10px; }
+  .network-link { gap: 4px; padding-right: 6px; padding-left: 6px; font-size: 12px; }
   .network-link svg { width: 12px; height: 12px; }
 }
 
@@ -817,22 +817,23 @@ body[data-page="home"] .page-route { display: none; }
 }
 @media(max-width:640px){
  .block-companion{padding:8px 0 10px}
- .companion-stage{height:520px}
- .companion-banner{position:absolute;top:auto;right:0;bottom:0;left:0;height:100%;overflow:hidden}
- .companion-banner-art{width:100%;max-width:none;object-position:center bottom;transform:none}
+ .companion-stage{display:grid;grid-template-columns:minmax(0,1fr) 54px;height:auto;overflow:visible;padding:0 20px}
+ .companion-banner{position:static;grid-column:1/-1;grid-row:3;height:auto;margin:12px -20px 0;overflow:hidden}
+ .companion-banner picture{display:block;width:100%}
+ .companion-banner-art{width:100%;height:auto;max-width:none;object-position:center bottom;transform:none}
  .companion-fade{display:none}
- .companion-copy{left:0;top:0;width:100%;min-height:220px;padding:24px 6% 16px;background:#fff}
+ .companion-copy{position:static;grid-column:1/-1;grid-row:1;width:auto;min-width:0;min-height:0;padding:24px 0 16px;background:#fff}
  .companion-copy h2{font-size:clamp(32px,8.5vw,43px)}
- .companion-subtitle{font-size:12px}
- .companion-supporting{font-size:13px}
- .companion-links{gap:7px 13px;margin-top:12px}
- .companion-links a{font-size:12px}
- .companion-signature{left:6%;top:168px;bottom:auto;gap:7px;padding:0;background:transparent}
+ .companion-subtitle{font-size:16px;line-height:1.5}
+ .companion-supporting{font-size:15px}
+ .companion-links{gap:6px 14px;margin-top:12px}
+ .companion-links a{min-height:44px;font-size:14px;line-height:1.4}
+ .companion-signature{position:static;grid-column:2;grid-row:2;align-self:center;justify-self:end;gap:7px;padding:0;background:transparent}
  .companion-signature-mark{width:38px;height:42px}
- .companion-signature p{max-width:145px;font-size:9px}
- .companion-quote{top:232px;right:5%;width:90%;padding:8px 10px;background:rgba(255,255,255,.88);border-radius:10px}
- .companion-quote p{font-size:clamp(11px,3.5vw,14px)}
- .companion-quote cite{margin-top:4px;font-size:10px}
+ .companion-signature p{max-width:145px;font-size:13px}
+ .companion-quote{position:static;grid-column:1;grid-row:2;width:auto;min-width:0;padding:8px 12px 8px 0;background:#fff;text-align:left}
+ .companion-quote p{white-space:normal;font-size:17px;line-height:1.35}
+ .companion-quote cite{margin-top:6px;font-size:13px;line-height:1.4}
 }
 
 /* RBC compatibility banner */
@@ -876,6 +877,12 @@ body[data-page="home"] .page-route { display: none; }
  .compatibility-fact{padding:0 10px}
  .compatibility-fact b{font-size:23px}
  .compatibility-bhoc{padding:20px 16px}
+ .compatibility-intro,.compatibility-body{font-size:16px;line-height:1.5}
+ .compatibility-fact small{font-size:11px;letter-spacing:.07em}
+ .compatibility-fact strong,.compatibility-fact span{font-size:13px;line-height:1.4}
+ .compatibility-bhoc-facts{grid-template-columns:1fr}
+ .compatibility-bhoc-fact b{font-size:14px;line-height:1.4}
+ .compatibility-bhoc-fact span{font-size:13px;line-height:1.45}
 }
 
 
@@ -975,7 +982,19 @@ body[data-page="home"] .page-route { display: none; }
 .mission-bottom{display:flex;align-items:center;justify-content:space-between;gap:20px;max-width:1460px;margin:0 auto;padding:9px 0 12px;background:#fff}
 .mission-bottom p{color:var(--ink);font:400 clamp(15px,1.15vw,19px)/1.3 var(--font-display)}
 .mission-bottom .button{flex:0 0 auto;min-height:44px;padding:10px 20px}
-@media(max-width:680px){.block-mission{padding:8px 0 0}.mission-carousel{border-radius:0}.mission-slides{aspect-ratio:2.55/1}.mission-hotspot-visible{border-width:1px;font-size:7px}.mission-controls{bottom:7px}.mission-bottom{align-items:flex-start;flex-direction:column;padding:10px 22px 14px}.mission-bottom .button{width:100%}}
+@media(max-width:680px){
+ .block-mission{padding:8px 0 0}
+ .mission-carousel{border-radius:0}
+ .mission-slides{aspect-ratio:auto}
+ .mission-banner{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;height:auto;padding:0 18px 12px}
+ .mission-banner img{grid-column:1/-1;width:100%;height:auto;object-fit:contain}
+ .mission-hotspot{position:static;display:flex;align-items:center;justify-content:center;width:auto;height:auto;min-height:44px;padding:10px 12px;border:1px solid #c95010;border-radius:8px;background:#fff;color:#a9410b;font-size:14px;font-weight:700;line-height:1.35;text-align:center;text-transform:none;box-shadow:none}
+ .mission-hotspot .sr-only{position:static;width:auto;height:auto;overflow:visible;clip-path:none;white-space:normal}
+ .mission-controls{position:relative;left:auto;bottom:auto;width:max-content;max-width:100%;margin:0 auto 10px;transform:none}
+ .mission-controls button,.mission-dots button{width:44px;height:44px;min-height:44px}
+ .mission-bottom{align-items:flex-start;flex-direction:column;padding:10px 22px 14px}
+ .mission-bottom .button{width:100%}
+}
 @media(prefers-reduced-motion:reduce){.mission-carousel{scroll-behavior:auto}}
 
 .block-pillars{
