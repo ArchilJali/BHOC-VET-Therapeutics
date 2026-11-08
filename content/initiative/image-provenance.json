@@ -24,14 +24,14 @@
         "Article social preview"
       ],
       "reason": "Archil explicitly requested website news, SEO and ALT for these two supplied cases on 4 November 2026.",
-      "modifications": "The full-resolution WebP is pixel-identical to the supplied PNG, verified by decoding to RGBA and comparing every pixel. A 600px WebP thumbnail preserves the complete frame with proportional resizing. No cropping, retouching or generative editing.",
+      "modifications": "On 8 November 2026, the full-resolution web copy was re-encoded from the previously pixel-identical lossless WebP using WebP quality 92, method 6. File size decreased from 1,081,260 to 263,202 bytes. The existing URL, 1104 by 1170 dimensions, aspect ratio and complete collage are preserved. This web copy uses lossy compression; the original supplied PNG hash remains recorded below. The existing 600px proportional thumbnail is unchanged. No cropping, retouching or generative editing.",
       "reuse": "This publication does not grant others a reuse licence.",
       "originalFilename": "BHOC Cat donor blood .png",
       "originalSha256": "e55b6ba53b4a5451b11507f7859cf56fcb921336e823e732fde2c9c6423c3217",
       "localFiles": [
         {
           "path": "assets/news/geo-biopharm-kitten-investigational-oxygen-carrier-2024.webp",
-          "sha256": "34725bf343f06056817c3cedaf85b74985edaa3609308502e09317f283668183",
+          "sha256": "2bf2b2118fb1e2531e419eaf95595ef37813977d60e0fbc9c072e76122cc2eb3",
           "introducedOn": "2026-11-04"
         },
         {
