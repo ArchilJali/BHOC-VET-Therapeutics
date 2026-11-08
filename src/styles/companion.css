@@ -27,22 +27,23 @@
 }
 @media(max-width:640px){
  .block-companion{padding:8px 0 10px}
- .companion-stage{height:520px}
- .companion-banner{position:absolute;top:auto;right:0;bottom:0;left:0;height:100%;overflow:hidden}
- .companion-banner-art{width:100%;max-width:none;object-position:center bottom;transform:none}
+ .companion-stage{display:grid;grid-template-columns:minmax(0,1fr) 54px;height:auto;overflow:visible;padding:0 20px}
+ .companion-banner{position:static;grid-column:1/-1;grid-row:3;height:auto;margin:12px -20px 0;overflow:hidden}
+ .companion-banner picture{display:block;width:100%}
+ .companion-banner-art{width:100%;height:auto;max-width:none;object-position:center bottom;transform:none}
  .companion-fade{display:none}
- .companion-copy{left:0;top:0;width:100%;min-height:220px;padding:24px 6% 16px;background:#fff}
+ .companion-copy{position:static;grid-column:1/-1;grid-row:1;width:auto;min-width:0;min-height:0;padding:24px 0 16px;background:#fff}
  .companion-copy h2{font-size:clamp(32px,8.5vw,43px)}
- .companion-subtitle{font-size:12px}
- .companion-supporting{font-size:13px}
- .companion-links{gap:7px 13px;margin-top:12px}
- .companion-links a{font-size:12px}
- .companion-signature{left:6%;top:168px;bottom:auto;gap:7px;padding:0;background:transparent}
+ .companion-subtitle{font-size:16px;line-height:1.5}
+ .companion-supporting{font-size:15px}
+ .companion-links{gap:6px 14px;margin-top:12px}
+ .companion-links a{min-height:44px;font-size:14px;line-height:1.4}
+ .companion-signature{position:static;grid-column:2;grid-row:2;align-self:center;justify-self:end;gap:7px;padding:0;background:transparent}
  .companion-signature-mark{width:38px;height:42px}
- .companion-signature p{max-width:145px;font-size:9px}
- .companion-quote{top:232px;right:5%;width:90%;padding:8px 10px;background:rgba(255,255,255,.88);border-radius:10px}
- .companion-quote p{font-size:clamp(11px,3.5vw,14px)}
- .companion-quote cite{margin-top:4px;font-size:10px}
+ .companion-signature p{max-width:145px;font-size:13px}
+ .companion-quote{position:static;grid-column:1;grid-row:2;width:auto;min-width:0;padding:8px 12px 8px 0;background:#fff;text-align:left}
+ .companion-quote p{white-space:normal;font-size:17px;line-height:1.35}
+ .companion-quote cite{margin-top:6px;font-size:13px;line-height:1.4}
 }
 
 /* RBC compatibility banner */
@@ -86,5 +87,11 @@
  .compatibility-fact{padding:0 10px}
  .compatibility-fact b{font-size:23px}
  .compatibility-bhoc{padding:20px 16px}
+ .compatibility-intro,.compatibility-body{font-size:16px;line-height:1.5}
+ .compatibility-fact small{font-size:11px;letter-spacing:.07em}
+ .compatibility-fact strong,.compatibility-fact span{font-size:13px;line-height:1.4}
+ .compatibility-bhoc-facts{grid-template-columns:1fr}
+ .compatibility-bhoc-fact b{font-size:14px;line-height:1.4}
+ .compatibility-bhoc-fact span{font-size:13px;line-height:1.45}
 }
 
