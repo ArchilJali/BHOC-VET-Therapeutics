@@ -1,0 +1,112 @@
+{
+  "slug": "dog-anesthesia-and-oxygenation",
+  "navLabel": "Dog Anesthesia: Oxygenation and Perfusion Monitoring",
+  "navActive": "science.html",
+  "breadcrumbs": [
+    {
+      "label": "Research topics",
+      "href": "topics.html"
+    }
+  ],
+  "title": "Dog Anesthesia: Oxygenation and Perfusion Monitoring",
+  "description": "Explore oxygenation, ventilation and circulation monitoring during dog anesthesia, with source-linked guidance for veterinary teams through recovery.",
+  "schemaType": "WebPage",
+  "datePublished": "2026-11-09",
+  "dateModified": "2026-11-09",
+  "eyebrow": "Veterinary oxygen-delivery science",
+  "heading": "Dog Anesthesia: Oxygenation and Perfusion Monitoring",
+  "lead": "Oxygen delivery links breathing, hemoglobin and circulation. During anesthesia, these steps need separate observations. Oxygen saturation, expired carbon dioxide and blood pressure describe different parts of the pathway. Reading them together gives a clearer physiological picture than treating any one display as a complete account of tissue oxygen delivery.",
+  "topicSections": [
+    {
+      "id": "section-1",
+      "title": "Dog anesthesia: follow the oxygen pathway",
+      "paragraphs": [
+        "For research teams, the same distinction helps define an endpoint. A change in a monitor reading and a change in tissue oxygen delivery are different questions, each requiring an appropriate measurement."
+      ],
+      "bullets": [],
+      "links": []
+    },
+    {
+      "id": "section-2",
+      "title": "Oxygenation and ventilation answer different questions",
+      "paragraphs": [
+        "Pulse oximetry estimates hemoglobin oxygen saturation. Capnometry assesses expired carbon dioxide and helps quantify ventilation. The AAHA guidance treats hypoxemia and hypoventilation as related problems with distinct assessments. Respiratory rate alone provides only a subjective estimate of ventilation."
+      ],
+      "bullets": [],
+      "links": []
+    },
+    {
+      "id": "section-3",
+      "title": "Include the circulation",
+      "paragraphs": [
+        "AAHA describes blood-pressure assessment alongside observations such as peripheral pulses and capillary refill. These observations add circulatory context to respiratory measurements. For a dog under anesthesia, an oxygenation reading should therefore be considered alongside the clinical assessment of blood flow."
+      ],
+      "bullets": [],
+      "links": []
+    },
+    {
+      "id": "section-4",
+      "title": "Recovery remains part of anesthesia care",
+      "paragraphs": [
+        "The AAHA guidance continues physiological monitoring into recovery, including respiration, oxygen saturation, blood pressure and temperature. Completion of surgery is therefore a transition in monitoring, rather than its endpoint. Recovery also provides information about the patient's response after anesthetic maintenance has ended."
+      ],
+      "bullets": [],
+      "links": []
+    },
+    {
+      "id": "section-5",
+      "title": "Sedation and the monitoring team",
+      "paragraphs": [
+        "The 2025 ACVAA guidelines address both sedation and anesthesia in dogs and cats. Their scope includes circulation, oxygenation, ventilation, temperature, anesthetic depth and neuromuscular blockade. They also address personnel and cognitive aids.",
+        "The guidance combines evidence-based criteria with expert consensus where evidence is limited. Its recommendations provide a monitoring framework whose implementation depends on the practice setting and available methods."
+      ],
+      "bullets": [],
+      "links": [
+        {
+          "label": "Bailey et al. (2025). ACVAA Small Animal Anesthesia and Sedation Monitoring Guidelines. Vet Anaesth Analg 52(4):377-385. DOI 10.1016/j.vaa.2025.03.015. PMID 40447502.",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/40447502/",
+          "detail": "Source"
+        },
+        {
+          "label": "AAHA (2020). Anesthesia and Monitoring Guidelines for Dogs and Cats: Hypoventilation.",
+          "href": "https://www.aaha.org/resources/2020-aaha-anesthesia-and-monitoring-guidelines-for-dogs-and-cats/troubleshooting-anesthetic-complications/hypoventilation/",
+          "detail": "Source"
+        },
+        {
+          "label": "AAHA (2020). Anesthesia and Monitoring Guidelines for Dogs and Cats: Hypotension.",
+          "href": "https://www.aaha.org/resources/2020-aaha-anesthesia-and-monitoring-guidelines-for-dogs-and-cats/troubleshooting-anesthetic-complications/hypotension/",
+          "detail": "Source"
+        },
+        {
+          "label": "AAHA (2020). Anesthetic Protocols, recovery section.",
+          "href": "https://www.aaha.org/resources/2020-aaha-anesthesia-and-monitoring-guidelines-for-dogs-and-cats/phase-2-day-of-anesthesia/step-4-anesthetic-protocol/",
+          "detail": "Source"
+        },
+        {
+          "label": "Oxygen transport and veterinary physiology",
+          "href": "science.html",
+          "detail": "Related BHOC Veterinary information"
+        },
+        {
+          "label": "Canine blood access and transfusion",
+          "href": "canine-blood-transfusion.html",
+          "detail": "Related BHOC Veterinary information"
+        },
+        {
+          "label": "Equine anesthesia and tissue oxygen delivery",
+          "href": "equine-anesthesia-and-oxygenation.html",
+          "detail": "Related BHOC Veterinary information"
+        }
+      ]
+    }
+  ],
+  "topicCards": [],
+  "seo": {
+    "primaryKeyword": "dog anesthesia oxygenation",
+    "secondaryKeywords": [],
+    "supportingTerms": [
+      "BHOC Veterinary",
+      "Precision Oxygen Therapeutics"
+    ]
+  }
+}

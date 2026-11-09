@@ -15,8 +15,21 @@
     }
   ],
   "datePublished": "2026-10-13",
-  "dateModified": "2026-11-02",
+  "dateModified": "2026-11-09",
   "entries": [
+    {
+      "id": "dog-anesthesia-20261109",
+      "date": "2026-11-09",
+      "displayDate": "9 November 2026",
+      "title": "Dog anesthesia and oxygenation monitoring",
+      "text": "Added a veterinary research topic on monitoring oxygenation, ventilation and circulation during anesthesia and recovery, with links to AAHA and ACVAA guidance.",
+      "links": [
+        {
+          "label": "Read the dog anesthesia topic",
+          "href": "dog-anesthesia-and-oxygenation.html"
+        }
+      ]
+    },
     {
       "id": "veterinary-clinics-donor-blood-cooperation-20261102",
       "date": "2026-11-02",

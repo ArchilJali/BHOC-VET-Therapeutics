@@ -7,7 +7,7 @@
   "description": "Find veterinary research by species and question: dog, cat and horse blood access, Oxyglobin, donor welfare, oncology and comparative oxygen physiology.",
   "schemaType": "CollectionPage",
   "datePublished": "2026-10-25",
-  "dateModified": "2026-11-02",
+  "dateModified": "2026-11-09",
   "eyebrow": "Veterinary research routes",
   "heading": "Veterinary care and oxygen-delivery research",
   "lead": "Choose a species, clinical question or evidence route. Historical product findings, transfusion guidance and BHOC development questions remain separately identified.",
@@ -66,6 +66,12 @@
       "title": "Equine Anesthesia: Oxygenation and Tissue Oxygen Delivery",
       "text": "Oxygenation, circulation and tissue oxygen delivery in equine anesthesia, drawing on Hubbell and Muir and the equine experimental record.",
       "href": "./equine-anesthesia-and-oxygenation.html"
+    },
+    {
+      "id": "canine-anesthesia-monitoring",
+      "title": "Dog Anesthesia: Oxygenation and Perfusion Monitoring",
+      "text": "How veterinary teams assess oxygen saturation, ventilation and circulation during dog anesthesia and recovery.",
+      "href": "./dog-anesthesia-and-oxygenation.html"
     },
     {
       "id": "V10",
