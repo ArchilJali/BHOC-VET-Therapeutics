@@ -90,7 +90,10 @@
       "freshwater biodiversity",
       "veterinary scientific evidence",
       "site structure updates",
-      "knowledge updates"
+      "knowledge updates",
+      "canine babesiosis",
+      "dog babesiosis severe anemia",
+      "oxygen delivery support"
     ]
   },
   "eyebrow": "BHOC Initiative · Global Intelligence",
@@ -114,6 +117,44 @@
   },
   "feedNote": "BHOC Initiative Scout applies a high publication threshold and screens every candidate for duplication. New items are added only for exceptional rescue or recovery outcomes, globally significant conservation initiatives, substantive veterinary evidence milestones or other material developments; routine news is excluded.",
   "stories": [
+    {
+      "id": "canine-babesiosis-oxygen-delivery-support",
+      "date": "2026-11-10",
+      "dateLabel": "10 Nov 2026 · Canine babesiosis clinical R&D case",
+      "region": "Veterinary R&D · Shepherd dog",
+      "category": "Babesiosis · Severe anemia · Oxygen delivery",
+      "article": true,
+      "title": "Canine Babesiosis: Supporting Oxygen Delivery During the Critical Treatment Window",
+      "text": "A retrospective BHOC Veterinary case: a critically ill shepherd dog with babesiosis-associated severe anemia received two oxygen-carrier administrations about 14 hours apart when donor blood was unavailable. Supplied CBC records show HGB 43 to 85 g/L, RBC 1.59 to 3.7 ×10¹²/L and HCT 10.6% to 23.9%.",
+      "image": {
+        "url": "assets/news/canine-babesiosis-bhoc-critical-care-1.svg",
+        "displayUrl": "assets/news/canine-babesiosis-bhoc-critical-care-1.svg",
+        "sizes": "(max-width:800px) calc(100vw - 32px), 520px",
+        "alt": "Critically ill shepherd dog during veterinary treatment for babesiosis-associated severe anemia.",
+        "width": 900,
+        "height": 1200
+      },
+      "credit": {
+        "label": "Case image supplied by Archil Jaliashvili",
+        "href": "canine-babesiosis-oxygen-delivery-support.html"
+      },
+      "sourceName": "BHOC Veterinary retrospective investigational case account",
+      "link": {
+        "label": "Read the full babesiosis case",
+        "href": "canine-babesiosis-oxygen-delivery-support.html"
+      },
+      "keywords": [
+        "canine babesiosis",
+        "dog babesiosis severe anemia",
+        "oxygen delivery support",
+        "veterinary oxygen carrier",
+        "BHOC Veterinary",
+        "hemoglobin oxygen carrier",
+        "donor blood unavailable",
+        "canine critical care",
+        "HGB HCT RBC"
+      ]
+    },
     {
       "id": "three-years-bhoc-veterinary-research-georgia",
       "date": "2026-11-10",
