@@ -115,6 +115,43 @@
   "feedNote": "BHOC Initiative Scout applies a high publication threshold and screens every candidate for duplication. New items are added only for exceptional rescue or recovery outcomes, globally significant conservation initiatives, substantive veterinary evidence milestones or other material developments; routine news is excluded.",
   "stories": [
     {
+      "id": "three-years-bhoc-veterinary-research-georgia",
+      "date": "2026-11-10",
+      "dateLabel": "10 Nov 2026 · Three years of BHOC Veterinary research in Georgia",
+      "region": "Georgia · Perfect Clinic – AB-Vet Buneba",
+      "category": "Veterinary R&D · Dogs & cats · Precision Oxygen Therapeutics",
+      "article": true,
+      "title": "Three Years of BHOC Veterinary Research in Georgia",
+      "text": "BHOC Veterinary marks three years of investigational work and practical clinical experience with dogs and cats in Georgia together with PhD David Nanobashvili and the veterinary team at Perfect Clinic – AB-Vet Buneba.",
+      "image": {
+        "url": "assets/news/bhoc-veterinary-georgia-david-nanobashvili-2026.jpg",
+        "displayUrl": "assets/news/bhoc-veterinary-georgia-david-nanobashvili-2026.jpg",
+        "sizes": "(max-width:800px) calc(100vw - 32px), 520px",
+        "alt": "PhD David Nanobashvili with a canine patient during early BHOC veterinary research work in Georgia at Perfect Clinic – AB-Vet Buneba.",
+        "width": 1200,
+        "height": 1600
+      },
+      "credit": {
+        "label": "BHOC Veterinary · Perfect Clinic – AB-Vet Buneba · Georgia",
+        "href": "three-years-bhoc-veterinary-research-georgia.html"
+      },
+      "sourceName": "BHOC Veterinary · Three-year research collaboration in Georgia",
+      "link": {
+        "label": "Read the full story",
+        "href": "three-years-bhoc-veterinary-research-georgia.html"
+      },
+      "keywords": [
+        "BHOC veterinary research Georgia",
+        "veterinary oxygen delivery research",
+        "PhD David Nanobashvili",
+        "Perfect Clinic AB-Vet Buneba",
+        "dogs cats veterinary research",
+        "Biological Hemoglobin Oxygen Carrier",
+        "Precision Oxygen Therapeutics",
+        "BHOC Veterinary"
+      ]
+    },
+    {
       "id": "geobiopharm-bengal-20250621",
       "date": "2026-11-10",
       "dateLabel": "Updated 10 Nov 2026 · Case from June to July 2025",
