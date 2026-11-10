@@ -13,7 +13,7 @@ export default page=>`<main id="main" class="subpage-main rd-case-news">
 <p class="lead">${esc(page.lead)}</p>
 <p class="article-meta"><time datetime="${esc(page.datePublished)}">${esc(page.dateLabel)}</time> · By ${esc(page.authorName)}<span class="rd-case-period">${esc(page.casePeriod)}</span></p>
 </header>
-<div class="rd-case-layout"><figure><a href="./${esc(page.image.src)}" aria-label="View the supplied case photographs and laboratory reports at full resolution">${img(page.image,'fetchpriority="high"')}</a><figcaption>${esc(page.imageCaption)} <a href="./${esc(page.image.src)}">View full image</a></figcaption></figure>
+<div class="rd-case-layout"><figure><a href="./${esc(page.image.src)}" aria-label="${esc(page.image.linkLabel??'View the supplied case photographs and laboratory reports at full resolution')}">${img(page.image,'fetchpriority="high"')}</a><figcaption>${esc(page.imageCaption)} <a href="./${esc(page.image.src)}">View full image</a></figcaption></figure>
 <div class="article-copy">${page.paragraphs.slice(0,3).map(paragraph).join('')}${results(page.table)}</div></div>
 <div class="article-copy" style="margin-top:20px">${page.paragraphs.slice(3).map(paragraph).join('')}</div>
 <aside class="rd-case-context" aria-label="Case source and evidence boundaries"><h2>${esc(page.contextHeading)}</h2>${page.context.map(text=>`<p>${esc(text)}</p>`).join('')}<a ${attrs(page.sourceLink)}>${esc(page.sourceLink.label)}</a></aside>

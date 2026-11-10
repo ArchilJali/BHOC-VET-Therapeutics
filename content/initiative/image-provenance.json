@@ -7,6 +7,36 @@
   "rightsBoundary": "Third-party terms apply only to the underlying photographs identified below. They do not license the surrounding BHOC text, branding, scientific materials, layout, design or code. No photographer, source platform or public agency is represented as endorsing BHOC or this Initiative.",
   "records": [
     {
+      "id": "bhoc-vet-david-nanobashvili-dog-georgia",
+      "title": "David Nanobashvili with a dog in Georgia",
+      "subject": "David Nanobashvili in blue scrubs rests a hand on a tan dog lying on a veterinary exam table.",
+      "creator": "Photographer unidentified. Photograph supplied by Archil Jaliashvili.",
+      "source": "https://bhocvet.com/three-years-bhoc-veterinary-research-georgia.html",
+      "sourceLabel": "BHOC Veterinary research anniversary article",
+      "originalDate": "Undated",
+      "license": "Owner-authorized BHOC publication",
+      "licenseUrl": "https://bhocvet.com/contact.html",
+      "sourceStatus": "Archil Jaliashvili supplied the photograph for the Georgia research anniversary story.",
+      "verifiedOn": "2026-11-10",
+      "usedIn": [
+        "BHOC Veterinary anniversary article",
+        "Veterinary News card",
+        "Article social preview"
+      ],
+      "reason": "Archil selected this photograph of David Nanobashvili at Perfect Clinic (AB-Vet Buneba) for the story.",
+      "modifications": "Published the supplied 1200 by 1600 JPEG byte for byte.",
+      "reuse": "Contact BHOC Veterinary for reuse enquiries.",
+      "originalFilename": "David Nanobashvili BHOC .jpg",
+      "originalSha256": "e3a9bc3e1b48848dceeb2d4ac94ab7a60ab592eabae79a17cb1aafd172772705",
+      "localFiles": [
+        {
+          "path": "assets/news/bhoc-vet-david-nanobashvili-dog-georgia.jpg",
+          "sha256": "e3a9bc3e1b48848dceeb2d4ac94ab7a60ab592eabae79a17cb1aafd172772705",
+          "introducedOn": "2026-11-10"
+        }
+      ]
+    },
+    {
       "id": "geo-biopharm-kitten-investigational-oxygen-carrier-2024",
       "title": "A 0.5 kg kitten: observations from veterinary R&D",
       "subject": "Geo BioPharm LLC supplied collage of a 0.5 kg kitten during veterinary care, sitting upright at follow-up, and hematology reports from October 19 and 23, 2024.",
