@@ -1,0 +1,135 @@
+{
+  "slug": "canine-babesiosis-oxygen-delivery-support",
+  "navLabel": "Canine Babesiosis Case",
+  "title": "Canine Babesiosis: Oxygen-Delivery Support During a Critical Treatment Window | BHOC Veterinary",
+  "description": "A retrospective BHOC Veterinary case account of a critically ill shepherd dog with babesiosis-associated severe anemia, two oxygen-carrier administrations about 14 hours apart, no donor blood, and hematology follow-up.",
+  "heading": "Canine Babesiosis: Supporting Oxygen Delivery During the Critical Treatment Window",
+  "lead": "A retrospective veterinary R&D case involving a critically ill shepherd dog with babesiosis-associated severe anemia, no donor blood available, and oxygen-delivery support while the veterinarian treated the underlying disease.",
+  "casePeriod": "Case record: two oxygen-carrier administrations approximately 14 hours apart; total reported volume 120 mL.",
+  "datePublished": "2026-11-10",
+  "dateLabel": "10 Nov 2026",
+  "authorName": "Archil Jaliashvili",
+  "eyebrow": "BHOC Veterinary · Clinical R&D Case",
+  "image": {
+    "src": "assets/news/canine-babesiosis-bhoc-critical-care-1.svg",
+    "width": 900,
+    "height": 1200,
+    "alt": "Critically ill shepherd dog during veterinary treatment for babesiosis-associated severe anemia.",
+    "linkLabel": "View the shepherd-dog case photograph at full resolution"
+  },
+  "socialImage": {
+    "src": "assets/bhoc-initiative-land-social.jpg",
+    "width": 1200,
+    "height": 463,
+    "alt": "BHOC Veterinary canine babesiosis clinical case and oxygen-delivery support"
+  },
+  "imageCaption": "Shepherd dog during the critical treatment period. Owner-supplied veterinary R&D image.",
+  "paragraphs": [
+    {
+      "text": "The dog presented in critical condition with babesiosis and severe anemia. Donor blood was not available. According to the supplied case record, BHOC oxygen-carrier support was administered twice, with approximately 14 hours between administrations, for a total reported volume of 120 mL."
+    },
+    {
+      "text": "The clinical objective was not to treat the parasite itself. The objective was to support oxygen-carrying function during the dangerous interval while the veterinarian treated the underlying babesiosis and the animal had time to stabilize and recover."
+    },
+    {
+      "text": "We believe that in canine babesiosis, the primary clinical need is not donor blood itself, but effective oxygen-delivery support during the critical phase of the disease."
+    },
+    {
+      "text": "Babesiosis destroys red blood cells and can rapidly compromise tissue oxygenation. In this situation, the immediate therapeutic objective should be to support the patient’s oxygen-carrying capacity, maintain tissue oxygen delivery, and create a treatment window in which the veterinarian can control the underlying infection."
+    },
+    {
+      "text": "Our view is that, in selected cases, temporary oxygenation support may reduce or even avoid the need for donor blood, while giving the animal time to stabilize, respond to antiparasitic treatment, and begin its own recovery process."
+    },
+    {
+      "text": "The goal is not simply to replace blood volume. The goal is to support the function that matters most at that moment: oxygen delivery."
+    },
+    {
+      "text": "Support oxygenation. Stabilize the patient. Give the veterinarian time to treat the disease. Give the animal time to heal."
+    },
+    {
+      "text": "A historical prospective randomized clinical trial in 12 dogs naturally infected with Babesia rossi compared Oxyglobin (hemoglobin glutamer-200) with packed red blood cells and reported similar overall improvements in blood-gas, acid-base and blood-pressure measures, with some clinical measures normalizing more rapidly after packed cells. This historical HBOC evidence does not establish BHOC efficacy or a universal transfusion-avoidance protocol."
+    }
+  ],
+  "table": {
+    "heading": "Hematology supplied with the case",
+    "caption": "Selected values from the redacted CBC records supplied for this retrospective case.",
+    "columns": [
+      "Parameter",
+      "Supplied CBC 1",
+      "Supplied CBC 2"
+    ],
+    "rows": [
+      [
+        "HGB",
+        "43 g/L",
+        "85 g/L"
+      ],
+      [
+        "RBC",
+        "1.59 ×10¹²/L",
+        "3.7 ×10¹²/L"
+      ],
+      [
+        "HCT",
+        "10.6%",
+        "23.9%"
+      ]
+    ],
+    "note": "Values are transcribed from owner-supplied records and have not been independently audited."
+  },
+  "seo": {
+    "primaryKeyword": "canine babesiosis oxygen delivery",
+    "secondaryKeywords": [
+      "dog babesiosis severe anemia",
+      "veterinary oxygen carrier babesiosis",
+      "oxygen-delivery support dog"
+    ],
+    "supportingTerms": [
+      "Babesia rossi",
+      "canine anemia",
+      "HGB HCT RBC",
+      "hemoglobin oxygen carrier",
+      "donor blood unavailable",
+      "veterinary critical care",
+      "Precision Oxygen Therapeutics"
+    ]
+  },
+  "sourceLink": {
+    "label": "Zambelli & Leisewitz 2009 · PMID 19691591",
+    "href": "https://pubmed.ncbi.nlm.nih.gov/19691591/"
+  },
+  "relatedLinks": [
+    {
+      "label": "BHOC on LinkedIn",
+      "href": "https://www.linkedin.com/company/bhoc-therapeutics/"
+    },
+    {
+      "label": "BHOC on Facebook",
+      "href": "https://www.facebook.com/people/BHOC-Therapeutics/61596165279693/"
+    },
+    {
+      "label": "BHOC on YouTube",
+      "href": "https://www.youtube.com/@BHOCTherapeutics"
+    },
+    {
+      "label": "Back to Veterinary News",
+      "href": "news.html"
+    }
+  ],
+  "contextHeading": "Case source and interpretation",
+  "context": [
+    "This page describes an individual investigational veterinary R&D case. It does not establish causality, regulatory approval, a universal treatment protocol, or that donor blood should never be used in babesiosis.",
+    "Transfusion decisions remain clinical decisions for the treating veterinarian. The hypothesis being explored is whether temporary oxygen-carrying support can, in selected cases, bridge the patient through the period required to treat the underlying disease.",
+    "The supplied photographs and laboratory records were provided by Archil Jaliashvili for retrospective documentation."
+  ],
+  "actions": [
+    {
+      "label": "Explore veterinary oxygen delivery science",
+      "href": "science.html"
+    },
+    {
+      "label": "Contact BHOC Veterinary",
+      "href": "contact.html"
+    }
+  ]
+}
