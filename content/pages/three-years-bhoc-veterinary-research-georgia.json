@@ -93,5 +93,21 @@
       "label": "Back to Veterinary News",
       "href": "news.html"
     }
+  ],
+  "contextHeading": "Research status and interpretation",
+  "context": [
+    "This article describes three years of investigational veterinary work and clinical experience in Georgia. It is not a claim of regulatory approval for any species or indication.",
+    "The collaboration includes practical clinical observation in dogs and cats. Individual cases do not by themselves establish product safety, efficacy, causality or a universal treatment protocol.",
+    "The next phase is to convert accumulated experience into structured documentation, studies, scientific publications, veterinary education and broader research collaboration."
+  ],
+  "actions": [
+    {
+      "label": "Discuss veterinary research cooperation",
+      "href": "bhoc-crada-research-partners.html"
+    },
+    {
+      "label": "Contact BHOC Veterinary",
+      "href": "contact.html"
+    }
   ]
 }
