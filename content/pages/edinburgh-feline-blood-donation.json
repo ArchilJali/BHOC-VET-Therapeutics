@@ -1,0 +1,54 @@
+{
+  "slug": "edinburgh-feline-blood-donation",
+  "navLabel": "Feline blood donation in Edinburgh",
+  "navActive": "news.html",
+  "title": "Feline Blood Donation in Edinburgh | BHOC Veterinary",
+  "description": "How Edinburgh’s Hospital for Small Animals found a compatible feline donor for Frank and collected blood from Max in under four hours.",
+  "schemaType": "Article",
+  "articleSection": "Veterinary News",
+  "datePublished": "2026-11-10",
+  "dateModified": "2026-11-10",
+  "dateLabel": "10 Nov 2026",
+  "heading": "How a donor cat helped Frank after emergency surgery in Edinburgh",
+  "eyebrow": "Veterinary News · Feline blood donation",
+  "lead": "The blood draw took about five minutes. Finding and screening a compatible donor and collecting the blood took under four hours.",
+  "paragraphs": [
+    "The University of Edinburgh reported on 9 November that Frank, a seven-year-old domestic shorthair, needed an emergency transfusion after blood loss during surgery to remove a brain tumour. The Hospital for Small Animals contacted owners on its local feline donor list.",
+    "Max, a one-year-old Maine Coon with a compatible blood type, donated 35 mL after screening. The hospital reported that Frank improved after the transfusion, went home seven days later and was recovering well at a follow-up visit.",
+    "For veterinary teams, the case shows what a local donor list can make possible. Tracking the time spent reaching owners, screening donors and collecting blood can help a clinic identify where to improve its emergency response."
+  ],
+  "breadcrumbs": [
+    {
+      "label": "News",
+      "href": "news.html"
+    }
+  ],
+  "sourceLink": {
+    "label": "Read the University of Edinburgh’s report",
+    "href": "https://vet.ed.ac.uk/news-events/latest-news/blood-donation-helps-save-a-cats-life"
+  },
+  "photoLink": {
+    "label": "View the original photograph of Max and Frank",
+    "href": "https://vet.ed.ac.uk/sites/default/files/styles/no_crop_full_width/public/2026-11/edweb%20profile%20pic%20Max%20and%20Frank.jpg.jpg?itok=fgDXPLZ9"
+  },
+  "photoCaption": "Max, a Maine Coon, appears on the left. Frank, a black-and-white domestic shorthair, appears on the right. Photograph published by the University of Edinburgh.",
+  "relatedLinks": [
+    {
+      "label": "Feline transfusion and blood compatibility",
+      "href": "feline-blood-transfusion-compatibility.html"
+    },
+    {
+      "label": "Cooperation between veterinary clinics and donor blood banks",
+      "href": "veterinary-clinics-donor-blood-cooperation.html"
+    }
+  ],
+  "referenceGroups": [],
+  "seo": {
+    "primaryKeyword": "feline blood donation",
+    "secondaryKeywords": [
+      "cat blood transfusion",
+      "feline blood donor programmes",
+      "veterinary emergency transfusion"
+    ]
+  }
+}

@@ -152,6 +152,30 @@
       ]
     },
     {
+      "id": "edinburgh-feline-blood-donation",
+      "date": "2026-11-10",
+      "dateLabel": "10 Nov 2026",
+      "region": "Scotland · University of Edinburgh",
+      "category": "Veterinary News · Feline blood donation",
+      "article": true,
+      "title": "How a donor cat helped Frank after emergency surgery in Edinburgh",
+      "text": "After Frank needed an emergency transfusion, Edinburgh’s Hospital for Small Animals found a compatible local donor, screened him and collected blood in under four hours.",
+      "sourceName": "The Royal (Dick) School of Veterinary Studies",
+      "link": {
+        "label": "Read the full story",
+        "href": "edinburgh-feline-blood-donation.html"
+      },
+      "contextLink": {
+        "label": "Original report and photograph",
+        "href": "https://vet.ed.ac.uk/news-events/latest-news/blood-donation-helps-save-a-cats-life"
+      },
+      "keywords": [
+        "feline blood donation",
+        "cat blood transfusion",
+        "feline donor network"
+      ]
+    },
+    {
       "id": "geobiopharm-bengal-20250621",
       "date": "2026-11-10",
       "dateLabel": "Updated 10 Nov 2026 · Case from June to July 2025",
