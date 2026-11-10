@@ -12,14 +12,14 @@
   "eyebrow": "BHOC Veterinary · Georgia",
   "image": {
     "src": "assets/news/bhoc-veterinary-georgia-david-nanobashvili-2026.jpg",
-    "width": 1200,
-    "height": 1600,
+    "width": 480,
+    "height": 640,
     "alt": "PhD David Nanobashvili with a canine patient during early BHOC veterinary research work in Georgia at Perfect Clinic – AB-Vet Buneba."
   },
   "socialImage": {
     "src": "assets/news/bhoc-veterinary-georgia-david-nanobashvili-2026.jpg",
-    "width": 1200,
-    "height": 1600,
+    "width": 480,
+    "height": 640,
     "alt": "PhD David Nanobashvili with a canine patient during BHOC Veterinary research in Georgia at Perfect Clinic – AB-Vet Buneba."
   },
   "imageCaption": "PhD David Nanobashvili with a canine patient at Perfect Clinic – AB-Vet Buneba during the BHOC Veterinary research program in Georgia.",
@@ -81,6 +81,10 @@
     "href": "https://bhocvet.com/"
   },
   "relatedLinks": [
+    {
+      "label": "View the BHOC LinkedIn post",
+      "href": "https://www.linkedin.com/feed/update/urn:li:activity:7525827685307015169"
+    },
     {
       "label": "Vet Real-World Evidence & Cases",
       "href": "https://bhoctherapeutics.com/evidence/library/veterinary/Vet-index.html"
