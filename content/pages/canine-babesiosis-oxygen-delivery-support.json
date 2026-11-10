@@ -131,5 +131,28 @@
       "label": "Contact BHOC Veterinary",
       "href": "contact.html"
     }
-  ]
+  ],
+  "gallery": [
+    {
+      "src": "assets/news/canine-babesiosis-bhoc-critical-care-2.svg",
+      "width": 900,
+      "height": 1200,
+      "alt": "Shepherd dog receiving veterinary critical-care support during a babesiosis case.",
+      "caption": "Veterinary critical-care support during the same babesiosis case."
+    },
+    {
+      "src": "assets/news/canine-babesiosis-bhoc-critical-care-3.svg",
+      "width": 900,
+      "height": 1200,
+      "alt": "Shepherd dog during follow-up after oxygen-delivery support in a severe babesiosis case.",
+      "caption": "Follow-up image from the same case."
+    }
+  ],
+  "labImage": {
+    "src": "assets/news/canine-babesiosis-cbc-redacted.svg",
+    "width": 1200,
+    "height": 554,
+    "alt": "Redacted side-by-side canine complete blood count records showing HGB 43 to 85 g/L, RBC 1.59 to 3.7 times 10 to the 12 per liter, and HCT 10.6 to 23.9 percent.",
+    "caption": "Redacted hematology records supplied for this retrospective case."
+  }
 }
