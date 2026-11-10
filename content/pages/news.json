@@ -128,8 +128,8 @@
         "displayUrl": "assets/news/bhoc-veterinary-georgia-david-nanobashvili-2026.jpg",
         "sizes": "(max-width:800px) calc(100vw - 32px), 520px",
         "alt": "PhD David Nanobashvili with a canine patient during early BHOC veterinary research work in Georgia at Perfect Clinic – AB-Vet Buneba.",
-        "width": 1200,
-        "height": 1600
+        "width": 480,
+        "height": 640
       },
       "credit": {
         "label": "BHOC Veterinary · Perfect Clinic – AB-Vet Buneba · Georgia",
@@ -149,7 +149,11 @@
         "Biological Hemoglobin Oxygen Carrier",
         "Precision Oxygen Therapeutics",
         "BHOC Veterinary"
-      ]
+      ],
+      "contextLink": {
+        "label": "View the BHOC LinkedIn post",
+        "href": "https://www.linkedin.com/feed/update/urn:li:activity:7525827685307015169"
+      }
     },
     {
       "id": "edinburgh-feline-blood-donation",
