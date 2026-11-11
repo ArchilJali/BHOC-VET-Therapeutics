@@ -2,34 +2,46 @@
   "slug": "canine-babesiosis-oxygen-delivery-support",
   "navLabel": "Canine Babesiosis Case",
   "title": "Canine Babesiosis: Oxygen-Delivery Support During a Critical Treatment Window | BHOC Veterinary",
-  "description": "A retrospective BHOC Veterinary case account of a critically ill shepherd dog with babesiosis-associated severe anemia, two oxygen-carrier administrations about 14 hours apart, no donor blood, and hematology follow-up.",
+  "description": "Shepherd-dog babesiosis case: CBC on 5 November before BHOC and 7 November after two administrations, with the corrected hematology timeline and case infographic.",
   "heading": "Canine Babesiosis: Supporting Oxygen Delivery During the Critical Treatment Window",
-  "lead": "A retrospective veterinary R&D case involving a critically ill shepherd dog with babesiosis-associated severe anemia, no donor blood available, and oxygen-delivery support while the veterinarian treated the underlying disease.",
-  "casePeriod": "Case record: two oxygen-carrier administrations approximately 14 hours apart; total reported volume 120 mL.",
+  "lead": "A retrospective veterinary R&D case involving a critically ill shepherd dog with babesiosis-associated severe anemia and no donor blood available. The corrected timeline compares 5 November 2026 before BHOC with 7 November 2026 after two administrations.",
+  "casePeriod": "5 November 2026: CBC before BHOC. 7 November 2026: follow-up CBC after two BHOC administrations approximately 14 hours apart. The follow-up was on the third calendar day of this sequence.",
   "datePublished": "2026-11-10",
-  "dateLabel": "10 Nov 2026",
+  "dateModified": "2026-11-11",
+  "dateLabel": "10 Nov 2026; chronology and infographic updated 11 Nov 2026",
   "authorName": "Archil Jaliashvili",
   "eyebrow": "BHOC Veterinary · Clinical R&D Case",
   "image": {
     "src": "assets/news/canine-babesiosis-bhoc-critical-care-1.svg",
     "width": 900,
     "height": 1200,
-    "alt": "Critically ill shepherd dog during veterinary treatment for babesiosis-associated severe anemia.",
+    "alt": "Shepherd dog during veterinary care in the reported babesiosis case.",
     "linkLabel": "View the shepherd-dog case photograph at full resolution"
   },
   "socialImage": {
     "src": "assets/bhoc-initiative-land-social.jpg",
     "width": 1200,
     "height": 463,
-    "alt": "BHOC Veterinary canine babesiosis clinical case and oxygen-delivery support"
+    "alt": "BHOC Veterinary branding with a land wildlife scene"
   },
-  "imageCaption": "Shepherd dog during the critical treatment period. Owner-supplied veterinary R&D image.",
+  "imageCaption": "Shepherd dog during the critical treatment period. Case photograph supplied by Archil Jaliashvili.",
+  "infographic": {
+    "src": "assets/news/canine-babesiosis-bhoc-hematology-timeline.avif",
+    "width": 1200,
+    "height": 900,
+    "alt": "Case timeline: 5 Nov 2026 before BHOC and 7 Nov after two administrations; HGB 43 to 85 g/L, RBC 1.59 to 3.7 ×10¹²/L, HCT 10.6 to 23.9%.",
+    "caption": "Approved case infographic: baseline on 5 November 2026 and follow-up on 7 November after two BHOC administrations approximately 14 hours apart. This is an illustrative summary, not the original laboratory record.",
+    "note": "The bars are schematic comparisons within each parameter, not measurements on a shared numerical scale. The higher RBC count, hematocrit and hemoglobin document an observed change in this case; they do not by themselves prove that BHOC increased erythropoiesis or directly measure tissue oxygenation."
+  },
   "paragraphs": [
     {
-      "text": "The dog presented in critical condition with babesiosis and severe anemia. Donor blood was not available. According to the supplied case record, BHOC oxygen-carrier support was administered twice, with approximately 14 hours between administrations, for a total reported volume of 120 mL."
+      "text": "The dog presented in critical condition with babesiosis and severe anemia. Donor blood was not available. According to the supplied case account, BHOC oxygen-carrier support was administered twice, with approximately 14 hours between administrations."
     },
     {
-      "text": "The clinical objective was not to treat the parasite itself. The objective was to support oxygen-carrying function during the dangerous interval while the veterinarian treated the underlying babesiosis and the animal had time to stabilize and recover."
+      "text": "The CBC on 5 November 2026 was obtained before BHOC support: HGB 43 g/L, RBC 1.59 ×10¹²/L and HCT 10.6%. On 7 November 2026, after two BHOC administrations, follow-up values were HGB 85 g/L, RBC 3.7 ×10¹²/L and HCT 23.9%. This was the third calendar day of the reported sequence, not a comparison between two unspecified samples."
+    },
+    {
+      "text": "The clinical objective was to support oxygen-carrying function during the critical treatment window, giving the veterinarian time to treat the underlying babesiosis and the animal time to stabilize and recover. BHOC was not being used as treatment for the parasite itself."
     },
     {
       "text": "We believe that in canine babesiosis, the primary clinical need is not donor blood itself, but effective oxygen-delivery support during the critical phase of the disease."
@@ -39,6 +51,9 @@
     },
     {
       "text": "Our view is that, in selected cases, temporary oxygenation support may reduce or even avoid the need for donor blood, while giving the animal time to stabilize, respond to antiparasitic treatment, and begin its own recovery process."
+    },
+    {
+      "text": "In addition to the intended oxygen-delivery support, the follow-up records show an increase in the measured red blood cell count, hematocrit and hemoglobin. This raises the research question of whether BHOC support may also contribute to erythropoietic recovery and new red blood cell formation. That is a hypothesis for investigation, not a demonstrated product effect: these two CBCs alone do not establish increased red-cell production or identify the cause of the changes."
     },
     {
       "text": "The goal is not simply to replace blood volume. The goal is to support the function that matters most at that moment: oxygen delivery."
@@ -51,48 +66,25 @@
     }
   ],
   "table": {
-    "heading": "Hematology supplied with the case",
-    "caption": "Selected values from the redacted CBC records supplied for this retrospective case.",
+    "heading": "Hematology before BHOC and after two administrations",
+    "caption": "Baseline CBC: 5 November 2026, before BHOC. Follow-up CBC: 7 November 2026, after two BHOC administrations approximately 14 hours apart.",
     "columns": [
       "Parameter",
-      "Supplied CBC 1",
-      "Supplied CBC 2"
+      "5 Nov 2026: before BHOC",
+      "7 Nov 2026: after two BHOC administrations"
     ],
     "rows": [
-      [
-        "HGB",
-        "43 g/L",
-        "85 g/L"
-      ],
-      [
-        "RBC",
-        "1.59 ×10¹²/L",
-        "3.7 ×10¹²/L"
-      ],
-      [
-        "HCT",
-        "10.6%",
-        "23.9%"
-      ]
+      ["HGB", "43 g/L", "85 g/L"],
+      ["RBC", "1.59 ×10¹²/L", "3.7 ×10¹²/L"],
+      ["HCT", "10.6%", "23.9%"]
     ],
-    "note": "Values are transcribed from owner-supplied records and have not been independently audited."
+    "note": "Values are transcribed from the supplied laboratory records. The before-and-after chronology was clarified by the case author. The increase in red-cell indices is an observation, not proof of a product-specific erythropoietic effect."
   },
+  "newsSummary": "A shepherd-dog babesiosis case compares CBC before BHOC on 5 Nov 2026 with follow-up on 7 Nov after two administrations. HGB rose from 43 to 85 g/L, RBC from 1.59 to 3.7 ×10¹²/L and HCT from 10.6% to 23.9%. The case infographic shows the corrected timeline; possible erythropoietic effects remain a research hypothesis.",
   "seo": {
     "primaryKeyword": "canine babesiosis oxygen delivery",
-    "secondaryKeywords": [
-      "dog babesiosis severe anemia",
-      "veterinary oxygen carrier babesiosis",
-      "oxygen-delivery support dog"
-    ],
-    "supportingTerms": [
-      "Babesia rossi",
-      "canine anemia",
-      "HGB HCT RBC",
-      "hemoglobin oxygen carrier",
-      "donor blood unavailable",
-      "veterinary critical care",
-      "Precision Oxygen Therapeutics"
-    ]
+    "secondaryKeywords": ["dog babesiosis severe anemia", "veterinary oxygen carrier babesiosis", "oxygen-delivery support dog"],
+    "supportingTerms": ["Babesia rossi", "canine anemia", "HGB HCT RBC", "hemoglobin oxygen carrier", "donor blood unavailable", "veterinary critical care", "Precision Oxygen Therapeutics", "before and after BHOC", "erythropoiesis research hypothesis"]
   },
   "sourceLink": {
     "label": "Zambelli & Leisewitz 2009 · PMID 19691591",
@@ -103,40 +95,32 @@
       "label": "View this shepherd-dog babesiosis case on Facebook",
       "href": "https://www.facebook.com/permalink.php?story_fbid=pfbid02yos2ggA6zSY8oSTG9B5mPT5KjtyqMDpYoyeaZiL8hMi6AXhQ5BpcCxoybrVmJ4J5l&id=61596165279693"
     },
-    {
-      "label": "Back to Veterinary News",
-      "href": "news.html"
-    }
+    {"label": "Back to Veterinary News", "href": "news.html"}
   ],
   "contextHeading": "Case source and interpretation",
   "context": [
     "This page describes an individual investigational veterinary R&D case. It does not establish causality, regulatory approval, a universal treatment protocol, or that donor blood should never be used in babesiosis.",
-    "Transfusion decisions remain clinical decisions for the treating veterinarian. The hypothesis being explored is whether temporary oxygen-carrying support can, in selected cases, bridge the patient through the period required to treat the underlying disease.",
-    "The supplied photographs and laboratory records were provided by Archil Jaliashvili for retrospective documentation."
+    "The observed increase in RBC, HCT and HGB occurred between the baseline CBC on 5 November and the follow-up CBC on 7 November, after two BHOC administrations and treatment of the underlying disease. A possible contribution to erythropoiesis is hypothesis-generating; the supplied comparison does not establish a direct effect on new red blood cell production.",
+    "Transfusion decisions remain clinical decisions for the treating veterinarian. This account is not a recommendation to withhold an indicated transfusion.",
+    "The supplied case photographs and laboratory records were provided by Archil Jaliashvili. The approved infographic illustrates the reported chronology and values; it is separate from the original laboratory records."
   ],
   "actions": [
-    {
-      "label": "Explore veterinary oxygen delivery science",
-      "href": "science.html"
-    },
-    {
-      "label": "Contact BHOC Veterinary",
-      "href": "contact.html"
-    }
+    {"label": "Explore veterinary oxygen delivery science", "href": "science.html"},
+    {"label": "Contact BHOC Veterinary", "href": "contact.html"}
   ],
   "gallery": [
     {
       "src": "assets/news/canine-babesiosis-bhoc-critical-care-2.svg",
       "width": 900,
       "height": 1200,
-      "alt": "Shepherd dog receiving veterinary critical-care support during a babesiosis case.",
-      "caption": "Veterinary critical-care support during the same babesiosis case."
+      "alt": "Shepherd dog receiving veterinary care during the reported babesiosis case.",
+      "caption": "Veterinary critical-care support during the same case."
     },
     {
       "src": "assets/news/canine-babesiosis-bhoc-critical-care-3.svg",
       "width": 900,
       "height": 1200,
-      "alt": "Shepherd dog during follow-up after oxygen-delivery support in a severe babesiosis case.",
+      "alt": "Follow-up photograph of the shepherd dog from the reported babesiosis case.",
       "caption": "Follow-up image from the same case."
     }
   ],
@@ -144,7 +128,7 @@
     "src": "assets/news/canine-babesiosis-cbc-redacted.svg",
     "width": 1200,
     "height": 554,
-    "alt": "Redacted side-by-side canine complete blood count records showing HGB 43 to 85 g/L, RBC 1.59 to 3.7 times 10 to the 12 per liter, and HCT 10.6 to 23.9 percent.",
-    "caption": "Redacted hematology records supplied for this retrospective case."
+    "alt": "Redacted CBCs: 5 Nov before BHOC and 7 Nov after two administrations, with HGB 43 to 85 g/L, RBC 1.59 to 3.7 ×10¹²/L and HCT 10.6 to 23.9%.",
+    "caption": "Original redacted CBC records: 5 November 2026 before BHOC and 7 November 2026 after two administrations. Chronology supplied by the case author."
   }
 }
