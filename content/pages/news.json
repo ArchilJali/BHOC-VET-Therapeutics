@@ -99,7 +99,7 @@
   "eyebrow": "BHOC Initiative · Global Intelligence",
   "heading": "Wildlife & Species Conservation Intelligence.",
   "lead": "Tracking the people, science, funding and programs working to protect wildlife, restore endangered species and strengthen conservation medicine worldwide.",
-  "updated": "2026-11-10",
+  "updated": "2026-11-13",
   "seoContext": {
     "eyebrow": "BHOC Veterinary context",
     "heading": "Animal-health intelligence, separate from product claims.",
@@ -117,6 +117,41 @@
   },
   "feedNote": "BHOC Initiative Scout applies a high publication threshold and screens every candidate for duplication. New items are added only for exceptional rescue or recovery outcomes, globally significant conservation initiatives, substantive veterinary evidence milestones or other material developments; routine news is excluded.",
   "stories": [
+    {
+      "id": "noa-canine-leishmaniasis-anemia",
+      "date": "2026-11-13",
+      "dateLabel": "13 Nov 2026 · Veterinary case report",
+      "region": "Georgia · Buneba Veterinary Clinic",
+      "category": "Canine leishmaniasis · Severe anemia",
+      "article": true,
+      "title": "Severe Anemia in Noa, a German Shepherd With Leishmaniasis",
+      "text": "Noa, a seven-year-old German Shepherd, arrived at a Tbilisi clinic with severe anemia and leishmaniasis. See the blood counts before treatment and at follow-up, with the case photograph and original laboratory report photographs.",
+      "image": {
+        "url": "assets/news/noa-german-shepherd.webp",
+        "displayUrl": "assets/news/noa-german-shepherd.webp",
+        "sizes": "(max-width:800px) calc(100vw - 32px), 520px",
+        "alt": "Noa, a German Shepherd, resting on a veterinary examination table.",
+        "width": 960,
+        "height": 1280
+      },
+      "credit": {
+        "label": "Case photograph supplied by Archil Jaliashvili",
+        "href": "noa-canine-leishmaniasis-anemia.html"
+      },
+      "sourceName": "BHOC Veterinary · Buneba Veterinary Clinic case",
+      "link": {
+        "label": "Read Noa’s case and view the lab reports",
+        "href": "noa-canine-leishmaniasis-anemia.html"
+      },
+      "keywords": [
+        "canine leishmaniasis",
+        "German Shepherd",
+        "severe anemia",
+        "Buneba Veterinary Clinic",
+        "complete blood count",
+        "veterinary oxygen carrier"
+      ]
+    },
     {
       "id": "canine-babesiosis-oxygen-delivery-support",
       "date": "2026-11-10",
@@ -2108,5 +2143,5 @@
     "text": "A short dated record of BHOC Veterinary site and knowledge additions.",
     "href": "https://bhocvet.com/site-updates.html"
   },
-  "dateModified": "2026-11-10"
+  "dateModified": "2026-11-13"
 }

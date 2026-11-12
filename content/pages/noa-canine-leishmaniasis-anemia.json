@@ -1,0 +1,159 @@
+{
+  "slug": "noa-canine-leishmaniasis-anemia",
+  "navLabel": "Noa’s veterinary case",
+  "navActive": "news.html",
+  "breadcrumbs": [
+    {
+      "label": "News",
+      "href": "news.html"
+    }
+  ],
+  "schemaType": "Article",
+  "articleSection": "Veterinary R&D Case Studies",
+  "title": "Noa’s Severe Anemia and Canine Leishmaniasis | BHOC Veterinary",
+  "description": "Follow Noa, a seven-year-old German Shepherd with leishmaniasis and severe anemia, through three blood counts at Buneba Veterinary Clinic in Tbilisi.",
+  "heading": "Severe Anemia in Noa, a German Shepherd With Leishmaniasis",
+  "lead": "Three blood tests document Noa’s course during veterinary care in Tbilisi, Georgia.",
+  "datePublished": "2026-11-13",
+  "dateModified": "2026-11-13",
+  "dateLabel": "13 November 2026",
+  "casePeriod": "Laboratory records from 13 September to 4 October 2026.",
+  "authorName": "Archil Jaliashvili",
+  "eyebrow": "BHOC Veterinary · Investigational case report",
+  "image": {
+    "src": "assets/news/noa-german-shepherd.webp",
+    "width": 960,
+    "height": 1280,
+    "alt": "Noa, a German Shepherd, resting on a veterinary examination table.",
+    "linkLabel": "Open the full-size photograph of Noa"
+  },
+  "socialImage": {
+    "src": "assets/news/noa-german-shepherd.webp",
+    "width": 960,
+    "height": 1280,
+    "alt": "Noa, a German Shepherd, resting on a veterinary examination table."
+  },
+  "imageCaption": "Noa at Buneba Veterinary Clinic. Photograph supplied by Archil Jaliashvili.",
+  "paragraphs": [
+    {
+      "text": "Noa, a seven-year-old German Shepherd, was brought to Buneba Veterinary Clinic in Tbilisi, Georgia, in critical condition. Noa had severe anemia and generalized weakness and was neither eating nor drinking. The clinic diagnosed leishmaniasis."
+    },
+    {
+      "text": "The veterinary team collected the first complete blood count on September 13, before treatment began. Noa then received two 120 mL administrations of investigational BHOC (Biological Hemoglobin Oxygen Carrier) 24 hours apart, for a total of 240 mL. The aim was to support oxygen transport during the critical phase while the team treated the underlying leishmaniasis and provided supportive care."
+    }
+  ],
+  "table": {
+    "heading": "Blood counts before treatment and at follow-up",
+    "caption": "Three complete blood counts from Buneba Veterinary Clinic",
+    "columns": [
+      "Measurement",
+      "13 Sep 2026 · Before treatment",
+      "15 Sep 2026 · Follow-up",
+      "4 Oct 2026 · Follow-up"
+    ],
+    "rows": [
+      [
+        "Hemoglobin (g/L)",
+        "51",
+        "78",
+        "178"
+      ],
+      [
+        "Hematocrit (%)",
+        "15.2",
+        "22.6",
+        "54.5"
+      ],
+      [
+        "Red blood cell count (×10¹²/L)",
+        "2.11",
+        "3.29",
+        "7.99"
+      ]
+    ],
+    "note": "By October 4, 21 days after the first sample, all three measurements were within the canine reference intervals listed on the clinic’s follow-up report."
+  },
+  "infographic": {
+    "src": "assets/news/noa-cbc-2026.png",
+    "width": 1440,
+    "height": 1008,
+    "alt": "Noa’s hemoglobin, hematocrit and red blood cell count before treatment on 13 September and at follow-up on 15 September and 4 October 2026.",
+    "caption": "Blood counts transcribed from the three laboratory reports."
+  },
+  "labRecords": [
+    {
+      "src": "assets/news/noa-cbc-2026-09-13.webp",
+      "width": 790,
+      "height": 980,
+      "alt": "Buneba Veterinary Clinic complete blood count for Noa dated 13 September 2026, before treatment.",
+      "caption": "Complete blood count before treatment · 13 September 2026."
+    },
+    {
+      "src": "assets/news/noa-cbc-2026-09-15.webp",
+      "width": 857,
+      "height": 1112,
+      "alt": "Buneba Veterinary Clinic follow-up complete blood count for Noa dated 15 September 2026.",
+      "caption": "Follow-up complete blood count · 15 September 2026."
+    },
+    {
+      "src": "assets/news/noa-cbc-2026-10-04.webp",
+      "width": 866,
+      "height": 1055,
+      "alt": "Buneba Veterinary Clinic follow-up complete blood count for Noa dated 4 October 2026.",
+      "caption": "Follow-up complete blood count · 4 October 2026."
+    },
+    {
+      "src": "assets/news/noa-chemistry-2026-09-13.webp",
+      "width": 706,
+      "height": 1050,
+      "alt": "Buneba Veterinary Clinic blood chemistry report for Noa dated 13 September 2026.",
+      "caption": "Blood chemistry report · 13 September 2026."
+    },
+    {
+      "src": "assets/news/noa-pcr-2026-09-13.webp",
+      "width": 711,
+      "height": 926,
+      "alt": "Canine Vector 8 PCR report from 13 September 2026 listing a positive Leishmania result.",
+      "caption": "Canine Vector 8 PCR report supplied with the case · 13 September 2026. The report lists a positive Leishmania result. The patient name field is blank."
+    }
+  ],
+  "contextHeading": "Case documentation",
+  "context": [
+    "The clinical note and laboratory reports are from Buneba Veterinary Clinic. Archil Jaliashvili supplied the case photograph and treatment chronology.",
+    "The blood counts describe one patient’s course during combined veterinary care."
+  ],
+  "sourceLink": {
+    "label": "View the laboratory report photographs",
+    "href": "#laboratory-records"
+  },
+  "referenceGroups": [],
+  "seo": {
+    "primaryKeyword": "canine leishmaniasis severe anemia",
+    "secondaryKeywords": [
+      "German Shepherd anemia",
+      "canine complete blood count",
+      "veterinary oxygen carrier"
+    ],
+    "supportingTerms": [
+      "Buneba Veterinary Clinic",
+      "BHOC Veterinary",
+      "Precision Oxygen Therapeutics"
+    ]
+  },
+  "actions": [
+    {
+      "label": "Explore veterinary oxygen delivery science",
+      "href": "science.html"
+    }
+  ],
+  "relatedLinks": [
+    {
+      "label": "Veterinary research in Georgia",
+      "href": "three-years-bhoc-veterinary-research-georgia.html"
+    },
+    {
+      "label": "Back to Veterinary News",
+      "href": "news.html"
+    }
+  ]
+}
