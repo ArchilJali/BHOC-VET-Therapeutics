@@ -99,7 +99,7 @@
   "eyebrow": "BHOC Initiative · Global Intelligence",
   "heading": "Wildlife & Species Conservation Intelligence.",
   "lead": "Tracking the people, science, funding and programs working to protect wildlife, restore endangered species and strengthen conservation medicine worldwide.",
-  "updated": "2026-11-13",
+  "updated": "2026-11-14",
   "seoContext": {
     "eyebrow": "BHOC Veterinary context",
     "heading": "Animal-health intelligence, separate from product claims.",
@@ -117,6 +117,40 @@
   },
   "feedNote": "BHOC Initiative Scout applies a high publication threshold and screens every candidate for duplication. New items are added only for exceptional rescue or recovery outcomes, globally significant conservation initiatives, substantive veterinary evidence milestones or other material developments; routine news is excluded.",
   "stories": [
+    {
+      "id": "bhoc-veterinary-ab-vet-buneba-next-stage",
+      "date": "2026-11-14",
+      "dateLabel": "14 Nov 2026 · Veterinary collaboration",
+      "region": "Tbilisi, Georgia · AB-Vet Buneba",
+      "category": "Veterinary research and education",
+      "article": true,
+      "title": "BHOC Veterinary and AB-Vet Buneba Outline the Next Stage of Their Collaboration",
+      "text": "The teams in Tbilisi outlined plans for continued veterinary research and education on November 10, 2026, after three years of working together.",
+      "image": {
+        "url": "assets/news/bhoc-vet-buneba-jaliashvili-nanobashvili.jpg",
+        "displayUrl": "assets/news/bhoc-vet-buneba-jaliashvili-nanobashvili.jpg",
+        "sizes": "(max-width:800px) calc(100vw - 32px), 520px",
+        "alt": "David Nanobashvili, in blue scrubs, shakes hands with Archil Jaliashvili at the AB-Vet Buneba veterinary clinic.",
+        "width": 1536,
+        "height": 2048
+      },
+      "credit": {
+        "label": "Photo supplied by Archil Jaliashvili",
+        "href": "bhoc-veterinary-ab-vet-buneba-next-stage.html"
+      },
+      "sourceName": "BHOC Veterinary",
+      "link": {
+        "label": "Read the partnership update",
+        "href": "bhoc-veterinary-ab-vet-buneba-next-stage.html"
+      },
+      "keywords": [
+        "AB-Vet Buneba",
+        "ABU Buneba Vet Academy",
+        "David Nanobashvili",
+        "veterinary research in Georgia",
+        "Precision Oxygen Therapeutics"
+      ]
+    },
     {
       "id": "noa-canine-leishmaniasis-anemia",
       "date": "2026-11-13",
@@ -2143,5 +2177,5 @@
     "text": "A short dated record of BHOC Veterinary site and knowledge additions.",
     "href": "https://bhocvet.com/site-updates.html"
   },
-  "dateModified": "2026-11-13"
+  "dateModified": "2026-11-14"
 }

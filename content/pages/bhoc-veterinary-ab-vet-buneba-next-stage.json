@@ -1,0 +1,66 @@
+{
+  "slug": "bhoc-veterinary-ab-vet-buneba-next-stage",
+  "navLabel": "BHOC Veterinary and AB-Vet Buneba",
+  "navActive": "news.html",
+  "title": "BHOC Veterinary and AB-Vet Buneba Plan Next Stage | BHOC Vet",
+  "description": "BHOC Veterinary and AB-Vet Buneba in Tbilisi outline the next stage of their three-year collaboration in veterinary research and education.",
+  "schemaType": "Article",
+  "articleSection": "Veterinary News",
+  "datePublished": "2026-11-14",
+  "dateModified": "2026-11-14",
+  "dateLabel": "14 Nov 2026",
+  "authorName": "Archil Jaliashvili",
+  "eyebrow": "BHOC Veterinary · Georgia",
+  "heading": "BHOC Veterinary and AB-Vet Buneba Outline the Next Stage of Their Collaboration",
+  "lead": "The teams in Tbilisi outlined plans for continued veterinary research and education on November 10, 2026, after three years of working together.",
+  "paragraphs": [
+    "BHOC Veterinary began collaborating with David Nanobashvili, PhD, and the AB-Vet Buneba veterinary team in Georgia three years ago. Working with practicing veterinarians has helped shape our research questions about oxygen delivery in veterinary medicine.",
+    "On November 10, 2026, the teams outlined their next steps. The plans include continuing veterinary research in Precision Oxygen Therapeutics and developing the educational side of the collaboration with ABU Buneba Vet Academy.",
+    "Thank you to David Nanobashvili and to every veterinarian and staff member at AB-Vet Buneba for three years of collaboration and for the work you do every day to care for animals and save lives."
+  ],
+  "image": {
+    "src": "assets/news/bhoc-vet-buneba-jaliashvili-nanobashvili.jpg",
+    "width": 1536,
+    "height": 2048,
+    "alt": "David Nanobashvili, in blue scrubs, shakes hands with Archil Jaliashvili at the AB-Vet Buneba veterinary clinic."
+  },
+  "socialImage": {
+    "src": "assets/news/bhoc-vet-buneba-jaliashvili-nanobashvili.jpg",
+    "width": 1536,
+    "height": 2048,
+    "alt": "David Nanobashvili, in blue scrubs, shakes hands with Archil Jaliashvili at the AB-Vet Buneba veterinary clinic."
+  },
+  "imageCaption": "David Nanobashvili and Archil Jaliashvili at AB-Vet Buneba in Tbilisi. Photo supplied by Archil Jaliashvili.",
+  "breadcrumbs": [
+    {
+      "label": "News",
+      "href": "news.html"
+    }
+  ],
+  "sourceLink": {
+    "label": "Read about the first three years of the collaboration",
+    "href": "https://bhocvet.com/three-years-bhoc-veterinary-research-georgia.html"
+  },
+  "relatedLinks": [
+    {
+      "label": "Back to Veterinary News",
+      "href": "news.html"
+    }
+  ],
+  "referenceGroups": [],
+  "seo": {
+    "primaryKeyword": "BHOC Veterinary AB-Vet Buneba collaboration",
+    "secondaryKeywords": [
+      "AB-Vet Buneba",
+      "ABU Buneba Vet Academy",
+      "David Nanobashvili",
+      "veterinary research in Georgia",
+      "Precision Oxygen Therapeutics"
+    ],
+    "supportingTerms": [
+      "BHOC Veterinary",
+      "veterinary education in Tbilisi",
+      "veterinary oxygen delivery research"
+    ]
+  }
+}

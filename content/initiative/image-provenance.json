@@ -7,6 +7,36 @@
   "rightsBoundary": "Third-party terms apply only to the underlying photographs identified below. They do not license the surrounding BHOC text, branding, scientific materials, layout, design or code. No photographer, source platform or public agency is represented as endorsing BHOC or this Initiative.",
   "records": [
     {
+      "id": "bhoc-vet-buneba-jaliashvili-nanobashvili",
+      "title": "David Nanobashvili and Archil Jaliashvili at AB-Vet Buneba",
+      "subject": "David Nanobashvili, in blue scrubs, shakes hands with Archil Jaliashvili at the AB-Vet Buneba veterinary clinic.",
+      "creator": "Photographer unidentified. Photograph supplied by Archil Jaliashvili.",
+      "source": "https://bhocvet.com/bhoc-veterinary-ab-vet-buneba-next-stage.html",
+      "sourceLabel": "BHOC Veterinary partnership update",
+      "originalDate": "Undated",
+      "license": "Owner-authorized BHOC publication",
+      "licenseUrl": "https://bhocvet.com/contact.html",
+      "sourceStatus": "Archil Jaliashvili supplied the photograph for the BHOC Veterinary partnership update.",
+      "verifiedOn": "2026-11-14",
+      "usedIn": [
+        "BHOC Veterinary partnership update",
+        "Veterinary News card",
+        "Article social preview"
+      ],
+      "reason": "The photograph was supplied for the announcement of the next stage of the AB-Vet Buneba collaboration.",
+      "modifications": "Published the supplied 1536 by 2048 JPEG byte for byte.",
+      "reuse": "Contact BHOC Veterinary for reuse enquiries.",
+      "originalFilename": "BHOC vet Archil Jaliashvili .jpg",
+      "originalSha256": "1806958369d92f2aafb6bbaad5502254481ebe494ab23bb6db0212c9bfb015f3",
+      "localFiles": [
+        {
+          "path": "assets/news/bhoc-vet-buneba-jaliashvili-nanobashvili.jpg",
+          "sha256": "1806958369d92f2aafb6bbaad5502254481ebe494ab23bb6db0212c9bfb015f3",
+          "introducedOn": "2026-11-14"
+        }
+      ]
+    },
+    {
       "id": "bhoc-vet-david-nanobashvili-dog-georgia",
       "title": "David Nanobashvili with a dog in Georgia",
       "subject": "David Nanobashvili in blue scrubs rests a hand on a tan dog lying on a veterinary exam table.",
