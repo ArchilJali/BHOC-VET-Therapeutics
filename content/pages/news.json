@@ -99,7 +99,7 @@
   "eyebrow": "BHOC Initiative · Global Intelligence",
   "heading": "Wildlife & Species Conservation Intelligence.",
   "lead": "Tracking the people, science, funding and programs working to protect wildlife, restore endangered species and strengthen conservation medicine worldwide.",
-  "updated": "2026-11-14",
+  "updated": "2026-11-15",
   "seoContext": {
     "eyebrow": "BHOC Veterinary context",
     "heading": "Animal-health intelligence, separate from product claims.",
@@ -117,6 +117,40 @@
   },
   "feedNote": "BHOC Initiative Scout applies a high publication threshold and screens every candidate for duplication. New items are added only for exceptional rescue or recovery outcomes, globally significant conservation initiatives, substantive veterinary evidence milestones or other material developments; routine news is excluded.",
   "stories": [
+    {
+      "id": "daria-janiashvili-ab-vet-buneba-canine-anemia",
+      "date": "2026-11-15",
+      "dateLabel": "15 Nov 2026 · Veterinary case report",
+      "region": "Tbilisi, Georgia · AB-Vet Buneba",
+      "category": "Canine anemia · Veterinary care",
+      "article": true,
+      "title": "Severe Canine Anemia at AB-Vet Buneba",
+      "text": "Dr. Daria Janiashvili and the AB-Vet Buneba team cared for a dog with severe anemia. Hemoglobin was 40 g/L before treatment and 119 g/L at follow-up four days later.",
+      "image": {
+        "url": "assets/news/daria-janiashvili-dog-ab-vet-buneba-tbilisi.jpg",
+        "displayUrl": "assets/news/daria-janiashvili-dog-ab-vet-buneba-tbilisi.jpg",
+        "sizes": "(max-width:800px) calc(100vw - 32px), 520px",
+        "alt": "Dr. Daria Janiashvili wears blue gloves beside a white-and-brown dog on an examination table at AB-Vet Buneba.",
+        "width": 1200,
+        "height": 1600
+      },
+      "credit": {
+        "label": "Case photograph supplied by Archil Jaliashvili",
+        "href": "daria-janiashvili-ab-vet-buneba-canine-anemia.html"
+      },
+      "sourceName": "BHOC Veterinary · AB-Vet Buneba case",
+      "link": {
+        "label": "Read the case report",
+        "href": "daria-janiashvili-ab-vet-buneba-canine-anemia.html"
+      },
+      "keywords": [
+        "Daria Janiashvili",
+        "AB-Vet Buneba",
+        "severe canine anemia",
+        "complete blood count",
+        "BHOC Veterinary"
+      ]
+    },
     {
       "id": "bhoc-veterinary-ab-vet-buneba-next-stage",
       "date": "2026-11-14",
@@ -2177,5 +2211,5 @@
     "text": "A short dated record of BHOC Veterinary site and knowledge additions.",
     "href": "https://bhocvet.com/site-updates.html"
   },
-  "dateModified": "2026-11-14"
+  "dateModified": "2026-11-15"
 }

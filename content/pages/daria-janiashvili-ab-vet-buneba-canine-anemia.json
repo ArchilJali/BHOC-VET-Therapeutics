@@ -1,0 +1,100 @@
+{
+  "slug": "daria-janiashvili-ab-vet-buneba-canine-anemia",
+  "navLabel": "AB-Vet Buneba canine anemia case",
+  "navActive": "news.html",
+  "breadcrumbs": [
+    {
+      "label": "News",
+      "href": "news.html"
+    }
+  ],
+  "schemaType": "Article",
+  "articleSection": "Veterinary R&D Case Studies",
+  "title": "Severe Canine Anemia at AB-Vet Buneba | BHOC Veterinary",
+  "description": "Dr. Daria Janiashvili and her team cared for a dog with severe anemia in Tbilisi. Hemoglobin was 40 g/L on August 15 and 119 g/L on August 19, 2026.",
+  "heading": "Severe Canine Anemia at AB-Vet Buneba",
+  "lead": "Dr. Daria Janiashvili and the AB-Vet Buneba team cared for a dog brought to their clinic in Tbilisi in life-threatening condition.",
+  "datePublished": "2026-11-15",
+  "dateModified": "2026-11-15",
+  "dateLabel": "15 Nov 2026",
+  "casePeriod": "Case dates 15–19 August 2026.",
+  "authorName": "Archil Jaliashvili",
+  "eyebrow": "BHOC Veterinary · Investigational case report",
+  "image": {
+    "src": "assets/news/daria-janiashvili-dog-ab-vet-buneba-tbilisi.jpg",
+    "width": 1200,
+    "height": 1600,
+    "alt": "Dr. Daria Janiashvili wears blue gloves beside a white-and-brown dog on an examination table at AB-Vet Buneba.",
+    "linkLabel": "Open the full-size photograph of Dr. Daria Janiashvili with the dog"
+  },
+  "socialImage": {
+    "src": "assets/news/daria-janiashvili-dog-ab-vet-buneba-tbilisi.jpg",
+    "width": 1200,
+    "height": 1600,
+    "alt": "Dr. Daria Janiashvili wears blue gloves beside a white-and-brown dog on an examination table at AB-Vet Buneba."
+  },
+  "imageCaption": "Dr. Daria Janiashvili with the dog at AB-Vet Buneba in Tbilisi. Photograph supplied by Archil Jaliashvili.",
+  "paragraphs": [
+    {
+      "text": "The team documented severe anemia before treatment and used investigational BHOC (Biological Hemoglobin Oxygen Carrier) to support oxygen delivery while veterinary care continued."
+    },
+    {
+      "text": "In the team’s account, that support helped buy time for the dog, which went on to recover. A follow-up complete blood count on August 19 recorded hemoglobin of 119 g/L."
+    },
+    {
+      "text": "Thank you to Dr. Daria Janiashvili and her colleagues for caring for this patient and documenting its course. Our work with AB-Vet Buneba continues this November."
+    }
+  ],
+  "table": {
+    "heading": "Hemoglobin before treatment and at follow-up",
+    "caption": "Hemoglobin measurements from the AB-Vet Buneba case",
+    "columns": [
+      "Measurement",
+      "15 Aug 2026 · Before treatment",
+      "19 Aug 2026 · Follow-up"
+    ],
+    "rows": [
+      [
+        "Hemoglobin (g/L)",
+        "40",
+        "119"
+      ]
+    ],
+    "note": "The values describe the course of one dog during veterinary care."
+  },
+  "contextHeading": "Case documentation",
+  "context": [
+    "Archil Jaliashvili supplied the clinical account and the pretreatment value. The follow-up value comes from the clinic’s complete blood count dated August 19, 2026."
+  ],
+  "sourceLink": {
+    "label": "Read about the ongoing AB-Vet Buneba collaboration",
+    "href": "bhoc-veterinary-ab-vet-buneba-next-stage.html"
+  },
+  "referenceGroups": [],
+  "seo": {
+    "primaryKeyword": "severe canine anemia at AB-Vet Buneba",
+    "secondaryKeywords": [
+      "Daria Janiashvili",
+      "canine anemia",
+      "AB-Vet Buneba",
+      "veterinary care in Tbilisi"
+    ],
+    "supportingTerms": [
+      "hemoglobin follow-up",
+      "BHOC Veterinary",
+      "Precision Oxygen Therapeutics"
+    ]
+  },
+  "actions": [
+    {
+      "label": "Explore veterinary oxygen delivery science",
+      "href": "science.html"
+    }
+  ],
+  "relatedLinks": [
+    {
+      "label": "Back to Veterinary News",
+      "href": "news.html"
+    }
+  ]
+}
