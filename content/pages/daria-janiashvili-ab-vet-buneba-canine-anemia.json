@@ -1,6 +1,6 @@
 {
   "slug": "daria-janiashvili-ab-vet-buneba-canine-anemia",
-  "navLabel": "AB-Vet Buneba canine anemia case",
+  "navLabel": "AB-Vet Buneba leishmaniasis case",
   "navActive": "news.html",
   "breadcrumbs": [
     {
@@ -10,10 +10,10 @@
   ],
   "schemaType": "Article",
   "articleSection": "Veterinary R&D Case Studies",
-  "title": "Severe Canine Anemia at AB-Vet Buneba | BHOC Veterinary",
-  "description": "Dr. Daria Janiashvili cared for a dog with severe anemia at AB-Vet Buneba in Tbilisi. The August case is part of an ongoing veterinary collaboration.",
-  "heading": "Severe Canine Anemia at AB-Vet Buneba",
-  "lead": "Dr. Daria Janiashvili and the AB-Vet Buneba team cared for a dog brought to their clinic in Tbilisi in life-threatening condition.",
+  "title": "Leishmaniasis and Severe Canine Anemia | AB-Vet Buneba",
+  "description": "Dr. Daria Janiashvili cared for a dog with leishmaniasis and severe anemia at AB-Vet Buneba in Tbilisi, Georgia.",
+  "heading": "Severe Anemia in a Dog With Leishmaniasis at AB-Vet Buneba",
+  "lead": "Dr. Daria Janiashvili and the AB-Vet Buneba team cared for a dog brought to their clinic in Tbilisi in life-threatening condition. The diagnosis was leishmaniasis.",
   "datePublished": "2026-11-15",
   "dateModified": "2026-11-15",
   "dateLabel": "15 Nov 2026",
@@ -77,7 +77,8 @@
       "Daria Janiashvili",
       "canine anemia",
       "AB-Vet Buneba",
-      "veterinary care in Tbilisi"
+      "veterinary care in Tbilisi",
+      "canine leishmaniasis"
     ],
     "supportingTerms": [
       "hemoglobin follow-up",

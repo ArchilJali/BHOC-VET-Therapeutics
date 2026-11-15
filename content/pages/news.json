@@ -122,10 +122,10 @@
       "date": "2026-11-15",
       "dateLabel": "15 Nov 2026 · Veterinary case report",
       "region": "Tbilisi, Georgia · AB-Vet Buneba",
-      "category": "Canine anemia · Veterinary care",
+      "category": "Canine leishmaniasis · Severe anemia",
       "article": true,
-      "title": "Severe Canine Anemia at AB-Vet Buneba",
-      "text": "Dr. Daria Janiashvili and the AB-Vet Buneba team cared for a dog with severe anemia. The reported pre-treatment hemoglobin was 40 g/L. The follow-up blood count recorded 119 g/L four days later.",
+      "title": "Severe Anemia in a Dog With Leishmaniasis at AB-Vet Buneba",
+      "text": "Dr. Daria Janiashvili and the AB-Vet Buneba team cared for a dog with leishmaniasis and severe anemia. The reported pre-treatment hemoglobin was 40 g/L. The follow-up blood count recorded 119 g/L four days later.",
       "image": {
         "url": "assets/news/daria-janiashvili-dog-ab-vet-buneba-tbilisi.jpg",
         "displayUrl": "assets/news/daria-janiashvili-dog-ab-vet-buneba-tbilisi.jpg",
@@ -148,7 +148,8 @@
         "AB-Vet Buneba",
         "severe canine anemia",
         "complete blood count",
-        "BHOC Veterinary"
+        "BHOC Veterinary",
+        "canine leishmaniasis"
       ]
     },
     {
