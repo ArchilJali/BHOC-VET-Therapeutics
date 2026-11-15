@@ -7,6 +7,36 @@
   "rightsBoundary": "Third-party terms apply only to the underlying photographs identified below. They do not license the surrounding BHOC text, branding, scientific materials, layout, design or code. No photographer, source platform or public agency is represented as endorsing BHOC or this Initiative.",
   "records": [
     {
+      "id": "daria-janiashvili-dog-ab-vet-buneba-tbilisi",
+      "title": "Dr. Daria Janiashvili and a canine patient at AB-Vet Buneba",
+      "subject": "Dr. Daria Janiashvili wears blue gloves beside a white-and-brown dog on an examination table at AB-Vet Buneba.",
+      "creator": "Photographer unidentified. Photograph supplied by Archil Jaliashvili.",
+      "source": "https://bhocvet.com/daria-janiashvili-ab-vet-buneba-canine-anemia.html",
+      "sourceLabel": "BHOC Veterinary AB-Vet Buneba case report",
+      "originalDate": "Undated",
+      "license": "Owner-authorized BHOC publication",
+      "licenseUrl": "https://bhocvet.com/contact.html",
+      "sourceStatus": "Archil Jaliashvili supplied the photograph for the veterinary case publication.",
+      "verifiedOn": "2026-11-15",
+      "usedIn": [
+        "BHOC Veterinary case report",
+        "Veterinary News card",
+        "Article social preview"
+      ],
+      "reason": "The photograph shows the veterinarian and the canine patient featured in the case account.",
+      "modifications": "Published the supplied 1200 by 1600 JPEG byte for byte under a descriptive filename.",
+      "reuse": "Contact BHOC Veterinary for reuse enquiries.",
+      "originalFilename": "PHOTO-2026-11-12-20-13-44.jpg",
+      "originalSha256": "fe0bbc3cade2f5752dfe2edbec875e635ab1303691569c719d6a295ae47ac570",
+      "localFiles": [
+        {
+          "path": "assets/news/daria-janiashvili-dog-ab-vet-buneba-tbilisi.jpg",
+          "sha256": "fe0bbc3cade2f5752dfe2edbec875e635ab1303691569c719d6a295ae47ac570",
+          "introducedOn": "2026-11-15"
+        }
+      ]
+    },
+    {
       "id": "bhoc-vet-buneba-jaliashvili-nanobashvili",
       "title": "David Nanobashvili and Archil Jaliashvili at AB-Vet Buneba",
       "subject": "David Nanobashvili, in blue scrubs, shakes hands with Archil Jaliashvili at the AB-Vet Buneba veterinary clinic.",
