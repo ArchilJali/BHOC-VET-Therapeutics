@@ -1,0 +1,102 @@
+{
+  "slug": "veterinary-organ-perfusion-research",
+  "navLabel": "Ex Vivo Organ Perfusion and Oxygen Carriers",
+  "navActive": "science.html",
+  "breadcrumbs": [
+    {
+      "label": "Research topics",
+      "href": "topics.html"
+    }
+  ],
+  "title": "Ex Vivo Organ Perfusion and Oxygen Carriers",
+  "description": "Compare oxygen-carrier research in ex vivo porcine kidney perfusion: renal function, circulation, carrier oxidation and the limits of laboratory models.",
+  "schemaType": "WebPage",
+  "datePublished": "2026-11-16",
+  "dateModified": "2026-11-16",
+  "eyebrow": "Veterinary oxygen-delivery science",
+  "heading": "Ex Vivo Organ Perfusion and Oxygen Carriers",
+  "lead": "Ex vivo kidney research connects oxygen transport with organ function. Two porcine studies illustrate why the assessment needs several endpoints: circulation, oxygen consumption, urine production, creatinine clearance and tissue injury. A favorable result in one domain does not establish equivalent function across the others.",
+  "topicSections": [
+    {
+      "id": "section-1",
+      "title": "Kidney perfusion study endpoints",
+      "paragraphs": [],
+      "bullets": [],
+      "links": []
+    },
+    {
+      "id": "section-2",
+      "title": "What did the HBOC-201 comparison find?",
+      "paragraphs": [
+        "Pool and colleagues compared red cells, HBOC-201 and a solution without an oxygen carrier during six hours of normothermic perfusion of isolated porcine kidneys. At the end of perfusion, oxygen consumption was lower without a carrier than in either carrier group. Urine output and creatinine clearance favored red cells over HBOC-201. Renal flow and histology scores did not differ significantly across the three groups.",
+        "Methemoglobin accumulated in the HBOC-201 group over six hours. The authors identified this as a limitation for longer perfusion. The observed results apply to the tested formulation and circuit conditions."
+      ],
+      "bullets": [],
+      "links": []
+    },
+    {
+      "id": "section-3",
+      "title": "Why the injury marker and its units matter",
+      "paragraphs": [
+        "Urinary NGAL illustrates how the choice of measurement changes interpretation. In the Pool experiment, total NGAL excretion was higher with red cells than with HBOC-201. The red-cell group also produced more urine. A concentration and the total amount excreted answer different questions.",
+        "The study also reported that the strong color of HBOC-201 samples interfered with some laboratory assays. Lactate dehydrogenase could not be measured in that group. Comparisons of injury markers need to account for both the chosen endpoint and which measurements were feasible."
+      ],
+      "bullets": [],
+      "links": []
+    },
+    {
+      "id": "section-4",
+      "title": "What did the HBOC-301 experiment add?",
+      "paragraphs": [
+        "Edgworth and colleagues studied porcine kidneys with HBOC-301 or packed red cells, with and without vitamin C. There were five kidneys per group. Over six hours, the HBOC groups developed less favorable flow, resistance and renal-function measurements. Histological assessments did not show significant group differences.",
+        "Vitamin C partly reduced methemoglobin accumulation but did not resolve the functional disadvantage in that model. The researchers also examined oxidative stress and hemoglobin polymer fragmentation. Those observations make carrier stability a specific experimental question, alongside oxygen delivery."
+      ],
+      "bullets": [],
+      "links": []
+    },
+    {
+      "id": "section-5",
+      "title": "How does this guide comparative veterinary research?",
+      "paragraphs": [
+        "A research comparison should identify the exact formulation, species, organ, circuit and duration before interpreting its results. Functional measurements, tissue observations and carrier chemistry belong in the same assessment. Here, HBOC-201 and HBOC-301 are the products studied. Their results provide external experimental context for Precision Oxygen Therapeutics research; they do not establish BHOC performance or recovery benefits in living animals."
+      ],
+      "bullets": [],
+      "links": [
+        {
+          "label": "Pool MBF et al. Ex-Vivo Kidney Perfusion With Hemoglobin-Based Oxygen Carriers, Red Blood Cells, or No Oxygen Carrier. J Surg Res (2024). DOI: 10.1016/j.jss.2024.06.010",
+          "href": "https://pure.rug.nl/ws/portalfiles/portal/1113589552/1-s2.0-S0022480424003342-main.pdf",
+          "detail": "Source"
+        },
+        {
+          "label": "Edgworth E et al. HBOC-301 in Porcine Kidney Normothermic Machine Perfusion and the Effect of Vitamin C on Methemoglobin Formation. Antioxidants (2022). DOI: 10.3390/antiox11071329",
+          "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9311674/",
+          "detail": "Source"
+        },
+        {
+          "label": "Oxygen saturation and oxygen delivery in animals",
+          "href": "oxygen-saturation-vs-oxygen-delivery.html",
+          "detail": "Related BHOC Veterinary information"
+        },
+        {
+          "label": "Veterinary oxygen-transport science",
+          "href": "science.html",
+          "detail": "Related BHOC Veterinary information"
+        },
+        {
+          "label": "Research topics",
+          "href": "topics.html",
+          "detail": "Related BHOC Veterinary information"
+        }
+      ]
+    }
+  ],
+  "topicCards": [],
+  "seo": {
+    "primaryKeyword": "organ perfusion oxygen carriers",
+    "secondaryKeywords": [],
+    "supportingTerms": [
+      "BHOC Veterinary",
+      "Precision Oxygen Therapeutics"
+    ]
+  }
+}

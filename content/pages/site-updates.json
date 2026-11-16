@@ -15,8 +15,21 @@
     }
   ],
   "datePublished": "2026-10-13",
-  "dateModified": "2026-11-09",
+  "dateModified": "2026-11-16",
   "entries": [
+    {
+      "id": "organ-perfusion-20261116",
+      "date": "2026-11-16",
+      "displayDate": "16 November 2026",
+      "title": "Kidney perfusion and oxygen-carrier research",
+      "text": "Added a comparison of functional and laboratory measurements in two ex vivo porcine kidney studies.",
+      "links": [
+        {
+          "label": "Read the organ perfusion topic",
+          "href": "veterinary-organ-perfusion-research.html"
+        }
+      ]
+    },
     {
       "id": "dog-anesthesia-20261109",
       "date": "2026-11-09",

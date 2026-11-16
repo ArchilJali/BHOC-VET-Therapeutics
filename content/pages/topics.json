@@ -14,6 +14,12 @@
   "topicSections": [],
   "topicCards": [
     {
+      "id": "organ-perfusion-oxygen-carriers",
+      "title": "Ex Vivo Organ Perfusion and Oxygen Carriers",
+      "text": "Compare how porcine kidney perfusion studies measured renal function, oxygen consumption and carrier oxidation.",
+      "href": "./veterinary-organ-perfusion-research.html"
+    },
+    {
       "id": "V01",
       "title": "BHOC Veterinary: Oxygen Therapeutics Research",
       "text": "The veterinary development programme, species routes and source-linked research.",
