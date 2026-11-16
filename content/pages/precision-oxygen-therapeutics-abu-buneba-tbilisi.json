@@ -1,0 +1,105 @@
+{
+  "slug": "precision-oxygen-therapeutics-abu-buneba-tbilisi",
+  "navLabel": "Precision Oxygen Therapeutics at AB-Vet Buneba",
+  "navActive": "news.html",
+  "title": "Precision Oxygen Therapeutics at AB-Vet Buneba | BHOC Vet",
+  "description": "Archil Jaliashvili discussed hemoglobin, microcirculation and three years of BHOC experience with the Abu Buneba veterinary team in Tbilisi on November 16, 2026.",
+  "schemaType": "Article",
+  "articleSection": "Veterinary News",
+  "datePublished": "2026-11-16",
+  "dateModified": "2026-11-16",
+  "dateLabel": "16 Nov 2026",
+  "authorName": "Archil Jaliashvili",
+  "eyebrow": "BHOC Veterinary · Education in Georgia",
+  "heading": "Precision Oxygen Therapeutics Lecture at AB-Vet Buneba in Tbilisi",
+  "lead": "On November 16, 2026, Archil Jaliashvili presented Precision Oxygen Therapeutics to the veterinary team at AB-Vet Buneba in Tbilisi, Georgia. The lecture and discussion focused on how oxygen is carried in the blood and delivered to tissues.",
+  "sections": [
+    {
+      "heading": "What did the veterinary lecture cover?",
+      "paragraphs": [
+        "Jaliashvili described blood as a functional organ and examined one of its functions, oxygen transport. He discussed how hemoglobin binds and releases oxygen and how blood flow through the smallest vessels affects its delivery to tissues.",
+        "Three years of hands-on experience with investigational BHOC (Biological Hemoglobin Oxygen Carrier) gave the group practical observations to discuss. That experience has shaped the questions the team asks about tissue oxygenation in veterinary medicine."
+      ]
+    },
+    {
+      "heading": "Questions from veterinary practice",
+      "paragraphs": [
+        "The veterinarians made time for the lecture after a full day of seeing patients. Their questions and observations turned the session into a discussion of how the biochemistry relates to everyday veterinary practice.",
+        "BHOC Veterinary thanks David Nanobashvili, PhD, and the entire AB-Vet Buneba team for sharing their experience and making time for the conversation."
+      ]
+    }
+  ],
+  "image": {
+    "src": "assets/news/abu-buneba-precision-oxygen-therapeutics-team-2026-11-16.jpg",
+    "width": 1280,
+    "height": 720,
+    "alt": "Archil Jaliashvili stands with the AB-Vet Buneba veterinary team after the lecture in Tbilisi."
+  },
+  "socialImage": {
+    "src": "assets/news/abu-buneba-precision-oxygen-therapeutics-team-2026-11-16.jpg",
+    "width": 1280,
+    "height": 720,
+    "alt": "Archil Jaliashvili stands with the AB-Vet Buneba veterinary team after the lecture in Tbilisi."
+  },
+  "imageCaption": "Archil Jaliashvili with the AB-Vet Buneba team after the lecture. Photos supplied by Archil Jaliashvili.",
+  "gallery": [
+    {
+      "src": "assets/news/abu-buneba-precision-oxygen-therapeutics-title-slide-2026-11-16.jpg",
+      "width": 1280,
+      "height": 720,
+      "alt": "Archil Jaliashvili presents the Precision Oxygen Therapeutics opening slide to the AB-Vet Buneba veterinary team.",
+      "caption": "The opening slide of the Precision Oxygen Therapeutics lecture."
+    },
+    {
+      "src": "assets/news/abu-buneba-precision-oxygen-therapeutics-blood-as-an-organ-2026-11-16.jpg",
+      "width": 1280,
+      "height": 720,
+      "alt": "Archil Jaliashvili gestures beside a Georgian-language slide on blood as a functional organ.",
+      "caption": "A slide on blood as a functional organ."
+    },
+    {
+      "src": "assets/news/abu-buneba-precision-oxygen-therapeutics-microcirculation-2026-11-16.jpg",
+      "width": 1280,
+      "height": 720,
+      "alt": "The AB-Vet Buneba team watches as Archil Jaliashvili presents a slide on microcirculation.",
+      "caption": "A lecture slide on microcirculation."
+    }
+  ],
+  "breadcrumbs": [
+    {
+      "label": "News",
+      "href": "news.html"
+    }
+  ],
+  "sourceLink": {
+    "label": "Read the AB-Vet Buneba collaboration update",
+    "href": "https://bhocvet.com/bhoc-veterinary-ab-vet-buneba-next-stage.html"
+  },
+  "relatedLinks": [
+    {
+      "label": "Three years of BHOC Veterinary research in Georgia",
+      "href": "three-years-bhoc-veterinary-research-georgia.html"
+    },
+    {
+      "label": "Back to Veterinary News",
+      "href": "news.html"
+    }
+  ],
+  "referenceGroups": [],
+  "seo": {
+    "primaryKeyword": "Precision Oxygen Therapeutics in veterinary medicine",
+    "secondaryKeywords": [
+      "AB-Vet Buneba",
+      "veterinary education in Tbilisi",
+      "veterinary tissue oxygenation",
+      "hemoglobin oxygen transport",
+      "microcirculation"
+    ],
+    "supportingTerms": [
+      "BHOC Veterinary",
+      "Archil Jaliashvili",
+      "David Nanobashvili",
+      "Biological Hemoglobin Oxygen Carrier"
+    ]
+  }
+}

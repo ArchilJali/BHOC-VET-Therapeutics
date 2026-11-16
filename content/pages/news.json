@@ -99,7 +99,7 @@
   "eyebrow": "BHOC Initiative · Global Intelligence",
   "heading": "Wildlife & Species Conservation Intelligence.",
   "lead": "Tracking the people, science, funding and programs working to protect wildlife, restore endangered species and strengthen conservation medicine worldwide.",
-  "updated": "2026-11-15",
+  "updated": "2026-11-16",
   "seoContext": {
     "eyebrow": "BHOC Veterinary context",
     "heading": "Animal-health intelligence, separate from product claims.",
@@ -117,6 +117,41 @@
   },
   "feedNote": "BHOC Initiative Scout applies a high publication threshold and screens every candidate for duplication. New items are added only for exceptional rescue or recovery outcomes, globally significant conservation initiatives, substantive veterinary evidence milestones or other material developments; routine news is excluded.",
   "stories": [
+    {
+      "id": "precision-oxygen-therapeutics-abu-buneba-tbilisi",
+      "date": "2026-11-16",
+      "dateLabel": "16 Nov 2026 · Veterinary education",
+      "region": "Tbilisi, Georgia · AB-Vet Buneba",
+      "category": "Precision Oxygen Therapeutics · Tissue oxygenation",
+      "article": true,
+      "title": "Precision Oxygen Therapeutics Lecture at AB-Vet Buneba in Tbilisi",
+      "text": "Archil Jaliashvili and the AB-Vet Buneba team connected hemoglobin, microcirculation and tissue oxygen delivery with three years of hands-on BHOC experience.",
+      "image": {
+        "url": "assets/news/abu-buneba-precision-oxygen-therapeutics-team-2026-11-16.jpg",
+        "displayUrl": "assets/news/abu-buneba-precision-oxygen-therapeutics-team-2026-11-16.jpg",
+        "sizes": "(max-width:800px) calc(100vw - 32px), 520px",
+        "alt": "Archil Jaliashvili stands with the AB-Vet Buneba veterinary team after the lecture in Tbilisi.",
+        "width": 1280,
+        "height": 720
+      },
+      "credit": {
+        "label": "Photo supplied by Archil Jaliashvili",
+        "href": "precision-oxygen-therapeutics-abu-buneba-tbilisi.html"
+      },
+      "sourceName": "BHOC Veterinary",
+      "link": {
+        "label": "Read the lecture recap and see the photos",
+        "href": "precision-oxygen-therapeutics-abu-buneba-tbilisi.html"
+      },
+      "keywords": [
+        "Precision Oxygen Therapeutics",
+        "AB-Vet Buneba",
+        "veterinary education",
+        "tissue oxygenation",
+        "microcirculation",
+        "Tbilisi"
+      ]
+    },
     {
       "id": "daria-janiashvili-ab-vet-buneba-canine-anemia",
       "date": "2026-11-15",
@@ -2212,5 +2247,5 @@
     "text": "A short dated record of BHOC Veterinary site and knowledge additions.",
     "href": "https://bhocvet.com/site-updates.html"
   },
-  "dateModified": "2026-11-15"
+  "dateModified": "2026-11-16"
 }
