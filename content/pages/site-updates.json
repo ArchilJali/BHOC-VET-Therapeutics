@@ -15,8 +15,21 @@
     }
   ],
   "datePublished": "2026-10-13",
-  "dateModified": "2026-11-16",
+  "dateModified": "2026-11-18",
   "entries": [
+    {
+      "id": "white-rhinoceros-oxygenation-20261118",
+      "date": "2026-11-18",
+      "displayDate": "18 November 2026",
+      "title": "White rhinoceros oxygenation monitoring",
+      "text": "Added a research topic comparing pulse oximetry and arterial blood gas findings in white rhinoceroses.",
+      "links": [
+        {
+          "label": "Read the white rhinoceros oxygenation topic",
+          "href": "wildlife-anesthesia-and-oxygenation.html"
+        }
+      ]
+    },
     {
       "id": "organ-perfusion-20261116",
       "date": "2026-11-16",

@@ -14,6 +14,12 @@
   "topicSections": [],
   "topicCards": [
     {
+      "id": "white-rhinoceros-oxygenation",
+      "title": "Oxygenation Monitoring in Immobilized White Rhinoceroses",
+      "text": "Two white rhinoceros studies on pulse oximetry agreement, oxygenation trends and arterial blood gases.",
+      "href": "./wildlife-anesthesia-and-oxygenation.html"
+    },
+    {
       "id": "organ-perfusion-oxygen-carriers",
       "title": "Ex Vivo Organ Perfusion and Oxygen Carriers",
       "text": "Compare how porcine kidney perfusion studies measured renal function, oxygen consumption and carrier oxidation.",

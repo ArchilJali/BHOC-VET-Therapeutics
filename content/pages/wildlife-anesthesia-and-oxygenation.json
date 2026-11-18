@@ -1,0 +1,100 @@
+{
+  "slug": "wildlife-anesthesia-and-oxygenation",
+  "navLabel": "Oxygenation Monitoring in Immobilized White Rhinoceroses",
+  "navActive": "science.html",
+  "breadcrumbs": [
+    {
+      "label": "Research topics",
+      "href": "topics.html"
+    }
+  ],
+  "title": "Oxygenation Monitoring in Immobilized White Rhinoceroses",
+  "description": "How two white rhinoceros studies assessed pulse oximeter agreement, detection of low saturation, trends and arterial blood gases.",
+  "schemaType": "WebPage",
+  "datePublished": "2026-11-18",
+  "dateModified": "2026-11-18",
+  "eyebrow": "Veterinary oxygen-delivery science",
+  "heading": "Oxygenation Monitoring in Immobilized White Rhinoceroses",
+  "lead": "Pulse oximetry estimates the fraction of arterial hemoglobin carrying oxygen. Arterial blood gases report oxygen and carbon dioxide tensions and pH. These measurements help a veterinary team distinguish low blood oxygenation from changes in ventilation or acid-base status during immobilization.",
+  "topicSections": [
+    {
+      "id": "section-1",
+      "title": "What does the monitor measure?",
+      "paragraphs": [],
+      "bullets": [],
+      "links": []
+    },
+    {
+      "id": "section-2",
+      "title": "Probe site and device performance",
+      "paragraphs": [
+        "Mtetwa and colleagues compared two devices at two probe sites in eight white rhinoceroses held at a veterinary wildlife facility. They paired pulse oximeter readings with arterial saturation measured by a laboratory co-oximeter. Only one device and probe combination at the third eyelid met the study’s agreement criterion across the evaluated saturation range. Both ear-probe configurations showed poor agreement in this study."
+      ],
+      "bullets": [],
+      "links": []
+    },
+    {
+      "id": "section-3",
+      "title": "Can the reading follow a change?",
+      "paragraphs": [
+        "Both devices performed well at detecting low saturation at the third eyelid under the study’s definition. Neither met the study’s criterion for following sequential changes at either site. In a validation study, it helps to ask three separate questions: how closely readings agree with the reference, how well they flag low saturation, and how well they follow a change over time."
+      ],
+      "bullets": [],
+      "links": []
+    },
+    {
+      "id": "section-4",
+      "title": "What arterial blood gases added in the field",
+      "paragraphs": [
+        "Haw and colleagues measured blood gases in 14 free-ranging white rhinoceroses before and after a combined intervention with butorphanol and supplemental oxygen. Arterial oxygen tension rose, carbon dioxide tension fell and pH increased. Hypoxemia and acidemia persisted at the final field measurement. The field study had no concurrent control group, so it could not isolate the contribution of oxygen or distinguish the intervention from all changes over time.",
+        "The field cohort and the earlier animals held in enclosures differed in their initial carbon dioxide tension and pH. The comparison shows why the setting matters when interpreting blood gas changes during immobilization."
+      ],
+      "bullets": [],
+      "links": []
+    },
+    {
+      "id": "section-5",
+      "title": "How to read across wildlife studies",
+      "paragraphs": [
+        "Check the species, setting and measurement method first. The device comparison describes performance in the configurations tested, and the field study describes blood gas changes in its own cohort. A different species or field setup requires its own validation."
+      ],
+      "bullets": [],
+      "links": [
+        {
+          "label": "Mtetwa et al. Pulse oximeter and pulse co-oximeter performance in immobilized white rhinoceros. BMC Veterinary Research (2024). DOI 10.1186/s12917-024-04179-5",
+          "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11251122/",
+          "detail": "Source"
+        },
+        {
+          "label": "Haw et al. Butorphanol with oxygen insufflation in field-immobilised white rhinoceros. J S Afr Vet Assoc (2015). DOI 10.4102/jsava.v86i1.1276",
+          "href": "https://scielo.org.za/scielo.php?pid=S1019-91282015000100012&script=sci_arttext",
+          "detail": "Source"
+        },
+        {
+          "label": "Oxygen saturation and oxygen delivery",
+          "href": "oxygen-saturation-vs-oxygen-delivery.html",
+          "detail": "Related BHOC Veterinary information"
+        },
+        {
+          "label": "Wildlife and biodiversity initiative",
+          "href": "./initiative/",
+          "detail": "Related BHOC Veterinary information"
+        },
+        {
+          "label": "Veterinary research topics",
+          "href": "topics.html",
+          "detail": "Related BHOC Veterinary information"
+        }
+      ]
+    }
+  ],
+  "topicCards": [],
+  "seo": {
+    "primaryKeyword": "wildlife field anesthesia oxygen",
+    "secondaryKeywords": [],
+    "supportingTerms": [
+      "BHOC Veterinary",
+      "Precision Oxygen Therapeutics"
+    ]
+  }
+}
