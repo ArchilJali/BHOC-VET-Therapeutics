@@ -127,12 +127,12 @@
       "title": "Emergency Veterinary Case: A Dog with Leishmaniasis and Severe Anemia",
       "text": "A dog found in very poor condition was immediately taken to a veterinary clinic. The case record identifies leishmaniasis and severe anemia; BHOC was administered twice to support oxygenation.",
       "image": {
-        "url": "assets/news/dog-leishmaniasis-veterinary-care-bhoc.jpg",
-        "displayUrl": "assets/news/dog-leishmaniasis-veterinary-care-bhoc.jpg",
+        "url": "assets/news/bhoc-vet-dog-leishmaniasis-severe-anemia.jpg",
+        "displayUrl": "assets/news/bhoc-vet-dog-leishmaniasis-severe-anemia.jpg",
         "sizes": "(max-width:800px) calc(100vw - 32px), 520px",
-        "alt": "Dog receiving veterinary care on an examination table, with an intravenous line in place, after presentation in very poor condition.",
+        "alt": "Dog receiving veterinary care in a clinic after being found in very poor condition.",
         "width": 480,
-        "height": 599
+        "height": 600
       },
       "credit": {
         "label": "Case photograph supplied for this report",
