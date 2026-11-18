@@ -124,5 +124,24 @@
     "width": 320,
     "height": 400
   },
-  "imageCaption": "The dog receiving veterinary care at the clinic. BHOC was administered twice to support oxygenation."
+  "imageCaption": "The dog receiving veterinary care at the clinic. BHOC was administered twice to support oxygenation.",
+  "sourceLink": {
+    "label": "World Association for Veterinary Dermatology canine leishmaniosis guidelines",
+    "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12590123/"
+  },
+  "referenceGroups": [
+    {
+      "heading": "Veterinary references",
+      "links": [
+        {
+          "label": "World Association for Veterinary Dermatology: canine leishmaniosis diagnosis and clinical practice guidelines (2025)",
+          "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12590123/"
+        },
+        {
+          "label": "Paltrinieri et al.: Laboratory tests for diagnosing and monitoring canine leishmaniasis (2016)",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/27805725/"
+        }
+      ]
+    }
+  ]
 }
