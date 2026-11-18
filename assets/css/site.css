@@ -1876,6 +1876,12 @@ body[data-page="home"] .page-route { display: none; }
 .one-blood-necessities { font-weight:700; }
 @media(max-width:760px) { .video-library-card,.video-watch-context { grid-template-columns:1fr; }.video-library-copy { padding:21px; }.video-watch-context { gap:20px; }.video-play { width:52px; height:52px; font-size:21px; }.video-player { border-radius:10px; } }
 
+/* Featured clinical-case photograph: visible on the article itself, not only in social metadata. */
+.topic-hero-figure{margin:26px 0 30px;max-width:680px}
+.topic-hero-figure .topic-hero-image{display:block;width:100%;max-width:520px;height:auto;aspect-ratio:4/5;object-fit:contain;object-position:center;border:1px solid #dce4e6;border-radius:10px;background:#f4f7f7}
+.topic-hero-figure figcaption{max-width:520px;margin-top:9px;color:#536776;font:13px/1.6 Arial,sans-serif}
+@media(max-width:600px){.topic-hero-figure{margin:20px 0 24px}.topic-hero-figure .topic-hero-image{max-width:100%}}
+
 dialog {
   width: min(680px, calc(100vw - 36px));
   max-height: calc(100dvh - 48px);
