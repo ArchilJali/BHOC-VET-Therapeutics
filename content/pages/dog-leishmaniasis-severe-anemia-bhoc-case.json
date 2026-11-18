@@ -1,147 +1,99 @@
 {
   "slug": "dog-leishmaniasis-severe-anemia-bhoc-case",
-  "navLabel": "Emergency Veterinary Case: A Dog with Leishmaniasis and Severe Anemia",
-  "navActive": "science.html",
+  "navLabel": "Canine leishmaniasis case",
+  "navActive": "news.html",
   "breadcrumbs": [
     {
-      "label": "Research topics",
-      "href": "topics.html"
+      "label": "News",
+      "href": "news.html"
     }
   ],
-  "title": "Emergency Veterinary Case: A Dog with Leishmaniasis and Severe Anemia",
-  "description": "A dog found in very poor condition with leishmaniasis and severe anemia was immediately taken to a veterinary clinic and received two BHOC administrations to support oxygenation.",
+  "title": "Severe Anemia in a Dog With Leishmaniasis | BHOC Veterinary",
+  "description": "A dog found in very poor condition was taken to a veterinary clinic. The case record identifies leishmaniasis and severe anemia; BHOC was administered twice to support oxygenation.",
   "schemaType": "Article",
+  "articleSection": "Veterinary R&D Case Studies",
   "datePublished": "2026-11-18",
   "dateModified": "2026-11-18",
-  "eyebrow": "Veterinary oxygen-delivery science",
-  "heading": "Emergency Veterinary Case: A Dog with Leishmaniasis and Severe Anemia",
-  "lead": "A dog was found on the street in very poor condition and was immediately brought to a veterinary clinic. The case record identifies leishmaniasis and severe anemia. The clinical photographs supplied for this case show the dog first outdoors and subsequently receiving veterinary care in the clinic. The clinic photograph is used as the primary image because it documents the patient in a care setting without making the distressing street photograph the lead visual.",
-  "topicSections": [
+  "dateLabel": "18 November 2026",
+  "casePeriod": "Initial hematology report dated 10 May 2024.",
+  "authorName": "Archil Jaliashvili",
+  "eyebrow": "BHOC Veterinary · Investigational case report",
+  "heading": "Severe Anemia in a Dog With Leishmaniasis",
+  "lead": "A dog was found on the street in very poor condition and immediately brought to a veterinary clinic. The case record identifies leishmaniasis and severe anemia.",
+  "image": {
+    "src": "assets/news/bhoc-vet-dog-leishmaniasis-severe-anemia.jpg",
+    "width": 480,
+    "height": 600,
+    "alt": "Dog receiving veterinary care on an examination table, with a veterinary intravenous line in place.",
+    "linkLabel": "Open the full-size clinic photograph of the dog receiving veterinary care"
+  },
+  "socialImage": {
+    "src": "assets/news/bhoc-vet-dog-leishmaniasis-severe-anemia.jpg",
+    "width": 480,
+    "height": 600,
+    "alt": "Dog receiving veterinary care on an examination table, with a veterinary intravenous line in place."
+  },
+  "imageCaption": "The dog receiving veterinary care at the clinic. Case photograph supplied by Archil Jaliashvili.",
+  "paragraphs": [
     {
-      "id": "section-1",
-      "title": "Emergency presentation",
-      "paragraphs": [
-        "The initial hematology report is dated 10 May 2024. It recorded hemoglobin (HGB) 65, red blood cell count (RBC) 2.78 and hematocrit (HCT) 19.4%. The values are transcribed from the supplied laboratory photograph. Units are not added because they are not clearly legible in the image. The report also records WBC 23.41 and ESR 49; these are retained as source values rather than interpreted as standalone diagnostic findings."
-      ],
-      "bullets": [],
-      "links": []
+      "text": "The dog was found outdoors in very poor condition and was immediately brought to a veterinary clinic. The case record identifies leishmaniasis and severe anemia. The clinic photograph is used as the lead image to document the patient receiving veterinary care."
     },
     {
-      "id": "section-2",
-      "title": "Two BHOC administrations to support oxygenation",
-      "paragraphs": [
-        "During emergency veterinary care, the dog received BHOC on two occasions to support oxygenation and hemoglobin-based oxygen transport. This is the precise treatment description confirmed for publication: two administrations, with oxygenation support as the stated purpose.",
-        "The case material also mentions 120 mL, but it does not establish whether this is the total volume across both administrations or the volume of each administration. For that reason, the article does not assign the 120 mL figure to either interpretation. The treatment record should be consulted before publishing a dose total or per-administration volume."
-      ],
-      "bullets": [],
-      "links": []
+      "text": "The initial hematology report is dated 10 May 2024. It records hemoglobin (HGB) 65, red blood cell count (RBC) 2.78 and hematocrit (HCT) 19.4%. These values are transcribed from the supplied laboratory photograph. Units are not added because they are not clearly legible in the image."
     },
     {
-      "id": "section-3",
-      "title": "Leishmaniosis and hematological findings",
-      "paragraphs": [
-        "Published veterinary guidance describes anemia and changes in the leukogram among possible clinicopathological findings in canine leishmaniosis. The pattern and severity vary between patients, and a complete assessment requires clinical examination and disease-specific testing. A complete blood count is one component of the diagnostic assessment; it does not independently confirm leishmaniosis.",
-        "The supplied case record identifies leishmaniasis. This article does not independently re-diagnose the dog or infer disease stage from the photographed blood count. The recorded HGB, RBC and HCT values are presented as the initial laboratory findings, with their units and reference interpretation limited to what can be read in the source."
-      ],
-      "bullets": [],
-      "links": []
+      "text": "During emergency veterinary care, BHOC (Biological Hemoglobin Oxygen Carrier) was administered twice to support oxygenation. This is the treatment description confirmed for publication. No dose volume is stated because the supplied record does not clearly establish the volume per administration or the total."
     },
     {
-      "id": "section-4",
-      "title": "The oxygen-transport question",
-      "paragraphs": [
-        "Hemoglobin concentration is relevant to the blood's oxygen-carrying capacity. In a patient with severe anemia, the clinical team must assess the underlying disease and the patient's overall oxygenation and circulation. The clinical question addressed in this case is the support of oxygen transport during emergency veterinary care.",
-        "BHOC (Biological Hemoglobin Oxygen Carrier) is being developed within Precision Oxygen Therapeutics. The two administrations recorded here were intended to support oxygenation. This case report documents the intervention; it does not establish that BHOC treats leishmaniasis, demonstrate a causal improvement in clinical outcome, or establish efficacy from a single patient."
-      ],
-      "bullets": [],
-      "links": []
+      "text": "Canine leishmaniosis can be associated with hematological abnormalities, including anemia. The clinical significance of an individual blood count must be interpreted alongside examination findings and disease-specific testing. The supplied record identifies leishmaniasis; this article does not independently re-diagnose the dog from the photograph or blood count."
     },
     {
-      "id": "section-5",
-      "title": "Case documentation",
-      "paragraphs": [
-        "The case is presented as a clinical observation based on the supplied photographs and initial hematology report. No post-treatment laboratory series, follow-up examination, survival outcome or independently adjudicated endpoint has been supplied for this publication. Those details are therefore not inferred.",
-        "The purpose of documenting cases in BHOC Veterinary is to describe the clinical setting, the physiological question and the intervention recorded, while distinguishing clinical observations from evidence generated through structured studies. Further evaluation requires defined populations, product characterization, appropriate comparators, safety monitoring and prespecified clinical and functional outcomes."
-      ],
-      "bullets": [],
-      "links": [
-        {
-          "label": "World Association for Veterinary Dermatology Consensus Statement for Diagnosis, and Evidence-Based Clinical Practice Guidelines for Treatment and Prevention of Canine Leishmaniosis (2025)",
-          "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12590123/",
-          "detail": "Source"
-        },
-        {
-          "label": "Paltrinieri et al. Laboratory tests for diagnosing and monitoring canine leishmaniasis (2016)",
-          "href": "https://pubmed.ncbi.nlm.nih.gov/27805725/",
-          "detail": "Source"
-        },
-        {
-          "label": "Veterinary oxygen-delivery science",
-          "href": "science.html",
-          "detail": "Related BHOC Veterinary information"
-        },
-        {
-          "label": "Canine transfusion and donor access",
-          "href": "canine-blood-transfusion.html",
-          "detail": "Related BHOC Veterinary information"
-        },
-        {
-          "label": "Veterinary research collaboration",
-          "href": "bhoc-crada-research-partners.html",
-          "detail": "Related BHOC Veterinary information"
-        }
-      ]
+      "text": "This case report documents the clinical presentation, the initial hematology values and the two BHOC administrations intended to support oxygenation. No post-treatment laboratory series, follow-up examination or clinical outcome has been supplied for this report. It therefore makes no claim that BHOC treated leishmaniasis or established a clinical outcome."
     }
   ],
-  "topicCards": [],
+  "contextHeading": "Case documentation and evidence boundary",
+  "context": [
+    "Case photographs and the initial hematology report were supplied by Archil Jaliashvili. Initial report date: 10 May 2024. The diagnosis is recorded in the case history as leishmaniasis.",
+    "The owner confirmed that BHOC was administered twice to support oxygenation. The report does not establish a per-administration or total volume. Units for the CBC values are not clearly legible in the photograph.",
+    "This is an individual investigational case record. It does not establish product efficacy, causality, regulatory approval or a treatment protocol."
+  ],
+  "sourceLink": {
+    "label": "World Association for Veterinary Dermatology canine leishmaniosis guidelines (2025)",
+    "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12590123/"
+  },
+  "actions": [
+    {
+      "label": "Explore veterinary oxygen-delivery science",
+      "href": "science.html"
+    }
+  ],
+  "relatedLinks": [
+    {
+      "label": "Laboratory tests for diagnosing and monitoring canine leishmaniasis (2016)",
+      "href": "https://pubmed.ncbi.nlm.nih.gov/27805725/"
+    },
+    {
+      "label": "Canine transfusion and donor access",
+      "href": "canine-blood-transfusion.html"
+    },
+    {
+      "label": "Back to Veterinary News",
+      "href": "news.html"
+    }
+  ],
   "seo": {
     "primaryKeyword": "severe anemia in dogs with leishmaniasis",
     "secondaryKeywords": [
       "canine leishmaniosis",
       "veterinary emergency care",
-      "hemoglobin-based oxygen carrier"
+      "canine anemia",
+      "BHOC Veterinary"
     ],
     "supportingTerms": [
-      "BHOC Veterinary",
       "two BHOC administrations",
-      "oxygen transport support",
+      "oxygenation support",
+      "hemoglobin-based oxygen carrier",
       "Precision Oxygen Therapeutics"
     ]
-  },
-  "dateLabel": "18 November 2026 · Veterinary case report",
-  "articleSection": "Canine leishmaniasis and severe anemia",
-  "authorName": "Archil Jaliashvili",
-  "image": {
-    "src": "assets/news/bhoc-vet-dog-leishmaniasis-severe-anemia.jpg",
-    "alt": "Dog receiving veterinary care in a clinic during a documented case of severe anemia associated with leishmaniasis.",
-    "width": 400,
-    "height": 500,
-    "sizes": "(max-width:800px) calc(100vw - 32px), 520px"
-  },
-  "socialImage": {
-    "src": "assets/news/bhoc-vet-dog-leishmaniasis-severe-anemia.jpg",
-    "alt": "Dog receiving veterinary care in a clinic during a documented case of severe anemia associated with leishmaniasis.",
-    "width": 400,
-    "height": 500
-  },
-  "imageCaption": "The dog receiving veterinary care at the clinic. BHOC was administered twice to support oxygenation.",
-  "sourceLink": {
-    "label": "World Association for Veterinary Dermatology canine leishmaniosis guidelines",
-    "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12590123/"
-  },
-  "referenceGroups": [
-    {
-      "heading": "Veterinary references",
-      "links": [
-        {
-          "label": "World Association for Veterinary Dermatology: canine leishmaniosis diagnosis and clinical practice guidelines (2025)",
-          "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12590123/"
-        },
-        {
-          "label": "Paltrinieri et al.: Laboratory tests for diagnosing and monitoring canine leishmaniasis (2016)",
-          "href": "https://pubmed.ncbi.nlm.nih.gov/27805725/"
-        }
-      ]
-    }
-  ]
+  }
 }
