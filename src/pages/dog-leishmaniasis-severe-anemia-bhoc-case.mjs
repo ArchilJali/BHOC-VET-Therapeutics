@@ -1,1 +1,1 @@
-export {default} from './topic-page.mjs';
+export { default } from './veterinary-rd-case.mjs';
