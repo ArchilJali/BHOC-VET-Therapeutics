@@ -113,16 +113,16 @@
   "authorName": "Archil Jaliashvili",
   "image": {
     "src": "assets/news/bhoc-vet-dog-leishmaniasis-severe-anemia.jpg",
-    "alt": "Dog receiving emergency veterinary care after presentation with leishmaniasis and severe anemia.",
-    "width": 320,
-    "height": 400,
+    "alt": "Dog receiving veterinary care in a clinic during a documented case of severe anemia associated with leishmaniasis.",
+    "width": 400,
+    "height": 500,
     "sizes": "(max-width:800px) calc(100vw - 32px), 520px"
   },
   "socialImage": {
     "src": "assets/news/bhoc-vet-dog-leishmaniasis-severe-anemia.jpg",
-    "alt": "Dog receiving emergency veterinary care after presentation with leishmaniasis and severe anemia.",
-    "width": 320,
-    "height": 400
+    "alt": "Dog receiving veterinary care in a clinic during a documented case of severe anemia associated with leishmaniasis.",
+    "width": 400,
+    "height": 500
   },
   "imageCaption": "The dog receiving veterinary care at the clinic. BHOC was administered twice to support oxygenation.",
   "sourceLink": {
