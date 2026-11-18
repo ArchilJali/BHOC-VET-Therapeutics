@@ -21,19 +21,19 @@
   "heading": "Severe Anemia in a Dog With Leishmaniasis",
   "lead": "A dog was found on the street in very poor condition and immediately brought to a veterinary clinic. The case record identifies leishmaniasis and severe anemia.",
   "image": {
-    "src": "assets/news/bhoc-vet-dog-leishmaniasis-severe-anemia.jpg",
+    "src": "assets/news/dog-leishmaniasis-veterinary-care-bhoc.jpg",
     "width": 480,
-    "height": 600,
-    "alt": "Dog receiving veterinary care on an examination table, with a veterinary intravenous line in place.",
+    "height": 599,
+    "alt": "Dog receiving veterinary care on an examination table, with an intravenous line in place, after presentation in very poor condition.",
     "linkLabel": "Open the full-size clinic photograph of the dog receiving veterinary care"
   },
   "socialImage": {
-    "src": "assets/news/bhoc-vet-dog-leishmaniasis-severe-anemia.jpg",
+    "src": "assets/news/dog-leishmaniasis-veterinary-care-bhoc.jpg",
     "width": 480,
-    "height": 600,
-    "alt": "Dog receiving veterinary care on an examination table, with a veterinary intravenous line in place."
+    "height": 599,
+    "alt": "Dog receiving veterinary care on an examination table, with an intravenous line in place, after presentation in very poor condition."
   },
-  "imageCaption": "The dog receiving veterinary care at the clinic. Case photograph supplied by Archil Jaliashvili.",
+  "imageCaption": "The dog receiving veterinary care at the clinic. Case photograph supplied for this report.",
   "paragraphs": [
     {
       "text": "The dog was found outdoors in very poor condition and was immediately brought to a veterinary clinic. The case record identifies leishmaniasis and severe anemia. The clinic photograph is used as the lead image to document the patient receiving veterinary care."
@@ -82,7 +82,7 @@
     }
   ],
   "seo": {
-    "primaryKeyword": "severe anemia in dogs with leishmaniasis",
+    "primaryKeyword": "dog leishmaniasis severe anemia",
     "secondaryKeywords": [
       "canine leishmaniosis",
       "veterinary emergency care",
@@ -92,8 +92,9 @@
     "supportingTerms": [
       "two BHOC administrations",
       "oxygenation support",
-      "hemoglobin-based oxygen carrier",
-      "Precision Oxygen Therapeutics"
-    ]
+      "hemoglobin-based oxygen carrier"
+    ],
+    "title": "Dog With Leishmaniasis and Severe Anemia | BHOC Vet",
+    "metaDescription": "A dog found in very poor condition was taken to a veterinary clinic. Case record documents leishmaniasis, severe anemia and two BHOC administrations to support oxygenation."
   }
 }
