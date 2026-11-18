@@ -14,6 +14,12 @@
   "topicSections": [],
   "topicCards": [
     {
+      "id": "dog-leishmaniasis-severe-anemia-bhoc-case",
+      "title": "Emergency Veterinary Case: A Dog with Leishmaniasis and Severe Anemia",
+      "text": "A documented canine case with initial hematology findings and two BHOC administrations to support oxygenation.",
+      "href": "./dog-leishmaniasis-severe-anemia-bhoc-case.html"
+    },
+    {
       "id": "white-rhinoceros-oxygenation",
       "title": "Oxygenation Monitoring in Immobilized White Rhinoceroses",
       "text": "Two white rhinoceros studies on pulse oximetry agreement, oxygenation trends and arterial blood gases.",

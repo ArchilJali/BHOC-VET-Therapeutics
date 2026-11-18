@@ -99,7 +99,7 @@
   "eyebrow": "BHOC Initiative · Global Intelligence",
   "heading": "Wildlife & Species Conservation Intelligence.",
   "lead": "Tracking the people, science, funding and programs working to protect wildlife, restore endangered species and strengthen conservation medicine worldwide.",
-  "updated": "2026-11-16",
+  "updated": "2026-11-18",
   "seoContext": {
     "eyebrow": "BHOC Veterinary context",
     "heading": "Animal-health intelligence, separate from product claims.",
@@ -117,6 +117,41 @@
   },
   "feedNote": "BHOC Initiative Scout applies a high publication threshold and screens every candidate for duplication. New items are added only for exceptional rescue or recovery outcomes, globally significant conservation initiatives, substantive veterinary evidence milestones or other material developments; routine news is excluded.",
   "stories": [
+    {
+      "id": "dog-leishmaniasis-severe-anemia-bhoc-case",
+      "date": "2026-11-18",
+      "dateLabel": "18 Nov 2026 · Veterinary case report",
+      "region": "Veterinary case · Dog",
+      "category": "Canine leishmaniasis · Severe anemia · Oxygenation support",
+      "article": true,
+      "title": "Emergency Veterinary Case: A Dog with Leishmaniasis and Severe Anemia",
+      "text": "A dog found in very poor condition was immediately taken to a veterinary clinic. The case record identifies leishmaniasis and severe anemia; BHOC was administered twice to support oxygenation.",
+      "image": {
+        "url": "assets/news/bhoc-vet-dog-leishmaniasis-severe-anemia.jpg",
+        "displayUrl": "assets/news/bhoc-vet-dog-leishmaniasis-severe-anemia.jpg",
+        "sizes": "(max-width:800px) calc(100vw - 32px), 520px",
+        "alt": "Dog receiving emergency veterinary care after presentation with leishmaniasis and severe anemia.",
+        "width": 320,
+        "height": 400
+      },
+      "credit": {
+        "label": "Case photograph supplied by Archil Jaliashvili",
+        "href": "dog-leishmaniasis-severe-anemia-bhoc-case.html"
+      },
+      "sourceName": "BHOC Veterinary · Owner-supplied clinical case record",
+      "link": {
+        "label": "Read the veterinary case report",
+        "href": "dog-leishmaniasis-severe-anemia-bhoc-case.html"
+      },
+      "keywords": [
+        "canine leishmaniasis",
+        "severe anemia in dogs",
+        "BHOC Veterinary",
+        "two BHOC administrations",
+        "oxygenation support",
+        "veterinary emergency care"
+      ]
+    },
     {
       "id": "precision-oxygen-therapeutics-abu-buneba-tbilisi",
       "date": "2026-11-16",
