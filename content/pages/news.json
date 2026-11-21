@@ -93,20 +93,13 @@
       "knowledge updates",
       "canine babesiosis",
       "dog babesiosis severe anemia",
-      "oxygen delivery support",
-      "Precision Oxygen Therapeutics",
-      "hemoglobin oxygenation",
-      "hemoglobin-based oxygen carriers",
-      "tissue oxygenation",
-      "oxygen delivery",
-      "organ sustainability",
-      "transplantation oxygenation research"
+      "oxygen delivery support"
     ]
   },
   "eyebrow": "BHOC Initiative · Global Intelligence",
   "heading": "Wildlife & Species Conservation Intelligence.",
   "lead": "Tracking the people, science, funding and programs working to protect wildlife, restore endangered species and strengthen conservation medicine worldwide.",
-  "updated": "2026-11-21",
+  "updated": "2026-11-18",
   "seoContext": {
     "eyebrow": "BHOC Veterinary context",
     "heading": "Animal-health intelligence, separate from product claims.",
@@ -119,40 +112,11 @@
       {
         "label": "Open Vet Real-World Evidence & Cases",
         "href": "https://bhoctherapeutics.com/evidence/library/veterinary/Vet-index.html"
-      },
-      {
-        "label": "Explore the BHOC Organ Sustainability Initiative",
-        "href": "https://bhoctransplant.com/organ-sustainability-initiative.html"
       }
     ]
   },
   "feedNote": "BHOC Initiative Scout applies a high publication threshold and screens every candidate for duplication. New items are added only for exceptional rescue or recovery outcomes, globally significant conservation initiatives, substantive veterinary evidence milestones or other material developments; routine news is excluded.",
   "stories": [
-    {
-      "id": "organ-sustainability-initiative-cross-network-20261121",
-      "date": "2026-11-21",
-      "dateLabel": "21 Nov 2026 · BHOC network update",
-      "region": "BHOC network · Transplant research",
-      "category": "Organ Sustainability · Precision Oxygen Therapeutics",
-      "article": false,
-      "title": "BHOC Veterinary Connects to the Organ Sustainability Initiative",
-      "text": "BHOC Veterinary connects its comparative oxygen-delivery and hemoglobin research with the BHOC Transplant Organ Sustainability Initiative. The cross-network framework brings together hemoglobin biology, oxygen delivery, tissue oxygenation, microcirculation and organ-function research while keeping veterinary and transplant evidence distinct. This is a research-framework update, not a claim of validated transplant efficacy.",
-      "link": {
-        "label": "Explore the Organ Sustainability Initiative",
-        "href": "https://bhoctransplant.com/organ-sustainability-initiative.html"
-      },
-      "keywords": [
-        "Organ Sustainability Initiative",
-        "Precision Oxygen Therapeutics",
-        "hemoglobin biology",
-        "hemoglobin-based oxygen carriers",
-        "oxygen delivery",
-        "tissue oxygenation",
-        "microcirculation",
-        "BHOC Veterinary",
-        "BHOC Transplant"
-      ]
-    },
     {
       "id": "dog-leishmaniasis-severe-anemia-bhoc-case",
       "date": "2026-11-18",
@@ -2322,5 +2286,5 @@
     "text": "A short dated record of BHOC Veterinary site and knowledge additions.",
     "href": "https://bhocvet.com/site-updates.html"
   },
-  "dateModified": "2026-11-21"
+  "dateModified": "2026-11-16"
 }
