@@ -15,8 +15,21 @@
     }
   ],
   "datePublished": "2026-10-13",
-  "dateModified": "2026-11-18",
+  "dateModified": "2026-11-21",
   "entries": [
+    {
+      "id": "bhoc-organ-sustainability-crosslink-20261121",
+      "date": "2026-11-21",
+      "displayDate": "21 November 2026",
+      "title": "BHOC network link added: Organ Sustainability Initiative",
+      "text": "Added a contextual BHOC network link from Veterinary News to the BHOC Transplant Organ Sustainability Initiative, connecting veterinary oxygen-delivery research with the wider Precision Oxygen Therapeutics framework.",
+      "links": [
+        {
+          "label": "Open the Organ Sustainability Initiative",
+          "href": "https://bhoctransplant.com/organ-sustainability-initiative.html"
+        }
+      ]
+    },
     {
       "id": "white-rhinoceros-oxygenation-20261118",
       "date": "2026-11-18",
