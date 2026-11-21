@@ -93,13 +93,20 @@
       "knowledge updates",
       "canine babesiosis",
       "dog babesiosis severe anemia",
-      "oxygen delivery support"
+      "oxygen delivery support",
+      "Precision Oxygen Therapeutics",
+      "hemoglobin oxygenation",
+      "hemoglobin-based oxygen carriers",
+      "tissue oxygenation",
+      "oxygen delivery",
+      "organ sustainability",
+      "transplantation oxygenation research"
     ]
   },
   "eyebrow": "BHOC Initiative · Global Intelligence",
   "heading": "Wildlife & Species Conservation Intelligence.",
   "lead": "Tracking the people, science, funding and programs working to protect wildlife, restore endangered species and strengthen conservation medicine worldwide.",
-  "updated": "2026-11-18",
+  "updated": "2026-11-21",
   "seoContext": {
     "eyebrow": "BHOC Veterinary context",
     "heading": "Animal-health intelligence, separate from product claims.",
@@ -112,6 +119,10 @@
       {
         "label": "Open Vet Real-World Evidence & Cases",
         "href": "https://bhoctherapeutics.com/evidence/library/veterinary/Vet-index.html"
+      },
+      {
+        "label": "Explore the BHOC Organ Sustainability Initiative",
+        "href": "https://bhoctransplant.com/organ-sustainability-initiative.html"
       }
     ]
   },
