@@ -18,6 +18,19 @@
   "dateModified": "2026-11-26",
   "entries": [
     {
+      "id": "blood-diversity-foundation-20261126",
+      "date": "2026-11-26",
+      "displayDate": "26 November 2026",
+      "title": "Blood diversity and oxygen transport",
+      "text": "Added an illustrated reading on blood antigen diversity and hemoglobin-mediated oxygen transport to the Science foundation section.",
+      "links": [
+        {
+          "label": "Open Science Foundation",
+          "href": "science.html#foundation"
+        }
+      ]
+    },
+    {
       "id": "clementi-veterinary-submission-20261125",
       "date": "2026-11-25",
       "displayDate": "25 November 2026",

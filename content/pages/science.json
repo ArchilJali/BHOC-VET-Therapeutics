@@ -55,7 +55,11 @@
     "paragraphs": [
       "Hemoglobin binds oxygen through iron-containing heme groups. Oxygen delivery also depends on circulation, oxygen affinity, blood flow and tissue demand.",
       "Hemoglobin-based oxygen carriers, or HBOCs, investigate a cell-free approach to oxygen transport. BHOC builds on this field as a Biological Hemoglobin Oxygen Carrier development platform. The objective is complementary oxygen-delivery support, not replacement of the wider functions of blood."
-    ]
+    ],
+    "reading": {
+      "label": "Blood diversity and oxygen transport: an illustrated perspective",
+      "href": "https://bhoctherapeutics.com/news/blood-diversity-oxygen-transport/"
+    }
   },
   "functionalDelivery": {
     "eyebrow": "Functional oxygen delivery",
@@ -213,7 +217,7 @@
       }
     ]
   },
-  "dateModified": "2026-10-31",
+  "dateModified": "2026-11-26",
   "topicSections": [
     {
       "id": "sepsis-metabolism-research",
