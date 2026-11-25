@@ -13,7 +13,7 @@
     "work": "The Jungle Book"
   },
   "metrics": [
-    {"value": "1.78M+", "labelLines": ["Animalia species", "catalogued"]},
+    {"value": "2.17M+", "labelLines": ["Animalia species", "catalogued"]},
     {"value": "175K+", "labelLines": ["species assessed", "for conservation status"]},
     {"value": "49K+", "labelLines": ["threatened species", "(CR / EN / VU)"]}
   ],
