@@ -1,0 +1,60 @@
+{
+  "slug": "clementi-first-electronic-veterinary-submission",
+  "navLabel": "Oxyglobin regulatory history",
+  "navActive": "news.html",
+  "title": "William A. Clementi on the Oxyglobin Submission | BHOC Vet",
+  "description": "Historical perspectives from William A. Clementi, Pharm.D., FCP",
+  "schemaType": "Article",
+  "articleSection": "Veterinary News",
+  "datePublished": "2026-11-25",
+  "dateModified": "2026-11-25",
+  "dateLabel": "25 Nov 2026",
+  "heading": "First electronic veterinary regulatory submission of its kind and resulted in regulatory approval",
+  "lead": "Historical perspectives from William A. Clementi, Pharm.D., FCP",
+  "paragraphs": [
+    "The development of hemoglobin-based oxygen carriers has a history spanning several decades, bringing together scientific research, veterinary medicine, pharmaceutical development, regulatory experience, and biopharmaceutical manufacturing.",
+    "William (Bill) Clementi, President of Clementi Associates Ltd., has been directly involved in this field since 1995, working alongside Carl on multiple stages of technology development."
+  ],
+  "sections": [
+    {
+      "title": "1995: Veterinary Development and Regulatory Approval",
+      "paragraphs": [
+        "Clementi's team prepared and submitted the veterinary application for Oxyglobin for acute hemorrhage. Interesting to say , this was the first electronic veterinary regulatory submission of its kind and resulted in regulatory approval.",
+        "Following this milestone, he continued his involvement as a consultant and subsequently worked with Biopure's lead investor, Mr. Judelson, advising on biotechnology investments and development."
+      ]
+    },
+    {
+      "title": "Veterinary Experience Beyond Canine Medicine",
+      "paragraphs": [
+        "While Oxyglobin was developed for veterinary use in dogs, Clementi recalls additional experience involving other animal species, including cats and birds.",
+        "In avian medicine, Oxyglobin was used in exchange transfusion procedures involving parasitic diseases, particularly in larger bird species.",
+        "These historical experiences provide an important perspective on the potential applications of hemoglobin-based oxygen carriers across different physiological and clinical settings.",
+        "The experience accumulated over three decades offers valuable insights into the scientific, manufacturing, and regulatory challenges that must be addressed as the field moves forward.",
+        "BHOC is building on these historical lessons through the development of its own Biological Hemoglobin Oxygen Carrier platform within the emerging field of Precision Oxygen Therapeutics."
+      ]
+    }
+  ],
+  "image": {
+    "src": "assets/news/clementi-associates-logo.png",
+    "width": 538,
+    "height": 214,
+    "alt": "Clementi Ltd. Clinical and Regulatory Consultants logo on a dark blue background."
+  },
+  "socialImage": {
+    "src": "assets/news/clementi-associates-logo.png",
+    "width": 538,
+    "height": 214,
+    "alt": "Clementi Ltd. Clinical and Regulatory Consultants logo on a dark blue background."
+  },
+  "breadcrumbs": [
+    {
+      "label": "News",
+      "href": "news.html"
+    }
+  ],
+  "sourceLink": {
+    "label": "Clementi Associates Ltd.",
+    "href": "https://regulatoryaffairs.com/"
+  },
+  "referenceGroups": []
+}
